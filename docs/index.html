@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260428-2">
+    <link rel="stylesheet" href="styles.css?v=20260428-3">
   </head>
   <body>
     <header class="topbar">
@@ -37,7 +37,30 @@
               </select>
             </label>
           </div>
-          <div id="specials-map" class="specials-map"></div>
+          <div class="map-layout">
+            <aside class="map-sidebar">
+              <h4>Map Filters</h4>
+              <div class="map-filter-block">
+                <p class="map-filter-title">Show on map</p>
+                <label><input type="checkbox" id="map-source-places" checked> Places</label>
+                <label><input type="checkbox" id="map-source-specials" checked> Specials</label>
+                <label><input type="checkbox" id="map-source-events" checked> Events</label>
+              </div>
+              <div class="map-filter-block">
+                <p class="map-filter-title">Type</p>
+                <div id="map-type-filters" class="map-tag-filters">
+                  <p class="empty">Loading types...</p>
+                </div>
+              </div>
+              <div class="map-filter-block">
+                <p class="map-filter-title">Category</p>
+                <div id="map-category-filters" class="map-tag-filters">
+                  <p class="empty">Loading categories...</p>
+                </div>
+              </div>
+            </aside>
+            <div id="specials-map" class="specials-map"></div>
+          </div>
           <details class="subsection-panel" open>
             <summary>Specials</summary>
             <div id="specials-list" class="specials-list">
@@ -130,6 +153,6 @@
     </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260428-3"></script>
+    <script src="app.js?v=20260428-5"></script>
   </body>
 </html>

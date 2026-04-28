@@ -244,7 +244,6 @@ td.card-number {
 
 .specials-map {
   min-height: 320px;
-  margin-top: 12px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -333,6 +332,68 @@ td.card-number {
 
 .compact-label {
   min-width: 170px;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.map-sidebar {
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.map-sidebar h4 {
+  margin: 0;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.map-filter-block {
+  margin-top: 12px;
+}
+
+.map-filter-title {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.map-filter-block label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.map-filter-block input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  margin: 0;
+}
+
+.map-tag-filters {
+  display: grid;
+  gap: 4px;
+}
+
+.map-empty-popup {
+  margin: 4px;
+  color: var(--muted);
+  font-size: 13px;
 }
 
 .subsection-panel {
@@ -512,6 +573,10 @@ td.card-number {
 
   .subsection-row {
     display: grid;
+  }
+
+  .map-layout {
+    grid-template-columns: 1fr;
   }
 }
 

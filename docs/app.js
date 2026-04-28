@@ -14,7 +14,17 @@ const state = {
   minPrice: 0,
   maxPrice: 200,
   specialsPayload: null,
+  quicketEvents: [],
   specialsMapRange: "today",
+  mapSources: {
+    places: true,
+    specials: true,
+    events: true,
+  },
+  selectedMapTypes: new Set(),
+  availableMapTypes: [],
+  selectedMapCategories: new Set(),
+  availableMapCategories: [],
 };
 
 const elements = {
@@ -29,11 +39,43 @@ const elements = {
   specialsList: document.querySelector("#specials-list"),
   specialsMap: document.querySelector("#specials-map"),
   specialsMapRange: document.querySelector("#specials-map-range"),
+  mapSourcePlaces: document.querySelector("#map-source-places"),
+  mapSourceSpecials: document.querySelector("#map-source-specials"),
+  mapSourceEvents: document.querySelector("#map-source-events"),
+  mapTypeFilters: document.querySelector("#map-type-filters"),
+  mapCategoryFilters: document.querySelector("#map-category-filters"),
   quicketEventsList: document.querySelector("#quicket-events-list"),
 };
 
 let specialsMap;
 let specialsMarkerLayer;
+let hasAutoFitMap = false;
+const markerIcons = {
+  places: L.icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  }),
+  specials: L.icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  }),
+  events: L.icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  }),
+};
 
 function parseCsv(text) {
   const rows = [];
@@ -285,7 +327,8 @@ function renderSpecials(payload) {
   }).format(new Date());
   const todayIndex = dayOrder.indexOf(today);
   const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
-  renderSpecialsMapForRange(groups, locations, rollingWeek);
+  renderTagFilters(locations);
+  renderMap();
 
   for (const day of rollingWeek) {
     const dayItems = [];
@@ -297,6 +340,108 @@ function renderSpecials(payload) {
 
     elements.specialsList.append(specialDayElement(day, dayItems, day === today));
   }
+}
+
+function typesFromLocations(locations) {
+  const tags = [];
+  for (const location of Object.values(locations || {})) {
+    for (const tag of location.types || location.tags || []) {
+      tags.push(tag);
+    }
+  }
+  return unique(tags);
+}
+
+function categoriesFromLocations(locations) {
+  const tags = [];
+  for (const location of Object.values(locations || {})) {
+    for (const tag of location.categories || []) {
+      tags.push(tag);
+    }
+  }
+  return unique(tags);
+}
+
+function syncSelectedWithAvailable(selectedSet, availableList, autoSelectWhenEmpty = true) {
+  if (!selectedSet.size) {
+    if (autoSelectWhenEmpty) {
+      for (const tag of availableList) {
+        selectedSet.add(tag);
+      }
+    }
+    return selectedSet;
+  }
+  const filtered = new Set([...selectedSet].filter((tag) => availableList.includes(tag)));
+  if (!filtered.size && autoSelectWhenEmpty) {
+    for (const tag of availableList) {
+      filtered.add(tag);
+    }
+  }
+  return filtered;
+}
+
+function renderFilterCheckboxes(container, values, selectedSet, emptyText, onToggle) {
+  if (!values.length) {
+    container.innerHTML = `<p class="empty">${emptyText}</p>`;
+    return;
+  }
+
+  container.innerHTML = "";
+  for (const tag of values) {
+    const label = document.createElement("label");
+    const input = document.createElement("input");
+    input.type = "checkbox";
+    input.value = tag;
+    input.checked = selectedSet.has(tag);
+    input.addEventListener("change", () => {
+      onToggle(tag, input.checked);
+    });
+    label.append(input, ` ${tag}`);
+    container.append(label);
+  }
+}
+
+function renderTagFilters(locations) {
+  const types = typesFromLocations(locations);
+  const categories = categoriesFromLocations(locations);
+  state.availableMapTypes = types;
+  state.availableMapCategories = categories;
+  state.selectedMapTypes = syncSelectedWithAvailable(state.selectedMapTypes, types);
+  state.selectedMapCategories = syncSelectedWithAvailable(
+    state.selectedMapCategories,
+    categories,
+    false,
+  );
+
+  renderFilterCheckboxes(
+    elements.mapTypeFilters,
+    types,
+    state.selectedMapTypes,
+    "No types yet.",
+    (tag, checked) => {
+      if (checked) {
+        state.selectedMapTypes.add(tag);
+      } else {
+        state.selectedMapTypes.delete(tag);
+      }
+      renderMap();
+    },
+  );
+
+  renderFilterCheckboxes(
+    elements.mapCategoryFilters,
+    categories,
+    state.selectedMapCategories,
+    "No categories yet.",
+    (tag, checked) => {
+      if (checked) {
+        state.selectedMapCategories.add(tag);
+      } else {
+        state.selectedMapCategories.delete(tag);
+      }
+      renderMap();
+    },
+  );
 }
 
 function renderQuicketEvents(events) {
@@ -353,7 +498,7 @@ function selectedMapDays(rollingWeek) {
   return rollingWeek;
 }
 
-function renderSpecialsMapForRange(groups, locations, rollingWeek) {
+function specialsItemsForRange(groups, rollingWeek) {
   const days = selectedMapDays(rollingWeek);
   const items = [];
   for (const group of groups) {
@@ -364,7 +509,7 @@ function renderSpecialsMapForRange(groups, locations, rollingWeek) {
       }
     }
   }
-  renderSpecialsMap(items, locations);
+  return items;
 }
 
 function normalizeVenue(value) {
@@ -386,21 +531,183 @@ function locationForVenue(venue, locations) {
   return null;
 }
 
-function renderSpecialsMap(items, locations) {
-  if (!window.L) {
-    elements.specialsMap.innerHTML = '<p class="empty">Map could not load.</p>';
-    return;
+function mapItemFromSpecialGroup(group) {
+  const location = group.location;
+  return {
+    source: "specials",
+    lat: location.lat,
+    lng: location.lng,
+    title: group.venue,
+    url: location.url,
+    tags: location.tags || [],
+    details: group.items.map((item) => `${item.mapDay}: ${item.deal || item.description || item.title}`),
+  };
+}
+
+function mapItemFromPlace(location) {
+  return {
+    source: "places",
+    lat: location.lat,
+    lng: location.lng,
+    title: location.venue,
+    url: location.url,
+    types: location.types || location.tags || [],
+    categories: location.categories || [],
+    details: [
+      "Place",
+      (location.types || location.tags || []).length ? `Type: ${(location.types || location.tags || []).join(", ")}` : "No type",
+      (location.categories || []).length ? `Category: ${(location.categories || []).join(", ")}` : "No category",
+    ],
+  };
+}
+
+function mapItemFromEvent(event) {
+  if (!Number.isFinite(event.lat) || !Number.isFinite(event.lng)) {
+    return null;
+  }
+  return {
+    source: "events",
+    lat: event.lat,
+    lng: event.lng,
+    title: event.title,
+    url: event.url,
+    types: [],
+    categories: [],
+    details: [displayDateTime(event.start), [event.venue, event.locality].filter(Boolean).join(", ")],
+  };
+}
+
+async function geocodeAddress(address) {
+  const query = (address || "").trim();
+  if (!query) {
+    return null;
+  }
+  const cacheKey = `geocode:v1:${query.toLowerCase()}`;
+  try {
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+      return JSON.parse(cached);
+    }
+  } catch {
+    // Ignore localStorage failures.
   }
 
-  const venueGroups = groupItemsByVenue(items)
-    .map((group) => ({
-      ...group,
-      location: locationForVenue(group.venue, locations),
-    }))
-    .filter((group) => group.location);
+  const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(query)}`;
+  try {
+    const response = await fetch(url, {
+      headers: { Accept: "application/json" },
+    });
+    if (!response.ok) {
+      return null;
+    }
+    const data = await response.json();
+    if (!Array.isArray(data) || !data.length) {
+      return null;
+    }
+    const result = {
+      lat: Number(data[0].lat),
+      lng: Number(data[0].lon),
+    };
+    if (Number.isFinite(result.lat) && Number.isFinite(result.lng)) {
+      try {
+        localStorage.setItem(cacheKey, JSON.stringify(result));
+      } catch {
+        // Ignore localStorage failures.
+      }
+      return result;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
 
-  if (!venueGroups.length) {
-    elements.specialsMap.innerHTML = '<p class="empty">No mapped specials for today.</p>';
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function enrichEventsWithCoordinates(events) {
+  let geocodedAny = false;
+  const limit = Math.min(events.length, 20);
+  for (let index = 0; index < limit; index += 1) {
+    const event = events[index];
+    if (Number.isFinite(event.lat) && Number.isFinite(event.lng)) {
+      continue;
+    }
+    const lookup = [event.venue, event.address, event.locality, event.region, "Cape Town", "South Africa"]
+      .filter(Boolean)
+      .join(", ");
+    const coords = await geocodeAddress(lookup);
+    if (coords) {
+      event.lat = coords.lat;
+      event.lng = coords.lng;
+      geocodedAny = true;
+    }
+    await sleep(1000);
+  }
+  return geocodedAny;
+}
+
+function buildMapItems() {
+  const mapItems = [];
+  const payload = state.specialsPayload || {};
+  const groups = payload.groups || [];
+  const locations = payload.locations || {};
+
+  const dayOrder = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  const today = new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    timeZone: "Africa/Johannesburg",
+  }).format(new Date());
+  const todayIndex = dayOrder.indexOf(today);
+  const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
+
+  const matchesTypeAndCategory = (types, categories) => {
+    const typeList = types || [];
+    const categoryList = categories || [];
+    const typeOk = !state.availableMapTypes.length
+      || (state.selectedMapTypes.size > 0 && typeList.some((tag) => state.selectedMapTypes.has(tag)));
+    const categoryOk = !state.availableMapCategories.length
+      || state.selectedMapCategories.size === 0
+      || categoryList.some((tag) => state.selectedMapCategories.has(tag));
+    return typeOk && categoryOk;
+  };
+
+  if (state.mapSources.places) {
+    for (const location of Object.values(locations)) {
+      if (matchesTypeAndCategory(location.types || location.tags || [], location.categories || [])) {
+        mapItems.push(mapItemFromPlace(location));
+      }
+    }
+  }
+
+  if (state.mapSources.specials) {
+    const specialsItems = specialsItemsForRange(groups, rollingWeek);
+    const venueGroups = groupItemsByVenue(specialsItems)
+      .map((group) => ({ ...group, location: locationForVenue(group.venue, locations) }))
+      .filter((group) => group.location);
+    for (const group of venueGroups) {
+      if (matchesTypeAndCategory(group.location.types || group.location.tags || [], group.location.categories || [])) {
+        mapItems.push(mapItemFromSpecialGroup(group));
+      }
+    }
+  }
+
+  if (state.mapSources.events) {
+    for (const event of state.quicketEvents) {
+      const mapItem = mapItemFromEvent(event);
+      if (mapItem) {
+        mapItems.push(mapItem);
+      }
+    }
+  }
+
+  return mapItems;
+}
+
+function renderMap() {
+  if (!window.L) {
+    elements.specialsMap.innerHTML = '<p class="empty">Map could not load.</p>';
     return;
   }
 
@@ -416,26 +723,44 @@ function renderSpecialsMap(items, locations) {
   }
 
   specialsMarkerLayer.clearLayers();
-  const bounds = [];
-  for (const group of venueGroups) {
-    const location = group.location;
-    const deals = group.items
-      .map((item) => `<li>${item.mapDay}: ${item.deal || item.description || item.title}</li>`)
-      .join("");
-    const title = location.url
-      ? `<a href="${location.url}" target="_blank" rel="noreferrer">${group.venue}</a>`
-      : group.venue;
-    const marker = L.marker([location.lat, location.lng]).bindPopup(
-      `<strong>${title}</strong><ul>${deals}</ul>`,
-    );
-    marker.addTo(specialsMarkerLayer);
-    bounds.push([location.lat, location.lng]);
+  const mapItems = buildMapItems();
+  if (!mapItems.length) {
+    const emptyText = "No mapped places for this filter.";
+    const empty = L.popup({ closeButton: false, autoClose: false, closeOnClick: false })
+      .setLatLng([-33.9249, 18.4241])
+      .setContent(`<p class="map-empty-popup">${emptyText}</p>`)
+      .openOn(specialsMap);
+    setTimeout(() => specialsMap.invalidateSize(), 0);
+    return;
   }
 
-  if (bounds.length === 1) {
-    specialsMap.setView(bounds[0], 14);
-  } else {
-    specialsMap.fitBounds(bounds, { padding: [24, 24] });
+  specialsMap.closePopup();
+  const bounds = [];
+  for (const item of mapItems) {
+    const title = item.url
+      ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a>`
+      : item.title;
+    const details = item.details.map((detail) => `<li>${detail}</li>`).join("");
+    const sourceLabel = item.source === "events" ? "Event" : item.source === "places" ? "Place" : "Special";
+    const icon = item.source === "places"
+      ? markerIcons.places
+      : item.source === "events"
+        ? markerIcons.events
+        : markerIcons.specials;
+    const marker = L.marker([item.lat, item.lng], { icon }).bindPopup(
+      `<strong>${title}</strong><p>${sourceLabel}</p><ul>${details}</ul>`,
+    );
+    marker.addTo(specialsMarkerLayer);
+    bounds.push([item.lat, item.lng]);
+  }
+
+  if (!hasAutoFitMap) {
+    if (bounds.length === 1) {
+      specialsMap.setView(bounds[0], 14);
+    } else {
+      specialsMap.fitBounds(bounds, { padding: [24, 24] });
+    }
+    hasAutoFitMap = true;
   }
   setTimeout(() => specialsMap.invalidateSize(), 0);
 }
@@ -577,7 +902,14 @@ async function loadQuicketEvents() {
     if (!response.ok) {
       throw new Error(`Could not load ${QUICKET_EVENTS_PATH}`);
     }
-    renderQuicketEvents(await response.json());
+    const events = await response.json();
+    state.quicketEvents = Array.isArray(events) ? events : [];
+    renderQuicketEvents(state.quicketEvents);
+    renderMap();
+    const changed = await enrichEventsWithCoordinates(state.quicketEvents);
+    if (changed) {
+      renderMap();
+    }
   } catch (error) {
     elements.quicketEventsList.innerHTML = `<p class="empty">${error.message}</p>`;
   }
@@ -634,9 +966,22 @@ elements.maxPrice.addEventListener("input", (event) => {
 
 elements.specialsMapRange.addEventListener("change", (event) => {
   state.specialsMapRange = event.target.value;
-  if (state.specialsPayload) {
-    renderSpecials(state.specialsPayload);
-  }
+  renderMap();
+});
+
+elements.mapSourcePlaces.addEventListener("change", (event) => {
+  state.mapSources.places = event.target.checked;
+  renderMap();
+});
+
+elements.mapSourceSpecials.addEventListener("change", (event) => {
+  state.mapSources.specials = event.target.checked;
+  renderMap();
+});
+
+elements.mapSourceEvents.addEventListener("change", (event) => {
+  state.mapSources.events = event.target.checked;
+  renderMap();
 });
 
 load();

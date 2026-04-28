@@ -15,6 +15,8 @@ REPO_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_FILE = DATA_DIR / "specials.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
+TAGS_CONFIG_FILE = Path(__file__).resolve().parent / "allowed_location_tags.json"
+CATEGORY_TAGS_CONFIG_FILE = Path(__file__).resolve().parent / "allowed_location_category_tags.json"
 
 TEXT_BLOCK_TYPES = {
     "paragraph",
@@ -47,7 +49,6 @@ SECTION_TITLES = {
     *DAY_ORDER,
 }
 
-
 def local_secret(name: str) -> str:
     if not LOCAL_SECRETS_FILE.exists():
         return ""
@@ -64,6 +65,36 @@ def local_secret(name: str) -> str:
 
 def secret(name: str) -> str:
     return os.environ.get(name, "").strip() or local_secret(name)
+
+
+def allowed_location_tags() -> set[str]:
+    if TAGS_CONFIG_FILE.exists():
+        try:
+            payload = json.loads(TAGS_CONFIG_FILE.read_text(encoding="utf-8"))
+            if isinstance(payload, list):
+                return {str(item).strip().lower() for item in payload if str(item).strip()}
+        except json.JSONDecodeError:
+            pass
+
+    raw = secret("ALLOWED_LOCATION_TAGS")
+    if not raw:
+        return set()
+    return {part.strip().lower() for part in raw.split(",") if part.strip()}
+
+
+def allowed_location_category_tags() -> set[str]:
+    if CATEGORY_TAGS_CONFIG_FILE.exists():
+        try:
+            payload = json.loads(CATEGORY_TAGS_CONFIG_FILE.read_text(encoding="utf-8"))
+            if isinstance(payload, list):
+                return {str(item).strip().lower() for item in payload if str(item).strip()}
+        except json.JSONDecodeError:
+            pass
+
+    raw = secret("ALLOWED_LOCATION_CATEGORY_TAGS")
+    if not raw:
+        return set()
+    return {part.strip().lower() for part in raw.split(",") if part.strip()}
 
 
 def rich_text_plain(rich_text: list[dict], include_strikethrough: bool = False) -> str:
@@ -121,6 +152,19 @@ def get_block_children(block_id: str, token: str) -> list[dict]:
         cursor = payload.get("next_cursor") or ""
 
 
+def flatten_blocks(blocks: list[dict], token: str) -> list[dict]:
+    flattened: list[dict] = []
+    stack = list(blocks)
+    while stack:
+        block = stack.pop(0)
+        flattened.append(block)
+        if block.get("has_children"):
+            children = get_block_children(block.get("id", ""), token)
+            if children:
+                stack[0:0] = children
+    return flattened
+
+
 def plain_text_from_block(block: dict) -> str:
     block_type = block.get("type", "")
     if block_type not in TEXT_BLOCK_TYPES:
@@ -171,15 +215,28 @@ def days_for_group(title: str) -> list[str]:
 
 def parse_location(text: str) -> dict | None:
     match = re.match(
-        r"^\s*(?P<venue>[^:]+):\s*(?P<lat>-?\d+(?:\.\d+)?)\s*,\s*(?P<lng>-?\d+(?:\.\d+)?)(?:\s*\|\s*(?P<url>https?://\S+))?",
+        r"^\s*(?P<venue>[^:]+):\s*(?P<lat>-?\d+(?:\.\d+)?)\s*,\s*(?P<lng>-?\d+(?:\.\d+)?)(?:\s*;\s*\((?P<tags>[^)]*)\))?(?:\s*\|\s*(?P<url>https?://\S+))?",
         text,
     )
     if not match:
         return None
+    raw_tags = (match.group("tags") or "").strip()
+    tags = [tag.strip().lower() for tag in raw_tags.split(",") if tag.strip()]
+    allowed_types = allowed_location_tags()
+    allowed_categories = allowed_location_category_tags()
+    if allowed_types or allowed_categories:
+        types = [tag for tag in tags if tag in allowed_types] if allowed_types else []
+        categories = [tag for tag in tags if tag in allowed_categories] if allowed_categories else []
+    else:
+        types = tags[:]
+        categories = []
     return {
         "venue": match.group("venue").strip(),
         "lat": float(match.group("lat")),
         "lng": float(match.group("lng")),
+        "types": types,
+        "categories": categories,
+        "tags": list(dict.fromkeys(types + categories)),
         "url": (match.group("url") or "").strip(),
     }
 
@@ -258,7 +315,7 @@ def scrape_specials() -> dict:
 
     try:
         page = notion_request(f"pages/{PAGE_ID}", token)
-        blocks = get_block_children(PAGE_ID, token)
+        blocks = flatten_blocks(get_block_children(PAGE_ID, token), token)
         groups, locations = split_specials_and_locations(specials_from_blocks(blocks))
         return {
             "source": PAGE_URL,
