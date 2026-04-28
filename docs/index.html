@@ -13,39 +13,19 @@
         <h1>My Watchlist</h1>
       </div>
       <div class="header-actions">
-        <label>
-          Section
-          <select id="section-filter">
-            <option value="one-piece">One Piece cards</option>
-            <option value="events">Events</option>
-          </select>
-        </label>
         <a class="source-link" href="data/all_stores_missing_available.csv">CSV</a>
       </div>
     </header>
 
     <main>
-      <section id="one-piece-section">
-        <section class="summary-grid" aria-label="Summary">
-        <div class="metric">
-          <span class="metric-label">Listings</span>
-          <strong id="listing-count">0</strong>
-        </div>
-        <div class="metric">
-          <span class="metric-label">Cards</span>
-          <strong id="card-count">0</strong>
-        </div>
-        <div class="metric">
-          <span class="metric-label">Stores</span>
-          <strong id="store-count">0</strong>
-        </div>
-        <div class="metric">
-          <span class="metric-label">Cheapest</span>
-          <strong id="cheapest-price">R 0.00</strong>
-        </div>
-        </section>
+      <details class="dashboard-section" open>
+        <summary>
+          <span>One Piece cards</span>
+          <span class="section-hint">Missing card listings</span>
+        </summary>
 
-        <section class="controls" aria-label="Filters">
+        <div class="section-content">
+          <section class="controls" aria-label="Filters">
           <label>
             Search
             <input id="search" type="search" placeholder="Card, name, rarity, store">
@@ -70,34 +50,40 @@
             Max price
             <input id="max-price" type="number" min="0" step="1" value="200">
           </label>
-        </section>
+          </section>
 
-        <section class="table-shell" aria-label="Missing card listings">
-          <table>
-            <thead>
-              <tr>
-                <th>Card</th>
-                <th>Price</th>
-                <th>Name</th>
-                <th>Rarity</th>
-                <th>Store</th>
-                <th>Stock</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody id="cards-body">
-              <tr>
-                <td colspan="7" class="empty">Loading cards...</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      </section>
+          <section class="table-shell" aria-label="Missing card listings">
+            <table>
+              <thead>
+                <tr>
+                  <th>Card</th>
+                  <th>Price</th>
+                  <th>Name</th>
+                  <th>Rarity</th>
+                  <th>Store</th>
+                  <th>Stock</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="cards-body">
+                <tr>
+                  <td colspan="7" class="empty">Loading cards...</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </details>
 
-      <section id="events-section" class="placeholder-section" hidden>
-        <h2>Events</h2>
-        <p>Event data will appear here once that collector is added.</p>
-      </section>
+      <details class="dashboard-section" open>
+        <summary>
+          <span>Events</span>
+          <span class="section-hint">Coming soon</span>
+        </summary>
+        <div class="section-content placeholder-section">
+          <p>Event data will appear here once that collector is added.</p>
+        </div>
+      </details>
     </main>
 
     <script src="app.js"></script>
