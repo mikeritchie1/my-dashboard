@@ -236,6 +236,69 @@ td.card-number {
   color: var(--muted);
 }
 
+.specials-list {
+  display: grid;
+  gap: 10px;
+  padding-top: 12px;
+}
+
+.specials-subtitle {
+  margin: 10px 0 0;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.special-group {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfe;
+}
+
+.today-special-group {
+  border-color: #74c69d;
+  background: #eaf8ef;
+}
+
+.special-group h4 {
+  margin: 0;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.special-group ul {
+  display: grid;
+  gap: 7px;
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.special-group li {
+  color: #475467;
+}
+
+.special-group li strong {
+  color: var(--text);
+}
+
+.special-empty {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.special-group a {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.special-group a:hover {
+  text-decoration: underline;
+}
+
 .subsection-title {
   margin: 18px 0 0;
   color: #344054;
@@ -246,7 +309,7 @@ td.card-number {
 
 .poster-grid {
   display: grid;
-  grid-template-columns: repeat(12, minmax(64px, 1fr));
+  grid-template-columns: repeat(10, minmax(72px, 1fr));
   gap: 8px;
   padding-top: 18px;
 }

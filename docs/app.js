@@ -2,6 +2,7 @@ const CSV_PATH = "data/all_stores_missing_available.csv";
 const NEW_CARDS_PATH = "data/new_missing_cards.json";
 const RELEASES_PATH = "data/pahe_latest.json";
 const COMING_SOON_PATH = "data/coming_soon.json";
+const SPECIALS_PATH = "data/specials.json";
 
 const state = {
   rows: [],
@@ -22,6 +23,7 @@ const elements = {
   maxPrice: document.querySelector("#max-price"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
+  specialsList: document.querySelector("#specials-list"),
 };
 
 function parseCsv(text) {
@@ -71,6 +73,39 @@ function parseCsv(text) {
 function money(value) {
   const amount = Number.parseFloat(value || "0");
   return `R ${amount.toFixed(2)}`;
+}
+
+function ordinal(value) {
+  const remainder = value % 100;
+  if (remainder >= 11 && remainder <= 13) {
+    return `${value}th`;
+  }
+  if (value % 10 === 1) {
+    return `${value}st`;
+  }
+  if (value % 10 === 2) {
+    return `${value}nd`;
+  }
+  if (value % 10 === 3) {
+    return `${value}rd`;
+  }
+  return `${value}th`;
+}
+
+function displayDate(value) {
+  if (!value) {
+    return "";
+  }
+  const [year, month, day] = value.split("-").map(Number);
+  if (!year || !month || !day) {
+    return value;
+  }
+  const date = new Date(Date.UTC(year, month - 1, day));
+  const monthName = new Intl.DateTimeFormat("en-ZA", {
+    month: "long",
+    timeZone: "UTC",
+  }).format(date);
+  return `${ordinal(day)} ${monthName} ${year}`;
 }
 
 function rowKey(row) {
@@ -185,11 +220,95 @@ function renderPosters(container, items, emptyText) {
     image.loading = "lazy";
 
     const title = document.createElement("span");
-    title.textContent = item.release_date ? `${item.title} (${item.release_date})` : item.title;
+    const releaseDate = displayDate(item.release_date);
+    title.textContent = releaseDate ? `${item.title} (${releaseDate})` : item.title;
 
     link.append(image, title);
     container.append(link);
   }
+}
+
+function renderSpecials(payload) {
+  const groups = payload.groups || payload.items || [];
+  if (payload.error) {
+    elements.specialsList.innerHTML = `<p class="empty">${payload.error}</p>`;
+    return;
+  }
+  if (!groups.length) {
+    elements.specialsList.innerHTML = '<p class="empty">No specials found.</p>';
+    return;
+  }
+
+  elements.specialsList.innerHTML = "";
+  const dayOrder = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  const today = new Intl.DateTimeFormat("en-US", {
+    weekday: "long",
+    timeZone: "Africa/Johannesburg",
+  }).format(new Date());
+  const todayIndex = dayOrder.indexOf(today);
+  const rollingWeek = [...dayOrder.slice(todayIndex), ...dayOrder.slice(0, todayIndex)];
+
+  for (const day of rollingWeek) {
+    const dayItems = [];
+    for (const group of groups) {
+      if ((group.days || []).includes(day)) {
+        dayItems.push(...(group.items || []));
+      }
+    }
+
+    elements.specialsList.append(specialDayElement(day, dayItems, day === today));
+  }
+}
+
+function specialDayElement(day, items, isToday) {
+    const section = document.createElement("section");
+    section.className = "special-group";
+    if (isToday) {
+      section.classList.add("today-special-group");
+    }
+
+    const heading = document.createElement("h4");
+    heading.textContent = isToday ? `Today (${day})` : day;
+    section.append(heading);
+
+    if (!items.length) {
+      const empty = document.createElement("p");
+      empty.className = "special-empty";
+      empty.textContent = "No specials listed.";
+      section.append(empty);
+      return section;
+    }
+
+    const list = document.createElement("ul");
+    for (const item of items) {
+      const listItem = document.createElement("li");
+      if (item.url) {
+        const link = document.createElement("a");
+        link.href = item.url;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = item.description || item.title;
+        listItem.append(link);
+      } else {
+        const venue = document.createElement("strong");
+        venue.textContent = item.venue || item.title;
+        const deal = document.createElement("span");
+        deal.textContent = item.deal ? ` - ${item.deal}` : ` - ${item.description || ""}`;
+        listItem.append(venue, deal);
+      }
+      list.append(listItem);
+    }
+
+    section.append(list);
+    return section;
 }
 
 function render() {
@@ -229,6 +348,18 @@ async function loadComingSoon() {
     renderPosters(elements.comingSoonGrid, payload.items || [], "No coming soon movies found.");
   } catch (error) {
     elements.comingSoonGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+async function loadSpecials() {
+  try {
+    const response = await fetch(SPECIALS_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${SPECIALS_PATH}`);
+    }
+    renderSpecials(await response.json());
+  } catch (error) {
+    elements.specialsList.innerHTML = `<p class="empty">${error.message}</p>`;
   }
 }
 
@@ -284,3 +415,4 @@ elements.maxPrice.addEventListener("input", (event) => {
 load();
 loadReleases();
 loadComingSoon();
+loadSpecials();

@@ -72,7 +72,7 @@ def fetch_html(url: str) -> str:
         return response.read().decode("utf-8", errors="replace")
 
 
-def scrape_latest(limit: int = 12) -> list[dict[str, str]]:
+def scrape_latest(limit: int = 10) -> list[dict[str, str]]:
     parser = PosterGridParser()
     parser.feed(fetch_html(SOURCE_URL))
     return parser.items[:limit]
