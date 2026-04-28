@@ -11,6 +11,8 @@ from email.message import EmailMessage
 from pathlib import Path
 
 
+ONE_PIECE_DIR = Path(__file__).resolve().parent
+ONE_PIECE_DATA_DIR = ONE_PIECE_DIR / "data"
 REPORT_PREFIXES = {
     "all": "all_stores_missing_available",
     "bigbang": "big_bang_missing_available",
@@ -41,7 +43,7 @@ def report_prefix(store: str) -> str:
 
 
 def current_report(store: str) -> Path:
-    return Path(f"{report_prefix(store)}.csv")
+    return ONE_PIECE_DATA_DIR / f"{report_prefix(store)}.csv"
 
 
 def previous_report(store: str) -> Path:
@@ -50,7 +52,7 @@ def previous_report(store: str) -> Path:
 
 def run_scraper(store: str) -> None:
     subprocess.run(
-        [sys.executable, "find_missing_cards.py", store],
+        [sys.executable, str(ONE_PIECE_DIR / "find_missing_cards.py"), store],
         check=True,
     )
 

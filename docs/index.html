@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Card Watch Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">One Piece</p>
+        <h1>Missing Cards Dashboard</h1>
+      </div>
+      <a class="source-link" href="data/all_stores_missing_available.csv">CSV</a>
+    </header>
+
+    <main>
+      <section class="summary-grid" aria-label="Summary">
+        <div class="metric">
+          <span class="metric-label">Listings</span>
+          <strong id="listing-count">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Cards</span>
+          <strong id="card-count">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Stores</span>
+          <strong id="store-count">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Cheapest</span>
+          <strong id="cheapest-price">R 0.00</strong>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Filters">
+        <label>
+          Search
+          <input id="search" type="search" placeholder="Card, name, rarity, store">
+        </label>
+        <label>
+          Store
+          <select id="store-filter">
+            <option value="">All stores</option>
+          </select>
+        </label>
+        <label>
+          Rarity
+          <select id="rarity-filter">
+            <option value="">All rarities</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="table-shell" aria-label="Missing card listings">
+        <table>
+          <thead>
+            <tr>
+              <th>Card</th>
+              <th>Price</th>
+              <th>Name</th>
+              <th>Rarity</th>
+              <th>Store</th>
+              <th>Stock</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="cards-body">
+            <tr>
+              <td colspan="7" class="empty">Loading cards...</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

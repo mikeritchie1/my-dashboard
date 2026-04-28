@@ -11,7 +11,9 @@ from pathlib import Path
 from zipfile import ZipFile
 
 
-WORKBOOK = Path("One Piece Cards.xlsx")
+ONE_PIECE_DIR = Path(__file__).resolve().parent
+WORKBOOK = ONE_PIECE_DIR / "One Piece Cards.xlsx"
+ONE_PIECE_DATA_DIR = ONE_PIECE_DIR / "data"
 
 KNIGHTLY_COLLECTION_URL = "https://www.knightlygaming.co.za/collections/one-piece-singles"
 KNIGHTLY_PRODUCTS_URL = KNIGHTLY_COLLECTION_URL + "/products.json?limit=250&page={page}"
@@ -163,6 +165,7 @@ def sorted_matches(matches: list[dict[str, object]]) -> list[dict[str, object]]:
 
 def write_reports(prefix: str, heading: str, matches: list[dict[str, object]]) -> None:
     matches = sorted_matches(matches)
+    ONE_PIECE_DATA_DIR.mkdir(parents=True, exist_ok=True)
     fieldnames = [
         "card_number",
         "price",
@@ -176,12 +179,12 @@ def write_reports(prefix: str, heading: str, matches: list[dict[str, object]]) -
         "url",
     ]
 
-    with Path(f"{prefix}.csv").open("w", newline="", encoding="utf-8") as file:
+    with (ONE_PIECE_DATA_DIR / f"{prefix}.csv").open("w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(matches)
 
-    with Path(f"{prefix}.md").open("w", encoding="utf-8") as file:
+    with (ONE_PIECE_DATA_DIR / f"{prefix}.md").open("w", encoding="utf-8") as file:
         file.write(f"# {heading}\n\n")
         file.write(
             f"Found {len(matches)} purchasable listings across "
