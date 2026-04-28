@@ -24,7 +24,11 @@ const elements = {
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
   specialsList: document.querySelector("#specials-list"),
+  specialsMap: document.querySelector("#specials-map"),
 };
+
+let specialsMap;
+let specialsMarkerLayer;
 
 function parseCsv(text) {
   const rows = [];
@@ -230,6 +234,7 @@ function renderPosters(container, items, emptyText) {
 
 function renderSpecials(payload) {
   const groups = payload.groups || payload.items || [];
+  const locations = payload.locations || {};
   if (payload.error) {
     elements.specialsList.innerHTML = `<p class="empty">${payload.error}</p>`;
     return;
@@ -264,8 +269,82 @@ function renderSpecials(payload) {
       }
     }
 
+    if (day === today) {
+      renderSpecialsMap(dayItems, locations);
+    }
     elements.specialsList.append(specialDayElement(day, dayItems, day === today));
   }
+}
+
+function normalizeVenue(value) {
+  return (value || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+function locationForVenue(venue, locations) {
+  const normalizedVenue = normalizeVenue(venue);
+  for (const location of Object.values(locations)) {
+    const normalizedLocation = normalizeVenue(location.venue);
+    if (
+      normalizedVenue === normalizedLocation ||
+      normalizedVenue.startsWith(normalizedLocation) ||
+      normalizedLocation.startsWith(normalizedVenue)
+    ) {
+      return location;
+    }
+  }
+  return null;
+}
+
+function renderSpecialsMap(items, locations) {
+  if (!window.L) {
+    elements.specialsMap.innerHTML = '<p class="empty">Map could not load.</p>';
+    return;
+  }
+
+  const venueGroups = groupItemsByVenue(items)
+    .map((group) => ({
+      ...group,
+      location: locationForVenue(group.venue, locations),
+    }))
+    .filter((group) => group.location);
+
+  if (!venueGroups.length) {
+    elements.specialsMap.innerHTML = '<p class="empty">No mapped specials for today.</p>';
+    return;
+  }
+
+  if (!specialsMap) {
+    specialsMap = L.map(elements.specialsMap, {
+      scrollWheelZoom: false,
+    }).setView([-33.9249, 18.4241], 12);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: "&copy; OpenStreetMap contributors",
+    }).addTo(specialsMap);
+    specialsMarkerLayer = L.layerGroup().addTo(specialsMap);
+  }
+
+  specialsMarkerLayer.clearLayers();
+  const bounds = [];
+  for (const group of venueGroups) {
+    const location = group.location;
+    const deals = group.items.map((item) => `<li>${item.deal || item.description || item.title}</li>`).join("");
+    const title = location.url
+      ? `<a href="${location.url}" target="_blank" rel="noreferrer">${group.venue}</a>`
+      : group.venue;
+    const marker = L.marker([location.lat, location.lng]).bindPopup(
+      `<strong>${title}</strong><ul>${deals}</ul>`,
+    );
+    marker.addTo(specialsMarkerLayer);
+    bounds.push([location.lat, location.lng]);
+  }
+
+  if (bounds.length === 1) {
+    specialsMap.setView(bounds[0], 14);
+  } else {
+    specialsMap.fitBounds(bounds, { padding: [24, 24] });
+  }
+  setTimeout(() => specialsMap.invalidateSize(), 0);
 }
 
 function specialDayElement(day, items, isToday) {

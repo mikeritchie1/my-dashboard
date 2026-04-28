@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -25,6 +26,7 @@
         </summary>
         <div class="section-content">
           <h3 class="subsection-title">Specials</h3>
+          <div id="specials-map" class="specials-map"></div>
           <div id="specials-list" class="specials-list">
             <p class="empty">Loading specials...</p>
           </div>
@@ -106,6 +108,7 @@
       </details>
     </main>
 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

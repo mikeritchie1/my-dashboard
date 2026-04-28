@@ -1,6 +1,14 @@
 {
   "source": "https://www.notion.so/Specials-082fa9625a9f4f949d03a8d1517c76f8",
   "title": "Specials",
+  "locations": {
+    "Jooma": {
+      "venue": "Jooma",
+      "lat": -33.91746469246496,
+      "lng": 18.38637046428983,
+      "url": ""
+    }
+  },
   "groups": [
     {
       "title": "Everyday",
@@ -15,45 +23,45 @@
       ],
       "items": [
         {
-          "venue": "Joomah",
-          "title": "Joomah",
+          "venue": "Jooma",
+          "title": "Jooma",
           "deal": "R25 Americano + Pastry",
-          "description": "Joomah - R25 Americano + Pastry",
+          "description": "Jooma - R25 Americano + Pastry",
           "url": ""
         },
         {
-          "venue": "Joomah",
-          "title": "Joomah",
+          "venue": "Jooma",
+          "title": "Jooma",
           "deal": "R35 Americano + Muffin",
-          "description": "Joomah - R35 Americano + Muffin",
+          "description": "Jooma - R35 Americano + Muffin",
           "url": ""
         },
         {
-          "venue": "Joomah",
-          "title": "Joomah",
+          "venue": "Jooma",
+          "title": "Jooma",
           "deal": "R115 Pizza + Glass Wine",
-          "description": "Joomah - R115 Pizza + Glass Wine",
+          "description": "Jooma - R115 Pizza + Glass Wine",
           "url": ""
         },
         {
-          "venue": "Joomah",
-          "title": "Joomah",
+          "venue": "Jooma",
+          "title": "Jooma",
           "deal": "R110 Burger Chips + Beer",
-          "description": "Joomah - R110 Burger Chips + Beer",
+          "description": "Jooma - R110 Burger Chips + Beer",
           "url": ""
         },
         {
           "venue": "Brauhaus",
           "title": "Brauhaus",
-          "deal": "specials every day of the week (need to update)",
-          "description": "Brauhaus -  specials every day of the week (need to update)",
+          "deal": "specials every day of the week",
+          "description": "Brauhaus -  specials every day of the week",
           "url": ""
         },
         {
           "venue": "Rocomamas",
           "title": "Rocomamas",
-          "deal": "R139 for 3 course meal (excl drinks) (Hmmmmm)",
-          "description": "Rocomamas - R139 for 3 course meal (excl drinks) (Hmmmmm)",
+          "deal": "R139 for 3 course meal (excl drinks)",
+          "description": "Rocomamas - R139 for 3 course meal (excl drinks)",
           "url": ""
         },
         {

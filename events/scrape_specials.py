@@ -42,6 +42,8 @@ DAY_ORDER = [
 SECTION_TITLES = {
     "Everyday",
     "Monday to Thursday",
+    "Location",
+    "Locations",
     *DAY_ORDER,
 }
 
@@ -167,6 +169,21 @@ def days_for_group(title: str) -> list[str]:
     return []
 
 
+def parse_location(text: str) -> dict | None:
+    match = re.match(
+        r"^\s*(?P<venue>[^:]+):\s*(?P<lat>-?\d+(?:\.\d+)?)\s*,\s*(?P<lng>-?\d+(?:\.\d+)?)(?:\s*\|\s*(?P<url>https?://\S+))?",
+        text,
+    )
+    if not match:
+        return None
+    return {
+        "venue": match.group("venue").strip(),
+        "lat": float(match.group("lat")),
+        "lng": float(match.group("lng")),
+        "url": (match.group("url") or "").strip(),
+    }
+
+
 def specials_from_blocks(blocks: list[dict]) -> list[dict]:
     groups: list[dict] = []
     current_group: dict | None = None
@@ -208,6 +225,22 @@ def specials_from_blocks(blocks: list[dict]) -> list[dict]:
     return [group for group in groups if group["items"]]
 
 
+def split_specials_and_locations(groups: list[dict]) -> tuple[list[dict], dict[str, dict]]:
+    locations: dict[str, dict] = {}
+    special_groups: list[dict] = []
+
+    for group in groups:
+        if group["title"] in {"Location", "Locations"}:
+            for item in group["items"]:
+                location = parse_location(item["description"])
+                if location:
+                    locations[location["venue"]] = location
+            continue
+        special_groups.append(group)
+
+    return special_groups, locations
+
+
 def write_payload(payload: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
@@ -226,10 +259,12 @@ def scrape_specials() -> dict:
     try:
         page = notion_request(f"pages/{PAGE_ID}", token)
         blocks = get_block_children(PAGE_ID, token)
+        groups, locations = split_specials_and_locations(specials_from_blocks(blocks))
         return {
             "source": PAGE_URL,
             "title": page_title(page),
-            "groups": specials_from_blocks(blocks),
+            "locations": locations,
+            "groups": groups,
         }
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")
