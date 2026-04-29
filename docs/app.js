@@ -1,4 +1,4 @@
-const CSV_PATH = "data/all_stores_missing_available.csv";
+﻿const CSV_PATH = "data/all_stores_missing_available.csv";
 const NEW_CARDS_PATH = "data/new_missing_cards.json";
 const RELEASES_PATH = "data/pahe_latest.json";
 const COMING_SOON_PATH = "data/coming_soon.json";
@@ -6,6 +6,7 @@ const SPECIALS_PATH = "data/specials.json";
 const QUICKET_EVENTS_PATH = "data/quicket_events.json";
 const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
+const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
 
 const state = {
   rows: [],
@@ -322,24 +323,24 @@ function setHeaderDate() {
 
 function weatherIcon(weatherCode) {
   if (weatherCode === 0) {
-    return "🌞";
+    return "\uD83C\uDF1E";
   }
   if ([1, 2, 3].includes(weatherCode)) {
-    return "🌤️";
+    return "\uD83C\uDF24\uFE0F";
   }
   if ([45, 48].includes(weatherCode)) {
-    return "🌫️";
+    return "\uD83C\uDF2B\uFE0F";
   }
   if ([51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82].includes(weatherCode)) {
-    return "🌧️";
+    return "\uD83C\uDF27\uFE0F";
   }
   if ([71, 73, 75, 77, 85, 86].includes(weatherCode)) {
-    return "❄️";
+    return "\u2744\uFE0F";
   }
   if ([95, 96, 99].includes(weatherCode)) {
-    return "⛈️";
+    return "\u26C8\uFE0F";
   }
-  return "☁️";
+  return "\u2601\uFE0F";
 }
 
 function weatherDayLabel(dateValue) {
@@ -366,19 +367,58 @@ function renderWeather(payload) {
     min: daily.temperature_2m_min[index],
   }));
 
-  elements.weatherCards.innerHTML = "";
-  for (const item of items) {
-    const card = document.createElement("article");
-    card.className = "weather-card";
-    card.innerHTML = `
-      <p class="weather-day">${weatherDayLabel(item.date)}</p>
-      <p class="weather-icon">${weatherIcon(item.code)}</p>
-      <p class="weather-temp">${Math.round(item.max)}° / ${Math.round(item.min)}°</p>
-    `;
-    elements.weatherCards.append(card);
-  }
+  loadHolidaysForDates(items.map((item) => item.date))
+    .then((holidayByDate) => {
+      elements.weatherCards.innerHTML = "";
+      for (const item of items) {
+        const card = document.createElement("article");
+        card.className = "weather-card";
+        const holidayName = holidayByDate.get(item.date) || "";
+        const holidayHtml = holidayName ? `<p class="weather-holiday">${holidayName}</p>` : "";
+        card.innerHTML = `
+          <p class="weather-day">${weatherDayLabel(item.date)}</p>
+          <p class="weather-icon">${weatherIcon(item.code)}</p>
+          <p class="weather-temp">${Math.round(item.max)}° / ${Math.round(item.min)}°</p>
+          ${holidayHtml}
+        `;
+        elements.weatherCards.append(card);
+      }
+    })
+    .catch(() => {
+      elements.weatherCards.innerHTML = "";
+      for (const item of items) {
+        const card = document.createElement("article");
+        card.className = "weather-card";
+        card.innerHTML = `
+          <p class="weather-day">${weatherDayLabel(item.date)}</p>
+          <p class="weather-icon">${weatherIcon(item.code)}</p>
+          <p class="weather-temp">${Math.round(item.max)}° / ${Math.round(item.min)}°</p>
+        `;
+        elements.weatherCards.append(card);
+      }
+    });
 }
 
+async function loadHolidaysForDates(dateStrings) {
+  const years = unique(dateStrings.map((value) => value.split("-")[0]));
+  const holidayByDate = new Map();
+  for (const year of years) {
+    const response = await fetch(HOLIDAYS_PATH.replace("{year}", year), { cache: "no-store" });
+    if (!response.ok) {
+      continue;
+    }
+    const payload = await response.json();
+    if (!Array.isArray(payload)) {
+      continue;
+    }
+    for (const holiday of payload) {
+      if (dateStrings.includes(holiday.date)) {
+        holidayByDate.set(holiday.date, holiday.localName || holiday.name || "Public Holiday");
+      }
+    }
+  }
+  return holidayByDate;
+}
 function renderSpecials(payload) {
   state.specialsPayload = payload;
   const groups = payload.groups || payload.items || [];
@@ -1243,3 +1283,5 @@ loadReleases();
 loadComingSoon();
 loadSpecials();
 loadQuicketEvents();
+
+
