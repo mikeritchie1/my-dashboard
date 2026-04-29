@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260429-28">
+    <link rel="stylesheet" href="styles.css?v=20260429-34">
   </head>
   <body>
     <header class="topbar">
@@ -40,12 +40,12 @@
               <button type="button" class="map-range-button" data-range="next-month">Next month</button>
               <button type="button" class="map-range-button" data-range="next-year">Next year</button>
               <div class="map-date-picker">
-                <button id="custom-start-date-button" type="button" class="map-range-button map-date-button" aria-label="From date">dd/mm/yyyy</button>
+                <button id="custom-start-date-button" type="button" class="map-range-button map-date-button" aria-label="From date">Start date</button>
                 <input id="custom-start-date" type="date" aria-label="From date">
               </div>
               <span class="custom-date-separator">to</span>
               <div class="map-date-picker">
-                <button id="custom-end-date-button" type="button" class="map-range-button map-date-button" aria-label="To date">dd/mm/yyyy</button>
+                <button id="custom-end-date-button" type="button" class="map-range-button map-date-button" aria-label="To date">End date</button>
                 <input id="custom-end-date" type="date" aria-label="To date">
               </div>
             </div>
@@ -170,6 +170,6 @@
     </main>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260429-30"></script>
+    <script src="app.js?v=20260429-33"></script>
   </body>
 </html>

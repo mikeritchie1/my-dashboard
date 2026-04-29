@@ -496,11 +496,11 @@ td.card-number {
 }
 
 .subsection-row {
-  display: flex;
-  align-items: end;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr) 320px;
+  align-items: center;
   gap: 14px;
-  flex-wrap: wrap;
+  padding: 10px 0;
 }
 
 .compact-label {
@@ -511,8 +511,8 @@ td.card-number {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-left: auto;
-  margin-right: auto;
+  grid-column: 2;
+  justify-self: center;
   flex-wrap: nowrap;
 }
 
@@ -558,12 +558,11 @@ td.card-number {
 
 .map-date-picker input[type="date"] {
   position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 34px;
+  width: 1px;
+  height: 1px;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
+  pointer-events: none;
 }
 
 .map-date-button.is-selected {
@@ -584,7 +583,7 @@ td.card-number {
   grid-template-columns: 260px minmax(0, 1fr) 320px;
   align-items: stretch;
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 0;
 }
 
 .map-sidebar {

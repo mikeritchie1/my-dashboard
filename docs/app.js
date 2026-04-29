@@ -63,7 +63,7 @@ const elements = {
   todayDate: document.querySelector("#today-date"),
   lastScraped: document.querySelector("#last-scraped"),
 };
-const mapRangeButtons = [...document.querySelectorAll(".map-range-button")];
+const mapRangeButtons = [...document.querySelectorAll(".map-range-button[data-range]")];
 
 let specialsMap;
 let specialsMarkerLayer;
@@ -890,11 +890,11 @@ function syncRangeButtons() {
   }
   if (elements.customStartDateButton) {
     elements.customStartDateButton.classList.toggle("is-selected", Boolean(state.customStartDate));
-    elements.customStartDateButton.textContent = state.customStartDate || "dd/mm/yyyy";
+    elements.customStartDateButton.textContent = state.customStartDate || "Start date";
   }
   if (elements.customEndDateButton) {
     elements.customEndDateButton.classList.toggle("is-selected", Boolean(state.customEndDate));
-    elements.customEndDateButton.textContent = state.customEndDate || "dd/mm/yyyy";
+    elements.customEndDateButton.textContent = state.customEndDate || "End date";
   }
 }
 
