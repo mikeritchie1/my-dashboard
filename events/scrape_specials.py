@@ -7,10 +7,16 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from env import get as env_get
 
 
 NOTION_VERSION = "2022-06-28"
-PAGE_URL = "https://www.notion.so/Places-082fa9625a9f4f949d03a8d1517c76f8"
+PAGE_URL = env_get("NOTION_SPECIALS_PAGE_URL", "https://www.notion.so/Places-082fa9625a9f4f949d03a8d1517c76f8")
+NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
+GOOGLE_PLACES_SEARCH_URL = env_get("SCRAPE_GOOGLE_PLACES_SEARCH_URL", "https://places.googleapis.com/v1/places:searchText")
 PAGE_ID = "082fa9625a9f4f949d03a8d1517c76f8"
 SPECIALS_DATABASE_ID = "NOTION_SPECIALS_DATABASE_ID"
 SPECIALS_DATABASE_URL = "NOTION_SPECIALS_DATABASE_URL"
@@ -88,7 +94,7 @@ def local_secret(name: str) -> str:
 
 
 def secret(name: str) -> str:
-    return os.environ.get(name, "").strip() or local_secret(name)
+    return env_get(name, "") or local_secret(name)
 
 
 def allowed_location_tags() -> set[str]:
@@ -133,7 +139,7 @@ def rich_text_plain(rich_text: list[dict], include_strikethrough: bool = False) 
 
 def notion_request(path: str, token: str) -> dict:
     request = urllib.request.Request(
-        f"https://api.notion.com/v1/{path}",
+        f"{NOTION_API_BASE_URL}/{path}",
         headers={
             "Authorization": f"Bearer {token}",
             "Notion-Version": NOTION_VERSION,
@@ -175,7 +181,7 @@ def fetch_json_post(url: str, headers: dict[str, str], body: dict) -> dict:
 
 def notion_post(path: str, token: str, body: dict) -> dict:
     request = urllib.request.Request(
-        f"https://api.notion.com/v1/{path}",
+        f"{NOTION_API_BASE_URL}/{path}",
         data=json.dumps(body).encode("utf-8"),
         headers={
             "Authorization": f"Bearer {token}",
@@ -471,7 +477,7 @@ def google_places_search_text_new(api_key: str, text_query: str, lat: float, lng
             }
         },
     }
-    payload = fetch_json_post("https://places.googleapis.com/v1/places:searchText", headers, body)
+    payload = fetch_json_post(GOOGLE_PLACES_SEARCH_URL, headers, body)
     places = payload.get("places", []) if isinstance(payload, dict) else []
     return places[0] if places else {}
 

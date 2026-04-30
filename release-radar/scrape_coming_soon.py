@@ -5,10 +5,15 @@ import os
 import urllib.parse
 import urllib.request
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from env import get as env_get
 
 
-API_URL = "https://api.themoviedb.org/3/movie/upcoming"
-IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w342"
+API_URL = env_get("SCRAPE_TMDB_UPCOMING_API_URL", "https://api.themoviedb.org/3/movie/upcoming")
+IMAGE_BASE_URL = env_get("SCRAPE_TMDB_IMAGE_BASE_URL", "https://image.tmdb.org/t/p/w342")
+TMDB_SITE_MOVIE_BASE_URL = env_get("SCRAPE_TMDB_SITE_MOVIE_BASE_URL", "https://www.themoviedb.org/movie")
 DATA_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_FILE = DATA_DIR / "coming_soon.json"
 REPO_DIR = Path(__file__).resolve().parents[1]
@@ -30,7 +35,7 @@ def local_secret(name: str) -> str:
 
 
 def secret(name: str) -> str:
-    value = os.environ.get(name, "").strip() or local_secret(name)
+    value = env_get(name, "") or local_secret(name)
     if value.lower().startswith("bearer "):
         value = value[7:].strip()
     return value
@@ -71,7 +76,7 @@ def fetch_upcoming(page: int = 1, region: str = "", language: str = "en-US") -> 
 
 
 def movie_url(movie_id: int) -> str:
-    return f"https://www.themoviedb.org/movie/{movie_id}"
+    return f"{TMDB_SITE_MOVIE_BASE_URL}/{movie_id}"
 
 
 def normalize_movies(results: list[dict], limit: int = 10) -> list[dict[str, str]]:

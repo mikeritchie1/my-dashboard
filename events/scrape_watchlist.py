@@ -8,6 +8,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from env import get as env_get
 
 
 NOTION_VERSION = "2022-06-28"
@@ -21,9 +25,12 @@ MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"
 DOCS_DATA_DIR = REPO_DIR / "docs" / "data"
 DOCS_OUTPUT_FILE = DOCS_DATA_DIR / "watchlist.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
-TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w342"
-TMDB_SITE_MOVIE_BASE = "https://www.themoviedb.org/movie"
-TMDB_SITE_TV_BASE = "https://www.themoviedb.org/tv"
+NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
+TMDB_API_BASE_URL = env_get("SCRAPE_TMDB_API_BASE_URL", "https://api.themoviedb.org/3")
+TMDB_IMAGE_BASE = env_get("SCRAPE_TMDB_IMAGE_BASE_URL", "https://image.tmdb.org/t/p/w342")
+TMDB_SITE_MOVIE_BASE = env_get("SCRAPE_TMDB_SITE_MOVIE_BASE_URL", "https://www.themoviedb.org/movie")
+TMDB_SITE_TV_BASE = env_get("SCRAPE_TMDB_SITE_TV_BASE_URL", "https://www.themoviedb.org/tv")
+YOUTUBE_WATCH_BASE_URL = env_get("SCRAPE_YOUTUBE_WATCH_BASE_URL", "https://www.youtube.com/watch?v=")
 DETAIL_FIELDS = {
     "tmdb_id",
     "media_type",
@@ -69,7 +76,7 @@ def local_secret(name: str) -> str:
 
 
 def secret(name: str) -> str:
-    return os.environ.get(name, "").strip() or local_secret(name)
+    return env_get(name, "") or local_secret(name)
 
 
 def rich_text_plain(rich_text: list[dict]) -> str:
@@ -86,7 +93,7 @@ def rich_text_has_bold(rich_text: list[dict]) -> bool:
 
 def notion_request(path: str, token: str) -> dict:
     request = urllib.request.Request(
-        f"https://api.notion.com/v1/{path}",
+        f"{NOTION_API_BASE_URL}/{path}",
         headers={
             "Authorization": f"Bearer {token}",
             "Notion-Version": NOTION_VERSION,
@@ -103,7 +110,7 @@ def tmdb_request(path: str, token: str, query: dict[str, str] | None = None) -> 
     if query:
         query_string = "?" + urllib.parse.urlencode(query)
     request = urllib.request.Request(
-        f"https://api.themoviedb.org/3/{path}{query_string}",
+        f"{TMDB_API_BASE_URL}/{path}{query_string}",
         headers={
             "Authorization": f"Bearer {token}",
             "Accept": "application/json",
@@ -526,7 +533,7 @@ def fetch_title_detail(title: str, media_type: str, tmdb_token: str) -> dict:
             continue
         key = str(video.get("key") or "").strip()
         if key:
-            trailer_url = f"https://www.youtube.com/watch?v={key}"
+            trailer_url = f"{YOUTUBE_WATCH_BASE_URL}{key}"
             break
 
     genre_names = [

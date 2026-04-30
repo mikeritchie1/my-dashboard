@@ -6,6 +6,10 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from env import get as env_get
 
 
 REPO_DIR = Path(__file__).resolve().parents[1]
@@ -13,6 +17,7 @@ LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 OUTPUT_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_FILE = OUTPUT_DIR / "google_calendar_events.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
+GOOGLE_CALENDAR_API_BASE_URL = env_get("SCRAPE_GOOGLE_CALENDAR_API_BASE_URL", "https://www.googleapis.com/calendar/v3")
 
 
 def local_secret(name: str) -> str:
@@ -29,7 +34,7 @@ def local_secret(name: str) -> str:
 
 
 def secret(name: str) -> str:
-    return os.environ.get(name, "").strip() or local_secret(name)
+    return env_get(name, "") or local_secret(name)
 
 
 def read_calendar_ids() -> list[str]:
@@ -51,7 +56,7 @@ def fetch_calendar_events(calendar_id: str, api_key: str, start: datetime, end: 
             "maxResults": "250",
         }
     )
-    url = f"https://www.googleapis.com/calendar/v3/calendars/{encoded_id}/events?{params}"
+    url = f"{GOOGLE_CALENDAR_API_BASE_URL}/calendars/{encoded_id}/events?{params}"
     request = urllib.request.Request(
         url,
         headers={

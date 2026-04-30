@@ -6,9 +6,13 @@ import re
 import urllib.request
 from html.parser import HTMLParser
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from env import get as env_get
 
 
-SOURCE_URL = "https://pahe.ink/"
+SOURCE_URL = env_get("SCRAPE_RELEASES_SOURCE_URL", "https://pahe.ink/")
 DATA_DIR = Path(__file__).resolve().parent / "data"
 OUTPUT_FILE = DATA_DIR / "pahe_latest.json"
 

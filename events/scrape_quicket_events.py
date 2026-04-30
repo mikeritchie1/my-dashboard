@@ -10,9 +10,14 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import sys
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from env import get as env_get
 
 
-BASE_URL = "https://www.quicket.co.za/events/{page}/"
+BASE_URL = env_get("SCRAPE_QUICKET_EVENTS_URL_TEMPLATE", "https://www.quicket.co.za/events/{page}/")
+NOMINATIM_SEARCH_URL = env_get("SCRAPE_NOMINATIM_SEARCH_URL", "https://nominatim.openstreetmap.org/search")
 OUTPUT_DIR = Path(__file__).resolve().parent / "data"
 JSON_OUTPUT = OUTPUT_DIR / "quicket_events.json"
 TEXT_OUTPUT = OUTPUT_DIR / "quicket_events.txt"
@@ -191,10 +196,7 @@ def geocode_queries_for_event(event: dict) -> list[str]:
 def geocode_address(query: str) -> dict[str, float] | None:
     if not query:
         return None
-    url = (
-        "https://nominatim.openstreetmap.org/search"
-        f"?format=json&limit=1&q={urllib.parse.quote(query)}"
-    )
+    url = f"{NOMINATIM_SEARCH_URL}?format=json&limit=1&q={urllib.parse.quote(query)}"
     request = urllib.request.Request(
         url,
         headers={

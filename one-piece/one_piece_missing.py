@@ -10,27 +10,28 @@ import xml.etree.ElementTree as ET
 from pathlib import Path
 from zipfile import ZipFile
 
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from env import get as env_get
+
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
 WORKBOOK = ONE_PIECE_DIR / "One Piece Cards.xlsx"
 ONE_PIECE_DATA_DIR = ONE_PIECE_DIR / "data"
 
-KNIGHTLY_COLLECTION_URL = "https://www.knightlygaming.co.za/collections/one-piece-singles"
+KNIGHTLY_COLLECTION_URL = env_get("SCRAPE_OP_KNIGHTLY_COLLECTION_URL", "https://www.knightlygaming.co.za/collections/one-piece-singles")
 KNIGHTLY_PRODUCTS_URL = KNIGHTLY_COLLECTION_URL + "/products.json?limit=250&page={page}"
 
-MARVELLOUS_COLLECTION_URL = "https://marvelloushobbies.com/one-piece-singles/"
+MARVELLOUS_COLLECTION_URL = env_get("SCRAPE_OP_MARVELLOUS_COLLECTION_URL", "https://marvelloushobbies.com/one-piece-singles/")
 MARVELLOUS_PRODUCTS_URL = (
-    "https://marvelloushobbies.com/wp-json/wc/store/v1/products"
-    "?per_page=100&page={page}&category=36"
+    env_get("SCRAPE_OP_MARVELLOUS_PRODUCTS_URL_TEMPLATE", "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}&category=36")
 )
 
-TANUKI_COLLECTION_URL = "https://tanukitrader.co.za/"
+TANUKI_COLLECTION_URL = env_get("SCRAPE_OP_TANUKI_COLLECTION_URL", "https://tanukitrader.co.za/")
 TANUKI_PRODUCTS_URL = (
-    "https://tanukitrader.co.za/wp-json/wc/store/v1/products"
-    "?per_page=100&page={page}"
+    env_get("SCRAPE_OP_TANUKI_PRODUCTS_URL_TEMPLATE", "https://tanukitrader.co.za/wp-json/wc/store/v1/products?per_page=100&page={page}")
 )
 
-BIG_BANG_COLLECTION_URL = "https://bigbangshop.co.za/collections/one-piece-single-cards"
+BIG_BANG_COLLECTION_URL = env_get("SCRAPE_OP_BIG_BANG_COLLECTION_URL", "https://bigbangshop.co.za/collections/one-piece-single-cards")
 BIG_BANG_PRODUCTS_URL = BIG_BANG_COLLECTION_URL + "/products.json?limit=250&page={page}"
 
 NS = {
