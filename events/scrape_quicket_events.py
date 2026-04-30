@@ -20,7 +20,6 @@ BASE_URL = env_get("SCRAPE_QUICKET_EVENTS_URL_TEMPLATE", "https://www.quicket.co
 NOMINATIM_SEARCH_URL = env_get("SCRAPE_NOMINATIM_SEARCH_URL", "https://nominatim.openstreetmap.org/search")
 OUTPUT_DIR = Path(__file__).resolve().parent / "data"
 JSON_OUTPUT = OUTPUT_DIR / "quicket_events.json"
-TEXT_OUTPUT = OUTPUT_DIR / "quicket_events.txt"
 GEOCODE_CACHE_OUTPUT = OUTPUT_DIR / "quicket_geocode_cache.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 
@@ -271,32 +270,6 @@ def add_coordinates(events: list[dict]) -> None:
         save_geocode_cache(cache)
 
 
-def format_date(value: str) -> str:
-    if not value:
-        return "Date unknown"
-    return datetime.fromisoformat(value).strftime("%a %d %b, %H:%M")
-
-
-def write_text(events: list[dict], days: int, limit: int) -> None:
-    lines = [f"Quicket Cape Town events - next {min(limit, len(events))} found within {days} days", ""]
-    if not events:
-        lines.append("No matching events found.")
-    for index, event in enumerate(events, start=1):
-        price = event["price"]
-        price_text = "Free/price not listed" if price in ("", 0, 0.0) else f"{event['currency']} {price}"
-        lines.extend(
-            [
-                f"{index}. {event['title']}",
-                f"   When: {format_date(event['start'])}",
-                f"   Where: {event['venue']} ({event['locality']})",
-                f"   Price: {price_text}",
-                f"   Link: {event['url']}",
-                "",
-            ]
-        )
-    TEXT_OUTPUT.write_text("\n".join(lines), encoding="utf-8")
-
-
 def scrape(max_pages: int, days: int, limit: int) -> list[dict]:
     now = datetime.now(LOCAL_TZ)
     window_end = now + timedelta(days=days)
@@ -331,9 +304,7 @@ def main() -> int:
     events = scrape(max_pages=args.pages, days=args.days, limit=args.limit)
     add_coordinates(events)
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
-    write_text(events, args.days, args.limit)
     print(f"Wrote {len(events)} Quicket event(s) to {JSON_OUTPUT}")
-    print(f"Wrote readable list to {TEXT_OUTPUT}")
     return 0
 
 

@@ -16,7 +16,6 @@ BASE_URL = env_get("SCRAPE_WEBTICKETS_CATEGORY_URL_TEMPLATE", "https://www.webti
 PAGE_PREFIX = env_get("SCRAPE_WEBTICKETS_PAGE_PREFIX", "https://www.webtickets.co.za/v2/")
 OUTPUT_DIR = Path(__file__).resolve().parent / "data"
 JSON_OUTPUT = OUTPUT_DIR / "webtickets_wc_events.json"
-TEXT_OUTPUT = OUTPUT_DIR / "webtickets_wc_events.txt"
 
 
 def fetch_page(page: int) -> str:
@@ -91,24 +90,6 @@ def scrape(limit: int) -> list[dict]:
     return all_events
 
 
-def write_text(events: list[dict], limit: int) -> None:
-    lines = [f"Webtickets Western Cape events - {len(events)} of {limit} requested", ""]
-    if not events:
-        lines.append("No events found.")
-    for idx, event in enumerate(events, start=1):
-        lines.extend(
-            [
-                f"{idx}. {event['title']}",
-                f"   Date: {event['date_text'] or '-'}",
-                f"   Venue: {event['venue'] or '-'}",
-                f"   Price: {event['price'] or '-'}",
-                f"   Link: {event['url']}",
-                "",
-            ]
-        )
-    TEXT_OUTPUT.write_text("\n".join(lines), encoding="utf-8")
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape Webtickets Western Cape events.")
     parser.add_argument("--limit", type=int, default=50, help="Maximum number of events to collect.")
@@ -117,9 +98,7 @@ def main() -> int:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     events = scrape(limit=args.limit)
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
-    write_text(events, args.limit)
     print(f"Wrote {len(events)} Webtickets event(s) to {JSON_OUTPUT}")
-    print(f"Wrote readable list to {TEXT_OUTPUT}")
     return 0
 
 

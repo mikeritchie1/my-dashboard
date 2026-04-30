@@ -185,23 +185,6 @@ def write_reports(prefix: str, heading: str, matches: list[dict[str, object]]) -
         writer.writeheader()
         writer.writerows(matches)
 
-    with (ONE_PIECE_DATA_DIR / f"{prefix}.md").open("w", encoding="utf-8") as file:
-        file.write(f"# {heading}\n\n")
-        file.write(
-            f"Found {len(matches)} purchasable listings across "
-            f"{len({match['card_number'] for match in matches})} missing card numbers.\n\n"
-        )
-        file.write("| Card | Price | Name | Rarity | Store | Stock | Link |\n")
-        file.write("|---|---:|---|---|---|---|---|\n")
-        for match in matches:
-            title = str(match["title"]).replace("|", "/")
-            rarity = str(match["rarity"]).replace("|", "/")
-            file.write(
-                f"| {match['card_number']} | R {float(match['price']):.2f} | "
-                f"{title} | {rarity} | {match['store']} | {match['stock']} | "
-                f"[open]({match['url']}) |\n"
-            )
-
 
 def fetch_knightly_products() -> list[dict]:
     products: list[dict] = []
