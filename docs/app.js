@@ -1,16 +1,16 @@
-﻿const CSV_PATH = "../data/one_piece/all_stores_missing_available.csv";
-const NEW_CARDS_PATH = "../data/one_piece/new_missing_cards.json";
-const RELEASES_PATH = "../data/release_radar/pahe_latest.json";
-const COMING_SOON_PATH = "../data/release_radar/coming_soon.json";
-const GAME_RELEASES_PATH = "../data/release_radar/game_releases.json";
-const WATCHLIST_PATH = "../data/media/watchlist.json";
-const SPECIALS_PATH = "../data/events/specials.json";
-const QUICKET_EVENTS_PATH = "../data/events/quicket_events.json";
+﻿const CSV_PATH = "./data/one_piece/all_stores_missing_available.csv";
+const NEW_CARDS_PATH = "./data/one_piece/new_missing_cards.json";
+const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
+const COMING_SOON_PATH = "./data/release_radar/coming_soon.json";
+const GAME_RELEASES_PATH = "./data/release_radar/game_releases.json";
+const WATCHLIST_PATH = "./data/media/watchlist.json";
+const SPECIALS_PATH = "./data/events/specials.json";
+const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
 const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
 const HOLIDAYS_PATH = "https://date.nager.at/api/v3/publicholidays/{year}/ZA";
-const METADATA_PATH = "../data/metadata.json";
-const GOOGLE_CALENDAR_EVENTS_PATH = "../data/events/google_calendar_events.json";
+const METADATA_PATH = "./data/metadata.json";
+const GOOGLE_CALENDAR_EVENTS_PATH = "./data/events/google_calendar_events.json";
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },
@@ -2651,6 +2651,7 @@ loadWatchlist();
 loadSpecials();
 loadQuicketEvents();
 syncRangeButtons();
+
 
 
 
