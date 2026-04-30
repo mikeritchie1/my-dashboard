@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import shutil
 import json
 import subprocess
 import sys
@@ -44,6 +45,16 @@ def write_metadata() -> None:
     metadata_path.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
 
 
+def sync_data_to_docs() -> None:
+    docs_dir = REPO_DIR / "docs"
+    if not docs_dir.exists():
+        return
+    target = docs_dir / "data"
+    if target.exists():
+        shutil.rmtree(target)
+    shutil.copytree(DATA_DIR, target)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run local scrapers and update central data/")
     parser.add_argument(
@@ -57,6 +68,7 @@ def main() -> int:
 
     run_commands(args.task)
     write_metadata()
+    sync_data_to_docs()
     print(f"Updated data in {DATA_DIR}")
     return 0
 

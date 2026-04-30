@@ -4,6 +4,8 @@ const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
 const COMING_SOON_PATH = "./data/release_radar/coming_soon.json";
 const GAME_RELEASES_PATH = "./data/release_radar/game_releases.json";
 const WATCHLIST_PATH = "./data/media/watchlist.json";
+const GAMESLIST_PATH = "./data/media/gameslist.json";
+const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json";
 const SPECIALS_PATH = "./data/events/specials.json";
 const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
 const WEATHER_PATH =
@@ -22,7 +24,7 @@ const WATCHLIST_TYPE_LABELS = {
   series: "Series",
   anime_movie: "Anime Movie",
   anime_series: "Anime Series",
-  game_aaa: "AAA",
+  game_aaa: "Single-player",
   game_indie: "Indie",
   game_coop: "Co-op",
   game_couch_coop: "Couch Co-op",
@@ -55,6 +57,7 @@ const state = {
   watchlistActiveMedia: "screen",
   watchlistTypes: new Set(["movie"]),
   watchlistPayload: null,
+  watchlistDetails: {},
   watchlistYearFilter: "all",
   watchlistGenreFilter: "all",
   watchlistSort: "default",
@@ -487,14 +490,7 @@ function toggleWatchlistType(type) {
     state.watchlistTypes = new Set([type]);
     return;
   }
-  if (watchlistHasType(type)) {
-    if (state.watchlistTypes.size > 1) {
-      state.watchlistTypes.delete(type);
-    }
-  } else {
-    state.watchlistTypes.add(type);
-  }
-  ensureWatchlistSelection();
+  state.watchlistTypes = new Set([type]);
 }
 
 function setWatchlistMedia(media) {
@@ -573,7 +569,7 @@ function detailsLookupKey(type, title) {
 }
 
 function detailsForTitle(payload, type, title) {
-  const details = payload?.watchlist_details || payload?.movie_details || {};
+  const details = state.watchlistDetails || {};
   const key = detailsLookupKey(type, title);
   if (!key) {
     return null;
@@ -913,10 +909,8 @@ function renderWatchlistCurrent(payload) {
   const sections = [...state.watchlistTypes]
     .map((type) => ({ type, heading: WATCHLIST_TYPE_LABELS[type] || "Titles", items: sourceByType[type] || [] }))
     .filter((section) => section.items.length);
-  const hasGames = [...state.watchlistTypes].some((type) => type.startsWith("game_"));
-
   if (elements.watchlistCurrentTitle) {
-    elements.watchlistCurrentTitle.textContent = hasGames ? "Currently playing" : "Currently watching";
+    elements.watchlistCurrentTitle.textContent = "Currently watching";
   }
 
   if (!sections.length) {
@@ -1037,11 +1031,33 @@ function renderWatchlistAll() {
 
 async function loadWatchlist() {
   try {
-    const response = await fetch(WATCHLIST_PATH, { cache: "no-store" });
-    if (!response.ok) {
+    const [watchlistResponse, gameslistResponse, detailsResponse] = await Promise.all([
+      fetch(WATCHLIST_PATH, { cache: "no-store" }),
+      fetch(GAMESLIST_PATH, { cache: "no-store" }),
+      fetch(WATCHLIST_MOVIE_DETAILS_PATH, { cache: "no-store" }),
+    ]);
+    if (!watchlistResponse.ok) {
       throw new Error(`Could not load ${WATCHLIST_PATH}`);
     }
-    state.watchlistPayload = await response.json();
+    const watchlistPayload = await watchlistResponse.json();
+    const gamesPayload = gameslistResponse.ok ? await gameslistResponse.json() : {};
+    const mergedPayload = { ...(watchlistPayload || {}) };
+    const mergedCurrent = { ...(mergedPayload.currently_watching || {}) };
+    const gamesCurrent = gamesPayload?.currently_watching?.games;
+    if (gamesCurrent && typeof gamesCurrent === "object") {
+      mergedCurrent.games = gamesCurrent;
+    }
+    mergedPayload.currently_watching = mergedCurrent;
+    const watchHistory = Array.isArray(mergedPayload.history_by_year) ? mergedPayload.history_by_year : [];
+    const gamesHistory = Array.isArray(gamesPayload?.history_by_year) ? gamesPayload.history_by_year : [];
+    mergedPayload.history_by_year = [...watchHistory, ...gamesHistory];
+    state.watchlistPayload = mergedPayload;
+    if (detailsResponse.ok) {
+      const detailsPayload = await detailsResponse.json();
+      state.watchlistDetails = detailsPayload && typeof detailsPayload === "object" ? detailsPayload : {};
+    } else {
+      state.watchlistDetails = {};
+    }
     renderWatchlistAll();
   } catch (error) {
     elements.watchlistCurrent.innerHTML = `<p class="empty">${error.message}</p>`;

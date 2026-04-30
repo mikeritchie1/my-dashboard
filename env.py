@@ -11,6 +11,8 @@ CONFIG = {
         "NOTION_SPECIALS_PAGE_URL": "https://www.notion.so/Places-082fa9625a9f4f949d03a8d1517c76f8",
         "NOTION_WATCHLIST_PAGE_ID": "1d757df8191880aeb859c1402a2154c8",
         "NOTION_WATCHLIST_PAGE_URL": "https://www.notion.so/My-Watchlist-1d757df8191880aeb859c1402a2154c8",
+        "NOTION_GAMES_PAGE_ID": "3c29c9884aae41859c33bdafcc1de628",
+        "NOTION_GAMES_PAGE_URL": "https://www.notion.so/My-Games-3c29c9884aae41859c33bdafcc1de628",
         "SCRAPE_NOTION_API_BASE_URL": "https://api.notion.com/v1",
         "SCRAPE_TMDB_API_BASE_URL": "https://api.themoviedb.org/3",
         "SCRAPE_TMDB_IMAGE_BASE_URL": "https://image.tmdb.org/t/p/w342",

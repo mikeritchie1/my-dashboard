@@ -17,17 +17,23 @@ from env import get as env_get
 NOTION_VERSION = "2022-06-28"
 DEFAULT_WATCHLIST_PAGE_ID = "1d757df8191880aeb859c1402a2154c8"
 DEFAULT_WATCHLIST_URL = "https://www.notion.so/My-Watchlist-1d757df8191880aeb859c1402a2154c8"
+DEFAULT_GAMES_PAGE_ID = "3c29c9884aae41859c33bdafcc1de628"
+DEFAULT_GAMES_URL = "https://www.notion.so/My-Games-3c29c9884aae41859c33bdafcc1de628"
 
 REPO_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_DIR / "data" / "media"
 OUTPUT_FILE = DATA_DIR / "watchlist.json"
+GAMES_OUTPUT_FILE = DATA_DIR / "gameslist.json"
 MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"
+GAMES_DETAILS_CACHE_FILE = DATA_DIR / "games_details.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
 TMDB_API_BASE_URL = env_get("SCRAPE_TMDB_API_BASE_URL", "https://api.themoviedb.org/3")
 TMDB_IMAGE_BASE = env_get("SCRAPE_TMDB_IMAGE_BASE_URL", "https://image.tmdb.org/t/p/w342")
 TMDB_SITE_MOVIE_BASE = env_get("SCRAPE_TMDB_SITE_MOVIE_BASE_URL", "https://www.themoviedb.org/movie")
 TMDB_SITE_TV_BASE = env_get("SCRAPE_TMDB_SITE_TV_BASE_URL", "https://www.themoviedb.org/tv")
+RAWG_API_BASE_URL = env_get("SCRAPE_RAWG_GAMES_API_URL", "https://api.rawg.io/api/games")
+RAWG_SITE_GAME_BASE_URL = env_get("SCRAPE_RAWG_SITE_GAME_BASE_URL", "https://rawg.io/games")
 YOUTUBE_WATCH_BASE_URL = env_get("SCRAPE_YOUTUBE_WATCH_BASE_URL", "https://www.youtube.com/watch?v=")
 DETAIL_FIELDS = {
     "tmdb_id",
@@ -44,6 +50,17 @@ DETAIL_FIELDS = {
     "trailer_url",
     "genres",
     "tmdb_url",
+}
+GAME_DETAIL_FIELDS = {
+    "media_type",
+    "rating",
+    "poster_url",
+    "release_date",
+    "description",
+    "genres",
+    "platforms",
+    "website_url",
+    "rawg_url",
 }
 
 TEXT_BLOCK_TYPES = {
@@ -119,6 +136,24 @@ def tmdb_request(path: str, token: str, query: dict[str, str] | None = None) -> 
         return json.loads(response.read().decode("utf-8"))
 
 
+def rawg_request(query: dict[str, str]) -> dict:
+    api_key = secret("RAWG_API_KEY").strip()
+    if not api_key:
+        return {}
+    params = dict(query)
+    params["key"] = api_key
+    query_string = urllib.parse.urlencode(params)
+    request = urllib.request.Request(
+        f"{RAWG_API_BASE_URL}?{query_string}",
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "Mozilla/5.0",
+        },
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
 def block_text(block: dict) -> str:
     block_type = block.get("type", "")
     if block_type not in TEXT_BLOCK_TYPES:
@@ -140,25 +175,84 @@ def block_is_bold(block: dict) -> bool:
     return rich_text_has_bold(value.get("rich_text", []))
 
 
-def get_block_children(block_id: str, token: str) -> list[dict]:
+def get_block_children(block_id: str, token: str, log_label: str = "") -> list[dict]:
     blocks: list[dict] = []
     cursor = ""
+    page = 0
     while True:
+        page += 1
         query = f"?page_size=100&start_cursor={cursor}" if cursor else "?page_size=100"
         payload = notion_request(f"blocks/{block_id}/children{query}", token)
-        blocks.extend(payload.get("results", []))
+        results = payload.get("results", [])
+        blocks.extend(results)
+        if log_label:
+            print(f"[notion] {log_label}: page {page}, +{len(results)} blocks (total {len(blocks)})")
         if not payload.get("has_more"):
             return blocks
         cursor = payload.get("next_cursor") or ""
 
 
-def flatten_blocks(blocks: list[dict], token: str, depth: int = 0) -> list[tuple[dict, int]]:
+def should_descend(block: dict, depth: int, mode: str) -> bool:
+    if not block.get("has_children"):
+        return False
+    block_type = str(block.get("type", ""))
+    if block_type not in {"toggle", "bulleted_list_item", "numbered_list_item", "paragraph", "heading_1", "heading_2", "heading_3"}:
+        return False
+
+    text = block_text(block)
+    label = normalize_label(clean_title(text))
+
+    # Always explore first/root level so we can find section anchors.
+    if depth <= 0:
+        return True
+
+    if mode == "watchlist":
+        if label == "maybe":
+            return False
+        if label in {
+            "movies",
+            "movie",
+            "series",
+            "tv series",
+            "tv shows",
+            "shows",
+            "anime",
+            "now",
+            "must watch",
+        }:
+            return True
+        if is_year_heading(text):
+            return True
+        if re.match(r"^anime\b", label):
+            return True
+        return False
+
+    if mode == "games":
+        if label in {"now", "now playing", "currently playing", "before"}:
+            return True
+        if is_year_heading(text):
+            return True
+        if game_type_from_label(label):
+            return True
+        return False
+
+    return True
+
+
+def flatten_blocks(blocks: list[dict], token: str, depth: int = 0, log_prefix: str = "", mode: str = "watchlist") -> list[tuple[dict, int]]:
     flattened: list[tuple[dict, int]] = []
     for block in blocks:
         flattened.append((block, depth))
-        if block.get("has_children"):
-            children = get_block_children(block.get("id", ""), token)
-            flattened.extend(flatten_blocks(children, token, depth + 1))
+        name = block_text(block) or "(no text)"
+        block_type = str(block.get("type", "unknown"))
+        indent = "  " * max(0, depth)
+        if log_prefix:
+            print(f"[notion] {log_prefix} {indent}- {block_type}: {name[:140]}")
+        else:
+            print(f"[notion] {indent}- {block_type}: {name[:140]}")
+        if should_descend(block, depth, mode):
+            children = get_block_children(block.get("id", ""), token, f"{log_prefix} children".strip())
+            flattened.extend(flatten_blocks(children, token, depth + 1, log_prefix=log_prefix, mode=mode))
     return flattened
 
 
@@ -166,21 +260,31 @@ def normalize_label(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip().lower()
 
 
-def extract_page_id() -> str:
-    explicit = secret("NOTION_WATCHLIST_PAGE_ID").replace("-", "").strip()
+def extract_page_id(id_key: str, url_key: str, default_id: str) -> str:
+    explicit = secret(id_key).replace("-", "").strip()
     if explicit:
         return explicit
-    url_value = secret("NOTION_WATCHLIST_PAGE_URL").strip()
+    url_value = secret(url_key).strip()
     if url_value:
         match = re.search(r"([0-9a-fA-F]{32})", url_value.replace("-", ""))
         if match:
             return match.group(1)
-    return DEFAULT_WATCHLIST_PAGE_ID
+    return default_id
 
 
 def is_year_heading(text: str) -> str:
     match = re.match(r"^(20\d{2})\b", text.strip())
     return match.group(1) if match else ""
+
+
+def normalize_year_label(text: str) -> str:
+    year = is_year_heading(text)
+    if year:
+        return year
+    label = normalize_label(text)
+    if label == "before":
+        return "Before"
+    return ""
 
 
 def clean_title(text: str) -> str:
@@ -247,6 +351,8 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
     in_currently_watching = False
     in_now_section = False
     in_must_watch = False
+    domain_started: dict[str, bool] = {"movie": False, "series": False}
+    skip_until_anime_for_parent: str | None = None
     active_year = ""
     skip_children_below_depth: int | None = None
     years: dict[str, list[dict]] = {}
@@ -275,6 +381,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = False
             in_must_watch = False
+            skip_until_anime_for_parent = None
             active_year = ""
             continue
         if label in {"series", "tv series", "tv shows", "shows"}:
@@ -283,16 +390,23 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = False
             in_must_watch = False
+            skip_until_anime_for_parent = None
             active_year = ""
             continue
         if re.match(r"^anime\b", label):
             current_domain = "anime_movie" if parent_domain == "movie" else "anime_series"
+            skip_until_anime_for_parent = None
             in_currently_watching = False
             in_now_section = False
             in_must_watch = False
             active_year = ""
             continue
-        if "now watching" in label or "currently watching" in label:
+        if (
+            "now watching" in label
+            or "currently watching" in label
+            or "currently showing" in label
+            or (("currently" in label or "current" in label) and ("watch" in label or "show" in label))
+        ):
             in_currently_watching = True
             in_now_section = False
             in_must_watch = False
@@ -302,6 +416,7 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             in_currently_watching = False
             in_now_section = True
             in_must_watch = False
+            skip_until_anime_for_parent = parent_domain
             active_year = ""
             continue
         if in_now_section and label == "must watch":
@@ -315,12 +430,24 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
             active_year = ""
             continue
         if year:
+            if current_domain in {"movie", "series"}:
+                domain_started[current_domain] = True
             in_currently_watching = False
             in_now_section = False
             in_must_watch = False
             active_year = year
             years.setdefault(active_year, [])
             continue
+
+        # For top-level movie/series lists: only parse from first year until "Now",
+        # then resume once the "Anime" sub-block starts.
+        if current_domain in {"movie", "series"}:
+            # Keep skipping normal top-level entries after "Now", but still allow
+            # titles inside "Now -> Must Watch" to be captured as currently watching.
+            if skip_until_anime_for_parent == current_domain and not in_currently_watching:
+                continue
+            if not domain_started[current_domain] and not in_now_section:
+                continue
 
         if block_type not in {"bulleted_list_item", "numbered_list_item", "to_do", "paragraph", "toggle"}:
             continue
@@ -366,6 +493,121 @@ def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
     }
 
 
+def game_type_from_label(label: str) -> str:
+    if any(token in label for token in {"single-player", "single player", "aaa", "triple aaa"}):
+        return "game_aaa"
+    if "indie" in label:
+        return "game_indie"
+    if "couch" in label and "coop" in label:
+        return "game_couch_coop"
+    if "co-op" in label or "coop" in label or "co op" in label:
+        return "game_coop"
+    if "lan" in label:
+        return "game_lan"
+    return ""
+
+
+def parse_games(flat_blocks: list[tuple[dict, int]]) -> dict:
+    current_type = ""
+    active_year = ""
+    in_now_playing = False
+    current_games = {"aaa": [], "indie": [], "coop": [], "couch_coop": [], "lan": []}
+    years: dict[str, list[dict]] = {}
+    skip_children_below_depth: int | None = None
+
+    for block, depth in flat_blocks:
+        if skip_children_below_depth is not None:
+            if depth > skip_children_below_depth:
+                continue
+            skip_children_below_depth = None
+
+        block_type = block.get("type", "")
+        text = block_text(block)
+        is_bold = block_is_bold(block)
+        if not text:
+            continue
+
+        cleaned_text = clean_title(text)
+        label = normalize_label(cleaned_text)
+        mapped_type = game_type_from_label(label)
+        if mapped_type:
+            current_type = mapped_type
+            in_now_playing = False
+            active_year = ""
+            continue
+
+        if "now playing" in label or "currently playing" in label or label == "now":
+            in_now_playing = True
+            active_year = ""
+            continue
+
+        maybe_year = normalize_year_label(cleaned_text)
+        if maybe_year:
+            in_now_playing = False
+            active_year = maybe_year
+            years.setdefault(active_year, [])
+            continue
+
+        if block_type not in {"bulleted_list_item", "numbered_list_item", "to_do", "paragraph", "toggle"}:
+            continue
+        if not current_type:
+            continue
+
+        title = clean_title(text)
+        if not title:
+            continue
+
+        entry = {"type": current_type, "title": title, "loved": is_bold}
+        if in_now_playing:
+            if current_type == "game_aaa":
+                current_games["aaa"].append({"title": title, "loved": is_bold})
+            elif current_type == "game_indie":
+                current_games["indie"].append({"title": title, "loved": is_bold})
+            elif current_type == "game_coop":
+                current_games["coop"].append({"title": title, "loved": is_bold})
+            elif current_type == "game_couch_coop":
+                current_games["couch_coop"].append({"title": title, "loved": is_bold})
+            elif current_type == "game_lan":
+                current_games["lan"].append({"title": title, "loved": is_bold})
+            continue
+
+        if active_year:
+            years.setdefault(active_year, []).append(entry)
+
+    history_by_year: list[dict] = []
+    ordered_years = sorted(
+        [year for year in years.keys() if year.isdigit()],
+        key=lambda value: int(value),
+        reverse=True,
+    )
+    for year in ordered_years:
+        entries = years.get(year, [])
+        if entries:
+            history_by_year.append({"year": year, "entries": entries})
+    if years.get("Before"):
+        history_by_year.append({"year": "Before", "entries": years["Before"]})
+
+    return {
+        "source": secret("NOTION_GAMES_PAGE_URL").strip() or DEFAULT_GAMES_URL,
+        "currently_watching": {"games": current_games},
+        "history_by_year": history_by_year,
+    }
+
+
+def merge_payloads(watchlist_payload: dict, games_payload: dict) -> dict:
+    merged = dict(watchlist_payload)
+    merged_current = dict(merged.get("currently_watching", {}))
+    games_current = games_payload.get("currently_watching", {}).get("games", {})
+    merged_current["games"] = games_current if isinstance(games_current, dict) else {}
+    merged["currently_watching"] = merged_current
+
+    history = list(merged.get("history_by_year", []))
+    history.extend(games_payload.get("history_by_year", []))
+    merged["history_by_year"] = history
+    merged["games_source"] = games_payload.get("source", "")
+    return merged
+
+
 def load_movie_details_cache() -> dict[str, dict]:
     if not MOVIE_DETAILS_CACHE_FILE.exists():
         return {}
@@ -384,10 +626,46 @@ def write_movie_details_cache(cache: dict[str, dict]) -> None:
     MOVIE_DETAILS_CACHE_FILE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+def load_games_details_cache() -> dict[str, dict]:
+    if not GAMES_DETAILS_CACHE_FILE.exists():
+        return {}
+    try:
+        payload = json.loads(GAMES_DETAILS_CACHE_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    return {str(key): value for key, value in payload.items() if isinstance(value, dict)}
+
+
+def write_games_details_cache(cache: dict[str, dict]) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    ordered = {key: cache[key] for key in sorted(cache.keys())}
+    GAMES_DETAILS_CACHE_FILE.write_text(json.dumps(ordered, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def write_payload(payload: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    serialized = json.dumps(payload, indent=2, ensure_ascii=False)
+    clean_payload = dict(payload)
+    clean_payload.pop("movie_details", None)
+    clean_payload.pop("watchlist_details", None)
+    clean_payload.pop("game_details", None)
+    clean_payload.pop("enrichment_progress", None)
+    clean_payload.pop("enrichment_progress_games", None)
+    serialized = json.dumps(clean_payload, indent=2, ensure_ascii=False)
     OUTPUT_FILE.write_text(serialized, encoding="utf-8")
+
+
+def write_games_payload(payload: dict) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    clean_payload = dict(payload)
+    clean_payload.pop("movie_details", None)
+    clean_payload.pop("watchlist_details", None)
+    clean_payload.pop("game_details", None)
+    clean_payload.pop("enrichment_progress", None)
+    clean_payload.pop("enrichment_progress_games", None)
+    serialized = json.dumps(clean_payload, indent=2, ensure_ascii=False)
+    GAMES_OUTPUT_FILE.write_text(serialized, encoding="utf-8")
 
 
 def progress_bar(processed: int, total: int, width: int = 24) -> str:
@@ -410,9 +688,32 @@ def extract_titles(payload: dict, media_type: str) -> list[str]:
         current_key = "anime_series"
     elif media_type == "anime":
         current_key = "anime"
+    elif media_type == "game_aaa":
+        current_key = "game_aaa"
+    elif media_type == "game_indie":
+        current_key = "game_indie"
+    elif media_type == "game_coop":
+        current_key = "game_coop"
+    elif media_type == "game_couch_coop":
+        current_key = "game_couch_coop"
+    elif media_type == "game_lan":
+        current_key = "game_lan"
     else:
         current_key = "movies"
-    current_items = payload.get("currently_watching", {}).get(current_key, [])
+    current = payload.get("currently_watching", {})
+    game_bucket = current.get("games", {}) if isinstance(current.get("games", {}), dict) else {}
+    if media_type == "game_aaa":
+        current_items = game_bucket.get("aaa", [])
+    elif media_type == "game_indie":
+        current_items = game_bucket.get("indie", [])
+    elif media_type == "game_coop":
+        current_items = game_bucket.get("coop", [])
+    elif media_type == "game_couch_coop":
+        current_items = game_bucket.get("couch_coop", [])
+    elif media_type == "game_lan":
+        current_items = game_bucket.get("lan", [])
+    else:
+        current_items = current.get(current_key, [])
     if isinstance(current_items, list):
         for item in current_items:
             if isinstance(item, dict):
@@ -589,6 +890,79 @@ def movie_detail_needs_fetch(entry: dict) -> bool:
     return any(field not in entry for field in DETAIL_FIELDS)
 
 
+def fetch_game_detail(title: str, media_type: str) -> dict:
+    result = {"title": title, "media_type": media_type}
+    payload = rawg_request(
+        {
+            "search": title,
+            "search_exact": "true",
+            "page_size": "5",
+        }
+    )
+    candidates = payload.get("results", []) if isinstance(payload, dict) else []
+    if not isinstance(candidates, list) or not candidates:
+        return result
+
+    first = candidates[0]
+    slug = str(first.get("slug") or "").strip()
+    image = str(first.get("background_image") or "").strip()
+    released = str(first.get("released") or "").strip()
+    rating = first.get("rating")
+    website = str(first.get("website") or "").strip()
+    genres = [
+        str(item.get("name") or "").strip()
+        for item in (first.get("genres") or [])
+        if isinstance(item, dict) and str(item.get("name") or "").strip()
+    ]
+    platforms = []
+    for entry in first.get("platforms") or []:
+        if not isinstance(entry, dict):
+            continue
+        platform = entry.get("platform")
+        if not isinstance(platform, dict):
+            continue
+        platform_name = str(platform.get("name") or "").strip()
+        if platform_name:
+            platforms.append(platform_name)
+
+    description = str(first.get("description_raw") or first.get("description") or "").strip()
+    if isinstance(rating, (int, float)):
+        result["rating"] = round(float(rating), 1)
+    else:
+        result["rating"] = None
+    result["poster_url"] = image
+    result["release_date"] = released
+    result["description"] = description
+    result["genres"] = genres
+    result["platforms"] = platforms[:8]
+    result["website_url"] = website
+    result["rawg_url"] = f"{RAWG_SITE_GAME_BASE_URL}/{slug}" if slug else ""
+    return result
+
+
+def merge_game_details(existing: dict, fetched: dict) -> dict:
+    merged = dict(existing)
+    merged.setdefault("title", str(existing.get("title") or fetched.get("title") or "").strip())
+    for key in GAME_DETAIL_FIELDS:
+        if key in merged:
+            continue
+        merged[key] = fetched.get(key)
+    return merged
+
+
+def normalize_cached_game_detail(entry: dict, media_type: str, title: str) -> dict:
+    normalized = dict(entry) if isinstance(entry, dict) else {}
+    normalized["title"] = str(normalized.get("title") or title).strip()
+    normalized["media_type"] = str(normalized.get("media_type") or media_type).strip() or media_type
+    return normalized
+
+
+def game_detail_needs_fetch(entry: dict) -> bool:
+    if not isinstance(entry, dict):
+        return True
+    return any(field not in entry for field in GAME_DETAIL_FIELDS)
+
+
 def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | None = None, hard: bool = False) -> dict:
     tmdb_token = secret("TMDB_BEARER_TOKEN")
     movie_titles = extract_titles(payload, "movie")
@@ -603,7 +977,7 @@ def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | 
         + [("anime_series", title) for title in anime_series_titles]
         + [("anime_series", title) for title in legacy_anime_titles]
     )
-    selected = selected_types or {"movie", "series", "anime_movie", "anime_series"}
+    selected = selected_types if selected_types is not None else {"movie", "series", "anime_movie", "anime_series"}
     titles = [(media_type, title) for media_type, title in all_titles if media_type in selected]
     keys_in_use = {
         detail_key(media_type, title)
@@ -624,16 +998,6 @@ def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | 
     processed = 0
 
     def persist(status: str, current_title: str) -> None:
-        percent = int(round((processed / total) * 100)) if total else 100
-        payload["movie_details"] = cache
-        payload["watchlist_details"] = cache
-        payload["enrichment_progress"] = {
-            "status": status,
-            "processed": processed,
-            "total": total,
-            "percent": percent,
-            "current_title": current_title,
-        }
         write_movie_details_cache(cache)
         write_payload(payload)
 
@@ -671,54 +1035,143 @@ def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | 
     return payload
 
 
-def scrape_watchlist(selected_types: set[str] | None = None, hard: bool = False) -> dict:
+def enrich_payload_with_game_details(payload: dict, selected_types: set[str] | None = None, hard: bool = False) -> dict:
+    all_game_titles = (
+        [("game_aaa", title) for title in extract_titles(payload, "game_aaa")]
+        + [("game_indie", title) for title in extract_titles(payload, "game_indie")]
+        + [("game_coop", title) for title in extract_titles(payload, "game_coop")]
+        + [("game_couch_coop", title) for title in extract_titles(payload, "game_couch_coop")]
+        + [("game_lan", title) for title in extract_titles(payload, "game_lan")]
+    )
+    selected = selected_types if selected_types is not None else {"game_aaa", "game_indie", "game_coop", "game_couch_coop", "game_lan"}
+    titles = [(media_type, title) for media_type, title in all_game_titles if media_type in selected]
+    keys_in_use = {
+        detail_key(media_type, title)
+        for media_type, title in all_game_titles
+        if movie_key(title)
+    }
+    cache = load_games_details_cache()
+    cache = {key: value for key, value in cache.items() if key in keys_in_use}
+
+    total = len(titles)
+    processed = 0
+
+    def persist(status: str, current_title: str) -> None:
+        write_games_details_cache(cache)
+        write_games_payload(payload)
+
+    persist("running", "")
+
+    try:
+        for media_type, title in titles:
+            key = detail_key(media_type, title)
+            source = "cached"
+            existing = cache.get(key) or {
+                "title": title,
+                "media_type": media_type,
+            }
+            existing = normalize_cached_game_detail(existing, media_type, title)
+            needs_fetch = hard or game_detail_needs_fetch(existing)
+            if needs_fetch:
+                fetched = fetch_game_detail(title, media_type)
+                cache[key] = merge_game_details(existing, fetched)
+                source = "fetched"
+            else:
+                cache[key] = existing
+            processed += 1
+            persist("running", title)
+            print(f"{progress_bar(processed, total)} {processed}/{total} {source}: {media_type} {title}")
+    except KeyboardInterrupt:
+        persist("interrupted", "")
+        print("Interrupted: partial game details were saved.")
+        return payload
+
+    persist("completed", "")
+    return payload
+
+
+def scrape_watchlist(
+    selected_types: set[str] | None = None,
+    selected_game_types: set[str] | None = None,
+    hard: bool = False,
+) -> dict:
     token = secret("NOTION_TOKEN") or secret("NOTION_API_TOKEN")
-    page_id = extract_page_id()
+    page_id = extract_page_id("NOTION_WATCHLIST_PAGE_ID", "NOTION_WATCHLIST_PAGE_URL", DEFAULT_WATCHLIST_PAGE_ID)
+    games_page_id = extract_page_id("NOTION_GAMES_PAGE_ID", "NOTION_GAMES_PAGE_URL", DEFAULT_GAMES_PAGE_ID)
     page_url = secret("NOTION_WATCHLIST_PAGE_URL").strip() or DEFAULT_WATCHLIST_URL
+    games_page_url = secret("NOTION_GAMES_PAGE_URL").strip() or DEFAULT_GAMES_URL
 
     if not token:
         return {
             "source": page_url,
+            "games_source": games_page_url,
             "error": "Missing NOTION_TOKEN",
             "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
             "history_by_year": [],
-            "movie_details": {},
-            "enrichment_progress": {"status": "idle", "processed": 0, "total": 0, "percent": 0, "current_title": ""},
         }
 
     try:
-        root_blocks = get_block_children(page_id, token)
-        flat = flatten_blocks(root_blocks, token, 0)
-        payload = parse_watchlist(flat)
-        payload["source"] = page_url
-        payload["page_id"] = page_id
-        return enrich_payload_with_movie_details(payload, selected_types=selected_types, hard=hard)
+        print("[notion] Reading watchlist page blocks...")
+        root_blocks = get_block_children(page_id, token, "watchlist root")
+        flat = flatten_blocks(root_blocks, token, 0, log_prefix="watchlist", mode="watchlist")
+        print(f"[notion] Watchlist flattened blocks: {len(flat)}")
+        watchlist_payload = parse_watchlist(flat)
+        watchlist_payload["source"] = page_url
+        watchlist_payload["page_id"] = page_id
+        current = watchlist_payload.get("currently_watching", {})
+        print(
+            "[watchlist] Parsed current counts: "
+            f"movies={len(current.get('movies', []))}, "
+            f"series={len(current.get('series', []))}, "
+            f"anime_movies={len(current.get('anime_movies', []))}, "
+            f"anime_series={len(current.get('anime_series', []))}"
+        )
+        # Persist watchlist immediately so later game/detail failures cannot wipe it.
+        write_payload(watchlist_payload)
     except urllib.error.HTTPError as error:
         detail = error.read().decode("utf-8", errors="replace")
         return {
             "source": page_url,
+            "games_source": games_page_url,
             "error": f"Notion API error {error.code}: {detail}",
             "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
             "history_by_year": [],
-            "movie_details": {},
-            "enrichment_progress": {"status": "idle", "processed": 0, "total": 0, "percent": 0, "current_title": ""},
         }
     except urllib.error.URLError as error:
         return {
             "source": page_url,
+            "games_source": games_page_url,
             "error": f"Notion API network error: {error}",
             "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
             "history_by_year": [],
-            "movie_details": {},
-            "enrichment_progress": {"status": "idle", "processed": 0, "total": 0, "percent": 0, "current_title": ""},
         }
+
+    # Games scrape is best-effort and must not clobber a valid watchlist scrape.
+    try:
+        print("[notion] Reading games page blocks...")
+        games_root_blocks = get_block_children(games_page_id, token, "games root")
+        games_flat = flatten_blocks(games_root_blocks, token, 0, log_prefix="games", mode="games")
+        print(f"[notion] Games flattened blocks: {len(games_flat)}")
+        games_payload = parse_games(games_flat)
+        games_payload["source"] = games_page_url
+        games_payload["page_id"] = games_page_id
+        print("[rawg] Starting game enrichment...")
+        games_payload = enrich_payload_with_game_details(games_payload, selected_types=selected_game_types, hard=hard)
+        write_games_payload(games_payload)
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError) as error:
+        print(f"[warn] Games scrape skipped: {error}")
+
+    payload = watchlist_payload
+    print("[tmdb] Starting media enrichment...")
+    payload = enrich_payload_with_movie_details(payload, selected_types=selected_types, hard=hard)
+    return payload
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape watchlist from Notion and enrich titles from TMDB.")
     parser.add_argument(
         "--type",
-        choices=["all", "movies", "series", "anime"],
+        choices=["all", "movies", "series", "anime", "games"],
         default="all",
         help="Which media type to enrich.",
     )
@@ -730,14 +1183,30 @@ def main() -> int:
     args = parser.parse_args()
 
     selected_types = {"movie", "series", "anime_movie", "anime_series"}
+    selected_game_types = {"game_aaa", "game_indie", "game_coop", "game_couch_coop", "game_lan"}
     if args.type == "movies":
         selected_types = {"movie"}
+        selected_game_types = set()
     elif args.type == "series":
         selected_types = {"series"}
+        selected_game_types = set()
     elif args.type == "anime":
         selected_types = {"anime_movie", "anime_series"}
+        selected_game_types = set()
+    elif args.type == "games":
+        selected_types = set()
+        selected_game_types = {"game_aaa", "game_indie", "game_coop", "game_couch_coop", "game_lan"}
 
-    payload = scrape_watchlist(selected_types=selected_types, hard=args.hard)
+    payload = scrape_watchlist(
+        selected_types=selected_types,
+        selected_game_types=selected_game_types,
+        hard=args.hard,
+    )
+    if payload.get("error"):
+        print(f"Watchlist scrape failed: {payload['error']}")
+        print(f"Keeping existing watchlist file at {OUTPUT_FILE}")
+        return 1
+
     write_payload(payload)
     total_entries = sum(len(group.get("entries", [])) for group in payload.get("history_by_year", []))
     print(

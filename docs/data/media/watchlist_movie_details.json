@@ -1849,60 +1849,6 @@
     "poster_url": null,
     "directors": null
   },
-  "anime_series:bleach": {
-    "title": "Bleach",
-    "media_type": "anime_series",
-    "runtime_minutes": 24,
-    "tmdb_url": "https://www.themoviedb.org/tv/30984",
-    "tmdb_id": 30984,
-    "genres": [
-      "Action & Adventure",
-      "Animation",
-      "Sci-Fi & Fantasy"
-    ],
-    "actors": [
-      "Masakazu Morita",
-      "Fumiko Orikasa",
-      "Hiroki Yasumoto",
-      "Yuki Matsuoka",
-      "Noriaki Sugiyama"
-    ],
-    "rating": 8.4,
-    "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-    "trailer_url": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
-    "description": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-    "release_date": "2004-10-05",
-    "number_of_seasons": 2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
-    "directors": []
-  },
-  "anime_series:bleach the thousand year war": {
-    "title": "Bleach: The Thousand Year War",
-    "media_type": "anime_series",
-    "runtime_minutes": 24,
-    "tmdb_url": "https://www.themoviedb.org/tv/30984",
-    "tmdb_id": 30984,
-    "genres": [
-      "Action & Adventure",
-      "Animation",
-      "Sci-Fi & Fantasy"
-    ],
-    "actors": [
-      "Masakazu Morita",
-      "Fumiko Orikasa",
-      "Hiroki Yasumoto",
-      "Yuki Matsuoka",
-      "Noriaki Sugiyama"
-    ],
-    "rating": 8.4,
-    "overview": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-    "trailer_url": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
-    "description": "For as long as he can remember, Ichigo Kurosaki has been able to see ghosts. But when he meets Rukia, a Soul Reaper who battles evil spirits known as Hollows, he finds his life is changed forever. Now, with a newfound wealth of spiritual energy, Ichigo discovers his true calling: to protect the living and the dead from evil.",
-    "release_date": "2004-10-05",
-    "number_of_seasons": 2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/5iVUUnE2tgBPypACYNobCKHagfV.jpg",
-    "directors": []
-  },
   "anime_series:chainsaw man s01 reze arc movie": {
     "title": "Chainsaw Man S01, Reze Arc Movie",
     "media_type": "anime_series",
@@ -2277,66 +2223,6 @@
     "release_date": "2016-04-03",
     "number_of_seasons": 8,
     "poster_url": "https://image.tmdb.org/t/p/w342/phuYuzqWW9ru8EA3HVjE9W2Rr3M.jpg",
-    "directors": []
-  },
-  "anime_series:naruto": {
-    "title": "Naruto",
-    "media_type": "anime_series",
-    "runtime_minutes": 24,
-    "tmdb_url": "https://www.themoviedb.org/tv/46260",
-    "tmdb_id": 46260,
-    "genres": [
-      "Animation",
-      "Action & Adventure",
-      "Sci-Fi & Fantasy"
-    ],
-    "actors": [
-      "Junko Takeuchi",
-      "Noriaki Sugiyama",
-      "Chie Nakamura",
-      "Kazuhiko Inoue",
-      "Hidekatsu Shibata",
-      "Koichi Tochika",
-      "Masashi Ebara",
-      "Yōichi Masukawa"
-    ],
-    "rating": 8.4,
-    "overview": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
-    "trailer_url": "https://www.youtube.com/watch?v=-G9BqkgZXRA",
-    "description": "Naruto Uzumaki, a mischievous adolescent ninja, struggles as he searches for recognition and dreams of becoming the Hokage, the village's leader and strongest ninja.",
-    "release_date": "2002-10-03",
-    "number_of_seasons": 4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/xppeysfvDKVx775MFuH8Z9BlpMk.jpg",
-    "directors": []
-  },
-  "anime_series:naruto shippuden": {
-    "title": "Naruto: Shippuden",
-    "media_type": "anime_series",
-    "runtime_minutes": 25,
-    "tmdb_url": "https://www.themoviedb.org/tv/31910",
-    "tmdb_id": 31910,
-    "genres": [
-      "Animation",
-      "Action & Adventure",
-      "Sci-Fi & Fantasy"
-    ],
-    "actors": [
-      "Junko Takeuchi",
-      "Noriaki Sugiyama",
-      "Chie Nakamura",
-      "Kazuhiko Inoue",
-      "Showtaro Morikubo",
-      "Satoshi Hino",
-      "Akira Ishida",
-      "Hideo Ishikawa"
-    ],
-    "rating": 8.5,
-    "overview": "After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work. It will not be easy though as he has amassed a few more dangerous enemies, in the likes of the shinobi organization; Akatsuki.",
-    "trailer_url": "https://www.youtube.com/watch?v=22R0j8UKRzY",
-    "description": "After 2 and a half years Naruto finally returns to his village of Konoha, and sets about putting his ambitions to work. It will not be easy though as he has amassed a few more dangerous enemies, in the likes of the shinobi organization; Akatsuki.",
-    "release_date": "2007-02-15",
-    "number_of_seasons": 20,
-    "poster_url": "https://image.tmdb.org/t/p/w342/71mASgFgSiPl9QUexVH8BubU0lD.jpg",
     "directors": []
   },
   "anime_series:neon genesis evangelion": {
@@ -3083,35 +2969,6 @@
       "Moritz Mohr"
     ],
     "runtime_minutes": 111
-  },
-  "bring her back": {
-    "title": "Bring Her Back",
-    "rating": 7.3,
-    "poster_url": "https://image.tmdb.org/t/p/w342/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
-    "tmdb_id": 1151031,
-    "release_date": "2025-05-28",
-    "overview": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
-    "trailer_url": "https://www.youtube.com/watch?v=vBuYDMxD71c",
-    "genres": [
-      "Horror"
-    ],
-    "actors": [
-      "Billy Barratt",
-      "Sally Hawkins",
-      "Mischa Heywood",
-      "Jonah Wren Phillips",
-      "Stephen Phillips",
-      "Sally-Anne Upton",
-      "Sora Wong",
-      "Kathryn Adams"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1151031",
-    "description": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
-    "directors": [
-      "Michael Philippou",
-      "Danny Philippou"
-    ],
-    "runtime_minutes": 104
   },
   "bugonia": {
     "title": "Bugonia",
@@ -4632,36 +4489,6 @@
     ],
     "runtime_minutes": 97
   },
-  "good luck have fun dont die": {
-    "title": "Good Luck, Have Fun, Don’t Die",
-    "rating": 6.9,
-    "poster_url": "https://image.tmdb.org/t/p/w342/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
-    "tmdb_id": 1119449,
-    "release_date": "2026-02-13",
-    "overview": "A 'Man from the Future' arrives at an LA diner where he must recruit the precise combination of disgruntled patrons to join him on a one-night quest to save the world from the terminal threat of a rogue artificial intelligence.",
-    "trailer_url": "https://www.youtube.com/watch?v=NOomDWU1_Dw",
-    "genres": [
-      "Science Fiction",
-      "Action",
-      "Comedy"
-    ],
-    "actors": [
-      "Sam Rockwell",
-      "Juno Temple",
-      "Haley Lu Richardson",
-      "Michael Peña",
-      "Zazie Beetz",
-      "Asim Chaudhry",
-      "Tom Taylor",
-      "Georgia Goodman"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1119449",
-    "description": "A 'Man from the Future' arrives at an LA diner where he must recruit the precise combination of disgruntled patrons to join him on a one-night quest to save the world from the terminal threat of a rogue artificial intelligence.",
-    "directors": [
-      "Gore Verbinski"
-    ],
-    "runtime_minutes": 134
-  },
   "gran torismo": {
     "title": "Gran Torismo",
     "rating": null,
@@ -4913,38 +4740,6 @@
     ],
     "runtime_minutes": 111
   },
-  "hoppers": {
-    "title": "Hoppers",
-    "rating": 7.7,
-    "poster_url": "https://image.tmdb.org/t/p/w342/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
-    "tmdb_id": 1327819,
-    "release_date": "2026-03-04",
-    "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-    "trailer_url": "https://www.youtube.com/watch?v=sAxvA8tM2Dg",
-    "genres": [
-      "Adventure",
-      "Animation",
-      "Comedy",
-      "Family",
-      "Science Fiction"
-    ],
-    "actors": [
-      "Piper Curda",
-      "Bobby Moynihan",
-      "Jon Hamm",
-      "Kathy Najimy",
-      "Dave Franco",
-      "Eduardo Franco",
-      "Aparna Nancherla",
-      "Tom Law"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1327819",
-    "description": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-    "directors": [
-      "Daniel Chong"
-    ],
-    "runtime_minutes": 105
-  },
   "how to train your dragon live action": {
     "title": "How to Train Your Dragon Live Action",
     "rating": null,
@@ -5172,36 +4967,6 @@
       "Christopher Nolan"
     ],
     "runtime_minutes": 169
-  },
-  "iron lung": {
-    "title": "Iron Lung",
-    "rating": 7.3,
-    "poster_url": "https://image.tmdb.org/t/p/w342/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
-    "tmdb_id": 1116201,
-    "release_date": "2026-01-29",
-    "overview": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
-    "trailer_url": "https://www.youtube.com/watch?v=7qRf_f_bbUk",
-    "genres": [
-      "Horror",
-      "Mystery",
-      "Science Fiction"
-    ],
-    "actors": [
-      "Mark Fischbach",
-      "Caroline Kaplan",
-      "Troy Baker",
-      "Elsie Lovelock",
-      "Elle LaMont",
-      "Mick Lauer",
-      "Dave Pettitt",
-      "Holt Boggs"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1116201",
-    "description": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
-    "directors": [
-      "Mark Fischbach"
-    ],
-    "runtime_minutes": 125
   },
   "it follows": {
     "title": "It Follows",
@@ -5758,35 +5523,6 @@
       "Panos Cosmatos"
     ],
     "runtime_minutes": 122
-  },
-  "marty supreme": {
-    "title": "Marty Supreme",
-    "rating": 7.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
-    "tmdb_id": 1317288,
-    "release_date": "2025-12-19",
-    "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-    "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-    "genres": [
-      "Drama",
-      "Thriller"
-    ],
-    "actors": [
-      "Timothée Chalamet",
-      "Gwyneth Paltrow",
-      "Odessa A'zion",
-      "Kevin O'Leary",
-      "Tyler, The Creator",
-      "Fran Drescher",
-      "Abel Ferrara",
-      "Emory Cohen"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1317288",
-    "description": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-    "directors": [
-      "Josh Safdie"
-    ],
-    "runtime_minutes": 150
   },
   "maxxxine": {
     "title": "MaXXXine",
@@ -6948,36 +6684,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:bring her back": {
-    "title": "Bring Her Back",
-    "rating": 7.3,
-    "poster_url": "https://image.tmdb.org/t/p/w342/1Q3GlCXGYWELifxANYZ5OVMRVZl.jpg",
-    "tmdb_id": 1151031,
-    "release_date": "2025-05-28",
-    "overview": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
-    "trailer_url": "https://www.youtube.com/watch?v=vBuYDMxD71c",
-    "genres": [
-      "Horror"
-    ],
-    "actors": [
-      "Billy Barratt",
-      "Sally Hawkins",
-      "Mischa Heywood",
-      "Jonah Wren Phillips",
-      "Stephen Phillips",
-      "Sally-Anne Upton",
-      "Sora Wong",
-      "Kathryn Adams"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1151031",
-    "description": "Following the death of their father, a brother and sister are sent to live with a foster mother, only to learn that she is hiding a terrifying secret.",
-    "directors": [
-      "Michael Philippou",
-      "Danny Philippou"
-    ],
-    "runtime_minutes": 104,
+  "movie:bring her back ": {
+    "title": "Bring Her Back 😐",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:bugonia": {
     "title": "Bugonia",
@@ -8604,17 +8326,15 @@
   },
   "movie:good luck have fun dont die": {
     "title": "Good Luck, Have Fun, Don’t Die",
-    "rating": 6.9,
-    "poster_url": "https://image.tmdb.org/t/p/w342/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
-    "tmdb_id": 1119449,
-    "release_date": "2026-02-13",
-    "overview": "A 'Man from the Future' arrives at an LA diner where he must recruit the precise combination of disgruntled patrons to join him on a one-night quest to save the world from the terminal threat of a rogue artificial intelligence.",
+    "media_type": "movie",
     "trailer_url": "https://www.youtube.com/watch?v=NOomDWU1_Dw",
-    "genres": [
-      "Science Fiction",
-      "Action",
-      "Comedy"
-    ],
+    "number_of_seasons": null,
+    "runtime_minutes": 134,
+    "tmdb_url": "https://www.themoviedb.org/movie/1119449",
+    "overview": "A 'Man from the Future' arrives at an LA diner where he must recruit the precise combination of disgruntled patrons to join him on a one-night quest to save the world from the terminal threat of a rogue artificial intelligence.",
+    "tmdb_id": 1119449,
+    "rating": 6.9,
+    "release_date": "2026-02-13",
     "actors": [
       "Sam Rockwell",
       "Juno Temple",
@@ -8625,14 +8345,16 @@
       "Tom Taylor",
       "Georgia Goodman"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1119449",
+    "poster_url": "https://image.tmdb.org/t/p/w342/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
     "description": "A 'Man from the Future' arrives at an LA diner where he must recruit the precise combination of disgruntled patrons to join him on a one-night quest to save the world from the terminal threat of a rogue artificial intelligence.",
     "directors": [
       "Gore Verbinski"
     ],
-    "runtime_minutes": 134,
-    "media_type": "movie",
-    "number_of_seasons": null
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Comedy"
+    ]
   },
   "movie:gran torismo": {
     "title": "Gran Torismo",
@@ -8905,19 +8627,15 @@
   },
   "movie:hoppers": {
     "title": "Hoppers",
-    "rating": 7.7,
-    "poster_url": "https://image.tmdb.org/t/p/w342/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
-    "tmdb_id": 1327819,
-    "release_date": "2026-03-04",
-    "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+    "media_type": "movie",
     "trailer_url": "https://www.youtube.com/watch?v=sAxvA8tM2Dg",
-    "genres": [
-      "Adventure",
-      "Animation",
-      "Comedy",
-      "Family",
-      "Science Fiction"
-    ],
+    "number_of_seasons": null,
+    "runtime_minutes": 105,
+    "tmdb_url": "https://www.themoviedb.org/movie/1327819",
+    "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
+    "tmdb_id": 1327819,
+    "rating": 7.7,
+    "release_date": "2026-03-04",
     "actors": [
       "Piper Curda",
       "Bobby Moynihan",
@@ -8928,14 +8646,18 @@
       "Aparna Nancherla",
       "Tom Law"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1327819",
+    "poster_url": "https://image.tmdb.org/t/p/w342/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
     "description": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
     "directors": [
       "Daniel Chong"
     ],
-    "runtime_minutes": 105,
-    "media_type": "movie",
-    "number_of_seasons": null
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family",
+      "Science Fiction"
+    ]
   },
   "movie:how to train your dragon live action": {
     "title": "How to Train Your Dragon Live Action",
@@ -9183,17 +8905,15 @@
   },
   "movie:iron lung": {
     "title": "Iron Lung",
-    "rating": 7.3,
-    "poster_url": "https://image.tmdb.org/t/p/w342/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
-    "tmdb_id": 1116201,
-    "release_date": "2026-01-29",
-    "overview": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
+    "media_type": "movie",
     "trailer_url": "https://www.youtube.com/watch?v=7qRf_f_bbUk",
-    "genres": [
-      "Horror",
-      "Mystery",
-      "Science Fiction"
-    ],
+    "number_of_seasons": null,
+    "runtime_minutes": 125,
+    "tmdb_url": "https://www.themoviedb.org/movie/1116201",
+    "overview": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
+    "tmdb_id": 1116201,
+    "rating": 7.3,
+    "release_date": "2026-01-29",
     "actors": [
       "Mark Fischbach",
       "Caroline Kaplan",
@@ -9204,14 +8924,16 @@
       "Dave Pettitt",
       "Holt Boggs"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1116201",
+    "poster_url": "https://image.tmdb.org/t/p/w342/sIwakdbMGS1krtgendTWpxTY9Hw.jpg",
     "description": "The stars are gone. The planets have disappeared. Only individuals aboard space stations or starships were left to give the end a name -- The Quiet Rapture. After decades of decay and crumbling infrastructure, the Consolidation of Iron has made a discovery on a barren moon designated AT-5. An ocean of blood. Hoping to discover desperately needed resources they immediately launch an expedition. A submarine is crafted and a convict is welded inside. Due to the pressure and depth of the ocean the forward viewport has been encased in metal. If successful, they will earn their freedom. If not, another will follow. This will be the 13th expedition.",
     "directors": [
       "Mark Fischbach"
     ],
-    "runtime_minutes": 125,
-    "media_type": "movie",
-    "number_of_seasons": null
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Science Fiction"
+    ]
   },
   "movie:it follows": {
     "title": "It Follows",
@@ -9807,36 +9529,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:marty supreme": {
-    "title": "Marty Supreme",
-    "rating": 7.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
-    "tmdb_id": 1317288,
-    "release_date": "2025-12-19",
-    "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-    "trailer_url": "https://www.youtube.com/watch?v=pwE3ZG1kIqw",
-    "genres": [
-      "Drama",
-      "Thriller"
-    ],
-    "actors": [
-      "Timothée Chalamet",
-      "Gwyneth Paltrow",
-      "Odessa A'zion",
-      "Kevin O'Leary",
-      "Tyler, The Creator",
-      "Fran Drescher",
-      "Abel Ferrara",
-      "Emory Cohen"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1317288",
-    "description": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-    "directors": [
-      "Josh Safdie"
-    ],
-    "runtime_minutes": 150,
+  "movie:marty supreme ": {
+    "title": "Marty Supreme 👍",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:maxxxine": {
     "title": "MaXXXine",
@@ -10269,22 +9977,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:nirvana the band the show the movie": {
-    "title": "Nirvana The Band The Show The Movie",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null,
+  "movie:nirvana the band the show the movie ": {
+    "title": "Nirvana The Band The Show The Movie 👍",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:no one will save you": {
     "title": "No One Will Save You",
@@ -10474,17 +10182,15 @@
   },
   "movie:one battle after another": {
     "title": "One Battle After Another",
-    "rating": 7.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
-    "tmdb_id": 1054867,
-    "release_date": "2025-09-23",
-    "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "media_type": "movie",
     "trailer_url": "https://www.youtube.com/watch?v=FrRQzgN8bXY",
-    "genres": [
-      "Thriller",
-      "Crime",
-      "Comedy"
-    ],
+    "number_of_seasons": null,
+    "runtime_minutes": 162,
+    "tmdb_url": "https://www.themoviedb.org/movie/1054867",
+    "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
+    "tmdb_id": 1054867,
+    "rating": 7.4,
+    "release_date": "2025-09-23",
     "actors": [
       "Leonardo DiCaprio",
       "Sean Penn",
@@ -10495,14 +10201,16 @@
       "Wood Harris",
       "Tony Goldwyn"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1054867",
+    "poster_url": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
     "description": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
     "directors": [
       "Paul Thomas Anderson"
     ],
-    "runtime_minutes": 162,
-    "media_type": "movie",
-    "number_of_seasons": null
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Comedy"
+    ]
   },
   "movie:one flew over the cuckoos nest": {
     "title": "One Flew Over The Cuckoo’s Nest",
@@ -10884,37 +10592,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:project hail mary": {
-    "title": "Project Hail Mary",
-    "rating": 8.2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-    "tmdb_id": 687163,
-    "release_date": "2026-03-15",
-    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-    "trailer_url": "https://www.youtube.com/watch?v=jnly2BcwCVA",
-    "genres": [
-      "Science Fiction",
-      "Adventure"
-    ],
-    "actors": [
-      "Ryan Gosling",
-      "James Ortiz",
-      "Sandra Hüller",
-      "Lionel Boyce",
-      "Milana Vayntrub",
-      "Ken Leung",
-      "Priya Kansara",
-      "Mia Soteriou"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/687163",
-    "description": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-    "directors": [
-      "Phil Lord",
-      "Christopher Miller"
-    ],
-    "runtime_minutes": 157,
+  "movie:project hail mary ": {
+    "title": "Project Hail Mary 🔥",
     "media_type": "movie",
-    "number_of_seasons": null
+    "poster_url": null,
+    "tmdb_id": null,
+    "release_date": null,
+    "trailer_url": null,
+    "directors": null,
+    "tmdb_url": null,
+    "overview": null,
+    "description": null,
+    "genres": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "runtime_minutes": null,
+    "actors": null
   },
   "movie:rango": {
     "title": "Rango",
@@ -10952,16 +10645,15 @@
   },
   "movie:ready or not 2 here i come": {
     "title": "Ready Or Not 2: Here I Come",
-    "rating": 7.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg",
-    "tmdb_id": 1266127,
-    "release_date": "2026-03-19",
-    "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+    "media_type": "movie",
     "trailer_url": "https://www.youtube.com/watch?v=i2xztMDGi-U",
-    "genres": [
-      "Horror",
-      "Comedy"
-    ],
+    "number_of_seasons": null,
+    "runtime_minutes": 108,
+    "tmdb_url": "https://www.themoviedb.org/movie/1266127",
+    "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
+    "tmdb_id": 1266127,
+    "rating": 7.0,
+    "release_date": "2026-03-19",
     "actors": [
       "Samara Weaving",
       "Kathryn Newton",
@@ -10972,15 +10664,16 @@
       "Masa Lizdek",
       "Olivia Cheng"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1266127",
+    "poster_url": "https://image.tmdb.org/t/p/w342/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg",
     "description": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
     "directors": [
       "Matt Bettinelli-Olpin",
       "Tyler Gillett"
     ],
-    "runtime_minutes": 108,
-    "media_type": "movie",
-    "number_of_seasons": null
+    "genres": [
+      "Horror",
+      "Comedy"
+    ]
   },
   "movie:renfield": {
     "title": "Renfield",
@@ -11235,41 +10928,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:secret of nimh": {
-    "title": "Secret of NIMH",
-    "rating": 7.5,
-    "poster_url": "https://image.tmdb.org/t/p/w342/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg",
-    "tmdb_id": 11704,
-    "release_date": "1982-06-17",
-    "overview": "A widowed field mouse must move her family -- including an ailing son -- to escape a farmer's plow. Aided by a crow and a pack of superintelligent, escaped lab rats, the brave mother struggles to transplant her home to firmer ground.",
-    "trailer_url": "https://www.youtube.com/watch?v=q8skJYBxvNk",
-    "genres": [
-      "Family",
-      "Animation",
-      "Fantasy",
-      "Adventure",
-      "Mystery",
-      "Drama",
-      "Science Fiction"
-    ],
-    "actors": [
-      "Elizabeth Hartman",
-      "Derek Jacobi",
-      "Arthur Malet",
-      "Dom DeLuise",
-      "Hermione Baddeley",
-      "Shannen Doherty",
-      "Wil Wheaton",
-      "Jodi Hicks"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/11704",
-    "description": "A widowed field mouse must move her family -- including an ailing son -- to escape a farmer's plow. Aided by a crow and a pack of superintelligent, escaped lab rats, the brave mother struggles to transplant her home to firmer ground.",
-    "directors": [
-      "Don Bluth"
-    ],
-    "runtime_minutes": 83,
+  "movie:secret of nimh ": {
+    "title": "Secret of NIMH 🔥",
     "media_type": "movie",
-    "number_of_seasons": null
+    "poster_url": null,
+    "tmdb_id": null,
+    "release_date": null,
+    "trailer_url": null,
+    "directors": null,
+    "tmdb_url": null,
+    "overview": null,
+    "description": null,
+    "genres": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "runtime_minutes": null,
+    "actors": null
   },
   "movie:self reliance": {
     "title": "Self Reliance",
@@ -11302,37 +10976,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:send help": {
-    "title": "Send Help",
-    "rating": 7.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg",
-    "tmdb_id": 1198994,
-    "release_date": "2026-01-22",
-    "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-    "trailer_url": "https://www.youtube.com/watch?v=VXWye0z9mfU",
-    "genres": [
-      "Horror",
-      "Thriller",
-      "Comedy"
-    ],
-    "actors": [
-      "Rachel McAdams",
-      "Dylan O'Brien",
-      "Edyll Ismail",
-      "Dennis Haysbert",
-      "Xavier Samuel",
-      "Chris Pang",
-      "Thaneth Warakulnukroh",
-      "Emma Raimi"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1198994",
-    "description": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-    "directors": [
-      "Sam Raimi"
-    ],
-    "runtime_minutes": 113,
+  "movie:send help ": {
+    "title": "Send Help 👍",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:significant other": {
     "title": "Significant Other",
@@ -11844,40 +11503,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:super mario galaxy": {
-    "title": "Super Mario Galaxy",
-    "rating": 6.7,
-    "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-    "tmdb_id": 1226863,
-    "release_date": "2026-04-01",
-    "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-    "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
-    "genres": [
-      "Family",
-      "Comedy",
-      "Adventure",
-      "Fantasy",
-      "Animation"
-    ],
-    "actors": [
-      "Chris Pratt",
-      "Charlie Day",
-      "Anya Taylor-Joy",
-      "Jack Black",
-      "Keegan-Michael Key",
-      "Benny Safdie",
-      "Donald Glover",
-      "Luis Guzmán"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1226863",
-    "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-    "directors": [
-      "Aaron Horvath",
-      "Michael Jelenic"
-    ],
-    "runtime_minutes": 98,
+  "movie:super mario galaxy ": {
+    "title": "Super Mario Galaxy 😐",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:superman 2025": {
     "title": "Superman 2025",
@@ -12908,36 +12549,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:the housemaid": {
-    "title": "The Housemaid",
-    "rating": 7.2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
-    "tmdb_id": 1368166,
-    "release_date": "2025-12-18",
-    "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
-    "trailer_url": "https://www.youtube.com/watch?v=M_HwDp-zKBI",
-    "genres": [
-      "Mystery",
-      "Thriller"
-    ],
-    "actors": [
-      "Sydney Sweeney",
-      "Amanda Seyfried",
-      "Brandon Sklenar",
-      "Michele Morrone",
-      "Elizabeth Perkins",
-      "Indiana Elle",
-      "Amanda Joy Erickson",
-      "Sarah Cooper"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1368166",
-    "description": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
-    "directors": [
-      "Paul Feig"
-    ],
-    "runtime_minutes": 131,
+  "movie:the housemaid ": {
+    "title": "The Housemaid 👍",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:the invitation": {
     "title": "The Invitation",
@@ -13253,37 +12880,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:the naked gun": {
-    "title": "The Naked Gun",
-    "rating": 6.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
-    "tmdb_id": 1035259,
-    "release_date": "2025-07-30",
-    "overview": "Only one man has the particular set of skills... to lead Police Squad and save the world: Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from closure.",
-    "trailer_url": "https://www.youtube.com/watch?v=WW5gu9D1exU",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Crime"
-    ],
-    "actors": [
-      "Liam Neeson",
-      "Pamela Anderson",
-      "Paul Walter Hauser",
-      "Danny Huston",
-      "CCH Pounder",
-      "Kevin Durand",
-      "Liza Koshy",
-      "Eddie Yu"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1035259",
-    "description": "Only one man has the particular set of skills... to lead Police Squad and save the world: Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from closure.",
-    "directors": [
-      "Akiva Schaffer"
-    ],
-    "runtime_minutes": 85,
+  "movie:the naked gun ": {
+    "title": "The Naked Gun 👍",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:the nice guys": {
     "title": "The Nice Guys",
@@ -14008,36 +13620,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:together": {
-    "title": "Together",
-    "rating": 6.9,
-    "poster_url": "https://image.tmdb.org/t/p/w342/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
-    "tmdb_id": 1242011,
-    "release_date": "2025-07-28",
-    "overview": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
-    "trailer_url": "https://www.youtube.com/watch?v=PMYbNyLd3AA",
-    "genres": [
-      "Horror",
-      "Romance"
-    ],
-    "actors": [
-      "Dave Franco",
-      "Alison Brie",
-      "Damon Herriman",
-      "Mia Morrissey",
-      "Karl Richmond",
-      "Jack Kenny",
-      "Francesca Waters",
-      "Aljin Abella"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1242011",
-    "description": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
-    "directors": [
-      "Michael Shanks"
-    ],
-    "runtime_minutes": 102,
+  "movie:together ": {
+    "title": "Together 😐",
     "media_type": "movie",
-    "number_of_seasons": null
+    "runtime_minutes": null,
+    "overview": null,
+    "trailer_url": null,
+    "tmdb_id": null,
+    "rating": null,
+    "genres": null,
+    "number_of_seasons": null,
+    "release_date": null,
+    "directors": null,
+    "actors": null,
+    "poster_url": null,
+    "tmdb_url": null,
+    "description": null
   },
   "movie:top gun maverick": {
     "title": "Top Gun: Maverick",
@@ -14295,17 +13893,15 @@
   },
   "movie:valley uprising": {
     "title": "Valley Uprising",
-    "rating": 7.7,
-    "poster_url": "https://image.tmdb.org/t/p/w342/9wjZdG4K1zkKmlh5DS2xxiEEVPK.jpg",
-    "tmdb_id": 294959,
-    "release_date": "2014-09-01",
-    "overview": "In the shady campgrounds of Yosemite valley, climbers carved out a counterculture lifestyle of dumpster-diving and wild parties that clashed with the conservative values of the National Park Service. And up on the walls, generation after generation has pushed the limits of climbing, vying amongst each other for supremacy on Yosemite's cliffs. \"Valley Uprising\" is the riveting, unforgettable tale of this bold rock climbing tradition in Yosemite National Park: half a century of struggle against the laws of gravity -- and the laws of the land.",
+    "media_type": "movie",
     "trailer_url": "https://www.youtube.com/watch?v=o86TpaSBcWw",
-    "genres": [
-      "Adventure",
-      "Documentary",
-      "History"
-    ],
+    "number_of_seasons": null,
+    "runtime_minutes": 99,
+    "tmdb_url": "https://www.themoviedb.org/movie/294959",
+    "overview": "In the shady campgrounds of Yosemite valley, climbers carved out a counterculture lifestyle of dumpster-diving and wild parties that clashed with the conservative values of the National Park Service. And up on the walls, generation after generation has pushed the limits of climbing, vying amongst each other for supremacy on Yosemite's cliffs. \"Valley Uprising\" is the riveting, unforgettable tale of this bold rock climbing tradition in Yosemite National Park: half a century of struggle against the laws of gravity -- and the laws of the land.",
+    "tmdb_id": 294959,
+    "rating": 7.7,
+    "release_date": "2014-09-01",
     "actors": [
       "Peter Sarsgaard",
       "Royal Robbins",
@@ -14316,16 +13912,18 @@
       "Lynn Hill",
       "John Long"
     ],
-    "tmdb_url": "https://www.themoviedb.org/movie/294959",
+    "poster_url": "https://image.tmdb.org/t/p/w342/9wjZdG4K1zkKmlh5DS2xxiEEVPK.jpg",
     "description": "In the shady campgrounds of Yosemite valley, climbers carved out a counterculture lifestyle of dumpster-diving and wild parties that clashed with the conservative values of the National Park Service. And up on the walls, generation after generation has pushed the limits of climbing, vying amongst each other for supremacy on Yosemite's cliffs. \"Valley Uprising\" is the riveting, unforgettable tale of this bold rock climbing tradition in Yosemite National Park: half a century of struggle against the laws of gravity -- and the laws of the land.",
     "directors": [
-      "Nick Rosen",
       "Josh Lowell",
+      "Nick Rosen",
       "Peter Mortimer"
     ],
-    "runtime_minutes": 99,
-    "media_type": "movie",
-    "number_of_seasons": null
+    "genres": [
+      "Adventure",
+      "Documentary",
+      "History"
+    ]
   },
   "movie:vesper": {
     "title": "Vesper",
@@ -14547,36 +14145,22 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:weapons": {
-    "title": "Weapons",
-    "rating": 7.2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
-    "tmdb_id": 1078605,
-    "release_date": "2025-08-04",
-    "overview": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "trailer_url": "https://www.youtube.com/watch?v=t41avNnPsaA",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "actors": [
-      "Julia Garner",
-      "Josh Brolin",
-      "Alden Ehrenreich",
-      "Austin Abrams",
-      "Benedict Wong",
-      "Amy Madigan",
-      "Cary Christopher",
-      "Toby Huss"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1078605",
-    "description": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "directors": [
-      "Zach Cregger"
-    ],
-    "runtime_minutes": 129,
+  "movie:weapons ": {
+    "title": "Weapons 🔥",
     "media_type": "movie",
-    "number_of_seasons": null
+    "poster_url": null,
+    "tmdb_id": null,
+    "release_date": null,
+    "trailer_url": null,
+    "directors": null,
+    "tmdb_url": null,
+    "overview": null,
+    "description": null,
+    "genres": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "runtime_minutes": null,
+    "actors": null
   },
   "movie:what is a woman": {
     "title": "What is a Woman?",
@@ -15191,21 +14775,6 @@
     "directors": null,
     "runtime_minutes": null
   },
-  "nirvana the band the show the movie": {
-    "title": "Nirvana The Band The Show The Movie",
-    "rating": null,
-    "poster_url": "",
-    "tmdb_id": null,
-    "release_date": "",
-    "overview": "",
-    "trailer_url": null,
-    "genres": null,
-    "actors": null,
-    "tmdb_url": null,
-    "description": null,
-    "directors": null,
-    "runtime_minutes": null
-  },
   "no one will save you": {
     "title": "No One Will Save You",
     "rating": 6.7,
@@ -15379,36 +14948,6 @@
       "Mike Judge"
     ],
     "runtime_minutes": 90
-  },
-  "one battle after another": {
-    "title": "One Battle After Another",
-    "rating": 7.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg",
-    "tmdb_id": 1054867,
-    "release_date": "2025-09-23",
-    "overview": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
-    "trailer_url": "https://www.youtube.com/watch?v=FrRQzgN8bXY",
-    "genres": [
-      "Thriller",
-      "Crime",
-      "Comedy"
-    ],
-    "actors": [
-      "Leonardo DiCaprio",
-      "Sean Penn",
-      "Chase Infiniti",
-      "Benicio del Toro",
-      "Regina Hall",
-      "Teyana Taylor",
-      "Wood Harris",
-      "Tony Goldwyn"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1054867",
-    "description": "Washed-up revolutionary Bob exists in a state of stoned paranoia, surviving off-grid with his spirited, self-reliant daughter, Willa. When his evil nemesis resurfaces after 16 years and she goes missing, the former radical scrambles to find her, father and daughter both battling the consequences of his past.",
-    "directors": [
-      "Paul Thomas Anderson"
-    ],
-    "runtime_minutes": 162
   },
   "one flew over the cuckoos nest": {
     "title": "One Flew Over The Cuckoo’s Nest",
@@ -15766,36 +15305,6 @@
     ],
     "runtime_minutes": 153
   },
-  "project hail mary": {
-    "title": "Project Hail Mary",
-    "rating": 8.2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-    "tmdb_id": 687163,
-    "release_date": "2026-03-15",
-    "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-    "trailer_url": "https://www.youtube.com/watch?v=jnly2BcwCVA",
-    "genres": [
-      "Science Fiction",
-      "Adventure"
-    ],
-    "actors": [
-      "Ryan Gosling",
-      "James Ortiz",
-      "Sandra Hüller",
-      "Lionel Boyce",
-      "Milana Vayntrub",
-      "Ken Leung",
-      "Priya Kansara",
-      "Mia Soteriou"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/687163",
-    "description": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
-    "directors": [
-      "Phil Lord",
-      "Christopher Miller"
-    ],
-    "runtime_minutes": 157
-  },
   "rango": {
     "title": "Rango",
     "rating": 6.9,
@@ -15827,36 +15336,6 @@
       "Gore Verbinski"
     ],
     "runtime_minutes": 107
-  },
-  "ready or not 2 here i come": {
-    "title": "Ready Or Not 2: Here I Come",
-    "rating": 7.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/jRf89HVEtBZiSnOXXWDhZOfuTwW.jpg",
-    "tmdb_id": 1266127,
-    "release_date": "2026-03-19",
-    "overview": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
-    "trailer_url": "https://www.youtube.com/watch?v=i2xztMDGi-U",
-    "genres": [
-      "Horror",
-      "Comedy"
-    ],
-    "actors": [
-      "Samara Weaving",
-      "Kathryn Newton",
-      "Elijah Wood",
-      "Sarah Michelle Gellar",
-      "Shawn Hatosy",
-      "Varun Saranga",
-      "Masa Lizdek",
-      "Olivia Cheng"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1266127",
-    "description": "Moments after surviving an all-out attack from the Le Domas family, Grace discovers she’s reached the next level of the nightmarish game — and this time with her estranged sister Faith at her side. Grace has one chance to survive, keep her sister alive, and claim the High Seat of the Council that controls the world. Four rival families are hunting her for the throne, and whoever wins rules it all.",
-    "directors": [
-      "Matt Bettinelli-Olpin",
-      "Tyler Gillett"
-    ],
-    "runtime_minutes": 108
   },
   "renfield": {
     "title": "Renfield",
@@ -16095,40 +15574,6 @@
     ],
     "runtime_minutes": 123
   },
-  "secret of nimh": {
-    "title": "Secret of NIMH",
-    "rating": 7.5,
-    "poster_url": "https://image.tmdb.org/t/p/w342/prNrnOKlkV9wl5Sl3zwHu1f3t2z.jpg",
-    "tmdb_id": 11704,
-    "release_date": "1982-06-17",
-    "overview": "A widowed field mouse must move her family -- including an ailing son -- to escape a farmer's plow. Aided by a crow and a pack of superintelligent, escaped lab rats, the brave mother struggles to transplant her home to firmer ground.",
-    "trailer_url": "https://www.youtube.com/watch?v=q8skJYBxvNk",
-    "genres": [
-      "Family",
-      "Animation",
-      "Fantasy",
-      "Adventure",
-      "Mystery",
-      "Drama",
-      "Science Fiction"
-    ],
-    "actors": [
-      "Elizabeth Hartman",
-      "Derek Jacobi",
-      "Arthur Malet",
-      "Dom DeLuise",
-      "Hermione Baddeley",
-      "Shannen Doherty",
-      "Wil Wheaton",
-      "Jodi Hicks"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/11704",
-    "description": "A widowed field mouse must move her family -- including an ailing son -- to escape a farmer's plow. Aided by a crow and a pack of superintelligent, escaped lab rats, the brave mother struggles to transplant her home to firmer ground.",
-    "directors": [
-      "Don Bluth"
-    ],
-    "runtime_minutes": 83
-  },
   "self reliance": {
     "title": "Self Reliance",
     "rating": 5.9,
@@ -16157,36 +15602,6 @@
       "Jake Johnson"
     ],
     "runtime_minutes": 91
-  },
-  "send help": {
-    "title": "Send Help",
-    "rating": 7.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/mjkS2iAgWj3ik1DTjvI15nHZ7yl.jpg",
-    "tmdb_id": 1198994,
-    "release_date": "2026-01-22",
-    "overview": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-    "trailer_url": "https://www.youtube.com/watch?v=VXWye0z9mfU",
-    "genres": [
-      "Horror",
-      "Thriller",
-      "Comedy"
-    ],
-    "actors": [
-      "Rachel McAdams",
-      "Dylan O'Brien",
-      "Edyll Ismail",
-      "Dennis Haysbert",
-      "Xavier Samuel",
-      "Chris Pang",
-      "Thaneth Warakulnukroh",
-      "Emma Raimi"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1198994",
-    "description": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
-    "directors": [
-      "Sam Raimi"
-    ],
-    "runtime_minutes": 113
   },
   "series:a knight of the seven kingdoms": {
     "title": "A Knight of the Seven Kingdoms",
@@ -17595,27 +17010,27 @@
   "series:star wars maul": {
     "title": "Star Wars: Maul",
     "media_type": "series",
-    "poster_url": "https://image.tmdb.org/t/p/w342/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
-    "runtime_minutes": null,
-    "description": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
-    "tmdb_id": 289219,
-    "directors": [
-      "Dave Filoni"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/tv/289219",
     "trailer_url": "https://www.youtube.com/watch?v=kSGcFbM2RtM",
-    "rating": 7.8,
-    "genres": [
-      "Animation",
-      "Sci-Fi & Fantasy",
-      "Action & Adventure"
-    ],
+    "number_of_seasons": 1,
+    "runtime_minutes": null,
+    "tmdb_url": "https://www.themoviedb.org/tv/289219",
     "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+    "tmdb_id": 289219,
+    "rating": 7.8,
     "release_date": "2026-04-06",
     "actors": [
       "Sam Witwer"
     ],
-    "number_of_seasons": 1
+    "poster_url": "https://image.tmdb.org/t/p/w342/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
+    "description": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+    "directors": [
+      "Dave Filoni"
+    ],
+    "genres": [
+      "Animation",
+      "Sci-Fi & Fantasy",
+      "Action & Adventure"
+    ]
   },
   "series:star wars visions": {
     "title": "Star Wars Visions",
@@ -17794,22 +17209,14 @@
   "series:the boys": {
     "title": "The Boys",
     "media_type": "series",
-    "directors": [
-      "Eric Kripke"
-    ],
-    "description": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
-    "tmdb_url": "https://www.themoviedb.org/tv/76479",
-    "tmdb_id": 76479,
-    "poster_url": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
-    "release_date": "2019-07-25",
-    "runtime_minutes": null,
-    "rating": 8.4,
     "trailer_url": "https://www.youtube.com/watch?v=tcrNsIaQkb4",
+    "number_of_seasons": 5,
+    "runtime_minutes": null,
+    "tmdb_url": "https://www.themoviedb.org/tv/76479",
     "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
-    "genres": [
-      "Sci-Fi & Fantasy",
-      "Action & Adventure"
-    ],
+    "tmdb_id": 76479,
+    "rating": 8.4,
+    "release_date": "2019-07-25",
     "actors": [
       "Karl Urban",
       "Jack Quaid",
@@ -17820,7 +17227,15 @@
       "Chace Crawford",
       "Tomer Capone"
     ],
-    "number_of_seasons": 5
+    "poster_url": "https://image.tmdb.org/t/p/w342/in1R2dDc421JxsoRWaIIAqVI2KE.jpg",
+    "description": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+    "directors": [
+      "Eric Kripke"
+    ],
+    "genres": [
+      "Sci-Fi & Fantasy",
+      "Action & Adventure"
+    ]
   },
   "series:the boys presents diabolical": {
     "title": "The Boys Presents: Diabolical",
@@ -18728,39 +18143,6 @@
     "description": "The film tells the story of a socially awkward boy",
     "directors": [],
     "runtime_minutes": 8
-  },
-  "super mario galaxy": {
-    "title": "Super Mario Galaxy",
-    "rating": 6.7,
-    "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
-    "tmdb_id": 1226863,
-    "release_date": "2026-04-01",
-    "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-    "trailer_url": "https://www.youtube.com/watch?v=fm3oeAGbcd4",
-    "genres": [
-      "Family",
-      "Comedy",
-      "Adventure",
-      "Fantasy",
-      "Animation"
-    ],
-    "actors": [
-      "Chris Pratt",
-      "Charlie Day",
-      "Anya Taylor-Joy",
-      "Jack Black",
-      "Keegan-Michael Key",
-      "Benny Safdie",
-      "Donald Glover",
-      "Luis Guzmán"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1226863",
-    "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-    "directors": [
-      "Aaron Horvath",
-      "Michael Jelenic"
-    ],
-    "runtime_minutes": 98
   },
   "superman 2025": {
     "title": "Superman 2025",
@@ -19725,35 +19107,6 @@
     ],
     "runtime_minutes": 90
   },
-  "the housemaid": {
-    "title": "The Housemaid",
-    "rating": 7.2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/cWsBscZzwu5brg9YjNkGewRUvJX.jpg",
-    "tmdb_id": 1368166,
-    "release_date": "2025-12-18",
-    "overview": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
-    "trailer_url": "https://www.youtube.com/watch?v=M_HwDp-zKBI",
-    "genres": [
-      "Mystery",
-      "Thriller"
-    ],
-    "actors": [
-      "Sydney Sweeney",
-      "Amanda Seyfried",
-      "Brandon Sklenar",
-      "Michele Morrone",
-      "Elizabeth Perkins",
-      "Indiana Elle",
-      "Amanda Joy Erickson",
-      "Sarah Cooper"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1368166",
-    "description": "Trying to escape her past, Millie Calloway accepts a job as a live-in housemaid for the wealthy Nina and Andrew Winchester. But what begins as a dream job quickly unravels into something far more dangerous—a sexy, seductive game of secrets, scandal, and power.",
-    "directors": [
-      "Paul Feig"
-    ],
-    "runtime_minutes": 131
-  },
   "the invitation": {
     "title": "The Invitation",
     "rating": 6.0,
@@ -20047,36 +19400,6 @@
       "Osgood Perkins"
     ],
     "runtime_minutes": 97
-  },
-  "the naked gun": {
-    "title": "The Naked Gun",
-    "rating": 6.4,
-    "poster_url": "https://image.tmdb.org/t/p/w342/rwla9vqzrKVVKVKiOuROTIXGsxj.jpg",
-    "tmdb_id": 1035259,
-    "release_date": "2025-07-30",
-    "overview": "Only one man has the particular set of skills... to lead Police Squad and save the world: Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from closure.",
-    "trailer_url": "https://www.youtube.com/watch?v=WW5gu9D1exU",
-    "genres": [
-      "Action",
-      "Comedy",
-      "Crime"
-    ],
-    "actors": [
-      "Liam Neeson",
-      "Pamela Anderson",
-      "Paul Walter Hauser",
-      "Danny Huston",
-      "CCH Pounder",
-      "Kevin Durand",
-      "Liza Koshy",
-      "Eddie Yu"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1035259",
-    "description": "Only one man has the particular set of skills... to lead Police Squad and save the world: Lt. Frank Drebin Jr. Following in his father's footsteps, he must solve a murder case to prevent Police Squad from closure.",
-    "directors": [
-      "Akiva Schaffer"
-    ],
-    "runtime_minutes": 85
   },
   "the nice guys": {
     "title": "The Nice Guys",
@@ -20755,35 +20078,6 @@
     ],
     "runtime_minutes": 108
   },
-  "together": {
-    "title": "Together",
-    "rating": 6.9,
-    "poster_url": "https://image.tmdb.org/t/p/w342/80slKYVM5teFH3kz6ouWrZXveqj.jpg",
-    "tmdb_id": 1242011,
-    "release_date": "2025-07-28",
-    "overview": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
-    "trailer_url": "https://www.youtube.com/watch?v=PMYbNyLd3AA",
-    "genres": [
-      "Horror",
-      "Romance"
-    ],
-    "actors": [
-      "Dave Franco",
-      "Alison Brie",
-      "Damon Herriman",
-      "Mia Morrissey",
-      "Karl Richmond",
-      "Jack Kenny",
-      "Francesca Waters",
-      "Aljin Abella"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1242011",
-    "description": "Years into their relationship, Tim and Millie find themselves at a crossroads as they move to the country, abandoning all that is familiar in their lives except each other. With tensions already flaring, a nightmarish encounter with a mysterious, unnatural force threatens to corrupt their lives, their love, and their flesh.",
-    "directors": [
-      "Michael Shanks"
-    ],
-    "runtime_minutes": 102
-  },
   "top gun maverick": {
     "title": "Top Gun: Maverick",
     "rating": 8.2,
@@ -21022,38 +20316,6 @@
     ],
     "runtime_minutes": 97
   },
-  "valley uprising": {
-    "title": "Valley Uprising",
-    "rating": 7.7,
-    "poster_url": "https://image.tmdb.org/t/p/w342/9wjZdG4K1zkKmlh5DS2xxiEEVPK.jpg",
-    "tmdb_id": 294959,
-    "release_date": "2014-09-01",
-    "overview": "In the shady campgrounds of Yosemite valley, climbers carved out a counterculture lifestyle of dumpster-diving and wild parties that clashed with the conservative values of the National Park Service. And up on the walls, generation after generation has pushed the limits of climbing, vying amongst each other for supremacy on Yosemite's cliffs. \"Valley Uprising\" is the riveting, unforgettable tale of this bold rock climbing tradition in Yosemite National Park: half a century of struggle against the laws of gravity -- and the laws of the land.",
-    "trailer_url": "https://www.youtube.com/watch?v=o86TpaSBcWw",
-    "genres": [
-      "Adventure",
-      "Documentary",
-      "History"
-    ],
-    "actors": [
-      "Peter Sarsgaard",
-      "Royal Robbins",
-      "Warren Harding",
-      "John Bachar",
-      "Ron Kauk",
-      "Jim Bridwell",
-      "Lynn Hill",
-      "John Long"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/294959",
-    "description": "In the shady campgrounds of Yosemite valley, climbers carved out a counterculture lifestyle of dumpster-diving and wild parties that clashed with the conservative values of the National Park Service. And up on the walls, generation after generation has pushed the limits of climbing, vying amongst each other for supremacy on Yosemite's cliffs. \"Valley Uprising\" is the riveting, unforgettable tale of this bold rock climbing tradition in Yosemite National Park: half a century of struggle against the laws of gravity -- and the laws of the land.",
-    "directors": [
-      "Nick Rosen",
-      "Josh Lowell",
-      "Peter Mortimer"
-    ],
-    "runtime_minutes": 99
-  },
   "vesper": {
     "title": "Vesper",
     "rating": 6.3,
@@ -21259,35 +20521,6 @@
       "Fayzullo Fayz"
     ],
     "runtime_minutes": 97
-  },
-  "weapons": {
-    "title": "Weapons",
-    "rating": 7.2,
-    "poster_url": "https://image.tmdb.org/t/p/w342/cpf7vsRZ0MYRQcnLWteD5jK9ymT.jpg",
-    "tmdb_id": 1078605,
-    "release_date": "2025-08-04",
-    "overview": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "trailer_url": "https://www.youtube.com/watch?v=t41avNnPsaA",
-    "genres": [
-      "Horror",
-      "Mystery"
-    ],
-    "actors": [
-      "Julia Garner",
-      "Josh Brolin",
-      "Alden Ehrenreich",
-      "Austin Abrams",
-      "Benedict Wong",
-      "Amy Madigan",
-      "Cary Christopher",
-      "Toby Huss"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/movie/1078605",
-    "description": "When all but one child from the same class mysteriously vanish on the same night at exactly the same time, a community is left questioning who or what is behind their disappearance.",
-    "directors": [
-      "Zach Cregger"
-    ],
-    "runtime_minutes": 129
   },
   "what is a woman": {
     "title": "What is a Woman?",
