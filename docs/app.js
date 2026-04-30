@@ -37,6 +37,9 @@ const state = {
   customEndDate: "",
   watchlistType: "movie",
   watchlistPayload: null,
+  watchlistYearFilter: "all",
+  watchlistGenreFilter: "all",
+  watchlistSort: "default",
 };
 
 const elements = {
@@ -50,6 +53,10 @@ const elements = {
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
   watchlistCurrent: document.querySelector("#watchlist-current"),
   watchlistHistory: document.querySelector("#watchlist-history"),
+  watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
+  watchlistYearFilter: document.querySelector("#watchlist-year-filter"),
+  watchlistGenreFilter: document.querySelector("#watchlist-genre-filter"),
+  watchlistSort: document.querySelector("#watchlist-sort"),
   watchlistTabMovies: document.querySelector("#watchlist-tab-movies"),
   watchlistTabSeries: document.querySelector("#watchlist-tab-series"),
   watchlistDetailPanel: document.querySelector("#watchlist-detail-panel"),
@@ -490,6 +497,155 @@ function joinList(values) {
   return values.filter(Boolean).join(", ");
 }
 
+function watchlistHistoryLabel() {
+  return state.watchlistType === "series" ? "Series watched" : "Movies watched";
+}
+
+function compareReleaseDateDescending(left, right, payload) {
+  const leftDate = String(movieDetailsForTitle(payload, left.title)?.release_date || "");
+  const rightDate = String(movieDetailsForTitle(payload, right.title)?.release_date || "");
+  return rightDate.localeCompare(leftDate);
+}
+
+function compareScoreDescending(left, right, payload) {
+  const leftScore = Number(movieDetailsForTitle(payload, left.title)?.rating || -1);
+  const rightScore = Number(movieDetailsForTitle(payload, right.title)?.rating || -1);
+  if (rightScore !== leftScore) {
+    return rightScore - leftScore;
+  }
+  return compareReleaseDateDescending(left, right, payload);
+}
+
+function watchlistGenres(payload) {
+  if (state.watchlistType !== "movie") {
+    return [];
+  }
+  const genres = new Set();
+  for (const group of payload?.history_by_year || []) {
+    for (const entry of group?.entries || []) {
+      if (safeWatchType(entry) !== "movie") {
+        continue;
+      }
+      const details = movieDetailsForTitle(payload, safeWatchTitle(entry)) || {};
+      for (const genre of details.genres || []) {
+        if (genre) {
+          genres.add(String(genre));
+        }
+      }
+    }
+  }
+  return [...genres].sort((a, b) => a.localeCompare(b));
+}
+
+function watchlistYears(payload) {
+  const years = [];
+  for (const group of payload?.history_by_year || []) {
+    const year = String(group?.year || "").trim();
+    if (year) {
+      years.push(year);
+    }
+  }
+  return years;
+}
+
+function updateWatchlistFilterOptions(payload) {
+  if (elements.watchlistHistorySummary) {
+    elements.watchlistHistorySummary.textContent = watchlistHistoryLabel();
+  }
+
+  if (elements.watchlistYearFilter) {
+    const years = watchlistYears(payload);
+    if (!years.includes(state.watchlistYearFilter)) {
+      state.watchlistYearFilter = "all";
+    }
+    elements.watchlistYearFilter.innerHTML = '<option value="all">All</option>';
+    for (const year of years) {
+      const option = document.createElement("option");
+      option.value = year;
+      option.textContent = year;
+      if (state.watchlistYearFilter === year) {
+        option.selected = true;
+      }
+      elements.watchlistYearFilter.append(option);
+    }
+  }
+
+  if (elements.watchlistGenreFilter) {
+    const genres = watchlistGenres(payload);
+    const genreDisabled = state.watchlistType !== "movie";
+    if (!genres.includes(state.watchlistGenreFilter)) {
+      state.watchlistGenreFilter = "all";
+    }
+    elements.watchlistGenreFilter.innerHTML = '<option value="all">All genres</option>';
+    for (const genre of genres) {
+      const option = document.createElement("option");
+      option.value = genre;
+      option.textContent = genre;
+      if (state.watchlistGenreFilter === genre) {
+        option.selected = true;
+      }
+      elements.watchlistGenreFilter.append(option);
+    }
+    elements.watchlistGenreFilter.disabled = genreDisabled;
+  }
+
+  if (elements.watchlistSort) {
+    elements.watchlistSort.value = state.watchlistSort;
+  }
+}
+
+function filteredWatchlistHistory(payload) {
+  const results = [];
+  const allEntries = [];
+  for (const group of payload?.history_by_year || []) {
+    const year = String(group?.year || "").trim();
+    if (!year) {
+      continue;
+    }
+    if (state.watchlistYearFilter !== "all" && state.watchlistYearFilter !== year) {
+      continue;
+    }
+
+    let entries = Array.isArray(group?.entries) ? [...group.entries].reverse() : [];
+    entries = entries
+      .filter((entry) => safeWatchType(entry) === state.watchlistType)
+      .filter((entry) => {
+        if (state.watchlistType !== "movie" || state.watchlistGenreFilter === "all") {
+          return true;
+        }
+        const details = movieDetailsForTitle(payload, safeWatchTitle(entry)) || {};
+        return (details.genres || []).includes(state.watchlistGenreFilter);
+      });
+
+    if (state.watchlistSort === "score") {
+      entries.sort((left, right) => compareScoreDescending(left, right, payload));
+    } else if (state.watchlistSort === "release_date") {
+      entries.sort((left, right) => compareReleaseDateDescending(left, right, payload));
+    }
+
+    if (entries.length) {
+      if (state.watchlistYearFilter === "all") {
+        allEntries.push(...entries);
+      } else {
+        results.push({ year, entries });
+      }
+    }
+  }
+
+  if (state.watchlistYearFilter === "all") {
+    if (!allEntries.length) {
+      return [];
+    }
+    if (state.watchlistSort === "score") {
+      allEntries.sort((left, right) => compareScoreDescending(left, right, payload));
+    } else if (state.watchlistSort === "release_date") {
+      allEntries.sort((left, right) => compareReleaseDateDescending(left, right, payload));
+    }
+    return [{ year: "All", entries: allEntries }];
+  }
+  return results;
+}
+
 function openWatchlistMovieDetail(title) {
   if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !state.watchlistPayload) {
     return;
@@ -565,7 +721,8 @@ function renderWatchlistCurrent(payload) {
 }
 
 function renderWatchlistHistory(payload) {
-  const history = Array.isArray(payload?.history_by_year) ? payload.history_by_year : [];
+  updateWatchlistFilterOptions(payload);
+  const history = filteredWatchlistHistory(payload);
   if (!history.length) {
     elements.watchlistHistory.innerHTML = '<p class="empty">No watch history found.</p>';
     return;
@@ -574,7 +731,7 @@ function renderWatchlistHistory(payload) {
   elements.watchlistHistory.innerHTML = "";
   for (const group of history) {
     const year = String(group?.year || "").trim();
-    const entries = Array.isArray(group?.entries) ? [...group.entries].reverse() : [];
+    const entries = Array.isArray(group?.entries) ? group.entries : [];
     if (!year || !entries.length) {
       continue;
     }
@@ -2069,6 +2226,7 @@ if (elements.themeToggle) {
 if (elements.watchlistTabMovies) {
   elements.watchlistTabMovies.addEventListener("click", () => {
     state.watchlistType = "movie";
+    state.watchlistGenreFilter = "all";
     renderWatchlistAll();
   });
 }
@@ -2076,6 +2234,28 @@ if (elements.watchlistTabMovies) {
 if (elements.watchlistTabSeries) {
   elements.watchlistTabSeries.addEventListener("click", () => {
     state.watchlistType = "series";
+    state.watchlistGenreFilter = "all";
+    renderWatchlistAll();
+  });
+}
+
+if (elements.watchlistYearFilter) {
+  elements.watchlistYearFilter.addEventListener("change", (event) => {
+    state.watchlistYearFilter = event.target.value || "all";
+    renderWatchlistAll();
+  });
+}
+
+if (elements.watchlistGenreFilter) {
+  elements.watchlistGenreFilter.addEventListener("change", (event) => {
+    state.watchlistGenreFilter = event.target.value || "all";
+    renderWatchlistAll();
+  });
+}
+
+if (elements.watchlistSort) {
+  elements.watchlistSort.addEventListener("change", (event) => {
+    state.watchlistSort = event.target.value || "default";
     renderWatchlistAll();
   });
 }
