@@ -68,6 +68,7 @@ const state = {
   watchlistPayload: null,
   watchlistDetails: {},
   watchlistYearFilter: "all",
+  watchlistCollectionFilter: "watched",
   watchlistGenreFilter: "all",
   watchlistSort: "default",
   watchlistOpinionFilter: "all",
@@ -93,6 +94,7 @@ const elements = {
   watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
   watchlistHistorySummaryLabel: document.querySelector("#watchlist-history-summary-label"),
   watchlistYearFilter: document.querySelector("#watchlist-year-filter"),
+  watchlistCollectionFilter: document.querySelector("#watchlist-collection-filter"),
   watchlistSearchFilter: document.querySelector("#watchlist-search-filter"),
   watchlistGenreFilter: document.querySelector("#watchlist-genre-filter"),
   watchlistSort: document.querySelector("#watchlist-sort"),
@@ -812,6 +814,9 @@ function findWatchlistItem(payload, type, title) {
 }
 
 function watchlistHistoryLabel() {
+  if (state.watchlistCollectionFilter === "backlog") {
+    return "Backlog";
+  }
   const labels = [...state.watchlistTypes].map((type) => WATCHLIST_TYPE_LABELS[type]).filter(Boolean);
   const gameOnly = [...state.watchlistTypes].every((type) => String(type || "").startsWith("game_"));
   const actionWord = gameOnly ? "played" : "watched";
@@ -825,6 +830,38 @@ function watchlistHistoryLabel() {
     return `${labels[0]} and ${labels[1]} ${actionWord}`;
   }
   return `${labels.slice(0, -1).join(", ")} and ${labels[labels.length - 1]} ${actionWord}`;
+}
+
+function collectionPrimaryLabel() {
+  return state.watchlistActiveMedia === "games" ? "Games played" : "Movies watched";
+}
+
+function backlogEntries(payload) {
+  const backlog = payload?.backlog || {};
+  const entries = [];
+  const byType = {
+    movie: Array.isArray(backlog.movies) ? backlog.movies : [],
+    series: Array.isArray(backlog.series) ? backlog.series : [],
+    anime_movie: Array.isArray(backlog.anime_movies) ? backlog.anime_movies : [],
+    anime_series: Array.isArray(backlog.anime_series) ? backlog.anime_series : [],
+  };
+  for (const [type, items] of Object.entries(byType)) {
+    for (const item of items) {
+      const title = safeWatchTitle(item);
+      if (!title) {
+        continue;
+      }
+      entries.push({ ...item, type, title });
+    }
+  }
+  return entries;
+}
+
+function activeHistorySource(payload) {
+  if (state.watchlistCollectionFilter === "backlog") {
+    return [{ year: "Backlog", entries: backlogEntries(payload) }];
+  }
+  return Array.isArray(payload?.history_by_year) ? payload.history_by_year : [];
 }
 
 function compareReleaseDateDescending(left, right, payload) {
@@ -847,7 +884,7 @@ function watchlistGenres(payload) {
     return [];
   }
   const genres = new Set();
-  for (const group of payload?.history_by_year || []) {
+  for (const group of activeHistorySource(payload)) {
     for (const entry of group?.entries || []) {
       const entryType = safeWatchType(entry) || "movie";
       if (!watchlistHasType(entryType)) {
@@ -867,7 +904,7 @@ function watchlistGenres(payload) {
 function watchlistYears(payload) {
   const years = [];
   const seen = new Set();
-  for (const group of payload?.history_by_year || []) {
+  for (const group of activeHistorySource(payload)) {
     const year = String(group?.year || "").trim();
     if (!year || year.toLowerCase() === "anime") {
       continue;
@@ -900,6 +937,16 @@ function updateWatchlistFilterOptions(payload) {
       }
       elements.watchlistYearFilter.append(option);
     }
+    elements.watchlistYearFilter.disabled = state.watchlistCollectionFilter === "backlog";
+  }
+
+  if (elements.watchlistCollectionFilter) {
+    const primaryLabel = collectionPrimaryLabel();
+    elements.watchlistCollectionFilter.innerHTML = `
+      <option value="watched">${escapeHtml(primaryLabel)}</option>
+      <option value="backlog">Backlog</option>
+    `;
+    elements.watchlistCollectionFilter.value = state.watchlistCollectionFilter;
   }
 
   if (elements.watchlistGenreFilter) {
@@ -945,7 +992,7 @@ function updateWatchlistFilterOptions(payload) {
 function filteredWatchlistHistory(payload) {
   const results = [];
   const allEntries = [];
-  for (const group of payload?.history_by_year || []) {
+  for (const group of activeHistorySource(payload)) {
     const year = String(group?.year || "").trim();
     if (!year) {
       continue;
@@ -2856,6 +2903,14 @@ if (elements.watchlistCategoryButtons) {
 if (elements.watchlistYearFilter) {
   elements.watchlistYearFilter.addEventListener("change", (event) => {
     state.watchlistYearFilter = event.target.value || "all";
+    renderWatchlistAll();
+  });
+}
+
+if (elements.watchlistCollectionFilter) {
+  elements.watchlistCollectionFilter.addEventListener("change", (event) => {
+    state.watchlistCollectionFilter = event.target.value || "watched";
+    state.watchlistYearFilter = "all";
     renderWatchlistAll();
   });
 }

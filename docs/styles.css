@@ -1367,7 +1367,7 @@ td.card-number {
 
 .watchlist-filters {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 10px;
   padding-top: 14px;
 }
@@ -2050,7 +2050,7 @@ td.card-number {
   }
 
   .watchlist-filters {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .watchlist-detail-panel {
