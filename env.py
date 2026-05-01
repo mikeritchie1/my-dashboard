@@ -50,6 +50,8 @@ CONFIG = {
         "SCRAPE_OP_TANUKI_COLLECTION_URL": "https://tanukitrader.co.za/",
         "SCRAPE_OP_TANUKI_PRODUCTS_URL_TEMPLATE": "https://tanukitrader.co.za/wp-json/wc/store/v1/products?per_page=100&page={page}",
         "SCRAPE_OP_BIG_BANG_COLLECTION_URL": "https://bigbangshop.co.za/collections/one-piece-single-cards",
+        "SCRAPE_QUICKET_MAX_ITEMS": "100",
+        "SCRAPE_WEBTICKETS_MAX_ITEMS": "5",
     },
 }
 

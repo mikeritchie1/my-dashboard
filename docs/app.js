@@ -69,6 +69,8 @@ const state = {
   availableMapTypes: [],
   selectedMapCategories: new Set(),
   availableMapCategories: [],
+  selectedEventCategories: new Set(),
+  availableEventCategories: [],
   weatherPayload: null,
   customStartDate: "",
   customEndDate: "",
@@ -88,6 +90,7 @@ const state = {
   newsItems: [],
   selectedNewsId: "",
   selectedNewsCategory: "all",
+  isNewsExpanded: false,
 };
 
 const elements = {
@@ -105,6 +108,7 @@ const elements = {
   newsList: document.querySelector("#news-list"),
   newsDetail: document.querySelector("#news-detail"),
   newsCategoryButtons: document.querySelector("#news-category-buttons"),
+  newsExpandToggle: document.querySelector("#news-expand-toggle"),
   watchlistCurrent: document.querySelector("#watchlist-current"),
   watchlistHistory: document.querySelector("#watchlist-history"),
   watchlistHistorySummary: document.querySelector("#watchlist-history-summary"),
@@ -135,6 +139,7 @@ const elements = {
   locateMe: document.querySelector("#locate-me"),
   mapTypeFilters: document.querySelector("#map-type-filters"),
   mapCategoryFilters: document.querySelector("#map-category-filters"),
+  mapEventCategoryFilters: document.querySelector("#map-event-category-filters"),
   mapDetailPanel: document.querySelector("#map-detail-panel"),
   quicketEventsList: document.querySelector("#quicket-events-list"),
   todayDate: document.querySelector("#today-date"),
@@ -535,6 +540,9 @@ function renderNews(items) {
   if (!filtered.length) {
     elements.newsList.innerHTML = '<p class="empty">No news articles found.</p>';
     renderNewsDetail(null);
+    if (elements.newsExpandToggle) {
+      elements.newsExpandToggle.hidden = true;
+    }
     return;
   }
 
@@ -558,6 +566,16 @@ function renderNews(items) {
       ${summary ? `<span class="news-card-summary">${escapeHtml(summary)}</span>` : ""}
     `;
     elements.newsList.append(button);
+  }
+
+  if (elements.newsExpandToggle) {
+    const canExpand = state.newsItems.length > 3;
+    elements.newsExpandToggle.hidden = !canExpand;
+    if (!canExpand) {
+      state.isNewsExpanded = false;
+    }
+    elements.newsList.classList.toggle("is-expanded", state.isNewsExpanded && canExpand);
+    elements.newsExpandToggle.textContent = state.isNewsExpanded ? "Retract" : "Expand";
   }
 
   renderNewsDetail(state.newsItems.find((item) => item.id === state.selectedNewsId));
@@ -1936,6 +1954,48 @@ function renderTagFilters(locations) {
   );
 }
 
+function categorizeEvent(title, venue) {
+  const text = `${title || ""} ${venue || ""}`.toLowerCase();
+  const categories = [];
+  if (/concert|live music|\bband\b|jazz|orchestra|choir|\bsinger\b|dj set|\btour\b/.test(text)) categories.push("Music");
+  if (/comedy|stand.?up|comedian/.test(text)) categories.push("Comedy");
+  if (/\brun\b|\brace\b|cycling|triathlon|yoga|fitness|marathon|trail|\bhike\b|climb/.test(text)) categories.push("Sports");
+  if (/museum|gallery|exhibition|\bart\b|heritage|culture/.test(text)) categories.push("art");
+  if (/market|food festival|taste|beer fest|wine fest|brunch fest/.test(text)) categories.push("food");
+  if (/\bparty\b|rooftop|nightlife|nightclub|\bdance\b/.test(text)) categories.push("club");
+  if (/festival|carnival|\bfair\b/.test(text)) categories.push("festival");
+  if (/\bkids?\b|family|children/.test(text)) categories.push("family");
+  if (/\blan\b|gaming|esports|game jam/.test(text)) categories.push("gaming");
+  if (/theatre|theater|\bplay\b|performance|drama/.test(text)) categories.push("theatre");
+  return categories;
+}
+
+function renderEventCategoryFilters() {
+  const allCategories = [];
+  for (const event of state.quicketEvents) {
+    const cats = event.categories?.length ? event.categories : categorizeEvent(event.title, event.venue);
+    for (const cat of cats) allCategories.push(cat);
+  }
+  const categories = unique(allCategories);
+  state.availableEventCategories = categories;
+  state.selectedEventCategories = syncSelectedWithAvailable(state.selectedEventCategories, categories, false);
+
+  renderFilterCheckboxes(
+    elements.mapEventCategoryFilters,
+    categories,
+    state.selectedEventCategories,
+    "No event categories yet.",
+    (tag, checked) => {
+      if (checked) {
+        state.selectedEventCategories.add(tag);
+      } else {
+        state.selectedEventCategories.delete(tag);
+      }
+      renderMap();
+    },
+  );
+}
+
 function renderQuicketEvents(events) {
   if (!events.length) {
     elements.quicketEventsList.innerHTML = '<p class="empty">No Quicket events found.</p>';
@@ -2206,7 +2266,7 @@ function mapItemFromEvent(event) {
     title: event.title,
     url: event.url,
     types: [],
-    categories: [],
+    categories: event.categories?.length ? event.categories : categorizeEvent(event.title, event.venue),
     details: [displayDateTime(event.start), [event.venue, event.locality].filter(Boolean).join(", ")],
     event,
   };
@@ -2501,7 +2561,12 @@ function buildMapItems() {
     for (const event of state.quicketEvents) {
       const mapItem = mapItemFromEvent(event);
       if (mapItem) {
-        mapItems.push(mapItem);
+        const eventCategoryOk = !state.availableEventCategories.length
+          || state.selectedEventCategories.size === 0
+          || mapItem.categories.some((tag) => state.selectedEventCategories.has(tag));
+        if (eventCategoryOk) {
+          mapItems.push(mapItem);
+        }
       }
     }
   }
@@ -2914,6 +2979,7 @@ async function loadQuicketEvents() {
     }
     const events = await response.json();
     state.quicketEvents = Array.isArray(events) ? events : [];
+    renderEventCategoryFilters();
     renderQuicketEvents(state.quicketEvents);
     renderMap();
     const changed = await enrichEventsWithCoordinates(state.quicketEvents);
@@ -3164,6 +3230,14 @@ if (elements.newsCategoryButtons) {
     state.selectedNewsCategory = button.dataset.newsCategory || "all";
     state.selectedNewsId = "";
     renderNews(state.newsAllItems);
+  });
+}
+
+if (elements.newsExpandToggle && elements.newsList) {
+  elements.newsExpandToggle.addEventListener("click", () => {
+    state.isNewsExpanded = !state.isNewsExpanded;
+    elements.newsList.classList.toggle("is-expanded", state.isNewsExpanded);
+    elements.newsExpandToggle.textContent = state.isNewsExpanded ? "Retract" : "Expand";
   });
 }
 

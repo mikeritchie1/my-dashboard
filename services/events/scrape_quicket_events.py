@@ -14,10 +14,12 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
+from event_tags import tag_event, is_excluded_event
 
 
 BASE_URL = env_get("SCRAPE_QUICKET_EVENTS_URL_TEMPLATE", "https://www.quicket.co.za/events/{page}/")
 NOMINATIM_SEARCH_URL = env_get("SCRAPE_NOMINATIM_SEARCH_URL", "https://nominatim.openstreetmap.org/search")
+EVENTS_MAX_ITEMS = int(env_get("SCRAPE_QUICKET_MAX_ITEMS", "50"))
 REPO_DIR = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "quicket_events.json"
@@ -90,12 +92,14 @@ def event_summary(event: dict) -> dict:
     image = event.get("image") or []
     offers = event.get("offers") or []
     offer = offers[0] if offers else {}
+    title = event.get("name", "").strip()
+    venue = str(location.get("name", "")).strip()
 
     return {
-        "title": event.get("name", "").strip(),
+        "title": title,
         "start": start.isoformat() if start else "",
         "end": end.isoformat() if end else "",
-        "venue": str(location.get("name", "")).strip(),
+        "venue": venue,
         "locality": str(address.get("addressLocality", "")).strip(),
         "region": str(address.get("addressRegion", "")).strip(),
         "address": str(address.get("streetAddress", "")).strip(),
@@ -103,6 +107,7 @@ def event_summary(event: dict) -> dict:
         "currency": offer.get("priceCurrency", ""),
         "image": normalize_url(image[0]) if image else "",
         "url": event.get("url", ""),
+        "categories": tag_event(title, venue),
     }
 
 
@@ -218,9 +223,11 @@ def geocode_address(query: str) -> dict[str, float] | None:
 
 
 def add_coordinates(events: list[dict]) -> None:
+    print(f"Geocoding {len(events)} event(s)...")
     cache = load_geocode_cache()
     cache_changed = False
-    for event in events:
+    for i, event in enumerate(events, 1):
+        label = event.get("venue") or event.get("title", "?")
         event_url = (event.get("url") or "").strip()
         event_cache_key = f"event_url::{event_url}"
 
@@ -230,11 +237,13 @@ def add_coordinates(events: list[dict]) -> None:
                 lat = float(cached_event_coords["lat"])
                 lng = float(cached_event_coords["lng"])
                 if not (abs(lat) < 0.000001 and abs(lng) < 0.000001):
+                    print(f"  [{i}/{len(events)}] {label} (cached)")
                     event["lat"] = lat
                     event["lng"] = lng
                     continue
 
             try:
+                print(f"  [{i}/{len(events)}] {label} (fetching event page...)")
                 event_html = fetch_event_page(event_url)
                 page_coords = parse_coords_from_event_page(event_html)
                 if page_coords:
@@ -250,10 +259,12 @@ def add_coordinates(events: list[dict]) -> None:
         for query in geocode_queries_for_event(event):
             cached = cache.get(query)
             if cached:
+                print(f"  [{i}/{len(events)}] {label} (cached)")
                 event["lat"] = cached["lat"]
                 event["lng"] = cached["lng"]
                 resolved = True
                 break
+            print(f"  [{i}/{len(events)}] {label} (geocoding via Nominatim...)")
             coords = geocode_address(query)
             # Be polite to Nominatim.
             time.sleep(1.0)
@@ -265,18 +276,22 @@ def add_coordinates(events: list[dict]) -> None:
                 resolved = True
                 break
         if not resolved:
+            print(f"  [{i}/{len(events)}] {label} (no coords found)")
             continue
 
     if cache_changed:
         save_geocode_cache(cache)
+    print("Geocoding done.")
 
 
 def scrape(max_pages: int, days: int, limit: int) -> list[dict]:
+    print(f"Scanning Quicket (up to {max_pages} page(s), next {days} day(s), limit {limit})...")
     now = datetime.now(LOCAL_TZ)
     window_end = now + timedelta(days=days)
     by_url: dict[str, dict] = {}
 
     for page in range(1, max_pages + 1):
+        print(f"  Page {page}/{max_pages} — {len(by_url)} event(s) so far...")
         for event in extract_events(fetch_page(page)):
             start = parse_dt(event.get("startDate"))
             end = parse_dt(event.get("endDate")) or start
@@ -287,18 +302,23 @@ def scrape(max_pages: int, days: int, limit: int) -> list[dict]:
             if not is_cape_town_event(event):
                 continue
             summary = event_summary(event)
+            if is_excluded_event(summary["title"], summary["venue"]):
+                continue
             by_url[summary["url"]] = summary
         if len(by_url) >= limit:
+            print(f"  Limit of {limit} reached on page {page}.")
             break
 
-    return sorted(by_url.values(), key=lambda item: item["start"])[:limit]
+    results = sorted(by_url.values(), key=lambda item: item["start"])[:limit]
+    print(f"Scraped {len(results)} Quicket event(s).")
+    return results
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape recent Cape Town events from Quicket.")
     parser.add_argument("--pages", type=int, default=30, help="How many Quicket list pages to scan.")
     parser.add_argument("--days", type=int, default=365, help="How many days ahead to include.")
-    parser.add_argument("--limit", type=int, default=50, help="Maximum number of matching events to keep.")
+    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of matching events to keep.")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

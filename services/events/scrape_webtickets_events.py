@@ -10,10 +10,12 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
+from event_tags import tag_event, is_excluded_event
 
 
 BASE_URL = env_get("SCRAPE_WEBTICKETS_CATEGORY_URL_TEMPLATE", "https://www.webtickets.co.za/v2/category.aspx?itemid=1184162&location=9&when=anytime&page={page}")
 PAGE_PREFIX = env_get("SCRAPE_WEBTICKETS_PAGE_PREFIX", "https://www.webtickets.co.za/v2/")
+EVENTS_MAX_ITEMS = int(env_get("SCRAPE_WEBTICKETS_MAX_ITEMS", "50"))
 REPO_DIR = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "webtickets_wc_events.json"
@@ -58,42 +60,53 @@ def extract_events(page_html: str) -> list[dict]:
         if not link_match or not title_match:
             continue
 
+        title = html.unescape(title_match.group(1)).strip()
+        venue = html.unescape(venue_match.group(1)).strip() if venue_match else ""
         events.append(
             {
-                "title": html.unescape(title_match.group(1)).strip(),
+                "title": title,
                 "url": abs_url(link_match.group(1).strip()),
                 "image": abs_url(image_match.group(1).strip()) if image_match else "",
                 "date_text": html.unescape(date_match.group(1)).strip() if date_match else "",
-                "venue": html.unescape(venue_match.group(1)).strip() if venue_match else "",
+                "venue": venue,
                 "price": html.unescape(price_match.group(1)).strip() if price_match else "",
                 "source": "Webtickets",
                 "region": "Western Cape",
+                "categories": tag_event(title, venue),
             }
         )
     return events
 
 
 def scrape(limit: int) -> list[dict]:
+    print("Scanning Webtickets (fetching page 1)...")
     first_page = fetch_page(1)
     total_pages = parse_total_pages(first_page)
+    print(f"  {total_pages} page(s) found, limit {limit}.")
     all_events: list[dict] = []
     seen_urls: set[str] = set()
 
     for page in range(1, total_pages + 1):
+        print(f"  Page {page}/{total_pages} — {len(all_events)} event(s) so far...")
         page_html = first_page if page == 1 else fetch_page(page)
         for event in extract_events(page_html):
             if event["url"] in seen_urls:
                 continue
+            if is_excluded_event(event["title"], event.get("venue", "")):
+                continue
             seen_urls.add(event["url"])
             all_events.append(event)
             if len(all_events) >= limit:
+                print(f"  Limit of {limit} reached on page {page}.")
                 return all_events
+
+    print(f"Scraped {len(all_events)} Webtickets event(s).")
     return all_events
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape Webtickets Western Cape events.")
-    parser.add_argument("--limit", type=int, default=50, help="Maximum number of events to collect.")
+    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of events to collect.")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)

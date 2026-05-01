@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Card Watch Dashboard</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    <link rel="stylesheet" href="styles.css?v=20260430-72">
+    <link rel="stylesheet" href="styles.css?v=20260501-74">
   </head>
   <body>
     <header class="topbar">
@@ -38,8 +38,11 @@
             <div id="news-category-buttons" class="watchlist-category-buttons" role="group" aria-label="News categories"></div>
           </div>
           <div class="news-layout">
-            <section id="news-list" class="news-list" aria-label="News articles">
-              <p class="empty">Loading news...</p>
+            <section class="news-list-shell">
+              <section id="news-list" class="news-list" aria-label="News articles">
+                <p class="empty">Loading news...</p>
+              </section>
+              <button id="news-expand-toggle" type="button" class="news-expand-toggle">Expand</button>
             </section>
             <aside id="news-detail" class="news-detail-panel" aria-label="Selected news article">
               <p class="empty">Click a news article to read more.</p>
@@ -109,10 +112,16 @@
                   <p class="empty">Loading types...</p>
                 </div>
               </div>
-              <div class="map-filter-block">
+              <div class="map-filter-block map-filter-block--scrollable">
                 <p class="map-filter-title">Category</p>
                 <div id="map-category-filters" class="map-tag-filters">
                   <p class="empty">Loading categories...</p>
+                </div>
+              </div>
+              <div class="map-filter-block map-filter-block--scrollable">
+                <p class="map-filter-title">Event Category</p>
+                <div id="map-event-category-filters" class="map-tag-filters">
+                  <p class="empty">Loading event categories...</p>
                 </div>
               </div>
             </aside>
@@ -278,6 +287,6 @@
     </aside>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="app.js?v=20260430-64"></script>
+    <script src="app.js?v=20260501-66"></script>
   </body>
 </html>
