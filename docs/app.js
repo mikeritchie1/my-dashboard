@@ -52,6 +52,7 @@ const NEWS_CATEGORIES = [
 ];
 const DASHBOARD_ORDER_STORAGE_KEY = "my-dashboard:module-order:v1";
 const DASHBOARD_OPEN_STATE_STORAGE_KEY = "my-dashboard:module-open-state:v1";
+const SUBSECTION_OPEN_STATE_STORAGE_KEY = "my-dashboard:subsection-open-state:v1";
 
 const state = {
   rows: [],
@@ -1678,6 +1679,10 @@ function getDashboardSections() {
   return [...document.querySelectorAll("main > details.dashboard-section")];
 }
 
+function getSubsectionPanels() {
+  return [...document.querySelectorAll("details.subsection-panel")];
+}
+
 function ensureDashboardSectionIds() {
   for (const section of getDashboardSections()) {
     if (section.dataset.moduleId) {
@@ -1685,6 +1690,19 @@ function ensureDashboardSectionIds() {
     }
     const summaryLabel = section.querySelector("summary span")?.textContent || "";
     section.dataset.moduleId = normalizeModuleId(summaryLabel);
+  }
+}
+
+function ensureSubsectionPanelIds() {
+  ensureDashboardSectionIds();
+  for (const panel of getSubsectionPanels()) {
+    if (panel.dataset.subsectionId) {
+      continue;
+    }
+    const parent = panel.closest("details.dashboard-section");
+    const parentId = parent?.dataset.moduleId || "dashboard";
+    const summaryLabel = panel.querySelector("summary")?.textContent || panel.id || "panel";
+    panel.dataset.subsectionId = `${parentId}:${normalizeModuleId(summaryLabel)}`;
   }
 }
 
@@ -1770,6 +1788,47 @@ function applyDashboardOpenStatePreference() {
   }
 }
 
+function loadSubsectionOpenStatePreference() {
+  try {
+    const raw = localStorage.getItem(SUBSECTION_OPEN_STATE_STORAGE_KEY) || "";
+    if (!raw) {
+      return {};
+    }
+    const parsed = JSON.parse(raw);
+    return parsed && typeof parsed === "object" ? parsed : {};
+  } catch {
+    return {};
+  }
+}
+
+function saveSubsectionOpenStatePreference() {
+  try {
+    const payload = {};
+    for (const panel of getSubsectionPanels()) {
+      const id = panel.dataset.subsectionId || "";
+      if (!id) {
+        continue;
+      }
+      payload[id] = Boolean(panel.open);
+    }
+    localStorage.setItem(SUBSECTION_OPEN_STATE_STORAGE_KEY, JSON.stringify(payload));
+  } catch {
+    // Ignore localStorage failures.
+  }
+}
+
+function applySubsectionOpenStatePreference() {
+  ensureSubsectionPanelIds();
+  const openStateById = loadSubsectionOpenStatePreference();
+  for (const panel of getSubsectionPanels()) {
+    const id = panel.dataset.subsectionId || "";
+    if (!id || !(id in openStateById)) {
+      continue;
+    }
+    panel.open = Boolean(openStateById[id]);
+  }
+}
+
 function setLayoutEditMode(isEditing) {
   document.body.classList.toggle("is-editing-layout", Boolean(isEditing));
   if (elements.layoutEditToggle) {
@@ -1803,8 +1862,10 @@ function moveDashboardSection(section, direction) {
 
 function setupDashboardSectionEditor() {
   ensureDashboardSectionIds();
+  ensureSubsectionPanelIds();
   applyDashboardOrderPreference();
   applyDashboardOpenStatePreference();
+  applySubsectionOpenStatePreference();
 
   for (const section of getDashboardSections()) {
     const summary = section.querySelector("summary");
@@ -1849,6 +1910,12 @@ function setupDashboardSectionEditor() {
 
     section.addEventListener("toggle", () => {
       saveDashboardOpenStatePreference();
+    });
+  }
+
+  for (const panel of getSubsectionPanels()) {
+    panel.addEventListener("toggle", () => {
+      saveSubsectionOpenStatePreference();
     });
   }
 
