@@ -40,7 +40,10 @@ Run one group:
 python run_local_dashboard_update.py media
 python run_local_dashboard_update.py events
 python run_local_dashboard_update.py cards
+python run_local_dashboard_update.py digest
 ```
+
+The GitHub Actions workflow runs the dashboard scrapers every day and sends one digest email after the data refresh. The digest compares each scraper section with the previous committed snapshot in `.scrape/daily_digest/`.
 
 Serve dashboard:
 

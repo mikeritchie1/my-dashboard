@@ -56,7 +56,7 @@ def fetch_coming_soon(page: int = 1, region: str = "", language: str = "en-US") 
         api_key = bearer_token
         bearer_token = ""
     if not bearer_token and not api_key:
-        raise RuntimeError("Missing TMDB_BEARER_TOKEN or TMDB_API_KEY in environment/secrets.env")
+        raise RuntimeError("Missing TMDB_BEARER_TOKEN or TMDB_API_KEY in environment or secrets.env")
 
     start = date.today()
     end = start + timedelta(days=WINDOW_DAYS)

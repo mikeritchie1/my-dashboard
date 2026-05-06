@@ -1,42 +1,27 @@
 [
   {
-    "title": "Worcester Braai Festival",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588221227",
-    "image": "https://content.webtickets.co.za/BestFunctions/panel_1_20260210_091011.jpg",
-    "date_text": "April 30, 2026 - May 01, 2026",
-    "venue": "Mountain Mill Mall (Park) Picnic Dam Area",
-    "price": "R50 - R700",
+    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
+    "date_text": "From 06 May 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R295 - R495",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "festival",
-      "outdoors"
+      "theatre"
     ]
   },
   {
-    "title": "FNB Sauvignon Blanc SA Top 10-proe",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590484129",
-    "image": "https://content.webtickets.co.za/Suidoosterfees/panel_banner_sauvignon blanc_20260330_150745.jpg",
-    "date_text": "01 May 2026 13:00",
-    "venue": "Nasdak, Media 24 Building",
-    "price": "R250",
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 06 May 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": []
-  },
-  {
-    "title": "Tapas Theatre: American Realism",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589298590",
-    "image": "https://content.webtickets.co.za/TGSA/panel_TAPAS THEATRE_20260224_121331.jpg",
-    "date_text": "From 01 May 2026 19:00",
-    "venue": "The George Arts Theatre, 125 York Street, George Central",
-    "price": "R120 - R190",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "art",
-      "theatre"
-    ]
   },
   {
     "title": "The Galileo Open Air Cinema 2025/2026",
@@ -50,16 +35,30 @@
     "categories": []
   },
   {
-    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
-    "date_text": "From 01 May 2026 20:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R295 - R495",
+    "title": "Tapas Theatre: American Realism",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589298590",
+    "image": "https://content.webtickets.co.za/TGSA/panel_TAPAS THEATRE_20260224_121331.jpg",
+    "date_text": "From 08 May 2026 19:00",
+    "venue": "The George Arts Theatre, 125 York Street, George Central",
+    "price": "R120 - R190",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
+      "art",
       "theatre"
+    ]
+  },
+  {
+    "title": "Universiteitskoor Stellenbosch University Choir– ENDLER CONCERT SERIES 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589780939",
+    "image": "https://content.webtickets.co.za/EndlerConcertSeries/panel_SU 2026 - JPG_20260302_094109.jpg",
+    "date_text": "From 08 - 09 May 19:00",
+    "venue": "",
+    "price": "R190 - R280",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music"
     ]
   }
 ]

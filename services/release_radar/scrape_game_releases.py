@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import urllib.parse
 import urllib.error
 import urllib.request
@@ -41,7 +42,7 @@ def local_secret(name: str) -> str:
 
 
 def secret(name: str) -> str:
-    return (local_secret(name) or "").strip()
+    return (os.environ.get(name, "") or local_secret(name) or "").strip()
 
 
 def fetch_games(page: int, start: date, end: date, ordering: str) -> dict:
@@ -174,7 +175,7 @@ def scrape_range(start: date, end: date, ordering: str) -> list[dict[str, str]]:
 def main() -> int:
     api_key = secret("RAWG_API_KEY")
     if not api_key:
-        raise RuntimeError("Missing RAWG_API_KEY in secrets.env")
+        raise RuntimeError("Missing RAWG_API_KEY in environment or secrets.env")
 
     today = date.today()
     new_start = today - timedelta(days=PAST_WINDOW_DAYS)

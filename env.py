@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import os
+
 
 CONFIG = {
     "dashboard": {
@@ -71,5 +73,5 @@ ENV = _flatten(CONFIG)
 
 
 def get(name: str, default: str = "") -> str:
-    value = ENV.get(name, default)
+    value = os.environ.get(name, ENV.get(name, default))
     return str(value).strip()

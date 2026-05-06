@@ -1,4 +1,4 @@
-name: Daily card check
+name: Daily dashboard update
 
 on:
   schedule:
@@ -17,12 +17,15 @@ on:
           - events
           - releases
           - coming-soon
+          - game-releases
+          - media
+          - digest
 
 permissions:
   contents: write
 
 jobs:
-  check-cards:
+  update-dashboard:
     runs-on: ubuntu-latest
 
     steps:
@@ -34,16 +37,9 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Run daily card notification
+      - name: Run One Piece card scraper
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'cards' }}
-        env:
-          SMTP_HOST: ${{ secrets.SMTP_HOST }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          SMTP_USER: ${{ secrets.SMTP_USER }}
-          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
-          EMAIL_TO: ${{ secrets.EMAIL_TO }}
-          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-        run: python services/one_piece/notify_new_cards.py --store all --mode all
+        run: python services/one_piece/find_missing_cards.py all
 
       - name: Run release radar
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'releases' }}
@@ -53,7 +49,23 @@ jobs:
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'coming-soon' }}
         env:
           TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python services/release_radar/scrape_coming_soon.py
+
+      - name: Run game release radar
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'game-releases' }}
+        env:
+          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
+        run: python services/release_radar/scrape_game_releases.py
+
+      - name: Run media watchlists
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'media' }}
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
+        run: python services/media/scrape_watchlist.py --scope both
 
       - name: Run specials events
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'specials' }}
@@ -82,10 +94,21 @@ jobs:
           cp -r data docs/data
           python -c "import json, datetime; json.dump({'last_scraped_at': datetime.datetime.now(datetime.timezone.utc).isoformat()}, open('docs/data/metadata.json','w', encoding='utf-8'), indent=2)"
 
+      - name: Send daily dashboard digest
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'digest' }}
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: python services/daily_digest/send_daily_digest.py
+
       - name: Commit updated reports
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add .scrape/previous_*_missing_available.csv .scrape/latest_new_cards.txt data docs
-          git diff --cached --quiet || git commit -m "Update daily card scrape"
+          git add .scrape data docs
+          git diff --cached --quiet || git commit -m "Update daily dashboard data"
           git push

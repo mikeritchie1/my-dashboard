@@ -13,7 +13,7 @@ REPO_DIR = Path(__file__).resolve().parent
 DATA_DIR = REPO_DIR / "data"
 
 TASKS = {
-    "cards": [[sys.executable, "services/one_piece/notify_new_cards.py", "--store", "all", "--mode", "all", "--no-email"]],
+    "cards": [[sys.executable, "services/one_piece/find_missing_cards.py", "all"]],
     "specials": [[sys.executable, "services/events/scrape_specials.py"]],
     "events": [
         [sys.executable, "services/events/scrape_quicket_events.py"],
@@ -26,17 +26,27 @@ TASKS = {
     "media": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "both"]],
     "watchlist": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "watchlist"]],
     "gamelist": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "games", "--type", "games"]],
+    "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
 
 
 def run_commands(task: str) -> None:
     if task == "all":
-        commands = [command for commands in TASKS.values() for command in commands]
+        scheduled: list[tuple[str, list[str]]] = [
+            (name, command)
+            for name, commands in TASKS.items()
+            if name != "digest"
+            for command in commands
+        ]
     else:
-        commands = TASKS[task]
+        scheduled = [(task, command) for command in TASKS[task]]
 
-    for command in commands:
+    total = len(scheduled)
+    for index, (task_name, command) in enumerate(scheduled, start=1):
+        command_text = " ".join(str(part) for part in command)
+        print(f"[{index}/{total}] Running ({task_name}): {command_text}")
         subprocess.run(command, cwd=REPO_DIR, check=True)
+        print(f"[{index}/{total}] Done ({task_name}): {command_text}")
 
 
 def write_metadata() -> None:

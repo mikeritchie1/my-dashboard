@@ -6,7 +6,7 @@ TAG_KEYWORDS: dict[str, list[str]] = {
         "album launch", "open mic", "jam session",
     ],
     "festival": [
-        "festival", "fest", "music festival", "food festival", "wine festival",
+        "festival", "festivals", "fest", "music festival", "food festival", "wine festival",
         "beer festival", "street festival", "cultural festival", "arts festival",
         "film festival", "jazz festival", "outdoor festival", "summer festival",
         "winter festival", "day festival", "weekend festival",
