@@ -5,6 +5,8 @@ import html
 import json
 import re
 import sys
+import tempfile
+import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -17,6 +19,8 @@ from env import get as env_get
 ONE_PIECE_DIR = Path(__file__).resolve().parent
 WORKBOOK = ONE_PIECE_DIR / "One Piece Cards.xlsx"
 ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
+REPO_DIR = Path(__file__).resolve().parents[2]
+LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 
 KNIGHTLY_COLLECTION_URL = env_get("SCRAPE_OP_KNIGHTLY_COLLECTION_URL", "https://www.knightlygaming.co.za/collections/one-piece-singles")
 KNIGHTLY_PRODUCTS_URL = KNIGHTLY_COLLECTION_URL + "/products.json?limit=250&page={page}"
@@ -40,6 +44,7 @@ NS = {
 }
 
 TAG_RE = re.compile(r"<[^>]+>")
+DRIVE_FILE_ID_RE = re.compile(r"/d/([a-zA-Z0-9_-]+)")
 
 RARITY_NAMES = [
     "Super Rare",
@@ -50,6 +55,138 @@ RARITY_NAMES = [
     "Rare",
     "DON!!",
 ]
+
+
+def local_secret(name: str) -> str:
+    if not LOCAL_SECRETS_FILE.exists():
+        return ""
+    for line in LOCAL_SECRETS_FILE.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        if key.strip() == name:
+            return value.strip().strip('"').strip("'")
+    return ""
+
+
+def setting(name: str) -> str:
+    return (env_get(name, "") or local_secret(name)).strip()
+
+
+def drive_file_id_from_url(url: str) -> str:
+    if not url:
+        return ""
+    match = DRIVE_FILE_ID_RE.search(url)
+    if match:
+        return match.group(1)
+    marker = "id="
+    if marker in url:
+        return url.split(marker, 1)[1].split("&", 1)[0].strip()
+    return ""
+
+
+def drive_download_url() -> str:
+    workbook_drive_url = setting("SCRAPE_OP_MISSING_CARDS_DRIVE_URL")
+    workbook_drive_file_id = setting("SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID")
+
+    if workbook_drive_url:
+        if "export=download" in workbook_drive_url:
+            return workbook_drive_url
+        file_id = drive_file_id_from_url(workbook_drive_url)
+        if file_id:
+            return f"https://drive.google.com/uc?export=download&id={file_id}"
+        return workbook_drive_url
+    if workbook_drive_file_id:
+        return f"https://drive.google.com/uc?export=download&id={workbook_drive_file_id}"
+    return ""
+
+
+def drive_download_candidates() -> list[str]:
+    workbook_drive_url = setting("SCRAPE_OP_MISSING_CARDS_DRIVE_URL")
+    workbook_drive_file_id = setting("SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID")
+
+    urls: list[str] = []
+    if workbook_drive_url:
+        urls.append(workbook_drive_url)
+        if "docs.google.com/spreadsheets" in workbook_drive_url:
+            file_id = drive_file_id_from_url(workbook_drive_url)
+            if file_id:
+                urls.append(f"https://docs.google.com/spreadsheets/d/{file_id}/export?format=xlsx")
+        converted = drive_download_url()
+        if converted and converted not in urls:
+            urls.append(converted)
+    elif workbook_drive_file_id:
+        urls.append(f"https://drive.google.com/uc?export=download&id={workbook_drive_file_id}")
+        urls.append(f"https://docs.google.com/spreadsheets/d/{workbook_drive_file_id}/export?format=xlsx")
+
+    # Keep order while removing duplicates.
+    seen: set[str] = set()
+    unique: list[str] = []
+    for url in urls:
+        if url and url not in seen:
+            seen.add(url)
+            unique.append(url)
+    return unique
+
+
+def workbook_from_drive() -> Path | None:
+    candidates = drive_download_candidates()
+    if not candidates:
+        return None
+
+    errors: list[str] = []
+    for url in candidates:
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            with urllib.request.urlopen(request, timeout=30) as response:
+                content_type = str(response.headers.get("Content-Type", "")).lower()
+                content = response.read()
+        except urllib.error.HTTPError as error:
+            errors.append(f"{url} -> HTTP {error.code}")
+            continue
+        except urllib.error.URLError as error:
+            errors.append(f"{url} -> URL error: {error.reason}")
+            continue
+
+        if not content:
+            errors.append(f"{url} -> empty response")
+            continue
+
+        # Drive permission/login pages return HTML, not a workbook.
+        if "text/html" in content_type:
+            errors.append(f"{url} -> returned HTML instead of .xlsx (check sharing/permissions)")
+            continue
+        if not content.startswith(b"PK"):
+            errors.append(f"{url} -> response was not an .xlsx file")
+            continue
+
+        temp_dir = Path(tempfile.gettempdir()) / "one_piece_scraper"
+        temp_dir.mkdir(parents=True, exist_ok=True)
+        temp_workbook = temp_dir / "missing_cards_from_drive.xlsx"
+        temp_workbook.write_bytes(content)
+        return temp_workbook
+
+    details = "\n".join(f"- {entry}" for entry in errors) if errors else "- no download candidates generated"
+    raise RuntimeError(
+        "Failed to download missing-cards workbook from Google Drive.\n"
+        "Make sure the file is shared with Viewer access and link access is enabled.\n"
+        f"Tried:\n{details}"
+    )
+
+
+def resolve_workbook_path(local_workbook: Path = WORKBOOK) -> Path:
+    drive_workbook = workbook_from_drive()
+    if drive_workbook:
+        print(f"Using missing-cards workbook from Google Drive: {drive_workbook}")
+        return drive_workbook
+    if not local_workbook.exists():
+        raise FileNotFoundError(
+            "Missing workbook. Set SCRAPE_OP_MISSING_CARDS_DRIVE_URL (or SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID) "
+            "in environment/secrets.env, or restore local file services/one_piece/One Piece Cards.xlsx"
+        )
+    print(f"Using missing-cards workbook from local file: {local_workbook}")
+    return local_workbook
 
 
 def column_number(cell_ref: str) -> int:
@@ -126,6 +263,7 @@ def load_sheet_rows(path: Path, sheet_name: str) -> list[dict[int, str]]:
 
 
 def missing_card_numbers(workbook: Path = WORKBOOK) -> set[str]:
+    workbook = resolve_workbook_path(workbook)
     missing: set[str] = set()
     for row in load_sheet_rows(workbook, "Missing"):
         for value in row.values():
@@ -133,6 +271,22 @@ def missing_card_numbers(workbook: Path = WORKBOOK) -> set[str]:
             if card_number:
                 missing.add(card_number)
     return missing
+
+
+def print_found_listings(store: str, matches: list[dict[str, object]]) -> None:
+    print(f"Found missing-card listings on {store}: {len(matches)}")
+    if not matches:
+        print("Found listings: (none)")
+        return
+    print("Found listings:")
+    for row in sorted_matches(matches):
+        print(
+            f"{row.get('card_number', '')} | "
+            f"R {float(row.get('price') or 0):.2f} | "
+            f"{row.get('title', '')} | "
+            f"{row.get('store', '')} | "
+            f"{row.get('url', '')}"
+        )
 
 
 def fetch_json(url: str) -> object:
@@ -238,6 +392,7 @@ def run_knightly() -> list[dict[str, object]]:
     matches = sorted_matches(match_knightly(missing, products))
     write_reports("knightly_missing_available", "Knightly Gaming Missing Cards Available", matches)
     print_store_summary("Knightly Gaming", missing, products, matches)
+    print_found_listings("Knightly Gaming", matches)
     return matches
 
 
@@ -297,6 +452,7 @@ def run_big_bang() -> list[dict[str, object]]:
         matches,
     )
     print_store_summary("Big Bang Shop", missing, products, matches)
+    print_found_listings("Big Bang Shop", matches)
     return matches
 
 
@@ -376,6 +532,7 @@ def run_marvellous() -> list[dict[str, object]]:
         matches,
     )
     print_store_summary("Marvellous Hobbies", missing, products, matches)
+    print_found_listings("Marvellous Hobbies", matches)
     return matches
 
 
@@ -430,6 +587,7 @@ def run_tanuki() -> list[dict[str, object]]:
         matches,
     )
     print_store_summary("Tanuki Trader", missing, products, matches)
+    print_found_listings("Tanuki Trader", matches)
     return matches
 
 
@@ -503,6 +661,7 @@ def run_all() -> list[dict[str, object]]:
         for failure in failures:
             print(f"- {failure}")
     print_match_summary("Combined", combined)
+    print_found_listings("Combined", combined)
     print("Wrote knightly, big_bang, marvellous, tanuki, and all_stores reports as CSV and Markdown")
     return combined
 
