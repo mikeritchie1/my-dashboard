@@ -170,6 +170,7 @@ const elements = {
   layoutEditToggle: document.querySelector("#layout-edit-toggle"),
 };
 const mapRangeButtons = [...document.querySelectorAll(".map-range-button[data-range]")];
+const mapViewTabButtons = [...document.querySelectorAll(".map-view-tab[data-map-view-tab]")];
 
 let specialsMap;
 let specialsMarkerLayer;
@@ -181,6 +182,7 @@ let selectedMapItemKey = "";
 let currentMapItems = [];
 let mapMarkersByKey = new Map();
 let selectedMarkerHighlight = null;
+let mapDetailTab = "all";
 const markerIcons = {
   places: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
@@ -3273,12 +3275,33 @@ function renderMapEventList() {
     event,
     key: String(event?.url || `${event?.title || ""}|${event?.start || ""}|${event?.venue || ""}|${index}`),
   }));
+  const canShowEvents = state.mapSources.events && visibleEvents.length;
+  const canShowSpecials = state.mapSources.specials && visibleSpecials.length;
+  for (const button of mapViewTabButtons) {
+    const tab = button.dataset.mapViewTab || "all";
+    button.classList.toggle("is-selected", tab === mapDetailTab);
+    if (tab === "events") {
+      button.disabled = !state.mapSources.events;
+    } else if (tab === "specials") {
+      button.disabled = !state.mapSources.specials;
+    } else {
+      button.disabled = false;
+    }
+  }
 
-  if ((!state.mapSources.events || !visibleEvents.length) && (!state.mapSources.specials || !visibleSpecials.length)) {
+  if (!canShowEvents && !canShowSpecials && mapDetailTab === "all") {
     elements.mapDetailPanel.innerHTML = '<p class="empty">No events or specials in this map view.</p>';
     return;
   }
-  const eventsBlock = state.mapSources.events && visibleEvents.length
+  if (mapDetailTab === "events" && !canShowEvents) {
+    elements.mapDetailPanel.innerHTML = '<p class="empty">No events in this map view.</p>';
+    return;
+  }
+  if (mapDetailTab === "specials" && !canShowSpecials) {
+    elements.mapDetailPanel.innerHTML = '<p class="empty">No specials in this map view.</p>';
+    return;
+  }
+  const eventsBlock = canShowEvents && (mapDetailTab === "all" || mapDetailTab === "events")
     ? `
       <div class="map-event-list-header">
         <p class="map-detail-source">Events In View</p>
@@ -3287,7 +3310,7 @@ function renderMapEventList() {
       <div class="map-event-list">${eventsWithKeys.map(({ event, key }) => eventListCard(event, { includeLink: false, interactive: true, eventKey: key })).join("")}</div>
     `
     : "";
-  const specialsBlock = state.mapSources.specials && visibleSpecials.length
+  const specialsBlock = canShowSpecials && (mapDetailTab === "all" || mapDetailTab === "specials")
     ? `
       <div class="map-event-list-header map-event-list-header-specials">
         <p class="map-detail-source">Specials In View</p>
@@ -4175,6 +4198,20 @@ for (const button of mapRangeButtons) {
     clearCustomDateRange();
     state.specialsMapRange = button.dataset.range || "next-7";
     applyMapRangeChange();
+  });
+}
+
+for (const button of mapViewTabButtons) {
+  button.addEventListener("click", () => {
+    mapDetailTab = button.dataset.mapViewTab || "all";
+    if (selectedMapItemKey) {
+      const selected = currentMapItems.find((item) => mapItemKey(item) === selectedMapItemKey);
+      if (selected) {
+        renderMapDetail(selected);
+        return;
+      }
+    }
+    renderMapEventList();
   });
 }
 
