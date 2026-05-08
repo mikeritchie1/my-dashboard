@@ -3320,7 +3320,7 @@ function renderMapEventList() {
       <div class="map-linked-cards">
         ${visibleSpecials.map((entry, index) => {
           const lines = [
-            (entry.deal || entry.details) ? `<p><strong>Deal:</strong> ${entry.deal || entry.details}</p>` : "",
+            (entry.details || entry.deal) ? `<p><strong>Deal:</strong> ${entry.details || entry.deal}</p>` : "",
             entry.price ? `<p><strong>Price:</strong> ${entry.price}</p>` : "",
             entry.time ? `<p><strong>Time:</strong> ${entry.time}</p>` : "",
             entry.day ? `<p><strong>Days:</strong> ${entry.day}</p>` : "",
@@ -3456,7 +3456,7 @@ function renderMapDetail(item) {
     const specialsHtml = specials
       .map((entry) => {
         const lines = [
-          (entry.deal || entry.details) ? `<p><strong>Deal:</strong> ${entry.deal || entry.details}</p>` : "",
+          (entry.details || entry.deal) ? `<p><strong>Deal:</strong> ${entry.details || entry.deal}</p>` : "",
           entry.price ? `<p><strong>Price:</strong> ${entry.price}</p>` : "",
           entry.time ? `<p><strong>Time:</strong> ${entry.time}</p>` : "",
           entry.day ? `<p><strong>Days:</strong> ${entry.day}</p>` : "",
