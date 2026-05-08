@@ -1,51 +1,10 @@
-# Dashboard + Scrapers
+# My Dashboard
 
-This project now has:
-- `services/` for scraper/service code
-- `docs/` for frontend files
-- `data/` as the single source of runtime data (no duplicate copies)
+Local dashboard plus scraper services for media, news, One Piece cards, release radar, and events/specials.
 
-## Structure
+## Dashboard
 
-- [services/events](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/events): events and specials scrapers
-- [services/media](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/media): media/watchlist scraper
-- [services/one_piece](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/one_piece): One Piece card scraping and change detection
-- [services/release_radar](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/services/release_radar): release/coming-soon scrapers
-- [docs/index.html](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/docs/index.html): dashboard page
-- [docs/app.js](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/docs/app.js): dashboard logic
-- [docs/styles.css](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/docs/styles.css): dashboard styles
-- [data/events](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/events): events + specials JSON
-- [data/media](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/media): media/watchlist JSON + caches
-- [data/one_piece](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/one_piece): One Piece CSV/JSON
-- [data/release_radar](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/release_radar): release JSON
-- [data/metadata.json](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/data/metadata.json): last scrape timestamp
-- [tests](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/tests): manual test scripts
-
-## Config
-
-All configuration is in [env.py](C:/Users/mjrit/OneDrive/Desktop/one-piece-scraper/env.py).
-Scrapers import variables directly from that file.
-
-## Run
-
-Run all scraper groups:
-
-```powershell
-python run_local_dashboard_update.py all
-```
-
-Run one group:
-
-```powershell
-python run_local_dashboard_update.py media
-python run_local_dashboard_update.py events
-python run_local_dashboard_update.py cards
-python run_local_dashboard_update.py digest
-```
-
-The GitHub Actions workflow runs the dashboard scrapers every day and sends one digest email after the data refresh. The digest compares each scraper section with the previous committed snapshot in `.scrape/daily_digest/`.
-
-Serve dashboard:
+Serve the dashboard from the repo root:
 
 ```powershell
 python -m http.server 8080
@@ -53,10 +12,241 @@ python -m http.server 8080
 
 Open:
 
-`http://localhost:8080/docs/`
+```text
+http://localhost:8080/docs/
+```
 
-## Notes
+Dashboard files live in:
 
-- There is no data mirroring to docs anymore.
-- Dashboard reads directly from `../data/...` paths.
-- `.md` and `.txt` report outputs were removed where unused.
+- `docs/index.html`
+- `docs/app.js`
+- `docs/styles.css`
+
+Runtime data lives in `data/`. The dashboard copy lives in `docs/data/` and is refreshed by the wrapper scripts.
+
+## Data Shape
+
+Each dashboard module has data under `data/<module>/`, service code under `services/<module>/`, and module config in `data/<module>/config.json`.
+
+Events, specials, and places are linked like this:
+
+- `data/events/places.json`: Cape Town places by name. A place has `name`, `address`, `location_key`, `type`, `tags`, map URLs, and `missing_location`. It does not store `lat` or `lng`.
+- `data/events/locations.json`: address/location strings mapped to coordinates.
+- `data/events/specials.json`: specials grouped by day. Each special links to a place with `place` and `place_key`; if no place exists it has `missing_place`.
+- Event source JSON files: events can link to a place with `place_key` or to an address with `location_key`. If neither can be resolved, the dashboard shows the corner `X`.
+
+## Scraping
+
+Use the module-level wrappers in `services/` for normal scraping. All wrappers accept:
+
+- `--hard`: recreate selected generated data from scratch where applicable.
+- `--skip-geocode`: for `scrape_events.py`, skip the final geocode pass.
+- `--source`: scrape one source instead of all sources in that module.
+- `--limit`: max items per supported source. `0` means no limit where supported.
+- `--max-pages`: max listing pages per supported source. `0` means source default/all.
+
+### Events
+
+Run all event sources:
+
+```powershell
+python services/scrape_events.py
+python services/scrape_events.py --skip-geocode
+```
+
+This runs in two phases:
+- Scrape sources (specials, places, Bandsintown, Quicket, Webtickets, Google Calendar).
+- Final geocode pass across all event/place `location_key` values, updating `locations.json` incrementally after each hit.
+
+Run one source hard with a test limit:
+
+```powershell
+python services/scrape_events.py --source bandsintown --hard --limit 10 --max-pages 10
+```
+
+Allowed sources:
+
+- `all`
+- `specials`
+- `bandsintown`
+- `quicket`
+- `webtickets`
+- `google-calendar`
+
+Standalone geocode pass:
+
+```powershell
+python services/events/geocode_event_locations.py
+python services/events/geocode_event_locations.py --hard
+```
+
+Extra Bandsintown option:
+
+```powershell
+python services/scrape_events.py --source bandsintown --genre metal --limit 10
+python services/scrape_events.py --source bandsintown --genre all --limit 10
+```
+
+Individual event source scripts:
+
+```powershell
+python services/events/scrape_specials.py --hard
+python services/events/scrape_bandsintown_events.py --hard --genre metal --limit 10 --max-pages 10
+python services/events/scrape_quicket_events.py --hard --limit 10 --pages 10 --days 365
+python services/events/scrape_webtickets_events.py --hard --limit 10 --max-pages 10
+python services/events/scrape_google_calendar.py --hard
+```
+
+Events config:
+
+- `data/events/config.json`
+- `docs/data/events/config.json`
+
+Bandsintown dashboard genre buttons are configured at `bandsintown.genre_filters`.
+
+### Media
+
+Run media/watchlist scraping:
+
+```powershell
+python services/scrape_media.py
+```
+
+Examples:
+
+```powershell
+python services/scrape_media.py --hard
+python services/scrape_media.py --source watchlist --type movies
+python services/scrape_media.py --source games --type games --hard
+```
+
+Allowed sources:
+
+- `all`
+- `watchlist`
+- `games`
+
+Allowed types:
+
+- `all`
+- `movies`
+- `series`
+- `anime`
+- `games`
+
+Individual source script:
+
+```powershell
+python services/media/scrape_watchlist.py --scope both --type all --hard
+```
+
+Media config:
+
+- `data/media/config.json`
+
+### One Piece
+
+Run all One Piece store scrapes:
+
+```powershell
+python services/scrape_one_piece.py
+```
+
+Examples:
+
+```powershell
+python services/scrape_one_piece.py --source tanuki
+python services/scrape_one_piece.py --source all --hard
+```
+
+Allowed sources:
+
+- `all`
+- `bigbang`
+- `knightly`
+- `marvellous`
+- `tanuki`
+
+Individual source script:
+
+```powershell
+python services/one_piece/find_missing_cards.py all
+python services/one_piece/find_missing_cards.py tanuki
+```
+
+One Piece config:
+
+- `data/one_piece/config.json`
+
+### Release Radar
+
+Run all release radar sources:
+
+```powershell
+python services/scrape_release_radar.py
+```
+
+Examples:
+
+```powershell
+python services/scrape_release_radar.py --source pahe --hard --limit 10
+python services/scrape_release_radar.py --source coming-soon --limit 10 --max-pages 3
+python services/scrape_release_radar.py --source games --limit 10 --max-pages 3
+```
+
+Allowed sources:
+
+- `all`
+- `pahe`
+- `coming-soon`
+- `games`
+
+Individual source scripts:
+
+```powershell
+python services/release_radar/scrape_releases.py
+python services/release_radar/scrape_coming_soon.py
+python services/release_radar/scrape_game_releases.py
+```
+
+Release radar config:
+
+- `data/release_radar/config.json`
+
+### News
+
+News currently syncs the local JSON data.
+
+```powershell
+python services/scrape_news.py
+```
+
+Allowed sources:
+
+- `all`
+- `local-file`
+
+News config:
+
+- `data/news/config.json`
+
+## Local Full Update
+
+The older local update runner still works and now calls the module wrappers:
+
+```powershell
+python run_local_dashboard_update.py all
+python run_local_dashboard_update.py events
+python run_local_dashboard_update.py media
+python run_local_dashboard_update.py cards
+python run_local_dashboard_update.py releases
+python run_local_dashboard_update.py news
+```
+
+## Secrets
+
+Secrets are read from environment variables, `secrets.env`, or `env.py` helpers depending on the scraper. Start from:
+
+```text
+secrets.env.example
+```

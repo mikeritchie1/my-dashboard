@@ -4,8 +4,6 @@ import argparse
 import html
 import json
 import re
-import time
-import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -15,15 +13,15 @@ import sys
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 from event_tags import tag_event, is_excluded_event
+from sync_docs import sync_events_data_to_docs
 
 
 BASE_URL = env_get("SCRAPE_QUICKET_EVENTS_URL_TEMPLATE", "https://www.quicket.co.za/events/{page}/")
-NOMINATIM_SEARCH_URL = env_get("SCRAPE_NOMINATIM_SEARCH_URL", "https://nominatim.openstreetmap.org/search")
-EVENTS_MAX_ITEMS = int(env_get("SCRAPE_QUICKET_MAX_ITEMS", "50"))
+# 0 means no hard limit: scrape all matching events in the configured window.
+EVENTS_MAX_ITEMS = int(env_get("SCRAPE_QUICKET_MAX_ITEMS", "0"))
 REPO_DIR = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "quicket_events.json"
-GEOCODE_CACHE_OUTPUT = OUTPUT_DIR / "quicket_geocode_cache.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 
 
@@ -117,173 +115,6 @@ def normalize_url(url: str) -> str:
     return url
 
 
-def load_geocode_cache() -> dict[str, dict[str, float]]:
-    if not GEOCODE_CACHE_OUTPUT.exists():
-        return {}
-    try:
-        payload = json.loads(GEOCODE_CACHE_OUTPUT.read_text(encoding="utf-8"))
-        if isinstance(payload, dict):
-            return payload
-    except json.JSONDecodeError:
-        pass
-    return {}
-
-
-def save_geocode_cache(cache: dict[str, dict[str, float]]) -> None:
-    GEOCODE_CACHE_OUTPUT.write_text(json.dumps(cache, indent=2, ensure_ascii=False), encoding="utf-8")
-
-
-def fetch_event_page(url: str) -> str:
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "Mozilla/5.0 (compatible; my-dashboard/1.0)",
-            "Accept": "text/html,application/xhtml+xml",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return response.read().decode("utf-8", errors="replace")
-
-
-def parse_coords_from_event_page(page_html: str) -> dict[str, float] | None:
-    patterns = [
-        r"maps\?q=(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
-        r"destination=(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
-        r"markers=.*?\|(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)",
-    ]
-    for pattern in patterns:
-        match = re.search(pattern, page_html, flags=re.IGNORECASE)
-        if not match:
-            continue
-        try:
-            lat = float(match.group(1))
-            lng = float(match.group(2))
-        except (TypeError, ValueError):
-            continue
-        if abs(lat) < 0.000001 and abs(lng) < 0.000001:
-            continue
-        return {"lat": lat, "lng": lng}
-    return None
-
-
-def geocode_query_for_event(event: dict) -> str:
-    bits = [
-        event.get("venue", ""),
-        event.get("address", ""),
-        event.get("locality", ""),
-        event.get("region", ""),
-        "South Africa",
-    ]
-    return ", ".join(bit for bit in bits if bit).strip()
-
-
-def geocode_queries_for_event(event: dict) -> list[str]:
-    venue = event.get("venue", "").strip()
-    address = event.get("address", "").strip()
-    locality = event.get("locality", "").strip()
-    region = event.get("region", "").strip()
-    queries = [
-        geocode_query_for_event(event),
-        ", ".join(part for part in [address, locality, region, "South Africa"] if part),
-        ", ".join(part for part in [venue, locality, region, "South Africa"] if part),
-        ", ".join(part for part in [locality, region, "South Africa"] if part),
-    ]
-    deduped: list[str] = []
-    seen: set[str] = set()
-    for query in queries:
-        normalized = query.strip().lower()
-        if normalized and normalized not in seen:
-            seen.add(normalized)
-            deduped.append(query.strip())
-    return deduped
-
-
-def geocode_address(query: str) -> dict[str, float] | None:
-    if not query:
-        return None
-    url = f"{NOMINATIM_SEARCH_URL}?format=json&limit=1&q={urllib.parse.quote(query)}"
-    request = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": "my-dashboard/1.0 (contact: local)",
-            "Accept": "application/json",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        payload = json.loads(response.read().decode("utf-8"))
-    if not isinstance(payload, list) or not payload:
-        return None
-    first = payload[0]
-    try:
-        lat = float(first.get("lat"))
-        lng = float(first.get("lon"))
-    except (TypeError, ValueError):
-        return None
-    return {"lat": lat, "lng": lng}
-
-
-def add_coordinates(events: list[dict]) -> None:
-    print(f"Geocoding {len(events)} event(s)...")
-    cache = load_geocode_cache()
-    cache_changed = False
-    for i, event in enumerate(events, 1):
-        label = event.get("venue") or event.get("title", "?")
-        event_url = (event.get("url") or "").strip()
-        event_cache_key = f"event_url::{event_url}"
-
-        if event_url:
-            cached_event_coords = cache.get(event_cache_key)
-            if cached_event_coords:
-                lat = float(cached_event_coords["lat"])
-                lng = float(cached_event_coords["lng"])
-                if not (abs(lat) < 0.000001 and abs(lng) < 0.000001):
-                    print(f"  [{i}/{len(events)}] {label} (cached)")
-                    event["lat"] = lat
-                    event["lng"] = lng
-                    continue
-
-            try:
-                print(f"  [{i}/{len(events)}] {label} (fetching event page...)")
-                event_html = fetch_event_page(event_url)
-                page_coords = parse_coords_from_event_page(event_html)
-                if page_coords:
-                    event["lat"] = page_coords["lat"]
-                    event["lng"] = page_coords["lng"]
-                    cache[event_cache_key] = page_coords
-                    cache_changed = True
-                    continue
-            except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError):
-                pass
-
-        resolved = False
-        for query in geocode_queries_for_event(event):
-            cached = cache.get(query)
-            if cached:
-                print(f"  [{i}/{len(events)}] {label} (cached)")
-                event["lat"] = cached["lat"]
-                event["lng"] = cached["lng"]
-                resolved = True
-                break
-            print(f"  [{i}/{len(events)}] {label} (geocoding via Nominatim...)")
-            coords = geocode_address(query)
-            # Be polite to Nominatim.
-            time.sleep(1.0)
-            if coords:
-                event["lat"] = coords["lat"]
-                event["lng"] = coords["lng"]
-                cache[query] = coords
-                cache_changed = True
-                resolved = True
-                break
-        if not resolved:
-            print(f"  [{i}/{len(events)}] {label} (no coords found)")
-            continue
-
-    if cache_changed:
-        save_geocode_cache(cache)
-    print("Geocoding done.")
-
-
 def scrape(max_pages: int, days: int, limit: int) -> list[dict]:
     print(f"Scanning Quicket (up to {max_pages} page(s), next {days} day(s), limit {limit})...")
     now = datetime.now(LOCAL_TZ)
@@ -304,12 +135,23 @@ def scrape(max_pages: int, days: int, limit: int) -> list[dict]:
             summary = event_summary(event)
             if is_excluded_event(summary["title"], summary["venue"]):
                 continue
+            print(f"    Processing event: {summary['title'] or summary['url']}")
+            location_key = ", ".join(
+                part for part in [summary.get("address", ""), summary.get("venue", ""), summary.get("locality", ""), summary.get("region", ""), "South Africa"]
+                if part
+            ).strip()
+            summary["location_key"] = location_key
+            summary["missing_location"] = not bool(location_key)
+            summary["place_key"] = ""
+            summary["missing_place"] = True
             by_url[summary["url"]] = summary
-        if len(by_url) >= limit:
+        if limit > 0 and len(by_url) >= limit:
             print(f"  Limit of {limit} reached on page {page}.")
             break
 
-    results = sorted(by_url.values(), key=lambda item: item["start"])[:limit]
+    results = sorted(by_url.values(), key=lambda item: item["start"])
+    if limit > 0:
+        results = results[:limit]
     print(f"Scraped {len(results)} Quicket event(s).")
     return results
 
@@ -318,13 +160,17 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape recent Cape Town events from Quicket.")
     parser.add_argument("--pages", type=int, default=30, help="How many Quicket list pages to scan.")
     parser.add_argument("--days", type=int, default=365, help="How many days ahead to include.")
-    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of matching events to keep.")
+    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of matching events to keep (0 = no limit).")
+    parser.add_argument("--hard", action="store_true", help="Recreate this source output from scratch before writing.")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    if args.hard and JSON_OUTPUT.exists():
+        print(f"Removing stale Quicket output: {JSON_OUTPUT}")
+        JSON_OUTPUT.unlink()
     events = scrape(max_pages=args.pages, days=args.days, limit=args.limit)
-    add_coordinates(events)
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
+    sync_events_data_to_docs()
     print(f"Wrote {len(events)} Quicket event(s) to {JSON_OUTPUT}")
     return 0
 

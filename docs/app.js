@@ -10,8 +10,10 @@ const GAMES_DETAILS_PATH = "./data/media/games_details.json";
 const NEWS_PATH = "./data/news/news.json";
 const CONFIG_PATH = "../config.json";
 const SPECIALS_PATH = "./data/events/specials.json";
+const PLACES_PATH = "./data/events/places.json";
+const LOCATIONS_PATH = "./data/events/locations.json";
+const EVENTS_CONFIG_PATH = "./data/events/config.json";
 const BANDSINTOWN_EVENTS_PATH = "./data/events/bandsintown_events.json";
-const BANDSINTOWN_GENRE_FILTERS_PATH = "./data/events/bandsintown_genre_filters.json";
 const QUICKET_EVENTS_PATH = "./data/events/quicket_events.json";
 const WEATHER_PATH =
   "https://api.open-meteo.com/v1/forecast?latitude=-33.9249&longitude=18.4241&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Africa%2FJohannesburg&forecast_days=7";
@@ -53,6 +55,12 @@ const NEWS_CATEGORIES = [
 const DASHBOARD_ORDER_STORAGE_KEY = "my-dashboard:module-order:v1";
 const DASHBOARD_OPEN_STATE_STORAGE_KEY = "my-dashboard:module-open-state:v1";
 const SUBSECTION_OPEN_STATE_STORAGE_KEY = "my-dashboard:subsection-open-state:v1";
+const EVENT_GEO_BOUNDS = {
+  minLat: -36.5,
+  maxLat: -20.0,
+  minLng: 14.0,
+  maxLng: 36.0,
+};
 
 const state = {
   rows: [],
@@ -63,6 +71,8 @@ const state = {
   minPrice: 0,
   maxPrice: 200,
   specialsPayload: null,
+  places: {},
+  locations: {},
   quicketEvents: [],
   bandsintownEvents: [],
   bandsintownGenreFilters: [],
@@ -195,6 +205,14 @@ const markerIcons = {
   }),
   myLocation: L.icon({
     iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
+    shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+  }),
+  placeBoth: L.icon({
+    iconUrl: "https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
     shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
     iconSize: [25, 41],
     iconAnchor: [12, 41],
@@ -2089,9 +2107,10 @@ async function loadCalendarEventsByDate(dateStrings) {
   return byDate;
 }
 function renderSpecials(payload) {
-  state.specialsPayload = payload;
+  const places = state.places || payload.places || payload.locations || {};
+  state.specialsPayload = { ...payload, locations: places, places };
   const groups = payload.groups || payload.items || [];
-  const locations = payload.locations || {};
+  const locations = places;
   if (payload.error) {
     elements.specialsList.innerHTML = `<p class="empty">${payload.error}</p>`;
     return;
@@ -2206,8 +2225,11 @@ function formatDaysSummary(days) {
 function typesFromLocations(locations) {
   const tags = [];
   for (const location of Object.values(locations || {})) {
-    for (const tag of location.types || location.tags || []) {
-      tags.push(tag);
+    for (const rawTag of location.tags || []) {
+      const tag = String(rawTag || "").trim().toLowerCase();
+      if (["restaurant", "restraunt", "bar", "club", "cafe"].includes(tag)) {
+        tags.push(tag === "restraunt" ? "restaurant" : tag);
+      }
     }
   }
   return unique(tags);
@@ -2216,7 +2238,11 @@ function typesFromLocations(locations) {
 function categoriesFromLocations(locations) {
   const tags = [];
   for (const location of Object.values(locations || {})) {
-    for (const tag of location.categories || []) {
+    for (const rawTag of location.tags || []) {
+      const tag = String(rawTag || "").trim().toLowerCase();
+      if (!tag || ["restaurant", "restraunt", "bar", "club", "cafe"].includes(tag)) {
+        continue;
+      }
       tags.push(tag);
     }
   }
@@ -2274,26 +2300,53 @@ function renderTagFilters(locations) {
     false,
   );
 
-  renderFilterCheckboxes(
-    elements.mapTypeFilters,
-    types,
-    state.selectedMapTypes,
-    "No types yet.",
-    (tag, checked) => {
-      if (checked) {
-        state.selectedMapTypes.add(tag);
+  if (!types.length) {
+    elements.mapTypeFilters.innerHTML = '<p class="empty">No types yet.</p>';
+  } else {
+    elements.mapTypeFilters.innerHTML = "";
+
+    const allLabel = document.createElement("label");
+    const allInput = document.createElement("input");
+    allInput.type = "checkbox";
+    allInput.value = "__all__";
+    allInput.checked = types.every((tag) => state.selectedMapTypes.has(tag));
+    allInput.addEventListener("change", () => {
+      if (allInput.checked) {
+        state.selectedMapTypes = new Set(types);
       } else {
-        state.selectedMapTypes.delete(tag);
+        state.selectedMapTypes.clear();
       }
+      renderTagFilters(locations);
       renderMap();
-    },
-  );
+    });
+    allLabel.append(allInput, " all");
+    elements.mapTypeFilters.append(allLabel);
+
+    for (const tag of types) {
+      const label = document.createElement("label");
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.value = tag;
+      input.checked = state.selectedMapTypes.has(tag);
+      input.addEventListener("change", () => {
+        if (input.checked) {
+          state.selectedMapTypes.add(tag);
+        } else {
+          state.selectedMapTypes.delete(tag);
+        }
+        renderTagFilters(locations);
+        renderMap();
+      });
+      label.append(input, ` ${tag}`);
+      elements.mapTypeFilters.append(label);
+    }
+  }
 
   renderFilterCheckboxes(
     elements.mapCategoryFilters,
     categories,
     state.selectedMapCategories,
-    "No categories yet.",
+    "No tags yet.",
     (tag, checked) => {
       if (checked) {
         state.selectedMapCategories.add(tag);
@@ -2363,6 +2416,8 @@ function renderQuicketEvents(events) {
     card.rel = "noreferrer";
     card.dataset.eventSource = "general";
     card.dataset.eventIndex = String(index);
+    const hasCoordinates = hasValidEventCoordinates(event);
+    card.dataset.hasCoordinates = hasCoordinates ? "true" : "false";
 
     const image = document.createElement("img");
     image.src = event.image || "";
@@ -2382,6 +2437,14 @@ function renderQuicketEvents(events) {
     const venue = document.createElement("span");
     venue.className = "event-venue";
     venue.textContent = [event.venue, event.locality].filter(Boolean).join(", ");
+
+    if (!hasCoordinates) {
+      const missing = document.createElement("span");
+      missing.className = "event-location-missing-badge";
+      missing.textContent = "X";
+      missing.title = "No valid South Africa coordinates found for this event.";
+      card.append(missing);
+    }
 
     details.append(date, title, venue);
     if (event.image) {
@@ -2469,6 +2532,8 @@ function renderBandsintownEvents(events) {
       card.rel = "noreferrer";
       card.dataset.eventSource = "bandsintown";
       card.dataset.eventIndex = String(sourceIndex);
+      const hasCoordinates = hasValidEventCoordinates(event);
+      card.dataset.hasCoordinates = hasCoordinates ? "true" : "false";
 
       if (event.image) {
         const image = document.createElement("img");
@@ -2491,6 +2556,14 @@ function renderBandsintownEvents(events) {
       const venue = document.createElement("span");
       venue.className = "event-venue";
       venue.textContent = [event.venue, event.locality].filter(Boolean).join(", ");
+
+      if (!hasCoordinates) {
+        const missing = document.createElement("span");
+        missing.className = "event-location-missing-badge";
+        missing.textContent = "X";
+        missing.title = "No valid South Africa coordinates found for this event.";
+        card.append(missing);
+      }
 
       body.append(date, eventTitle, venue);
       card.append(body);
@@ -2726,11 +2799,13 @@ function normalizeVenue(value) {
 function locationForVenue(venue, locations) {
   const normalizedVenue = normalizeVenue(venue);
   for (const location of Object.values(locations)) {
-    const normalizedLocation = normalizeVenue(location.venue);
+    const normalizedLocation = normalizeVenue(location.name || location.venue || "");
+    const normalizedAddress = normalizeVenue(location.address || "");
     if (
       normalizedVenue === normalizedLocation ||
       normalizedVenue.startsWith(normalizedLocation) ||
-      normalizedLocation.startsWith(normalizedVenue)
+      normalizedLocation.startsWith(normalizedVenue) ||
+      (normalizedAddress && normalizedAddress.includes(normalizedVenue))
     ) {
       return location;
     }
@@ -2738,8 +2813,76 @@ function locationForVenue(venue, locations) {
   return null;
 }
 
+function locationForSpecial(item, locations) {
+  const placeKey = String(item?.place_key || "").trim();
+  if (placeKey) {
+    for (const location of Object.values(locations || {})) {
+      if (String(location.name || "").trim() === placeKey) {
+        return location;
+      }
+    }
+  }
+  return locationForVenue(item?.place || item?.venue || item?.title || "", locations);
+}
+
+function coordinatesFor(item) {
+  const directLat = Number(item?.lat);
+  const directLng = Number(item?.lng);
+  if (
+    Number.isFinite(directLat)
+    && Number.isFinite(directLng)
+    && directLat >= EVENT_GEO_BOUNDS.minLat
+    && directLat <= EVENT_GEO_BOUNDS.maxLat
+    && directLng >= EVENT_GEO_BOUNDS.minLng
+    && directLng <= EVENT_GEO_BOUNDS.maxLng
+  ) {
+    return { lat: directLat, lng: directLng };
+  }
+  const lookupKeys = unique([
+    String(item?.name || "").trim(),
+    String(item?.venue || "").trim(),
+    String(item?.place || "").trim(),
+    String(item?.address || "").trim(),
+    String(item?.location_key || "").trim(),
+  ].filter(Boolean));
+  let cached = null;
+  for (const key of lookupKeys) {
+    if (state.locations?.[key]) {
+      cached = state.locations[key];
+      break;
+    }
+  }
+  if (!cached) {
+    const placeKey = String(item?.place_key || "").trim();
+    if (placeKey) {
+      const place = Object.values(state.places || {}).find((candidate) => String(candidate?.name || "").trim() === placeKey);
+      if (place && place !== item) {
+        return coordinatesFor(place);
+      }
+    }
+    return null;
+  }
+  const lat = Number(cached.lat);
+  const lng = Number(cached.lng);
+  if (
+    Number.isFinite(lat)
+    && Number.isFinite(lng)
+    && lat >= EVENT_GEO_BOUNDS.minLat
+    && lat <= EVENT_GEO_BOUNDS.maxLat
+    && lng >= EVENT_GEO_BOUNDS.minLng
+    && lng <= EVENT_GEO_BOUNDS.maxLng
+  ) {
+    return { lat, lng };
+  }
+  return null;
+}
+
 function mapItemFromSpecialGroup(group) {
   const location = group.location;
+  const coords = coordinatesFor(location);
+  if (!coords) {
+    return null;
+  }
   const bySpecial = new Map();
   for (const item of group.items || []) {
     const key = specialItemKey(item);
@@ -2764,10 +2907,10 @@ function mapItemFromSpecialGroup(group) {
   }));
   return {
     source: "specials",
-    lat: location.lat,
-    lng: location.lng,
+    lat: coords.lat,
+    lng: coords.lng,
     title: group.venue,
-    url: location.url,
+    url: location.google_maps_url || location.url,
     tags: location.tags || [],
     specialEntries,
     details: group.items.map((item) => `${item.mapDay}: ${item.deal || item.description || item.title}`),
@@ -2775,24 +2918,29 @@ function mapItemFromSpecialGroup(group) {
 }
 
 function mapItemFromPlace(location) {
+  const coords = coordinatesFor(location);
+  if (!coords) {
+    return null;
+  }
   return {
     source: "places",
-    lat: location.lat,
-    lng: location.lng,
-    title: location.venue,
-    url: location.url,
-    types: location.types || location.tags || [],
-    categories: location.categories || [],
+    lat: coords.lat,
+    lng: coords.lng,
+    title: location.name || location.venue,
+    address: location.address || "",
+    url: location.google_maps_url || location.url,
+    types: [],
+    categories: location.tags || [],
     details: [
       "Place",
-      (location.types || location.tags || []).length ? `Type: ${(location.types || location.tags || []).join(", ")}` : "No type",
-      (location.categories || []).length ? `Category: ${(location.categories || []).join(", ")}` : "No category",
+      (location.tags || []).length ? `Tags: ${location.tags.join(", ")}` : "No tags",
     ],
   };
 }
 
 function mapItemFromEvent(event) {
-  if (!Number.isFinite(event.lat) || !Number.isFinite(event.lng)) {
+  const coords = coordinatesFor(event);
+  if (!coords) {
     return null;
   }
   const startAt = event.start ? new Date(event.start) : null;
@@ -2806,8 +2954,8 @@ function mapItemFromEvent(event) {
   return {
     source: "events",
     id: `event:${event.url || `${event.title}|${event.start}`}`,
-    lat: event.lat,
-    lng: event.lng,
+    lat: coords.lat,
+    lng: coords.lng,
     title: event.title,
     url: event.url,
     types: [],
@@ -2815,6 +2963,10 @@ function mapItemFromEvent(event) {
     details: [displayDateTime(event.start), [event.venue, event.locality].filter(Boolean).join(", ")],
     event,
   };
+}
+
+function hasValidEventCoordinates(event) {
+  return Boolean(coordinatesFor(event));
 }
 
 function mapItemKey(item) {
@@ -2878,6 +3030,98 @@ function eventListCard(event) {
   `;
 }
 
+function linkedSpecialsForPlace(placeName) {
+  const groups = state.specialsPayload?.groups || [];
+  const needle = venueKey(placeName);
+  const byKey = new Map();
+  for (const group of groups) {
+    for (const item of group.items || []) {
+      const itemPlace = String(item?.place_key || item?.place || item?.venue || "").trim();
+      if (!itemPlace) {
+        continue;
+      }
+      if (venueKey(itemPlace) === needle) {
+        const venue = item.venue || item.title || placeName;
+        const details = item.details || "";
+        const deal = item.deal || item.description || "";
+        const price = item.price || "";
+        const time = item.time || "";
+        const key = [venue, details, deal, price, time].join("|").toLowerCase();
+        if (!byKey.has(key)) {
+          byKey.set(key, {
+            venue,
+            details,
+            deal,
+            price,
+            time,
+            days: new Set(),
+          });
+        }
+        const record = byKey.get(key);
+        for (const day of group.days || []) {
+          if (day) {
+            record.days.add(day);
+          }
+        }
+      }
+    }
+  }
+  return [...byKey.values()].map((record) => ({
+    venue: record.venue,
+    details: record.details,
+    deal: record.deal,
+    price: record.price,
+    time: record.time,
+    day: formatDaysSummary([...record.days]) || [...record.days].join(", "),
+  }));
+}
+
+function linkedEventsForPlace(place) {
+  const placeName = String(place?.name || "").trim();
+  const placeAddress = String(place?.address || "").trim();
+  const placeKey = venueKey(placeName);
+  const addressKey = venueKey(placeAddress);
+  const combined = [...(state.quicketEvents || []), ...(state.bandsintownEvents || [])];
+  const linked = [];
+  for (const event of combined) {
+    const venueMatch = venueKey(event?.venue || "") === placeKey;
+    const addressMatch = addressKey && venueKey(event?.address || "") === addressKey;
+    if (venueMatch || addressMatch) {
+      linked.push(event);
+    }
+  }
+  linked.sort((left, right) => String(left?.start || "").localeCompare(String(right?.start || "")));
+  return linked;
+}
+
+function placeMarkerState(placeItem) {
+  const placeName = String(placeItem?.title || "").trim();
+  const placeAddress = String(placeItem?.address || "").trim();
+  const hasSpecial = state.mapSources.specials && linkedSpecialsForPlace(placeName).length > 0;
+  const hasEvent = state.mapSources.events && linkedEventsForPlace({ name: placeName, address: placeAddress }).length > 0;
+  if (hasSpecial && hasEvent) {
+    return "both";
+  }
+  if (hasSpecial) {
+    return "special";
+  }
+  if (hasEvent) {
+    return "event";
+  }
+  return "place";
+}
+
+function shouldIncludePlaceMarker(placeItem) {
+  if (state.mapSources.places) {
+    return true;
+  }
+  const placeName = String(placeItem?.title || "").trim();
+  const placeAddress = String(placeItem?.address || "").trim();
+  const hasSpecial = state.mapSources.specials && linkedSpecialsForPlace(placeName).length > 0;
+  const hasEvent = state.mapSources.events && linkedEventsForPlace({ name: placeName, address: placeAddress }).length > 0;
+  return hasSpecial || hasEvent;
+}
+
 function renderMapEventList() {
   if (!specialsMap) {
     elements.mapDetailPanel.innerHTML = '<p class="empty">Map is loading...</p>';
@@ -2908,11 +3152,23 @@ function renderMapDetail(item) {
     return;
   }
 
+  // When a special marker overlaps a place marker, prefer the place detail view.
+  if (item.source === "specials") {
+    const matchedPlace = currentMapItems.find(
+      (candidate) => candidate.source === "places" && venueKey(candidate.title) === venueKey(item.title),
+    );
+    if (matchedPlace) {
+      item = matchedPlace;
+      selectedMapItemKey = mapItemKey(matchedPlace);
+    }
+  }
+
   if (item.source === "events" && item.event) {
     const event = item.event;
     const when = displayDateTime(event.start);
     const where = [event.venue, event.locality].filter(Boolean).join(", ");
     const address = event.address || "";
+    const tags = Array.isArray(event.categories) ? event.categories.filter(Boolean) : [];
     const imageHtml = event.image
       ? `<img src="${event.image}" alt="${event.title || "Event"}">`
       : "";
@@ -2926,6 +3182,7 @@ function renderMapDetail(item) {
           <p><strong>When:</strong> ${when}</p>
           <p><strong>Where:</strong> ${where || "-"}</p>
           <p><strong>Address:</strong> ${address || "-"}</p>
+          ${tags.length ? `<p><strong>Tags:</strong> ${tags.join(", ")}</p>` : ""}
           <p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>
         </div>
       </article>
@@ -2937,28 +3194,72 @@ function renderMapDetail(item) {
     return;
   }
 
-  const title = item.url
-    ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a>`
-    : item.title;
-  if (item.source === "specials") {
-    const entries = (item.specialEntries || [])
-      .map(
-        (entry) => {
-          const lines = [entry.details, entry.price, entry.time, entry.daysText]
-            .filter((value) => (value || "").trim())
-            .map((value) => `<p>${value}</p>`)
-            .join("");
-          return `<div class="map-special-entry">${lines}</div>`;
-        },
-      )
+  if (item.source === "places") {
+    const placeLink = item.url
+      ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title || "Place"}</a>`
+      : (item.title || "Place");
+    const placeName = item.title || "Place";
+    const tags = (item.categories || []).filter(Boolean);
+    const specials = linkedSpecialsForPlace(placeName);
+    const events = linkedEventsForPlace({
+      name: placeName,
+      address: item.address || "",
+    });
+    const specialsHtml = specials
+      .map((entry) => {
+        const lines = [
+          (entry.deal || entry.details) ? `<p><strong>Deal:</strong> ${entry.deal || entry.details}</p>` : "",
+          entry.price ? `<p><strong>Price:</strong> ${entry.price}</p>` : "",
+          entry.time ? `<p><strong>Time:</strong> ${entry.time}</p>` : "",
+          entry.day ? `<p><strong>Days:</strong> ${entry.day}</p>` : "",
+        ].filter(Boolean).join("");
+        return `
+          <article class="map-linked-card map-linked-card-special">
+            <h5>${entry.venue || "Special"}</h5>
+            ${lines}
+          </article>
+        `;
+      })
       .join("");
+    const eventsHtml = events
+      .map((event) => {
+        const when = displayDateTime(event.start);
+        const where = [event.venue, event.locality, event.region].filter(Boolean).join(", ");
+        const imageHtml = event.image
+          ? `<img src="${event.image}" alt="${event.title || "Event"}">`
+          : "";
+        const lines = [
+          when ? `<p><strong>When:</strong> ${when}</p>` : "",
+          where ? `<p><strong>Where:</strong> ${where}</p>` : "",
+          event.address ? `<p><strong>Address:</strong> ${event.address}</p>` : "",
+          (event.categories || []).length ? `<p><strong>Tags:</strong> ${event.categories.join(", ")}</p>` : "",
+          event.url ? `<p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>` : "",
+        ].filter(Boolean).join("");
+        return `
+          <article class="map-linked-card map-linked-card-event">
+            ${imageHtml}
+            <h5>${event.title || "Event"}</h5>
+            ${lines}
+          </article>
+        `;
+      })
+      .join("");
+    const specialsSection = specials.length
+      ? `<div class="map-linked-cards">${specialsHtml}</div>`
+      : "";
+    const eventsSection = events.length
+      ? `<div class="map-linked-cards">${eventsHtml}</div>`
+      : "";
     elements.mapDetailPanel.innerHTML = `
       <article class="map-detail-card">
         <div class="map-detail-body">
           <button type="button" class="map-back-button" id="map-back-button">Back to event list</button>
-          <p class="map-detail-source">Special</p>
-          <h4>${title}</h4>
-          ${entries || ""}
+          <p class="map-detail-source">Place</p>
+          <h4>${placeLink}</h4>
+          ${item.address ? `<p><strong>Address:</strong> ${item.address}</p>` : ""}
+          ${tags.length ? `<p><strong>Tags:</strong> ${tags.join(", ")}</p>` : ""}
+          ${specialsSection}
+          ${eventsSection}
         </div>
       </article>
     `;
@@ -2968,6 +3269,9 @@ function renderMapDetail(item) {
     }
     return;
   }
+  const title = item.url
+    ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title}</a>`
+    : item.title;
   const details = (item.details || []).map((detail) => `<li>${detail}</li>`).join("");
   const sourceLabel = item.source === "places" ? "Place" : "Special";
   elements.mapDetailPanel.innerHTML = `
@@ -2984,77 +3288,6 @@ function renderMapDetail(item) {
   if (backButton) {
     backButton.addEventListener("click", () => renderMapDetail(null));
   }
-}
-
-async function geocodeAddress(address) {
-  const query = (address || "").trim();
-  if (!query) {
-    return null;
-  }
-  const cacheKey = `geocode:v1:${query.toLowerCase()}`;
-  try {
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) {
-      return JSON.parse(cached);
-    }
-  } catch {
-    // Ignore localStorage failures.
-  }
-
-  const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(query)}`;
-  try {
-    const response = await fetch(url, {
-      headers: { Accept: "application/json" },
-    });
-    if (!response.ok) {
-      return null;
-    }
-    const data = await response.json();
-    if (!Array.isArray(data) || !data.length) {
-      return null;
-    }
-    const result = {
-      lat: Number(data[0].lat),
-      lng: Number(data[0].lon),
-    };
-    if (Number.isFinite(result.lat) && Number.isFinite(result.lng)) {
-      try {
-        localStorage.setItem(cacheKey, JSON.stringify(result));
-      } catch {
-        // Ignore localStorage failures.
-      }
-      return result;
-    }
-  } catch {
-    return null;
-  }
-  return null;
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-async function enrichEventsWithCoordinates(events) {
-  let geocodedAny = false;
-  const limit = Math.min(events.length, 20);
-  for (let index = 0; index < limit; index += 1) {
-    const event = events[index];
-    if (Number.isFinite(event.lat) && Number.isFinite(event.lng)) {
-      continue;
-    }
-    const lookup = [event.venue, event.address, event.locality, event.region, "Cape Town", "South Africa"]
-      .filter(Boolean)
-      .join(", ");
-    const coords = await geocodeAddress(lookup);
-    if (coords) {
-      event.lat = coords.lat;
-      event.lng = coords.lng;
-      geocodedAny = true;
-    }
-    await sleep(1000);
-  }
-  return geocodedAny;
 }
 
 function buildMapItems() {
@@ -3082,22 +3315,59 @@ function buildMapItems() {
     return typeOk && categoryOk;
   };
 
-  if (state.mapSources.places) {
-    for (const location of Object.values(locations)) {
-      if (matchesTypeAndCategory(location.types || location.tags || [], location.categories || [])) {
-        mapItems.push(mapItemFromPlace(location));
+  for (const location of Object.values(locations)) {
+    if (!coordinatesFor(location)) {
+      continue;
+    }
+    const placeTypes = [];
+    const placeTags = [];
+    for (const rawTag of location.tags || []) {
+      const tag = String(rawTag || "").trim().toLowerCase();
+      if (!tag) {
+        continue;
       }
+      if (["restaurant", "restraunt", "bar", "club", "cafe"].includes(tag)) {
+        placeTypes.push(tag === "restraunt" ? "restaurant" : tag);
+      } else {
+        placeTags.push(tag);
+      }
+    }
+    const placeItem = mapItemFromPlace(location);
+    if (!placeItem) {
+      continue;
+    }
+    if (!shouldIncludePlaceMarker(placeItem)) {
+      continue;
+    }
+    if (matchesTypeAndCategory(unique(placeTypes), unique(placeTags))) {
+      mapItems.push(placeItem);
     }
   }
 
   if (state.mapSources.specials) {
     const specialsItems = specialsItemsForRange(groups, rollingWeek);
     const venueGroups = groupItemsByVenue(specialsItems)
-      .map((group) => ({ ...group, location: locationForVenue(group.venue, locations) }))
-      .filter((group) => group.location);
+      .map((group) => ({ ...group, location: locationForSpecial(group.items[0] || group, locations) }))
+      .filter((group) => group.location && coordinatesFor(group.location));
     for (const group of venueGroups) {
-      if (matchesTypeAndCategory(group.location.types || group.location.tags || [], group.location.categories || [])) {
-        mapItems.push(mapItemFromSpecialGroup(group));
+      const placeTypes = [];
+      const placeTags = [];
+      for (const rawTag of group.location.tags || []) {
+        const tag = String(rawTag || "").trim().toLowerCase();
+        if (!tag) {
+          continue;
+        }
+        if (["restaurant", "restraunt", "bar", "club", "cafe"].includes(tag)) {
+          placeTypes.push(tag === "restraunt" ? "restaurant" : tag);
+        } else {
+          placeTags.push(tag);
+        }
+      }
+      if (matchesTypeAndCategory(unique(placeTypes), unique(placeTags))) {
+        const mapItem = mapItemFromSpecialGroup(group);
+        if (mapItem) {
+          mapItems.push(mapItem);
+        }
       }
     }
   }
@@ -3160,11 +3430,29 @@ function renderMap() {
   specialsMap.closePopup();
   const bounds = [];
   for (const item of mapItems) {
-    const icon = item.source === "places"
-      ? markerIcons.places
-      : item.source === "events"
-        ? markerIcons.events
-        : markerIcons.specials;
+    if (item.source === "specials") {
+      const hasMatchingPlace = mapItems.some(
+        (candidate) => candidate.source === "places" && venueKey(candidate.title) === venueKey(item.title),
+      );
+      if (hasMatchingPlace) {
+        continue;
+      }
+    }
+    let icon = markerIcons.specials;
+    if (item.source === "events") {
+      icon = markerIcons.events;
+    } else if (item.source === "places") {
+      const state = placeMarkerState(item);
+      if (state === "both") {
+        icon = markerIcons.placeBoth;
+      } else if (state === "special") {
+        icon = markerIcons.specials;
+      } else if (state === "event") {
+        icon = markerIcons.events;
+      } else {
+        icon = markerIcons.places;
+      }
+    }
     const marker = L.marker([item.lat, item.lng], { icon });
     if (item.source === "specials" || item.source === "places") {
       mapMarkersByKey.set(`${item.source}:${venueKey(item.title)}`, marker);
@@ -3230,8 +3518,15 @@ function specialDayElement(day, items, isToday) {
     const card = document.createElement("article");
     card.className = "special-card";
     card.style.cursor = "pointer";
+    if (!hasValidSpecialLocation(item)) {
+      const missing = document.createElement("span");
+      missing.className = "event-location-missing-badge";
+      missing.textContent = "X";
+      missing.title = "No valid place/location is linked to this special.";
+      card.append(missing);
+    }
     card.addEventListener("click", () => {
-      focusSpecialOnMap(item.venue || item.title || "");
+      focusSpecialOnMap(item.place || item.venue || item.title || "");
     });
 
     const title = document.createElement("h5");
@@ -3272,6 +3567,12 @@ function specialDayElement(day, items, isToday) {
   rail.append(track);
   section.append(rail);
   return section;
+}
+
+function hasValidSpecialLocation(item) {
+  const locations = state.specialsPayload?.locations || state.places || {};
+  const location = locationForSpecial(item, locations);
+  return Boolean(location && !item?.missing_place && hasValidEventCoordinates(location));
 }
 
 function groupItemsByVenue(items) {
@@ -3509,11 +3810,26 @@ async function loadGameReleases() {
 
 async function loadSpecials() {
   try {
-    const response = await fetch(SPECIALS_PATH, { cache: "no-store" });
+    const [response, placesResponse, locationsResponse] = await Promise.all([
+      fetch(SPECIALS_PATH, { cache: "no-store" }),
+      fetch(PLACES_PATH, { cache: "no-store" }),
+      fetch(LOCATIONS_PATH, { cache: "no-store" }),
+    ]);
     if (!response.ok) {
       throw new Error(`Could not load ${SPECIALS_PATH}`);
     }
-    renderSpecials(await response.json());
+    const payload = await response.json();
+    if (placesResponse.ok) {
+      const places = await placesResponse.json();
+      state.places = places && typeof places === "object" && !Array.isArray(places) ? places : {};
+    } else {
+      state.places = payload.locations || {};
+    }
+    if (locationsResponse.ok) {
+      const locations = await locationsResponse.json();
+      state.locations = locations && typeof locations === "object" && !Array.isArray(locations) ? locations : {};
+    }
+    renderSpecials(payload);
   } catch (error) {
     elements.specialsList.innerHTML = `<p class="empty">${error.message}</p>`;
   }
@@ -3521,19 +3837,24 @@ async function loadSpecials() {
 
 async function loadQuicketEvents() {
   try {
-    const response = await fetch(QUICKET_EVENTS_PATH, { cache: "no-store" });
+    const [response, locationsResponse] = await Promise.all([
+      fetch(QUICKET_EVENTS_PATH, { cache: "no-store" }),
+      fetch(LOCATIONS_PATH, { cache: "no-store" }),
+    ]);
     if (!response.ok) {
       throw new Error(`Could not load ${QUICKET_EVENTS_PATH}`);
+    }
+    if (locationsResponse.ok) {
+      const locations = await locationsResponse.json();
+      state.locations = locations && typeof locations === "object" && !Array.isArray(locations)
+        ? { ...state.locations, ...locations }
+        : state.locations;
     }
     const events = await response.json();
     state.quicketEvents = Array.isArray(events) ? events : [];
     renderEventCategoryFilters();
     renderQuicketEvents(state.quicketEvents);
     renderMap();
-    const changed = await enrichEventsWithCoordinates(state.quicketEvents);
-    if (changed) {
-      renderMap();
-    }
   } catch (error) {
     elements.quicketEventsList.innerHTML = `<p class="empty">${error.message}</p>`;
   }
@@ -3544,19 +3865,27 @@ async function loadBandsintownEvents() {
     return;
   }
   try {
-    const [eventsResponse, configResponse] = await Promise.all([
+    const [eventsResponse, configResponse, locationsResponse] = await Promise.all([
       fetch(BANDSINTOWN_EVENTS_PATH, { cache: "no-store" }),
-      fetch(BANDSINTOWN_GENRE_FILTERS_PATH, { cache: "no-store" }),
+      fetch(EVENTS_CONFIG_PATH, { cache: "no-store" }),
+      fetch(LOCATIONS_PATH, { cache: "no-store" }),
     ]);
     if (!eventsResponse.ok) {
       throw new Error(`Could not load ${BANDSINTOWN_EVENTS_PATH}`);
     }
     const events = await eventsResponse.json();
+    if (locationsResponse.ok) {
+      const locations = await locationsResponse.json();
+      state.locations = locations && typeof locations === "object" && !Array.isArray(locations)
+        ? { ...state.locations, ...locations }
+        : state.locations;
+    }
     let configuredGenres = [];
     if (configResponse.ok) {
       const config = await configResponse.json();
-      configuredGenres = Array.isArray(config?.genres)
-        ? unique(config.genres.map((genre) => String(genre || "").trim()).filter(Boolean))
+      const genreConfig = config?.bandsintown?.genre_filters || config?.genres || [];
+      configuredGenres = Array.isArray(genreConfig)
+        ? unique(genreConfig.map((genre) => String(genre || "").trim()).filter(Boolean))
         : [];
     }
     state.bandsintownGenreFilters = configuredGenres;

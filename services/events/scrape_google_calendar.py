@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import argparse
 import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
@@ -10,6 +11,7 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
+from sync_docs import sync_events_data_to_docs
 
 
 REPO_DIR = Path(__file__).resolve().parents[2]
@@ -135,9 +137,19 @@ def scrape() -> dict:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Scrape configured Google Calendar events.")
+    parser.add_argument("--hard", action="store_true", help="Recreate this source output from scratch before writing.")
+    parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; Google Calendar uses API maxResults.")
+    parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; Google Calendar is not paged here.")
+    args = parser.parse_args()
+
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    if args.hard and OUTPUT_FILE.exists():
+        print(f"Removing stale Google Calendar output: {OUTPUT_FILE}")
+        OUTPUT_FILE.unlink()
     payload = scrape()
     OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    sync_events_data_to_docs()
     print(f"Wrote {len(payload.get('items', []))} calendar event(s) to {OUTPUT_FILE}")
     if payload.get("error"):
         print(payload["error"])

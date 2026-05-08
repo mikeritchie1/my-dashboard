@@ -13,20 +13,16 @@ REPO_DIR = Path(__file__).resolve().parent
 DATA_DIR = REPO_DIR / "data"
 
 TASKS = {
-    "cards": [[sys.executable, "services/one_piece/find_missing_cards.py", "all"]],
-    "specials": [[sys.executable, "services/events/scrape_specials.py"]],
-    "events": [
-        [sys.executable, "services/events/scrape_bandsintown_events.py"],
-        [sys.executable, "services/events/scrape_quicket_events.py"],
-        [sys.executable, "services/events/scrape_webtickets_events.py"],
-        [sys.executable, "services/events/scrape_google_calendar.py"],
-    ],
-    "releases": [[sys.executable, "services/release_radar/scrape_releases.py"]],
-    "coming-soon": [[sys.executable, "services/release_radar/scrape_coming_soon.py"]],
-    "game-releases": [[sys.executable, "services/release_radar/scrape_game_releases.py"]],
-    "media": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "both"]],
-    "watchlist": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "watchlist"]],
-    "gamelist": [[sys.executable, "services/media/scrape_watchlist.py", "--scope", "games", "--type", "games"]],
+    "cards": [[sys.executable, "services/scrape_one_piece.py"]],
+    "specials": [[sys.executable, "services/scrape_events.py", "--source", "specials"]],
+    "events": [[sys.executable, "services/scrape_events.py"]],
+    "releases": [[sys.executable, "services/scrape_release_radar.py", "--source", "pahe"]],
+    "coming-soon": [[sys.executable, "services/scrape_release_radar.py", "--source", "coming-soon"]],
+    "game-releases": [[sys.executable, "services/scrape_release_radar.py", "--source", "games"]],
+    "media": [[sys.executable, "services/scrape_media.py"]],
+    "watchlist": [[sys.executable, "services/scrape_media.py", "--source", "watchlist"]],
+    "gamelist": [[sys.executable, "services/scrape_media.py", "--source", "games", "--type", "games"]],
+    "news": [[sys.executable, "services/scrape_news.py"]],
     "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
 

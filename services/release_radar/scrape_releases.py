@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import argparse
 import json
 import os
 import re
@@ -276,6 +277,21 @@ def write_latest(items: list[dict[str, str]]) -> None:
 
 
 def main() -> int:
+    global FETCH_LIMIT, MAX_ITEMS
+
+    parser = argparse.ArgumentParser(description="Scrape latest movie releases from Pahe.")
+    parser.add_argument("--hard", action="store_true", help="Recreate output from scratch before writing.")
+    parser.add_argument("--limit", type=int, default=0, help="Maximum fetched release items (0 = configured default).")
+    parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; Pahe source is not paged here.")
+    args = parser.parse_args()
+
+    if args.limit > 0:
+        FETCH_LIMIT = args.limit
+        MAX_ITEMS = max(FETCH_LIMIT, args.limit)
+    if args.hard and OUTPUT_FILE.exists():
+        print(f"Removing stale release radar output: {OUTPUT_FILE}")
+        OUTPUT_FILE.unlink()
+
     existing_items = load_existing_items()
     existing_by_url = {
         str(item.get("url") or "").strip(): str(item.get("rating") or "").strip()

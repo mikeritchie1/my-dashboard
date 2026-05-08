@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import argparse
 import os
 import urllib.parse
 import urllib.error
@@ -173,6 +174,23 @@ def scrape_range(start: date, end: date, ordering: str) -> list[dict[str, str]]:
 
 
 def main() -> int:
+    global FETCH_LIMIT, MAX_ITEMS, MAX_PAGES
+
+    parser = argparse.ArgumentParser(description="Scrape game releases from RAWG.")
+    parser.add_argument("--hard", action="store_true", help="Recreate output from scratch before writing.")
+    parser.add_argument("--limit", type=int, default=0, help="Maximum fetched game items per bucket (0 = configured default).")
+    parser.add_argument("--max-pages", type=int, default=0, help="Maximum RAWG pages to scan (0 = configured default).")
+    args = parser.parse_args()
+
+    if args.limit > 0:
+        FETCH_LIMIT = args.limit
+        MAX_ITEMS = max(FETCH_LIMIT, args.limit)
+    if args.max_pages > 0:
+        MAX_PAGES = args.max_pages
+    if args.hard and OUTPUT_FILE.exists():
+        print(f"Removing stale game release output: {OUTPUT_FILE}")
+        OUTPUT_FILE.unlink()
+
     api_key = secret("RAWG_API_KEY")
     if not api_key:
         raise RuntimeError("Missing RAWG_API_KEY in environment or secrets.env")

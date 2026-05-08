@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+import argparse
 import urllib.parse
 import urllib.request
 from datetime import date, datetime, timedelta
@@ -180,6 +181,23 @@ def merge_items(new_items: list[dict[str, str]], existing_items: list[dict[str, 
 
 
 def main() -> int:
+    global FETCH_LIMIT, MAX_ITEMS, MAX_PAGES
+
+    parser = argparse.ArgumentParser(description="Scrape coming soon movies from TMDB.")
+    parser.add_argument("--hard", action="store_true", help="Recreate output from scratch before writing.")
+    parser.add_argument("--limit", type=int, default=0, help="Maximum fetched coming-soon items (0 = configured default).")
+    parser.add_argument("--max-pages", type=int, default=0, help="Maximum TMDB pages to scan (0 = configured default).")
+    args = parser.parse_args()
+
+    if args.limit > 0:
+        FETCH_LIMIT = args.limit
+        MAX_ITEMS = max(FETCH_LIMIT, args.limit)
+    if args.max_pages > 0:
+        MAX_PAGES = args.max_pages
+    if args.hard and OUTPUT_FILE.exists():
+        print(f"Removing stale coming soon output: {OUTPUT_FILE}")
+        OUTPUT_FILE.unlink()
+
     all_results: list[dict] = []
     dates: dict = {}
     for page in range(1, MAX_PAGES + 1):

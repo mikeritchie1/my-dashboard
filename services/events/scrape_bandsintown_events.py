@@ -14,6 +14,7 @@ import sys
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 from event_tags import is_excluded_event, tag_event
+from sync_docs import sync_events_data_to_docs
 
 
 SOURCE_URL = env_get("SCRAPE_BANDSINTOWN_EVENTS_URL", "https://www.bandsintown.com/c/cape-town-south-africa")
@@ -23,7 +24,7 @@ MAX_PAGES = max(1, int(env_get("SCRAPE_BANDSINTOWN_MAX_PAGES", "30")))
 REPO_DIR = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "bandsintown_events.json"
-GENRE_FILTERS_PATH = OUTPUT_DIR / "bandsintown_genre_filters.json"
+EVENTS_CONFIG_PATH = OUTPUT_DIR / "config.json"
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 DEFAULT_GENRE_FILTERS = [
     "Alternative",
@@ -61,10 +62,10 @@ def genre_fallback_url(genre: str) -> str:
 
 
 def load_genre_filters() -> list[str]:
-    if GENRE_FILTERS_PATH.exists():
+    if EVENTS_CONFIG_PATH.exists():
         try:
-            payload = json.loads(GENRE_FILTERS_PATH.read_text(encoding="utf-8"))
-            values = payload.get("genres", []) if isinstance(payload, dict) else []
+            payload = json.loads(EVENTS_CONFIG_PATH.read_text(encoding="utf-8"))
+            values = (payload.get("bandsintown") or {}).get("genre_filters", []) if isinstance(payload, dict) else []
             if isinstance(values, list):
                 cleaned = [clean_text(str(value)) for value in values if clean_text(str(value))]
                 if cleaned:
@@ -375,7 +376,10 @@ def scrape(limit: int, max_pages: int, source_url: str, listing_only: bool = Fal
     print(f"  Found {len(links)} unique event link(s).")
 
     configured_genres = load_genre_filters()
-    selected_genres = [clean_text(genre_seed)] if clean_text(genre_seed) else configured_genres
+    if clean_text(genre_seed).lower() == "all":
+        selected_genres = []
+    else:
+        selected_genres = [clean_text(genre_seed)] if clean_text(genre_seed) else configured_genres
     genre_membership: dict[str, set[str]] = {}
     by_url: dict[str, dict[str, str]] = {str(link.get("url") or ""): link for link in links if str(link.get("url") or "")}
 
@@ -396,6 +400,7 @@ def scrape(limit: int, max_pages: int, source_url: str, listing_only: bool = Fal
         if not url or url in seen_urls:
             continue
         seen_urls.add(url)
+        print(f"  Processing event link: {url}")
         forced_genres = ordered_genres(genre_membership.get(url, set()), configured_genres)
         event = event_from_listing(link)
         event["genre_tags"] = forced_genres
@@ -411,6 +416,14 @@ def scrape(limit: int, max_pages: int, source_url: str, listing_only: bool = Fal
             continue
         if not is_western_cape_event(event):
             continue
+        location_key = ", ".join(
+            part for part in [event.get("address", ""), event.get("venue", ""), event.get("locality", ""), event.get("region", ""), "South Africa"]
+            if part
+        ).strip()
+        event["location_key"] = location_key
+        event["missing_location"] = not bool(location_key)
+        event.setdefault("place_key", "")
+        event.setdefault("missing_place", True)
         events.append(event)
         if limit > 0 and len(events) >= limit:
             break
@@ -425,12 +438,16 @@ def main() -> int:
     parser.add_argument("--genre", default="", help="Optional genre slug/name, e.g. metal, hip-hop, r-b-soul.")
     parser.add_argument("--source-url", default="", help="Optional full source URL override.")
     parser.add_argument("--listing-only", action="store_true", help="Only scrape listing page cards (faster, fewer fields).")
+    parser.add_argument("--hard", action="store_true", help="Recreate this source output from scratch before writing.")
     args = parser.parse_args()
 
     selected_genre = args.genre.strip()
-    source_url = args.source_url.strip() or (genre_url(selected_genre) if selected_genre else SOURCE_URL)
+    source_url = args.source_url.strip() or (SOURCE_URL if selected_genre.lower() in {"", "all"} else genre_url(selected_genre))
     print(f"Using source: {source_url}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    if args.hard and JSON_OUTPUT.exists():
+        print(f"Removing stale Bandsintown output: {JSON_OUTPUT}")
+        JSON_OUTPUT.unlink()
     events = scrape(
         limit=args.limit,
         max_pages=max(1, args.max_pages),
@@ -439,6 +456,7 @@ def main() -> int:
         genre_seed=selected_genre,
     )
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
+    sync_events_data_to_docs()
     print(f"Wrote {len(events)} Bandsintown event(s) to {JSON_OUTPUT}")
     return 0
 

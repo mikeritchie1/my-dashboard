@@ -11,11 +11,12 @@ import sys
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
 from event_tags import tag_event, is_excluded_event
+from sync_docs import sync_events_data_to_docs
 
 
 BASE_URL = env_get("SCRAPE_WEBTICKETS_CATEGORY_URL_TEMPLATE", "https://www.webtickets.co.za/v2/category.aspx?itemid=1184162&location=9&when=anytime&page={page}")
 PAGE_PREFIX = env_get("SCRAPE_WEBTICKETS_PAGE_PREFIX", "https://www.webtickets.co.za/v2/")
-EVENTS_MAX_ITEMS = int(env_get("SCRAPE_WEBTICKETS_MAX_ITEMS", "50"))
+EVENTS_MAX_ITEMS = int(env_get("SCRAPE_WEBTICKETS_MAX_ITEMS", "0"))
 REPO_DIR = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_DIR / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "webtickets_wc_events.json"
@@ -78,10 +79,12 @@ def extract_events(page_html: str) -> list[dict]:
     return events
 
 
-def scrape(limit: int) -> list[dict]:
+def scrape(limit: int, max_pages: int = 0) -> list[dict]:
     print("Scanning Webtickets (fetching page 1)...")
     first_page = fetch_page(1)
     total_pages = parse_total_pages(first_page)
+    if max_pages > 0:
+        total_pages = min(total_pages, max_pages)
     print(f"  {total_pages} page(s) found, limit {limit}.")
     all_events: list[dict] = []
     seen_urls: set[str] = set()
@@ -95,8 +98,12 @@ def scrape(limit: int) -> list[dict]:
             if is_excluded_event(event["title"], event.get("venue", "")):
                 continue
             seen_urls.add(event["url"])
+            event["missing_location"] = True
+            event["location_key"] = ""
+            event["missing_place"] = True
+            event["place_key"] = ""
             all_events.append(event)
-            if len(all_events) >= limit:
+            if limit > 0 and len(all_events) >= limit:
                 print(f"  Limit of {limit} reached on page {page}.")
                 return all_events
 
@@ -106,12 +113,18 @@ def scrape(limit: int) -> list[dict]:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Scrape Webtickets Western Cape events.")
-    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of events to collect.")
+    parser.add_argument("--limit", type=int, default=EVENTS_MAX_ITEMS, help="Maximum number of events to collect (0 = no limit).")
+    parser.add_argument("--max-pages", type=int, default=0, help="Maximum listing pages to scan (0 = all found pages).")
+    parser.add_argument("--hard", action="store_true", help="Recreate this source output from scratch before writing.")
     args = parser.parse_args()
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    events = scrape(limit=args.limit)
+    if args.hard and JSON_OUTPUT.exists():
+        print(f"Removing stale Webtickets output: {JSON_OUTPUT}")
+        JSON_OUTPUT.unlink()
+    events = scrape(limit=args.limit, max_pages=args.max_pages)
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
+    sync_events_data_to_docs()
     print(f"Wrote {len(events)} Webtickets event(s) to {JSON_OUTPUT}")
     return 0
 

@@ -11,6 +11,7 @@ import sys
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
 from env import get as env_get
+from sync_docs import sync_events_data_to_docs
 
 
 NOTION_VERSION = "2022-06-28"
@@ -24,6 +25,7 @@ DEFAULT_SPECIALS_DATABASE_ID = "35157df8191880f7accedf40168acee7"
 REPO_DIR = Path(__file__).resolve().parents[2]
 DATA_DIR = REPO_DIR / "data" / "events"
 OUTPUT_FILE = DATA_DIR / "specials.json"
+PLACES_OUTPUT_FILE = DATA_DIR / "places.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 TAGS_CONFIG_FILE = Path(__file__).resolve().parent / "allowed_location_tags.json"
 CATEGORY_TAGS_CONFIG_FILE = Path(__file__).resolve().parent / "allowed_location_category_tags.json"
@@ -384,12 +386,14 @@ def parse_location(text: str) -> dict | None:
         categories = []
     return {
         "venue": venue,
+        "name": venue,
         "lat": lat,
         "lng": lng,
         "types": types,
         "categories": categories,
         "tags": list(dict.fromkeys(types + categories)),
         "url": raw_url,
+        "google_maps_url": raw_url,
     }
 
 
@@ -516,6 +520,92 @@ def enrich_locations_with_ratings(locations: dict[str, dict]) -> dict[str, dict]
     return enriched
 
 
+def normalize_place_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", str(value or "").strip().lower()).strip("-")
+
+
+def place_address(place: dict) -> str:
+    address = (
+        place.get("address")
+        or place.get("formatted_address")
+        or place.get("google_name")
+        or place.get("venue")
+        or place.get("name")
+        or ""
+    )
+    address = " ".join(str(address).split())
+    if address and "south africa" not in address.lower():
+        address = f"{address}, Cape Town, South Africa"
+    return address
+
+
+def load_existing_places() -> dict[str, dict]:
+    if not PLACES_OUTPUT_FILE.exists():
+        return {}
+    try:
+        payload = json.loads(PLACES_OUTPUT_FILE.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return {}
+    if not isinstance(payload, dict):
+        return {}
+    places: dict[str, dict] = {}
+    for _, value in payload.items():
+        if not isinstance(value, dict):
+            continue
+        name = str(value.get("name") or value.get("venue") or "").strip()
+        if not name:
+            continue
+        record = {
+            "name": name,
+            "address": str(value.get("address") or "").strip(),
+            "tags": value.get("tags", []),
+            "url": str(value.get("url") or "").strip(),
+            "google_maps_url": str(value.get("google_maps_url") or "").strip(),
+        }
+        tags = record["tags"]
+        if not isinstance(tags, list):
+            tags = []
+        record["tags"] = [str(tag).strip().lower() for tag in tags if str(tag).strip()]
+        places[name] = record
+    return places
+
+
+def attach_places_to_specials(groups: list[dict], places: dict[str, dict]) -> list[dict]:
+    updated_groups: list[dict] = []
+    for group in groups:
+        updated_group = {key: value for key, value in group.items() if key != "source"}
+        updated_items = []
+        for item in group.get("items", []):
+            venue = str(item.get("venue") or item.get("title") or "").strip()
+            place = location_for_venue_name(venue, places)
+            print(f"Processing special: {venue or item.get('title') or 'Special'}")
+            clean_item = {key: value for key, value in item.items() if key != "url"}
+            clean_item["place"] = place["name"] if place else ""
+            clean_item["place_key"] = place["name"] if place else ""
+            clean_item["missing_place"] = not bool(place)
+            updated_items.append(clean_item)
+        updated_group["items"] = updated_items
+        updated_groups.append(updated_group)
+    return updated_groups
+
+
+def location_for_venue_name(venue: str, places: dict[str, dict]) -> dict | None:
+    normalized_venue = re.sub(r"[^a-z0-9]", "", str(venue or "").lower())
+    if not normalized_venue:
+        return None
+    for place in places.values():
+        normalized_place = re.sub(r"[^a-z0-9]", "", str(place.get("name") or "").lower())
+        normalized_address = re.sub(r"[^a-z0-9]", "", str(place.get("address") or "").lower())
+        if (
+            normalized_venue == normalized_place
+            or normalized_venue.startswith(normalized_place)
+            or normalized_place.startswith(normalized_venue)
+            or (normalized_address and normalized_venue in normalized_address)
+        ):
+            return place
+    return None
+
+
 def specials_from_database(token: str, database_id: str) -> list[dict]:
     results: list[dict] = []
     cursor = ""
@@ -575,10 +665,15 @@ def specials_from_database(token: str, database_id: str) -> list[dict]:
 
 def write_payload(payload: dict) -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    OUTPUT_FILE.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def scrape_specials() -> dict:
+def write_places(places: dict[str, dict]) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    PLACES_OUTPUT_FILE.write_text(json.dumps(places, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def scrape_specials(enrich_places: bool = False) -> dict:
     token = secret("NOTION_TOKEN") or secret("NOTION_API_TOKEN")
     if not token:
         return {
@@ -591,16 +686,17 @@ def scrape_specials() -> dict:
     try:
         page = notion_request(f"pages/{PAGE_ID}", token)
         blocks = flatten_blocks(get_block_children(PAGE_ID, token), token)
-        legacy_groups, locations = split_specials_and_locations(specials_from_blocks(blocks))
+        legacy_groups, _locations = split_specials_and_locations(specials_from_blocks(blocks))
         database_id = database_id_from_secret_or_url()
         groups = legacy_groups
         if database_id:
             groups = specials_from_database(token, database_id)
-        locations = enrich_locations_with_ratings(locations)
+        places = load_existing_places()
+        if enrich_places:
+            print("Place enrichment is ignored here because places.json is now manually maintained.")
+        groups = attach_places_to_specials(groups, places)
         return {
-            "source": PAGE_URL,
             "title": page_title(page),
-            "locations": locations,
             "groups": groups,
         }
     except urllib.error.HTTPError as error:
@@ -614,9 +710,28 @@ def scrape_specials() -> dict:
 
 
 def main() -> int:
-    payload = scrape_specials()
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Scrape specials and places from Notion.")
+    parser.add_argument("--hard", action="store_true", help="Recreate specials output from scratch before writing.")
+    parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; specials are not item-limited.")
+    parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; Notion pagination is automatic.")
+    parser.add_argument(
+        "--enrich-places",
+        action="store_true",
+        help="Optionally enrich place details using Google Places (slower).",
+    )
+    args = parser.parse_args()
+
+    if args.hard:
+        if OUTPUT_FILE.exists():
+            print(f"Removing stale specials output: {OUTPUT_FILE}")
+            OUTPUT_FILE.unlink()
+    payload = scrape_specials(enrich_places=bool(args.enrich_places))
     write_payload(payload)
+    sync_events_data_to_docs()
     print(f"Wrote {len(payload.get('groups', []))} special group(s) to {OUTPUT_FILE}")
+    print(f"Using manual places file: {PLACES_OUTPUT_FILE}")
     if payload.get("error"):
         print(payload["error"])
     return 0
