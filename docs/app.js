@@ -3310,9 +3310,10 @@ function renderMapEventList() {
       <div class="map-event-list">${eventsWithKeys.map(({ event, key }) => eventListCard(event, { includeLink: false, interactive: true, eventKey: key })).join("")}</div>
     `
     : "";
+  const specialsHeaderClass = canShowEvents && (mapDetailTab === "all");
   const specialsBlock = canShowSpecials && (mapDetailTab === "all" || mapDetailTab === "specials")
     ? `
-      <div class="map-event-list-header map-event-list-header-specials">
+      <div class="map-event-list-header ${specialsHeaderClass ? "map-event-list-header-specials" : ""}">
         <p class="map-detail-source">Specials In View</p>
         <p>${visibleSpecials.length} visible</p>
       </div>
