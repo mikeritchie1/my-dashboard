@@ -6,6 +6,10 @@
         {
           "title": "Ghost of Yotei",
           "opinion": ""
+        },
+        {
+          "title": "Directive 8020",
+          "opinion": ""
         }
       ],
       "indie": [
@@ -261,10 +265,6 @@
         "opinion": ""
       },
       {
-        "title": "Helldivers 2",
-        "opinion": ""
-      },
-      {
         "title": "Content Warning",
         "opinion": ""
       },
@@ -297,6 +297,16 @@
         {
           "type": "game_indie",
           "title": "Creature Kitchen",
+          "opinion": ""
+        },
+        {
+          "type": "game_indie",
+          "title": "Mixtape",
+          "opinion": ""
+        },
+        {
+          "type": "game_coop",
+          "title": "Helldivers 2",
           "opinion": ""
         }
       ]

@@ -3,10 +3,6 @@
   "currently_watching": {
     "movies": [
       {
-        "title": "Ready Or Not 2: Here I Come",
-        "opinion": ""
-      },
-      {
         "title": "Good Luck, Have Fun, Don’t Die",
         "opinion": ""
       },
@@ -29,7 +25,7 @@
         "opinion": ""
       },
       {
-        "title": "Star Wars: Maul",
+        "title": "Die Kantoor",
         "opinion": ""
       }
     ],
@@ -956,6 +952,21 @@
           "opinion": "Liked"
         },
         {
+          "type": "movie",
+          "title": "Ready Or Not 2: Here I Come",
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Caviet",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Primal Fear",
+          "opinion": ""
+        },
+        {
           "type": "series",
           "title": "Stranger Things",
           "opinion": ""
@@ -1023,6 +1034,11 @@
         {
           "type": "series",
           "title": "Invincible",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "Star Wars: Maul",
           "opinion": ""
         }
       ]
@@ -1798,7 +1814,7 @@
         {
           "type": "movie",
           "title": "It Follows",
-          "opinion": ""
+          "opinion": "Loved"
         },
         {
           "type": "movie",
@@ -1808,7 +1824,7 @@
         {
           "type": "movie",
           "title": "Coherence",
-          "opinion": ""
+          "opinion": "Loved"
         },
         {
           "type": "movie",
@@ -1853,17 +1869,17 @@
         {
           "type": "movie",
           "title": "The Nice Guys",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "What We Do in the Shadows",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "Superbad",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -1873,7 +1889,7 @@
         {
           "type": "movie",
           "title": "Tropic Thunder",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -1903,12 +1919,7 @@
         {
           "type": "movie",
           "title": "Interstellar",
-          "opinion": ""
-        },
-        {
-          "type": "movie",
-          "title": "Coherence",
-          "opinion": ""
+          "opinion": "Loved"
         },
         {
           "type": "movie",
@@ -1927,18 +1938,13 @@
         },
         {
           "type": "movie",
-          "title": "Apocalypse Now",
-          "opinion": ""
-        },
-        {
-          "type": "movie",
           "title": "The Thing",
           "opinion": ""
         },
         {
           "type": "movie",
           "title": "Snowpiercer",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -1983,7 +1989,7 @@
         {
           "type": "movie",
           "title": "Barbarian",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -2013,12 +2019,12 @@
         {
           "type": "movie",
           "title": "Hereditary",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "Midsommar",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -2038,12 +2044,12 @@
         {
           "type": "movie",
           "title": "Palm Springs",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "Jojo Rabbit",
-          "opinion": ""
+          "opinion": "Loved"
         },
         {
           "type": "movie",
@@ -2188,7 +2194,7 @@
         {
           "type": "movie",
           "title": "Talk To Me",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -2232,22 +2238,12 @@
         },
         {
           "type": "movie",
-          "title": "One Flew Over the Cuckoo’s Nest",
-          "opinion": ""
-        },
-        {
-          "type": "movie",
           "title": "Beau is Afraid",
           "opinion": ""
         },
         {
           "type": "movie",
           "title": "The Game",
-          "opinion": ""
-        },
-        {
-          "type": "movie",
-          "title": "Godzilla Minus One",
           "opinion": ""
         },
         {
@@ -2327,11 +2323,6 @@
         },
         {
           "type": "movie",
-          "title": "What We Do In The Shadows",
-          "opinion": ""
-        },
-        {
-          "type": "movie",
           "title": "Next Goal Wins",
           "opinion": ""
         },
@@ -2363,7 +2354,7 @@
         {
           "type": "movie",
           "title": "The Conjuring",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -2383,7 +2374,7 @@
         {
           "type": "movie",
           "title": "The Boat that Rocked",
-          "opinion": ""
+          "opinion": "Loved"
         },
         {
           "type": "movie",
@@ -2403,12 +2394,12 @@
         {
           "type": "movie",
           "title": "Joker",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "A Quiet Place",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -2418,7 +2409,7 @@
         {
           "type": "movie",
           "title": "Dead Pool",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
