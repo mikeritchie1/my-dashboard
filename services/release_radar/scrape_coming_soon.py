@@ -59,7 +59,7 @@ def fetch_coming_soon(page: int = 1, region: str = "", language: str = "en-US") 
     if not bearer_token and not api_key:
         raise RuntimeError("Missing TMDB_BEARER_TOKEN or TMDB_API_KEY in environment or secrets.env")
 
-    start = date.today()
+    start = date.today() + timedelta(days=1)
     end = start + timedelta(days=WINDOW_DAYS)
     query_params = {
         "language": language,
@@ -169,7 +169,9 @@ def item_key(item: dict[str, str]) -> str:
 def merge_items(new_items: list[dict[str, str]], existing_items: list[dict[str, str]], max_items: int) -> list[dict[str, str]]:
     merged: list[dict[str, str]] = []
     seen: set[str] = set()
-    for item in [*new_items, *existing_items]:
+    current_items = filter_by_window([*new_items, *existing_items], WINDOW_DAYS)
+    current_items.sort(key=lambda item: str(item.get("release_date") or "9999-12-31"))
+    for item in current_items:
         key = item_key(item)
         if not key or key in seen:
             continue

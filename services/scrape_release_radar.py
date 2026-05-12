@@ -24,6 +24,10 @@ SOURCES = {
         "command": ["services/release_radar/scrape_game_releases.py"],
         "output": "game_releases.json",
     },
+    "imax": {
+        "command": ["services/release_radar/scrape_imax.py"],
+        "output": "imax_waterfront.json",
+    },
 }
 
 

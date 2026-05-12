@@ -3,6 +3,7 @@ const NEW_CARDS_PATH = "./data/one_piece/new_missing_cards.json";
 const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
 const COMING_SOON_PATH = "./data/release_radar/coming_soon.json";
 const GAME_RELEASES_PATH = "./data/release_radar/game_releases.json";
+const IMAX_RELEASES_PATH = "./data/release_radar/imax_waterfront.json";
 const WATCHLIST_PATH = "./data/media/watchlist.json";
 const GAMESLIST_PATH = "./data/media/gameslist.json";
 const WATCHLIST_MOVIE_DETAILS_PATH = "./data/media/watchlist_movie_details.json";
@@ -116,6 +117,7 @@ const state = {
   selectedNewsCategory: "all",
   isNewsExpanded: false,
   releaseItems: [],
+  imaxItems: [],
   timelineItems: [],
   gameHubGames: [],
   gameHubSelectedGame: "",
@@ -137,6 +139,7 @@ const elements = {
   watchlistOpinionIndicatorsToggle: document.querySelector("#watchlist-opinion-indicators-toggle"),
   releaseGrid: document.querySelector("#release-grid"),
   comingSoonGrid: document.querySelector("#coming-soon-grid"),
+  imaxGrid: document.querySelector("#imax-grid"),
   gameReleaseGrid: document.querySelector("#game-release-grid"),
   gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
   newsList: document.querySelector("#news-list"),
@@ -471,6 +474,7 @@ function renderPosters(container, items, emptyText, options = {}) {
 
   container.innerHTML = "";
   const interactiveRelease = Boolean(options.interactiveRelease);
+  const indexAttr = options.indexAttr || (interactiveRelease ? "releaseIndex" : "");
   for (let index = 0; index < items.length; index += 1) {
     const item = items[index];
     const link = document.createElement("a");
@@ -481,8 +485,8 @@ function renderPosters(container, items, emptyText, options = {}) {
     const ratingNumber = parseRatingValue(item.tmdb_rating || item.rating);
     const hoverRating = Number.isFinite(ratingNumber) ? `${ratingNumber.toFixed(1)}/10` : "";
     link.title = hoverRating ? `${item.title} | Rating: ${hoverRating}` : item.title;
-    if (interactiveRelease) {
-      link.dataset.releaseIndex = String(index);
+    if (indexAttr) {
+      link.dataset[indexAttr] = String(index);
     }
 
     const image = document.createElement("img");
@@ -492,11 +496,21 @@ function renderPosters(container, items, emptyText, options = {}) {
     image.title = link.title;
 
     const title = document.createElement("span");
+    title.className = "poster-title";
     const releaseDate = displayDate(item.release_date);
     title.textContent = interactiveRelease ? item.title : releaseDate ? `${item.title} (${releaseDate})` : item.title;
     title.title = link.title;
 
-    link.append(image, title);
+    const status = String(item.status_label || "").trim();
+    if (status) {
+      const badge = document.createElement("small");
+      const statusKey = String(item.status || "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      badge.className = `poster-status${statusKey ? ` poster-status-${statusKey}` : ""}`;
+      badge.textContent = status;
+      link.append(image, badge, title);
+    } else {
+      link.append(image, title);
+    }
     container.append(link);
   }
 }
@@ -518,6 +532,41 @@ function parseRatingValue(value) {
   return Number.isFinite(parsed) ? parsed : Number.NaN;
 }
 
+function parseDateOnly(value) {
+  const raw = String(value || "").trim();
+  if (!raw) {
+    return null;
+  }
+  const parsed = new Date(`${raw}T00:00:00`);
+  return Number.isNaN(parsed.getTime()) ? null : parsed;
+}
+
+function futureDatedItems(items) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return items.filter((item) => {
+    const parsed = parseDateOnly(item?.release_date);
+    return parsed ? parsed > today : true;
+  });
+}
+
+function sortByReleaseDateAsc(items) {
+  return items.sort((left, right) => {
+    const leftDate = String(left?.release_date || "");
+    const rightDate = String(right?.release_date || "");
+    if (!leftDate && !rightDate) {
+      return 0;
+    }
+    if (!leftDate) {
+      return 1;
+    }
+    if (!rightDate) {
+      return -1;
+    }
+    return leftDate.localeCompare(rightDate);
+  });
+}
+
 function openReleaseDetail(item) {
   if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !item) {
     return;
@@ -537,7 +586,12 @@ function openReleaseDetail(item) {
   const description = stripHtmlTags(item.overview || "") || "No description yet.";
   const trailerUrl = String(item.trailer_url || "").trim();
   const tmdbUrl = String(item.tmdb_url || "").trim();
-  const timingBits = [releaseDate, runtime].filter(Boolean);
+  const sourceUrl = String(item.url || "").trim();
+  const status = String(item.status_label || "").trim();
+  const format = String(item.format || "").trim();
+  const showtimes = Array.isArray(item.showtimes) ? item.showtimes.filter(Boolean).join(", ") : "";
+  const source = String(item.source || "").trim();
+  const timingBits = [status, releaseDate, runtime, format].filter(Boolean);
   const posterHtml = posterUrl
     ? `<img class="watchlist-detail-poster" src="${posterUrl}" alt="${safeTitle} poster">`
     : '<div class="watchlist-detail-poster watchlist-entry-poster-empty">No poster</div>';
@@ -547,15 +601,17 @@ function openReleaseDetail(item) {
     <div class="watchlist-detail-layout">
       ${posterHtml}
       <div class="watchlist-detail-body">
-        <p class="watchlist-detail-kicker">Release Radar</p>
+        <p class="watchlist-detail-kicker">${escapeHtml(source || "Release Radar")}</p>
         <h3>${safeTitle}</h3>
         ${ratingHtml}
         ${timingBits.length ? `<p class="watchlist-detail-meta">${escapeHtml(timingBits.join(" • "))}</p>` : ""}
         ${genres ? `<p class="watchlist-detail-meta">${escapeHtml(genres)}</p>` : ""}
         <p class="watchlist-detail-description">${escapeHtml(description)}</p>
+        ${showtimes ? `<p><strong>Showtimes:</strong> ${escapeHtml(showtimes)}</p>` : ""}
         <p><strong>Directors:</strong> ${escapeHtml(directors)}</p>
         <p><strong>Actors:</strong> ${escapeHtml(actors)}</p>
         <div class="watchlist-detail-links">
+          ${sourceUrl ? `<a href="${sourceUrl}" target="_blank" rel="noreferrer">Source</a>` : ""}
           ${trailerUrl ? `<a href="${trailerUrl}" target="_blank" rel="noreferrer">Trailer</a>` : ""}
           ${tmdbUrl ? `<a href="${tmdbUrl}" target="_blank" rel="noreferrer">TMDB</a>` : ""}
         </div>
@@ -4532,24 +4588,32 @@ async function loadComingSoon() {
       throw new Error(`Could not load ${COMING_SOON_PATH}`);
     }
     const payload = await response.json();
-    const items = Array.isArray(payload.items) ? [...payload.items] : [];
-    items.sort((left, right) => {
-      const leftDate = String(left?.release_date || "");
-      const rightDate = String(right?.release_date || "");
-      if (!leftDate && !rightDate) {
-        return 0;
-      }
-      if (!leftDate) {
-        return 1;
-      }
-      if (!rightDate) {
-        return -1;
-      }
-      return leftDate.localeCompare(rightDate);
-    });
+    const items = sortByReleaseDateAsc(futureDatedItems(Array.isArray(payload.items) ? [...payload.items] : []));
     renderPosters(elements.comingSoonGrid, items, "No coming soon movies found.");
   } catch (error) {
     elements.comingSoonGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+  }
+}
+
+async function loadImaxReleases() {
+  if (!elements.imaxGrid) {
+    return;
+  }
+  try {
+    const response = await fetch(IMAX_RELEASES_PATH, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Could not load ${IMAX_RELEASES_PATH}`);
+    }
+    const payload = await response.json();
+    const items = Array.isArray(payload.items) ? [...payload.items] : [];
+    state.imaxItems = items;
+    renderPosters(elements.imaxGrid, items, "No IMAX Waterfront films found.", {
+      interactiveRelease: true,
+      indexAttr: "imaxIndex",
+    });
+  } catch (error) {
+    state.imaxItems = [];
+    elements.imaxGrid.innerHTML = `<p class="empty">${error.message}</p>`;
   }
 }
 
@@ -4565,20 +4629,7 @@ async function loadGameReleases() {
     const comingSoon = Array.isArray(payload.coming_soon) ? [...payload.coming_soon] : [];
     const hasSplitBuckets = newReleases.length || comingSoon.length;
 
-    const sortByDateAsc = (items) => items.sort((left, right) => {
-      const leftDate = String(left?.release_date || "");
-      const rightDate = String(right?.release_date || "");
-      if (!leftDate && !rightDate) {
-        return 0;
-      }
-      if (!leftDate) {
-        return 1;
-      }
-      if (!rightDate) {
-        return -1;
-      }
-      return leftDate.localeCompare(rightDate);
-    });
+    const sortByDateAsc = sortByReleaseDateAsc;
     const sortByDateDesc = (items) => items.sort((left, right) => {
       const leftDate = String(left?.release_date || "");
       const rightDate = String(right?.release_date || "");
@@ -4598,7 +4649,7 @@ async function loadGameReleases() {
     let upcomingItems = [];
     if (hasSplitBuckets) {
       releasedItems = sortByDateDesc(newReleases);
-      upcomingItems = sortByDateAsc(comingSoon);
+      upcomingItems = sortByDateAsc(futureDatedItems(comingSoon));
     } else {
       sortByDateAsc(allItems);
       const today = new Date();
@@ -4998,6 +5049,21 @@ if (elements.releaseGrid) {
       return;
     }
     openReleaseDetail(state.releaseItems[index]);
+  });
+}
+
+if (elements.imaxGrid) {
+  elements.imaxGrid.addEventListener("click", (event) => {
+    const card = event.target.closest(".poster-card[data-imax-index]");
+    if (!card) {
+      return;
+    }
+    event.preventDefault();
+    const index = Number(card.dataset.imaxIndex);
+    if (!Number.isInteger(index) || index < 0 || index >= state.imaxItems.length) {
+      return;
+    }
+    openReleaseDetail(state.imaxItems[index]);
   });
 }
 
@@ -5545,6 +5611,7 @@ loadMetadata();
 loadWeather();
 loadReleases();
 loadComingSoon();
+loadImaxReleases();
 loadGameReleases();
 loadNews();
 loadWatchlist();

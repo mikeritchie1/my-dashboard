@@ -197,6 +197,7 @@ Examples:
 ```powershell
 python services/scrape_release_radar.py --source pahe --hard --limit 10
 python services/scrape_release_radar.py --source coming-soon --limit 10 --max-pages 3
+python services/scrape_release_radar.py --source imax --limit 4
 python services/scrape_release_radar.py --source games --limit 10 --max-pages 3
 ```
 
@@ -205,6 +206,7 @@ Allowed sources:
 - `all`
 - `pahe`
 - `coming-soon`
+- `imax`
 - `games`
 
 Individual source scripts:
@@ -212,8 +214,16 @@ Individual source scripts:
 ```powershell
 python services/release_radar/scrape_releases.py
 python services/release_radar/scrape_coming_soon.py
+python services/release_radar/scrape_imax.py
 python services/release_radar/scrape_game_releases.py
 ```
+
+Release radar sources:
+
+- `pahe`: latest movie releases from Pahe.
+- `coming-soon`: upcoming movies from TMDB, sorted by release date and excluding movies released today or earlier.
+- `imax`: Ster-Kinekor V&A Waterfront IMAX listings, split into `Now playing` and `Coming soon`, enriched with TMDB poster/detail data.
+- `games`: new and upcoming game releases from RAWG, with coming-soon games sorted by release date and stale released games removed.
 
 Release radar config:
 

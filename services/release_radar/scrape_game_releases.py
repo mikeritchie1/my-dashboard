@@ -6,7 +6,7 @@ import os
 import urllib.parse
 import urllib.error
 import urllib.request
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 import sys
 
@@ -129,6 +129,25 @@ def item_key(item: dict[str, str]) -> str:
     return str(item.get("url") or item.get("title") or "").strip()
 
 
+def parse_release_date(value: str) -> date | None:
+    raw = str(value or "").strip()
+    if not raw:
+        return None
+    try:
+        return datetime.strptime(raw, "%Y-%m-%d").date()
+    except ValueError:
+        return None
+
+
+def filter_items_by_date(items: list[dict[str, str]], start: date, end: date) -> list[dict[str, str]]:
+    filtered: list[dict[str, str]] = []
+    for item in items:
+        released = parse_release_date(str(item.get("release_date") or ""))
+        if released and start <= released <= end:
+            filtered.append(item)
+    return filtered
+
+
 def merge_items(new_items: list[dict[str, str]], existing_items: list[dict[str, str]], max_items: int) -> list[dict[str, str]]:
     merged: list[dict[str, str]] = []
     seen: set[str] = set()
@@ -212,8 +231,13 @@ def main() -> int:
     if not isinstance(existing_soon, list):
         existing_soon = []
 
-    merged_new = merge_items(new_candidates, existing_new, MAX_ITEMS)
-    merged_soon = merge_items(soon_candidates, existing_soon, MAX_ITEMS)
+    merged_new = merge_items(filter_items_by_date(new_candidates, new_start, new_end), filter_items_by_date(existing_new, new_start, new_end), MAX_ITEMS)
+    merged_soon_candidates = merge_items(
+        filter_items_by_date(soon_candidates, soon_start, soon_end),
+        filter_items_by_date(existing_soon, soon_start, soon_end),
+        MAX_ITEMS,
+    )
+    merged_soon = sorted(merged_soon_candidates, key=lambda item: str(item.get("release_date") or "9999-12-31"))
     write_payload(merged_new, merged_soon)
     print(
         f"Wrote {len(merged_new)} new game release(s) and {len(merged_soon)} coming soon game(s) to {OUTPUT_FILE} "
