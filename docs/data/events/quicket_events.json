@@ -173,6 +173,27 @@
     "missing_place": true
   },
   {
+    "title": "HER'S business showcase",
+    "start": "2026-05-14T10:30:00+02:00",
+    "end": "2026-05-14T12:00:00+02:00",
+    "venue": "Bootleggers Cape Quarter Lifestyle Village - The Piazza",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Cape Quarter Lifestyle Village - The Piazza, De Waterkant, Cape Town, 8001, South Africa, De Waterkant, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0919055_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/359387-hers-business-showcase/",
+    "categories": [
+      "festival",
+      "art"
+    ],
+    "location_key": "Cape Quarter Lifestyle Village - The Piazza, De Waterkant, Cape Town, 8001, South Africa, De Waterkant, 8001, Cape Town, Western Cape, South Africa, Bootleggers Cape Quarter Lifestyle Village - The Piazza, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "Watershed Show - Simon's @ Constantia - THURSDAY 14 May",
     "start": "2026-05-14T18:00:00+02:00",
     "end": "2026-05-14T22:00:00+02:00",
@@ -253,24 +274,6 @@
     "missing_place": true
   },
   {
-    "title": "Health Entrepreneurship Summit",
-    "start": "2026-05-15T09:00:00+02:00",
-    "end": "2026-05-15T15:45:00+02:00",
-    "venue": "UCT Graduate School of Business",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "9 Portswood Road, , Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0907252_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/341018-health-entrepreneurship-summit/",
-    "categories": [],
-    "location_key": "9 Portswood Road, , Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa, UCT Graduate School of Business, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Better Humaning: The Playbook you didn't know you needed | Interactive Business Talk",
     "start": "2026-05-15T09:00:00+02:00",
     "end": "2026-05-15T11:00:00+02:00",
@@ -286,6 +289,24 @@
       "theatre"
     ],
     "location_key": "Gardens, Cape Town, 7925, 8001, Cape Town, Western Cape, South Africa, To be confirmed on registration, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Health Entrepreneurship Summit",
+    "start": "2026-05-15T09:00:00+02:00",
+    "end": "2026-05-15T15:45:00+02:00",
+    "venue": "UCT Graduate School of Business",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "9 Portswood Road, , Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0907252_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/341018-health-entrepreneurship-summit/",
+    "categories": [],
+    "location_key": "9 Portswood Road, , Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa, UCT Graduate School of Business, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1874,24 +1895,6 @@
     "currency": "",
     "image": "https://images.quicket.co.za/0893399_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/",
-    "categories": [],
-    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "DISTRICT SIX MUSEUM: MARCH 2027 ADMISSION TICKETS",
-    "start": "2027-03-01T09:00:00+02:00",
-    "end": "2027-03-31T15:00:00+02:00",
-    "venue": "25A Buitenkant St",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0893402_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/365072-district-six-museum-march-2027-admission-tickets/",
     "categories": [],
     "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
     "missing_location": false,
