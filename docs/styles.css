@@ -1536,6 +1536,16 @@ td.price {
 td.card-number {
   white-space: nowrap;
   font-weight: 800;
+  vertical-align: top;
+}
+
+.card-thumb {
+  display: block;
+  width: 48px;
+  height: auto;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  object-fit: contain;
 }
 
 .new-card-row {
@@ -1557,6 +1567,130 @@ td.card-number {
   font-size: 12px;
   font-weight: 800;
   line-height: 1.4;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  padding: 4px 0 8px;
+}
+
+.missing-card-block {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--border, #e5e7eb);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.missing-card-new-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 2px 6px;
+  background: #b7e4c7;
+  color: #0f5132;
+  border: 1px solid #74c69d;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.4;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.missing-card-alt-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 2px 6px;
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1.4;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.missing-card-block:hover {
+  border-color: var(--accent, #4f46e5);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.missing-card-block.is-new {
+  border-color: #74c69d;
+}
+
+.missing-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+  background: var(--surface, #f3f4f6);
+}
+
+.missing-card-img-empty {
+  background: var(--surface, #f3f4f6);
+}
+
+.missing-card-body {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.missing-card-number {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text, #111);
+  margin: 0;
+}
+
+.missing-card-price {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--accent, #4f46e5);
+  margin: 0;
+}
+
+.missing-card-store {
+  font-size: 11px;
+  color: var(--muted, #6b7280);
+  margin: 0;
+}
+
+.missing-card-rarity {
+  font-size: 11px;
+  color: var(--muted, #6b7280);
+}
+
+.missing-card-variants {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+}
+
+:root[data-theme="dark"] .missing-card-block {
+  background: var(--card-bg, #1e1e2e);
+}
+
+:root[data-theme="dark"] .missing-card-block.is-new {
+  border-color: #3a9e6a;
 }
 
 .muted {
@@ -3389,7 +3523,7 @@ td.card-number {
 }
 
 .watchlist-detail-poster {
-  width: min(200px, 100%);
+  width: min(280px, 100%);
   aspect-ratio: 2 / 3;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -3606,7 +3740,7 @@ td.card-number {
   }
 
   .watchlist-detail-poster {
-    max-width: 180px;
+    max-width: 260px;
   }
 
   .one-piece-products-strip {

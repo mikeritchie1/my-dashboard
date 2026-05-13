@@ -9,6 +9,7 @@ import tempfile
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
+from datetime import datetime, timezone
 from pathlib import Path
 from zipfile import ZipFile
 
@@ -27,7 +28,7 @@ KNIGHTLY_PRODUCTS_URL = KNIGHTLY_COLLECTION_URL + "/products.json?limit=250&page
 
 MARVELLOUS_COLLECTION_URL = env_get("SCRAPE_OP_MARVELLOUS_COLLECTION_URL", "https://marvelloushobbies.com/one-piece-singles/")
 MARVELLOUS_PRODUCTS_URL = (
-    env_get("SCRAPE_OP_MARVELLOUS_PRODUCTS_URL_TEMPLATE", "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}&category=36")
+    env_get("SCRAPE_OP_MARVELLOUS_PRODUCTS_URL_TEMPLATE", "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}&category_ids[]=36")
 )
 
 TANUKI_COLLECTION_URL = env_get("SCRAPE_OP_TANUKI_COLLECTION_URL", "https://tanukitrader.co.za/")
@@ -295,6 +296,17 @@ def fetch_json(url: str) -> object:
         return json.loads(response.read().decode("utf-8"))
 
 
+def fetch_woo_page(url: str) -> tuple[list[dict], int, int]:
+    """Fetch a WooCommerce Store API page. Returns (products, total_items, total_pages)."""
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        total_items = int(response.headers.get("X-WP-Total") or 0)
+        total_pages = int(response.headers.get("X-WP-TotalPages") or 0)
+        data = json.loads(response.read().decode("utf-8"))
+    products = data if isinstance(data, list) else []
+    return products, total_items, total_pages
+
+
 def body_field(body_html: str, label: str) -> str:
     pattern = re.compile(
         r"<td>\s*" + re.escape(label) + r":\s*</td>\s*<td>\s*(.*?)\s*</td>",
@@ -318,36 +330,78 @@ def sorted_matches(matches: list[dict[str, object]]) -> list[dict[str, object]]:
     )
 
 
-def write_reports(prefix: str, heading: str, matches: list[dict[str, object]]) -> None:
-    matches = sorted_matches(matches)
-    ONE_PIECE_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    fieldnames = [
-        "card_number",
-        "price",
-        "title",
-        "rarity",
-        "store",
-        "set_name",
-        "condition",
-        "stock",
-        "available_variants",
-        "url",
-    ]
+_LISTING_FIELDS = [
+    "card_number", "price", "title", "rarity", "store",
+    "set_name", "condition", "stock", "available_variants", "url", "image_url",
+    "scraped_at",
+]
 
-    with (ONE_PIECE_DATA_DIR / f"{prefix}.csv").open("w", newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(matches)
+COMBINED_JSON = ONE_PIECE_DATA_DIR / "missing_cards.json"
+
+
+def _now_iso() -> str:
+    return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
+def _listing_dict(match: dict[str, object]) -> dict[str, object]:
+    return {field: match.get(field, "") for field in _LISTING_FIELDS}
+
+
+def _listing_key(listing: dict[str, object]) -> str:
+    return f"{listing.get('card_number', '')}|{listing.get('url', '')}"
+
+
+def _apply_scraped_at(
+    new_listings: list[dict[str, object]],
+    old_listings: list[dict[str, object]],
+) -> list[dict[str, object]]:
+    """Preserve scraped_at for existing listings; set now for new ones."""
+    now = _now_iso()
+    old_map = {_listing_key(r): str(r.get("scraped_at") or "") for r in old_listings}
+    for listing in new_listings:
+        listing["scraped_at"] = old_map.get(_listing_key(listing)) or now
+    return new_listings
+
+
+def _write_json(listings: list[dict[str, object]]) -> None:
+    ONE_PIECE_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    payload = {"listings": [_listing_dict(m) for m in listings]}
+    COMBINED_JSON.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"Wrote missing_cards.json ({len(listings)} listings)", flush=True)
+
+
+def update_store_in_combined_json(store_name: str, matches: list[dict[str, object]]) -> None:
+    """Replace this store's entries in missing_cards.json, keeping all other stores intact."""
+    old_all: list[dict[str, object]] = []
+    old_store: list[dict[str, object]] = []
+    if COMBINED_JSON.exists():
+        data = json.loads(COMBINED_JSON.read_text(encoding="utf-8"))
+        for r in data.get("listings", []):
+            (old_store if r.get("store") == store_name else old_all).append(r)
+    matches = _apply_scraped_at(list(matches), old_store)
+    _write_json(sorted_matches(old_all + matches))
+
+
+def write_combined_json(listings: list[dict[str, object]]) -> None:
+    old_listings: list[dict[str, object]] = []
+    if COMBINED_JSON.exists():
+        data = json.loads(COMBINED_JSON.read_text(encoding="utf-8"))
+        old_listings = data.get("listings", [])
+    listings = _apply_scraped_at(sorted_matches(listings), old_listings)
+    _write_json(listings)
 
 
 def fetch_knightly_products() -> list[dict]:
     products: list[dict] = []
     for page in range(1, 50):
+        print(f"Knightly Gaming: fetching page {page}...", flush=True)
         data = fetch_json(KNIGHTLY_PRODUCTS_URL.format(page=page))
         page_products = data.get("products", [])
+        print(f"Knightly Gaming: page {page} -> {len(page_products)} products", flush=True)
         if not page_products:
             break
         products.extend(page_products)
+    print(f"Knightly Gaming: {len(products)} products total", flush=True)
     return products
 
 
@@ -366,6 +420,7 @@ def match_knightly(missing: set[str], products: list[dict]) -> list[dict[str, ob
             continue
 
         cheapest = min(available_variants, key=lambda item: float(item.get("price") or 0))
+        images = product.get("images") or []
         matches.append(
             {
                 "store": "Knightly Gaming",
@@ -381,6 +436,7 @@ def match_knightly(missing: set[str], products: list[dict]) -> list[dict[str, ob
                     for variant in available_variants
                 ),
                 "url": f"{KNIGHTLY_COLLECTION_URL}/products/{product.get('handle', '')}",
+                "image_url": str(images[0].get("src") or "") if images else "",
             }
         )
     return matches
@@ -390,7 +446,7 @@ def run_knightly() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     products = fetch_knightly_products()
     matches = sorted_matches(match_knightly(missing, products))
-    write_reports("knightly_missing_available", "Knightly Gaming Missing Cards Available", matches)
+    update_store_in_combined_json("Knightly Gaming", matches)
     print_store_summary("Knightly Gaming", missing, products, matches)
     print_found_listings("Knightly Gaming", matches)
     return matches
@@ -399,11 +455,14 @@ def run_knightly() -> list[dict[str, object]]:
 def fetch_big_bang_products() -> list[dict]:
     products: list[dict] = []
     for page in range(1, 50):
+        print(f"Big Bang Shop: fetching page {page}...", flush=True)
         data = fetch_json(BIG_BANG_PRODUCTS_URL.format(page=page))
         page_products = data.get("products", [])
+        print(f"Big Bang Shop: page {page} -> {len(page_products)} products", flush=True)
         if not page_products:
             break
         products.extend(page_products)
+    print(f"Big Bang Shop: {len(products)} products total", flush=True)
     return products
 
 
@@ -422,6 +481,7 @@ def match_big_bang(missing: set[str], products: list[dict]) -> list[dict[str, ob
             continue
 
         cheapest = min(available_variants, key=lambda item: float(item.get("price") or 0))
+        images = product.get("images") or []
         matches.append(
             {
                 "store": "Big Bang Shop",
@@ -437,6 +497,7 @@ def match_big_bang(missing: set[str], products: list[dict]) -> list[dict[str, ob
                     for variant in available_variants
                 ),
                 "url": f"{BIG_BANG_COLLECTION_URL}/products/{product.get('handle', '')}",
+                "image_url": str(images[0].get("src") or "") if images else "",
             }
         )
     return matches
@@ -446,23 +507,70 @@ def run_big_bang() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     products = fetch_big_bang_products()
     matches = sorted_matches(match_big_bang(missing, products))
-    write_reports(
-        "big_bang_missing_available",
-        "Big Bang Shop Missing Cards Available",
-        matches,
-    )
+    update_store_in_combined_json("Big Bang Shop", matches)
     print_store_summary("Big Bang Shop", missing, products, matches)
     print_found_listings("Big Bang Shop", matches)
     return matches
 
 
+def _discover_marvellous_category_id() -> str:
+    """Discover the right category_id for One Piece singles by listing all categories."""
+    # Try WooCommerce Store API categories (product_cat taxonomy)
+    try:
+        data = fetch_json("https://marvelloushobbies.com/wp-json/wc/store/v1/products/categories?per_page=100&_fields=id,name,slug,parent")
+        if isinstance(data, list):
+            print(f"Marvellous Hobbies: {len(data)} product categories found:", flush=True)
+            match_id = ""
+            for cat in sorted(data, key=lambda c: str(c.get("name") or "")):
+                name = str(cat.get("name") or "").strip()
+                slug = str(cat.get("slug") or "").strip()
+                cat_id = cat.get("id")
+                print(f"  [{cat_id}] {name!r} (slug={slug!r})", flush=True)
+                if re.search(r"one.piece", name, re.IGNORECASE) or re.search(r"one.piece", slug, re.IGNORECASE):
+                    match_id = str(cat_id or "")
+            if match_id:
+                print(f"Marvellous Hobbies: auto-matched One Piece category id={match_id}", flush=True)
+                return match_id
+            print("Marvellous Hobbies: no 'one piece' category found in product_cat taxonomy", flush=True)
+    except Exception as error:
+        print(f"Marvellous Hobbies: Store API categories failed: {error}", flush=True)
+
+    # Try WordPress REST API universe taxonomy as fallback
+    try:
+        data = fetch_json("https://marvelloushobbies.com/wp-json/wp/v2/universe?slug=one-piece&_fields=id,slug,name")
+        if isinstance(data, list) and data:
+            term = data[0]
+            print(f"Marvellous Hobbies: found universe taxonomy term {term.get('name')!r} id={term.get('id')} — but WooCommerce Store API cannot filter by custom taxonomies", flush=True)
+    except Exception:
+        pass
+
+    return ""
+
+
+def _marvellous_url_template() -> str:
+    """Build a URL filtered to One Piece products, or fall back to full catalog."""
+    cat_id = _discover_marvellous_category_id()
+    if cat_id:
+        base = "https://marvelloushobbies.com/wp-json/wc/store/v1/products"
+        return f"{base}?per_page=100&page={{page}}&category_ids[]={cat_id}"
+    print("Marvellous Hobbies: WARNING — no category filter found, fetching full catalog (slow)", flush=True)
+    return "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}"
+
+
 def fetch_marvellous_products() -> list[dict]:
+    url_template = _marvellous_url_template()
     products: list[dict] = []
-    for page in range(1, 100):
-        page_products = fetch_json(MARVELLOUS_PRODUCTS_URL.format(page=page))
+    total_pages = 0
+    for page in range(1, 200):
+        print(f"Marvellous Hobbies: fetching page {page}{f'/{total_pages}' if total_pages else ''}...", flush=True)
+        page_products, total_items, total_pages = fetch_woo_page(url_template.format(page=page))
+        print(f"Marvellous Hobbies: page {page}/{total_pages} -> {len(page_products)} products (total: {total_items})", flush=True)
         if not page_products:
             break
         products.extend(page_products)
+        if total_pages and page >= total_pages:
+            break
+    print(f"Marvellous Hobbies: {len(products)} products total", flush=True)
     return products
 
 
@@ -494,6 +602,9 @@ def category_set_name(product: dict) -> str:
 def match_marvellous(missing: set[str], products: list[dict]) -> list[dict[str, object]]:
     matches: list[dict[str, object]] = []
     for product in products:
+        permalink = str(product.get("permalink") or "").lower()
+        if "one-piece" not in permalink and "one_piece" not in permalink:
+            continue
         search_text = " ".join(
             str(product.get(key) or "")
             for key in ["name", "sku", "description", "short_description", "permalink"]
@@ -505,6 +616,7 @@ def match_marvellous(missing: set[str], products: list[dict]) -> list[dict[str, 
             continue
 
         stock = clean_text((product.get("stock_availability") or {}).get("text"))
+        images = product.get("images") or []
         matches.append(
             {
                 "store": "Marvellous Hobbies",
@@ -517,6 +629,7 @@ def match_marvellous(missing: set[str], products: list[dict]) -> list[dict[str, 
                 "price": woo_price(product),
                 "available_variants": stock,
                 "url": product.get("permalink") or MARVELLOUS_COLLECTION_URL,
+                "image_url": str(images[0].get("src") or "") if images else "",
             }
         )
     return matches
@@ -526,11 +639,7 @@ def run_marvellous() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     products = fetch_marvellous_products()
     matches = sorted_matches(match_marvellous(missing, products))
-    write_reports(
-        "marvellous_missing_available",
-        "Marvellous Hobbies Missing Cards Available",
-        matches,
-    )
+    update_store_in_combined_json("Marvellous Hobbies", matches)
     print_store_summary("Marvellous Hobbies", missing, products, matches)
     print_found_listings("Marvellous Hobbies", matches)
     return matches
@@ -539,10 +648,14 @@ def run_marvellous() -> list[dict[str, object]]:
 def fetch_tanuki_products() -> list[dict]:
     products: list[dict] = []
     for page in range(1, 100):
+        print(f"Tanuki Trader: fetching page {page}...", flush=True)
         page_products = fetch_json(TANUKI_PRODUCTS_URL.format(page=page))
+        count = len(page_products) if isinstance(page_products, list) else 0
+        print(f"Tanuki Trader: page {page} -> {count} products", flush=True)
         if not page_products:
             break
         products.extend(page_products)
+    print(f"Tanuki Trader: {len(products)} products total", flush=True)
     return products
 
 
@@ -560,6 +673,7 @@ def match_tanuki(missing: set[str], products: list[dict]) -> list[dict[str, obje
             continue
 
         stock = clean_text((product.get("stock_availability") or {}).get("text"))
+        images = product.get("images") or []
         matches.append(
             {
                 "store": "Tanuki Trader",
@@ -572,6 +686,7 @@ def match_tanuki(missing: set[str], products: list[dict]) -> list[dict[str, obje
                 "price": woo_price(product),
                 "available_variants": stock,
                 "url": product.get("permalink") or TANUKI_COLLECTION_URL,
+                "image_url": str(images[0].get("src") or "") if images else "",
             }
         )
     return matches
@@ -581,11 +696,7 @@ def run_tanuki() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     products = fetch_tanuki_products()
     matches = sorted_matches(match_tanuki(missing, products))
-    write_reports(
-        "tanuki_missing_available",
-        "Tanuki Trader Missing Cards Available",
-        matches,
-    )
+    update_store_in_combined_json("Tanuki Trader", matches)
     print_store_summary("Tanuki Trader", missing, products, matches)
     print_found_listings("Tanuki Trader", matches)
     return matches
@@ -597,8 +708,6 @@ def run_all() -> list[dict[str, object]]:
 
     def scrape_store(
         store: str,
-        heading: str,
-        prefix: str,
         fetcher,
         matcher,
     ) -> tuple[list[dict], list[dict[str, object]]]:
@@ -609,35 +718,25 @@ def run_all() -> list[dict[str, object]]:
             failures.append(f"{store}: {error}")
             print(f"{store} scrape failed: {error}", file=sys.stderr)
             return [], []
-
-        write_reports(prefix, heading, matches)
         return products, matches
 
     knightly_products, knightly_matches = scrape_store(
         "Knightly Gaming",
-        "Knightly Gaming Missing Cards Available",
-        "knightly_missing_available",
         fetch_knightly_products,
         match_knightly,
     )
     big_bang_products, big_bang_matches = scrape_store(
         "Big Bang Shop",
-        "Big Bang Shop Missing Cards Available",
-        "big_bang_missing_available",
         fetch_big_bang_products,
         match_big_bang,
     )
     marvellous_products, marvellous_matches = scrape_store(
         "Marvellous Hobbies",
-        "Marvellous Hobbies Missing Cards Available",
-        "marvellous_missing_available",
         fetch_marvellous_products,
         match_marvellous,
     )
     tanuki_products, tanuki_matches = scrape_store(
         "Tanuki Trader",
-        "Tanuki Trader Missing Cards Available",
-        "tanuki_missing_available",
         fetch_tanuki_products,
         match_tanuki,
     )
@@ -645,7 +744,7 @@ def run_all() -> list[dict[str, object]]:
     combined = sorted_matches(
         knightly_matches + big_bang_matches + marvellous_matches + tanuki_matches
     )
-    write_reports("all_stores_missing_available", "All Stores Missing Cards Available", combined)
+    write_combined_json(combined)
 
     print(f"Missing card numbers in spreadsheet: {len(missing)}")
     print(f"Knightly products fetched: {len(knightly_products)}")
@@ -662,7 +761,6 @@ def run_all() -> list[dict[str, object]]:
             print(f"- {failure}")
     print_match_summary("Combined", combined)
     print_found_listings("Combined", combined)
-    print("Wrote knightly, big_bang, marvellous, tanuki, and all_stores reports as CSV and Markdown")
     return combined
 
 

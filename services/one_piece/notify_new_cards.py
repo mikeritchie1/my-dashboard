@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import os
 import shutil
@@ -14,44 +13,36 @@ from pathlib import Path
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
 ONE_PIECE_DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "one_piece"
-REPORT_PREFIXES = {
-    "all": "all_stores_missing_available",
-    "bigbang": "big_bang_missing_available",
-    "bigbangshop": "big_bang_missing_available",
-    "knightly": "knightly_missing_available",
-    "knightlygaming": "knightly_missing_available",
-    "marvellous": "marvellous_missing_available",
-    "marvelloushobbies": "marvellous_missing_available",
-    "tanuki": "tanuki_missing_available",
-    "tanukitrader": "tanuki_missing_available",
+
+STORE_NAMES = {
+    "bigbang": "Big Bang Shop",
+    "bigbangshop": "Big Bang Shop",
+    "knightly": "Knightly Gaming",
+    "knightlygaming": "Knightly Gaming",
+    "marvellous": "Marvellous Hobbies",
+    "marvelloushobbies": "Marvellous Hobbies",
+    "tanuki": "Tanuki Trader",
+    "tanukitrader": "Tanuki Trader",
 }
 
-LATEST_NEW_CARDS = Path(".scrape/latest_new_cards.txt")
-NEW_CARDS_JSON = ONE_PIECE_DATA_DIR / "new_missing_cards.json"
+COMBINED_JSON = ONE_PIECE_DATA_DIR / "missing_cards.json"
+LATEST_REPORT = Path(".scrape/latest_new_cards.txt")
 MATCH_KEY = ("card_number", "store", "url")
+CHANGE_FIELDS = ("price", "stock", "condition", "available_variants")
 
 
 def normalized_store(value: str) -> str:
     return value.lower().replace("-", "").replace("_", "")
 
 
-def report_prefix(store: str) -> str:
-    store_key = normalized_store(store)
-    try:
-        return REPORT_PREFIXES[store_key]
-    except KeyError as error:
-        choices = ", ".join(sorted(REPORT_PREFIXES))
-        raise RuntimeError(f"Unknown store {store!r}. Use one of: {choices}") from error
+def store_display_name(store: str) -> str:
+    return STORE_NAMES.get(normalized_store(store), store)
 
 
-def current_report(store: str) -> Path:
-    return ONE_PIECE_DATA_DIR / f"{report_prefix(store)}.csv"
-
-
-def previous_report(store: str, snapshot_scope: str = "") -> Path:
+def previous_snapshot_path(store: str, snapshot_scope: str = "") -> Path:
     scope = normalized_store(snapshot_scope)
     prefix = f"{scope}_" if scope else ""
-    return Path(f".scrape/{prefix}previous_{report_prefix(store)}.csv")
+    return Path(f".scrape/{prefix}previous_{normalized_store(store)}.json")
 
 
 def run_scraper(store: str) -> None:
@@ -61,25 +52,38 @@ def run_scraper(store: str) -> None:
     )
 
 
-def read_rows(path: Path) -> list[dict[str, str]]:
+def read_rows(path: Path, store: str = "all") -> list[dict[str, str]]:
     if not path.exists():
         return []
-
-    with path.open(newline="", encoding="utf-8-sig") as file:
-        return list(csv.DictReader(file))
-
-
-def row_key(row: dict[str, str]) -> tuple[str, ...]:
-    return tuple((row.get(field) or "").strip() for field in MATCH_KEY)
-
-
-def row_key_id(row: dict[str, str]) -> str:
-    return "|".join(row_key(row))
+    data = json.loads(path.read_text(encoding="utf-8"))
+    listings = data.get("listings", [])
+    if store != "all":
+        name = store_display_name(store)
+        listings = [r for r in listings if r.get("store", "") == name]
+    return [{k: str(v) for k, v in row.items()} for row in listings]
 
 
-def new_rows(today: list[dict[str, str]], previous: list[dict[str, str]]) -> list[dict[str, str]]:
-    previous_keys = {row_key(row) for row in previous}
-    return [row for row in today if row_key(row) not in previous_keys]
+def row_key(row: dict[str, str]) -> str:
+    return "|".join((row.get(f) or "").strip() for f in MATCH_KEY)
+
+
+def diff_rows(
+    today: list[dict[str, str]],
+    previous: list[dict[str, str]],
+) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
+    """Return (additions, changes). Removals are ignored."""
+    prev_map = {row_key(r): r for r in previous}
+    additions: list[dict[str, str]] = []
+    changes: list[dict[str, str]] = []
+    for row in today:
+        key = row_key(row)
+        if key not in prev_map:
+            additions.append(row)
+        else:
+            old = prev_map[key]
+            if any(row.get(f) != old.get(f) for f in CHANGE_FIELDS):
+                changes.append(row)
+    return additions, changes
 
 
 def money(value: str) -> str:
@@ -98,7 +102,7 @@ def card_line(row: dict[str, str]) -> str:
         row.get("store", ""),
         row.get("stock", ""),
     ]
-    summary = " | ".join(piece for piece in pieces if piece)
+    summary = " | ".join(p for p in pieces if p)
     url = row.get("url", "")
     return f"{summary}\n{url}" if url else summary
 
@@ -111,22 +115,22 @@ def card_section(title: str, rows: list[dict[str, str]]) -> list[str]:
     return lines
 
 
-def email_body(
-    rows: list[dict[str, str]],
+def build_email_body(
     store: str,
-    mode: str,
-    additions: list[dict[str, str]] | None = None,
-    window_label: str = "since last email",
+    additions: list[dict[str, str]],
+    changes: list[dict[str, str]],
+    window_label: str,
+    include_all: list[dict[str, str]] | None = None,
 ) -> str:
-    if mode == "all":
-        lines = [f"Missing card report for {store}", ""]
-        if additions:
-            lines.extend(card_section(f"New {window_label}", additions))
-        else:
-            lines.extend([f"New {window_label}: 0", ""])
-        lines.extend(card_section("All missing cards available", rows))
+    lines = [f"One Piece card update for {store}", ""]
+    if additions:
+        lines.extend(card_section(f"New {window_label}", additions))
     else:
-        lines = card_section(f"New missing cards available {window_label} for {store}", rows)
+        lines += [f"New {window_label}: 0", ""]
+    if changes:
+        lines.extend(card_section(f"Changed {window_label}", changes))
+    if include_all is not None:
+        lines.extend(card_section("All current listings", include_all))
     return "\n".join(lines).strip() + "\n"
 
 
@@ -137,38 +141,14 @@ def env_required(name: str) -> str:
     return value
 
 
-def write_latest_text(body: str) -> None:
-    LATEST_NEW_CARDS.parent.mkdir(parents=True, exist_ok=True)
-    LATEST_NEW_CARDS.write_text(body, encoding="utf-8")
-
-
-def write_latest_text_for_scope(body: str, snapshot_scope: str) -> None:
+def write_latest_report(body: str, snapshot_scope: str) -> None:
     scope = normalized_store(snapshot_scope)
-    if not scope:
-        write_latest_text(body)
-        return
-    path = Path(f".scrape/latest_{scope}_new_cards.txt")
+    path = Path(f".scrape/latest_{scope}_new_cards.txt") if scope else LATEST_REPORT
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(body, encoding="utf-8")
 
 
-def write_new_cards_json(rows: list[dict[str, str]]) -> None:
-    NEW_CARDS_JSON.parent.mkdir(parents=True, exist_ok=True)
-    payload = {
-        "match_key": list(MATCH_KEY),
-        "keys": [row_key_id(row) for row in rows],
-        "rows": rows,
-    }
-    NEW_CARDS_JSON.write_text(json.dumps(payload, indent=2), encoding="utf-8")
-
-
-def send_email(
-    rows: list[dict[str, str]],
-    store: str,
-    mode: str,
-    additions: list[dict[str, str]] | None = None,
-    window_label: str = "since last email",
-) -> None:
+def send_email(subject: str, body: str) -> None:
     smtp_host = env_required("SMTP_HOST")
     smtp_port = int(os.environ.get("SMTP_PORT", "587"))
     smtp_user = env_required("SMTP_USER")
@@ -177,15 +157,10 @@ def send_email(
     email_from = os.environ.get("EMAIL_FROM", "").strip() or smtp_user
 
     message = EmailMessage()
-    subject_label = "available" if mode == "all" else f"new {window_label}"
-    if mode == "all" and additions:
-        subject = f"One Piece cards: {len(additions)} new {window_label}, {len(rows)} total ({store})"
-    else:
-        subject = f"One Piece cards: {len(rows)} {subject_label} ({store})"
     message["Subject"] = subject
     message["From"] = email_from
     message["To"] = email_to
-    message.set_content(email_body(rows, store, mode, additions, window_label))
+    message.set_content(body)
 
     with smtplib.SMTP(smtp_host, smtp_port, timeout=30) as smtp:
         smtp.starttls()
@@ -193,98 +168,61 @@ def send_email(
         smtp.send_message(message)
 
 
-def update_snapshot(current: Path, previous: Path) -> None:
-    previous.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(current, previous)
+def save_snapshot(path: Path, rows: list[dict[str, str]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps({"listings": rows}, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Email new missing-card listings since the selected snapshot.")
-    parser.add_argument(
-        "--no-scrape",
-        action="store_true",
-        help="Compare existing CSV files without running the scraper first.",
-    )
-    parser.add_argument(
-        "--store",
-        default=os.environ.get("CARD_STORE", "all"),
-        help="Store to check: all, knightly, bigbang, marvellous, or tanuki.",
-    )
-    parser.add_argument(
-        "--mode",
-        choices=["new", "all"],
-        default=os.environ.get("CARD_NOTIFY_MODE", "new"),
-        help="Use 'new' to email only new listings, or 'all' to email every current listing.",
-    )
-    parser.add_argument(
-        "--no-email",
-        action="store_true",
-        help="Write output files and update snapshots without sending email.",
-    )
-    parser.add_argument(
-        "--snapshot-scope",
-        default=os.environ.get("CARD_NOTIFY_SNAPSHOT_SCOPE", ""),
-        help="Optional snapshot namespace, for example 'hourly', so daily and hourly baselines stay separate.",
-    )
-    parser.add_argument(
-        "--window-label",
-        default=os.environ.get("CARD_NOTIFY_WINDOW_LABEL", "since last email"),
-        help="Human-friendly label for the email window, for example 'in the last hour'.",
-    )
+    parser = argparse.ArgumentParser(description="Email new/changed missing-card listings since the last snapshot.")
+    parser.add_argument("--no-scrape", action="store_true", help="Skip running the scraper first.")
+    parser.add_argument("--store", default=os.environ.get("CARD_STORE", "all"),
+                        help="Store to check: all, knightly, bigbang, marvellous, or tanuki.")
+    parser.add_argument("--mode", choices=["new", "all"], default=os.environ.get("CARD_NOTIFY_MODE", "new"),
+                        help="'new' emails only changes; 'all' also includes full current listing.")
+    parser.add_argument("--no-email", action="store_true", help="Write report file without sending email.")
+    parser.add_argument("--snapshot-scope", default=os.environ.get("CARD_NOTIFY_SNAPSHOT_SCOPE", ""),
+                        help="Snapshot namespace, e.g. 'hourly' to keep separate baselines.")
+    parser.add_argument("--window-label", default=os.environ.get("CARD_NOTIFY_WINDOW_LABEL", "since last email"),
+                        help="Human-friendly label for the window, e.g. 'in the last hour'.")
     args = parser.parse_args()
+
     store = normalized_store(args.store)
-    mode = args.mode
-    current = current_report(store)
-    previous = previous_report(store, args.snapshot_scope)
     window_label = args.window_label.strip() or "since last email"
+    snapshot = previous_snapshot_path(store, args.snapshot_scope)
 
     if not args.no_scrape:
         run_scraper(store)
 
-    if not current.exists():
-        print(f"Could not find current report: {current}", file=sys.stderr)
+    if not COMBINED_JSON.exists():
+        print(f"Could not find {COMBINED_JSON}", file=sys.stderr)
         return 2
 
-    today = read_rows(current)
-    previous_rows = read_rows(previous)
-    additions = new_rows(today, previous_rows) if previous_rows else []
-    write_new_cards_json(additions)
+    today = read_rows(COMBINED_JSON, store)
 
-    if mode == "all":
-        body = email_body(today, store, mode, additions, window_label)
-        write_latest_text_for_scope(body, args.snapshot_scope)
-        if not args.no_email:
-            send_email(today, store, mode, additions, window_label)
-        update_snapshot(current, previous)
-        action = "Prepared report" if args.no_email else "Sent email"
-        print(
-            f"{action} for {len(additions)} new and "
-            f"{len(today)} total card listing(s). Snapshot updated."
-        )
+    if not snapshot.exists():
+        save_snapshot(snapshot, today)
+        print(f"No previous snapshot for {store}. Saved baseline.")
         return 0
 
-    if not previous_rows:
-        write_latest_text_for_scope(
-            f"No previous snapshot found for {store}. Saved today's report as the baseline.\n",
-            args.snapshot_scope,
-        )
-        update_snapshot(current, previous)
-        print(f"No previous snapshot found for {store}. Saved today's report as the baseline.")
+    previous = read_rows(snapshot, store)
+    additions, changes = diff_rows(today, previous)
+
+    include_all = today if args.mode == "all" else None
+    body = build_email_body(store, additions, changes, window_label, include_all)
+    write_latest_report(body, args.snapshot_scope)
+
+    if not additions and not changes:
+        save_snapshot(snapshot, today)
+        print(f"No additions or changes {window_label} for {store}. Snapshot updated.")
         return 0
 
-    if not additions:
-        write_latest_text_for_scope(f"No new cards found {window_label} for {store}.\n", args.snapshot_scope)
-        update_snapshot(current, previous)
-        print(f"No new cards found for {store}. Snapshot updated.")
-        return 0
-
-    body = email_body(additions, store, mode, window_label=window_label)
-    write_latest_text_for_scope(body, args.snapshot_scope)
+    subject = f"One Piece cards: {len(additions)} new, {len(changes)} changed ({store})"
     if not args.no_email:
-        send_email(additions, store, mode, window_label=window_label)
-    update_snapshot(current, previous)
+        send_email(subject, body)
+    save_snapshot(snapshot, today)
     action = "Prepared report" if args.no_email else "Sent email"
-    print(f"{action} for {len(additions)} new card listing(s). Snapshot updated.")
+    print(f"{action}: {len(additions)} new, {len(changes)} changed for {store}.")
     return 0
 
 

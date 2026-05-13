@@ -1,5 +1,4 @@
-﻿const CSV_PATH = "./data/one_piece/all_stores_missing_available.csv";
-const NEW_CARDS_PATH = "./data/one_piece/new_missing_cards.json";
+﻿const MISSING_CARDS_PATH = "./data/one_piece/missing_cards.json";
 const ONE_PIECE_PRODUCTS_PATH = "./data/one_piece/products.json";
 const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
 const COMING_SOON_PATH = "./data/release_radar/coming_soon.json";
@@ -74,7 +73,6 @@ const EVENT_GEO_BOUNDS = {
 
 const state = {
   rows: [],
-  newCardKeys: new Set(),
   search: "",
   store: "",
   rarity: "",
@@ -138,7 +136,7 @@ const state = {
 };
 
 const elements = {
-  body: document.querySelector("#cards-body"),
+  cardsGrid: document.querySelector("#cards-grid"),
   search: document.querySelector("#search"),
   storeFilter: document.querySelector("#store-filter"),
   rarityFilter: document.querySelector("#rarity-filter"),
@@ -478,8 +476,12 @@ function displayDateTime(value) {
   }).format(date);
 }
 
-function rowKey(row) {
-  return [row.card_number, row.store, row.url].map((value) => (value || "").trim()).join("|");
+const NEW_LISTING_MS = 24 * 60 * 60 * 1000;
+
+function isNewListing(row) {
+  const raw = String(row.scraped_at || "").trim();
+  if (!raw) return false;
+  return (Date.now() - new Date(raw).getTime()) < NEW_LISTING_MS;
 }
 
 function unique(values) {
@@ -519,54 +521,99 @@ function filteredRows() {
   });
 }
 
-function renderTable(rows) {
+const RARITY_BORDER = {
+  "common":      "#4ade80",
+  "uncommon":    "#22c55e",
+  "rare":        "#3b82f6",
+  "super rare":  "#a855f7",
+  "secret rare": "#f59e0b",
+  "leader":      "#ef4444",
+};
+
+function rarityBorderColor(rarity) {
+  return RARITY_BORDER[(rarity || "").toLowerCase().trim()] || "";
+}
+
+const ALT_ART_RE = /\b(alternate\s+art|alternate|parallel)\b/i;
+
+function isAltArt(title) {
+  return ALT_ART_RE.test(title || "");
+}
+
+function renderCardGrid(rows) {
+  if (!elements.cardsGrid) return;
   if (!rows.length) {
-    elements.body.innerHTML = '<tr><td colspan="7" class="empty">No cards match the filters.</td></tr>';
+    elements.cardsGrid.innerHTML = '<p class="empty">No cards match the filters.</p>';
     return;
   }
 
-  elements.body.innerHTML = "";
-  for (const row of rows) {
-    const tr = document.createElement("tr");
-    const isNew = state.newCardKeys.has(rowKey(row));
-    if (isNew) {
-      tr.classList.add("new-card-row");
-    }
-    tr.innerHTML = `
-      <td class="card-number"></td>
-      <td class="price"></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+  elements.cardsGrid.innerHTML = "";
+  for (let index = 0; index < rows.length; index += 1) {
+    const row = rows[index];
+    const isNew = isNewListing(row);
+    const altArt = isAltArt(row.title);
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "missing-card-block" + (isNew ? " is-new" : "");
+    card.dataset.cardIndex = String(index);
+    const borderColor = rarityBorderColor(row.rarity);
+    if (borderColor) card.style.borderColor = borderColor;
+
+    const imageHtml = row.image_url
+      ? `<img class="missing-card-img" src="${escapeHtml(row.image_url)}" alt="" loading="lazy" onerror="this.style.display='none'">`
+      : `<div class="missing-card-img missing-card-img-empty"></div>`;
+
+    const rarityHtml = row.rarity
+      ? `<span class="missing-card-rarity">${escapeHtml(row.rarity)}</span>`
+      : "";
+
+    card.innerHTML = `
+      ${isNew ? '<span class="missing-card-new-badge">New</span>' : ""}
+      ${altArt ? '<span class="missing-card-alt-badge">Alt Art</span>' : ""}
+      ${imageHtml}
+      <div class="missing-card-body">
+        <p class="missing-card-number">${escapeHtml(row.card_number)}</p>
+        <p class="missing-card-price">${escapeHtml(money(row.price))}</p>
+        <p class="missing-card-store">${escapeHtml(row.store)}</p>
+        ${rarityHtml}
+      </div>
     `;
 
-    const cells = tr.querySelectorAll("td");
-    cells[0].textContent = row.card_number;
-    cells[1].textContent = money(row.price);
-    cells[2].textContent = row.title;
-    cells[3].textContent = row.rarity || "-";
-    cells[4].textContent = row.store;
-    cells[5].textContent = row.stock || "-";
-
-    if (isNew) {
-      const badge = document.createElement("span");
-      badge.className = "new-badge";
-      badge.textContent = "New";
-      cells[2].prepend(badge);
-    }
-
-    const link = document.createElement("a");
-    link.className = "buy-link";
-    link.href = row.url;
-    link.target = "_blank";
-    link.rel = "noreferrer";
-    link.textContent = "Open";
-    cells[6].append(link);
-
-    elements.body.append(tr);
+    elements.cardsGrid.append(card);
   }
+}
+
+function openMissingCardDetail(row) {
+  if (!elements.watchlistDetailPanel || !elements.watchlistDetailContent || !row) return;
+
+  const imageHtml = row.image_url
+    ? `<img class="watchlist-detail-poster" src="${escapeHtml(row.image_url)}" alt="${escapeHtml(row.card_number)}">`
+    : `<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>`;
+
+  elements.watchlistDetailContent.innerHTML = `
+    <div class="watchlist-detail-layout">
+      ${imageHtml}
+      <div class="watchlist-detail-body">
+        <p class="watchlist-detail-kicker">${escapeHtml(row.store)}</p>
+        <h3>${escapeHtml(row.card_number)}</h3>
+        <p class="watchlist-detail-meta">${escapeHtml(row.title)}</p>
+        <p class="watchlist-detail-rating">${escapeHtml(money(row.price))}</p>
+        ${row.rarity ? `<p class="watchlist-detail-meta">${escapeHtml(row.rarity)}</p>` : ""}
+        ${row.set_name ? `<p class="watchlist-detail-meta">${escapeHtml(row.set_name)}</p>` : ""}
+        ${row.condition ? `<p class="watchlist-detail-meta">Condition: ${escapeHtml(row.condition)}</p>` : ""}
+        ${row.stock ? `<p class="watchlist-detail-meta">Stock: ${escapeHtml(row.stock)}</p>` : ""}
+        <div class="watchlist-detail-links">
+          <a href="${escapeHtml(row.url)}" target="_blank" rel="noreferrer">Buy now</a>
+        </div>
+      </div>
+    </div>
+  `;
+
+  elements.watchlistDetailPanel.hidden = false;
+  elements.watchlistDetailPanel.classList.add("is-open");
+  elements.watchlistDetailPanel.classList.remove("is-loved", "opinion-loved", "opinion-liked", "opinion-mixed", "opinion-disliked", "opinion-hated");
+  elements.watchlistDetailPanel.dataset.watchOpinion = "";
+  document.body.classList.add("watchlist-detail-open");
 }
 
 function renderPosters(container, items, emptyText, options = {}) {
@@ -4653,7 +4700,7 @@ function render() {
     );
   });
 
-  renderTable(rows);
+  renderCardGrid(rows);
 }
 
 function defaultOnePieceProductIndex(items) {
@@ -5246,26 +5293,32 @@ async function loadBandsintownEvents() {
 
 async function load() {
   try {
-    const response = await fetch(CSV_PATH, { cache: "no-store" });
+    const response = await fetch(MISSING_CARDS_PATH, { cache: "no-store" });
     if (!response.ok) {
-      throw new Error(`Could not load ${CSV_PATH}`);
+      throw new Error(`Could not load ${MISSING_CARDS_PATH}`);
     }
-    state.rows = parseCsv(await response.text());
-    try {
-      const newCardsResponse = await fetch(NEW_CARDS_PATH, { cache: "no-store" });
-      if (newCardsResponse.ok) {
-        const payload = await newCardsResponse.json();
-        state.newCardKeys = new Set(payload.keys || []);
-      }
-    } catch {
-      state.newCardKeys = new Set();
-    }
+    const payload = await response.json();
+    state.rows = payload.listings || [];
     optionList(elements.storeFilter, unique(state.rows.map((row) => row.store)), "All stores");
-    optionList(elements.rarityFilter, unique(state.rows.map((row) => row.rarity)), "All rarities");
+    const rarities = unique(state.rows.map((row) => row.rarity));
+    elements.rarityFilter.innerHTML = '<option value="">All rarities</option>';
+    for (const rarity of rarities) {
+      const option = document.createElement("option");
+      option.value = rarity;
+      option.textContent = rarity;
+      const color = rarityBorderColor(rarity);
+      if (color) {
+        option.style.color = color;
+        option.style.fontWeight = "700";
+      }
+      elements.rarityFilter.append(option);
+    }
     render();
     await loadOnePieceProducts();
   } catch (error) {
-    elements.body.innerHTML = `<tr><td colspan="7" class="empty">${error.message}</td></tr>`;
+    if (elements.cardsGrid) {
+      elements.cardsGrid.innerHTML = `<p class="empty">${error.message}</p>`;
+    }
     if (elements.onePieceProductStrip) {
       elements.onePieceProductStrip.innerHTML = `<p class="empty">${error.message}</p>`;
     }
@@ -5287,15 +5340,59 @@ elements.rarityFilter.addEventListener("change", (event) => {
   render();
 });
 
+const PRICE_STORAGE_KEY = "my-dashboard:card-price-range:v1";
+
+function savePriceRange() {
+  try {
+    localStorage.setItem(PRICE_STORAGE_KEY, JSON.stringify({ min: state.minPrice, max: state.maxPrice }));
+  } catch {}
+}
+
+function restorePriceRange() {
+  try {
+    const raw = localStorage.getItem(PRICE_STORAGE_KEY);
+    if (!raw) return;
+    const { min, max } = JSON.parse(raw);
+    if (Number.isFinite(min)) {
+      state.minPrice = min;
+      elements.minPrice.value = String(min);
+    }
+    if (Number.isFinite(max)) {
+      state.maxPrice = max;
+      elements.maxPrice.value = String(max);
+    }
+  } catch {}
+}
+
+restorePriceRange();
+
 elements.minPrice.addEventListener("input", (event) => {
   state.minPrice = event.target.value === "" ? Number.NEGATIVE_INFINITY : Number(event.target.value);
+  savePriceRange();
   render();
 });
 
 elements.maxPrice.addEventListener("input", (event) => {
   state.maxPrice = event.target.value === "" ? Number.POSITIVE_INFINITY : Number(event.target.value);
+  savePriceRange();
   render();
 });
+
+if (elements.cardsGrid) {
+  elements.cardsGrid.addEventListener("click", (event) => {
+    const block = event.target.closest("[data-card-index]");
+    if (!block) return;
+    const rows = filteredRows().sort((left, right) => {
+      const price = Number.parseFloat(left.price || "0") - Number.parseFloat(right.price || "0");
+      if (price !== 0) return price;
+      return `${left.card_number} ${left.store} ${left.title}`.localeCompare(`${right.card_number} ${right.store} ${right.title}`);
+    });
+    const index = Number(block.dataset.cardIndex);
+    if (index >= 0 && index < rows.length) {
+      openMissingCardDetail(rows[index]);
+    }
+  });
+}
 
 if (elements.onePieceProductStrip) {
   elements.onePieceProductStrip.addEventListener("error", (event) => {

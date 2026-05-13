@@ -340,26 +340,9 @@
           </label>
           </section>
 
-          <section class="table-shell" aria-label="Missing card listings">
-            <table>
-              <thead>
-                <tr>
-                  <th>Card</th>
-                  <th>Price</th>
-                  <th>Name</th>
-                  <th>Rarity</th>
-                  <th>Store</th>
-                  <th>Stock</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody id="cards-body">
-                <tr>
-                  <td colspan="7" class="empty">Loading cards...</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+          <div id="cards-grid" class="cards-grid" aria-live="polite">
+            <p class="empty">Loading cards...</p>
+          </div>
         </div>
       </details>
     </main>
