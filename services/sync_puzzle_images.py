@@ -1,7 +1,7 @@
 """
 Build the Picture Puzzle image manifest.
 
-Scans docs/games/puzzle/images/ and writes docs/games/puzzle/images.json so the
+Scans docs/data/game_lab/puzzle/images/ and writes docs/data/game_lab/puzzle/images.json so the
 static puzzle game can offer every image as a selectable puzzle.
 
 Usage:
@@ -14,7 +14,7 @@ import json
 from pathlib import Path
 
 REPO_DIR = Path(__file__).resolve().parent.parent
-PUZZLE_DIR = REPO_DIR / "docs" / "games" / "puzzle"
+PUZZLE_DIR = REPO_DIR / "docs" / "data" / "game_lab" / "puzzle"
 IMAGES_DIR = PUZZLE_DIR / "images"
 OUTPUT_PATH = PUZZLE_DIR / "images.json"
 

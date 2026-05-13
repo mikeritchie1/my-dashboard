@@ -25,7 +25,7 @@ const METADATA_PATH = "./data/metadata.json";
 const GOOGLE_CALENDAR_EVENTS_PATH = "./data/events/google_calendar_events.json";
 const GAME_HUB_CONFIG_PATH = "./data/game_hub/config.json";
 const TIMELINE_MANIFEST_PATH = "./data/timeline/manifest.json";
-const GAME_LAB_MANIFEST_PATH = "./games/manifest.json";
+const GAME_LAB_MANIFEST_PATH = "./data/game_lab/manifest.json";
 const WEEK_DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const WATCHLIST_MEDIA_CONFIG = {
   screen: { label: "Movies + Series", types: ["movie", "series"] },

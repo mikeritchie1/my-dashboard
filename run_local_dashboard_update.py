@@ -1,8 +1,8 @@
 from __future__ import annotations
 
 import argparse
-import shutil
 import json
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 REPO_DIR = Path(__file__).resolve().parent
-DATA_DIR = REPO_DIR / "data"
+DATA_DIR = REPO_DIR / "docs" / "data"
 SCRAPE_DIR = REPO_DIR / ".scrape"
 PREVIOUS_DATA_DIR = SCRAPE_DIR / "previous_data"
 
@@ -26,7 +26,6 @@ TASKS = {
     "watchlist": [[sys.executable, "services/scrape_media.py", "--source", "watchlist"]],
     "gamelist": [[sys.executable, "services/scrape_media.py", "--source", "games", "--type", "games"]],
     "news": [[sys.executable, "services/scrape_news.py"]],
-    "puzzle-images": [[sys.executable, "services/sync_puzzle_images.py"]],
     "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
 
@@ -61,7 +60,7 @@ def snapshot_previous_data() -> None:
 
 def run_commands(task: str) -> None:
     if task == "all":
-        scheduled: list[tuple[str, list[str]]] = [
+        scheduled = [
             (name, command)
             for name, commands in TASKS.items()
             if name != "digest"
@@ -75,34 +74,23 @@ def run_commands(task: str) -> None:
         command_text = " ".join(str(part) for part in command)
         print(f"[{index}/{total}] Running ({task_name}): {command_text}")
         subprocess.run(command, cwd=REPO_DIR, check=True)
-        print(f"[{index}/{total}] Done ({task_name}): {command_text}")
+        print(f"[{index}/{total}] Done ({task_name})")
 
 
 def write_metadata() -> None:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
     metadata_path = DATA_DIR / "metadata.json"
     metadata = {"last_scraped_at": datetime.now(timezone.utc).isoformat()}
     metadata_path.write_text(json.dumps(metadata, indent=2), encoding="utf-8")
 
 
-def sync_data_to_docs() -> None:
-    docs_dir = REPO_DIR / "docs"
-    if not docs_dir.exists():
-        return
-    target = docs_dir / "data"
-    if target.exists():
-        shutil.rmtree(target)
-    shutil.copytree(DATA_DIR, target)
-
-
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run local scrapers and update central data/")
+    parser = argparse.ArgumentParser(description="Run scrapers locally and update docs/data/.")
     parser.add_argument(
         "task",
         nargs="?",
         choices=["all", *TASKS.keys()],
         default="all",
-        help="Which scraper set to run.",
+        help="Which scraper to run (default: all).",
     )
     args = parser.parse_args()
 
@@ -110,8 +98,7 @@ def main() -> int:
     run_commands(args.task)
     subprocess.run([sys.executable, "services/mark_new_items.py"], cwd=REPO_DIR, check=True)
     write_metadata()
-    sync_data_to_docs()
-    print(f"Updated data in {DATA_DIR}")
+    print(f"Done. Data written to {DATA_DIR}")
     return 0
 
 
