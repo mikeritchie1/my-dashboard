@@ -36,6 +36,9 @@ TANUKI_PRODUCTS_URL = (
     env_get("SCRAPE_OP_TANUKI_PRODUCTS_URL_TEMPLATE", "https://tanukitrader.co.za/wp-json/wc/store/v1/products?per_page=100&page={page}")
 )
 
+TOAD_COLLECTION_URL = env_get("SCRAPE_OP_TOAD_COLLECTION_URL", "https://www.toadtradertcg.com/category/one-piece-tcg")
+TOAD_PRODUCTS_URL = env_get("SCRAPE_OP_TOAD_PRODUCTS_URL_TEMPLATE", "")
+
 BIG_BANG_COLLECTION_URL = env_get("SCRAPE_OP_BIG_BANG_COLLECTION_URL", "https://bigbangshop.co.za/collections/one-piece-single-cards")
 BIG_BANG_PRODUCTS_URL = BIG_BANG_COLLECTION_URL + "/products.json?limit=250&page={page}"
 
@@ -294,6 +297,12 @@ def fetch_json(url: str) -> object:
     request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_text(url: str) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read().decode("utf-8", errors="replace")
 
 
 def fetch_woo_page(url: str) -> tuple[list[dict], int, int]:
@@ -702,6 +711,202 @@ def run_tanuki() -> list[dict[str, object]]:
     return matches
 
 
+def _discover_toad_category_id() -> str:
+    try:
+        data = fetch_json("https://www.toadtradertcg.com/wp-json/wc/store/v1/products/categories?per_page=100")
+    except Exception as error:
+        print(f"Toad Trader TCG: category discovery failed: {error}", flush=True)
+        return ""
+    if not isinstance(data, list):
+        return ""
+
+    for category in data:
+        slug = str(category.get("slug") or "").strip().lower()
+        name = str(category.get("name") or "").strip().lower()
+        if slug == "one-piece-tcg" or "one piece" in name:
+            category_id = str(category.get("id") or "").strip()
+            if category_id:
+                print(f"Toad Trader TCG: auto-matched category id={category_id} (slug={slug})", flush=True)
+                return category_id
+    return ""
+
+
+def _toad_url_template() -> str:
+    configured = TOAD_PRODUCTS_URL.strip()
+    if configured:
+        return configured
+    category_id = _discover_toad_category_id()
+    if category_id:
+        return f"https://www.toadtradertcg.com/wp-json/wc/store/v1/products?per_page=100&page={{page}}&category_ids[]={category_id}"
+    print("Toad Trader TCG: category not discovered, falling back to full products feed", flush=True)
+    return "https://www.toadtradertcg.com/wp-json/wc/store/v1/products?per_page=100&page={page}"
+
+
+_TOAD_NOISE_TITLES = {"quick view", "add to cart", "buy now", "view product"}
+
+
+def _extract_toad_products_from_html(html_text: str) -> list[dict]:
+    products: list[dict] = []
+    seen_urls: set[str] = set()
+    # Wix stores use /product-page/ (not /product/)
+    for match in re.finditer(r'(?is)<a[^>]+href="([^"]*?/product-page/[^"]+)"[^>]*>(.*?)</a>', html_text):
+        url = clean_text(match.group(1))
+        if not url:
+            continue
+        if url.startswith("/"):
+            url = f"https://www.toadtradertcg.com{url}"
+        inner = match.group(2)
+        title = clean_text(inner)
+        # Skip navigation/button labels without reserving the URL, so the real
+        # title link (which appears next) can still be picked up.
+        if not title or title.lower() in _TOAD_NOISE_TITLES:
+            continue
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+        # Extract price from text like "Sanji OP06-119 Price R 120,00"
+        price_str = "0"
+        price_match = re.search(r'\bPrice\s+R\s*([\d\s,]+)', title, re.IGNORECASE)
+        if price_match:
+            raw = price_match.group(1).strip().replace(" ", "").replace(",", ".")
+            try:
+                price_str = str(int(round(float(raw) * 100)))
+            except ValueError:
+                pass
+            title = title[: price_match.start()].strip()
+        products.append(
+            {
+                "name": title,
+                "permalink": url,
+                "sku": "",
+                "description": "",
+                "short_description": "",
+                "is_in_stock": True,
+                "is_purchasable": True,
+                "stock_availability": {"text": ""},
+                "prices": {"price": price_str, "currency_minor_unit": 2},
+                "images": [],
+                "categories": [{"name": "One Piece TCG"}],
+            }
+        )
+    return products
+
+
+def _fetch_toad_products_from_category_pages() -> list[dict]:
+    products: list[dict] = []
+    seen: set[str] = set()
+    for page in range(1, 100):
+        page_url = f"{TOAD_COLLECTION_URL}?page={page}"
+        print(f"Toad Trader TCG: scraping category page {page}...", flush=True)
+        try:
+            html_text = fetch_text(page_url)
+        except urllib.error.HTTPError as error:
+            if error.code == 404:
+                print(f"Toad Trader TCG: category page {page} returned 404, stopping.", flush=True)
+                break
+            raise
+        page_products = _extract_toad_products_from_html(html_text)
+        page_products = [item for item in page_products if str(item.get("permalink") or "") not in seen]
+        for item in page_products:
+            seen.add(str(item.get("permalink") or ""))
+        print(f"Toad Trader TCG: category page {page} -> {len(page_products)} products", flush=True)
+        if not page_products:
+            break
+        products.extend(page_products)
+    return products
+
+
+def fetch_toad_products() -> list[dict]:
+    products: list[dict] = []
+
+    fetch_errors: list[str] = []
+    wc_candidates = [
+        _toad_url_template(),
+        "https://www.toadtradertcg.com/wp-json/wc/store/products?per_page=100&page={page}",
+    ]
+
+    for url_template in wc_candidates:
+        if products:
+            break
+        try:
+            total_pages = 0
+            for page in range(1, 200):
+                print(f"Toad Trader TCG: fetching page {page}{f'/{total_pages}' if total_pages else ''}...", flush=True)
+                page_products, total_items, total_pages = fetch_woo_page(url_template.format(page=page))
+                print(
+                    f"Toad Trader TCG: page {page}/{total_pages} -> {len(page_products)} products (total: {total_items})",
+                    flush=True,
+                )
+                if not page_products:
+                    break
+                products.extend(page_products)
+                if total_pages and page >= total_pages:
+                    break
+        except Exception as error:
+            fetch_errors.append(f"{url_template}: {error}")
+            products = []
+
+    if not products:
+        try:
+            products = _fetch_toad_products_from_category_pages()
+        except Exception as error:
+            fetch_errors.append(f"{TOAD_COLLECTION_URL}?page={{n}}: {error}")
+
+    if not products and fetch_errors:
+        print("Toad Trader TCG: all fetch strategies failed:", flush=True)
+        for error in fetch_errors:
+            print(f"- {error}", flush=True)
+    print(f"Toad Trader TCG: {len(products)} products total", flush=True)
+    return products
+
+
+def match_toad(missing: set[str], products: list[dict]) -> list[dict[str, object]]:
+    matches: list[dict[str, object]] = []
+    for product in products:
+        permalink = str(product.get("permalink") or "").lower()
+        category_names = " ".join(woo_category_names(product)).lower()
+        if "one-piece" not in permalink and "one piece" not in category_names:
+            continue
+        search_text = " ".join(
+            str(product.get(key) or "")
+            for key in ["sku", "name", "description", "short_description", "permalink"]
+        )
+        card_number = normalize_card_number(search_text)
+        if not card_number or card_number not in missing:
+            continue
+        if not product.get("is_in_stock") or not product.get("is_purchasable"):
+            continue
+
+        stock = clean_text((product.get("stock_availability") or {}).get("text"))
+        images = product.get("images") or []
+        matches.append(
+            {
+                "store": "Toad Trader TCG",
+                "card_number": card_number,
+                "title": clean_text(product.get("name")),
+                "set_name": category_set_name(product),
+                "rarity": category_rarity(product),
+                "condition": "",
+                "stock": stock,
+                "price": woo_price(product),
+                "available_variants": stock,
+                "url": product.get("permalink") or TOAD_COLLECTION_URL,
+                "image_url": str(images[0].get("src") or "") if images else "",
+            }
+        )
+    return matches
+
+
+def run_toad() -> list[dict[str, object]]:
+    missing = missing_card_numbers()
+    products = fetch_toad_products()
+    matches = sorted_matches(match_toad(missing, products))
+    update_store_in_combined_json("Toad Trader TCG", matches)
+    print_store_summary("Toad Trader TCG", missing, products, matches)
+    print_found_listings("Toad Trader TCG", matches)
+    return matches
+
+
 def run_all() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     failures: list[str] = []
@@ -740,9 +945,14 @@ def run_all() -> list[dict[str, object]]:
         fetch_tanuki_products,
         match_tanuki,
     )
+    toad_products, toad_matches = scrape_store(
+        "Toad Trader TCG",
+        fetch_toad_products,
+        match_toad,
+    )
 
     combined = sorted_matches(
-        knightly_matches + big_bang_matches + marvellous_matches + tanuki_matches
+        knightly_matches + big_bang_matches + marvellous_matches + tanuki_matches + toad_matches
     )
     write_combined_json(combined)
 
@@ -755,6 +965,8 @@ def run_all() -> list[dict[str, object]]:
     print(f"Marvellous available missing listings: {len(marvellous_matches)}")
     print(f"Tanuki products fetched: {len(tanuki_products)}")
     print(f"Tanuki available missing listings: {len(tanuki_matches)}")
+    print(f"Toad Trader products fetched: {len(toad_products)}")
+    print(f"Toad Trader available missing listings: {len(toad_matches)}")
     if failures:
         print("Store scrape failures:")
         for failure in failures:

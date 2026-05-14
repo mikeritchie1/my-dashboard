@@ -512,6 +512,18 @@ function filteredRows() {
   });
 }
 
+function missingCardImageUrl(row) {
+  const direct = String(row?.image_url || "").trim();
+  if (direct) {
+    return direct;
+  }
+  const cardNumber = String(row?.card_number || "").trim().toUpperCase();
+  if (!/^(OP|ST|EB|PRB)\d{2}-\d{3}$/.test(cardNumber)) {
+    return "";
+  }
+  return collectionCardImageUrl(cardNumber);
+}
+
 const RARITY_BORDER = {
   "common":      "#4ade80",
   "uncommon":    "#22c55e",
@@ -550,8 +562,9 @@ function renderCardGrid(rows) {
     const borderColor = rarityBorderColor(row.rarity);
     if (borderColor) card.style.borderColor = borderColor;
 
-    const imageHtml = row.image_url
-      ? `<img class="missing-card-img" src="${escapeHtml(row.image_url)}" alt="" loading="lazy" onerror="this.style.display='none'">`
+    const imageUrl = missingCardImageUrl(row);
+    const imageHtml = imageUrl
+      ? `<img class="missing-card-img" src="${escapeHtml(imageUrl)}" alt="" loading="lazy" onerror="this.style.display='none'">`
       : `<div class="missing-card-img missing-card-img-empty"></div>`;
 
     const rarityHtml = row.rarity
@@ -591,8 +604,9 @@ function showDetailPanel(html, opinionKey = "") {
 
 function openMissingCardDetail(row) {
   if (!row) return;
-  const imageHtml = row.image_url
-    ? `<img class="watchlist-detail-poster" src="${escapeHtml(row.image_url)}" alt="${escapeHtml(row.card_number)}">`
+  const imageUrl = missingCardImageUrl(row);
+  const imageHtml = imageUrl
+    ? `<img class="watchlist-detail-poster" src="${escapeHtml(imageUrl)}" alt="${escapeHtml(row.card_number)}">`
     : `<div class="watchlist-detail-poster watchlist-entry-poster-empty">No image</div>`;
   showDetailPanel(`
     <div class="watchlist-detail-layout">
