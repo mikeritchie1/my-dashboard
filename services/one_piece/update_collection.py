@@ -19,14 +19,7 @@ LIMITLESS_CARD_API_URL = "https://onepiece.limitlesstcg.com/api/cards/{card_numb
 
 DESIRED_FIELDS = [
     "rarity",
-    "card_type",
     "name",
-    "color",
-    "attribute",
-    "description",
-    "family",
-    "life",
-    "power",
     "image_url",
     "image_hash",
 ]
@@ -93,6 +86,8 @@ def fetch_card_metadata(card_number: str) -> dict[str, str]:
 
     rarity_code = str(data.get("rarity") or "").strip().upper()
     rarity = RARITY_CODE_TO_NAME.get(rarity_code, rarity_code)
+    if not rarity and str(card_number or "").startswith("P-"):
+        rarity = "Promo"
     return {
         "name": str(data.get("name") or "").strip(),
         "rarity": rarity,
@@ -132,6 +127,9 @@ def iter_cards(payload: dict) -> list[dict]:
 
 
 def has_missing_fields(card: dict) -> bool:
+    card_number = str(card.get("card_number") or "").strip().upper()
+    if card_number.startswith("P-") and not str(card.get("rarity") or "").strip():
+        card["rarity"] = "Promo"
     return any(not str(card.get(field) or "").strip() for field in DESIRED_FIELDS)
 
 
@@ -152,10 +150,12 @@ def merge_preserving_existing(new_payload: dict, old_payload: dict) -> dict:
                 continue
             card_number = str(card.get("card_number") or "").strip().upper()
             prev = old_by_number.get(card_number) or {}
-            for field in ["name", "color", "attribute", "description", "family", "life", "power", "image_url", "image_hash"]:
+            for field in ["card_type", "name", "color", "attribute", "description", "family", "life", "power", "image_url", "image_hash"]:
                 if not str(card.get(field) or "").strip() and str(prev.get(field) or "").strip():
                     card[field] = prev[field]
-            if not str(card.get("rarity") or "").strip() and str(prev.get("rarity") or "").strip():
+            # Keep existing scraped rarity as source of truth when already present.
+            # Overview sheet rarity is used for audit only.
+            if str(prev.get("rarity") or "").strip():
                 card["rarity"] = prev["rarity"]
     new_payload["_listing_match_cache"] = old_payload.get("_listing_match_cache", {}) if isinstance(old_payload, dict) else {}
     return new_payload

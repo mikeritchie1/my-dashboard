@@ -348,18 +348,20 @@
               </select>
             </label>
             <label>
+              Set
+              <select id="set-filter">
+                <option value="">All sets</option>
+              </select>
+            </label>
+            <label>
               Rarity
               <select id="rarity-filter">
                 <option value="">All rarities</option>
               </select>
             </label>
-            <label>
-              Min price
-              <input id="min-price" type="number" min="0" step="1" value="0">
-            </label>
-            <label>
-              Max price
-              <input id="max-price" type="number" min="0" step="1" value="200">
+            <label class="collection-missing-toggle">
+              <input id="show-only-new-cards" type="checkbox">
+              Show only new cards
             </label>
             </section>
             <div id="cards-grid" class="cards-grid" aria-live="polite">

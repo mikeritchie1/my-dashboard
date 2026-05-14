@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import csv
 import html
@@ -239,11 +239,14 @@ def normalize_card_number(value: object) -> str | None:
     text = text.replace("EB-", "EB").replace("PRB-", "PRB")
 
     match = re.search(r"\b(OP|ST|EB|PRB)(\d{1,2})-(\d{1,3})\b", text)
-    if not match:
-        return None
+    if match:
+        prefix, set_number, card_number = match.groups()
+        return f"{prefix}{int(set_number):02d}-{int(card_number):03d}"
 
-    prefix, set_number, card_number = match.groups()
-    return f"{prefix}{int(set_number):02d}-{int(card_number):03d}"
+    promo_match = re.search(r"\bP-(\d{1,3})\b", text)
+    if promo_match:
+        return f"P-{int(promo_match.group(1)):03d}"
+    return None
 
 
 def load_sheet_rows(path: Path, sheet_name: str) -> list[dict[int, str]]:
@@ -896,7 +899,7 @@ def _discover_marvellous_category_id() -> str:
         data = fetch_json("https://marvelloushobbies.com/wp-json/wp/v2/universe?slug=one-piece&_fields=id,slug,name")
         if isinstance(data, list) and data:
             term = data[0]
-            print(f"Marvellous Hobbies: found universe taxonomy term {term.get('name')!r} id={term.get('id')} — but WooCommerce Store API cannot filter by custom taxonomies", flush=True)
+            print(f"Marvellous Hobbies: found universe taxonomy term {term.get('name')!r} id={term.get('id')} â€” but WooCommerce Store API cannot filter by custom taxonomies", flush=True)
     except Exception:
         pass
 
@@ -909,7 +912,7 @@ def _marvellous_url_template() -> str:
     if cat_id:
         base = "https://marvelloushobbies.com/wp-json/wc/store/v1/products"
         return f"{base}?per_page=100&page={{page}}&category_ids[]={cat_id}"
-    print("Marvellous Hobbies: WARNING — no category filter found, fetching full catalog (slow)", flush=True)
+    print("Marvellous Hobbies: WARNING â€” no category filter found, fetching full catalog (slow)", flush=True)
     return "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}"
 
 
@@ -1277,7 +1280,7 @@ def _parse_geek_haven_page(html: str) -> list[dict]:
 
     BobShop embeds each product as a JSON object inside
     <script type="application/json"> inside <product-card> elements.
-    Only Bandai-branded products are returned — the seller carries One Piece
+    Only Bandai-branded products are returned â€” the seller carries One Piece
     first and then VTES/Jyhad (no Brand attribute) later.
     """
     products: list[dict] = []
@@ -1337,7 +1340,7 @@ def fetch_geek_haven_products() -> list[dict]:
         page_products = _parse_geek_haven_page(html)
         print(f"GeekHaven: page {page} -> {len(page_products)} Bandai products", flush=True)
         if not page_products:
-            print("GeekHaven: no Bandai products on this page — stopping (One Piece section ended).", flush=True)
+            print("GeekHaven: no Bandai products on this page â€” stopping (One Piece section ended).", flush=True)
             break
         products.extend(page_products)
     print(f"GeekHaven: {len(products)} products total", flush=True)
@@ -1631,3 +1634,4 @@ def print_match_summary(store: str, matches: list[dict[str, object]]) -> None:
     print(f"{store} available missing listings: {len(matches)}")
     print(f"{store} distinct missing card numbers available: {len({m['card_number'] for m in matches})}")
     print(f"{store} listing total: R {sum(float(m['price']) for m in matches):.2f}")
+

@@ -89,15 +89,15 @@ const state = {
   rows: [],
   search: "",
   store: "",
+  set: "",
   rarity: "",
-  minPrice: 0,
-  maxPrice: 200,
   onePieceProducts: [],
   collectionSets: {},
   collectionSet: "OP01",
   collectionShowMissing: false,
   collectionShowAvailableMissing: false,
   collectionShowMissingRarity: false,
+  showOnlyNewCards: false,
   missingListingsByCard: {},
   onePieceProductType: "boosters",
   onePieceProductIndex: -1,
@@ -159,9 +159,9 @@ const elements = {
   cardsGrid: document.querySelector("#cards-grid"),
   search: document.querySelector("#search"),
   storeFilter: document.querySelector("#store-filter"),
+  setFilter: document.querySelector("#set-filter"),
   rarityFilter: document.querySelector("#rarity-filter"),
-  minPrice: document.querySelector("#min-price"),
-  maxPrice: document.querySelector("#max-price"),
+  showOnlyNewCardsToggle: document.querySelector("#show-only-new-cards"),
   onePieceProductTypeFilters: document.querySelector("#one-piece-product-type-filters"),
   onePieceProductStrip: document.querySelector("#one-piece-product-strip"),
   collectionSetButtons: document.querySelector("#collection-set-buttons"),
@@ -484,6 +484,16 @@ function unique(values) {
   return [...new Set(values.filter(Boolean))].sort((a, b) => a.localeCompare(b));
 }
 
+function cardSetKey(cardNumber) {
+  const raw = String(cardNumber || "").trim().toUpperCase();
+  if (!raw) return "";
+  const promoMatch = raw.match(/^P(?:-|$)/);
+  if (promoMatch) return "P";
+  const match = raw.match(/^([A-Z]+)(\d{1,2})-/);
+  if (!match) return "";
+  return `${match[1]}${String(Number(match[2])).padStart(2, "0")}`;
+}
+
 function optionList(select, values, label) {
   select.innerHTML = `<option value="">${label}</option>`;
   for (const value of values) {
@@ -497,11 +507,10 @@ function optionList(select, values, label) {
 function filteredRows() {
   const term = state.search.trim().toLowerCase();
   return state.rows.filter((row) => {
-    const price = Number.parseFloat(row.price || "0");
     const matchesStore = !state.store || row.store === state.store;
+    const matchesSet = !state.set || cardSetKey(row.card_number) === state.set;
     const matchesRarity = !state.rarity || row.rarity === state.rarity;
-    const matchesMinPrice = !Number.isFinite(state.minPrice) || price >= state.minPrice;
-    const matchesMaxPrice = !Number.isFinite(state.maxPrice) || price <= state.maxPrice;
+    const matchesNewOnly = !state.showOnlyNewCards || isNewListing(row);
     const haystack = [
       row.card_number,
       row.title,
@@ -513,7 +522,7 @@ function filteredRows() {
       .join(" ")
       .toLowerCase();
     const matchesSearch = !term || haystack.includes(term);
-    return matchesStore && matchesRarity && matchesMinPrice && matchesMaxPrice && matchesSearch;
+    return matchesStore && matchesSet && matchesRarity && matchesNewOnly && matchesSearch;
   });
 }
 
@@ -4843,10 +4852,30 @@ function collectionCardImageUrl(cardNumber) {
   return `https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/${setCode}/${cardNumber}_EN.webp`;
 }
 
+function buildCollectionCardLookup(collectionSets) {
+  const lookup = {};
+  const sets = collectionSets && typeof collectionSets === "object" ? collectionSets : {};
+  for (const [setCode, setData] of Object.entries(sets)) {
+    const cards = Array.isArray(setData?.cards) ? setData.cards : [];
+    for (const card of cards) {
+      if (!card || typeof card !== "object") continue;
+      const cardNumber = String(card.card_number || "").trim().toUpperCase();
+      if (!cardNumber) continue;
+      lookup[cardNumber] = {
+        rarity: String(card.rarity || "").trim(),
+        set_name: String(card.set_name || setCode || "").trim(),
+        name: String(card.name || "").trim(),
+      };
+    }
+  }
+  return lookup;
+}
+
 const COLLECTION_SET_GROUPS = [
   { prefix: "OP", label: "Booster Packs" },
   { prefix: "ST", label: "Starter Decks" },
   { prefix: "EB", label: "Extra Boosters" },
+  { prefix: "P", label: "Other" },
 ];
 
 function renderCollectionSetButtons() {
@@ -4869,7 +4898,7 @@ function renderCollectionSetButtons() {
       btn.type = "button";
       btn.className = "watchlist-category-button" + (setCode === state.collectionSet ? " is-selected" : "");
       btn.dataset.collectionSet = setCode;
-      btn.textContent = setCode;
+      btn.textContent = setCode === "P" ? "Promo" : setCode;
       group.append(btn);
     }
     elements.collectionSetButtons.append(group);
@@ -4894,14 +4923,17 @@ function renderCollectionGrid() {
   if (elements.collectionStats) {
     const owned = setData.by_rarity || {};
     const totals = setData.total_by_rarity || {};
-    const RARITY_ORDER = ["Common", "Rare", "Super Rare", "Leader"];
+    const RARITY_ORDER = ["Common", "Uncommon", "Rare", "Super Rare", "Secret Rare", "Leader", "Promo"];
     const rarityParts = RARITY_ORDER
       .filter((r) => totals[r] || owned[r])
       .map((r) => `${owned[r] || 0}/${totals[r] || "?"} ${r}`);
     const totalPart = setData.total_cards
       ? `${setData.total_owned}/${setData.total_cards} total`
       : `${setData.total_owned} owned`;
-    elements.collectionStats.textContent = [totalPart, ...rarityParts].join(" · ");
+    const isPromoSet = String(state.collectionSet || "").toUpperCase() === "P";
+    elements.collectionStats.textContent = isPromoSet
+      ? totalPart
+      : [totalPart, ...rarityParts].join(" · ");
   }
 
   const ownedSet = new Set(cards.filter((c) => c.owned).map((c) => c.card_number));
@@ -5376,12 +5408,32 @@ async function loadBandsintownEvents() {
 
 async function loadOnePieceCards() {
   try {
-    const response = await fetchFresh(MISSING_CARDS_PATH);
-    if (!response.ok) {
+    const [missingResponse, collectionResponse] = await Promise.all([
+      fetchFresh(MISSING_CARDS_PATH),
+      fetchFresh(COLLECTION_PATH),
+    ]);
+    if (!missingResponse.ok) {
       throw new Error(`Could not load ${MISSING_CARDS_PATH}`);
     }
-    const payload = await response.json();
-    state.rows = payload.listings || [];
+    const payload = await missingResponse.json();
+    const collectionPayload = collectionResponse.ok ? await collectionResponse.json() : { sets: {} };
+    const cardLookup = buildCollectionCardLookup(collectionPayload.sets || {});
+
+    state.rows = (payload.listings || []).map((raw) => {
+      const row = { ...raw };
+      const key = String(row.card_number || "").trim().toUpperCase();
+      const meta = cardLookup[key] || {};
+      if (!String(row.rarity || "").trim() && String(meta.rarity || "").trim()) {
+        row.rarity = meta.rarity;
+      }
+      if (!String(row.set_name || "").trim()) {
+        row.set_name = String(meta.set_name || cardSetKey(key) || "").trim();
+      }
+      if (!String(row.card_name || "").trim() && String(meta.name || "").trim()) {
+        row.card_name = meta.name;
+      }
+      return row;
+    });
     const byCard = {};
     for (const row of state.rows) {
       const key = String(row.card_number || "").trim().toUpperCase();
@@ -5391,7 +5443,8 @@ async function loadOnePieceCards() {
     }
     state.missingListingsByCard = byCard;
     optionList(elements.storeFilter, unique(state.rows.map((row) => row.store)), "All stores");
-    const rarities = unique(state.rows.map((row) => row.rarity));
+    optionList(elements.setFilter, unique(state.rows.map((row) => cardSetKey(row.card_number))), "All sets");
+    const rarities = unique(state.rows.map((row) => row.rarity).filter(Boolean));
     elements.rarityFilter.innerHTML = '<option value="">All rarities</option>';
     for (const rarity of rarities) {
       const option = document.createElement("option");
@@ -5427,48 +5480,22 @@ elements.storeFilter.addEventListener("change", (event) => {
   renderOnePieceCards();
 });
 
+elements.setFilter.addEventListener("change", (event) => {
+  state.set = event.target.value;
+  renderOnePieceCards();
+});
+
 elements.rarityFilter.addEventListener("change", (event) => {
   state.rarity = event.target.value;
   renderOnePieceCards();
 });
 
-const PRICE_STORAGE_KEY = "my-dashboard:card-price-range:v1";
-
-function savePriceRange() {
-  try {
-    localStorage.setItem(PRICE_STORAGE_KEY, JSON.stringify({ min: state.minPrice, max: state.maxPrice }));
-  } catch {}
+if (elements.showOnlyNewCardsToggle) {
+  elements.showOnlyNewCardsToggle.addEventListener("change", (event) => {
+    state.showOnlyNewCards = Boolean(event.target.checked);
+    renderOnePieceCards();
+  });
 }
-
-function restorePriceRange() {
-  try {
-    const raw = localStorage.getItem(PRICE_STORAGE_KEY);
-    if (!raw) return;
-    const { min, max } = JSON.parse(raw);
-    if (Number.isFinite(min)) {
-      state.minPrice = min;
-      elements.minPrice.value = String(min);
-    }
-    if (Number.isFinite(max)) {
-      state.maxPrice = max;
-      elements.maxPrice.value = String(max);
-    }
-  } catch {}
-}
-
-restorePriceRange();
-
-elements.minPrice.addEventListener("input", (event) => {
-  state.minPrice = event.target.value === "" ? Number.NEGATIVE_INFINITY : Number(event.target.value);
-  savePriceRange();
-  renderOnePieceCards();
-});
-
-elements.maxPrice.addEventListener("input", (event) => {
-  state.maxPrice = event.target.value === "" ? Number.POSITIVE_INFINITY : Number(event.target.value);
-  savePriceRange();
-  renderOnePieceCards();
-});
 
 if (elements.cardsGrid) {
   elements.cardsGrid.addEventListener("click", (event) => {

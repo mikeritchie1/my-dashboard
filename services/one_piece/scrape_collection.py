@@ -17,6 +17,9 @@ RARITY_MAP = {"1": "Common", "2": "Rare", "3": "Super Rare", "4": "Leader"}
 
 
 def normalize_set_code(header: str) -> str | None:
+    cleaned = header.strip().upper()
+    if cleaned == "P":
+        return "P"
     match = re.match(r"^(OP|ST|EB|PRB)-?(\d+)$", header.strip(), re.IGNORECASE)
     if not match:
         return None

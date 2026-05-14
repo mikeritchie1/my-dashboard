@@ -1586,6 +1586,7 @@ td.card-number {
   flex-wrap: wrap;
   gap: 6px;
   margin-bottom: 6px;
+  width: 100%;
 }
 
 .collection-set-group-label {
