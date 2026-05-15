@@ -1282,6 +1282,23 @@
       "Munehisa Sakai"
     ]
   },
+  "anime_movie:one piece the movie": {
+    "title": "One Piece: The Movie",
+    "media_type": "anime_movie",
+    "directors": null,
+    "actors": null,
+    "runtime_minutes": null,
+    "number_of_seasons": null,
+    "rating": null,
+    "description": null,
+    "overview": null,
+    "trailer_url": null,
+    "release_date": null,
+    "tmdb_id": null,
+    "genres": null,
+    "tmdb_url": null,
+    "poster_url": null
+  },
   "anime_movie:one piece z": {
     "title": "One Piece: Z",
     "media_type": "anime_movie",
@@ -18977,6 +18994,23 @@
       "Jon M. Chu"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=kOnQ1sexTuc"
+  },
+  "movie:wizards": {
+    "title": "Wizards",
+    "media_type": "movie",
+    "directors": null,
+    "actors": null,
+    "runtime_minutes": null,
+    "number_of_seasons": null,
+    "rating": null,
+    "description": null,
+    "overview": null,
+    "trailer_url": null,
+    "release_date": null,
+    "tmdb_id": null,
+    "genres": null,
+    "tmdb_url": null,
+    "poster_url": null
   },
   "movie:wolfs": {
     "title": "Wolfs",

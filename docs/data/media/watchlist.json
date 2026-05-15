@@ -979,6 +979,11 @@
           "opinion": ""
         },
         {
+          "type": "movie",
+          "title": "Wizards",
+          "opinion": ""
+        },
+        {
           "type": "series",
           "title": "Stranger Things",
           "opinion": ""
@@ -2756,6 +2761,11 @@
         {
           "type": "anime_movie",
           "title": "Paprika",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "One Piece: The Movie",
           "opinion": ""
         },
         {
