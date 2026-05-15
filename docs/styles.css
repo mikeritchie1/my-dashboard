@@ -4417,13 +4417,23 @@ td.card-number {
 }
 
 .reading-viewer {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
+  align-items: stretch;
+}
+
+.reading-page-nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   align-items: center;
+  order: 1;
+  width: 100%;
 }
 
 .reading-image-wrap {
+  order: 2;
   min-height: 520px;
   border: 1px solid var(--line);
   border-radius: 12px;

@@ -6087,25 +6087,35 @@ if (elements.readingVolumeButtons) {
 
 if (elements.readingPrevPage) {
   elements.readingPrevPage.addEventListener("click", async () => {
-    await refreshReadingDataPreserveSelection();
-    state.readingCurrentPage = Math.max(1, Number(state.readingCurrentPage || 1) - 1);
-    setStoredPageForCurrentVolume();
-    await showCurrentReadingPage();
+    await nudgeReadingPage(-1);
   });
 }
 
 if (elements.readingNextPage) {
   elements.readingNextPage.addEventListener("click", async () => {
-    await refreshReadingDataPreserveSelection();
-    const pages = state.readingPagesByVolume[state.readingCurrentVolumeId] || [];
-    const totalPages = pages.length;
-    if (!totalPages) {
-      return;
-    }
-    state.readingCurrentPage = Math.min(totalPages, Number(state.readingCurrentPage || 1) + 1);
-    setStoredPageForCurrentVolume();
-    await showCurrentReadingPage();
+    await nudgeReadingPage(1);
   });
+}
+
+async function nudgeReadingPage(step) {
+  const delta = Number(step || 0);
+  if (!delta) {
+    return;
+  }
+  await refreshReadingDataPreserveSelection();
+  const pages = state.readingPagesByVolume[state.readingCurrentVolumeId] || [];
+  const totalPages = pages.length;
+  if (!totalPages) {
+    return;
+  }
+  const currentPage = Number(state.readingCurrentPage || 1);
+  const nextPage = Math.max(1, Math.min(totalPages, currentPage + delta));
+  if (nextPage === currentPage) {
+    return;
+  }
+  state.readingCurrentPage = nextPage;
+  setStoredPageForCurrentVolume();
+  await showCurrentReadingPage();
 }
 
 function showMyLocation() {
@@ -7351,6 +7361,22 @@ document.addEventListener("keydown", (event) => {
   }
   if (elements.timelineLightbox && !elements.timelineLightbox.hidden && event.key === "ArrowRight") {
     moveTimelineLightbox(1);
+    return;
+  }
+  const isTypingTarget = event.target instanceof HTMLElement
+    && (event.target.isContentEditable
+      || /^(INPUT|TEXTAREA|SELECT)$/i.test(event.target.tagName));
+  if (isTypingTarget) {
+    return;
+  }
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    void nudgeReadingPage(-1);
+    return;
+  }
+  if (event.key === "ArrowRight") {
+    event.preventDefault();
+    void nudgeReadingPage(1);
   }
 });
 
