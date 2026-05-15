@@ -14,7 +14,8 @@
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": ""
+    "place_key": "",
+    "is_new": false
   },
   {
     "title": "Dance Mosaic: Dancing for Dogs",
@@ -32,7 +33,8 @@
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": ""
+    "place_key": "",
+    "is_new": false
   },
   {
     "title": "Alfred Adriaan - Positive Strokes ‘BACK BY POPULAR DEMAND’",
@@ -49,7 +51,8 @@
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": ""
+    "place_key": "",
+    "is_new": false
   },
   {
     "title": "The Galileo Open Air Cinema 2025/2026",
@@ -64,7 +67,8 @@
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": ""
+    "place_key": "",
+    "is_new": false
   },
   {
     "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
@@ -81,6 +85,7 @@
     "missing_location": true,
     "location_key": "",
     "missing_place": true,
-    "place_key": ""
+    "place_key": "",
+    "is_new": false
   }
 ]

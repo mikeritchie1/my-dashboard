@@ -1,15 +1,15 @@
 [
   {
-    "title": "The Human League & Blancmange live in Cape Town",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1586884529",
-    "image": "https://content.webtickets.co.za/breakout/panel_120526GW_1110_740_20260129_124503.jpg",
-    "date_text": "12 May 2026 19:00",
-    "venue": "Grand Arena,GrandWest,  1 Jakes Gerwel Dr, Acacia Park, Cape Town",
-    "price": "From R795 (Excluding Booking Fee)",
+    "title": "Franschhoek Literary Festival 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589974554",
+    "image": "https://content.webtickets.co.za/flf/panel_FLF2025_20240605_122127.JPG",
+    "date_text": "15 - 17 May 2026",
+    "venue": "",
+    "price": "various prices",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "outdoors"
+      "festival"
     ],
     "missing_location": true,
     "location_key": "",
@@ -18,12 +18,31 @@
     "is_new": false
   },
   {
-    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
-    "date_text": "From 12 May 2026 20:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R295 - R495",
+    "title": "Dance Mosaic: Dancing for Dogs",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593200173",
+    "image": "https://content.webtickets.co.za/TGSA/panel_IMG-20260413-WA0138_20260414_091544.jpg",
+    "date_text": "From 15 May 2026 15:00",
+    "venue": "The George Arts Theatre, 125 York Street, George Central",
+    "price": "R100 - R250",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": "",
+    "is_new": false
+  },
+  {
+    "title": "Alfred Adriaan - Positive Strokes ‘BACK BY POPULAR DEMAND’",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589569742",
+    "image": "https://content.webtickets.co.za/DrostdyTheatre/panel_alfred.webtickets_20260227_141506.jpg",
+    "date_text": "From 15 May 2026 19:00",
+    "venue": "Drostdy Theatre, Cnr Alexander St &, Bird St, Stellenbosch",
+    "price": "R210",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
@@ -36,12 +55,12 @@
     "is_new": false
   },
   {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 12 May 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
+    "title": "The Galileo Open Air Cinema 2025/2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1573555378",
+    "image": "https://content.webtickets.co.za/galileo/panel_webtix-Galileo-x-Kirstenbosch-grease_20260512_121722.jpg",
+    "date_text": "From 27 September 2025",
+    "venue": "",
+    "price": "From R155",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [],
@@ -52,33 +71,17 @@
     "is_new": false
   },
   {
-    "title": "IT’S GERMANY vs JAPAN AT KILLARNEY ROBOT RACING!",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594247303",
-    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260513 Robot Racing Webtickets 1110 x 740_20260429_093904.jpg",
-    "date_text": "13 May 2026 18:30",
-    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "price": "R70",
+    "title": "Richard O'Brien's The Rocky Horror Show (CPT)",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1588915971",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_Webtickets 2026_20260211_164743.jpg",
+    "date_text": "From 15 May 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R295 - R495",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "sports"
+      "theatre"
     ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": "",
-    "is_new": false
-  },
-  {
-    "title": "Positive Strokes - Homecoming Centre",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1589512192",
-    "image": "https://content.webtickets.co.za/AlfredAdriaan/panel_Positive Strokes Blank - JPG_20250618_112342.jpg",
-    "date_text": "From 13 May 2026 19:00",
-    "venue": "Homecoming Centre, 15 M59, District Six, Cape Town, 7925",
-    "price": "R200 - R250",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,

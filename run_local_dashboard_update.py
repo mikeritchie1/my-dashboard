@@ -27,6 +27,7 @@ TASKS = {
     "gamelist": [[sys.executable, "services/scrape_media.py", "--source", "games", "--type", "games"]],
     "news": [[sys.executable, "services/scrape_news.py"]],
     "youtube": [[sys.executable, "services/scrape_youtube.py", "--mode", "daily"]],
+    "reading": [[sys.executable, "services/scrape_reading_manifest.py"]],
     "digest": [[sys.executable, "services/daily_digest/send_daily_digest.py", "--no-email"]],
 }
 

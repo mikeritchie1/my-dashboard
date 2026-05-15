@@ -4,11 +4,6 @@
     "games": {
       "aaa": [
         {
-          "title": "Returnal",
-          "opinion": "",
-          "is_new": false
-        },
-        {
           "title": "Directive 8020",
           "opinion": "",
           "is_new": false
@@ -17,11 +12,6 @@
       "indie": [
         {
           "title": "Reanimal",
-          "opinion": "",
-          "is_new": false
-        },
-        {
-          "title": "P.I. Mouse",
           "opinion": "",
           "is_new": false
         }
@@ -65,7 +55,7 @@
           "is_new": false
         },
         {
-          "title": "Moving Out",
+          "title": "Moving Out 2",
           "opinion": "",
           "is_new": false
         },
@@ -351,6 +341,12 @@
           "is_new": false
         },
         {
+          "type": "game_aaa",
+          "title": "Returnal",
+          "opinion": "",
+          "is_new": false
+        },
+        {
           "type": "game_indie",
           "title": "Creature Kitchen",
           "opinion": "",
@@ -365,6 +361,12 @@
         {
           "type": "game_indie",
           "title": "Replaced",
+          "opinion": "",
+          "is_new": false
+        },
+        {
+          "type": "game_indie",
+          "title": "Mouse P.I.",
           "opinion": "",
           "is_new": false
         },

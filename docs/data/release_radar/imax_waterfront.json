@@ -42,7 +42,8 @@
         "17:45"
       ],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+      "is_new": false
     },
     {
       "tmdb_id": 361743,
@@ -80,7 +81,8 @@
       "status_label": "Coming soon",
       "showtimes": [],
       "format": "",
-      "image": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
+      "is_new": false
     },
     {
       "tmdb_id": 936075,
@@ -118,7 +120,8 @@
       "status_label": "Coming soon",
       "showtimes": [],
       "format": "",
-      "image": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+      "is_new": false
     },
     {
       "tmdb_id": 931285,
@@ -157,7 +160,8 @@
       "status_label": "Coming soon",
       "showtimes": [],
       "format": "",
-      "image": "https://image.tmdb.org/t/p/w342/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/lIsMeDbwntNXSUVHmWMMRXEZOVc.jpg",
+      "is_new": false
     },
     {
       "tmdb_id": 1228710,
@@ -196,7 +200,8 @@
       "status_label": "Coming soon",
       "showtimes": [],
       "format": "",
-      "image": "https://image.tmdb.org/t/p/w342/n5lgbGxEM35MvcRqJG3aqHKm3Gq.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/n5lgbGxEM35MvcRqJG3aqHKm3Gq.jpg",
+      "is_new": false
     }
   ]
 }

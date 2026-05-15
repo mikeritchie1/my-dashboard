@@ -57,7 +57,7 @@
         {
           "title": "Moving Out 2",
           "opinion": "",
-          "is_new": true
+          "is_new": false
         },
         {
           "title": "Sonic Racing: CrossWorlds",
@@ -344,7 +344,7 @@
           "type": "game_aaa",
           "title": "Returnal",
           "opinion": "",
-          "is_new": true
+          "is_new": false
         },
         {
           "type": "game_indie",
@@ -368,7 +368,7 @@
           "type": "game_indie",
           "title": "Mouse P.I.",
           "opinion": "",
-          "is_new": true
+          "is_new": false
         },
         {
           "type": "game_coop",

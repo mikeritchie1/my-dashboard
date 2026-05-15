@@ -3,6 +3,11 @@
   "currently_watching": {
     "movies": [
       {
+        "title": "Remarkably Bright Creatures?",
+        "opinion": "",
+        "is_new": false
+      },
+      {
         "title": "Good Luck, Have Fun, Don’t Die",
         "opinion": "",
         "is_new": false
@@ -19,6 +24,11 @@
       },
       {
         "title": "Iron Lung",
+        "opinion": "",
+        "is_new": false
+      },
+      {
+        "title": "Obsessed",
         "opinion": "",
         "is_new": false
       }
@@ -40,6 +50,11 @@
   },
   "backlog": {
     "movies": [
+      {
+        "title": "The Adventures of Tintin",
+        "opinion": "",
+        "is_new": false
+      },
       {
         "title": "Sisu: Road to Revenge",
         "opinion": "",
@@ -1188,6 +1203,12 @@
         {
           "type": "movie",
           "title": "Primal Fear",
+          "opinion": "",
+          "is_new": false
+        },
+        {
+          "type": "movie",
+          "title": "Wizards",
           "opinion": "",
           "is_new": false
         },
@@ -3320,6 +3341,12 @@
         {
           "type": "anime_movie",
           "title": "Paprika",
+          "opinion": "",
+          "is_new": false
+        },
+        {
+          "type": "anime_movie",
+          "title": "One Piece: The Movie",
           "opinion": "",
           "is_new": false
         },

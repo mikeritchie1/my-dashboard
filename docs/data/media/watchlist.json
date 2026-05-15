@@ -5,7 +5,7 @@
       {
         "title": "Remarkably Bright Creatures?",
         "opinion": "",
-        "is_new": true
+        "is_new": false
       },
       {
         "title": "Good Luck, Have Fun, Don’t Die",
@@ -30,7 +30,7 @@
       {
         "title": "Obsessed",
         "opinion": "",
-        "is_new": true
+        "is_new": false
       }
     ],
     "series": [
@@ -53,7 +53,7 @@
       {
         "title": "The Adventures of Tintin",
         "opinion": "",
-        "is_new": true
+        "is_new": false
       },
       {
         "title": "Sisu: Road to Revenge",
@@ -1209,7 +1209,8 @@
         {
           "type": "movie",
           "title": "Wizards",
-          "opinion": ""
+          "opinion": "",
+          "is_new": false
         },
         {
           "type": "series",
@@ -3346,7 +3347,8 @@
         {
           "type": "anime_movie",
           "title": "One Piece: The Movie",
-          "opinion": ""
+          "opinion": "",
+          "is_new": false
         },
         {
           "type": "anime_movie",

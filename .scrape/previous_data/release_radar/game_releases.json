@@ -2,6 +2,24 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Outbound",
+      "url": "https://rawg.io/games/outbound",
+      "image": "https://media.rawg.io/media/games/851/851cf64d1e55bc8f98e617bc38d7f5f2.jpg",
+      "release_date": "2026-05-14",
+      "rating": "0.0",
+      "platforms": "",
+      "is_new": false
+    },
+    {
+      "title": "Sushi Duel",
+      "url": "https://rawg.io/games/sushi-duel",
+      "image": "https://media.rawg.io/media/screenshots/2d2/2d2b061e1e992665dfda8dcf22b4c80e.jpg",
+      "release_date": "2026-05-12",
+      "rating": "0.0",
+      "platforms": "PC, Xbox One, Xbox Series S/X",
+      "is_new": false
+    },
+    {
       "title": "Clockwork Ambrosia",
       "url": "https://rawg.io/games/clockwork-ambrosia",
       "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
@@ -15,7 +33,7 @@
       "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
       "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
       "release_date": "2026-05-12",
-      "rating": "2.4",
+      "rating": "2.9",
       "platforms": "PC, PlayStation 5, Xbox Series S/X",
       "is_new": false
     },
@@ -51,7 +69,7 @@
       "url": "https://rawg.io/games/mixtape",
       "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
       "release_date": "2026-05-07",
-      "rating": "4.6",
+      "rating": "4.5",
       "platforms": "PC",
       "is_new": false
     },
@@ -62,6 +80,15 @@
       "release_date": "2026-05-07",
       "rating": "0.0",
       "platforms": "",
+      "is_new": false
+    },
+    {
+      "title": "HYPNOS (2026)",
+      "url": "https://rawg.io/games/hypnos-2026",
+      "image": "https://media.rawg.io/media/screenshots/98b/98b390db41a47a0e8566f1a78e9c76cc.jpg",
+      "release_date": "2026-05-06",
+      "rating": "0.0",
+      "platforms": "PC",
       "is_new": false
     },
     {
@@ -83,10 +110,19 @@
       "is_new": false
     },
     {
-      "title": "HYPNOS (2026)",
-      "url": "https://rawg.io/games/hypnos-2026",
-      "image": "https://media.rawg.io/media/screenshots/98b/98b390db41a47a0e8566f1a78e9c76cc.jpg",
-      "release_date": "2026-05-06",
+      "title": "Dead as Disco",
+      "url": "https://rawg.io/games/dead-as-disco",
+      "image": "https://media.rawg.io/media/screenshots/508/5089a843a832f5e590ea188f098606b4.jpg",
+      "release_date": "2026-05-05",
+      "rating": "0.0",
+      "platforms": "",
+      "is_new": false
+    },
+    {
+      "title": "Forage Wizard",
+      "url": "https://rawg.io/games/forage-wizard",
+      "image": "https://media.rawg.io/media/screenshots/74d/74d657012c40f6e830310d06ab82fcb3.jpg",
+      "release_date": "2026-05-05",
       "rating": "0.0",
       "platforms": "PC",
       "is_new": false
@@ -146,21 +182,21 @@
       "is_new": false
     },
     {
-      "title": "Librarian: Tidy Up the Arcane Library!",
-      "url": "https://rawg.io/games/librarian-tidy-up-the-arcane-library",
-      "image": "https://media.rawg.io/media/screenshots/f55/f55e26672d03de9bf9e974d03159fc5e.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
       "title": "Saros",
       "url": "https://rawg.io/games/saros",
       "image": "https://media.rawg.io/media/games/be8/be86ee5cf3a427c784efec1661f9b194.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PlayStation 5",
+      "is_new": false
+    },
+    {
+      "title": "Librarian: Tidy Up the Arcane Library!",
+      "url": "https://rawg.io/games/librarian-tidy-up-the-arcane-library",
+      "image": "https://media.rawg.io/media/screenshots/f55/f55e26672d03de9bf9e974d03159fc5e.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC",
       "is_new": false
     },
     {
@@ -182,21 +218,21 @@
       "is_new": false
     },
     {
-      "title": "Heroes of Might & Magic: Olden Era",
-      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
-      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
-      "release_date": "2026-04-30",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
       "title": "Invincible VS",
       "url": "https://rawg.io/games/invincible-vs",
       "image": "https://media.rawg.io/media/screenshots/fdf/fdfec2a343d751fec655f551146976cb.jpg",
       "release_date": "2026-04-30",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X",
+      "is_new": false
+    },
+    {
+      "title": "Heroes of Might & Magic: Olden Era",
+      "url": "https://rawg.io/games/heroes-of-might-magic-olden-era",
+      "image": "https://media.rawg.io/media/screenshots/69e/69ece38d22dcc1c44de7ddb7901a1a41.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC",
       "is_new": false
     },
     {
@@ -209,21 +245,21 @@
       "is_new": false
     },
     {
-      "title": "Forbidden Solitaire",
-      "url": "https://rawg.io/games/forbidden-solitaire",
-      "image": "https://media.rawg.io/media/screenshots/748/7485dd9175996dc1870ea23978dbca9e.jpg",
-      "release_date": "2026-04-29",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
       "title": "Dream at Dead of Century",
       "url": "https://rawg.io/games/dream-at-dead-of-century",
       "image": "https://media.rawg.io/media/screenshots/032/03275564b14977c27f0fa0ee6de29242.jpg",
       "release_date": "2026-04-29",
       "rating": "0.0",
       "platforms": "PC, macOS",
+      "is_new": false
+    },
+    {
+      "title": "Forbidden Solitaire",
+      "url": "https://rawg.io/games/forbidden-solitaire",
+      "image": "https://media.rawg.io/media/screenshots/748/7485dd9175996dc1870ea23978dbca9e.jpg",
+      "release_date": "2026-04-29",
+      "rating": "0.0",
+      "platforms": "PC",
       "is_new": false
     },
     {
@@ -290,21 +326,21 @@
       "is_new": false
     },
     {
-      "title": "Aphelion",
-      "url": "https://rawg.io/games/aphelion-2",
-      "image": "https://media.rawg.io/media/games/ecc/ecc6e59e4bc50409d844fdc1607e86a9.jpg",
-      "release_date": "2026-04-28",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X",
-      "is_new": false
-    },
-    {
       "title": "Far Far West",
       "url": "https://rawg.io/games/far-far-west",
       "image": "https://media.rawg.io/media/screenshots/b1c/b1c249429ecaf020027f327c87ecd49c.jpg",
       "release_date": "2026-04-28",
       "rating": "0.0",
       "platforms": "PC",
+      "is_new": false
+    },
+    {
+      "title": "Aphelion",
+      "url": "https://rawg.io/games/aphelion-2",
+      "image": "https://media.rawg.io/media/games/ecc/ecc6e59e4bc50409d844fdc1607e86a9.jpg",
+      "release_date": "2026-04-28",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X",
       "is_new": false
     },
     {
@@ -398,6 +434,15 @@
       "is_new": false
     },
     {
+      "title": "The Window 8:Millennium",
+      "url": "https://rawg.io/games/the-window-8millennium",
+      "image": "https://media.rawg.io/media/screenshots/654/654789b64919453f15e9a4d1dd372c67.jpg",
+      "release_date": "2026-04-26",
+      "rating": "0.0",
+      "platforms": "PC",
+      "is_new": false
+    },
+    {
       "title": "Iron Graves",
       "url": "https://rawg.io/games/iron-graves",
       "image": "https://media.rawg.io/media/screenshots/1a6/1a600774b1db1cd7add803f6da0f5faa.jpg",
@@ -405,63 +450,9 @@
       "rating": "0.0",
       "platforms": "PC, macOS, Linux",
       "is_new": false
-    },
-    {
-      "title": "Warlords of the Dying Age",
-      "url": "https://rawg.io/games/warlords-of-the-dying-age",
-      "image": "https://media.rawg.io/media/screenshots/a58/a585cb7c7722521731a51845885465ff.jpg",
-      "release_date": "2026-04-26",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "Femboy Hell",
-      "url": "https://rawg.io/games/femboy-hell",
-      "image": "https://media.rawg.io/media/screenshots/cab/cabf8393c1c4ae231c62c2a21c137986.jpg",
-      "release_date": "2026-04-25",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "Double or Nothing",
-      "url": "https://rawg.io/games/double-or-nothing",
-      "image": "https://media.rawg.io/media/screenshots/b09/b0974b35eedf2fe9cdb4532e6fa3f45d.jpg",
-      "release_date": "2026-04-25",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "Vending Machine Co",
-      "url": "https://rawg.io/games/vending-machine-co",
-      "image": "https://media.rawg.io/media/screenshots/4b2/4b2c5c0ff809a51655fb7d45bf266d54.jpg",
-      "release_date": "2026-04-25",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "Climber Toys: Together",
-      "url": "https://rawg.io/games/climber-toys-together",
-      "image": "https://media.rawg.io/media/screenshots/bae/baed3f87400bd98f44a27abf9afbf8e1.jpg",
-      "release_date": "2026-04-24",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
     }
   ],
   "coming_soon": [
-    {
-      "title": "Outbound",
-      "url": "https://rawg.io/games/outbound",
-      "image": "https://media.rawg.io/media/games/851/851cf64d1e55bc8f98e617bc38d7f5f2.jpg",
-      "release_date": "2026-05-14",
-      "rating": "0.0",
-      "platforms": "",
-      "is_new": false
-    },
     {
       "title": "Corsairs - Battle of the Caribbean",
       "url": "https://rawg.io/games/corsairs-battle-of-the-caribbean",
@@ -584,8 +575,17 @@
       "url": "https://rawg.io/games/gothic-1-remake",
       "image": "https://media.rawg.io/media/games/f24/f24d20c6fddb77fe83d39cbfd7d4687f.jpg",
       "release_date": "2026-06-05",
-      "rating": "3.4",
+      "rating": "3.5",
       "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4",
+      "is_new": false
+    },
+    {
+      "title": "Crushed In Time",
+      "url": "https://rawg.io/games/crushed-in-time",
+      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
+      "release_date": "2026-06-10",
+      "rating": "0.0",
+      "platforms": "",
       "is_new": false
     },
     {
@@ -649,78 +649,6 @@
       "release_date": "2026-08-06",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5",
-      "is_new": false
-    },
-    {
-      "title": "Clockwork Ambrosia",
-      "url": "https://rawg.io/games/clockwork-ambrosia",
-      "image": "https://media.rawg.io/media/screenshots/3ef/3ef0787f01a9fd890ff7949fb49f8a8f.jpg",
-      "release_date": "2026-05-12",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "Directive 8020",
-      "url": "https://rawg.io/games/the-dark-pictures-directive-8020",
-      "image": "https://media.rawg.io/media/games/10d/10dd957940dbaedc77a08730995194c7.jpg",
-      "release_date": "2026-05-12",
-      "rating": "2.4",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X",
-      "is_new": false
-    },
-    {
-      "title": "Mixtape (2025)",
-      "url": "https://rawg.io/games/mixtape-2025",
-      "image": "https://media.rawg.io/media/screenshots/2e1/2e1a19d938c0e7a4a396924125923c38.jpg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X",
-      "is_new": false
-    },
-    {
-      "title": "Mixtape",
-      "url": "https://rawg.io/games/mixtape",
-      "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "Will: Follow the Light",
-      "url": "https://rawg.io/games/will-follow-the-light",
-      "image": "https://media.rawg.io/media/games/300/3001ccfd69be0255b346e1b03269008c.jpg",
-      "release_date": "2026-05-07",
-      "rating": "0.0",
-      "platforms": "",
-      "is_new": false
-    },
-    {
-      "title": "Battlestar Galactica: Scattered Hopes",
-      "url": "https://rawg.io/games/battlestar-galactica-scattered-hopes",
-      "image": "https://media.rawg.io/media/screenshots/84d/84d2168586f372e40fe68f17e1a70c5b.jpg",
-      "release_date": "2026-05-10",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "Uncle Lee’s Cookbook: Five Recipes for Disaster",
-      "url": "https://rawg.io/games/uncle-lees-cookbook-five-recipes-for-disaster",
-      "image": "https://media.rawg.io/media/screenshots/b32/b32dd3a1e02fa4651f46fce4a308f798.jpg",
-      "release_date": "2026-05-11",
-      "rating": "0.0",
-      "platforms": "PC",
-      "is_new": false
-    },
-    {
-      "title": "MOTORSLICE",
-      "url": "https://rawg.io/games/motorslice",
-      "image": "https://media.rawg.io/media/screenshots/781/781e814ff47631b425e8f4136804d95f.jpg",
-      "release_date": "2026-05-04",
-      "rating": "0.0",
-      "platforms": "PC",
       "is_new": false
     }
   ]
