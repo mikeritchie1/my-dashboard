@@ -3,30 +3,6 @@
   "dates": {},
   "items": [
     {
-      "title": "Top Gun",
-      "url": "https://www.themoviedb.org/movie/744",
-      "image": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
-      "release_date": "2026-05-15"
-    },
-    {
-      "title": "Obsession",
-      "url": "https://www.themoviedb.org/movie/1339713",
-      "image": "https://image.tmdb.org/t/p/w342/40I66L7QKguTFDPvcLcdiTbAD7I.jpg",
-      "release_date": "2026-05-15"
-    },
-    {
-      "title": "The Metropolitan Opera: Eugene Onegin",
-      "url": "https://www.themoviedb.org/movie/1479651",
-      "image": "https://image.tmdb.org/t/p/w342/zvfz5Dds1LFtHv76XcSnYWjyoes.jpg",
-      "release_date": "2026-05-15"
-    },
-    {
-      "title": "Pati Patni Aur Woh Do",
-      "url": "https://www.themoviedb.org/movie/1320660",
-      "image": "https://image.tmdb.org/t/p/w342/x0RUPvba4JlCCkyyEZGlQFIFVuF.jpg",
-      "release_date": "2026-05-15"
-    },
-    {
       "title": "Passenger",
       "url": "https://www.themoviedb.org/movie/1368314",
       "image": "https://image.tmdb.org/t/p/w342/svrAzMTif4OmIjGJzC0W92d5O1o.jpg",
@@ -71,7 +47,7 @@
     {
       "title": "Masters of the Universe",
       "url": "https://www.themoviedb.org/movie/454639",
-      "image": "https://image.tmdb.org/t/p/w342/nm2ianYVp7OXElUZVeeAbNTqBLr.jpg",
+      "image": "https://image.tmdb.org/t/p/w342/1iaoDCWAM5C1kvlmIiCrLUE16uM.jpg",
       "release_date": "2026-06-05"
     },
     {
@@ -103,6 +79,12 @@
       "url": "https://www.themoviedb.org/movie/1454209",
       "image": "https://image.tmdb.org/t/p/w342/3IBpj6oU9BFcUGesv1QH2LvEb01.jpg",
       "release_date": "2026-07-24"
+    },
+    {
+      "title": "The End of Oak Street",
+      "url": "https://www.themoviedb.org/movie/1101383",
+      "image": "https://image.tmdb.org/t/p/w342/u9jha7bkttIrc5RO1TWeSn7QVyI.jpg",
+      "release_date": "2026-08-14"
     }
   ]
 }

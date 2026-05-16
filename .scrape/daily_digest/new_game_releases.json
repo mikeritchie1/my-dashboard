@@ -10,6 +10,38 @@
       "platforms": ""
     },
     {
+      "title": "ClosR",
+      "url": "https://rawg.io/games/closr",
+      "image": "https://media.rawg.io/media/screenshots/6e0/6e029ab098163bdf5e7bb5ed88b3b1e2.jpg",
+      "release_date": "2026-05-13",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Celsius Strays Demo",
+      "url": "https://rawg.io/games/celsius-strays-demo",
+      "image": "https://media.rawg.io/media/screenshots/0a6/0a6899a60176da4ec4abe04d8156f54e.jpg",
+      "release_date": "2026-05-13",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "\u017divot Nen\u00ed Kr\u00e1sn\u00fd: Posledn\u00ed Exekuce",
+      "url": "https://rawg.io/games/zivot-neni-krasny-posledni-exekuce",
+      "image": "https://media.rawg.io/media/screenshots/aa7/aa7becd47613567740e4a76cf25217bd.jpg",
+      "release_date": "2026-05-13",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "RoadOut",
+      "url": "https://rawg.io/games/roadout",
+      "image": "https://media.rawg.io/media/screenshots/58c/58cb75a2be085182d018c05c3d852bc5.jpg",
+      "release_date": "2026-05-13",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Sushi Duel",
       "url": "https://rawg.io/games/sushi-duel",
       "image": "https://media.rawg.io/media/screenshots/2d2/2d2b061e1e992665dfda8dcf22b4c80e.jpg",
@@ -42,12 +74,28 @@
       "platforms": "PC"
     },
     {
+      "title": "Tennis Manager 26",
+      "url": "https://rawg.io/games/tennis-manager-26",
+      "image": "https://media.rawg.io/media/screenshots/160/16050902d2a7a76979250a0131a47535.jpg",
+      "release_date": "2026-05-11",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Battlestar Galactica: Scattered Hopes",
       "url": "https://rawg.io/games/battlestar-galactica-scattered-hopes",
       "image": "https://media.rawg.io/media/screenshots/84d/84d2168586f372e40fe68f17e1a70c5b.jpg",
       "release_date": "2026-05-10",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "The Golden Caravan Demo",
+      "url": "https://rawg.io/games/the-golden-caravan-demo",
+      "image": "https://media.rawg.io/media/screenshots/4cc/4cc75c8d312a673ff4f430dd1b2bff52.jpg",
+      "release_date": "2026-05-10",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
     },
     {
       "title": "Mixtape (2025)",
@@ -210,6 +258,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Magical Blush Demo",
+      "url": "https://rawg.io/games/magical-blush-demo",
+      "image": "https://media.rawg.io/media/screenshots/2fb/2fbc0b1f2fda6a32ed349397d6f0511d.jpg",
+      "release_date": "2026-04-30",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "\u56e2\u6218\u4e0d\u80fd\u8f93",
       "url": "https://rawg.io/games/tuan-zhan-bu-neng-shu",
       "image": "https://media.rawg.io/media/screenshots/8e4/8e4a488f57390a1bc12e8c435e0bcae5.jpg",
@@ -298,12 +354,12 @@
       "platforms": "PC"
     },
     {
-      "title": "Aphelion",
-      "url": "https://rawg.io/games/aphelion-2",
-      "image": "https://media.rawg.io/media/games/ecc/ecc6e59e4bc50409d844fdc1607e86a9.jpg",
+      "title": "Stellaris: Season 10",
+      "url": "https://rawg.io/games/stellaris-season-10",
+      "image": "https://media.rawg.io/media/screenshots/4f5/4f508ec188635655d501c57cf195be78.jpg",
       "release_date": "2026-04-28",
       "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+      "platforms": "PC, macOS, Linux"
     },
     {
       "title": "Aphelion (2026)",
@@ -344,62 +400,6 @@
       "release_date": "2026-04-27",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Legionbound",
-      "url": "https://rawg.io/games/legionbound",
-      "image": "https://media.rawg.io/media/screenshots/7e9/7e922e1052785f680bfa08e38891b91f.jpg",
-      "release_date": "2026-04-27",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Aphelion (2025)",
-      "url": "https://rawg.io/games/aphelion-2025",
-      "image": "https://media.rawg.io/media/screenshots/2d8/2d8f3476543b2554f2e5e3884ce83886.jpg",
-      "release_date": "2026-04-26",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox One"
-    },
-    {
-      "title": "Mask City: Chapter Zero",
-      "url": "https://rawg.io/games/mask-city-chapter-zero",
-      "image": "https://media.rawg.io/media/screenshots/d38/d385b07de02833e0a3cb4e519e2c7cdb.jpg",
-      "release_date": "2026-04-26",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
-      "title": "Ninjamboree",
-      "url": "https://rawg.io/games/ninjamboree",
-      "image": "https://media.rawg.io/media/screenshots/ee5/ee592fa04eae6f932e96e3708fa3b3f1.jpg",
-      "release_date": "2026-04-26",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Astro Burn",
-      "url": "https://rawg.io/games/astro-burn",
-      "image": "https://media.rawg.io/media/screenshots/118/118c18116dec86ef3b0673eb2ba7bdc7.jpg",
-      "release_date": "2026-04-26",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "The Window 8:Millennium",
-      "url": "https://rawg.io/games/the-window-8millennium",
-      "image": "https://media.rawg.io/media/screenshots/654/654789b64919453f15e9a4d1dd372c67.jpg",
-      "release_date": "2026-04-26",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Iron Graves",
-      "url": "https://rawg.io/games/iron-graves",
-      "image": "https://media.rawg.io/media/screenshots/1a6/1a600774b1db1cd7add803f6da0f5faa.jpg",
-      "release_date": "2026-04-26",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
     }
   ],
   "coming_soon": [
