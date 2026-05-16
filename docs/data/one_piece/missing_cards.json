@@ -155,20 +155,6 @@
       "scraped_at": "2026-05-16T14:16:59Z"
     },
     {
-      "card_number": "ST25-001",
-      "price": 18.0,
-      "title": "Alvida [Starter Deck: Blue Buggy]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/alvida-starter-deck-blue-buggy/p/676701052",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634305_1024x1024_2x_unCV3nQrq.jpg",
-      "scraped_at": "2026-05-14T08:46:39Z"
-    },
-    {
       "card_number": "EB04-048",
       "price": 20.0,
       "title": "Rob Lucci EB04-048",
@@ -223,20 +209,6 @@
       "url": "https://www.toadtradertcg.com/product-page/thatch-st15-004",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP05-082",
-      "price": 30.0,
-      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/676702684",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
-      "scraped_at": "2026-05-14T08:30:14Z"
     },
     {
       "card_number": "OP15-008",
@@ -561,6 +533,20 @@
       "scraped_at": "2026-05-16T14:16:59Z"
     },
     {
+      "card_number": "OP10-071",
+      "price": 64.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R64.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
+      "scraped_at": "2026-05-16T14:16:59Z"
+    },
+    {
       "card_number": "OP15-032",
       "price": 65.0,
       "title": "Brook OP15-032",
@@ -573,20 +559,6 @@
       "url": "https://www.toadtradertcg.com/product-page/brook-op15-032",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": 66.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R66.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
-      "scraped_at": "2026-05-16T14:16:59Z"
     },
     {
       "card_number": "ST10-010",
@@ -785,20 +757,6 @@
       "scraped_at": "2026-05-14T08:04:04Z"
     },
     {
-      "card_number": "ST27-003",
-      "price": 90.0,
-      "title": "Kuzan [Starter Deck: Black Marshall.D.Teach]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/676699851",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/images__1__Jql6WXB4A.jpeg",
-      "scraped_at": "2026-05-14T14:41:56Z"
-    },
-    {
       "card_number": "ST10-010",
       "price": 95.0,
       "title": "Trafalgar Law ST10-010",
@@ -839,20 +797,6 @@
       "url": "https://www.toadtradertcg.com/product-page/crocodile-op04-060",
       "image_url": "",
       "scraped_at": "2026-05-14T08:04:04Z"
-    },
-    {
-      "card_number": "OP10-005",
-      "price": 100.0,
-      "title": "Sanji [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/sanji-royal-blood/p/676702053",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/617037_1024x1024_2x_OENGoYcHEz.jpg",
-      "scraped_at": "2026-05-14T12:05:37Z"
     },
     {
       "card_number": "ST21-014",
@@ -1206,14 +1150,14 @@
     },
     {
       "card_number": "OP14-091",
-      "price": 346.0,
+      "price": 341.0,
       "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R346.00",
+      "available_variants": "Near Mint Foil R341.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670640.jpg?v=1769205276",
       "scraped_at": "2026-05-16T14:16:59Z"
@@ -1332,14 +1276,14 @@
     },
     {
       "card_number": "OP14-033",
-      "price": 526.0,
+      "price": 521.0,
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R526.00",
+      "available_variants": "Near Mint Foil R521.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
       "scraped_at": "2026-05-16T14:16:59Z"
@@ -1542,14 +1486,14 @@
     },
     {
       "card_number": "OP14-031",
-      "price": 1306.0,
+      "price": 1319.0,
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1306.00",
+      "available_variants": "Near Mint Foil R1319.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "scraped_at": "2026-05-16T14:16:59Z"
