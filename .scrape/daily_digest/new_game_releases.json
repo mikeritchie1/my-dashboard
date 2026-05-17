@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Corsairs - Battle of the Caribbean",
+      "url": "https://rawg.io/games/corsairs-battle-of-the-caribbean",
+      "image": "https://media.rawg.io/media/screenshots/ac0/ac0157a39c43d49bf2662e441f9a1322.jpg",
+      "release_date": "2026-05-17",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Outbound",
       "url": "https://rawg.io/games/outbound",
       "image": "https://media.rawg.io/media/games/851/851cf64d1e55bc8f98e617bc38d7f5f2.jpg",
@@ -34,6 +42,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Black Jacket",
+      "url": "https://rawg.io/games/black-jacket",
+      "image": "https://media.rawg.io/media/screenshots/16b/16b3b24cebc56923449cb2396517adfa.jpg",
+      "release_date": "2026-05-13",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "RoadOut",
       "url": "https://rawg.io/games/roadout",
       "image": "https://media.rawg.io/media/screenshots/58c/58cb75a2be085182d018c05c3d852bc5.jpg",
@@ -56,6 +72,14 @@
       "release_date": "2026-05-12",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Call of the Elder Gods",
+      "url": "https://rawg.io/games/call-of-the-elder-gods",
+      "image": "https://media.rawg.io/media/screenshots/a59/a59693f3a6250d80feda4912aef8e64a.jpg",
+      "release_date": "2026-05-12",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
       "title": "Directive 8020",
@@ -111,7 +135,7 @@
       "image": "https://media.rawg.io/media/games/a57/a571fcbc2b2ef30fb3e13a4272ef3a93.jpeg",
       "release_date": "2026-05-07",
       "rating": "4.5",
-      "platforms": "PC"
+      "platforms": "PC, Xbox Series S/X"
     },
     {
       "title": "Will: Follow the Light",
@@ -376,41 +400,9 @@
       "release_date": "2026-04-28",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Elementallis",
-      "url": "https://rawg.io/games/elementallis-2",
-      "image": "https://media.rawg.io/media/screenshots/c0a/c0a0cc0680ddca9ed649e0cbf225ee70.jpg",
-      "release_date": "2026-04-27",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
-      "title": "The Last Gas Station",
-      "url": "https://rawg.io/games/the-last-gas-station",
-      "image": "https://media.rawg.io/media/games/d89/d8977be708cb6a72662fd2478b326847.jpg",
-      "release_date": "2026-04-27",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "[RANDOM]",
-      "url": "https://rawg.io/games/random-2",
-      "image": "https://media.rawg.io/media/screenshots/e77/e778c73558a9b53bb7a5ddbaccda8361.jpg",
-      "release_date": "2026-04-27",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Corsairs - Battle of the Caribbean",
-      "url": "https://rawg.io/games/corsairs-battle-of-the-caribbean",
-      "image": "https://media.rawg.io/media/screenshots/ac0/ac0157a39c43d49bf2662e441f9a1322.jpg",
-      "release_date": "2026-05-17",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
     {
       "title": "Forza Horizon 6",
       "url": "https://rawg.io/games/forza-horizon-6",
