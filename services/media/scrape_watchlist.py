@@ -27,6 +27,7 @@ OUTPUT_FILE = DATA_DIR / "watchlist.json"
 GAMES_OUTPUT_FILE = DATA_DIR / "gameslist.json"
 MOVIE_DETAILS_CACHE_FILE = DATA_DIR / "watchlist_movie_details.json"
 GAMES_DETAILS_CACHE_FILE = DATA_DIR / "games_details.json"
+TMDB_MANUAL_OVERRIDES_FILE = DATA_DIR / "tmdb_manual_overrides.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
 TMDB_API_BASE_URL = env_get("SCRAPE_TMDB_API_BASE_URL", "https://api.themoviedb.org/3")
@@ -384,6 +385,76 @@ def metadata_query_titles(title: str, media_type: str) -> list[str]:
           seen.add(normalized.lower())
           deduped.append(normalized)
     return deduped
+
+
+def parse_tmdb_url(tmdb_url: str) -> tuple[str, int] | None:
+    match = re.search(r"/(movie|tv)/(\d+)", str(tmdb_url or "").strip(), flags=re.IGNORECASE)
+    if not match:
+        return None
+    kind = match.group(1).lower()
+    tmdb_id = int(match.group(2))
+    return kind, tmdb_id
+
+
+def override_match_types(media_type: str) -> list[str]:
+    normalized = str(media_type or "").strip().lower()
+    if normalized == "movie":
+        return ["movie"]
+    if normalized == "series":
+        return ["series"]
+    if normalized == "anime":
+        return ["anime_movie", "anime_series", "anime"]
+    if normalized in {"anime_movie", "anime_series"}:
+        return [normalized]
+    return []
+
+
+def load_tmdb_manual_overrides() -> dict[str, dict]:
+    if not TMDB_MANUAL_OVERRIDES_FILE.exists():
+        return {}
+    try:
+        payload = json.loads(TMDB_MANUAL_OVERRIDES_FILE.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+    if isinstance(payload, dict):
+        entries = payload.get("entries", [])
+    elif isinstance(payload, list):
+        entries = payload
+    else:
+        entries = []
+
+    if not isinstance(entries, list):
+        return {}
+
+    overrides: dict[str, dict] = {}
+    for raw in entries:
+        if not isinstance(raw, dict):
+            continue
+        title = str(raw.get("title") or "").strip()
+        media_type = str(raw.get("media_type") or "").strip().lower()
+        tmdb_url = str(raw.get("tmdb_url") or "").strip()
+        if not title or not media_type or not tmdb_url:
+            continue
+
+        parsed = parse_tmdb_url(tmdb_url)
+        if not parsed:
+            continue
+        tmdb_kind, tmdb_id = parsed
+        match_types = override_match_types(media_type)
+        if not match_types:
+            continue
+
+        for match_type in match_types:
+            key = detail_key(match_type, title)
+            overrides[key] = {
+                "title": title,
+                "media_type": match_type,
+                "tmdb_id": tmdb_id,
+                "tmdb_kind": tmdb_kind,
+                "tmdb_url": tmdb_url,
+            }
+    return overrides
 
 
 def parse_watchlist(flat_blocks: list[tuple[dict, int]]) -> dict:
@@ -1081,13 +1152,133 @@ def fetch_title_detail(title: str, media_type: str, tmdb_token: str) -> dict:
     return result
 
 
+def fetch_title_detail_by_tmdb_id(title: str, media_type: str, tmdb_token: str, tmdb_id: int, tmdb_kind: str = "") -> dict:
+    result = {"title": title, "media_type": media_type, "tmdb_id": tmdb_id}
+    tmdb_kind_normalized = str(tmdb_kind or "").strip().lower()
+    if tmdb_kind_normalized == "tv":
+        is_tv = True
+    elif tmdb_kind_normalized == "movie":
+        is_tv = False
+    else:
+        is_tv = media_type in {"series", "anime", "anime_series"}
+
+    detail_path = "tv" if is_tv else "movie"
+    site_base = TMDB_SITE_TV_BASE if is_tv else TMDB_SITE_MOVIE_BASE
+    first: dict = {}
+    try:
+        first = tmdb_request(
+            f"{detail_path}/{tmdb_id}",
+            tmdb_token,
+            {
+                "language": "en-US",
+            },
+        )
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
+        first = {}
+
+    try:
+        details_payload = tmdb_request(
+            f"{detail_path}/{tmdb_id}",
+            tmdb_token,
+            {
+                "language": "en-US",
+                "append_to_response": "credits,videos",
+            },
+        )
+    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError):
+        details_payload = first
+
+    chosen = details_payload if isinstance(details_payload, dict) and details_payload else first
+    if not isinstance(chosen, dict) or not chosen:
+        result["tmdb_url"] = f"{site_base}/{tmdb_id}"
+        return result
+
+    poster_path = str(chosen.get("poster_path") or "").strip()
+    vote_average = chosen.get("vote_average")
+    release_date = str(chosen.get("release_date") or chosen.get("first_air_date") or "").strip()
+    overview = str(chosen.get("overview") or "").strip()
+    runtime = chosen.get("runtime")
+    number_of_seasons = chosen.get("number_of_seasons")
+    if is_tv and not isinstance(runtime, (int, float)):
+        runtimes = details_payload.get("episode_run_time", []) if isinstance(details_payload, dict) else []
+        if isinstance(runtimes, list) and runtimes:
+            runtime = runtimes[0]
+    if is_tv and not isinstance(number_of_seasons, (int, float)):
+        number_of_seasons = details_payload.get("number_of_seasons") if isinstance(details_payload, dict) else None
+
+    credits = details_payload.get("credits", {}) if isinstance(details_payload, dict) else {}
+    cast = credits.get("cast", []) if isinstance(credits, dict) else []
+    crew = credits.get("crew", []) if isinstance(credits, dict) else []
+    videos = details_payload.get("videos", {}) if isinstance(details_payload, dict) else {}
+    video_results = videos.get("results", []) if isinstance(videos, dict) else []
+    genres = details_payload.get("genres", []) if isinstance(details_payload, dict) else []
+
+    if is_tv:
+        directors = [
+            str(person.get("name") or "").strip()
+            for person in details_payload.get("created_by", [])
+            if str(person.get("name") or "").strip()
+        ] if isinstance(details_payload, dict) else []
+    else:
+        directors = [
+            str(person.get("name") or "").strip()
+            for person in crew
+            if str(person.get("job") or "").strip().lower() == "director" and str(person.get("name") or "").strip()
+        ]
+    actors = [
+        str(person.get("name") or "").strip()
+        for person in cast[:8]
+        if str(person.get("name") or "").strip()
+    ]
+    trailer_url = ""
+    for video in video_results:
+        if str(video.get("site") or "").strip().lower() != "youtube":
+            continue
+        video_type = str(video.get("type") or "").strip().lower()
+        if video_type not in {"trailer", "teaser"}:
+            continue
+        key = str(video.get("key") or "").strip()
+        if key:
+            trailer_url = f"{YOUTUBE_WATCH_BASE_URL}{key}"
+            break
+
+    genre_names = [
+        str(genre.get("name") or "").strip()
+        for genre in genres
+        if str(genre.get("name") or "").strip()
+    ]
+
+    if isinstance(vote_average, (int, float)):
+        result["rating"] = round(float(vote_average), 1)
+    else:
+        result["rating"] = None
+    result["poster_url"] = f"{TMDB_IMAGE_BASE}{poster_path}" if poster_path else ""
+    result["release_date"] = release_date
+    result["overview"] = overview
+    result["description"] = overview
+    result["runtime_minutes"] = int(runtime) if isinstance(runtime, (int, float)) else None
+    result["number_of_seasons"] = int(number_of_seasons) if isinstance(number_of_seasons, (int, float)) else None
+    result["directors"] = list(dict.fromkeys(directors))
+    result["actors"] = actors
+    result["trailer_url"] = trailer_url
+    result["genres"] = genre_names
+    result["tmdb_url"] = f"{site_base}/{tmdb_id}"
+    return result
+
+
 def merge_movie_details(existing: dict, fetched: dict) -> dict:
     merged = dict(existing)
     merged.setdefault("title", str(existing.get("title") or fetched.get("title") or "").strip())
     for key in DETAIL_FIELDS:
-        if key in merged:
+        fetched_value = fetched.get(key)
+        existing_value = merged.get(key)
+        if fetched_value not in (None, "", []):
+            merged[key] = fetched_value
             continue
-        merged[key] = fetched.get(key)
+        if key not in merged:
+            merged[key] = fetched_value
+        elif existing_value in ("", []):
+            merged[key] = fetched_value
     return merged
 
 
@@ -1111,7 +1302,19 @@ def normalize_cached_detail(entry: dict, media_type: str, title: str) -> dict:
 def movie_detail_needs_fetch(entry: dict) -> bool:
     if not isinstance(entry, dict):
         return True
-    return any(field not in entry for field in DETAIL_FIELDS)
+    if any(field not in entry for field in DETAIL_FIELDS):
+        return True
+    # Treat entries without a resolved TMDB id as incomplete.
+    if not isinstance(entry.get("tmdb_id"), int):
+        return True
+    # Keep refetching when key descriptive fields are still empty.
+    if not str(entry.get("description") or entry.get("overview") or "").strip():
+        return True
+    if not str(entry.get("poster_url") or "").strip():
+        return True
+    if not str(entry.get("tmdb_url") or "").strip():
+        return True
+    return False
 
 
 def fetch_game_detail(title: str, media_type: str) -> dict:
@@ -1239,6 +1442,7 @@ def game_detail_needs_fetch(entry: dict) -> bool:
 
 def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | None = None, hard: bool = False) -> dict:
     tmdb_token = secret("TMDB_BEARER_TOKEN")
+    manual_overrides = load_tmdb_manual_overrides()
     movie_titles = extract_titles(payload, "movie")
     series_titles = extract_titles(payload, "series")
     anime_movie_titles = extract_titles(payload, "anime_movie")
@@ -1289,13 +1493,28 @@ def enrich_payload_with_movie_details(payload: dict, selected_types: set[str] | 
                 }
                 existing = normalize_cached_detail(existing, media_type, title)
                 needs_fetch = hard or movie_detail_needs_fetch(existing)
-                if needs_fetch and tmdb_token:
-                    fetched = fetch_title_detail(title, media_type, tmdb_token)
+                override = manual_overrides.get(key)
+                override_forces_fetch = False
+                if override:
+                    override_tmdb_id = int(override.get("tmdb_id") or 0)
+                    existing_tmdb_id = existing.get("tmdb_id")
+                    override_forces_fetch = not isinstance(existing_tmdb_id, int) or existing_tmdb_id != override_tmdb_id
+                if (needs_fetch or override_forces_fetch) and tmdb_token:
+                    if override:
+                        fetched = fetch_title_detail_by_tmdb_id(
+                            title,
+                            media_type,
+                            tmdb_token,
+                            int(override.get("tmdb_id") or 0),
+                            str(override.get("tmdb_kind") or ""),
+                        )
+                        source = "override"
+                    else:
+                        fetched = fetch_title_detail(title, media_type, tmdb_token)
+                        source = "fetched"
                     cache[key] = merge_movie_details(existing, fetched)
                 else:
                     cache[key] = existing
-                source = "fetched"
-                if not needs_fetch:
                     source = "cached"
             processed += 1
             persist("running", title)

@@ -93,6 +93,24 @@ def money(value: str) -> str:
         return value or ""
 
 
+def numeric_price(row: dict[str, str]) -> float | None:
+    try:
+        return float(row.get("price", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def filter_rows_by_max_price(rows: list[dict[str, str]], max_price: float | None) -> list[dict[str, str]]:
+    if max_price is None:
+        return rows
+    kept: list[dict[str, str]] = []
+    for row in rows:
+        price = numeric_price(row)
+        if price is None or price <= max_price:
+            kept.append(row)
+    return kept
+
+
 def card_line(row: dict[str, str]) -> str:
     pieces = [
         row.get("card_number", ""),
@@ -185,11 +203,23 @@ def main() -> int:
                         help="Snapshot namespace, e.g. 'hourly' to keep separate baselines.")
     parser.add_argument("--window-label", default=os.environ.get("CARD_NOTIFY_WINDOW_LABEL", "since last email"),
                         help="Human-friendly label for the window, e.g. 'in the last hour'.")
+    parser.add_argument(
+        "--max-price",
+        type=float,
+        default=None,
+        help="Only include listings with price <= max-price. Default: auto-apply R50 for hourly scope only.",
+    )
     args = parser.parse_args()
 
     store = normalized_store(args.store)
+    snapshot_scope = normalized_store(args.snapshot_scope)
     window_label = args.window_label.strip() or "since last email"
     snapshot = previous_snapshot_path(store, args.snapshot_scope)
+
+    # Reduce hourly alert spam by default; keep daily/non-hourly unbounded.
+    max_price = args.max_price
+    if max_price is None and snapshot_scope == "hourly":
+        max_price = 50.0
 
     if not args.no_scrape:
         run_scraper(store)
@@ -207,8 +237,10 @@ def main() -> int:
 
     previous = read_rows(snapshot, store)
     additions, changes = diff_rows(today, previous)
+    additions = filter_rows_by_max_price(additions, max_price)
+    changes = filter_rows_by_max_price(changes, max_price)
 
-    include_all = today if args.mode == "all" else None
+    include_all = filter_rows_by_max_price(today, max_price) if args.mode == "all" else None
     body = build_email_body(store, additions, changes, window_label, include_all)
     write_latest_report(body, args.snapshot_scope)
 

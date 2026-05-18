@@ -140,6 +140,12 @@ Individual source script:
 python services/media/scrape_watchlist.py --scope both --type all --hard
 ```
 
+Manual TMDB overrides (for missing/wrong matches):
+
+- File: `docs/data/media/tmdb_manual_overrides.json`
+- Add entries with `title`, `media_type` (`movie`, `series`, or `anime`), and `tmdb_url`.
+- During scraping, matching titles use this TMDB URL/id first, then fall back to normal search if no override exists.
+
 Media config:
 
 - `data/media/config.json`
