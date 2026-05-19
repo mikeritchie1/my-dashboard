@@ -3210,6 +3210,10 @@ td.card-number {
 
 .watchlist-media-button,
 .watchlist-category-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
   min-height: 34px;
   padding: 6px 12px;
   color: #344054;
@@ -3218,6 +3222,7 @@ td.card-number {
   border-radius: 8px;
   font-size: 12px;
   font-weight: 800;
+  text-decoration: none;
   cursor: pointer;
 }
 
