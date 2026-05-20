@@ -5,6 +5,8 @@ import os
 import argparse
 import urllib.parse
 import urllib.request
+import gzip
+import zlib
 from datetime import date, datetime, timedelta
 from pathlib import Path
 import sys
@@ -90,7 +92,16 @@ def fetch_coming_soon(page: int = 1, region: str = "", language: str = "en-US") 
         headers=headers,
     )
     with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+        raw = response.read()
+        encoding = str(response.headers.get("Content-Encoding") or "").strip().lower()
+        if encoding == "gzip":
+            raw = gzip.decompress(raw)
+        elif encoding == "deflate":
+            raw = zlib.decompress(raw)
+        elif raw[:2] == b"\x1f\x8b":
+            # Some gateways return gzip payloads without the header.
+            raw = gzip.decompress(raw)
+        return json.loads(raw.decode("utf-8"))
 
 
 def movie_url(movie_id: int) -> str:
