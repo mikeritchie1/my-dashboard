@@ -1,4 +1,5 @@
 ﻿const MISSING_CARDS_PATH = "./data/one_piece/missing_cards.json";
+const MISSING_CARD_PRICE_HISTORY_PATH = "./data/one_piece/missing_card_price_history.json";
 const COLLECTION_PATH = "./data/one_piece/collection.json";
 const ONE_PIECE_PRODUCTS_PATH = "./data/one_piece/products.json";
 const RELEASES_PATH = "./data/release_radar/pahe_latest.json";
@@ -115,6 +116,7 @@ const state = {
   collectionShowMissingRarity: false,
   showOnlyNewCards: false,
   missingListingsByCard: {},
+  missingPriceHistory: [],
   onePieceProductType: "boosters",
   onePieceProductIndex: -1,
   specialsPayload: null,
@@ -1308,6 +1310,18 @@ function isAltArt(title) {
   return ALT_ART_RE.test(title || "");
 }
 
+function normalizeArtVariant(value) {
+  return String(value || "").trim().toLowerCase() === "alternate" ? "alternate" : "original";
+}
+
+function listingArtVariant(row) {
+  const explicit = normalizeArtVariant(row?.art_variant);
+  if (explicit === "alternate") {
+    return "alternate";
+  }
+  return isAltArt(String(row?.title || "")) ? "alternate" : "original";
+}
+
 function renderCardGrid(rows) {
   if (!elements.cardsGrid) return;
   if (!rows.length) {
@@ -1319,7 +1333,7 @@ function renderCardGrid(rows) {
   for (let index = 0; index < rows.length; index += 1) {
     const row = rows[index];
     const isNew = isNewListing(row);
-    const altArt = isAltArt(row.title);
+    const altArt = listingArtVariant(row) === "alternate";
     const card = document.createElement("button");
     card.type = "button";
     card.className = "missing-card-block" + (isNew ? " is-new" : "");
@@ -1605,7 +1619,7 @@ function renderReleaseList(container, items, emptyText, indexAttr, options = {})
       const ageDate = item.event_date || item.release_date;
       age = relativeDaysFromDate(ageDate, { allowPast: Boolean(options.allowPastAge) });
     }
-    // ageMode "none" → age stays ""
+    // ageMode "none" ? age stays ""
 
     const dateDisplay = ageMode !== "first_seen"
       ? (String(item.event_date_text || item.movie_date || "").trim() || displayDatePlain(String(item.release_date || "").trim()))
@@ -2450,7 +2464,7 @@ function setLastScrapedText(value) {
 function safeWatchTitle(item) {
   const sanitize = (value) =>
     String(value || "")
-      .replace(/[🔥👍😐🤔👎💀]/g, "")
+      .replace(/[????????????]/g, "")
       .replace(/\s+/g, " ")
       .trim();
   if (typeof item === "string") {
@@ -2538,22 +2552,22 @@ function safeWatchOpinion(item) {
     return configured.defaultText;
   }
   const title = String(item.title || "");
-  if (title.includes("🔥")) {
+  if (title.includes("??")) {
     return "Loved";
   }
-  if (title.includes("👍")) {
+  if (title.includes("??")) {
     return "Liked";
   }
-  if (title.includes("🤔")) {
+  if (title.includes("??")) {
     return "Mixed";
   }
-  if (title.includes("😐")) {
+  if (title.includes("??")) {
     return "Mixed";
   }
-  if (title.includes("👎")) {
+  if (title.includes("??")) {
     return "Disliked";
   }
-  if (title.includes("💀")) {
+  if (title.includes("??")) {
     return "Hated";
   }
   if (item.loved === true) {
@@ -6613,17 +6627,20 @@ async function loadBandsintownEvents() {
 
 async function loadOnePieceCards() {
   try {
-    const [missingResponse, collectionResponse] = await Promise.all([
+    const [missingResponse, collectionResponse, historyResponse] = await Promise.all([
       fetchFresh(MISSING_CARDS_PATH),
       fetchFresh(COLLECTION_PATH),
+      fetchFresh(MISSING_CARD_PRICE_HISTORY_PATH),
     ]);
     if (!missingResponse.ok) {
       throw new Error(`Could not load ${MISSING_CARDS_PATH}`);
     }
     const payload = await missingResponse.json();
     const collectionPayload = collectionResponse.ok ? await collectionResponse.json() : { sets: {} };
+    const historyPayload = historyResponse.ok ? await historyResponse.json() : { observations: [] };
     const cardLookup = buildCollectionCardLookup(collectionPayload.sets || {});
     state.collectionCardLookup = cardLookup;
+    state.missingPriceHistory = Array.isArray(historyPayload?.observations) ? historyPayload.observations : [];
 
     state.rows = (payload.listings || []).map((raw) => {
       const row = { ...raw };
@@ -6638,6 +6655,7 @@ async function loadOnePieceCards() {
       if (!String(row.card_name || "").trim() && String(meta.name || "").trim()) {
         row.card_name = meta.name;
       }
+      row.art_variant = listingArtVariant(row);
       return row;
     });
     const byCard = {};
@@ -7571,6 +7589,55 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
+function cardPriceHistory(cardNumber, artVariant) {
+  const key = String(cardNumber || "").trim().toUpperCase();
+  const variant = normalizeArtVariant(artVariant);
+  return (Array.isArray(state.missingPriceHistory) ? state.missingPriceHistory : [])
+    .filter((entry) => {
+      if (!entry || typeof entry !== "object") {
+        return false;
+      }
+      const sameCard = String(entry.card_number || "").trim().toUpperCase() === key;
+      const sameVariant = normalizeArtVariant(entry.art_variant) === variant;
+      return sameCard && sameVariant;
+    })
+    .map((entry) => ({
+      card_number: String(entry.card_number || "").trim().toUpperCase(),
+      art_variant: normalizeArtVariant(entry.art_variant),
+      price: Number(entry.price || 0),
+      store: String(entry.store || "").trim(),
+      url: String(entry.url || "").trim(),
+      title: String(entry.title || "").trim(),
+      observed_on: String(entry.observed_on || "").trim(),
+      captured_at: String(entry.captured_at || "").trim(),
+    }))
+    .filter((entry) => Number.isFinite(entry.price) && entry.price > 0)
+    .sort((a, b) => {
+      const dateA = String(a.observed_on || a.captured_at || "");
+      const dateB = String(b.observed_on || b.captured_at || "");
+      return dateA < dateB ? 1 : (dateA > dateB ? -1 : 0);
+    });
+}
+
+function listingIsCheapestEver(listing, historyRows) {
+  const store = String(listing?.store || "").trim();
+  const url = String(listing?.url || "").trim();
+  const currentPrice = Number(listing?.price || 0);
+  if (!store || !url || !Number.isFinite(currentPrice) || currentPrice <= 0) {
+    return false;
+  }
+  const scoped = historyRows.filter((entry) => entry.store === store && entry.url === url);
+  if (scoped.length < 2) {
+    return false;
+  }
+  const previousDifferent = scoped.some((entry) => Math.abs(entry.price - currentPrice) > 0.001);
+  if (!previousDifferent) {
+    return false;
+  }
+  const minEver = Math.min(...scoped.map((entry) => Number(entry.price || 0)).filter((value) => Number.isFinite(value) && value > 0));
+  return Number.isFinite(minEver) && currentPrice <= (minEver + 0.001);
+}
+
 if (elements.collectionGrid) {
   elements.collectionGrid.addEventListener("click", (event) => {
     const btn = event.target.closest("[data-card-number]");
@@ -7592,6 +7659,7 @@ if (elements.collectionGrid) {
     const artChoices = defaultCardArtChoices(baseImageUrl, alternateArtUrls);
     const selectedUrl = selectedCardArtUrl(cardNumber, baseImageUrl, alternateArtUrls);
     const imgUrl = selectedUrl || baseImageUrl;
+    const selectedArtVariant = selectedUrl && selectedUrl !== baseImageUrl ? "alternate" : "original";
     const artLabelByUrl = Object.fromEntries(
       alternateArts.map((item) => [item.image_url, item])
     );
@@ -7605,7 +7673,9 @@ if (elements.collectionGrid) {
     const family = String(row?.family || "").trim();
     const description = String(row?.description || "").trim();
     const name = String(row?.name || "").trim();
-    const listings = state.missingListingsByCard[cardNumber] || [];
+    const listings = (state.missingListingsByCard[cardNumber] || [])
+      .filter((item) => listingArtVariant(item) === selectedArtVariant);
+    const priceHistoryRows = cardPriceHistory(cardNumber, selectedArtVariant);
     const listingsHtml = listings.length
       ? `<div class="watchlist-detail-links">${listings
           .slice()
@@ -7614,10 +7684,29 @@ if (elements.collectionGrid) {
             const store = String(item.store || "").trim() || "Store";
             const price = money(item.price || 0);
             const url = String(item.url || "").trim();
-            return `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(`${store} · ${price}`)}</a>`;
+            const cheapestBadge = listingIsCheapestEver(item, priceHistoryRows)
+              ? " • Cheapest ever"
+              : "";
+            return `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(`${store} · ${price}${cheapestBadge}`)}</a>`;
           })
           .join("")}</div>`
       : "";
+    const priceHistoryHtml = priceHistoryRows.length
+      ? `<p class="watchlist-detail-meta">Price History (${escapeHtml(selectedArtVariant === "alternate" ? "Alt Art" : "Original")}):</p>
+         <div class="watchlist-detail-links">${priceHistoryRows
+           .slice(0, 30)
+           .map((entry) => {
+             const when = String(entry.observed_on || entry.captured_at || "").trim();
+             const store = String(entry.store || "").trim() || "Store";
+             const price = money(entry.price || 0);
+             const label = `${when} · ${store} · ${price}`;
+             const url = String(entry.url || "").trim();
+             return url
+               ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">${escapeHtml(label)}</a>`
+               : `<span class="watchlist-detail-meta">${escapeHtml(label)}</span>`;
+           })
+           .join("")}</div>`
+      : `<p class="watchlist-detail-meta">Price History (${escapeHtml(selectedArtVariant === "alternate" ? "Alt Art" : "Original")}): none yet.</p>`;
     const alternateArtsHtml = artChoices.length
       ? `<div class="watchlist-detail-alt-arts">
           <p class="watchlist-detail-meta">Art Choices (${artChoices.length})</p>
@@ -7649,10 +7738,11 @@ if (elements.collectionGrid) {
           ${power ? `<p class="watchlist-detail-meta">${escapeHtml(power)} Power</p>` : ""}
           ${family ? `<p class="watchlist-detail-meta">${escapeHtml(family)}</p>` : ""}
           ${description ? `<p class="watchlist-detail-meta">${escapeHtml(description)}</p>` : ""}
-          <p class="watchlist-detail-meta">${isOwned ? "✓ In your collection" : "✗ Not owned"}</p>
+          <p class="watchlist-detail-meta">${isOwned ? "? In your collection" : "? Not owned"}</p>
           ${alternateArtsHtml}
           ${listings.length ? `<p class="watchlist-detail-meta">${escapeHtml(`${listings.length} listing(s) available`)}</p>` : ""}
           ${listingsHtml}
+          ${priceHistoryHtml}
         </div>
       </div>
     `);
@@ -7776,3 +7866,4 @@ async function bootstrapDashboard() {
 }
 
 void bootstrapDashboard();
+

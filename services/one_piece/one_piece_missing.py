@@ -381,10 +381,12 @@ def sorted_matches(matches: list[dict[str, object]]) -> list[dict[str, object]]:
 _LISTING_FIELDS = [
     "card_number", "price", "title", "rarity", "store",
     "set_name", "condition", "stock", "available_variants", "url", "image_url",
+    "art_variant",
     "scraped_at",
 ]
 
 COMBINED_JSON = ONE_PIECE_DATA_DIR / "missing_cards.json"
+PRICE_HISTORY_JSON = ONE_PIECE_DATA_DIR / "missing_card_price_history.json"
 COLLECTION_JSON = ONE_PIECE_DATA_DIR / "collection.json"
 
 _IMAGE_MATCH_CACHE_RUNTIME: dict[str, dict[str, str]] | None = None
@@ -410,8 +412,27 @@ def _save_json_dict(path: Path, payload: dict) -> None:
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
+ALT_ART_RE = re.compile(r"\b(alternate\s+art|alternate|parallel)\b", re.IGNORECASE)
+
+
+def _detect_art_variant(listing: dict[str, object]) -> str:
+    current = str(listing.get("art_variant") or "").strip().lower()
+    if current in {"original", "alternate"}:
+        return current
+    haystack = " ".join(
+        [
+            str(listing.get("title") or ""),
+            str(listing.get("rarity") or ""),
+            str(listing.get("available_variants") or ""),
+        ]
+    )
+    return "alternate" if ALT_ART_RE.search(haystack) else "original"
+
+
 def _listing_dict(match: dict[str, object]) -> dict[str, object]:
-    return {field: match.get(field, "") for field in _LISTING_FIELDS}
+    row = {field: match.get(field, "") for field in _LISTING_FIELDS}
+    row["art_variant"] = _detect_art_variant(row)
+    return row
 
 
 def _listing_key(listing: dict[str, object]) -> str:
@@ -432,9 +453,72 @@ def _apply_scraped_at(
 
 def _write_json(listings: list[dict[str, object]]) -> None:
     ONE_PIECE_DATA_DIR.mkdir(parents=True, exist_ok=True)
-    payload = {"listings": [_listing_dict(m) for m in listings]}
+    normalized = [_listing_dict(m) for m in listings]
+    payload = {"listings": normalized}
     COMBINED_JSON.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    _update_price_history(normalized)
     print(f"Wrote missing_cards.json ({len(listings)} listings)", flush=True)
+
+
+def _history_key(entry: dict[str, object]) -> str:
+    return "|".join(
+        [
+            str(entry.get("card_number") or "").strip().upper(),
+            str(entry.get("art_variant") or "original").strip().lower(),
+            str(entry.get("store") or "").strip(),
+            str(entry.get("url") or "").strip(),
+            f"{float(entry.get('price') or 0):.2f}",
+            str(entry.get("observed_on") or "").strip(),
+        ]
+    )
+
+
+def _update_price_history(listings: list[dict[str, object]]) -> None:
+    payload = _load_json_dict(PRICE_HISTORY_JSON)
+    history = payload.get("observations", []) if isinstance(payload, dict) else []
+    if not isinstance(history, list):
+        history = []
+    seen = {_history_key(row) for row in history if isinstance(row, dict)}
+
+    now_iso = _now_iso()
+    observed_on = now_iso.split("T", 1)[0]
+    appended = 0
+    for listing in listings:
+        if not isinstance(listing, dict):
+            continue
+        card_number = str(listing.get("card_number") or "").strip().upper()
+        store = str(listing.get("store") or "").strip()
+        url = str(listing.get("url") or "").strip()
+        if not card_number or not store or not url:
+            continue
+        try:
+            price_value = float(listing.get("price") or 0)
+        except (TypeError, ValueError):
+            continue
+        if price_value <= 0:
+            continue
+        entry = {
+            "card_number": card_number,
+            "art_variant": _detect_art_variant(listing),
+            "price": round(price_value, 2),
+            "store": store,
+            "url": url,
+            "title": str(listing.get("title") or "").strip(),
+            "condition": str(listing.get("condition") or "").strip(),
+            "stock": str(listing.get("stock") or "").strip(),
+            "observed_on": observed_on,
+            "captured_at": now_iso,
+        }
+        key = _history_key(entry)
+        if key in seen:
+            continue
+        seen.add(key)
+        history.append(entry)
+        appended += 1
+
+    output = {"updated_at": now_iso, "observations": history}
+    _save_json_dict(PRICE_HISTORY_JSON, output)
+    print(f"Wrote missing_card_price_history.json ({len(history)} observations, +{appended})", flush=True)
 
 
 def update_store_in_combined_json(store_name: str, matches: list[dict[str, object]]) -> None:
