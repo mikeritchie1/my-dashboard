@@ -458,6 +458,61 @@ function relativeDaysFromDate(value, options = {}) {
   return daysAgo === 1 ? "1 day ago" : `${daysAgo} days ago`;
 }
 
+function dayDifferenceFromToday(value) {
+  const raw = String(value || "").trim();
+  const match = raw.match(/^(\d{4}-\d{2}-\d{2})/);
+  if (!match) {
+    return null;
+  }
+  const target = new Date(`${match[1]}T00:00:00`);
+  if (Number.isNaN(target.getTime())) {
+    return null;
+  }
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return Math.round((target.getTime() - today.getTime()) / MS_PER_DAY);
+}
+
+function releaseTimingLabel(item) {
+  const sourceLabel = String(item?.source || "").trim().toLowerCase();
+  const status = String(item?.status || "").trim().toLowerCase();
+  const statusLabel = String(item?.status_label || "").trim().toLowerCase();
+  const isNowPlaying = status === "now_playing" || status === "now_showing" || statusLabel === "now playing" || statusLabel === "now showing";
+
+  if (sourceLabel === "imax waterfront" && isNowPlaying && !firstShowingDate(item) && !item?.event_date) {
+    return "Today";
+  }
+
+  const diffDays = dayDifferenceFromToday(firstShowingDate(item) || item?.event_date || item?.release_date);
+  if (diffDays === null) {
+    return isNowPlaying ? "Today" : "";
+  }
+  if (diffDays > 0) {
+    return diffDays === 1 ? "1 day away" : `${diffDays} days away`;
+  }
+  if (diffDays === 0) {
+    return "Today";
+  }
+  return isNowPlaying ? "Now playing" : "";
+}
+
+function releaseStatusInMeta(item) {
+  const sourceLabel = String(item?.source || "").trim().toLowerCase();
+  const status = String(item?.status || "").trim().toLowerCase();
+  const statusLabel = String(item?.status_label || "").trim().toLowerCase();
+  if (
+    sourceLabel === "labia theatre"
+    || sourceLabel === "imax waterfront"
+    || status === "now_playing"
+    || status === "now_showing"
+    || statusLabel === "now playing"
+    || statusLabel === "now showing"
+  ) {
+    return "";
+  }
+  return String(item?.status_label || item?.venue || "").trim();
+}
+
 function firstShowingDate(item) {
   const showings = Array.isArray(item?.showings) ? item.showings : [];
   for (const showing of showings) {
@@ -1536,10 +1591,11 @@ function renderPosters(container, items, emptyText, options = {}) {
     title.className = "poster-title";
     const releaseDate = displayDate(item.release_date);
     const eventDateText = String(item.event_date_text || "").trim();
+    const compactShowtimeText = compactReleaseShowtimeText(item);
     const titleText = String(item.title || "").trim();
     title.textContent = titleText;
     const defaultSubtitleText = String(item.location_label || item.venue || "").trim();
-    const interactiveSubtitleText = eventDateText || releaseDate;
+    const interactiveSubtitleText = compactShowtimeText || eventDateText || releaseDate;
     const subtitleText = interactiveRelease ? interactiveSubtitleText : (defaultSubtitleText || releaseDate);
     const subtitle = document.createElement("span");
     subtitle.className = "poster-subtitle";
@@ -1547,7 +1603,7 @@ function renderPosters(container, items, emptyText, options = {}) {
     const ageDate = String(options.ageDateField || "") === "first_seen_at"
       ? item.first_seen_at
       : firstShowingDate(item) || item.event_date || item.release_date;
-    const ageText = relativeDaysFromDate(ageDate, { allowPast: Boolean(options.showPastAge) });
+    const ageText = releaseTimingLabel(item) || relativeDaysFromDate(ageDate, { allowPast: Boolean(options.showPastAge) });
     const age = document.createElement("span");
     age.className = "poster-age";
     age.textContent = ageText || subtitleText || releaseDate;
@@ -1616,15 +1672,16 @@ function renderReleaseList(container, items, emptyText, indexAttr, options = {})
     if (ageMode === "first_seen") {
       age = relativeDaysFromDate(item.first_seen_at, { allowPast: true });
     } else if (ageMode === "release") {
-      const ageDate = item.event_date || item.release_date;
-      age = relativeDaysFromDate(ageDate, { allowPast: Boolean(options.allowPastAge) });
+      const ageDate = firstShowingDate(item) || item.event_date || item.release_date;
+      age = releaseTimingLabel(item) || relativeDaysFromDate(ageDate, { allowPast: Boolean(options.allowPastAge) });
     }
     // ageMode "none" ? age stays ""
 
     const dateDisplay = ageMode !== "first_seen"
-      ? (String(item.event_date_text || item.movie_date || "").trim() || displayDatePlain(String(item.release_date || "").trim()))
+      ? (compactReleaseShowtimeText(item) || String(item.event_date_text || item.movie_date || "").trim() || displayDatePlain(String(item.release_date || "").trim()))
       : "";
-    const meta = [status, dateDisplay, rating].filter(Boolean).join(" • ");
+    const metaStatus = releaseStatusInMeta(item);
+    const meta = [metaStatus, dateDisplay, rating].filter(Boolean).join(" • ");
     const isNew = isItemNew(item);
 
     btn.innerHTML = `
@@ -1658,6 +1715,14 @@ function parseRatingValue(value) {
   return Number.isFinite(parsed) ? parsed : Number.NaN;
 }
 
+function compactReleaseShowtimeText(item) {
+  const summary = String(item?.showtime_summary || "").trim();
+  if (!summary || summary.includes("\n")) {
+    return "";
+  }
+  return summary;
+}
+
 function parseDateOnly(value) {
   const raw = String(value || "").trim();
   if (!raw) {
@@ -1673,6 +1738,15 @@ function futureDatedItems(items) {
   return items.filter((item) => {
     const parsed = parseDateOnly(item?.release_date);
     return parsed ? parsed > today : true;
+  });
+}
+
+function currentOrFutureDatedItems(items) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  return items.filter((item) => {
+    const parsed = parseDateOnly(item?.release_date);
+    return parsed ? parsed >= today : true;
   });
 }
 
@@ -1718,19 +1792,22 @@ function openReleaseDetail(item) {
   const bookUrl = String(item.book_url || "").trim();
   const status = String(item.status_label || "").trim();
   const format = String(item.format || "").trim();
+  const showtimeSummary = String(item.showtime_summary || "").trim();
   const showtimesByDate = Array.isArray(item.showings_by_date) ? item.showings_by_date : [];
   const showtimes = Array.isArray(item.showings) ? item.showings.filter(Boolean).join(", ") : "";
-  const showtimesByDateHtml = showtimesByDate
-    .map((entry) => {
-      const dateText = displayDatePlain(String(entry?.date || "").trim());
-      const times = Array.isArray(entry?.times) ? entry.times.filter(Boolean).join(", ") : "";
-      if (!dateText || !times) {
-        return "";
-      }
-      return `<p><strong>${escapeHtml(dateText)}:</strong> ${escapeHtml(times)}</p>`;
-    })
-    .filter(Boolean)
-    .join("");
+  const showtimesByDateHtml = showtimeSummary
+    ? showtimeSummary.split(/\n+/).filter(Boolean).map((line) => `<p>${escapeHtml(line)}</p>`).join("")
+    : showtimesByDate
+      .map((entry) => {
+        const dateText = displayDatePlain(String(entry?.date || "").trim());
+        const times = Array.isArray(entry?.times) ? entry.times.filter(Boolean).join(", ") : "";
+        if (!dateText || !times) {
+          return "";
+        }
+        return `<p><strong>${escapeHtml(dateText)}:</strong> ${escapeHtml(times)}</p>`;
+      })
+      .filter(Boolean)
+      .join("");
   const source = String(item.source || "").trim();
   const venue = String(item.venue || item.movie_venue || "").trim();
   const day = String(item.day || "").trim();
@@ -1738,7 +1815,7 @@ function openReleaseDetail(item) {
   const movieStarts = String(item.movie_starts || "").trim();
   const cinemaType = String(item.cinema_type || "").trim();
   const ageRestriction = String(item.age_restriction || "").trim();
-  const timingBits = [status, releaseDate, day, runtime, format].filter(Boolean);
+  const timingBits = [releaseStatusInMeta(item), releaseDate, day, runtime, format].filter(Boolean);
   const eventDetails = [
     venue ? `<p><strong>Venue:</strong> ${escapeHtml(venue)}</p>` : "",
     doorsOpen ? `<p><strong>Doors open:</strong> ${escapeHtml(doorsOpen)}</p>` : "",
@@ -6430,7 +6507,7 @@ async function loadImaxReleases() {
     const payload = await response.json();
     const items = Array.isArray(payload.items) ? [...payload.items] : [];
     state.imaxItems = items;
-    renderReleaseList(elements.imaxGrid, items, "No IMAX Waterfront films found.", "imaxIndex", { ageMode: "none" });
+    renderReleaseList(elements.imaxGrid, items, "No IMAX Waterfront films found.", "imaxIndex");
   } catch (error) {
     state.imaxItems = [];
     elements.imaxGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -6448,17 +6525,17 @@ async function loadGalileoReleases() {
     }
     const payload = await response.json();
     const items = Array.isArray(payload.items)
-      ? payload.items.map((item) => {
+      ? sortByReleaseDateAsc(currentOrFutureDatedItems(payload.items.map((item) => {
         const venue = String(item?.venue || "").trim();
         return {
           ...item,
           status_label: venue || "",
           location_label: "",
         };
-      })
+      })))
       : [];
     state.galileoItems = items;
-    renderReleaseList(elements.galileoGrid, items, "No Galileo open-air cinema shows found.", "galileoIndex", { ageMode: "release", allowPastAge: true });
+    renderReleaseList(elements.galileoGrid, items, "No current Galileo open-air cinema shows found.", "galileoIndex", { ageMode: "release" });
   } catch (error) {
     state.galileoItems = [];
     elements.galileoGrid.innerHTML = `<p class="empty">${error.message}</p>`;
@@ -6539,7 +6616,7 @@ async function loadGameReleases() {
 
     state.gameReleaseItems = releasedItems;
     state.gameComingSoonItems = upcomingItems;
-    renderReleaseList(elements.gameReleaseGrid, releasedItems, "No new game releases found.", "gameReleaseIndex");
+    renderReleaseList(elements.gameReleaseGrid, releasedItems, "No new game releases found.", "gameReleaseIndex", { allowPastAge: true });
     renderReleaseList(elements.gameComingSoonGrid, upcomingItems, "No upcoming games found.", "gameComingSoonIndex");
   } catch (error) {
     elements.gameReleaseGrid.innerHTML = `<p class="empty">${error.message}</p>`;

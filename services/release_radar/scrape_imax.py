@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -21,6 +23,10 @@ IMAX_THEATRE_URL = env_get(
 IMAX_FALLBACK_URL = env_get(
     "SCRAPE_IMAX_WATERFRONT_FALLBACK_URL",
     "https://r.jina.ai/http://www.imax.com/en/za/theatre/ster-kinekor-va-waterfront-imax",
+)
+MYDORPIE_IMAX_URL = env_get(
+    "SCRAPE_IMAX_WATERFRONT_MYDORPIE_URL",
+    "https://mydorpie.com/Cinemas/Cape-Town/Ster-Kinekor/VA-Waterfront-Movies/IMAX",
 )
 COMING_SOON_LIMIT = max(0, int(env_get("SCRAPE_IMAX_COMING_SOON_LIMIT", "4") or "4"))
 DATA_DIR = Path(__file__).resolve().parents[2] / "docs" / "data" / "release_radar"
@@ -53,6 +59,15 @@ def fetch_theatre_text() -> tuple[str, str]:
 
 def fallback_url(url: str) -> str:
     return "https://r.jina.ai/" + url.replace("https://", "http://", 1)
+
+
+def absolute_url(url: str, base_url: str) -> str:
+    return urllib.parse.urljoin(base_url, html.unescape(url.strip()))
+
+
+def clean_text(value: str) -> str:
+    value = re.sub(r"<[^>]+>", " ", value)
+    return re.sub(r"\s+", " ", html.unescape(value)).strip()
 
 
 def parse_theatre_listings(text: str) -> list[dict[str, object]]:
@@ -91,6 +106,51 @@ def parse_theatre_listings(text: str) -> list[dict[str, object]]:
     return listings
 
 
+def parse_mydorpie_listings(page_html: str) -> list[dict[str, object]]:
+    image_by_page: dict[str, str] = {}
+    for match in re.finditer(
+        r'<a href="/m/\?page=([^"]+)">\s*<img\b[^>]*src="([^"]+)"',
+        page_html,
+        flags=re.IGNORECASE | re.DOTALL,
+    ):
+        image_by_page[match.group(1).strip()] = html.unescape(match.group(2)).strip()
+
+    section_match = re.search(
+        r'<div id="bh2">\s*Showing Now\s*</div>(.*?)(?:<div class="c2cbox"|<div id="bh2">)',
+        page_html,
+        flags=re.IGNORECASE | re.DOTALL,
+    )
+    section = section_match.group(1) if section_match else page_html
+
+    listings: list[dict[str, object]] = []
+    seen_pages: set[str] = set()
+    for match in re.finditer(
+        r'<a href="/m/\?page=([^"]+)">(.*?)</a>',
+        section,
+        flags=re.IGNORECASE | re.DOTALL,
+    ):
+        page_id = match.group(1).strip()
+        if page_id in seen_pages or not page_id.startswith("m_waterimax_"):
+            continue
+        seen_pages.add(page_id)
+
+        raw_title = clean_text(match.group(2))
+        format_match = re.match(r"^([23]D)\s*-\s*(.+)$", raw_title, flags=re.IGNORECASE)
+        movie_format = format_match.group(1).upper() if format_match else "IMAX"
+        title = format_match.group(2).strip() if format_match else raw_title
+
+        listings.append(
+            {
+                "title": title,
+                "url": absolute_url(f"/m/?page={page_id}", MYDORPIE_IMAX_URL),
+                "format": f"IMAX {movie_format}",
+                "showtimes": [],
+                "image": image_by_page.get(page_id, ""),
+            }
+        )
+    return listings
+
+
 def parse_related_movies(text: str, excluded_urls: set[str]) -> list[dict[str, str]]:
     seen_urls: set[str] = set()
     movies: list[dict[str, str]] = []
@@ -126,6 +186,12 @@ def parse_coming_soon_from_current_movies(listings: list[dict[str, object]]) -> 
 def tmdb_search_title(title: str) -> str:
     if title == "Top Gun: 40th Anniversary":
         return "Top Gun"
+    if title == "Top Gun 40th Anniversary":
+        return "Top Gun"
+    if title == "Top Gun: Maverick Re-Release":
+        return "Top Gun: Maverick"
+    if title == "Star Wars: The Mandalorian & Grogu":
+        return "Star Wars: The Mandalorian and Grogu"
     return title
 
 
@@ -143,8 +209,9 @@ def enrich_item(base: dict[str, object], status: str) -> dict[str, object]:
         "format": str(base.get("format") or "").strip(),
     }
     poster = str(item.get("poster_url") or "").strip()
-    if poster:
-        item["image"] = poster
+    fallback_image = str(base.get("image") or "").strip()
+    if poster or fallback_image:
+        item["image"] = poster or fallback_image
     if not item.get("release_date"):
         item["release_date"] = ""
     return item
@@ -161,7 +228,12 @@ def sort_items(items: list[dict[str, object]]) -> list[dict[str, object]]:
 def scrape_imax() -> dict:
     theatre_text, source = fetch_theatre_text()
     now_playing = parse_theatre_listings(theatre_text)
-    coming_soon = parse_coming_soon_from_current_movies(now_playing)
+    using_mydorpie_fallback = False
+    if not now_playing:
+        now_playing = parse_mydorpie_listings(fetch_text(MYDORPIE_IMAX_URL))
+        source = MYDORPIE_IMAX_URL
+        using_mydorpie_fallback = True
+    coming_soon = [] if using_mydorpie_fallback else parse_coming_soon_from_current_movies(now_playing)
 
     items: list[dict[str, object]] = []
     for movie in now_playing:

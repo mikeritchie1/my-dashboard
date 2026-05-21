@@ -1,21 +1,632 @@
 {
   "source": "https://www.webtickets.co.za/v2/client.aspx?clientcode=labia",
   "window": {
-    "start_date": "2026-05-08",
-    "end_date": "2026-05-21",
+    "start_date": "2026-05-15",
+    "end_date": "2026-05-28",
     "days": 14
+  },
+  "listed_window": {
+    "start_date": "2026-05-21",
+    "end_date": "2026-06-18"
   },
   "weeks": [
     {
-      "start_date": "2026-05-08",
-      "end_date": "2026-05-14"
-    },
-    {
       "start_date": "2026-05-15",
       "end_date": "2026-05-21"
+    },
+    {
+      "start_date": "2026-05-22",
+      "end_date": "2026-05-28"
     }
   ],
   "items": [
+    {
+      "tmdb_id": 936075,
+      "tmdb_url": "https://www.themoviedb.org/movie/936075",
+      "tmdb_rating": "7.6",
+      "tmdb_votes": "791",
+      "release_date": "2026-04-22",
+      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
+      "runtime_minutes": "128",
+      "genres": [
+        "Music",
+        "Drama"
+      ],
+      "directors": [
+        "Antoine Fuqua"
+      ],
+      "actors": [
+        "Jaafar Jackson",
+        "Colman Domingo",
+        "Nia Long",
+        "Juliano Krue Valdi",
+        "Miles Teller",
+        "KeiLyn Durrel Jones",
+        "Kendrick Sampson",
+        "Joseph David-Jones",
+        "Rhyan Hill",
+        "Jamal Henderson"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=k-YAcjaLuSI",
+      "poster_url": "https://image.tmdb.org/t/p/w342/tBtqTCimYm3DKck3t8A2mgJaKVK.jpg",
+      "title": "MICHAEL (13LV) ( PPS)",
+      "itemid": "1593131040",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593131040",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593131040",
+      "event_date_text": "21 May 2026 - 28 May 2026",
+      "showtime_summary": "21 May 2026: 11:30\n22 May 2026 - 23 May 2026: 11:30, 14:45, 17:30, 20:15\n24 May 2026: 11:30, 14:45, 20:15\n25 May 2026 - 26 May 2026: 11:30, 14:45, 17:30, 20:15\n27 May 2026 - 28 May 2026: 11:30, 14:45, 20:15",
+      "image": "https://image.tmdb.org/t/p/w342/tBtqTCimYm3DKck3t8A2mgJaKVK.jpg",
+      "showings": [
+        "2026-05-21 11:30",
+        "2026-05-22 11:30",
+        "2026-05-22 14:45",
+        "2026-05-22 17:30",
+        "2026-05-22 20:15",
+        "2026-05-23 11:30",
+        "2026-05-23 14:45",
+        "2026-05-23 17:30",
+        "2026-05-23 20:15",
+        "2026-05-24 11:30",
+        "2026-05-24 14:45",
+        "2026-05-24 20:15",
+        "2026-05-25 11:30",
+        "2026-05-25 14:45",
+        "2026-05-25 17:30",
+        "2026-05-25 20:15",
+        "2026-05-26 11:30",
+        "2026-05-26 14:45",
+        "2026-05-26 17:30",
+        "2026-05-26 20:15",
+        "2026-05-27 11:30",
+        "2026-05-27 14:45",
+        "2026-05-27 20:15",
+        "2026-05-28 11:30",
+        "2026-05-28 14:45",
+        "2026-05-28 20:15"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-21",
+          "times": [
+            "11:30"
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "times": [
+            "11:30",
+            "14:45",
+            "17:30",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "times": [
+            "11:30",
+            "14:45",
+            "17:30",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "times": [
+            "11:30",
+            "14:45",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-25",
+          "times": [
+            "11:30",
+            "14:45",
+            "17:30",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "times": [
+            "11:30",
+            "14:45",
+            "17:30",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "times": [
+            "11:30",
+            "14:45",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "times": [
+            "11:30",
+            "14:45",
+            "20:15"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 744,
+      "tmdb_url": "https://www.themoviedb.org/movie/744",
+      "tmdb_rating": "7.1",
+      "tmdb_votes": "9542",
+      "release_date": "1986-05-16",
+      "overview": "For Lieutenant Pete 'Maverick' Mitchell and his friend and co-pilot Nick 'Goose' Bradshaw, being accepted into an elite training school for fighter pilots is a dream come true. But a tragedy, as well as personal demons, will threaten Pete's dreams of becoming an ace pilot.",
+      "runtime_minutes": "110",
+      "genres": [
+        "Action",
+        "Drama",
+        "Romance"
+      ],
+      "directors": [
+        "Tony Scott"
+      ],
+      "actors": [
+        "Tom Cruise",
+        "Kelly McGillis",
+        "Val Kilmer",
+        "Anthony Edwards",
+        "Tom Skerritt",
+        "Michael Ironside",
+        "John Stockwell",
+        "Barry Tubb",
+        "Rick Rossovich",
+        "Tim Robbins"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
+      "poster_url": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+      "title": "TOP GUN (13 LSV)",
+      "itemid": "1595279779",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595279779",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595279779",
+      "event_date_text": "21 May 2026",
+      "showtime_summary": "21 May 2026: 11:45, 18:15",
+      "image": "https://image.tmdb.org/t/p/w342/xUuHj3CgmZQ9P2cMaqQs4J0d4Zc.jpg",
+      "showings": [
+        "2026-05-21 11:45",
+        "2026-05-21 18:15"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-21",
+          "times": [
+            "11:45",
+            "18:15"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 350,
+      "tmdb_url": "https://www.themoviedb.org/movie/350",
+      "tmdb_rating": "7.417",
+      "tmdb_votes": "13497",
+      "release_date": "2006-06-29",
+      "overview": "A young woman from the Midwest gets more than she bargained for when she moves to New York to become a writer and ends up as the assistant to the tyrannical, larger-than-life editor-in-chief of a major fashion magazine.",
+      "runtime_minutes": "109",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "directors": [
+        "David Frankel"
+      ],
+      "actors": [
+        "Meryl Streep",
+        "Anne Hathaway",
+        "Emily Blunt",
+        "Stanley Tucci",
+        "Simon Baker",
+        "Adrian Grenier",
+        "Tracie Thoms",
+        "Rich Sommer",
+        "Daniel Sunjata",
+        "David Marshall Grant"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=6ZOZwUQKu3E",
+      "poster_url": "https://image.tmdb.org/t/p/w342/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "title": "THE DEVIL WEARS PRADA 2 PG 10-12 L",
+      "itemid": "1593526564",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593526564",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593526564",
+      "event_date_text": "21 May 2026 - 28 May 2026",
+      "showtime_summary": "21 May 2026 - 28 May 2026: 12:00",
+      "image": "https://image.tmdb.org/t/p/w342/8912AsVuS7Sj915apArUFbv6F9L.jpg",
+      "showings": [
+        "2026-05-21 12:00",
+        "2026-05-22 12:00",
+        "2026-05-23 12:00",
+        "2026-05-24 12:00",
+        "2026-05-25 12:00",
+        "2026-05-26 12:00",
+        "2026-05-27 12:00",
+        "2026-05-28 12:00"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-21",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "date": "2026-05-25",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "times": [
+            "12:00"
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "times": [
+            "12:00"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1301421,
+      "tmdb_url": "https://www.themoviedb.org/movie/1301421",
+      "tmdb_rating": "7.667",
+      "tmdb_votes": "81",
+      "release_date": "2026-04-30",
+      "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
+      "runtime_minutes": "109",
+      "genres": [
+        "Comedy",
+        "Family",
+        "Mystery"
+      ],
+      "directors": [
+        "Kyle Balda"
+      ],
+      "actors": [
+        "Hugh Jackman",
+        "Julia Louis-Dreyfus",
+        "Emma Thompson",
+        "Nicholas Braun",
+        "Nicholas Galitzine",
+        "Molly Gordon",
+        "Bryan Cranston",
+        "Chris O'Dowd",
+        "Hong Chau",
+        "Tosin Cole"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=826SRt1CFbg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
+      "title": "THE SHEEP DETECTIVES (PGV)",
+      "itemid": "1594570856",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594570856",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594570856",
+      "event_date_text": "21 May 2026 - 28 May 2026",
+      "showtime_summary": "21 May 2026: 12:15, 17:45\n22 May 2026: 12:15\n23 May 2026 - 28 May 2026: 12:15, 17:45",
+      "image": "https://image.tmdb.org/t/p/w342/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
+      "showings": [
+        "2026-05-21 12:15",
+        "2026-05-21 17:45",
+        "2026-05-22 12:15",
+        "2026-05-23 12:15",
+        "2026-05-23 17:45",
+        "2026-05-24 12:15",
+        "2026-05-24 17:45",
+        "2026-05-25 12:15",
+        "2026-05-25 17:45",
+        "2026-05-26 12:15",
+        "2026-05-26 17:45",
+        "2026-05-27 12:15",
+        "2026-05-27 17:45",
+        "2026-05-28 12:15",
+        "2026-05-28 17:45"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-21",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "times": [
+            "12:15"
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-05-25",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1325734,
+      "tmdb_url": "https://www.themoviedb.org/movie/1325734",
+      "tmdb_rating": "6.929",
+      "tmdb_votes": "786",
+      "release_date": "2026-03-26",
+      "overview": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
+      "runtime_minutes": "105",
+      "genres": [
+        "Romance",
+        "Comedy",
+        "Drama"
+      ],
+      "directors": [
+        "Kristoffer Borgli"
+      ],
+      "actors": [
+        "Zendaya",
+        "Robert Pattinson",
+        "Mamoudou Athie",
+        "Alana Haim",
+        "Jordyn Curet",
+        "Hailey Benton Gates",
+        "Michael Abbott Jr.",
+        "Hannah Gross",
+        "Sydney Lemmon",
+        "Zoë Winters"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=0ZDzsH3XGFA",
+      "poster_url": "https://image.tmdb.org/t/p/w342/yPV87cvDabRMTZs6NIbZLOufBLR.jpg",
+      "title": "THE DRAMA (16)",
+      "itemid": "1591914744",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591914744",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591914744",
+      "event_date_text": "21 May 2026 - 28 May 2026",
+      "showtime_summary": "21 May 2026: 14:00\n22 May 2026 - 28 May 2026: 14:30",
+      "image": "https://image.tmdb.org/t/p/w342/yPV87cvDabRMTZs6NIbZLOufBLR.jpg",
+      "showings": [
+        "2026-05-21 14:00",
+        "2026-05-22 14:30",
+        "2026-05-23 14:30",
+        "2026-05-24 14:30",
+        "2026-05-25 14:30",
+        "2026-05-26 14:30",
+        "2026-05-27 14:30",
+        "2026-05-28 14:30"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-21",
+          "times": [
+            "14:00"
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "date": "2026-05-25",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "times": [
+            "14:30"
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "times": [
+            "14:30"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1140521,
+      "tmdb_url": "https://www.themoviedb.org/movie/1140521",
+      "tmdb_rating": "6.5",
+      "tmdb_votes": "29",
+      "release_date": "2026-03-26",
+      "overview": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
+      "runtime_minutes": "110",
+      "genres": [
+        "Family",
+        "Fantasy",
+        "Adventure"
+      ],
+      "directors": [
+        "Ben Gregor"
+      ],
+      "actors": [
+        "Andrew Garfield",
+        "Claire Foy",
+        "Nicola Coughlan",
+        "Jessica Gunning",
+        "Rebecca Ferguson",
+        "Hiran Abeysekera",
+        "Phoenix Laroche",
+        "Delilah Bennett-Cardy",
+        "Billie Gadsdon",
+        "Jennifer Saunders"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=PAUEwUhAjzg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/udXvLxC5gAqN8SinemyFBEcHpTf.jpg",
+      "title": "THE MAGIC FARAWAY TREE (PG)",
+      "itemid": "1591308399",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591308399",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591308399",
+      "event_date_text": "21 May 2026 - 28 May 2026",
+      "showtime_summary": "21 May 2026 - 28 May 2026: 14:45",
+      "image": "https://image.tmdb.org/t/p/w342/udXvLxC5gAqN8SinemyFBEcHpTf.jpg",
+      "showings": [
+        "2026-05-21 14:45",
+        "2026-05-22 14:45",
+        "2026-05-23 14:45",
+        "2026-05-24 14:45",
+        "2026-05-25 14:45",
+        "2026-05-26 14:45",
+        "2026-05-27 14:45",
+        "2026-05-28 14:45"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-21",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-05-25",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "times": [
+            "14:45"
+          ]
+        }
+      ]
+    },
     {
       "tmdb_id": 1599249,
       "tmdb_url": "https://www.themoviedb.org/movie/1599249",
@@ -50,479 +661,524 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594571567",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594571567",
-      "event_date_text": "13 May 2026",
+      "event_date_text": "21 May 2026",
+      "showtime_summary": "21 May 2026: 16:15",
       "image": "https://image.tmdb.org/t/p/w342/cNbpR6hE1rIeb13xCFmv75PVaAx.jpg",
       "showings": [
-        "2026-05-13 14:15"
+        "2026-05-21 16:15"
       ],
       "showings_by_date": [
         {
-          "date": "2026-05-13",
+          "date": "2026-05-21",
           "times": [
-            "14:15"
+            "16:15"
           ]
         }
       ]
     },
     {
-      "tmdb_id": 1325734,
-      "tmdb_url": "https://www.themoviedb.org/movie/1325734",
-      "tmdb_rating": "6.969",
-      "tmdb_votes": "719",
-      "release_date": "2026-03-26",
-      "overview": "A happily engaged couple is put to the test when an unexpected turn sends their wedding week off the rails.",
-      "runtime_minutes": "105",
+      "tmdb_id": 687163,
+      "tmdb_url": "https://www.themoviedb.org/movie/687163",
+      "tmdb_rating": "8.601",
+      "tmdb_votes": "3718",
+      "release_date": "2026-03-15",
+      "overview": "Science teacher Ryland Grace wakes up on a spaceship light years from home with no recollection of who he is or how he got there. As his memory returns, he begins to uncover his mission: solve the riddle of the mysterious substance causing the sun to die out. He must call on his scientific knowledge and unorthodox ideas to save everything on Earth from extinction.",
+      "runtime_minutes": "157",
       "genres": [
-        "Romance",
+        "Science Fiction",
+        "Adventure"
+      ],
+      "directors": [
+        "Phil Lord",
+        "Christopher Miller"
+      ],
+      "actors": [
+        "Ryan Gosling",
+        "Sandra Hüller",
+        "James Ortiz",
+        "Lionel Boyce",
+        "Milana Vayntrub",
+        "Ken Leung",
+        "Priya Kansara",
+        "Mia Soteriou",
+        "Annelle Olaleye",
+        "Maya Eva Hosein"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
+      "poster_url": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "title": "PROJECT HAIL MARY (13V)",
+      "itemid": "1590856488",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590856488",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590856488",
+      "event_date_text": "21 May 2026 - 28 May 2026",
+      "showtime_summary": "21 May 2026 - 28 May 2026: 20:15",
+      "image": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
+      "showings": [
+        "2026-05-21 20:15",
+        "2026-05-22 20:15",
+        "2026-05-23 20:15",
+        "2026-05-24 20:15",
+        "2026-05-25 20:15",
+        "2026-05-26 20:15",
+        "2026-05-27 20:15",
+        "2026-05-28 20:15"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-21",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-22",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-25",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "times": [
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "times": [
+            "20:15"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1228710,
+      "tmdb_url": "https://www.themoviedb.org/movie/1228710",
+      "tmdb_rating": "6.2",
+      "tmdb_votes": "28",
+      "release_date": "2026-05-20",
+      "overview": "The evil Empire has fallen, and Imperial warlords remain scattered throughout the galaxy. As the fledgling New Republic works to protect everything the Rebellion fought for, they have enlisted the help of legendary Mandalorian bounty hunter Din Djarin and his young apprentice Grogu.",
+      "runtime_minutes": "132",
+      "genres": [
+        "Adventure",
+        "Science Fiction",
+        "Action"
+      ],
+      "directors": [
+        "Jon Favreau"
+      ],
+      "actors": [
+        "Pedro Pascal",
+        "Jeremy Allen White",
+        "Sigourney Weaver",
+        "Jonny Coyne",
+        "Dave Filoni",
+        "Steve Blum",
+        "Martin Scorsese",
+        "Hemky Madera",
+        "Paul Sun-Hyung Lee",
+        "Matthew Willig"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=uwild1rw7Aw",
+      "poster_url": "https://image.tmdb.org/t/p/w342/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "title": "STAR WARS:The Mandalorian and Grogu (PGV)",
+      "itemid": "1595655527",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595655527",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595655527",
+      "event_date_text": "22 May 2026 - 28 May 2026",
+      "showtime_summary": "22 May 2026 - 28 May 2026: 11:45, 17:30",
+      "image": "https://image.tmdb.org/t/p/w342/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg",
+      "showings": [
+        "2026-05-22 11:45",
+        "2026-05-22 17:30",
+        "2026-05-23 11:45",
+        "2026-05-23 17:30",
+        "2026-05-24 11:45",
+        "2026-05-24 17:30",
+        "2026-05-25 11:45",
+        "2026-05-25 17:30",
+        "2026-05-26 11:45",
+        "2026-05-26 17:30",
+        "2026-05-27 11:45",
+        "2026-05-27 17:30",
+        "2026-05-28 11:45",
+        "2026-05-28 17:30"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-05-22",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-05-23",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-05-24",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-05-25",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-05-26",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-05-27",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-05-28",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1340206,
+      "tmdb_url": "https://www.themoviedb.org/movie/1340206",
+      "tmdb_rating": "7.0",
+      "tmdb_votes": "2",
+      "release_date": "2026-05-21",
+      "overview": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.",
+      "runtime_minutes": "107",
+      "genres": [
+        "Crime",
+        "Thriller",
         "Comedy",
-        "Drama"
+        "Music"
       ],
       "directors": [
-        "Kristoffer Borgli"
+        "Daniel Roher"
       ],
       "actors": [
-        "Zendaya",
-        "Robert Pattinson",
-        "Mamoudou Athie",
-        "Alana Haim",
-        "Jordyn Curet",
-        "Hailey Benton Gates",
-        "Michael Abbott Jr.",
-        "Hannah Gross",
-        "Sydney Lemmon",
-        "Zoë Winters"
+        "Leo Woodall",
+        "Dustin Hoffman",
+        "Havana Rose Liu",
+        "Tovah Feldshuh",
+        "Jean Reno",
+        "Lior Raz",
+        "Nissan Sakira",
+        "C.S. Lee",
+        "Gil Cohen",
+        "Rek Lee"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=0ZDzsH3XGFA",
-      "poster_url": "https://image.tmdb.org/t/p/w342/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg",
-      "title": "THE DRAMA (16)",
-      "itemid": "1591914744",
+      "trailer_url": "https://www.youtube.com/watch?v=rdlOZhl-nSA",
+      "poster_url": "https://image.tmdb.org/t/p/w342/oGZd4xQJBt4mtuBhTdlOalsdqtT.jpg",
+      "title": "TUNER (16 DLP PSV)",
+      "itemid": "1595656393",
       "source": "Labia Theatre",
       "status": "now_showing",
       "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591914744",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591914744",
-      "event_date_text": "13 May 2026 - 20 May 2026",
-      "image": "https://image.tmdb.org/t/p/w342/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595656393",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595656393",
+      "event_date_text": "22 May 2026 - 28 May 2026",
+      "showtime_summary": "22 May 2026 - 28 May 2026: 20:30",
+      "image": "https://image.tmdb.org/t/p/w342/oGZd4xQJBt4mtuBhTdlOalsdqtT.jpg",
       "showings": [
-        "2026-05-13 12:15",
-        "2026-05-14 12:15",
-        "2026-05-16 12:15",
-        "2026-05-17 12:15",
-        "2026-05-18 12:15",
-        "2026-05-19 12:15",
-        "2026-05-20 12:15"
+        "2026-05-22 20:30",
+        "2026-05-23 20:30",
+        "2026-05-24 20:30",
+        "2026-05-25 20:30",
+        "2026-05-26 20:30",
+        "2026-05-27 20:30",
+        "2026-05-28 20:30"
       ],
       "showings_by_date": [
         {
-          "date": "2026-05-13",
+          "date": "2026-05-22",
           "times": [
-            "12:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-14",
+          "date": "2026-05-23",
           "times": [
-            "12:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-05-24",
           "times": [
-            "12:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-17",
+          "date": "2026-05-25",
           "times": [
-            "12:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-18",
+          "date": "2026-05-26",
           "times": [
-            "12:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-19",
+          "date": "2026-05-27",
           "times": [
-            "12:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-20",
+          "date": "2026-05-28",
           "times": [
-            "12:15"
+            "20:30"
           ]
         }
       ]
     },
     {
-      "tmdb_id": 936075,
-      "tmdb_url": "https://www.themoviedb.org/movie/936075",
-      "tmdb_rating": "7.554",
-      "tmdb_votes": "661",
-      "release_date": "2026-04-22",
-      "overview": "The story of Michael Jackson, one of the most influential artists the world has ever known, and his life beyond the music. His journey from the discovery of his extraordinary talent as the lead of the Jackson Five, to the visionary artist whose creative ambition fueled a relentless pursuit to become the biggest entertainer in the world, highlighting both his life off-stage and some of the most iconic performances from his early solo career.",
-      "runtime_minutes": "128",
+      "tmdb_id": 18900,
+      "tmdb_url": "https://www.themoviedb.org/movie/18900",
+      "tmdb_rating": "7.513",
+      "tmdb_votes": "426",
+      "release_date": "1967-12-15",
+      "overview": "After a botched robbery results in the brutal murder of a rural family, two drifters elude police, in the end coming to terms with their own mortality and the repercussions of their vile atrocity.",
+      "runtime_minutes": "134",
       "genres": [
-        "Music",
-        "Drama"
+        "Crime",
+        "Drama",
+        "History"
       ],
       "directors": [
-        "Antoine Fuqua"
+        "Richard Brooks"
       ],
       "actors": [
-        "Jaafar Jackson",
-        "Colman Domingo",
-        "Nia Long",
-        "Juliano Krue Valdi",
-        "Miles Teller",
-        "KeiLyn Durrel Jones",
-        "Kendrick Sampson",
-        "Joseph David-Jones",
-        "Rhyan Hill",
-        "Jamal Henderson"
+        "Robert Blake",
+        "Scott Wilson",
+        "John Forsythe",
+        "Paul Stewart",
+        "Gerald S. O'Loughlin",
+        "Jeff Corey",
+        "John Gallaudet",
+        "James Flavin",
+        "Charles McGraw",
+        "Will Geer"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=k-YAcjaLuSI",
-      "poster_url": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
-      "title": "MICHAEL (13LV) ( PPS).",
-      "itemid": "1593131040",
+      "trailer_url": "https://www.youtube.com/watch?v=vU_TY9ZQ48A",
+      "poster_url": "https://image.tmdb.org/t/p/w342/sPEvsif5Y70mfVvtU39iOyrVJdF.jpg",
+      "title": "IN COLD BLOOD (16V)",
+      "itemid": "1594249707",
       "source": "Labia Theatre",
       "status": "now_showing",
       "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593131040",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593131040",
-      "event_date_text": "13 May 2026 - 21 May 2026",
-      "image": "https://image.tmdb.org/t/p/w342/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594249707",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594249707",
+      "event_date_text": "31 May 2026",
+      "showtime_summary": "31 May 2026: 14:45",
+      "image": "https://image.tmdb.org/t/p/w342/sPEvsif5Y70mfVvtU39iOyrVJdF.jpg",
       "showings": [
-        "2026-05-13 11:30",
-        "2026-05-14 11:30",
-        "2026-05-15 11:30",
-        "2026-05-16 11:30",
-        "2026-05-17 11:30",
-        "2026-05-18 11:30",
-        "2026-05-19 11:30",
-        "2026-05-20 11:30",
-        "2026-05-21 11:30"
+        "2026-05-31 14:45"
       ],
       "showings_by_date": [
         {
-          "date": "2026-05-13",
+          "date": "2026-05-31",
           "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-14",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-15",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-16",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-17",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-18",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-19",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-20",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-05-21",
-          "times": [
-            "11:30"
+            "14:45"
           ]
         }
       ]
     },
     {
-      "title": "THE DEVIL WEARS PRADA 2 PG 10-12 L",
-      "itemid": "1593526564",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593526564",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593526564",
-      "event_date_text": "13 May 2026 - 21 May 2026",
-      "release_date": "2026-05-13",
-      "image": "https://content.webtickets.co.za/labia/panel_devil wears prada image 1_20260419_094520.jpg",
-      "showings": [
-        "2026-05-13 12:00",
-        "2026-05-14 12:00",
-        "2026-05-15 12:00",
-        "2026-05-16 12:00",
-        "2026-05-17 12:00",
-        "2026-05-18 12:00",
-        "2026-05-19 12:00",
-        "2026-05-20 12:00",
-        "2026-05-21 12:00"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-05-13",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-14",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-15",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-16",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-17",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-18",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-19",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-20",
-          "times": [
-            "12:00"
-          ]
-        },
-        {
-          "date": "2026-05-21",
-          "times": [
-            "12:00"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 1301421,
-      "tmdb_url": "https://www.themoviedb.org/movie/1301421",
-      "tmdb_rating": "7.618",
-      "tmdb_votes": "34",
-      "release_date": "2026-04-30",
-      "overview": "George Hardy is a shepherd who reads detective novels to his beloved sheep every night, assuming they can't possibly understand. But when a mysterious incident disrupts life on the farm, the sheep realize they must become the detectives. As they follow the clues and investigate human suspects, they prove that even sheep can be brilliant crime-solvers.",
-      "runtime_minutes": "109",
+      "tmdb_id": 1667198,
+      "tmdb_url": "https://www.themoviedb.org/movie/1667198",
+      "tmdb_rating": "",
+      "tmdb_votes": "",
+      "release_date": "2026-06-03",
+      "overview": "With Caine gone and the circus dark, the cast are left with only the mistakes and traumas of their pasts to keep them company. As the prospect of eternity closes in around them, they discover the truth about the Digital Circus.",
+      "runtime_minutes": "93",
       "genres": [
-        "Comedy",
-        "Family",
-        "Mystery"
+        "Animation",
+        "Drama",
+        "Science Fiction",
+        "Thriller"
       ],
       "directors": [
-        "Kyle Balda"
+        "Gooseworx"
       ],
       "actors": [
-        "Hugh Jackman",
-        "Emma Thompson",
-        "Nicholas Braun",
-        "Nicholas Galitzine",
-        "Molly Gordon",
-        "Hong Chau",
-        "Tosin Cole",
-        "Kobna Holdbrook-Smith",
-        "Conleth Hill",
-        "Mandeep Dhillon"
+        "Lizzie Freeman",
+        "Michael Kovach",
+        "Amanda Hufford",
+        "Marissa Lenti",
+        "Ashley Nichols",
+        "Sean Chiplock",
+        "Alex Rochon",
+        "Gooseworx",
+        "Skye Redden",
+        "Cassie Ewulu"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=826SRt1CFbg",
-      "poster_url": "https://image.tmdb.org/t/p/w342/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
-      "title": "THE SHEEP DETECTIVES (PGV)",
-      "itemid": "1594570856",
+      "trailer_url": "https://www.youtube.com/watch?v=vNGAtHBhdiM",
+      "poster_url": "https://image.tmdb.org/t/p/w342/uoZeXWuUS2z2F7VaC1iS5RS5cnk.jpg",
+      "title": "THE AMAZING DIGITAL CIRCUS : The Last Act",
+      "itemid": "1595455516",
       "source": "Labia Theatre",
       "status": "now_showing",
       "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594570856",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594570856",
-      "event_date_text": "13 May 2026 - 21 May 2026",
-      "image": "https://image.tmdb.org/t/p/w342/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595455516",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595455516",
+      "event_date_text": "04 Jun 2026 - 18 Jun 2026",
+      "showtime_summary": "04 Jun 2026: 20:30\n05 Jun 2026: 18:00\n06 Jun 2026: 20:30\n07 Jun 2026: 18:00\n08 Jun 2026: 20:30\n09 Jun 2026: 18:00\n10 Jun 2026: 20:30\n11 Jun 2026: 18:00\n12 Jun 2026: 20:30\n13 Jun 2026: 18:00\n14 Jun 2026 - 15 Jun 2026: 20:30\n16 Jun 2026: 18:00\n17 Jun 2026: 20:30\n18 Jun 2026: 18:00",
+      "image": "https://image.tmdb.org/t/p/w342/uoZeXWuUS2z2F7VaC1iS5RS5cnk.jpg",
       "showings": [
-        "2026-05-13 11:45",
-        "2026-05-14 11:45",
-        "2026-05-15 11:45",
-        "2026-05-16 11:45",
-        "2026-05-17 11:45",
-        "2026-05-19 11:45",
-        "2026-05-20 11:45",
-        "2026-05-21 11:45"
+        "2026-06-04 20:30",
+        "2026-06-05 18:00",
+        "2026-06-06 20:30",
+        "2026-06-07 18:00",
+        "2026-06-08 20:30",
+        "2026-06-09 18:00",
+        "2026-06-10 20:30",
+        "2026-06-11 18:00",
+        "2026-06-12 20:30",
+        "2026-06-13 18:00",
+        "2026-06-14 20:30",
+        "2026-06-15 20:30",
+        "2026-06-16 18:00",
+        "2026-06-17 20:30",
+        "2026-06-18 18:00"
       ],
       "showings_by_date": [
         {
-          "date": "2026-05-13",
+          "date": "2026-06-04",
           "times": [
-            "11:45"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-14",
+          "date": "2026-06-05",
           "times": [
-            "11:45"
+            "18:00"
           ]
         },
         {
-          "date": "2026-05-15",
+          "date": "2026-06-06",
           "times": [
-            "11:45"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-16",
+          "date": "2026-06-07",
           "times": [
-            "11:45"
+            "18:00"
           ]
         },
         {
-          "date": "2026-05-17",
+          "date": "2026-06-08",
           "times": [
-            "11:45"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-19",
+          "date": "2026-06-09",
           "times": [
-            "11:45"
+            "18:00"
           ]
         },
         {
-          "date": "2026-05-20",
+          "date": "2026-06-10",
           "times": [
-            "11:45"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-21",
+          "date": "2026-06-11",
           "times": [
-            "11:45"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 361743,
-      "tmdb_url": "https://www.themoviedb.org/movie/361743",
-      "tmdb_rating": "8.155",
-      "tmdb_votes": "10864",
-      "release_date": "2022-05-21",
-      "overview": "After more than thirty years of service as one of the Navy’s top aviators, and dodging the advancement in rank that would ground him, Pete “Maverick” Mitchell finds himself training a detachment of TOP GUN graduates for a specialized mission the likes of which no living pilot has ever seen.",
-      "runtime_minutes": "131",
-      "genres": [
-        "Action",
-        "Drama"
-      ],
-      "directors": [
-        "Joseph Kosinski"
-      ],
-      "actors": [
-        "Tom Cruise",
-        "Miles Teller",
-        "Jennifer Connelly",
-        "Bashir Salahuddin",
-        "Jon Hamm",
-        "Charles Parnell",
-        "Monica Barbaro",
-        "Lewis Pullman",
-        "Jay Ellis",
-        "Danny Ramirez"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=Klc__shdj88",
-      "poster_url": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
-      "title": "TOP GUN (13 LSV)",
-      "itemid": "1595279779",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595279779",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595279779",
-      "event_date_text": "16 May 2026 - 21 May 2026",
-      "image": "https://image.tmdb.org/t/p/w342/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg",
-      "showings": [
-        "2026-05-16 18:15",
-        "2026-05-17 18:15",
-        "2026-05-18 18:15",
-        "2026-05-19 18:15",
-        "2026-05-20 18:15",
-        "2026-05-21 18:15"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-05-16",
-          "times": [
-            "18:15"
+            "18:00"
           ]
         },
         {
-          "date": "2026-05-17",
+          "date": "2026-06-12",
           "times": [
-            "18:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-18",
+          "date": "2026-06-13",
           "times": [
-            "18:15"
+            "18:00"
           ]
         },
         {
-          "date": "2026-05-19",
+          "date": "2026-06-14",
           "times": [
-            "18:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-20",
+          "date": "2026-06-15",
           "times": [
-            "18:15"
+            "20:30"
           ]
         },
         {
-          "date": "2026-05-21",
+          "date": "2026-06-16",
           "times": [
-            "18:15"
+            "18:00"
+          ]
+        },
+        {
+          "date": "2026-06-17",
+          "times": [
+            "20:30"
+          ]
+        },
+        {
+          "date": "2026-06-18",
+          "times": [
+            "18:00"
           ]
         }
       ]

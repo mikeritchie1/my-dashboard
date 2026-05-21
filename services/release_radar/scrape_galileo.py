@@ -7,7 +7,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 sys.path.append(str(Path(__file__).resolve().parents[2]))
@@ -245,10 +245,16 @@ def scrape_galileo(limit: int = 0) -> dict[str, object]:
         listings = listings[:limit]
 
     items: list[dict[str, object]] = []
+    today = date.today()
     for listing in listings:
         detail_html = fetch_html(listing["url"])
         details = parse_detail_page(detail_html, listing["url"])
-        items.append(normalize_item(listing, details))
+        item = normalize_item(listing, details)
+        release_date = str(item.get("release_date") or "")
+        parsed_date = datetime.strptime(release_date, "%Y-%m-%d").date() if release_date else None
+        if parsed_date and parsed_date < today:
+            continue
+        items.append(item)
 
     items.sort(key=lambda item: (str(item.get("release_date") or "9999-12-31"), str(item.get("title") or "")))
     return {
