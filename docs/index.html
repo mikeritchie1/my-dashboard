@@ -30,6 +30,45 @@
         </div>
       </section>
 
+      <details class="dashboard-section" id="daily-goals-section">
+        <summary>
+          <span>Daily Goals</span>
+        </summary>
+        <div class="section-content">
+          <div class="daily-goals-header">
+            <div class="daily-goals-stats">
+              <div class="daily-goals-stat">
+                <span id="daily-goals-total-pts" class="daily-goals-stat-value">0</span>
+                <span class="daily-goals-stat-label">Total points</span>
+              </div>
+              <div class="daily-goals-stat">
+                <span id="daily-goals-today-pts" class="daily-goals-stat-value">0</span>
+                <span id="daily-goals-viewdate-label" class="daily-goals-stat-label">Today</span>
+              </div>
+              <div class="daily-goals-stat">
+                <span id="daily-goals-weekly-pts" class="daily-goals-stat-value">0</span>
+                <span class="daily-goals-stat-label">This week</span>
+              </div>
+            </div>
+            <button type="button" id="daily-goals-add-toggle" class="daily-goals-summary-add-btn" title="Add goal">Add goal</button>
+          </div>
+          <div class="daily-goals-date-nav">
+            <button type="button" id="daily-goals-prev-day" class="daily-goals-nav-btn">&#8592;</button>
+            <span id="daily-goals-date-display" class="daily-goals-date-display">Today</span>
+            <button type="button" id="daily-goals-next-day" class="daily-goals-nav-btn">&#8594;</button>
+          </div>
+          <div id="daily-goals-list"></div>
+          <div id="daily-goals-add-row" class="daily-goals-add-row-wrap" hidden>
+            <div class="daily-goals-form-row">
+              <input type="text" id="daily-goal-name-input" class="daily-goals-input" placeholder="Goal name…" autocomplete="off">
+              <input type="number" id="daily-goal-points-input" class="daily-goals-points-input" value="10" min="-999" max="999">
+              <button type="button" id="daily-goals-type-toggle" class="daily-goals-type-chip" data-goal-type="recurring">Daily</button>
+              <button type="button" id="daily-goals-add-btn" class="daily-goals-add-btn" title="Add goal">+</button>
+            </div>
+          </div>
+        </div>
+      </details>
+
       <details class="dashboard-section">
         <summary>
           <span>News</span>

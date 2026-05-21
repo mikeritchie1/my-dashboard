@@ -85,6 +85,8 @@ const THATS_A_BAD_IDEA_CURRENT_VIDEO_KEY = "my-dashboard:thats-a-bad-idea-curren
 const THATS_A_BAD_IDEA_SCROLL_KEY = "my-dashboard:thats-a-bad-idea-scroll:v1";
 const GAMERANX_TV_CURRENT_VIDEO_KEY = "my-dashboard:gameranx-tv-current-video:v1";
 const GAMERANX_TV_SCROLL_KEY = "my-dashboard:gameranx-tv-scroll:v1";
+const DAILY_GOALS_KEY = "my-dashboard:daily-goals:v1";
+const DAILY_GOALS_PROGRESS_KEY = "my-dashboard:daily-goals-progress:v1";
 const READING_FOLDER_ID_STORAGE_KEY = "my-dashboard:reading-folder-id:v1";
 const READING_PROGRESS_STORAGE_KEY = "my-dashboard:reading-progress:v1";
 const ONE_PIECE_TIMELINE_FULL_URL = "https://i0.wp.com/thelibraryofohara.com/wp-content/uploads/2024/03/one-piece-timeline-5.0-page-1.png?ssl=1&w=723";
@@ -199,6 +201,12 @@ const state = {
   gameranxTvPayload: null,
   gameranxTvCurrentVideoId: "",
   gameranxTvScroll: 0,
+  dailyGoals: [],
+  dailyGoalsProgress: { total_points: 0, daily: {}, once_off_done: [] },
+  dailyGoalsNewType: "recurring",
+  dailyGoalsEditingId: "",
+  dailyGoalsAddOpen: false,
+  dailyGoalsViewDate: "",
   readingDriveConnected: false,
   readingFolderId: "",
   readingManifest: null,
@@ -234,6 +242,18 @@ const elements = {
   gameReleaseGrid: document.querySelector("#game-release-grid"),
   gameComingSoonGrid: document.querySelector("#game-coming-soon-grid"),
   youtubeVideos: document.querySelector("#youtube-videos"),
+  dailyGoalsList: document.querySelector("#daily-goals-list"),
+  dailyGoalsTotalPts: document.querySelector("#daily-goals-total-pts"),
+  dailyGoalsTodayPts: document.querySelector("#daily-goals-today-pts"),
+  dailyGoalNameInput: document.querySelector("#daily-goal-name-input"),
+  dailyGoalPointsInput: document.querySelector("#daily-goal-points-input"),
+  dailyGoalsTypeToggle: document.querySelector("#daily-goals-type-toggle"),
+  dailyGoalsAddBtn: document.querySelector("#daily-goals-add-btn"),
+  dailyGoalsAddToggle: document.querySelector("#daily-goals-add-toggle"),
+  dailyGoalsAddRow: document.querySelector("#daily-goals-add-row"),
+  dailyGoalsPrevDay: document.querySelector("#daily-goals-prev-day"),
+  dailyGoalsNextDay: document.querySelector("#daily-goals-next-day"),
+  dailyGoalsWeeklyPts: document.querySelector("#daily-goals-weekly-pts"),
   youtubeAlmostFridayTv: document.querySelector("#youtube-almost-friday-tv"),
   youtubeThatsABadIdea: document.querySelector("#youtube-thats-a-bad-idea"),
   youtubeGameranxTv: document.querySelector("#youtube-gameranx-tv"),
@@ -8215,6 +8235,453 @@ if (elements.collectionSetButtons) {
 
 syncCollectionMissingOptionVisibility();
 
+// ── Daily Goals ───────────────────────────────────────────────────────────
+
+function dailyGoalsTodayKey() {
+  const now = new Date();
+  return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+}
+
+function loadDailyGoalsFromStorage() {
+  try {
+    const raw = localStorage.getItem(DAILY_GOALS_KEY);
+    const parsed = raw ? JSON.parse(raw) : [];
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveDailyGoalsToStorage() {
+  try {
+    localStorage.setItem(DAILY_GOALS_KEY, JSON.stringify(state.dailyGoals));
+  } catch {
+    // Ignore storage failures.
+  }
+}
+
+function loadDailyGoalsProgressFromStorage() {
+  try {
+    const raw = localStorage.getItem(DAILY_GOALS_PROGRESS_KEY);
+    const parsed = raw ? JSON.parse(raw) : {};
+    return {
+      total_points: Number(parsed.total_points || 0),
+      daily: parsed.daily && typeof parsed.daily === "object" ? parsed.daily : {},
+      once_off_done: Array.isArray(parsed.once_off_done) ? parsed.once_off_done : [],
+    };
+  } catch {
+    return { total_points: 0, daily: {}, once_off_done: [] };
+  }
+}
+
+function saveDailyGoalsProgressToStorage() {
+  try {
+    localStorage.setItem(DAILY_GOALS_PROGRESS_KEY, JSON.stringify(state.dailyGoalsProgress));
+  } catch {
+    // Ignore storage failures.
+  }
+}
+
+function dailyGoalsDateKey(date) {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+}
+
+function dailyGoalsViewKey() {
+  return state.dailyGoalsViewDate || dailyGoalsTodayKey();
+}
+
+function formatViewDate(key) {
+  const today = dailyGoalsTodayKey();
+  if (key === today) return "Today";
+  const d = new Date(key + "T12:00:00");
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  if (key === dailyGoalsDateKey(yesterday)) return "Yesterday";
+  return d.toLocaleDateString("en-ZA", { weekday: "short", day: "numeric", month: "short" });
+}
+
+function isDailyGoalDoneOnDate(goalId, dateKey) {
+  const done = state.dailyGoalsProgress.daily[dateKey];
+  return Array.isArray(done) && done.includes(goalId);
+}
+
+function isOnceOffGoalDone(goalId) {
+  return (state.dailyGoalsProgress.once_off_done || []).includes(goalId);
+}
+
+function recalcTotalPoints() {
+  const prog = state.dailyGoalsProgress;
+  let total = 0;
+  for (const dateKey of Object.keys(prog.daily || {})) {
+    for (const goalId of (prog.daily[dateKey] || [])) {
+      const goal = state.dailyGoals.find((g) => g.id === goalId);
+      if (goal) total += Number(goal.points || 0);
+    }
+  }
+  for (const goalId of (prog.once_off_done || [])) {
+    const goal = state.dailyGoals.find((g) => g.id === goalId);
+    if (goal) total += Number(goal.points || 0);
+  }
+  return total;
+}
+
+function calcViewDatePoints() {
+  const key = dailyGoalsViewKey();
+  const prog = state.dailyGoalsProgress;
+  let pts = 0;
+  for (const goalId of (prog.daily[key] || [])) {
+    const goal = state.dailyGoals.find((g) => g.id === goalId);
+    if (goal) pts += Number(goal.points || 0);
+  }
+  for (const goalId of (prog.once_off_done || [])) {
+    const completedOn = prog.once_off_dates && prog.once_off_dates[goalId];
+    if (completedOn === key) {
+      const goal = state.dailyGoals.find((g) => g.id === goalId);
+      if (goal) pts += Number(goal.points || 0);
+    }
+  }
+  return pts;
+}
+
+function calcWeeklyPoints() {
+  const viewDate = new Date(dailyGoalsViewKey() + "T12:00:00");
+  let total = 0;
+  for (let i = 0; i < 7; i++) {
+    const d = new Date(viewDate);
+    d.setDate(d.getDate() - i);
+    const key = dailyGoalsDateKey(d);
+    for (const goalId of (state.dailyGoalsProgress.daily[key] || [])) {
+      const goal = state.dailyGoals.find((g) => g.id === goalId);
+      if (goal) total += Number(goal.points || 0);
+    }
+    // once-off: count if completed on this day
+    for (const goalId of (state.dailyGoalsProgress.once_off_done || [])) {
+      const completedOn = state.dailyGoalsProgress.once_off_dates?.[goalId];
+      if (completedOn === key) {
+        const goal = state.dailyGoals.find((g) => g.id === goalId);
+        if (goal) total += Number(goal.points || 0);
+      }
+    }
+  }
+  return total;
+}
+
+function seedYesterdayFromToday() {
+  const today = dailyGoalsTodayKey();
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const yKey = dailyGoalsDateKey(yesterday);
+  const prog = state.dailyGoalsProgress;
+  if (!prog.daily[yKey] && prog.daily[today] && prog.daily[today].length > 0) {
+    prog.daily[yKey] = [...prog.daily[today]];
+    saveDailyGoalsProgressToStorage();
+  }
+}
+
+function toggleDailyGoalDone(goalId) {
+  const goal = state.dailyGoals.find((g) => g.id === goalId);
+  if (!goal) return;
+  const prog = state.dailyGoalsProgress;
+
+  if (goal.type === "once_off") {
+    if (isOnceOffGoalDone(goalId)) {
+      prog.once_off_done = prog.once_off_done.filter((id) => id !== goalId);
+      if (prog.once_off_dates) delete prog.once_off_dates[goalId];
+    } else {
+      prog.once_off_done.push(goalId);
+      if (!prog.once_off_dates) prog.once_off_dates = {};
+      prog.once_off_dates[goalId] = dailyGoalsViewKey();
+    }
+  } else {
+    const key = dailyGoalsViewKey();
+    if (!prog.daily[key]) prog.daily[key] = [];
+    if (isDailyGoalDoneOnDate(goalId, key)) {
+      prog.daily[key] = prog.daily[key].filter((id) => id !== goalId);
+    } else {
+      prog.daily[key].push(goalId);
+    }
+  }
+  prog.total_points = recalcTotalPoints();
+  saveDailyGoalsProgressToStorage();
+  renderDailyGoals();
+}
+
+function addDailyGoal(name, points, type) {
+  const id = Date.now().toString(36) + Math.random().toString(36).slice(2);
+  state.dailyGoals.push({ id, name: name.trim(), points: Number(points) || 0, type });
+  saveDailyGoalsToStorage();
+  renderDailyGoals();
+}
+
+function deleteDailyGoal(goalId) {
+  state.dailyGoals = state.dailyGoals.filter((g) => g.id !== goalId);
+  saveDailyGoalsToStorage();
+  renderDailyGoals();
+}
+
+function moveDailyGoal(goalId, dir) {
+  const idx = state.dailyGoals.findIndex((g) => g.id === goalId);
+  if (idx < 0) return;
+  const swapIdx = dir === "up" ? idx - 1 : idx + 1;
+  if (swapIdx < 0 || swapIdx >= state.dailyGoals.length) return;
+  [state.dailyGoals[idx], state.dailyGoals[swapIdx]] = [state.dailyGoals[swapIdx], state.dailyGoals[idx]];
+  saveDailyGoalsToStorage();
+  renderDailyGoals();
+}
+
+function renderDailyGoals() {
+  const list = elements.dailyGoalsList;
+  const totalEl = elements.dailyGoalsTotalPts;
+  const todayEl = elements.dailyGoalsTodayPts;
+
+  const total = recalcTotalPoints();
+  const viewPts = calcViewDatePoints();
+  const viewKey = dailyGoalsViewKey();
+  const todayKey = dailyGoalsTodayKey();
+
+  const weekly = calcWeeklyPoints();
+  if (totalEl) {
+    totalEl.textContent = String(total);
+    totalEl.classList.toggle("is-negative", total < 0);
+  }
+  if (todayEl) {
+    todayEl.textContent = String(viewPts);
+    todayEl.classList.toggle("is-negative", viewPts < 0);
+  }
+  if (elements.dailyGoalsWeeklyPts) {
+    elements.dailyGoalsWeeklyPts.textContent = String(weekly);
+    elements.dailyGoalsWeeklyPts.classList.toggle("is-negative", weekly < 0);
+  }
+  const viewLabel = document.querySelector("#daily-goals-viewdate-label");
+  if (viewLabel) viewLabel.textContent = formatViewDate(viewKey);
+
+  const dateDisplay = document.querySelector("#daily-goals-date-display");
+  if (dateDisplay) {
+    dateDisplay.textContent = formatViewDate(viewKey);
+    dateDisplay.className = "daily-goals-date-display" + (viewKey < todayKey ? " is-past" : viewKey > todayKey ? " is-future" : "");
+  }
+
+  if (elements.dailyGoalsAddRow) {
+    elements.dailyGoalsAddRow.hidden = !state.dailyGoalsAddOpen;
+  }
+
+  if (!list) return;
+
+  const recurring = state.dailyGoals.filter((g) => g.type !== "once_off");
+  const onceOff = state.dailyGoals.filter((g) => g.type === "once_off");
+  const allGoals = state.dailyGoals;
+
+  function goalHTML(goal) {
+    const id = escapeHtml(goal.id);
+    const pts = Number(goal.points);
+    const isNeg = pts < 0;
+    const badgeClass = "daily-goal-pts-badge" + (isNeg ? " is-negative" : "");
+    const badgeText = isNeg ? escapeHtml(String(pts)) : `+${escapeHtml(String(pts))}`;
+    const globalIdx = allGoals.indexOf(goal);
+    const canUp = globalIdx > 0;
+    const canDown = globalIdx < allGoals.length - 1;
+
+    if (goal.id === state.dailyGoalsEditingId) {
+      const chipType = goal.type === "once_off" ? "once_off" : "recurring";
+      const chipLabel = chipType === "once_off" ? "Once-off" : "Daily";
+      const chipOnce = chipType === "once_off" ? " is-once-off-chip" : "";
+      return `
+        <div class="daily-goal-item daily-goal-item--editing" data-goal-id="${id}">
+          <div class="daily-goals-form-row">
+            <button type="button" class="daily-goal-action-btn daily-goal-move-btn" data-move-goal="${id}" data-move-dir="up" title="Move up"${canUp ? "" : " disabled"}>▲</button>
+            <button type="button" class="daily-goal-action-btn daily-goal-move-btn" data-move-goal="${id}" data-move-dir="down" title="Move down"${canDown ? "" : " disabled"}>▼</button>
+            <input type="text" class="daily-goals-input" value="${escapeHtml(goal.name)}" data-edit-name autocomplete="off">
+            <input type="number" class="daily-goals-points-input" value="${escapeHtml(String(pts))}" data-edit-points>
+            <button type="button" class="daily-goals-type-chip${chipOnce}" data-edit-type-chip data-edit-type="${chipType}">${chipLabel}</button>
+            <button type="button" class="daily-goals-add-btn" data-save-goal="${id}" title="Save">✓</button>
+            <button type="button" class="daily-goals-add-btn daily-goals-cancel-icon-btn" data-cancel-edit title="Cancel">×</button>
+          </div>
+        </div>`;
+    }
+
+    const isOnce = goal.type === "once_off";
+    const isDone = isOnce ? isOnceOffGoalDone(goal.id) : isDailyGoalDoneOnDate(goal.id, viewKey);
+    const onceCls = isOnce ? " is-once-off" : "";
+    const badgeFullClass = badgeClass + (isOnce ? " is-once-off" : "");
+    return `
+      <label class="daily-goal-item${isDone ? " is-done" : ""}${onceCls}" data-goal-id="${id}">
+        <input type="checkbox" class="daily-goal-check" data-toggle-goal="${id}"${isDone ? " checked" : ""}>
+        <span class="daily-goal-name">${escapeHtml(goal.name)}</span>
+        <span class="${badgeFullClass}">${badgeText}</span>
+        <button type="button" class="daily-goal-action-btn" data-edit-goal="${id}" title="Edit goal">✎</button>
+        <button type="button" class="daily-goal-action-btn" data-delete-goal="${id}" title="Delete goal">×</button>
+      </label>`;
+  }
+
+  const recurringHTML = recurring.length
+    ? recurring.map(goalHTML).join("")
+    : `<p class="daily-goals-empty">No daily goals.</p>`;
+  const onceOffHTML = onceOff.length
+    ? onceOff.map(goalHTML).join("")
+    : `<p class="daily-goals-empty">No once-off goals.</p>`;
+
+  list.innerHTML =
+    `<div><div class="daily-goals-group-label">Daily</div><div class="daily-goals-group">${recurringHTML}</div></div>` +
+    `<div><div class="daily-goals-group-label is-once-off">Once-off</div><div class="daily-goals-group">${onceOffHTML}</div></div>`;
+
+  if (state.dailyGoalsEditingId) {
+    const editInput = list.querySelector("[data-edit-name]");
+    if (editInput) {
+      editInput.focus();
+      editInput.select();
+    }
+  }
+}
+
+if (elements.dailyGoalsList) {
+  elements.dailyGoalsList.addEventListener("click", (event) => {
+    // Move up/down
+    const moveBtn = event.target.closest("[data-move-goal]");
+    if (moveBtn && !moveBtn.disabled) {
+      event.preventDefault();
+      moveDailyGoal(
+        String(moveBtn.getAttribute("data-move-goal") || "").trim(),
+        String(moveBtn.getAttribute("data-move-dir") || "down"),
+      );
+      return;
+    }
+    // Delete
+    const deleteBtn = event.target.closest("[data-delete-goal]");
+    if (deleteBtn) {
+      event.preventDefault();
+      deleteDailyGoal(String(deleteBtn.getAttribute("data-delete-goal") || "").trim());
+      return;
+    }
+    // Edit open
+    const editBtn = event.target.closest("[data-edit-goal]");
+    if (editBtn) {
+      event.preventDefault();
+      state.dailyGoalsEditingId = String(editBtn.getAttribute("data-edit-goal") || "").trim();
+      renderDailyGoals();
+      return;
+    }
+    // Cancel edit
+    if (event.target.closest("[data-cancel-edit]")) {
+      event.preventDefault();
+      state.dailyGoalsEditingId = "";
+      renderDailyGoals();
+      return;
+    }
+    // Save edit
+    const saveBtn = event.target.closest("[data-save-goal]");
+    if (saveBtn) {
+      event.preventDefault();
+      const goalId = String(saveBtn.getAttribute("data-save-goal") || "").trim();
+      const item = saveBtn.closest("[data-goal-id]");
+      if (item && goalId) {
+        const nameVal = String(item.querySelector("[data-edit-name]")?.value || "").trim();
+        const ptsVal = Number(item.querySelector("[data-edit-points]")?.value || "0");
+        const chip = item.querySelector("[data-edit-type-chip]");
+        const typeVal = String(chip?.getAttribute("data-edit-type") || "recurring");
+        if (nameVal) {
+          const goal = state.dailyGoals.find((g) => g.id === goalId);
+          if (goal) {
+            goal.name = nameVal;
+            goal.points = ptsVal;
+            goal.type = typeVal;
+            saveDailyGoalsToStorage();
+          }
+        }
+      }
+      state.dailyGoalsEditingId = "";
+      renderDailyGoals();
+      return;
+    }
+    // Edit type chip toggle (single button flip)
+    const editTypeChip = event.target.closest("[data-edit-type-chip]");
+    if (editTypeChip) {
+      event.preventDefault();
+      const next = editTypeChip.getAttribute("data-edit-type") === "recurring" ? "once_off" : "recurring";
+      editTypeChip.setAttribute("data-edit-type", next);
+      editTypeChip.textContent = next === "once_off" ? "Once-off" : "Daily";
+      editTypeChip.classList.toggle("is-once-off-chip", next === "once_off");
+      return;
+    }
+    // Toggle done (must come last — the label covers the whole card)
+    const toggleTarget = event.target.closest("[data-toggle-goal]") || event.target.closest("[data-goal-id]");
+    if (toggleTarget) {
+      const goalId = String(
+        toggleTarget.getAttribute("data-toggle-goal") ||
+        toggleTarget.getAttribute("data-goal-id") || ""
+      ).trim();
+      if (goalId && goalId !== state.dailyGoalsEditingId) toggleDailyGoalDone(goalId);
+    }
+  });
+
+  elements.dailyGoalsList.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && event.target.closest("[data-edit-name]")) {
+      event.preventDefault();
+      event.target.closest("[data-goal-id]")?.querySelector("[data-save-goal]")?.click();
+    }
+    if (event.key === "Escape" && state.dailyGoalsEditingId) {
+      state.dailyGoalsEditingId = "";
+      renderDailyGoals();
+    }
+  });
+}
+
+if (elements.dailyGoalsAddToggle) {
+  elements.dailyGoalsAddToggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    state.dailyGoalsAddOpen = !state.dailyGoalsAddOpen;
+    if (elements.dailyGoalsAddRow) elements.dailyGoalsAddRow.hidden = !state.dailyGoalsAddOpen;
+    if (state.dailyGoalsAddOpen) elements.dailyGoalNameInput?.focus();
+  });
+}
+
+if (elements.dailyGoalsPrevDay) {
+  elements.dailyGoalsPrevDay.addEventListener("click", () => {
+    const d = new Date(dailyGoalsViewKey() + "T12:00:00");
+    d.setDate(d.getDate() - 1);
+    state.dailyGoalsViewDate = dailyGoalsDateKey(d);
+    renderDailyGoals();
+  });
+}
+
+if (elements.dailyGoalsNextDay) {
+  elements.dailyGoalsNextDay.addEventListener("click", () => {
+    const d = new Date(dailyGoalsViewKey() + "T12:00:00");
+    d.setDate(d.getDate() + 1);
+    state.dailyGoalsViewDate = dailyGoalsDateKey(d);
+    renderDailyGoals();
+  });
+}
+
+if (elements.dailyGoalsTypeToggle) {
+  elements.dailyGoalsTypeToggle.addEventListener("click", () => {
+    state.dailyGoalsNewType = state.dailyGoalsNewType === "recurring" ? "once_off" : "recurring";
+    elements.dailyGoalsTypeToggle.setAttribute("data-goal-type", state.dailyGoalsNewType);
+    elements.dailyGoalsTypeToggle.textContent = state.dailyGoalsNewType === "recurring" ? "Daily" : "Once-off";
+  });
+}
+
+if (elements.dailyGoalsAddBtn) {
+  elements.dailyGoalsAddBtn.addEventListener("click", () => {
+    const name = String(elements.dailyGoalNameInput?.value || "").trim();
+    if (!name) {
+      elements.dailyGoalNameInput?.focus();
+      return;
+    }
+    const points = Number(elements.dailyGoalPointsInput?.value || "10");
+    addDailyGoal(name, points, state.dailyGoalsNewType);
+    if (elements.dailyGoalNameInput) elements.dailyGoalNameInput.value = "";
+    if (elements.dailyGoalPointsInput) elements.dailyGoalPointsInput.value = "10";
+    state.dailyGoalsAddOpen = false;
+    if (elements.dailyGoalsAddRow) elements.dailyGoalsAddRow.hidden = true;
+  });
+}
+
+if (elements.dailyGoalNameInput) {
+  elements.dailyGoalNameInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") elements.dailyGoalsAddBtn?.click();
+  });
+}
+
 async function bootstrapDashboard() {
   loadOnePieceCards();
   state.onePieceCurrentChapter = loadOnePieceCurrentChapterPreference();
@@ -8227,6 +8694,11 @@ async function bootstrapDashboard() {
   state.thatsABadIdeaScroll = loadThatsABadIdeaScrollPreference();
   state.gameranxTvCurrentVideoId = loadGameranxTvCurrentVideoPreference();
   state.gameranxTvScroll = loadGameranxTvScrollPreference();
+  state.dailyGoals = loadDailyGoalsFromStorage();
+  state.dailyGoalsProgress = loadDailyGoalsProgressFromStorage();
+  state.dailyGoalsViewDate = dailyGoalsTodayKey();
+  seedYesterdayFromToday();
+  renderDailyGoals();
   state.readingFolderId = loadReadingFolderPreference();
   const localReadingProgress = loadReadingProgressPreference();
   if (String(localReadingProgress.series_id || "").trim()) {
