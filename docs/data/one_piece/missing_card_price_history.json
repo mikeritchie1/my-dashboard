@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-22T01:54:53Z",
+  "updated_at": "2026-05-22T05:55:19Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -6048,6 +6048,78 @@
       "stock": "",
       "observed_on": "2026-05-22",
       "captured_at": "2026-05-22T01:54:53Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 84.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-22",
+      "captured_at": "2026-05-22T05:55:19Z"
+    },
+    {
+      "card_number": "OP14-091",
+      "art_variant": "alternate",
+      "price": 323.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mr-2-bon-kurei-bentham-alternate-art-the-azure-seas-seven",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-22",
+      "captured_at": "2026-05-22T05:55:19Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 519.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-22",
+      "captured_at": "2026-05-22T05:55:19Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 851.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
+      "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-22",
+      "captured_at": "2026-05-22T05:55:19Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "alternate",
+      "price": 1326.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
+      "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-22",
+      "captured_at": "2026-05-22T05:55:19Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 1985.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-22",
+      "captured_at": "2026-05-22T05:55:19Z"
     }
   ]
 }
