@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T17:51:38Z",
+  "updated_at": "2026-05-23T18:49:45Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -7356,6 +7356,18 @@
       "stock": "In stock",
       "observed_on": "2026-05-23",
       "captured_at": "2026-05-23T15:52:36Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/681268010",
+      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T18:49:45Z"
     }
   ]
 }
