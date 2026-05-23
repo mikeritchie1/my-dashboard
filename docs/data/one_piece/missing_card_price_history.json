@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T14:23:59Z",
+  "updated_at": "2026-05-23T15:52:36Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -7332,6 +7332,30 @@
       "stock": "In stock",
       "observed_on": "2026-05-23",
       "captured_at": "2026-05-23T09:54:18Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 60.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T15:52:36Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 1989.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-23",
+      "captured_at": "2026-05-23T15:52:36Z"
     }
   ]
 }
