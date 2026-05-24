@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import os
 import re
 import urllib.parse
 import urllib.request
@@ -24,7 +25,19 @@ MAX_PAGES = max(1, int(env_get("SCRAPE_BANDSINTOWN_MAX_PAGES", "30")))
 REPO_DIR = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_DIR / "docs" / "data" / "events"
 JSON_OUTPUT = OUTPUT_DIR / "bandsintown_events.json"
+PLACES_OUTPUT = OUTPUT_DIR / "places.json"
 EVENTS_CONFIG_PATH = OUTPUT_DIR / "config.json"
+LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
+GOOGLE_PLACES_SEARCH_URL = env_get("SCRAPE_GOOGLE_PLACES_SEARCH_URL", "https://places.googleapis.com/v1/places:searchText")
+GOOGLE_PLACES_FIELD_MASK = (
+    "places.id,places.displayName,places.types,places.formattedAddress,"
+    "places.shortFormattedAddress,places.location,places.rating,places.userRatingCount,"
+    "places.googleMapsUri,places.photos"
+)
+GOOGLE_PLACES_LOCATION_BIAS_RADIUS_M = min(
+    50000.0,
+    max(1.0, float(env_get("SCRAPE_GOOGLE_PLACES_LOCATION_BIAS_RADIUS_M", "50000"))),
+)
 LOCAL_TZ = timezone(timedelta(hours=2), "SAST")
 DEFAULT_GENRE_FILTERS = [
     "Alternative",
@@ -75,11 +88,61 @@ def load_genre_filters() -> list[str]:
     return DEFAULT_GENRE_FILTERS[:]
 
 
+def local_secret(name: str) -> str:
+    if not LOCAL_SECRETS_FILE.exists():
+        return ""
+    for line in LOCAL_SECRETS_FILE.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        if key.strip() == name:
+            return value.strip().strip('"').strip("'")
+    return ""
+
+
+def secret(name: str) -> str:
+    return os.environ.get(name, "").strip() or local_secret(name)
+
+
+def read_json(path: Path, fallback: object) -> object:
+    if not path.exists():
+        return fallback
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        return fallback
+
+
+def existing_events_by_url() -> dict[str, dict]:
+    payload = read_json(JSON_OUTPUT, [])
+    if not isinstance(payload, list):
+        return {}
+    return {
+        str(item.get("url") or "").strip(): item
+        for item in payload
+        if isinstance(item, dict) and str(item.get("url") or "").strip()
+    }
+
+
+def load_places() -> dict[str, dict]:
+    payload = read_json(PLACES_OUTPUT, {})
+    return payload if isinstance(payload, dict) else {}
+
+
+def write_places(places: dict[str, dict]) -> None:
+    PLACES_OUTPUT.write_text(json.dumps(places, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def ordered_genres(tags: set[str], genre_order: list[str]) -> list[str]:
     order_map = {clean_text(genre).lower(): index for index, genre in enumerate(genre_order)}
     unique_tags = list(dict.fromkeys(clean_text(tag) for tag in tags if clean_text(tag)))
     unique_tags.sort(key=lambda value: (order_map.get(value.lower(), 10_000), value.lower()))
     return unique_tags
+
+
+def normalize_place_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "-", str(value or "").strip().lower()).strip("-")
 
 
 def is_western_cape_event(event: dict[str, object]) -> bool:
@@ -286,6 +349,31 @@ def split_artist_and_venue(title: str, venue: str) -> tuple[str, str]:
     return clean_title, clean_venue
 
 
+def title_from_slug(value: str) -> str:
+    words = [word for word in re.split(r"[-_]+", str(value or "")) if word]
+    small_words = {"a", "an", "and", "at", "by", "for", "in", "of", "on", "or", "the", "to"}
+    titled = []
+    for index, word in enumerate(words):
+        lower = word.lower()
+        titled.append(lower if index > 0 and lower in small_words else lower.capitalize())
+    return clean_text(" ".join(titled))
+
+
+def event_title_venue_from_url(url: str) -> tuple[str, str]:
+    path = urllib.parse.urlparse(url).path
+    slug = path.rsplit("/", 1)[-1]
+    slug = re.sub(r"^\d+-", "", slug)
+    if "-at-" not in slug:
+        return "", ""
+    title_slug, venue_slug = slug.split("-at-", 1)
+    return title_from_slug(title_slug), title_from_slug(venue_slug)
+
+
+def is_bad_listing_title(value: str) -> bool:
+    normalized = clean_text(value).lower()
+    return normalized in {"calendaricon", "homeicon", "locationicon", "ticketicon"}
+
+
 def event_from_json_ld(payload: dict, fallback: dict[str, str], forced_genres: list[str] | None = None) -> dict:
     location = payload.get("location") if isinstance(payload.get("location"), dict) else {}
     address = location.get("address") if isinstance(location.get("address"), dict) else {}
@@ -322,6 +410,14 @@ def event_from_listing(link: dict[str, str]) -> dict:
     date_text = display_fallback_date(text)
     title = clean_text(text.replace(date_text, "")) if date_text else text
     title, venue = split_artist_and_venue(title, "")
+    fallback_title, fallback_venue = event_title_venue_from_url(link.get("url", ""))
+    if not title or is_bad_listing_title(title):
+        title = fallback_title
+    if not venue:
+        venue = fallback_venue
+    image = link.get("image", "")
+    if "calendarIcon.svg" in image or "homeIcon" in image:
+        image = ""
     return {
         "title": title,
         "artist": title,
@@ -331,7 +427,7 @@ def event_from_listing(link: dict[str, str]) -> dict:
         "locality": "Cape Town",
         "region": "Western Cape",
         "address": "",
-        "image": link.get("image", ""),
+        "image": image,
         "url": link.get("url", ""),
         "source": "Bandsintown",
         "genre": "",
@@ -340,7 +436,196 @@ def event_from_listing(link: dict[str, str]) -> dict:
     }
 
 
-def collect_listing_links(source_url: str, max_pages: int) -> list[dict[str, str]]:
+def event_place_query(event: dict) -> str:
+    venue = clean_text(str(event.get("venue") or ""))
+    address = clean_text(str(event.get("address") or ""))
+    if not venue and not address:
+        return ""
+    return clean_text(", ".join(
+        part for part in [
+            venue,
+            address,
+            str(event.get("locality") or "Cape Town"),
+            str(event.get("region") or "Western Cape"),
+            "South Africa",
+        ]
+        if clean_text(str(part or ""))
+    ))
+
+
+def google_places_search(api_key: str, query: str) -> dict:
+    body = {
+        "textQuery": query,
+        "pageSize": 1,
+        "locationBias": {
+            "circle": {
+                "center": {"latitude": -33.9249, "longitude": 18.4241},
+                "radius": GOOGLE_PLACES_LOCATION_BIAS_RADIUS_M,
+            }
+        },
+    }
+    request = urllib.request.Request(
+        GOOGLE_PLACES_SEARCH_URL,
+        data=json.dumps(body).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "X-Goog-Api-Key": api_key,
+            "X-Goog-FieldMask": GOOGLE_PLACES_FIELD_MASK,
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+    places = payload.get("places", []) if isinstance(payload, dict) else []
+    return places[0] if places else {}
+
+
+def simplify_google_place(place: dict) -> dict:
+    if not place:
+        return {}
+    photos = place.get("photos") if isinstance(place.get("photos"), list) else []
+    first_photo = photos[0] if photos and isinstance(photos[0], dict) else {}
+    location = place.get("location") if isinstance(place.get("location"), dict) else {}
+    return {
+        "google_place_id": str(place.get("id") or ""),
+        "name": ((place.get("displayName") or {}).get("text") if isinstance(place.get("displayName"), dict) else "") or "",
+        "types": place.get("types") if isinstance(place.get("types"), list) else [],
+        "address": str(place.get("formattedAddress") or ""),
+        "short_address": str(place.get("shortFormattedAddress") or ""),
+        "location": {
+            "lat": location.get("latitude"),
+            "lng": location.get("longitude"),
+        },
+        "rating": place.get("rating"),
+        "rating_count": place.get("userRatingCount"),
+        "map_url": str(place.get("googleMapsUri") or ""),
+        "photo_preview": {
+            "name": str(first_photo.get("name") or ""),
+            "width": first_photo.get("widthPx"),
+            "height": first_photo.get("heightPx"),
+            "author": (((first_photo.get("authorAttributions") or [{}])[0]).get("displayName") if isinstance(first_photo.get("authorAttributions"), list) and first_photo.get("authorAttributions") else ""),
+        } if first_photo else {},
+    }
+
+
+def place_cache_key(event: dict) -> str:
+    return normalize_place_key("|".join([
+        str(event.get("venue") or ""),
+        str(event.get("address") or ""),
+        str(event.get("locality") or ""),
+    ]))
+
+
+def apply_place_to_event(event: dict, place: dict) -> dict:
+    if not place:
+        return event
+    merged = dict(event)
+    merged["place"] = place
+    merged["google_place_id"] = place.get("google_place_id", "")
+    merged["place_key"] = place.get("name", "") or merged.get("venue", "")
+    merged["missing_place"] = False
+    lat = place.get("location", {}).get("lat") if isinstance(place.get("location"), dict) else None
+    lng = place.get("location", {}).get("lng") if isinstance(place.get("location"), dict) else None
+    try:
+        merged["lat"] = float(lat)
+        merged["lng"] = float(lng)
+        merged["missing_location"] = False
+    except (TypeError, ValueError):
+        pass
+    if place.get("address"):
+        merged["google_address"] = place.get("address", "")
+    if place.get("short_address"):
+        merged["google_short_address"] = place.get("short_address", "")
+    if place.get("map_url"):
+        merged["google_maps_url"] = place.get("map_url", "")
+    return merged
+
+
+def place_record_from_event(event: dict) -> dict:
+    place = event.get("place") if isinstance(event.get("place"), dict) else {}
+    if not place:
+        return {}
+    location = place.get("location") if isinstance(place.get("location"), dict) else {}
+    return {
+        "name": place.get("name", "") or event.get("venue", ""),
+        "types": place.get("types", []),
+        "address": place.get("address", "") or event.get("address", ""),
+        "short_address": place.get("short_address", ""),
+        "lat": location.get("lat"),
+        "lng": location.get("lng"),
+        "location": location,
+        "rating": place.get("rating"),
+        "rating_count": place.get("rating_count"),
+        "google_place_id": place.get("google_place_id", ""),
+        "google_maps_url": place.get("map_url", ""),
+        "photo_preview": place.get("photo_preview", {}),
+        "source": "Google Places",
+    }
+
+
+def enrich_events_with_google_places(events: list[dict], old_events: dict[str, dict], places_limit: int = 0) -> list[dict]:
+    api_key = secret("GOOGLE_PLACES_API_KEY") or secret("GOOGLE_MAPS_API_KEY") or secret("GOOGLE_API_KEY")
+    places = load_places()
+    query_cache: dict[str, dict] = {}
+    enriched: list[dict] = []
+    calls = 0
+
+    for event in events:
+        url = str(event.get("url") or "").strip()
+        previous = old_events.get(url, {})
+        previous_place = previous.get("place") if isinstance(previous.get("place"), dict) else {}
+        if previous_place:
+            enriched_event = apply_place_to_event(event, previous_place)
+            enriched.append(enriched_event)
+            continue
+        if previous:
+            enriched.append(event)
+            continue
+
+        if not api_key:
+            enriched.append(event)
+            continue
+
+        cache_key = place_cache_key(event)
+        place = query_cache.get(cache_key, {})
+        if cache_key not in query_cache:
+            query = event_place_query(event)
+            if not query:
+                query_cache[cache_key] = {}
+                enriched.append(event)
+                continue
+            if places_limit > 0 and calls >= places_limit:
+                query_cache[cache_key] = {}
+                enriched.append(event)
+                continue
+            try:
+                print(f"  Google Places lookup: {query}", flush=True)
+                place = simplify_google_place(google_places_search(api_key, query))
+                calls += 1
+            except urllib.error.HTTPError as error:
+                detail = error.read().decode("utf-8", errors="replace")
+                print(f"  Google Places lookup failed: HTTP {error.code}: {detail}", flush=True)
+                place = {}
+            except Exception as error:  # noqa: BLE001
+                print(f"  Google Places lookup failed: {error}", flush=True)
+                place = {}
+            query_cache[cache_key] = place
+
+        enriched_event = apply_place_to_event(event, place)
+        record = place_record_from_event(enriched_event)
+        if record:
+            places[record["name"]] = {**places.get(record["name"], {}), **record}
+        enriched.append(enriched_event)
+
+    if places:
+        write_places(places)
+    if calls:
+        print(f"  Google Places API calls: {calls}", flush=True)
+    return enriched
+
+
+def collect_listing_links(source_url: str, max_pages: int, limit: int = 0) -> list[dict[str, str]]:
     links: list[dict[str, str]] = []
     seen_listing_urls: set[str] = set()
     stale_pages = 0
@@ -358,6 +643,9 @@ def collect_listing_links(source_url: str, max_pages: int) -> list[dict[str, str
                 continue
             seen_listing_urls.add(entry_url)
             links.append(entry)
+            if limit > 0 and len(links) >= limit:
+                print(f"  Reached listing limit ({limit}); stopping page scan.")
+                return links
         discovered = len(seen_listing_urls) - before
         print(f"  Listing page {page}: {len(page_links)} candidate(s), {discovered} new.")
         if discovered == 0:
@@ -371,7 +659,7 @@ def collect_listing_links(source_url: str, max_pages: int) -> list[dict[str, str
 
 def scrape(limit: int, max_pages: int, source_url: str, listing_only: bool = False, genre_seed: str = "") -> list[dict]:
     print(f"Scanning Bandsintown: {source_url}")
-    links = collect_listing_links(source_url=source_url, max_pages=max_pages)
+    links = collect_listing_links(source_url=source_url, max_pages=max_pages, limit=limit)
 
     print(f"  Found {len(links)} unique event link(s).")
 
@@ -384,7 +672,13 @@ def scrape(limit: int, max_pages: int, source_url: str, listing_only: bool = Fal
     by_url: dict[str, dict[str, str]] = {str(link.get("url") or ""): link for link in links if str(link.get("url") or "")}
 
     for genre in selected_genres:
-        genre_links = collect_listing_links(source_url=genre_url(genre), max_pages=max_pages)
+        if limit > 0 and len(by_url) >= limit:
+            break
+        genre_links = collect_listing_links(
+            source_url=genre_url(genre),
+            max_pages=max_pages,
+            limit=max(0, limit - len(by_url)) if limit > 0 else 0,
+        )
         print(f"  Genre {genre}: {len(genre_links)} link(s).")
         for link in genre_links:
             url = str(link.get("url") or "").strip()
@@ -392,6 +686,8 @@ def scrape(limit: int, max_pages: int, source_url: str, listing_only: bool = Fal
                 continue
             by_url.setdefault(url, link)
             genre_membership.setdefault(url, set()).add(genre)
+            if limit > 0 and len(by_url) >= limit:
+                break
 
     events: list[dict] = []
     seen_urls: set[str] = set()
@@ -439,12 +735,14 @@ def main() -> int:
     parser.add_argument("--source-url", default="", help="Optional full source URL override.")
     parser.add_argument("--listing-only", action="store_true", help="Only scrape listing page cards (faster, fewer fields).")
     parser.add_argument("--hard", action="store_true", help="Recreate this source output from scratch before writing.")
+    parser.add_argument("--places-limit", type=int, default=0, help="Maximum new Google Places lookups to make (0 = no limit).")
     args = parser.parse_args()
 
     selected_genre = args.genre.strip()
     source_url = args.source_url.strip() or (SOURCE_URL if selected_genre.lower() in {"", "all"} else genre_url(selected_genre))
     print(f"Using source: {source_url}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    old_events = {} if args.hard else existing_events_by_url()
     if args.hard and JSON_OUTPUT.exists():
         print(f"Removing stale Bandsintown output: {JSON_OUTPUT}")
         JSON_OUTPUT.unlink()
@@ -455,6 +753,7 @@ def main() -> int:
         listing_only=bool(args.listing_only),
         genre_seed=selected_genre,
     )
+    events = enrich_events_with_google_places(events, old_events, places_limit=max(0, args.places_limit))
     JSON_OUTPUT.write_text(json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8")
     sync_events_data_to_docs()
     print(f"Wrote {len(events)} Bandsintown event(s) to {JSON_OUTPUT}")

@@ -2453,6 +2453,12 @@ td.card-number {
   margin-top: 4px;
 }
 
+.map-place-divider {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 14px 0;
+}
+
 .map-split-pin {
   display: grid;
   place-items: center;

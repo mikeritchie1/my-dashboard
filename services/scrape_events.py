@@ -62,6 +62,8 @@ def run_source(source: str, args: argparse.Namespace) -> None:
         command.extend([page_flag, str(args.max_pages)])
     if source == "bandsintown" and args.genre:
         command.extend(["--genre", args.genre])
+    if source == "bandsintown" and args.places_limit > 0:
+        command.extend(["--places-limit", str(args.places_limit)])
 
     print(f"\nRunning {source}: {' '.join(command)}", flush=True)
     subprocess.run(command, cwd=REPO_DIR, check=True)
@@ -83,6 +85,7 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0, help="Maximum items per source (0 = no limit where supported).")
     parser.add_argument("--max-pages", type=int, default=0, help="Maximum listing pages per source (0 = source default/all).")
     parser.add_argument("--genre", default="", help="Bandsintown genre filter. Use 'all' for the all-genre Bandsintown listing.")
+    parser.add_argument("--places-limit", type=int, default=0, help="Bandsintown only: maximum new Google Places lookups to make (0 = no limit).")
     args = parser.parse_args()
 
     source_names = selected_sources(args.source)

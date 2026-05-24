@@ -7,7 +7,8 @@ import urllib.request
 from pathlib import Path
 import sys
 
-sys.path.append(str(Path(__file__).resolve().parents[1]))
+REPO_DIR = Path(__file__).resolve().parents[2]
+sys.path.append(str(REPO_DIR))
 from env import get as env_get
 
 
@@ -16,7 +17,7 @@ PHOTO_URL = env_get("SCRAPE_GOOGLE_PLACES_PHOTO_URL", "https://places.googleapis
 
 
 def local_secret(name: str) -> str:
-    secrets_path = Path(__file__).resolve().parents[1] / "secrets.env"
+    secrets_path = REPO_DIR / "secrets.env"
     if not secrets_path.exists():
         return ""
     for line in secrets_path.read_text(encoding="utf-8").splitlines():

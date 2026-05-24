@@ -5088,6 +5088,25 @@ function coordinatesFor(item) {
   ) {
     return { lat: directLat, lng: directLng };
   }
+  const nestedLocation = item?.location && typeof item.location === "object" ? item.location : null;
+  const nestedLat = Number(nestedLocation?.lat);
+  const nestedLng = Number(nestedLocation?.lng);
+  if (
+    Number.isFinite(nestedLat)
+    && Number.isFinite(nestedLng)
+    && nestedLat >= EVENT_GEO_BOUNDS.minLat
+    && nestedLat <= EVENT_GEO_BOUNDS.maxLat
+    && nestedLng >= EVENT_GEO_BOUNDS.minLng
+    && nestedLng <= EVENT_GEO_BOUNDS.maxLng
+  ) {
+    return { lat: nestedLat, lng: nestedLng };
+  }
+  if (item?.place && typeof item.place === "object") {
+    const placeCoords = coordinatesFor(item.place);
+    if (placeCoords) {
+      return placeCoords;
+    }
+  }
   const lookupKeys = unique([
     String(item?.name || "").trim(),
     String(item?.venue || "").trim(),
@@ -5179,12 +5198,14 @@ function mapItemFromPlace(location) {
     title: location.name || location.venue,
     address: location.address || "",
     url: location.google_maps_url || location.url,
-    types: [],
+    types: Array.isArray(location.types) ? location.types : [],
     categories: location.tags || [],
     details: [
       "Place",
       (location.tags || []).length ? `Tags: ${location.tags.join(", ")}` : "No tags",
+      location.rating ? `Rating: ${location.rating} (${location.rating_count || 0})` : "",
     ],
+    place: location,
   };
 }
 
@@ -5355,15 +5376,28 @@ function linkedSpecialsForPlace(placeName) {
 function linkedEventsForPlace(place) {
   const placeName = String(place?.name || "").trim();
   const placeAddress = String(place?.address || "").trim();
+  const placeGoogleId = String(place?.google_place_id || "").trim();
+  const placeCoords = coordinatesFor(place);
   const placeKey = venueKey(placeName);
   const addressKey = venueKey(placeAddress);
   const combined = [...(state.quicketEvents || []), ...(state.bandsintownEvents || [])];
   const window = mapRangeWindow();
   const linked = [];
   for (const event of combined) {
+    const eventPlace = event?.place && typeof event.place === "object" ? event.place : {};
+    const eventGoogleId = String(eventPlace.google_place_id || event?.google_place_id || "").trim();
+    const eventPlaceName = venueKey(String(eventPlace.name || "").trim());
+    const eventPlaceAddress = venueKey(String(eventPlace.address || "").trim());
+    const eventCoords = coordinatesFor(event);
     const venueMatch = venueKey(event?.venue || "") === placeKey;
     const addressMatch = addressKey && venueKey(event?.address || "") === addressKey;
-    if (!(venueMatch || addressMatch)) {
+    const googleMatch = placeGoogleId && eventGoogleId && placeGoogleId === eventGoogleId;
+    const placeNameMatch = eventPlaceName && eventPlaceName === placeKey;
+    const placeAddressMatch = addressKey && eventPlaceAddress && eventPlaceAddress === addressKey;
+    const coordMatch = placeCoords && eventCoords
+      && Math.abs(placeCoords.lat - eventCoords.lat) < 0.00001
+      && Math.abs(placeCoords.lng - eventCoords.lng) < 0.00001;
+    if (!(venueMatch || addressMatch || googleMatch || placeNameMatch || placeAddressMatch || coordMatch)) {
       continue;
     }
     const startAt = event?.start ? new Date(event.start) : null;
@@ -5408,13 +5442,23 @@ function shouldIncludePlaceMarker(placeItem) {
 }
 
 function placeMatchForEvent(event, placeVenueKeys, placeAddressKeys) {
-  const placeKey = venueKey(String(event?.place_key || event?.place || "").trim());
+  const rawPlace = event?.place && typeof event.place !== "object" ? event.place : "";
+  const placeKey = venueKey(String(event?.place_key || rawPlace || "").trim());
   const venue = venueKey(String(event?.venue || "").trim());
   const address = venueKey(String(event?.address || "").trim());
+  const googlePlace = event?.place && typeof event.place === "object" ? event.place : {};
+  const googlePlaceName = venueKey(String(googlePlace.name || "").trim());
+  const googlePlaceAddress = venueKey(String(googlePlace.address || "").trim());
   if (placeKey && placeVenueKeys.has(placeKey)) {
     return true;
   }
+  if (googlePlaceName && placeVenueKeys.has(googlePlaceName)) {
+    return true;
+  }
   if (venue && placeVenueKeys.has(venue)) {
+    return true;
+  }
+  if (googlePlaceAddress && placeAddressKeys.has(googlePlaceAddress)) {
     return true;
   }
   if (address && placeAddressKeys.has(address)) {
@@ -5424,16 +5468,35 @@ function placeMatchForEvent(event, placeVenueKeys, placeAddressKeys) {
 }
 
 function findPlaceItemForEvent(event) {
-  const placeKey = venueKey(String(event?.place_key || event?.place || "").trim());
+  const rawPlace = event?.place && typeof event.place !== "object" ? event.place : "";
+  const placeKey = venueKey(String(event?.place_key || rawPlace || "").trim());
   const venue = venueKey(String(event?.venue || "").trim());
   const address = venueKey(String(event?.address || "").trim());
+  const googlePlace = event?.place && typeof event.place === "object" ? event.place : {};
+  const googlePlaceId = String(googlePlace.google_place_id || event?.google_place_id || "").trim();
+  const googlePlaceName = venueKey(String(googlePlace.name || "").trim());
+  const googlePlaceAddress = venueKey(String(googlePlace.address || "").trim());
+  const eventCoords = coordinatesFor(event);
   for (const item of currentMapItems) {
     if (item.source !== "places") {
       continue;
     }
     const itemVenue = venueKey(String(item?.title || "").trim());
     const itemAddress = venueKey(String(item?.address || "").trim());
-    if ((placeKey && placeKey === itemVenue) || (venue && venue === itemVenue) || (address && address === itemAddress)) {
+    const itemGoogleId = String(item?.place?.google_place_id || "").trim();
+    const itemCoords = coordinatesFor(item);
+    const coordMatch = eventCoords && itemCoords
+      && Math.abs(eventCoords.lat - itemCoords.lat) < 0.00001
+      && Math.abs(eventCoords.lng - itemCoords.lng) < 0.00001;
+    if (
+      (googlePlaceId && itemGoogleId && googlePlaceId === itemGoogleId)
+      || (googlePlaceName && googlePlaceName === itemVenue)
+      || (googlePlaceAddress && googlePlaceAddress === itemAddress)
+      || (placeKey && placeKey === itemVenue)
+      || (venue && venue === itemVenue)
+      || (address && address === itemAddress)
+      || coordMatch
+    ) {
       return item;
     }
   }
@@ -5688,71 +5751,74 @@ function renderMapDetail(item) {
   }
 
   if (item.source === "places") {
-    const placeLink = item.url
-      ? `<a href="${item.url}" target="_blank" rel="noreferrer">${item.title || "Place"}</a>`
-      : (item.title || "Place");
-    const placeName = item.title || "Place";
-    const tags = (item.categories || []).filter(Boolean).map(prettyTag);
-    const specials = linkedSpecialsForPlace(placeName);
-    const events = linkedEventsForPlace({
-      name: placeName,
-      address: item.address || "",
+    const itemCoords = coordinatesFor(item);
+    const placeItems = currentMapItems.filter((candidate) => {
+      if (candidate.source !== "places") return false;
+      const coords = coordinatesFor(candidate);
+      return itemCoords && coords
+        && Math.abs(itemCoords.lat - coords.lat) < 0.00001
+        && Math.abs(itemCoords.lng - coords.lng) < 0.00001;
     });
-    const specialsHtml = specials
-      .map((entry) => {
-        const lines = [
-          (entry.details || entry.deal) ? `<p><strong>Deal:</strong> ${entry.details || entry.deal}</p>` : "",
-          entry.price ? `<p><strong>Price:</strong> ${entry.price}</p>` : "",
-          entry.time ? `<p><strong>Time:</strong> ${entry.time}</p>` : "",
-          entry.day ? `<p><strong>Days:</strong> ${entry.day}</p>` : "",
-        ].filter(Boolean).join("");
-        return `
-          <article class="map-linked-card map-linked-card-special">
-            <h5>${entry.venue || "Special"}</h5>
-            ${lines}
-          </article>
-        `;
-      })
-      .join("");
-    const eventsHtml = events
-      .map((event) => {
-        const when = displayDateTime(event.start);
-        const where = [event.venue, event.locality, event.region].filter(Boolean).join(", ");
-        const imageHtml = event.image
-          ? `<img src="${event.image}" alt="${event.title || "Event"}">`
-          : "";
-        const lines = [
-          when ? `<p><strong>When:</strong> ${when}</p>` : "",
-          where ? `<p><strong>Where:</strong> ${where}</p>` : "",
-          event.address ? `<p><strong>Address:</strong> ${event.address}</p>` : "",
-          (event.categories || []).length ? `<p><strong>Tags:</strong> ${event.categories.map(prettyTag).join(", ")}</p>` : "",
-          event.url ? `<p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>` : "",
-        ].filter(Boolean).join("");
-        return `
-          <article class="map-linked-card map-linked-card-event">
-            ${imageHtml}
-            <h5>${event.title || "Event"}</h5>
-            ${lines}
-          </article>
-        `;
-      })
-      .join("");
-    const specialsSection = specials.length
-      ? `<div class="map-linked-cards">${specialsHtml}</div>`
-      : "";
-    const eventsSection = events.length
-      ? `<div class="map-linked-cards">${eventsHtml}</div>`
-      : "";
+    const placeSections = (placeItems.length ? placeItems : [item]).map((placeItem, index) => {
+      const placeLink = placeItem.url
+        ? `<a href="${placeItem.url}" target="_blank" rel="noreferrer">${placeItem.title || "Place"}</a>`
+        : (placeItem.title || "Place");
+      const placeName = placeItem.title || "Place";
+      const tags = (placeItem.categories || []).filter(Boolean).map(prettyTag);
+      const specials = linkedSpecialsForPlace(placeName);
+      const events = linkedEventsForPlace({
+        name: placeName,
+        address: placeItem.address || "",
+        google_place_id: placeItem.place?.google_place_id || "",
+        lat: placeItem.lat,
+        lng: placeItem.lng,
+      });
+      const placeMeta = [
+        placeItem.address ? `<p><strong>Address:</strong> ${placeItem.address}</p>` : "",
+        placeItem.place?.short_address ? `<p><strong>Short address:</strong> ${placeItem.place.short_address}</p>` : "",
+        placeItem.place?.rating ? `<p><strong>Rating:</strong> ${placeItem.place.rating} (${placeItem.place.rating_count || 0})</p>` : "",
+        tags.length ? `<p><strong>Tags:</strong> ${tags.join(", ")}</p>` : "",
+      ].filter(Boolean).join("");
+      const specialsHtml = specials
+        .map((entry) => {
+          const lines = [
+            (entry.details || entry.deal) ? `<p><strong>Deal:</strong> ${entry.details || entry.deal}</p>` : "",
+            entry.price ? `<p><strong>Price:</strong> ${entry.price}</p>` : "",
+            entry.time ? `<p><strong>Time:</strong> ${entry.time}</p>` : "",
+            entry.day ? `<p><strong>Days:</strong> ${entry.day}</p>` : "",
+          ].filter(Boolean).join("");
+          return `<article class="map-linked-card map-linked-card-special"><h5>${entry.venue || "Special"}</h5>${lines}</article>`;
+        })
+        .join("");
+      const eventsHtml = events
+        .map((event) => {
+          const when = displayDateTime(event.start);
+          const where = [event.venue, event.locality, event.region].filter(Boolean).join(", ");
+          const imageHtml = event.image ? `<img src="${event.image}" alt="${event.title || "Event"}">` : "";
+          const lines = [
+            when ? `<p><strong>When:</strong> ${when}</p>` : "",
+            where ? `<p><strong>Where:</strong> ${where}</p>` : "",
+            event.address ? `<p><strong>Address:</strong> ${event.address}</p>` : "",
+            (event.categories || []).length ? `<p><strong>Tags:</strong> ${event.categories.map(prettyTag).join(", ")}</p>` : "",
+            event.url ? `<p><a href="${event.url}" target="_blank" rel="noreferrer">Open event</a></p>` : "",
+          ].filter(Boolean).join("");
+          return `<article class="map-linked-card map-linked-card-event">${imageHtml}<h5>${event.title || "Event"}</h5>${lines}</article>`;
+        })
+        .join("");
+      return `
+        ${index > 0 ? '<hr class="map-place-divider">' : ""}
+        <p class="map-detail-source">Place${placeItems.length > 1 ? ` ${index + 1} of ${placeItems.length}` : ""}</p>
+        <h4>${placeLink}</h4>
+        ${placeMeta}
+        ${specials.length ? `<div class="map-linked-cards">${specialsHtml}</div>` : ""}
+        ${events.length ? `<div class="map-linked-cards">${eventsHtml}</div>` : ""}
+      `;
+    }).join("");
     elements.mapDetailPanel.innerHTML = `
       <article class="map-detail-card">
         <div class="map-detail-body">
           <button type="button" class="map-back-button" id="map-back-button">Back to map view</button>
-          <p class="map-detail-source">Place</p>
-          <h4>${placeLink}</h4>
-          ${item.address ? `<p><strong>Address:</strong> ${item.address}</p>` : ""}
-          ${tags.length ? `<p><strong>Tags:</strong> ${tags.join(", ")}</p>` : ""}
-          ${specialsSection}
-          ${eventsSection}
+          ${placeSections}
         </div>
       </article>
     `;
@@ -5848,7 +5914,7 @@ function buildMapItems() {
   // Specials must resolve through linked place markers only.
 
   if (state.mapSources.events) {
-    for (const event of state.quicketEvents) {
+    for (const event of [...(state.quicketEvents || []), ...(state.bandsintownEvents || [])]) {
       const mapItem = mapItemFromEvent(event);
       if (mapItem) {
         if (placeMatchForEvent(event, placeVenueKeys, placeAddressKeys)) {
@@ -7128,6 +7194,7 @@ async function loadBandsintownEvents() {
     state.bandsintownGenreFilters = configuredGenres;
     state.bandsintownEvents = Array.isArray(events) ? events : [];
     renderBandsintownEvents(state.bandsintownEvents);
+    renderMap();
   } catch (error) {
     state.bandsintownGenreFilters = [];
     state.bandsintownEvents = [];
