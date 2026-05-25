@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-25T08:27:31Z",
+  "updated_at": "2026-05-25T11:02:50Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -9780,6 +9780,30 @@
       "stock": "In stock",
       "observed_on": "2026-05-25",
       "captured_at": "2026-05-25T06:21:33Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 48.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-05-25",
+      "captured_at": "2026-05-25T11:02:50Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 79.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-25",
+      "captured_at": "2026-05-25T11:02:50Z"
     }
   ]
 }
