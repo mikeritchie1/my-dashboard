@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-27T05:08:35Z",
+  "updated_at": "2026-05-27T08:56:07Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -12036,6 +12036,30 @@
       "stock": "In stock",
       "observed_on": "2026-05-27",
       "captured_at": "2026-05-27T05:08:35Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 72.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T08:56:07Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 1988.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-05-27",
+      "captured_at": "2026-05-27T08:56:07Z"
     }
   ]
 }
