@@ -94,6 +94,16 @@ def atom_text(node: ET.Element | None, path: str) -> str:
     return (found.text or "").strip() if found is not None and found.text else ""
 
 
+def is_short_item(item: dict) -> bool:
+    url = str(item.get("url", "")).strip().lower()
+    title = str(item.get("title", "")).strip().lower()
+    return "/shorts/" in url or re.search(r"#shorts?\b", title) is not None
+
+
+def normal_video_items(items: list[dict]) -> list[dict]:
+    return [item for item in items if not is_short_item(item)]
+
+
 def fetch_rss_items(channel_id: str, limit: int, timeout: int) -> list[dict]:
     feed_url = "https://www.youtube.com/feeds/videos.xml?channel_id=" + urllib.parse.quote(channel_id, safe="")
     request = urllib.request.Request(
@@ -115,7 +125,7 @@ def fetch_rss_items(channel_id: str, limit: int, timeout: int) -> list[dict]:
             link = (entry_link.attrib.get("href") or "").strip()
         if not link and video_id:
             link = f"https://www.youtube.com/watch?v={video_id}"
-        items.append({
+        item = {
             "id": f"yt-{video_id}" if video_id else "",
             "video_id": video_id,
             "title": title,
@@ -123,7 +133,10 @@ def fetch_rss_items(channel_id: str, limit: int, timeout: int) -> list[dict]:
             "published_at": published_at,
             "updated_at": updated_at,
             "thumbnail_url": f"https://i.ytimg.com/vi/{video_id}/hqdefault.jpg" if video_id else "",
-        })
+        }
+        if is_short_item(item):
+            continue
+        items.append(item)
         if limit > 0 and len(items) >= limit:
             break
     return items
