@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30T00:02:02Z",
+  "updated_at": "2026-05-30T02:52:29Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -15492,6 +15492,30 @@
       "stock": "",
       "observed_on": "2026-05-30",
       "captured_at": "2026-05-30T00:02:02Z"
+    },
+    {
+      "card_number": "OP15-114",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/wyper-op15-114",
+      "title": "Wyper OP15-114",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-05-30",
+      "captured_at": "2026-05-30T02:52:29Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 650.0,
+      "store": "Toad Trader TCG",
+      "url": "https://www.toadtradertcg.com/product-page/monkey-d-luffy-op15-119",
+      "title": "Monkey.D.Luffy OP15-119",
+      "condition": "",
+      "stock": "",
+      "observed_on": "2026-05-30",
+      "captured_at": "2026-05-30T02:52:29Z"
     }
   ]
 }
