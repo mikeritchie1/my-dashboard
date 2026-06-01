@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-01T02:07:51Z",
+  "updated_at": "2026-06-01T08:17:17Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -16500,6 +16500,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-01",
       "captured_at": "2026-06-01T02:07:51Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 57.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-01",
+      "captured_at": "2026-06-01T08:17:17Z"
+    },
+    {
+      "card_number": "ST03-004",
+      "art_variant": "original",
+      "price": 1235.0,
+      "store": "Tanuki Trader",
+      "url": "https://tanukitrader.co.za/product/gecko-moria-sp/",
+      "title": "Gecko Moria (SP)",
+      "condition": "",
+      "stock": "1 in stock",
+      "observed_on": "2026-06-01",
+      "captured_at": "2026-06-01T08:17:17Z"
+    },
+    {
+      "card_number": "ST01-007",
+      "art_variant": "original",
+      "price": 3485.0,
+      "store": "Tanuki Trader",
+      "url": "https://tanukitrader.co.za/product/nami-tr/",
+      "title": "Nami (TR)",
+      "condition": "",
+      "stock": "1 in stock",
+      "observed_on": "2026-06-01",
+      "captured_at": "2026-06-01T08:17:17Z"
     }
   ]
 }
