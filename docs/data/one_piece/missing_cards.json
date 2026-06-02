@@ -61,6 +61,21 @@
       "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
+      "card_number": "ST06-004",
+      "price": 30.0,
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck: Absolute Justice",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R30.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "art_variant": "original",
+      "scraped_at": "2026-05-29T08:03:09Z"
+    },
+    {
       "card_number": "P-053",
       "price": 35.0,
       "title": "Nami (P-053) (Jolly Roger Foil) [Premium Booster -The Best-]",
@@ -74,21 +89,6 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
       "art_variant": "original",
       "scraped_at": "2026-05-28T19:32:25Z"
-    },
-    {
-      "card_number": "ST06-004",
-      "price": 35.0,
-      "title": "Smoker [Starter Deck: Absolute Justice]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Starter Deck: Absolute Justice",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R35.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
-      "art_variant": "original",
-      "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
       "card_number": "P-024",
@@ -107,14 +107,14 @@
     },
     {
       "card_number": "OP10-071",
-      "price": 58.0,
+      "price": 57.0,
       "title": "Donquixote Doflamingo [Royal Blood]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R58.00",
+      "available_variants": "Near Mint Foil R57.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-royal-blood",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617115.jpg?v=1758380198",
       "art_variant": "original",
@@ -196,21 +196,6 @@
       "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
-      "card_number": "ST01-004",
-      "price": 170.0,
-      "title": "Sanji [One Piece Film: Red]",
-      "rarity": "Common",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Film: Red",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R170.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/504475_b4cb5f29-dda4-49c8-a463-da4917de213b.jpg?v=1763500244",
-      "art_variant": "original",
-      "scraped_at": "2026-05-29T08:03:09Z"
-    },
-    {
       "card_number": "OP02-120",
       "price": 190.0,
       "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
@@ -237,6 +222,21 @@
       "available_variants": "Near Mint Foil R280.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-p-031-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564141_4828aadc-eb41-4593-8273-5c70ce628952.jpg?v=1763491710",
+      "art_variant": "original",
+      "scraped_at": "2026-05-29T08:03:09Z"
+    },
+    {
+      "card_number": "ST01-004",
+      "price": 330.0,
+      "title": "Sanji [One Piece Film: Red]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Film: Red",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R330.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/504475_b4cb5f29-dda4-49c8-a463-da4917de213b.jpg?v=1763500244",
       "art_variant": "original",
       "scraped_at": "2026-05-29T08:03:09Z"
     },
@@ -347,33 +347,18 @@
     },
     {
       "card_number": "OP14-084",
-      "price": 886.0,
+      "price": 888.0,
       "title": "Ms. All Sunday (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R886.00",
+      "available_variants": "Near Mint Foil R888.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ms-all-sunday-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666913.jpg?v=1769205349",
       "art_variant": "alternate",
       "scraped_at": "2026-05-30T15:56:53Z"
-    },
-    {
-      "card_number": "ST18-004",
-      "price": 1010.0,
-      "title": "Zoro-Juurou [Emperors in the New World]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Emperors in the New World",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R1010.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-emperors-in-the-new-world",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/600658.jpg?v=1763491099",
-      "art_variant": "original",
-      "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
       "card_number": "ST03-004",
@@ -389,6 +374,21 @@
       "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST03-004SP.jpg",
       "art_variant": "original",
       "scraped_at": "2026-06-01T22:28:13Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "price": 1290.0,
+      "title": "Zoro-Juurou [Emperors in the New World]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Emperors in the New World",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R1290.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-emperors-in-the-new-world",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/600658.jpg?v=1763491099",
+      "art_variant": "original",
+      "scraped_at": "2026-05-29T08:03:09Z"
     },
     {
       "card_number": "OP14-031",
