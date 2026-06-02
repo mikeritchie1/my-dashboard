@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-02T13:48:19Z",
+  "updated_at": "2026-06-02T17:59:43Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -17124,6 +17124,102 @@
       "stock": "In stock",
       "observed_on": "2026-06-02",
       "captured_at": "2026-06-02T13:48:19Z"
+    },
+    {
+      "card_number": "OP07-072",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/porche-500-years-in-the-future",
+      "title": "Porche [500 Years in the Future]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
+    },
+    {
+      "card_number": "P-052",
+      "art_variant": "original",
+      "price": 95.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
+      "title": "Dracule Mihawk [Live Action Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
+    },
+    {
+      "card_number": "EB02-011",
+      "art_variant": "alternate",
+      "price": 130.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/arlong-alternate-art-extra-booster-memorial-collection",
+      "title": "Arlong (Alternate Art) [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
+    },
+    {
+      "card_number": "OP02-120",
+      "art_variant": "original",
+      "price": 185.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-op02-120-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (OP02-120) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 185.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
+    },
+    {
+      "card_number": "OP02-120",
+      "art_variant": "alternate",
+      "price": 505.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-alternate-art-paramount-war",
+      "title": "Uta (Alternate Art) [Paramount War]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2089.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 3775.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-02",
+      "captured_at": "2026-06-02T17:59:43Z"
     }
   ]
 }
