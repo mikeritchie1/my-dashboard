@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-04T08:24:03Z",
+  "updated_at": "2026-06-04T09:38:47Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18108,6 +18108,42 @@
       "stock": "In stock",
       "observed_on": "2026-06-04",
       "captured_at": "2026-06-04T05:31:55Z"
+    },
+    {
+      "card_number": "P-026",
+      "art_variant": "original",
+      "price": 16.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
+      "title": "Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-04",
+      "captured_at": "2026-06-04T09:38:47Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 683.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-04",
+      "captured_at": "2026-06-04T09:38:47Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2138.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-04",
+      "captured_at": "2026-06-04T09:38:47Z"
     }
   ]
 }
