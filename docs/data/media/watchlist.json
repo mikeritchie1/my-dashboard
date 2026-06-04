@@ -7,10 +7,6 @@
         "opinion": ""
       },
       {
-        "title": "Obsession",
-        "opinion": ""
-      },
-      {
         "title": "Backrooms",
         "opinion": ""
       },
@@ -1113,7 +1109,12 @@
         {
           "type": "movie",
           "title": "Iron Lung",
-          "opinion": ""
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Obsession",
+          "opinion": "Loved"
         },
         {
           "type": "series",

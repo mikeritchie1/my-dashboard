@@ -1,11 +1,29 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-03T09:00:05.235565Z",
+  "generated_at": "2026-06-04T08:24:22.337713Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-SVJi7_YO7u4",
+      "video_id": "SVJi7_YO7u4",
+      "title": "Fatekeeper - Before You Buy",
+      "url": "https://www.youtube.com/watch?v=SVJi7_YO7u4",
+      "published_at": "2026-06-03T19:36:13+00:00",
+      "updated_at": "2026-06-04T00:55:10+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/SVJi7_YO7u4/hqdefault.jpg"
+    },
+    {
+      "id": "yt-Xs7cJp-Tqu0",
+      "video_id": "Xs7cJp-Tqu0",
+      "title": "10 BIG Announcements of State of Play June 2026",
+      "url": "https://www.youtube.com/watch?v=Xs7cJp-Tqu0",
+      "published_at": "2026-06-03T15:00:21+00:00",
+      "updated_at": "2026-06-03T15:03:35+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/Xs7cJp-Tqu0/hqdefault.jpg"
+    },
     {
       "id": "yt-ZRpbtvbT9Aw",
       "video_id": "ZRpbtvbT9Aw",
@@ -39,7 +57,7 @@
       "title": "10 WEIRD Gaming Stories of May 2026",
       "url": "https://www.youtube.com/watch?v=cvoB4X4sJmU",
       "published_at": "2026-05-30T16:05:05+00:00",
-      "updated_at": "2026-05-31T07:52:19+00:00",
+      "updated_at": "2026-06-03T22:15:44+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/cvoB4X4sJmU/hqdefault.jpg"
     },
     {
@@ -75,7 +93,7 @@
       "title": "State of Play June 2026 - 10 Predictions We ARE DESPERATE FOR",
       "url": "https://www.youtube.com/watch?v=Crjse-HoP5I",
       "published_at": "2026-05-27T15:00:09+00:00",
-      "updated_at": "2026-05-28T17:43:35+00:00",
+      "updated_at": "2026-06-03T21:17:15+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/Crjse-HoP5I/hqdefault.jpg"
     },
     {
@@ -122,24 +140,6 @@
       "published_at": "2026-05-22T20:06:16+00:00",
       "updated_at": "2026-05-29T22:56:18+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/8ts7PhIPCZU/hqdefault.jpg"
-    },
-    {
-      "id": "yt-pFqJBngRQM4",
-      "video_id": "pFqJBngRQM4",
-      "title": "15 Games With The Most REALISTIC NPCs",
-      "url": "https://www.youtube.com/watch?v=pFqJBngRQM4",
-      "published_at": "2026-05-21T15:55:11+00:00",
-      "updated_at": "2026-05-24T22:42:20+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/pFqJBngRQM4/hqdefault.jpg"
-    },
-    {
-      "id": "yt-70uWg4c76z4",
-      "video_id": "70uWg4c76z4",
-      "title": "Top 10 NEW Games of June 2026",
-      "url": "https://www.youtube.com/watch?v=70uWg4c76z4",
-      "published_at": "2026-05-20T16:58:35+00:00",
-      "updated_at": "2026-05-24T13:10:14+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/70uWg4c76z4/hqdefault.jpg"
     }
   ]
 }

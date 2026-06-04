@@ -154,14 +154,6 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
-      "title": "Zero Parades: For Dead Spies",
-      "url": "https://rawg.io/games/zero-parades-for-dead-spies",
-      "image": "https://media.rawg.io/media/games/52b/52bc4034309ecefe64b25e4c75a6b525.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
       "title": "Bubsy 4D",
       "url": "https://rawg.io/games/bubsy-4d",
       "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
@@ -173,6 +165,14 @@
       "title": "Schrodinger's Cat Burglar",
       "url": "https://rawg.io/games/schrodingers-cat-burglar",
       "image": "https://media.rawg.io/media/screenshots/e12/e12c5e4f72c8edb76a7c35c621dde509.jpg",
+      "release_date": "2026-05-21",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Zero Parades: For Dead Spies",
+      "url": "https://rawg.io/games/zero-parades-for-dead-spies",
+      "image": "https://media.rawg.io/media/games/52b/52bc4034309ecefe64b25e4c75a6b525.jpg",
       "release_date": "2026-05-21",
       "rating": "0.0",
       "platforms": "PC"
