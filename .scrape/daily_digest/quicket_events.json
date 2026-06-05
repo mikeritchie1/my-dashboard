@@ -1,118 +1,21 @@
 [
   {
-    "title": "Havana: First Thursday Experience",
-    "start": "2026-06-04T17:00:00+02:00",
-    "end": "2026-06-05T02:00:00+02:00",
-    "venue": "9 Albertus St",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "9 Albertus Street, , District Six, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0929454_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/378071-havana-first-thursday-experience/",
-    "categories": [
-      "art"
-    ],
-    "location_key": "9 Albertus Street, , District Six, 7925, Cape Town, Western Cape, South Africa, 9 Albertus St, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Watershed Stripped Down @ café Roux",
-    "start": "2026-06-04T18:00:00+02:00",
-    "end": "2026-06-04T21:30:00+02:00",
-    "venue": "Cafe Roux",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0903686_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/369435-watershed-stripped-down-caf-roux/",
-    "categories": [],
-    "location_key": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa, Cafe Roux, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "ITSAHOUSE",
-    "start": "2026-06-04T18:00:00+02:00",
-    "end": "2026-06-05T00:00:00+02:00",
-    "venue": "70a Kloof St",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "70a Kloof Street, , Gardens, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0925401_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/376323-itsahouse/",
-    "categories": [
-      "dj"
-    ],
-    "location_key": "70a Kloof Street, , Gardens, 8001, Cape Town, Western Cape, South Africa, 70a Kloof St, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Comic Book: Live Performance",
-    "start": "2026-06-04T19:00:00+02:00",
-    "end": "2026-06-06T20:00:00+02:00",
-    "venue": "Act Cape Town",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Morningside Street 55, Ndabeni,  Pinelands, 7405, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/Q14_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/376012-comic-book-live-performance/",
-    "categories": [
-      "music"
-    ],
-    "location_key": "Morningside Street 55, Ndabeni,  Pinelands, 7405, Cape Town, Western Cape, South Africa, Act Cape Town, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Kaas Kween Comedy night at Infusion Rondebosch",
-    "start": "2026-06-04T19:30:00+02:00",
-    "end": "2026-06-04T21:30:00+02:00",
-    "venue": "Infusion Rondebosch",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Grotto Road, , Rondebosch, 7700, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0928813_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/377815-kaas-kween-comedy-night-at-infusion-rondebosch/",
-    "categories": [
-      "comedy"
-    ],
-    "location_key": "Grotto Road, , Rondebosch, 7700, Cape Town, Western Cape, South Africa, Infusion Rondebosch, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "FRIENDS FEST FRIDAYS",
     "start": "2026-06-05T17:00:00+02:00",
     "end": "2026-06-06T00:00:00+02:00",
-    "venue": "228 Long St",
+    "venue": "Maroon Bar and Lounge",
     "locality": "Cape Town",
     "region": "Western Cape",
     "address": "228 Long Street, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q9_247_247.jpg",
+    "image": "https://images.quicket.co.za/0934301_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/377528-friends-fest-fridays/",
     "categories": [
-      "festival"
+      "festival",
+      "bar"
     ],
-    "location_key": "228 Long Street, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, 228 Long St, Cape Town, Western Cape, South Africa",
+    "location_key": "228 Long Street, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, Maroon Bar and Lounge, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -268,24 +171,6 @@
     "missing_place": true
   },
   {
-    "title": "REAL Women's Konferensie",
-    "start": "2026-06-05T19:00:00+02:00",
-    "end": "2026-06-06T08:30:00+02:00",
-    "venue": "Vriend van God Vredekloof Kampus",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Essenhout Street 1, Vredekloof, 7560, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0901843_247_247.png",
-    "url": "https://www.quicket.co.za/events/367481-real-womens-konferensie/",
-    "categories": [],
-    "location_key": "Essenhout Street 1, Vredekloof, 7560, Cape Town, Western Cape, South Africa, Vriend van God Vredekloof Kampus, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Keenan Cerff LIVE in Cape Town at The Protea Hotel Fire & Ice! 05 & 06 June 2026",
     "start": "2026-06-05T19:00:00+02:00",
     "end": "2026-06-06T20:30:00+02:00",
@@ -322,6 +207,24 @@
     "missing_place": true
   },
   {
+    "title": "REAL Women's Konferensie",
+    "start": "2026-06-05T19:00:00+02:00",
+    "end": "2026-06-06T08:30:00+02:00",
+    "venue": "Vriend van God Vredekloof Kampus",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Essenhout Street 1, Vredekloof, 7560, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0901843_247_247.png",
+    "url": "https://www.quicket.co.za/events/367481-real-womens-konferensie/",
+    "categories": [],
+    "location_key": "Essenhout Street 1, Vredekloof, 7560, Cape Town, Western Cape, South Africa, Vriend van God Vredekloof Kampus, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "The Aftermath",
     "start": "2026-06-05T20:00:00+02:00",
     "end": "2026-06-06T02:00:00+02:00",
@@ -343,6 +246,26 @@
     "missing_place": true
   },
   {
+    "title": "Oh so 2000's Y2k Rave Edition",
+    "start": "2026-06-05T21:00:00+02:00",
+    "end": "2026-06-06T04:00:00+02:00",
+    "venue": "Destiny Cape Town",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "88 Shortmarket Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0931090_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/378521-oh-so-2000s-y2k-rave-edition/",
+    "categories": [
+      "club"
+    ],
+    "location_key": "88 Shortmarket Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, Destiny Cape Town, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "Fantasia & Universal Frequencies (Gaia) Presents - Dance of the fairies",
     "start": "2026-06-05T21:00:00+02:00",
     "end": "2026-06-06T03:00:00+02:00",
@@ -352,10 +275,30 @@
     "address": "41A Mansell Road, , Killarney Gardens, 7441, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q4_247_247.jpg",
+    "image": "https://images.quicket.co.za/Q14_247_247.jpg",
     "url": "https://www.quicket.co.za/events/374879-fantasia-universal-frequencies-gaia-presents-dance-of-the-fairies/",
     "categories": [],
     "location_key": "41A Mansell Road, , Killarney Gardens, 7441, Cape Town, Western Cape, South Africa, The Bunker, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "DEGREES AND DECIBELS II: Rave 4 Rukshana",
+    "start": "2026-06-05T21:00:00+02:00",
+    "end": "2026-06-06T04:00:00+02:00",
+    "venue": "EVOL",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Hope Street 69, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0927103_247_247.png",
+    "url": "https://www.quicket.co.za/events/377041-degrees-and-decibels-ii-rave-4-rukshana/",
+    "categories": [
+      "club"
+    ],
+    "location_key": "Hope Street 69, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, EVOL, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -381,27 +324,6 @@
     "missing_place": true
   },
   {
-    "title": "Autistic Adults Social Coffee Meetup - Helderberg",
-    "start": "2026-06-06T10:00:00+02:00",
-    "end": "2026-06-06T12:00:00+02:00",
-    "venue": "Sunset Books",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "73 Beach Road, , Van Ryneveld, 7130, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0922574_247_247.png",
-    "url": "https://www.quicket.co.za/events/367704-autistic-adults-social-coffee-meetup-helderberg/",
-    "categories": [
-      "outdoors",
-      "date-night"
-    ],
-    "location_key": "73 Beach Road, , Van Ryneveld, 7130, Cape Town, Western Cape, South Africa, Sunset Books, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Winter Reset with Wannabe Wellness Girlie",
     "start": "2026-06-06T10:30:00+02:00",
     "end": "2026-06-06T14:30:00+02:00",
@@ -417,6 +339,24 @@
       "dj"
     ],
     "location_key": "50 Bree Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa, Light House Holistic Wellbeing, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "As Time Goes By",
+    "start": "2026-06-06T12:00:00+02:00",
+    "end": "2026-06-06T21:30:00+02:00",
+    "venue": "NG Kerk Bloubergstrand",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Batavia Road 3, Bloubergstrand, 7436, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0917100_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/368578-as-time-goes-by/",
+    "categories": [],
+    "location_key": "Batavia Road 3, Bloubergstrand, 7436, Cape Town, Western Cape, South Africa, NG Kerk Bloubergstrand, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -513,6 +453,24 @@
       "food"
     ],
     "location_key": "Groot Constantia Road , Constantia, 7806, Cape Town, Western Cape, South Africa, Simons Restaurant, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Albert Frost & Jake Gunn",
+    "start": "2026-06-06T18:00:00+02:00",
+    "end": "2026-06-06T21:30:00+02:00",
+    "venue": "Brass Bell",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Main Road , 7990, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0921242_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/369831-albert-frost-jake-gunn/",
+    "categories": [],
+    "location_key": "Main Road , 7990, Cape Town, Western Cape, South Africa, Brass Bell, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -679,6 +637,26 @@
     "missing_place": true
   },
   {
+    "title": "DIRTY MARY presents DIRTY DISCO",
+    "start": "2026-06-06T21:00:00+02:00",
+    "end": "2026-06-07T02:00:00+02:00",
+    "venue": "Crew Bar",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "12 Cobern Street, De Waterkant, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0921989_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/375581-dirty-mary-presents-dirty-disco/",
+    "categories": [
+      "bar"
+    ],
+    "location_key": "12 Cobern Street, De Waterkant, 8001, Cape Town, Western Cape, South Africa, Crew Bar, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "RaveCult - Warehouse Rave - 6 June - All Black Dress Code - The Bunker - Book Now",
     "start": "2026-06-06T21:00:00+02:00",
     "end": "2026-06-07T04:00:00+02:00",
@@ -695,26 +673,6 @@
       "club"
     ],
     "location_key": "41A Mansell Road, , Killarney Gardens, 7441, Cape Town, Western Cape, South Africa, 41A Mansell Rd, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "DIRTY MARY presents DIRTY DISCO",
-    "start": "2026-06-06T21:00:00+02:00",
-    "end": "2026-06-07T02:00:00+02:00",
-    "venue": "Crew Bar",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "12 Cobern Street, De Waterkant, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0921989_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/375581-dirty-mary-presents-dirty-disco/",
-    "categories": [
-      "bar"
-    ],
-    "location_key": "12 Cobern Street, De Waterkant, 8001, Cape Town, Western Cape, South Africa, Crew Bar, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -907,26 +865,6 @@
     "missing_place": true
   },
   {
-    "title": "10/06/2026 CPT MEGA Agent ....1 Day Program",
-    "start": "2026-06-10T08:30:00+02:00",
-    "end": "2026-06-10T16:00:00+02:00",
-    "venue": "King David Mowbray Golf Club",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Raapenberg Road, , Mowbray, 7450, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0926753_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/377173-10062026-cpt-mega-agent-1-day-program/",
-    "categories": [
-      "club"
-    ],
-    "location_key": "Raapenberg Road, , Mowbray, 7450, Cape Town, Western Cape, South Africa, King David Mowbray Golf Club, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "10/06/2026 CPT MEGA Agent 1 Day Program",
     "start": "2026-06-10T08:45:00+02:00",
     "end": "2026-06-10T16:00:00+02:00",
@@ -940,6 +878,24 @@
     "url": "https://www.quicket.co.za/events/370060-10062026-cpt-mega-agent-1-day-program/",
     "categories": [],
     "location_key": "5 St Georges Mall , , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, STBB Cape Town, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Bach in Dialogue",
+    "start": "2026-06-10T19:00:00+02:00",
+    "end": "2026-06-10T20:30:00+02:00",
+    "venue": "St Andrew's Presbytarian Church, De Waterkant, Cape Town",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Rose Street 1, De Waterkant, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0934135_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/375777-bach-in-dialogue/",
+    "categories": [],
+    "location_key": "Rose Street 1, De Waterkant, 8001, Cape Town, Western Cape, South Africa, St Andrew's Presbytarian Church, De Waterkant, Cape Town, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -960,42 +916,6 @@
       "theatre"
     ],
     "location_key": "UCT Hiddingh Campus, Orange St, 8001, Gardens, Cape Town, Western Cape, South Africa, CTDPS Little Theatre, Gardens, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "WALLSCAPES",
-    "start": "2026-06-11T18:00:00+02:00",
-    "end": "2026-06-11T20:00:00+02:00",
-    "venue": "Lime Tree Cafe",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "27 Dreyersdal Road, Bergvliet, 7945, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0924035_247_247.png",
-    "url": "https://www.quicket.co.za/events/375238-wallscapes/",
-    "categories": [],
-    "location_key": "27 Dreyersdal Road, Bergvliet, 7945, Cape Town, Western Cape, South Africa, Lime Tree Cafe, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Byster",
-    "start": "2026-06-11T19:30:00+02:00",
-    "end": "2026-06-13T21:00:00+02:00",
-    "venue": "Kaapstad Toneelhuis",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "61 Loop Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0919931_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/374951-byster/",
-    "categories": [],
-    "location_key": "61 Loop Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa, Kaapstad Toneelhuis, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1232,6 +1152,26 @@
     "missing_place": true
   },
   {
+    "title": "Majik Forest: Run, walk, refresh",
+    "start": "2026-06-16T07:00:00+02:00",
+    "end": "2026-06-16T14:00:00+02:00",
+    "venue": "Majik Forest Shopping Centre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Koelenhof Street, , Van Riebeeckshof, 7530, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/Q2_247_247.jpg",
+    "url": "https://www.quicket.co.za/events/371411-majik-forest-run-walk-refresh/",
+    "categories": [
+      "outdoors"
+    ],
+    "location_key": "Koelenhof Street, , Van Riebeeckshof, 7530, Cape Town, Western Cape, South Africa, Majik Forest Shopping Centre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "RUN FOR HOPE",
     "start": "2026-06-16T10:00:00+02:00",
     "end": "2026-06-16T12:00:00+02:00",
@@ -1348,26 +1288,6 @@
     "missing_place": true
   },
   {
-    "title": "JACK PAROW @ WOODSTOCK BREWERY",
-    "start": "2026-06-26T20:00:00+02:00",
-    "end": "2026-06-26T23:35:00+02:00",
-    "venue": "WOODSTOCK BREWERY",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "252 Albert Rd, Woodstock, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0932410_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/371585-jack-parow-woodstock-brewery/",
-    "categories": [
-      "bar"
-    ],
-    "location_key": "252 Albert Rd, Woodstock, 7925, Cape Town, Western Cape, South Africa, WOODSTOCK BREWERY, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Time to Ignite - Cape Town",
     "start": "2026-06-27T09:00:00+02:00",
     "end": "2026-06-27T14:00:00+02:00",
@@ -1406,6 +1326,27 @@
     "missing_place": true
   },
   {
+    "title": "Atlantis Art Exhibition",
+    "start": "2026-06-27T16:00:00+02:00",
+    "end": "2026-06-27T18:00:00+02:00",
+    "venue": "Atlantis Multipurpose Sports Centre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Christopher Starke Street, , Wesfleur, 7349, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0915165_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/373573-atlantis-art-exhibition/",
+    "categories": [
+      "art",
+      "sports"
+    ],
+    "location_key": "Christopher Starke Street, , Wesfleur, 7349, Cape Town, Western Cape, South Africa, Atlantis Multipurpose Sports Centre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "So Rnb - Shades Of Nude",
     "start": "2026-06-27T17:00:00+02:00",
     "end": "2026-06-27T23:00:00+02:00",
@@ -1419,27 +1360,6 @@
     "url": "https://www.quicket.co.za/events/376326-so-rnb-shades-of-nude/",
     "categories": [],
     "location_key": "3 Industry Street, , Paarden Eiland, 7405, Cape Town, Western Cape, South Africa, ColorBox Studios, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Rewind 80's - 90's Old School Party",
-    "start": "2026-06-27T17:00:00+02:00",
-    "end": "2026-06-28T01:00:00+02:00",
-    "venue": "51st Avenue",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "51st Avenue, , Wynberg, 7824, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0919935_247_247.png",
-    "url": "https://www.quicket.co.za/events/374946-rewind-80s-90s-old-school-party/",
-    "categories": [
-      "club",
-      "art"
-    ],
-    "location_key": "51st Avenue, , Wynberg, 7824, Cape Town, Western Cape, South Africa, 51st Avenue, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1577,6 +1497,42 @@
       "theatre"
     ],
     "location_key": "Buitenkant Street, , District Six, 7800, Cape Town, Western Cape, South Africa, Star Theatre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "PechaKucha #69 Come in out the cold",
+    "start": "2026-07-09T18:30:00+02:00",
+    "end": "2026-07-09T21:30:00+02:00",
+    "venue": "Homecoming Centre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Corner Buitenkant St &, Caledon St, District Six, 7925, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0925836_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/376068-pechakucha-69-come-in-out-the-cold/",
+    "categories": [],
+    "location_key": "Corner Buitenkant St &, Caledon St, District Six, 7925, Cape Town, Western Cape, South Africa, Homecoming Centre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "WILLOWBRIDGE SHOPPING CENTRE BUBBLE PLANET",
+    "start": "2026-07-11T10:00:00+02:00",
+    "end": "2026-07-19T13:45:00+02:00",
+    "venue": "Willowbridge Shopping Centre",
+    "locality": "Cape Town",
+    "region": "",
+    "address": "39 Carl Cronje Drive, Tyger Valley, 7440, Cape Town, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0925946_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/376829-willowbridge-shopping-centre-bubble-planet/",
+    "categories": [],
+    "location_key": "39 Carl Cronje Drive, Tyger Valley, 7440, Cape Town, South Africa, Willowbridge Shopping Centre, Cape Town, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1922,6 +1878,42 @@
     "url": "https://www.quicket.co.za/events/369652-the-two-oceans-aquarium-the-waterfront-duck-co-tours-jan-march-2027/",
     "categories": [],
     "location_key": "Dock Road, , Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa, Two Oceans Aquarium - The Duck Boat, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "DISTRICT SIX MUSEUM: JANUARY 2027 ADMISSION TICKETS",
+    "start": "2027-01-02T09:00:00+02:00",
+    "end": "2027-01-30T15:00:00+02:00",
+    "venue": "25A Buitenkant St",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0893392_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/365067-district-six-museum-january-2027-admission-tickets/",
+    "categories": [],
+    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "DISTRICT SIX MUSEUM: FEBRUARY 2027 ADMISSION TICKETS",
+    "start": "2027-02-01T09:00:00+02:00",
+    "end": "2027-02-27T15:00:00+02:00",
+    "venue": "25A Buitenkant St",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0893399_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/365070-district-six-museum-february-2027-admission-tickets/",
+    "categories": [],
+    "location_key": "25A Buitenkant Street, , District Six, 8000, Cape Town, Western Cape, South Africa, 25A Buitenkant St, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true

@@ -1,18 +1,27 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-04T08:24:22.337713Z",
+  "generated_at": "2026-06-05T08:13:25.481481Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-sNHzh7MYc90",
+      "video_id": "sNHzh7MYc90",
+      "title": "10 Games That Are DEEPER THAN WE THOUGHT",
+      "url": "https://www.youtube.com/watch?v=sNHzh7MYc90",
+      "published_at": "2026-06-04T16:50:02+00:00",
+      "updated_at": "2026-06-05T05:37:25+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/sNHzh7MYc90/hqdefault.jpg"
+    },
+    {
       "id": "yt-SVJi7_YO7u4",
       "video_id": "SVJi7_YO7u4",
       "title": "Fatekeeper - Before You Buy",
       "url": "https://www.youtube.com/watch?v=SVJi7_YO7u4",
       "published_at": "2026-06-03T19:36:13+00:00",
-      "updated_at": "2026-06-04T00:55:10+00:00",
+      "updated_at": "2026-06-04T12:05:55+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/SVJi7_YO7u4/hqdefault.jpg"
     },
     {
@@ -21,7 +30,7 @@
       "title": "10 BIG Announcements of State of Play June 2026",
       "url": "https://www.youtube.com/watch?v=Xs7cJp-Tqu0",
       "published_at": "2026-06-03T15:00:21+00:00",
-      "updated_at": "2026-06-03T15:03:35+00:00",
+      "updated_at": "2026-06-04T11:07:42+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/Xs7cJp-Tqu0/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-05-23T17:44:21+00:00",
       "updated_at": "2026-05-30T22:53:39+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/gvnf8nm1Htg/hqdefault.jpg"
-    },
-    {
-      "id": "yt-8ts7PhIPCZU",
-      "video_id": "8ts7PhIPCZU",
-      "title": "UBISOFT LOSES 1.3 BILLION, GTA 6 CEO RESPONDS & MORE",
-      "url": "https://www.youtube.com/watch?v=8ts7PhIPCZU",
-      "published_at": "2026-05-22T20:06:16+00:00",
-      "updated_at": "2026-05-29T22:56:18+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/8ts7PhIPCZU/hqdefault.jpg"
     }
   ]
 }

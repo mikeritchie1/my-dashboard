@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-05T05:07:10Z",
+  "updated_at": "2026-06-05T08:13:02Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -18504,6 +18504,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-05",
       "captured_at": "2026-06-05T05:07:10Z"
+    },
+    {
+      "card_number": "ST01-004",
+      "art_variant": "original",
+      "price": 340.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
+      "title": "Sanji [One Piece Film: Red]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-05",
+      "captured_at": "2026-06-05T08:13:02Z"
+    },
+    {
+      "card_number": "OP07-057",
+      "art_variant": "original",
+      "price": 370.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
+      "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-05",
+      "captured_at": "2026-06-05T08:13:02Z"
     }
   ]
 }

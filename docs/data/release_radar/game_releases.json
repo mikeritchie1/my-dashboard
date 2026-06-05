@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Gothic 1 Remake",
+      "url": "https://rawg.io/games/gothic-1-remake",
+      "image": "https://media.rawg.io/media/games/f24/f24d20c6fddb77fe83d39cbfd7d4687f.jpg",
+      "release_date": "2026-06-05",
+      "rating": "3.5",
+      "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
+    },
+    {
       "title": "The 7th Guest Remake",
       "url": "https://rawg.io/games/the-7th-guest-remake",
       "image": "https://media.rawg.io/media/screenshots/ef6/ef64a3aed53dccd10019ea72c3fcfd92.jpg",
@@ -186,17 +194,17 @@
       "platforms": "Nintendo Switch"
     },
     {
-      "title": "a weird game about sausage",
-      "url": "https://rawg.io/games/a-weird-game-about-sausage",
-      "image": "https://media.rawg.io/media/screenshots/f59/f594a3004451ece29df08842269973b1.jpg",
+      "title": "Luna Abyss",
+      "url": "https://rawg.io/games/luna-abyss",
+      "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
       "release_date": "2026-05-21",
       "rating": "0.0",
       "platforms": "PC"
     },
     {
-      "title": "Luna Abyss",
-      "url": "https://rawg.io/games/luna-abyss",
-      "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
+      "title": "a weird game about sausage",
+      "url": "https://rawg.io/games/a-weird-game-about-sausage",
+      "image": "https://media.rawg.io/media/screenshots/f59/f594a3004451ece29df08842269973b1.jpg",
       "release_date": "2026-05-21",
       "rating": "0.0",
       "platforms": "PC"
@@ -226,6 +234,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Phonopolis",
+      "url": "https://rawg.io/games/phonopolis",
+      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
+      "release_date": "2026-05-20",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
       "title": "ZERO PARADES: For Dead Spies Bundle",
       "url": "https://rawg.io/games/zero-parades-for-dead-spies-bundle",
       "image": "https://media.rawg.io/media/screenshots/6f0/6f00ca365527633a9c05fc25025fa38f.jpg",
@@ -240,14 +256,6 @@
       "release_date": "2026-05-20",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Phonopolis",
-      "url": "https://rawg.io/games/phonopolis",
-      "image": "https://media.rawg.io/media/games/044/044e2732dc470c41a6a2ac074bdf7fb0.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
     },
     {
       "title": "Forza Horizon 6",
@@ -392,25 +400,9 @@
       "release_date": "2026-05-12",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
-    },
-    {
-      "title": "Greenhearth Necromancer",
-      "url": "https://rawg.io/games/greenhearth-necromancer",
-      "image": "https://media.rawg.io/media/screenshots/0df/0df008cc9f40d353cc2e0ba61d0f4e92.jpg",
-      "release_date": "2026-05-12",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Gothic 1 Remake",
-      "url": "https://rawg.io/games/gothic-1-remake",
-      "image": "https://media.rawg.io/media/games/f24/f24d20c6fddb77fe83d39cbfd7d4687f.jpg",
-      "release_date": "2026-06-05",
-      "rating": "3.5",
-      "platforms": "PC, PlayStation 5, Xbox One, PlayStation 4"
-    },
     {
       "title": "Atre: Dominance Wars",
       "url": "https://rawg.io/games/atre-dominance-wars",
@@ -500,10 +492,26 @@
       "platforms": "PC, PlayStation 5"
     },
     {
+      "title": "Star Wars Zero Company",
+      "url": "https://rawg.io/games/star-wars-zero-company",
+      "image": "https://media.rawg.io/media/screenshots/faa/faa8c8ddde9c4ce33e5d6df5311378d3.jpg",
+      "release_date": "2026-08-27",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
       "title": "Lords of the Fallen 2",
       "url": "https://rawg.io/games/lords-of-the-fallen-2-2",
       "image": "https://media.rawg.io/media/screenshots/887/887f377d7e4fc503bb345aac6e62eb2a.jpg",
       "release_date": "2026-08-31",
+      "rating": "0.0",
+      "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "The Blood Of Dawnwalker",
+      "url": "https://rawg.io/games/the-blood-of-dawnwalker",
+      "image": "https://media.rawg.io/media/games/319/319d18680fd0233e0ff724f234c97d17.jpg",
+      "release_date": "2026-09-03",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     }

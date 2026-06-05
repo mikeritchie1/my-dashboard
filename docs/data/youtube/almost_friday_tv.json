@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-04T08:24:21.850714Z",
+  "generated_at": "2026-06-05T08:13:25.048107Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 94,
+  "items_count": 95,
   "items": [
+    {
+      "id": "yt--FAVyCfD_KQ",
+      "video_id": "-FAVyCfD_KQ",
+      "title": "Friend Group A vs Friend Group B",
+      "url": "https://www.youtube.com/watch?v=-FAVyCfD_KQ",
+      "published_at": "2026-06-04T20:00:34+00:00",
+      "updated_at": "2026-06-04T23:45:50+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/-FAVyCfD_KQ/hqdefault.jpg"
+    },
     {
       "id": "yt-WWBYolWpnMk",
       "video_id": "WWBYolWpnMk",
