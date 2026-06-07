@@ -5,6 +5,7 @@ import html
 import json
 import os
 import re
+import time
 import unicodedata
 import urllib.error
 import urllib.parse
@@ -31,6 +32,9 @@ GAMES_DETAILS_CACHE_FILE = DATA_DIR / "games_details.json"
 TMDB_MANUAL_OVERRIDES_FILE = DATA_DIR / "tmdb_manual_overrides.json"
 LOCAL_SECRETS_FILE = REPO_DIR / "secrets.env"
 NOTION_API_BASE_URL = env_get("SCRAPE_NOTION_API_BASE_URL", "https://api.notion.com/v1")
+NOTION_TIMEOUT_SECONDS = int(env_get("SCRAPE_NOTION_TIMEOUT_SECONDS", "60") or "60")
+NOTION_MAX_RETRIES = int(env_get("SCRAPE_NOTION_MAX_RETRIES", "4") or "4")
+NOTION_RETRY_BACKOFF_SECONDS = float(env_get("SCRAPE_NOTION_RETRY_BACKOFF_SECONDS", "2") or "2")
 TMDB_API_BASE_URL = env_get("SCRAPE_TMDB_API_BASE_URL", "https://api.themoviedb.org/3")
 TMDB_IMAGE_BASE = env_get("SCRAPE_TMDB_IMAGE_BASE_URL", "https://image.tmdb.org/t/p/w342")
 TMDB_SITE_MOVIE_BASE = env_get("SCRAPE_TMDB_SITE_MOVIE_BASE_URL", "https://www.themoviedb.org/movie")
@@ -122,6 +126,27 @@ def rich_text_has_bold(rich_text: list[dict]) -> bool:
     return False
 
 
+def notion_retry_delay(error: BaseException, attempt: int) -> float:
+    if isinstance(error, urllib.error.HTTPError):
+        retry_after = error.headers.get("Retry-After")
+        if retry_after:
+            try:
+                return max(0.0, float(retry_after))
+            except ValueError:
+                pass
+    return NOTION_RETRY_BACKOFF_SECONDS * attempt
+
+
+def is_retryable_notion_error(error: BaseException) -> bool:
+    if isinstance(error, TimeoutError):
+        return True
+    if isinstance(error, urllib.error.HTTPError):
+        return error.code == 429 or 500 <= error.code < 600
+    if isinstance(error, urllib.error.URLError):
+        return True
+    return False
+
+
 def notion_request(path: str, token: str) -> dict:
     request = urllib.request.Request(
         f"{NOTION_API_BASE_URL}/{path}",
@@ -132,8 +157,17 @@ def notion_request(path: str, token: str) -> dict:
             "User-Agent": "Mozilla/5.0",
         },
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        return json.loads(response.read().decode("utf-8"))
+    for attempt in range(1, NOTION_MAX_RETRIES + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=NOTION_TIMEOUT_SECONDS) as response:
+                return json.loads(response.read().decode("utf-8"))
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as error:
+            if attempt >= NOTION_MAX_RETRIES or not is_retryable_notion_error(error):
+                raise
+            delay = notion_retry_delay(error, attempt)
+            print(f"[notion] Request failed ({error}); retrying in {delay:g}s ({attempt}/{NOTION_MAX_RETRIES})")
+            time.sleep(delay)
+    raise TimeoutError(f"Notion request timed out after {NOTION_MAX_RETRIES} attempts: {path}")
 
 
 def tmdb_request(path: str, token: str, query: dict[str, str] | None = None) -> dict:
@@ -1730,7 +1764,7 @@ def scrape_watchlist(
                 "currently_watching": {"movies": [], "series": [], "anime_movies": [], "anime_series": []},
                 "history_by_year": [],
             }
-        except urllib.error.URLError as error:
+        except (urllib.error.URLError, TimeoutError) as error:
             return {
                 "source": page_url,
                 "games_source": games_page_url,
