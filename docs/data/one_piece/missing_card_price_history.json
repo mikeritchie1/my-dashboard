@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09T14:12:51Z",
+  "updated_at": "2026-06-09T17:15:58Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -21876,6 +21876,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-09",
       "captured_at": "2026-06-09T11:56:02Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 58.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T17:15:58Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 532.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-09",
+      "captured_at": "2026-06-09T17:15:58Z"
     }
   ]
 }
