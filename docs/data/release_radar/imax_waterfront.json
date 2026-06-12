@@ -5,33 +5,33 @@
     {
       "tmdb_id": 1275779,
       "tmdb_url": "https://www.themoviedb.org/movie/1275779",
-      "tmdb_rating": "8.6",
-      "tmdb_votes": "13",
+      "tmdb_rating": "7.5",
+      "tmdb_votes": "98",
       "release_date": "2026-06-10",
-      "overview": "A cybersecurity expert becomes a whistleblower to reveal secrets about aliens, putting him on the run from a corporation while a meteorologist experiences strange phenomena and joins forces with him to prove there's life beyond our knowledge.",
+      "overview": "If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you?",
       "runtime_minutes": "145",
       "genres": [
-        "Mystery",
         "Science Fiction",
-        "Thriller"
+        "Thriller",
+        "Action"
       ],
       "directors": [
         "Steven Spielberg"
       ],
       "actors": [
-        "Josh O'Connor",
         "Emily Blunt",
+        "Josh O'Connor",
         "Colin Firth",
-        "Eve Hewson",
         "Colman Domingo",
+        "Eve Hewson",
         "Wyatt Russell",
-        "Henry Lloyd-Hughes",
         "Elizabeth Marvel",
+        "Henry Lloyd-Hughes",
         "Michael Gaston",
         "Gabby Beans"
       ],
       "trailer_url": "https://www.youtube.com/watch?v=icDuEHSxE-w",
-      "poster_url": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg",
       "title": "Disclosure Day",
       "url": "https://mydorpie.com/m/?page=m_waterimax_disclosureday2d",
       "source": "IMAX Waterfront",
@@ -39,7 +39,7 @@
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/259wnijEJoJLPuZuscxDTqwnypw.jpg"
     }
   ]
 }

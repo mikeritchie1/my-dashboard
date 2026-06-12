@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-10T08:12:29.119959Z",
+  "generated_at": "2026-06-12T08:29:41.536350Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 95,
+  "items_count": 96,
   "items": [
+    {
+      "id": "yt-si8ABjGmvBk",
+      "video_id": "si8ABjGmvBk",
+      "title": "when you ask your boss for help",
+      "url": "https://www.youtube.com/watch?v=si8ABjGmvBk",
+      "published_at": "2026-06-11T23:20:37+00:00",
+      "updated_at": "2026-06-12T06:46:43+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/si8ABjGmvBk/hqdefault.jpg"
+    },
     {
       "id": "yt--FAVyCfD_KQ",
       "video_id": "-FAVyCfD_KQ",
