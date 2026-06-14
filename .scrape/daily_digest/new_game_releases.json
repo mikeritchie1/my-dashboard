@@ -2,17 +2,25 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
-      "title": "Crushed In Time",
-      "url": "https://rawg.io/games/crushed-in-time",
-      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
-      "release_date": "2026-06-10",
+      "title": "Beastro (2026)",
+      "url": "https://rawg.io/games/beastro-2026",
+      "image": "https://media.rawg.io/media/screenshots/03b/03b44a6d72afeb61f3d386bff4dbcb60.jpg",
+      "release_date": "2026-06-12",
       "rating": "0.0",
-      "platforms": ""
+      "platforms": "PC"
     },
     {
       "title": "SPORTAL",
       "url": "https://rawg.io/games/sportal",
       "image": "https://media.rawg.io/media/screenshots/40c/40c77e273f69b2e2b081bbcc6d7bfb19.jpg",
+      "release_date": "2026-06-10",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Crushed In Time",
+      "url": "https://rawg.io/games/crushed-in-time",
+      "image": "https://media.rawg.io/media/games/67b/67b8ca361688922a71e441445fe892d4.jpg",
       "release_date": "2026-06-10",
       "rating": "0.0",
       "platforms": ""
@@ -218,6 +226,14 @@
       "platforms": "PC, macOS, Linux"
     },
     {
+      "title": "The Remake the End of the Greatest RPG of All Time_Data",
+      "url": "https://rawg.io/games/the-remake-the-end-of-the-greatest-rpg-of-all-time",
+      "image": "https://media.rawg.io/media/screenshots/d51/d51dc17fc02738fce2dd56442e0b3b7d.jpg",
+      "release_date": "2026-05-28",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Echo Generation 2",
       "url": "https://rawg.io/games/echo-generation-2",
       "image": "https://media.rawg.io/media/screenshots/e03/e03e950a96bc2974bf9d1e45e1fba3e7.jpg",
@@ -272,6 +288,14 @@
       "release_date": "2026-05-26",
       "rating": "0.0",
       "platforms": "PC, macOS"
+    },
+    {
+      "title": "Unbound Drift",
+      "url": "https://rawg.io/games/unbound-drift",
+      "image": "https://media.rawg.io/media/screenshots/77b/77b275b6e6ad51aa798b88153b7bacf4.jpg",
+      "release_date": "2026-05-26",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Stonemachia",
@@ -374,30 +398,6 @@
       "url": "https://rawg.io/games/luna-abyss",
       "image": "https://media.rawg.io/media/games/759/75938a44d83af478a137a8a2298c0f47.jpg",
       "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Holy Valkyrie ExS-TIA P Parallel Episode 1: Magical Girl Pastel Marie",
-      "url": "https://rawg.io/games/holy-valkyrie-exs-tia-p-parallel-episode-1-magical",
-      "image": "https://media.rawg.io/media/screenshots/86e/86ef0f7c9b03eb48cbf9a49d2d658c2e.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Holy Valkyrie ExS-TIA TS Parallel Episode 3: Twilight Sabre",
-      "url": "https://rawg.io/games/holy-valkyrie-exs-tia-ts-parallel-episode-3-twilig",
-      "image": "https://media.rawg.io/media/screenshots/408/408afa7fae1ca2744a90c0cad50e8482.jpg",
-      "release_date": "2026-05-20",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Holy Valkyrie ExS-TIA F Parallel Episode 2: Reunion",
-      "url": "https://rawg.io/games/holy-valkyrie-exs-tia-f-parallel-episode-2-reunion",
-      "image": "https://media.rawg.io/media/screenshots/ba8/ba80f184754a5e1916460a6f850866b3.jpg",
-      "release_date": "2026-05-20",
       "rating": "0.0",
       "platforms": "PC"
     }

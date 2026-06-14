@@ -28,7 +28,7 @@
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/when-youre-at-sea-you-fight-against-pirates-awakening-of-the-new-era",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/528636.jpg?v=1733905300",
       "art_variant": "original",
-      "scraped_at": "2026-06-12T12:47:56Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "P-055",
@@ -58,7 +58,7 @@
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/cc4c8ea9-4e6a-507b-8b36-4bd0f8ff4a20.jpg?v=1771365687",
       "art_variant": "original",
-      "scraped_at": "2026-06-10T10:46:23Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "ST22-015",
@@ -163,7 +163,7 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
       "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "ST29-004",
@@ -301,21 +301,6 @@
       "scraped_at": "2026-06-07T20:58:34Z"
     },
     {
-      "card_number": "ST18-004",
-      "price": 48.0,
-      "title": "Zoro-Juurou [Starter Deck: PURPLE Monkey.D.Luffy]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: PURPLE Monkey.D.Luffy",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R48.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/zoro-juurou-starter-deck-purple-monkey-d-luffy",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/581034.jpg?v=1733891040",
-      "art_variant": "original",
-      "scraped_at": "2026-06-12T12:47:56Z"
-    },
-    {
       "card_number": "ST10-006",
       "price": 51.0,
       "title": "Monkey.D.Luffy ST10-006",
@@ -388,7 +373,7 @@
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
       "art_variant": "original",
-      "scraped_at": "2026-06-10T10:46:23Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "P-024",
@@ -403,7 +388,7 @@
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/3f6dc017-b6eb-5be5-84de-c15de1756cbb.jpg?v=1771366031",
       "art_variant": "original",
-      "scraped_at": "2026-06-10T10:46:23Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "OP10-005",
@@ -523,7 +508,7 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/dracule-mihawk-live-action-edition",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/546713_ed599c5b-3ea8-4f54-b724-6e273d6ef740.jpg?v=1763495310",
       "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "ST24-004",
@@ -647,6 +632,21 @@
     },
     {
       "card_number": "EB02-017",
+      "price": 141.0,
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Extra Booster: Anime 25th Collection",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R141.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/629110.jpg?v=1752765998",
+      "art_variant": "original",
+      "scraped_at": "2026-06-13T23:02:49Z"
+    },
+    {
+      "card_number": "EB02-017",
       "price": 164.0,
       "title": "Nami EB02-017",
       "rarity": "",
@@ -662,33 +662,18 @@
     },
     {
       "card_number": "ST10-010",
-      "price": 172.0,
+      "price": 170.0,
       "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Ultra Deck - The Three Captains",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R172.00",
+      "available_variants": "Near Mint Foil R170.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/525053.jpg?v=1733906267",
       "art_variant": "original",
-      "scraped_at": "2026-06-12T12:47:56Z"
-    },
-    {
-      "card_number": "ST05-004",
-      "price": 205.0,
-      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R205.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
-      "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "ST17-004",
@@ -704,6 +689,21 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-06-07T20:58:34Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "price": 210.0,
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R210.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
+      "art_variant": "original",
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "ST10-010",
@@ -722,18 +722,18 @@
     },
     {
       "card_number": "EB02-035",
-      "price": 272.0,
+      "price": 275.0,
       "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Extra Booster: Anime 25th Collection",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R272.00",
+      "available_variants": "Near Mint Foil R275.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/629131.jpg?v=1752765898",
       "art_variant": "original",
-      "scraped_at": "2026-06-12T09:51:46Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "ST21-001",
@@ -767,18 +767,18 @@
     },
     {
       "card_number": "ST01-004",
-      "price": 355.0,
+      "price": 360.0,
       "title": "Sanji [One Piece Film: Red]",
       "rarity": "Common",
       "store": "Big Bang Shop",
       "set_name": "One Piece Film: Red",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R355.00",
+      "available_variants": "Near Mint Foil R360.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-one-piece-film-red",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/504475_b4cb5f29-dda4-49c8-a463-da4917de213b.jpg?v=1763500244",
       "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "OP07-057",
@@ -793,7 +793,7 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/649684.jpg?v=1763494111",
       "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "OP12-118",
@@ -823,7 +823,7 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/558049.jpg?v=1763499325",
       "art_variant": "alternate",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "EB02-052",
@@ -842,18 +842,18 @@
     },
     {
       "card_number": "OP14-033",
-      "price": 519.0,
+      "price": 517.0,
       "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R519.00",
+      "available_variants": "Near Mint Foil R517.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666527.jpg?v=1769205424",
       "art_variant": "alternate",
-      "scraped_at": "2026-06-10T10:46:23Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "OP09-118",
@@ -871,64 +871,34 @@
       "scraped_at": "2026-06-07T20:58:34Z"
     },
     {
-      "card_number": "OP04-056",
-      "price": 765.0,
-      "title": "Gum-Gum Red Roc (Alternate Art) [Premium Booster -The Best-]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Premium Booster -The Best-",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R765.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-red-roc-alternate-art-premium-booster-the-best",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586197_e84d3ed9-cb2c-4233-8dec-b6d68f7f13da.jpg?v=1763494368",
-      "art_variant": "alternate",
-      "scraped_at": "2026-06-05T23:56:39Z"
-    },
-    {
       "card_number": "OP14-031",
-      "price": 1270.0,
+      "price": 1261.0,
       "title": "Nami (Alternate Art) [The Azure Sea's Seven]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1270.00",
+      "available_variants": "Near Mint Foil R1261.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670254.jpg?v=1769205406",
       "art_variant": "alternate",
-      "scraped_at": "2026-06-10T10:46:23Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "P-072",
-      "price": 1345.0,
+      "price": 1450.0,
       "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1345.00",
+      "available_variants": "Near Mint Foil R1450.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/626673_11f6a9c1-377b-40b8-a596-533eecb3b794.jpg?v=1763508518",
       "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
-    },
-    {
-      "card_number": "ST18-004",
-      "price": 1860.0,
-      "title": "Zoro-Juurou [Emperors in the New World]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Emperors in the New World",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R1860.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-emperors-in-the-new-world",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/600658.jpg?v=1763491099",
-      "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "OP14-096",
@@ -943,7 +913,7 @@
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/670874.jpg?v=1769205424",
       "art_variant": "alternate",
-      "scraped_at": "2026-06-10T10:46:23Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "OP06-106",
@@ -958,7 +928,7 @@
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
       "art_variant": "alternate",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     },
     {
       "card_number": "ST01-007",
@@ -973,22 +943,22 @@
       "url": "https://tanukitrader.co.za/product/nami-tr/",
       "image_url": "https://tanukitrader.co.za/wp-content/uploads/2024/09/ST01-007TR.jpeg",
       "art_variant": "original",
-      "scraped_at": "2026-06-12T09:51:46Z"
+      "scraped_at": "2026-06-14T08:20:09Z"
     },
     {
       "card_number": "ST18-004",
-      "price": 3925.0,
+      "price": 4010.0,
       "title": "Zoro-Juurou (SP) [Legacy of the Master]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Legacy of the Master",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R3925.00",
+      "available_variants": "Near Mint Foil R4010.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/646566_6ff3f551-62c5-4c2d-a265-0b03b6d23163.jpg?v=1763510818",
       "art_variant": "original",
-      "scraped_at": "2026-06-05T23:56:39Z"
+      "scraped_at": "2026-06-13T23:02:49Z"
     }
   ]
 }
