@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-14T19:04:31Z",
+  "updated_at": "2026-06-14T20:57:49Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -26784,6 +26784,30 @@
       "stock": "In stock",
       "observed_on": "2026-06-14",
       "captured_at": "2026-06-14T19:04:31Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 173.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T20:57:49Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 696.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-14",
+      "captured_at": "2026-06-14T20:57:49Z"
     }
   ]
 }
