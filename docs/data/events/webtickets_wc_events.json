@@ -1,28 +1,11 @@
 [
   {
-    "title": "Killer Queen - A LAMTA Dance Production",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
-    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
-    "date_text": "From 16 Jun 2026 15:00",
-    "venue": "Theatre On The Bay, Camps Bay",
-    "price": "R200 - R320",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Centre Stage - Dancing into the future",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582360886",
-    "image": "https://content.webtickets.co.za/artscape/panel_CENTRE STAGE_20251202_164141.png",
-    "date_text": "16 Jun 2026 19:00",
+    "title": "ORPHEUS IN THE UNDERWORLD",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185",
+    "image": "https://content.webtickets.co.za/artscape/panel_ORPHEUS_20251202_164045.png",
+    "date_text": "From 17 Jun 2026 19:00",
     "venue": "Artscape, Opera House, Cape Town",
-    "price": "R180 - R300",
+    "price": "R225 - R650",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
@@ -53,10 +36,27 @@
     "place_key": ""
   },
   {
+    "title": "Killer Queen - A LAMTA Dance Production",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590419134",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_2fa14078-fa95-4083-9b94-0f282e084bf5_20260311_171208.jpeg",
+    "date_text": "From 17 Jun 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R200 - R320",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
     "title": "Cape Town Abseil",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
     "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 16 Jun 2026",
+    "date_text": "From 17 Jun 2026",
     "venue": "Table Mountain",
     "price": "R995 - R1100",
     "source": "Webtickets",
@@ -68,19 +68,15 @@
     "place_key": ""
   },
   {
-    "title": "ORPHEUS IN THE UNDERWORLD",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185",
-    "image": "https://content.webtickets.co.za/artscape/panel_ORPHEUS_20251202_164045.png",
-    "date_text": "From 17 Jun 2026 19:00",
-    "venue": "Artscape, Opera House, Cape Town",
-    "price": "R225 - R650",
+    "title": "Dozi @ Bush Lapa",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596625853",
+    "image": "https://content.webtickets.co.za/heroldsbay/panel_Dozi-Web-Tickets_20260602_090529.jpg",
+    "date_text": "19 Jun 2026 18:00",
+    "venue": "Die Bush Lapa at Herold's Bay Resort, George",
+    "price": "From R250",
     "source": "Webtickets",
     "region": "Western Cape",
-    "categories": [
-      "dj",
-      "art",
-      "theatre"
-    ],
+    "categories": [],
     "missing_location": true,
     "location_key": "",
     "missing_place": true,

@@ -1,18 +1,36 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-16T09:30:54.586426Z",
+  "generated_at": "2026-06-17T09:07:37.314747Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-RE0VNFNEV9g",
+      "video_id": "RE0VNFNEV9g",
+      "title": "10 Most DISAPPOINTING Games of 2026 [First Half]",
+      "url": "https://www.youtube.com/watch?v=RE0VNFNEV9g",
+      "published_at": "2026-06-16T19:42:30+00:00",
+      "updated_at": "2026-06-17T08:18:58+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/RE0VNFNEV9g/hqdefault.jpg"
+    },
+    {
+      "id": "yt-3PQ4G85SjTo",
+      "video_id": "3PQ4G85SjTo",
+      "title": "10 GAMES that Embarrass Modern AAA Games",
+      "url": "https://www.youtube.com/watch?v=3PQ4G85SjTo",
+      "published_at": "2026-06-16T16:38:36+00:00",
+      "updated_at": "2026-06-17T08:40:33+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/3PQ4G85SjTo/hqdefault.jpg"
+    },
+    {
       "id": "yt-wp-gi69_CkE",
       "video_id": "wp-gi69_CkE",
       "title": "Skyrim in 2026 is A COMPLETELY DIFFERENT GAME",
       "url": "https://www.youtube.com/watch?v=wp-gi69_CkE",
       "published_at": "2026-06-15T16:22:10+00:00",
-      "updated_at": "2026-06-16T07:28:06+00:00",
+      "updated_at": "2026-06-16T11:25:41+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/wp-gi69_CkE/hqdefault.jpg"
     },
     {
@@ -122,24 +140,6 @@
       "published_at": "2026-06-04T16:50:02+00:00",
       "updated_at": "2026-06-11T23:46:51+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/sNHzh7MYc90/hqdefault.jpg"
-    },
-    {
-      "id": "yt-SVJi7_YO7u4",
-      "video_id": "SVJi7_YO7u4",
-      "title": "Fatekeeper - Before You Buy",
-      "url": "https://www.youtube.com/watch?v=SVJi7_YO7u4",
-      "published_at": "2026-06-03T19:36:13+00:00",
-      "updated_at": "2026-06-04T12:05:55+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/SVJi7_YO7u4/hqdefault.jpg"
-    },
-    {
-      "id": "yt-Xs7cJp-Tqu0",
-      "video_id": "Xs7cJp-Tqu0",
-      "title": "10 BIG Announcements of State of Play June 2026",
-      "url": "https://www.youtube.com/watch?v=Xs7cJp-Tqu0",
-      "published_at": "2026-06-03T15:00:21+00:00",
-      "updated_at": "2026-06-04T11:07:42+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/Xs7cJp-Tqu0/hqdefault.jpg"
     }
   ]
 }
