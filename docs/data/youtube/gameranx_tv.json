@@ -1,18 +1,27 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-17T09:07:37.314747Z",
+  "generated_at": "2026-06-18T08:58:13.574491Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-y52qPEY6fVY",
+      "video_id": "y52qPEY6fVY",
+      "title": "20 BEST Games of 2026 [FIRST HALF]",
+      "url": "https://www.youtube.com/watch?v=y52qPEY6fVY",
+      "published_at": "2026-06-17T18:33:24+00:00",
+      "updated_at": "2026-06-18T01:17:20+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/y52qPEY6fVY/hqdefault.jpg"
+    },
+    {
       "id": "yt-RE0VNFNEV9g",
       "video_id": "RE0VNFNEV9g",
       "title": "10 Most DISAPPOINTING Games of 2026 [First Half]",
       "url": "https://www.youtube.com/watch?v=RE0VNFNEV9g",
       "published_at": "2026-06-16T19:42:30+00:00",
-      "updated_at": "2026-06-17T08:18:58+00:00",
+      "updated_at": "2026-06-17T17:39:21+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/RE0VNFNEV9g/hqdefault.jpg"
     },
     {
@@ -120,7 +129,7 @@
       "title": "10 BIGGEST REVEALS of Summer Game Fest 2026",
       "url": "https://www.youtube.com/watch?v=j_-oXPAxou8",
       "published_at": "2026-06-06T15:23:12+00:00",
-      "updated_at": "2026-06-10T10:51:16+00:00",
+      "updated_at": "2026-06-16T08:08:02+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/j_-oXPAxou8/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-05T19:30:54+00:00",
       "updated_at": "2026-06-05T19:44:36+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/5Kuv7VI1eho/hqdefault.jpg"
-    },
-    {
-      "id": "yt-sNHzh7MYc90",
-      "video_id": "sNHzh7MYc90",
-      "title": "10 Games That Are DEEPER THAN WE THOUGHT",
-      "url": "https://www.youtube.com/watch?v=sNHzh7MYc90",
-      "published_at": "2026-06-04T16:50:02+00:00",
-      "updated_at": "2026-06-11T23:46:51+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/sNHzh7MYc90/hqdefault.jpg"
     }
   ]
 }

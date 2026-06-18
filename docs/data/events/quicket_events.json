@@ -1,61 +1,5 @@
 [
   {
-    "title": "NIGHT IN KIN CPT",
-    "start": "2026-06-17T17:00:00+02:00",
-    "end": "2026-06-18T00:00:00+02:00",
-    "venue": "Roxy Woodstock",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "354 Albert Road, , Woodstock, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0925046_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/373784-night-in-kin-cpt/",
-    "categories": [],
-    "location_key": "354 Albert Road, , Woodstock, 7925, Cape Town, Western Cape, South Africa, Roxy Woodstock, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "ALAS Academy presents Sessions in Bloom - VOL. 1 LIVE! @ café Roux",
-    "start": "2026-06-17T18:00:00+02:00",
-    "end": "2026-06-17T21:30:00+02:00",
-    "venue": "Cafe Roux",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0925840_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/376775-alas-academy-presents-sessions-in-bloom-vol-1-live-caf-roux/",
-    "categories": [],
-    "location_key": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa, Cafe Roux, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "The music of Neil Diamond by Johan Liebenberg | Kapstadt Brauhaus Strand",
-    "start": "2026-06-17T19:30:00+02:00",
-    "end": "2026-06-17T20:45:00+02:00",
-    "venue": "Kapstadt Brauhaus Strand",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Beach Road 99, 7139, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0923271_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/376011-the-music-of-neil-diamond-by-johan-liebenberg-kapstadt-brauhaus-strand/",
-    "categories": [
-      "music"
-    ],
-    "location_key": "Beach Road 99, 7139, Cape Town, Western Cape, South Africa, Kapstadt Brauhaus Strand, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Export Readiness Masterclass",
     "start": "2026-06-18T11:00:00+02:00",
     "end": "2026-06-18T14:00:00+02:00",
@@ -282,6 +226,26 @@
     "missing_place": true
   },
   {
+    "title": "SpiritSong - One Family",
+    "start": "2026-06-20T14:00:00+02:00",
+    "end": "2026-06-20T16:00:00+02:00",
+    "venue": "The Sufi Temple",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "183 Campground Road, Newlands, 7700, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0926630_247_247.png",
+    "url": "https://www.quicket.co.za/events/377118-spiritsong-one-family/",
+    "categories": [
+      "family"
+    ],
+    "location_key": "183 Campground Road, Newlands, 7700, Cape Town, Western Cape, South Africa, The Sufi Temple, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "Paint a DOOS",
     "start": "2026-06-20T16:00:00+02:00",
     "end": "2026-06-21T00:00:00+02:00",
@@ -291,7 +255,7 @@
     "address": "10A Kloof Nek Road, , Gardens, 8001, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q1_247_247.jpg",
+    "image": "https://images.quicket.co.za/Q14_247_247.jpg",
     "url": "https://www.quicket.co.za/events/378061-paint-a-doos/",
     "categories": [],
     "location_key": "10A Kloof Nek Road, , Gardens, 8001, Cape Town, Western Cape, South Africa, 10A Kloof Nek Rd, Cape Town, Western Cape, South Africa",
@@ -401,6 +365,24 @@
     "missing_place": true
   },
   {
+    "title": "Ian Burgess-Simpson Pianos presents William Berger, Louise Howlett & Albert Combrink",
+    "start": "2026-06-20T19:00:00+02:00",
+    "end": "2026-06-20T21:00:00+02:00",
+    "venue": "Ian Burgess-Simpson Pianos",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "19 Stibitz Street, Westlake, 7945, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0933276_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/379928-ian-burgess-simpson-pianos-presents-william-berger-louise-howlett-albert-combri/",
+    "categories": [],
+    "location_key": "19 Stibitz Street, Westlake, 7945, Cape Town, Western Cape, South Africa, Ian Burgess-Simpson Pianos, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "JUNE by Improguise",
     "start": "2026-06-20T19:30:00+02:00",
     "end": "2026-06-20T20:45:00+02:00",
@@ -480,22 +462,19 @@
     "missing_place": true
   },
   {
-    "title": "Crushing On Movie Club Presents: Police Academy",
-    "start": "2026-06-24T18:00:00+02:00",
-    "end": "2026-06-24T22:00:00+02:00",
-    "venue": "Stoep Startup Coworking Space",
+    "title": "Bad Jews: Live Podcast Event (Cape Town)",
+    "start": "2026-06-23T19:00:00+02:00",
+    "end": "2026-06-23T21:00:00+02:00",
+    "venue": "Neuroscience Institute, University of Cape Town",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "3 Tiverton Road, , Plumstead, 7801, Cape Town, Western Cape, South Africa",
+    "address": "Neuroscience Centre, Groote Schuur Hospital, Observatory, Cape Town, 7925, South Africa, , Observatory, 7925, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/0936803_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/381067-crushing-on-movie-club-presents-police-academy/",
-    "categories": [
-      "club",
-      "art"
-    ],
-    "location_key": "3 Tiverton Road, , Plumstead, 7801, Cape Town, Western Cape, South Africa, Stoep Startup Coworking Space, Cape Town, Western Cape, South Africa",
+    "image": "https://images.quicket.co.za/0934660_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/380399-bad-jews-live-podcast-event-cape-town/",
+    "categories": [],
+    "location_key": "Neuroscience Centre, Groote Schuur Hospital, Observatory, Cape Town, 7925, South Africa, , Observatory, 7925, Cape Town, Western Cape, South Africa, Neuroscience Institute, University of Cape Town, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -689,7 +668,7 @@
     "address": "Buitenkant Street, , District Six, 7800, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/0933511_247_247.jpeg",
+    "image": "https://images.quicket.co.za/0940575_247_247.png",
     "url": "https://www.quicket.co.za/events/367092-internet-athi-presents-polymorphism-a-live-album-experience/",
     "categories": [
       "theatre"
@@ -795,6 +774,24 @@
     "url": "https://www.quicket.co.za/events/370809-gandalfs-reunion-show-2026/",
     "categories": [],
     "location_key": "Lower Main Road 143, Observatory, 7925, Cape Town, Western Cape, South Africa, Trenchtown, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Gay Gaze",
+    "start": "2026-06-27T15:00:00+02:00",
+    "end": "2026-06-27T20:00:00+02:00",
+    "venue": "WELLNESS meets EVENTS (W.E)",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "10A Kloof Nek Road, Tamboerskloof, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0936137_247_247.png",
+    "url": "https://www.quicket.co.za/events/380494-gay-gaze/",
+    "categories": [],
+    "location_key": "10A Kloof Nek Road, Tamboerskloof, 8001, Cape Town, Western Cape, South Africa, WELLNESS meets EVENTS (W.E), Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -937,26 +934,6 @@
     "missing_place": true
   },
   {
-    "title": "Paint 'n Sip portrait series on pre-designed canvas board",
-    "start": "2026-06-27T19:30:00+02:00",
-    "end": "2026-06-27T21:30:00+02:00",
-    "venue": "Woodstock Brewery",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "252 Albert Road, Woodstock, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0939945_247_247.png",
-    "url": "https://www.quicket.co.za/events/380335-paint-n-sip-portrait-series-on-pre-designed-canvas-board/",
-    "categories": [
-      "bar"
-    ],
-    "location_key": "252 Albert Road, Woodstock, 7925, Cape Town, Western Cape, South Africa, Woodstock Brewery, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "LEGACY x SSS",
     "start": "2026-06-27T20:00:00+02:00",
     "end": "2026-06-28T02:00:00+02:00",
@@ -1030,26 +1007,6 @@
       "club"
     ],
     "location_key": "23A Buitenkant Street, District Six, 7925, Cape Town, Western Cape, South Africa, The Spot Lounge, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Steve Graham's Monsters of Rock show - Simon's Restaurant, Groot Constantia",
-    "start": "2026-06-27T20:00:00+02:00",
-    "end": "2026-06-27T22:30:00+02:00",
-    "venue": "Simon's Restaurant",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Groot Constantia Road, , Constantia, 7806, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0903203_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/361683-steve-grahams-monsters-of-rock-show-simons-restaurant-groot-constantia/",
-    "categories": [
-      "food"
-    ],
-    "location_key": "Groot Constantia Road, , Constantia, 7806, Cape Town, Western Cape, South Africa, Simon's Restaurant, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1200,6 +1157,26 @@
       "theatre"
     ],
     "location_key": "Buitenkant Street, , District Six, 7800, Cape Town, Western Cape, South Africa, Star Theatre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "MANBAND 3",
+    "start": "2026-07-02T20:00:00+02:00",
+    "end": "2026-07-04T21:15:00+02:00",
+    "venue": "Kalk Bay Theatre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Main Road 71a, 7990, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0938705_247_247.png",
+    "url": "https://www.quicket.co.za/events/124018-manband-3/",
+    "categories": [
+      "theatre"
+    ],
+    "location_key": "Main Road 71a, 7990, Cape Town, Western Cape, South Africa, Kalk Bay Theatre, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1524,6 +1501,24 @@
       "theatre"
     ],
     "location_key": "Buitenkant Street, District Six, 7800, Cape Town, Western Cape, South Africa, Star Theatre – Homecoming Centre, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Irreplaceably Human - Cape Town",
+    "start": "2026-07-28T08:30:00+02:00",
+    "end": "2026-07-28T18:00:00+02:00",
+    "venue": "Allan Gray",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "1 Silo Square, Victoria & Alfred Waterfront, Cape Town, 8001, Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0928194_247_247.png",
+    "url": "https://www.quicket.co.za/events/377638-irreplaceably-human-cape-town/",
+    "categories": [],
+    "location_key": "1 Silo Square, Victoria & Alfred Waterfront, Cape Town, 8001, Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa, Allan Gray, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
