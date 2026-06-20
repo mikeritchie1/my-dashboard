@@ -1,18 +1,27 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-19T09:08:33.328151Z",
+  "generated_at": "2026-06-20T07:56:08.149998Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
     {
+      "id": "yt-Jx2hpjITSbc",
+      "video_id": "Jx2hpjITSbc",
+      "title": "NEW GTA 6 City Video Looks INSANE & MORE",
+      "url": "https://www.youtube.com/watch?v=Jx2hpjITSbc",
+      "published_at": "2026-06-19T18:43:24+00:00",
+      "updated_at": "2026-06-19T22:43:41+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/Jx2hpjITSbc/hqdefault.jpg"
+    },
+    {
       "id": "yt-Jk2qkjHdYPc",
       "video_id": "Jk2qkjHdYPc",
       "title": "Why The HELL is NOBODY Buying Games?",
       "url": "https://www.youtube.com/watch?v=Jk2qkjHdYPc",
       "published_at": "2026-06-18T16:34:02+00:00",
-      "updated_at": "2026-06-18T20:54:24+00:00",
+      "updated_at": "2026-06-19T08:56:24+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/Jk2qkjHdYPc/hqdefault.jpg"
     },
     {
@@ -39,7 +48,7 @@
       "title": "10 GAMES that Embarrass Modern AAA Games",
       "url": "https://www.youtube.com/watch?v=3PQ4G85SjTo",
       "published_at": "2026-06-16T16:38:36+00:00",
-      "updated_at": "2026-06-17T08:40:33+00:00",
+      "updated_at": "2026-06-20T06:11:59+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/3PQ4G85SjTo/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-07T18:38:37+00:00",
       "updated_at": "2026-06-10T10:58:05+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/LQ6lVC72sb0/hqdefault.jpg"
-    },
-    {
-      "id": "yt-j_-oXPAxou8",
-      "video_id": "j_-oXPAxou8",
-      "title": "10 BIGGEST REVEALS of Summer Game Fest 2026",
-      "url": "https://www.youtube.com/watch?v=j_-oXPAxou8",
-      "published_at": "2026-06-06T15:23:12+00:00",
-      "updated_at": "2026-06-16T08:08:02+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/j_-oXPAxou8/hqdefault.jpg"
     }
   ]
 }

@@ -18,10 +18,34 @@
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
+      "title": "Arcadie II: Cold Lands",
+      "url": "https://rawg.io/games/arcadie-ii-cold-lands",
+      "image": "https://media.rawg.io/media/screenshots/042/042b2c25e45a4365c1a17e0c1c4ca818.jpg",
+      "release_date": "2026-06-18",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
       "title": "Mole",
       "url": "https://rawg.io/games/mole-3",
       "image": "https://media.rawg.io/media/games/a3a/a3a411cdef2cf40574ba824588273ab2.jpg",
       "release_date": "2026-06-15",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "The Cornerman",
+      "url": "https://rawg.io/games/the-cornerman",
+      "image": "https://media.rawg.io/media/screenshots/a71/a7125ae1fa715efc9c6d61b9bf07e676.jpg",
+      "release_date": "2026-06-15",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Wingspan: Bird Packs Season Pass",
+      "url": "https://rawg.io/games/wingspan-bird-packs-season-pass",
+      "image": "https://media.rawg.io/media/screenshots/69f/69f10282140384cb36c894fb279be421.jpg",
+      "release_date": "2026-06-14",
       "rating": "0.0",
       "platforms": ""
     },
@@ -318,7 +342,7 @@
       "url": "https://rawg.io/games/007-first-light",
       "image": "https://media.rawg.io/media/games/86f/86f2dc1b9671f25a13ff92e069b51786.jpg",
       "release_date": "2026-05-27",
-      "rating": "4.4",
+      "rating": "4.5",
       "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     },
     {
@@ -376,30 +400,6 @@
       "release_date": "2026-05-25",
       "rating": "0.0",
       "platforms": "PC, macOS"
-    },
-    {
-      "title": "The Meter is Running",
-      "url": "https://rawg.io/games/the-meter-is-running",
-      "image": "https://media.rawg.io/media/screenshots/7e4/7e49b74bb7d82b2dc7641b86ec0e0ac3.jpg",
-      "release_date": "2026-05-23",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Lego Batman: Legacy of the Dark Knight",
-      "url": "https://rawg.io/games/lego-batman-legacy-of-the-dark-knight",
-      "image": "https://media.rawg.io/media/games/69a/69a6a1097f82210dbf8583f8e0d09123.jpg",
-      "release_date": "2026-05-22",
-      "rating": "4.2",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
-    },
-    {
-      "title": "Bubsy 4D",
-      "url": "https://rawg.io/games/bubsy-4d",
-      "image": "https://media.rawg.io/media/screenshots/3f5/3f56e79671e3e144fefb3ad30e924c2d.jpg",
-      "release_date": "2026-05-21",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X, Nintendo Switch"
     }
   ],
   "coming_soon": [
@@ -426,6 +426,14 @@
       "release_date": "2026-07-13",
       "rating": "0.0",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Fogpiercer",
+      "url": "https://rawg.io/games/fogpiercer",
+      "image": "https://media.rawg.io/media/screenshots/e37/e375aee7cd9d3c04c49b84df4528e546.jpg",
+      "release_date": "2026-07-16",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "The Life and Suffering of Prince Jerian",
@@ -456,6 +464,14 @@
       "url": "https://rawg.io/games/splatoon-raiders",
       "image": "https://media.rawg.io/media/games/818/8186b959ba7c061024ec3f4ad23e4496.jpg",
       "release_date": "2026-07-23",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
+      "title": "Order Automatica",
+      "url": "https://rawg.io/games/order-automatica-2",
+      "image": "https://media.rawg.io/media/screenshots/c7a/c7a6e91c1c1f36effa68fedf3dd9c398.jpg",
+      "release_date": "2026-07-26",
       "rating": "0.0",
       "platforms": ""
     },
