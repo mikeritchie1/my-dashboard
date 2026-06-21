@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-05-14T12:05:40.319234Z",
+  "scraped_at": "2026-06-19T07:35:50.470912Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -1974,8 +1974,22 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/03/26/olc1E9Gg9WXeLP6V/img_item01.webp?_=81093b139a80edb1423d0039399ec06c",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/op16_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "Double Pack Set Vol.11 [DP-11]",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-06-12",
+      "release_date_text": "June 12, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/dp11.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/06/02/63BV1SeRyBVHYLZe/img_item01.webp?_=5da252680b98d03c3b8e6387c47458fb",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/dp11_img-item01.webp",
+      "is_released": true,
+      "added_at": "2026-06-19T07:35:50.470912Z"
     },
     {
       "title": "Official Playmat Limited Edition Vol.5",
@@ -2032,6 +2046,20 @@
       "image_local_url": "./data/one_piece/product_images/heroines-special_img-item01.webp",
       "is_released": false,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2026-10-01",
+      "release_date_text": "October 2026",
+      "url": "https://en.onepiece-cardgame.com/products/eb05.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/06/18/OtrICwSKUtW5syfr/img_noimage_booster_en-fr.webp?_=5da252680b98d03c3b8e6387c47458fb",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/eb05_img-noimage-booster-en-fr.webp",
+      "is_released": false,
+      "added_at": "2026-06-19T07:35:50.470912Z"
     },
     {
       "title": "Premium Card Collection -Live Action Edition vol.2 Baroque Works-",
@@ -2104,6 +2132,34 @@
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {
+      "title": "LIMITED CARD SLEEVE PREMIUM MATTE vol.6",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/sleeve041.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/products/2026/06/17/3bvtf9OBglsmqaxB/img_item01.webp?_=5da252680b98d03c3b8e6387c47458fb",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/sleeve041_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-06-19T07:35:50.470912Z"
+    },
+    {
+      "title": "OFFICIAL CARD SLEEVE LIMITED EDITION vol.6",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/sleeve040.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/product/2026/06/18/1FayaUeq4BHgbAmi/img_item01.webp?_=5da252680b98d03c3b8e6387c47458fb",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/sleeve040_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-06-19T07:35:50.470912Z"
+    },
+    {
       "title": "Official Playmat -Bandai Card Games Fest 23-24 Edition-",
       "category": "other",
       "category_label": "OTHER",
@@ -2116,6 +2172,34 @@
       "image_local_url": "./data/one_piece/product_images/playmat002_img-item01.webp",
       "is_released": false,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "OFFICIAL PLAYMAT LIMITED EDITION vol.6",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/playmat_limited006.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/06/18/eFrWoO7UjFLwfHmo/img_set_PBあり_card-en.webp?_=5da252680b98d03c3b8e6387c47458fb",
+      "source_page": 1,
+      "image_local_url": "",
+      "is_released": false,
+      "added_at": "2026-06-19T07:35:50.470912Z"
+    },
+    {
+      "title": "PREMIUM CARD COLLECTION -BEST SELECTION vol.7-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/card_collection_007.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/product/2026/06/18/xOY6wLRW2Y4HOZ4q/img_noimage_premium-card_collection.webp?_=5da252680b98d03c3b8e6387c47458fb",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/card-collection-007_img-noimage-premium-card-collection.webp",
+      "is_released": false,
+      "added_at": "2026-06-19T07:35:50.470912Z"
     },
     {
       "title": "Premium Card Collection -Leader Collection-",
