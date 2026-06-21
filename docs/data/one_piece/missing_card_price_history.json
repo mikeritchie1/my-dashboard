@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-21T08:39:01Z",
+  "updated_at": "2026-06-21T10:57:38Z",
   "observations": [
     {
       "card_number": "OP04-034",
@@ -32040,6 +32040,78 @@
       "stock": "In stock",
       "observed_on": "2026-06-21",
       "captured_at": "2026-06-21T08:39:01Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 32.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T10:57:38Z"
+    },
+    {
+      "card_number": "ST12-003",
+      "art_variant": "original",
+      "price": 66.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards",
+      "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T10:57:38Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 85.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T10:57:38Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T10:57:38Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 538.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T10:57:38Z"
+    },
+    {
+      "card_number": "OP11-054",
+      "art_variant": "alternate",
+      "price": 713.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-054-alternate-art-a-fist-of-divine-speed",
+      "title": "Nami (054) (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-21",
+      "captured_at": "2026-06-21T10:57:38Z"
     }
   ]
 }
