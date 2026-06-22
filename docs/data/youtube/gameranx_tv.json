@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-06-21T08:39:25.753519Z",
+  "generated_at": "2026-06-22T09:51:13.402042Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
   "items_count": 15,
   "items": [
+    {
+      "id": "yt-UMYYCpoB1cs",
+      "video_id": "UMYYCpoB1cs",
+      "title": "10 Games That'll Actually SAVE YOU MONEY",
+      "url": "https://www.youtube.com/watch?v=UMYYCpoB1cs",
+      "published_at": "2026-06-21T16:40:27+00:00",
+      "updated_at": "2026-06-22T06:55:49+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/UMYYCpoB1cs/hqdefault.jpg"
+    },
     {
       "id": "yt-eBraBGQKIQg",
       "video_id": "eBraBGQKIQg",
@@ -120,7 +129,7 @@
       "title": "10 Most IMPROVED Games of 2026 That Play Different",
       "url": "https://www.youtube.com/watch?v=LXNJOD6Cv0k",
       "published_at": "2026-06-10T16:18:03+00:00",
-      "updated_at": "2026-06-11T06:41:09+00:00",
+      "updated_at": "2026-06-21T16:47:56+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/LXNJOD6Cv0k/hqdefault.jpg"
     },
     {
@@ -131,15 +140,6 @@
       "published_at": "2026-06-09T18:38:49+00:00",
       "updated_at": "2026-06-10T07:04:01+00:00",
       "thumbnail_url": "https://i.ytimg.com/vi/UJ1jTet7uxg/hqdefault.jpg"
-    },
-    {
-      "id": "yt-4zozsPPgpvY",
-      "video_id": "4zozsPPgpvY",
-      "title": "10 BRAND NEW Games of XBOX GAMES SHOWCASE 2026",
-      "url": "https://www.youtube.com/watch?v=4zozsPPgpvY",
-      "published_at": "2026-06-08T15:02:16+00:00",
-      "updated_at": "2026-06-15T16:53:24+00:00",
-      "thumbnail_url": "https://i.ytimg.com/vi/4zozsPPgpvY/hqdefault.jpg"
     }
   ]
 }

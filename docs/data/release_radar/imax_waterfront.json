@@ -5,8 +5,8 @@
     {
       "tmdb_id": 1275779,
       "tmdb_url": "https://www.themoviedb.org/movie/1275779",
-      "tmdb_rating": "6.73",
-      "tmdb_votes": "564",
+      "tmdb_rating": "6.7",
+      "tmdb_votes": "597",
       "release_date": "2026-06-10",
       "overview": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
       "runtime_minutes": "145",
@@ -43,8 +43,8 @@
     {
       "tmdb_id": 1084244,
       "tmdb_url": "https://www.themoviedb.org/movie/1084244",
-      "tmdb_rating": "7.427",
-      "tmdb_votes": "143",
+      "tmdb_rating": "7.482",
+      "tmdb_votes": "191",
       "release_date": "2026-06-17",
       "overview": "When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang's jobs become exponentially harder when they have to go head to head with the all-new threat to playtime.",
       "runtime_minutes": "102",
@@ -70,7 +70,7 @@
         "Jay Hernandez"
       ],
       "trailer_url": "https://www.youtube.com/watch?v=QftAW9TTmuQ",
-      "poster_url": "https://image.tmdb.org/t/p/w342/pxG26JdyuiDvJbSoucknaFiLeZD.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/a6H2U7pjibMia41TwyFVd1PVQw3.jpg",
       "title": "Toy Story 5",
       "url": "https://mydorpie.com/m/?page=m_waterimax_toystory53d",
       "source": "IMAX Waterfront",
@@ -78,7 +78,7 @@
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 3D",
-      "image": "https://image.tmdb.org/t/p/w342/pxG26JdyuiDvJbSoucknaFiLeZD.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/a6H2U7pjibMia41TwyFVd1PVQw3.jpg"
     }
   ]
 }

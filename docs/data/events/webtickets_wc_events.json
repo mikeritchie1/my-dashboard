@@ -1,32 +1,16 @@
 [
   {
-    "title": "PROTEA HOTEL FIRE AND ICE CAPE TOWN: FATHER'S DAY LUNCHEON",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597091123",
-    "image": "https://content.webtickets.co.za/FirenIce/panel_MENU (1)_20260611_115343.jpg",
-    "date_text": "21 Jun 2026 12:30",
-    "venue": "Protea Hotel Fire & Ice",
-    "price": "R400 (excl service fee)",
+    "title": "Behind The Music with Rodney Trudgeon – The Second Movement",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1593803194",
+    "image": "https://content.webtickets.co.za/artscape/panel_rodney webtickets_20260507_102536.jpg",
+    "date_text": "22 Jun 2026 18:30",
+    "venue": "Artscape Opera Bar",
+    "price": "R180 - R200",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "food"
-    ],
-    "missing_location": true,
-    "location_key": "",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "ORPHEUS IN THE UNDERWORLD",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582354185",
-    "image": "https://content.webtickets.co.za/artscape/panel_ORPHEUS_20251202_164045.png",
-    "date_text": "21 Jun 2026 14:00",
-    "venue": "Artscape, Opera House, Cape Town",
-    "price": "R225 - R650",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "dj",
+      "music",
+      "bar",
       "art",
       "theatre"
     ],
@@ -36,12 +20,12 @@
     "place_key": ""
   },
   {
-    "title": "Broadway Baby!",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596932145",
-    "image": "https://content.webtickets.co.za/JennaDeBeerDance/panel_Poster_Landscape_20260609_145550.jpg",
-    "date_text": "For One Night Only! 21 June 15:30 and 18:00",
-    "venue": "The Homecoming Centre, Cape Town",
-    "price": "R180 - R250",
+    "title": "Cape Town Abseil",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
+    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
+    "date_text": "From 22 Jun 2026",
+    "venue": "Table Mountain",
+    "price": "R995 - R1100",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [],
@@ -51,16 +35,16 @@
     "place_key": ""
   },
   {
-    "title": "The Jive Cape Town Funny Festival",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1582738777",
-    "image": "https://content.webtickets.co.za/baxtertheatre/panel_AC_ FunnyFest_Auditorium_20251202_103850.jpg",
-    "date_text": "from 28 May 2026 20:00",
-    "venue": "",
-    "price": "R190 - R250",
+    "title": "FEED YOUR NEED FOR SPEED AT KILLARNEY ROBOT RACING!",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597396069",
+    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_260624 Robot Racing Webtickets 1110 x 740_20260615_151705.jpg",
+    "date_text": "24 Jun 2026 18:30",
+    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
+    "price": "R70",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "festival"
+      "sports"
     ],
     "missing_location": true,
     "location_key": "",
@@ -68,16 +52,33 @@
     "place_key": ""
   },
   {
-    "title": "Moyo Kirstenbosch Indoor Concert Classics",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595900430",
-    "image": "https://content.webtickets.co.za/moyo/panel_Ray copy_20260525_141456.jpg",
-    "date_text": "From 21 Jun 2026 18:00",
-    "venue": "Moyo, Kirstenbosch Gardens, Cape Town",
-    "price": "R225 - R385",
+    "title": "CG Ice Rink",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483",
+    "image": "https://content.webtickets.co.za/CapegateShoppingCentre/panel_CG_Ice Rink_Social_Webtickets Image_20260518_113654.png",
+    "date_text": "From 26 Jun 2026 10:00",
+    "venue": "Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape",
+    "price": "R70",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "music"
+      "outdoors"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Puss in Boots",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591358060",
+    "image": "https://content.webtickets.co.za/baxtertheatre/panel_Webtickets PIB_20260325_111953.jpg",
+    "date_text": "26 June - 18 July 2026",
+    "venue": "The Pam Golding Theatre at The Baxter",
+    "price": "R250 - R300",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
     ],
     "missing_location": true,
     "location_key": "",

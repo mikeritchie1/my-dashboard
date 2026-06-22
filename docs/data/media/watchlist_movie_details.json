@@ -6276,6 +6276,23 @@
     ],
     "runtime_minutes": 121
   },
+  "movie:1984": {
+    "title": "1984",
+    "media_type": "movie",
+    "rating": null,
+    "actors": null,
+    "trailer_url": null,
+    "number_of_seasons": null,
+    "directors": null,
+    "genres": null,
+    "overview": null,
+    "description": null,
+    "tmdb_id": null,
+    "runtime_minutes": null,
+    "poster_url": null,
+    "release_date": null,
+    "tmdb_url": null
+  },
   "movie:a clockwork orange": {
     "title": "A Clockwork Orange",
     "rating": 8.2,
