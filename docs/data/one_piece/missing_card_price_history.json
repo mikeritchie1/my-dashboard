@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24T13:57:33Z",
+  "updated_at": "2026-06-24T16:10:24Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -35940,6 +35940,78 @@
       "stock": "In stock",
       "observed_on": "2026-06-24",
       "captured_at": "2026-06-24T11:35:45Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 43.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T16:10:24Z"
+    },
+    {
+      "card_number": "ST22-002",
+      "art_variant": "original",
+      "price": 43.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/izo-starter-deck-ace-newgate",
+      "title": "Izo [Starter Deck: Ace & Newgate]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T16:10:24Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 123.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T16:10:24Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 238.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T16:10:24Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 266.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T16:10:24Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "alternate",
+      "price": 558.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-alternate-art-the-azure-seas-seven",
+      "title": "Perona (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-24",
+      "captured_at": "2026-06-24T16:10:24Z"
     }
   ]
 }
