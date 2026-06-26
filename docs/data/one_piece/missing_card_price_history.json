@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-26T20:25:58Z",
+  "updated_at": "2026-06-26T22:02:00Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -39900,6 +39900,150 @@
       "stock": "In stock",
       "observed_on": "2026-06-26",
       "captured_at": "2026-06-26T16:04:36Z"
+    },
+    {
+      "card_number": "OP16-089",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-the-time-of-battle",
+      "title": "Dracule Mihawk [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP16-019",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/lets-show-em-what-were-made-of-the-time-of-battle",
+      "title": "Let's Show 'Em What We're Made Of!! [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP16-043",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/usopp-the-time-of-battle",
+      "title": "Usopp [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP16-081",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/otama-the-time-of-battle",
+      "title": "Otama [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP16-117",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/black-hole-the-time-of-battle",
+      "title": "Black Hole [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP16-052",
+      "art_variant": "original",
+      "price": 4.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-the-time-of-battle-1",
+      "title": "Monkey.D.Luffy [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 49.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 51.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 166.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-double-pack-set-vol-11-luffy-and-ace-the-time-of-battle",
+      "title": "DON!! Card (Double Pack Set Vol. 11) (Luffy and Ace) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 177.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 238.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 1385.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/boa-hancock-alternate-art-the-time-of-battle",
+      "title": "Boa Hancock (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-06-26",
+      "captured_at": "2026-06-26T22:02:00Z"
     }
   ]
 }
