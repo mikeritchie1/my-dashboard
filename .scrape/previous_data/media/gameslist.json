@@ -161,7 +161,7 @@
   "backlog": {
     "game_aaa": [
       {
-        "title": "Mafia: The Old Country",
+        "title": "Death Stranding 2: On The Beach",
         "opinion": ""
       },
       {
@@ -181,19 +181,7 @@
         "opinion": ""
       },
       {
-        "title": "Death Stranding 2: On The Beach",
-        "opinion": ""
-      },
-      {
-        "title": "Ninja Gaiden 4",
-        "opinion": ""
-      },
-      {
         "title": "Donkey Kong: Bananza",
-        "opinion": ""
-      },
-      {
-        "title": "Ghost of Yotei",
         "opinion": ""
       }
     ],
@@ -281,6 +269,26 @@
         {
           "type": "game_aaa",
           "title": "Returnal",
+          "opinion": ""
+        },
+        {
+          "type": "game_aaa",
+          "title": "Lego Batman: Legacy of the Dark Knight",
+          "opinion": ""
+        },
+        {
+          "type": "game_aaa",
+          "title": "Mafia: The Old Country",
+          "opinion": ""
+        },
+        {
+          "type": "game_aaa",
+          "title": "007: First Light",
+          "opinion": ""
+        },
+        {
+          "type": "game_aaa",
+          "title": "Ghost of Yotei",
           "opinion": ""
         },
         {

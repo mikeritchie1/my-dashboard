@@ -3,42 +3,60 @@
   "currently_watching": {
     "movies": [
       {
-        "title": "Remarkably Bright Creatures?",
+        "title": "1984",
         "opinion": ""
       },
       {
-        "title": "Good Luck, Have Fun, Don’t Die",
+        "title": "Backrooms",
         "opinion": ""
       },
       {
-        "title": "One Battle After Another",
-        "opinion": ""
-      },
-      {
-        "title": "Valley Uprising",
-        "opinion": ""
-      },
-      {
-        "title": "Iron Lung",
-        "opinion": ""
-      },
-      {
-        "title": "Obsessed",
+        "title": "Hokum",
         "opinion": ""
       }
     ],
     "series": [
       {
-        "title": "The Boys",
+        "title": "Rick and Morty",
         "opinion": ""
       },
       {
-        "title": "Die Kantoor",
+        "title": "Spider-Noir",
         "opinion": ""
       }
     ],
-    "anime_movies": [],
-    "anime_series": []
+    "anime_movies": [
+      {
+        "title": "One Piece: Baron Omatsuri and the Secret Island",
+        "opinion": ""
+      },
+      {
+        "title": "One Piece: Strong World",
+        "opinion": ""
+      },
+      {
+        "title": "One Piece: Z",
+        "opinion": ""
+      },
+      {
+        "title": "One Piece: Gold",
+        "opinion": ""
+      },
+      {
+        "title": "One Piece: Stampede",
+        "opinion": ""
+      },
+      {
+        "title": "One Piece: Red",
+        "opinion": ""
+      }
+    ],
+    "anime_series": [
+      {
+        "title": "One Piece",
+        "opinion": ""
+      }
+    ]
   },
   "backlog": {
     "movies": [
@@ -68,10 +86,6 @@
       },
       {
         "title": "A Minecraft Movie",
-        "opinion": ""
-      },
-      {
-        "title": "Goat",
         "opinion": ""
       },
       {
@@ -112,10 +126,6 @@
       },
       {
         "title": "If I Had Legs, I Would Kick You",
-        "opinion": ""
-      },
-      {
-        "title": "Eternity",
         "opinion": ""
       },
       {
@@ -649,6 +659,74 @@
     ],
     "series": [
       {
+        "title": "Mr Inbetween",
+        "opinion": ""
+      },
+      {
+        "title": "Mr Show",
+        "opinion": ""
+      },
+      {
+        "title": "Da Ali G Show",
+        "opinion": ""
+      },
+      {
+        "title": "Foundation",
+        "opinion": ""
+      },
+      {
+        "title": "Snowpiercer",
+        "opinion": ""
+      },
+      {
+        "title": "IT: Welcome to Derry",
+        "opinion": ""
+      },
+      {
+        "title": "Scavengers Reign",
+        "opinion": ""
+      },
+      {
+        "title": "Undone",
+        "opinion": ""
+      },
+      {
+        "title": "Blood of Zeus",
+        "opinion": ""
+      },
+      {
+        "title": "The Paper",
+        "opinion": ""
+      },
+      {
+        "title": "The Chair Company",
+        "opinion": ""
+      },
+      {
+        "title": "Vice Principals",
+        "opinion": ""
+      },
+      {
+        "title": "Alien: Earth?",
+        "opinion": ""
+      },
+      {
+        "title": "The Devil’s Plan",
+        "opinion": ""
+      },
+      {
+        "title": "Masters of the Air",
+        "opinion": ""
+      },
+      {
+        "title": "Arrested Development",
+        "opinion": ""
+      },
+      {
+        "title": "Shameless",
+        "opinion": ""
+      },
+      {
         "title": "Prehistoric Planet",
         "opinion": ""
       },
@@ -661,7 +739,7 @@
         "opinion": ""
       },
       {
-        "title": "The Undoing?",
+        "title": "The Undoing",
         "opinion": ""
       },
       {
@@ -725,10 +803,6 @@
         "opinion": ""
       },
       {
-        "title": "Asarties",
-        "opinion": ""
-      },
-      {
         "title": "What We Do In The Shadows",
         "opinion": ""
       },
@@ -741,8 +815,38 @@
         "opinion": ""
       }
     ],
-    "anime_movies": [],
-    "anime_series": []
+    "anime_movies": [
+      {
+        "title": "Maboroshi",
+        "opinion": ""
+      }
+    ],
+    "anime_series": [
+      {
+        "title": "Orb: On the Movements of the Earth",
+        "opinion": ""
+      },
+      {
+        "title": "Baccano!",
+        "opinion": ""
+      },
+      {
+        "title": "Vinland Saga",
+        "opinion": ""
+      },
+      {
+        "title": "My Hero Academia?",
+        "opinion": ""
+      },
+      {
+        "title": "Mob Psycho 100?",
+        "opinion": ""
+      },
+      {
+        "title": "Beserk?",
+        "opinion": ""
+      }
+    ]
   },
   "history_by_year": [
     {
@@ -820,7 +924,7 @@
         },
         {
           "type": "movie",
-          "title": "Lilo & Stitch",
+          "title": "Lilo & Stitch (Live Action)",
           "opinion": ""
         },
         {
@@ -835,7 +939,7 @@
         },
         {
           "type": "movie",
-          "title": "How to Train Your Dragon (Live-Action) Collection",
+          "title": "How to Train Your Dragon (Live-Action)",
           "opinion": "Liked"
         },
         {
@@ -984,6 +1088,46 @@
           "opinion": ""
         },
         {
+          "type": "movie",
+          "title": "Mortal Kombat 2",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "One Battle After Another",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Valley Uprising",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Iron Lung",
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Obsession",
+          "opinion": "Loved"
+        },
+        {
+          "type": "movie",
+          "title": "GOAT",
+          "opinion": "Disliked"
+        },
+        {
+          "type": "movie",
+          "title": "The Others",
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Good Luck, Have Fun, Don’t Die",
+          "opinion": "Liked"
+        },
+        {
           "type": "series",
           "title": "Stranger Things",
           "opinion": ""
@@ -1056,6 +1200,21 @@
         {
           "type": "series",
           "title": "Star Wars: Maul",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "The Boys",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "Die Kantoor",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "The Digital Circus",
           "opinion": ""
         }
       ]
@@ -1190,7 +1349,7 @@
         },
         {
           "type": "movie",
-          "title": "The Frog Prince",
+          "title": "The Princess and the Frog",
           "opinion": ""
         },
         {
@@ -1341,11 +1500,6 @@
         {
           "type": "series",
           "title": "Secret Level",
-          "opinion": ""
-        },
-        {
-          "type": "series",
-          "title": "Rick and Morty",
           "opinion": ""
         },
         {
@@ -1766,6 +1920,11 @@
         {
           "type": "movie",
           "title": "Creed",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Mortal Kombat",
           "opinion": ""
         },
         {
@@ -2565,22 +2724,82 @@
       "entries": [
         {
           "type": "anime_movie",
-          "title": "Hayao Miyazaki",
+          "title": "Spirited Away",
           "opinion": ""
         },
         {
           "type": "anime_movie",
-          "title": "Studio Ghibli",
+          "title": "Princess Mononoke",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Howl’s Moving Castle",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "My Neighbour Totoro",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Nausicaa of the Valley of the Wind",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Castle in the Sky",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Kiki’s Delivery Service",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "The Wind Rises",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Ponyo",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Porco Rosso",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "The Boy and the Heron",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Grave of the Fireflies",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "From Up on Poppy Hill",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "Whisper of the Heart",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "The Tale of Princess Kaguya",
           "opinion": ""
         },
         {
           "type": "anime_movie",
           "title": "The Animatrix",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
-          "title": "Ghost in the Shell",
           "opinion": ""
         },
         {
@@ -2745,11 +2964,6 @@
         },
         {
           "type": "anime_movie",
-          "title": "Maboroshi",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
           "title": "Demon Slayer: Infinity Castle",
           "opinion": ""
         },
@@ -2765,42 +2979,27 @@
         },
         {
           "type": "anime_movie",
+          "title": "Meters",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
           "title": "One Piece: The Movie",
           "opinion": ""
         },
         {
           "type": "anime_movie",
-          "title": "One Piece: Baron Omatsuri and the Secret Island",
+          "title": "One Piece: Clockwork Island Adventure",
           "opinion": ""
         },
         {
           "type": "anime_movie",
-          "title": "One Piece: Strong World",
+          "title": "One Piece: Dead End Adventure",
           "opinion": ""
         },
         {
           "type": "anime_movie",
-          "title": "One Piece: Z",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
-          "title": "One Piece: Gold",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
-          "title": "One Piece: Stampede",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
-          "title": "One Piece: Red",
-          "opinion": ""
-        },
-        {
-          "type": "anime_movie",
-          "title": "Meters",
+          "title": "One Piece: The Cursed Holy Sword",
           "opinion": ""
         },
         {
@@ -2901,41 +3100,6 @@
         {
           "type": "anime_series",
           "title": "Solo Levelling",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "Orb: On the Movements of the Earth",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "One Piece",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "Baccano!",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "Vinland Saga",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "My Hero Academia?",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "Mob Psycho 100?",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "Beserk?",
           "opinion": ""
         }
       ]

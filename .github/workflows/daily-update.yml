@@ -79,6 +79,10 @@ jobs:
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
         run: python services/youtube/scrape_gameranx_tv.py
 
+      - name: Run One Piece YouTube scraper
+        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
+        run: python services/scrape_youtube.py --mode daily
+
       - name: Run news scraper
         if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'news' }}
         run: python services/scrape_news.py
