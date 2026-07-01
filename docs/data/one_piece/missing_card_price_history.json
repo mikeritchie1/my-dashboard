@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T09:39:28Z",
+  "updated_at": "2026-07-01T10:41:54Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -45540,6 +45540,78 @@
       "stock": "In stock",
       "observed_on": "2026-07-01",
       "captured_at": "2026-07-01T09:39:28Z"
+    },
+    {
+      "card_number": "OP16-107",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jesus-burgess-the-time-of-battle",
+      "title": "Jesus Burgess [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T10:41:54Z"
+    },
+    {
+      "card_number": "OP16-005",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-the-time-of-battle",
+      "title": "Thatch [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T10:41:54Z"
+    },
+    {
+      "card_number": "OP16-010",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/namule-the-time-of-battle",
+      "title": "Namule [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T10:41:54Z"
+    },
+    {
+      "card_number": "OP16-103",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/van-augur-the-time-of-battle",
+      "title": "Van Augur [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T10:41:54Z"
+    },
+    {
+      "card_number": "OP16-109",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/doc-q-the-time-of-battle",
+      "title": "Doc Q [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T10:41:54Z"
+    },
+    {
+      "card_number": "OP16-003",
+      "art_variant": "original",
+      "price": 16.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/edward-newgate-the-time-of-battle",
+      "title": "Edward.Newgate [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T10:41:54Z"
     }
   ]
 }

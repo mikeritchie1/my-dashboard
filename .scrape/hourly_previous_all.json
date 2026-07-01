@@ -1,6 +1,21 @@
 {
   "listings": [
     {
+      "card_number": "OP16-107",
+      "price": "2.0",
+      "title": "Jesus Burgess [The Time of Battle]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R2.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jesus-burgess-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696089.jpg?v=1780343159",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T10:41:54Z"
+    },
+    {
       "card_number": "DON!!",
       "price": "3.0",
       "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
@@ -16,64 +31,64 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "OP16-076",
+      "card_number": "OP16-005",
       "price": "3.0",
-      "title": "The Three Admirals!! [The Time of Battle]",
+      "title": "Thatch [The Time of Battle]",
       "rarity": "Uncommon",
       "store": "Knightly Gaming",
       "set_name": "The Time of Battle",
       "condition": "Near Mint",
       "stock": "In stock",
       "available_variants": "Near Mint R3.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/the-three-admirals-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696063.jpg?v=1780343810",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thatch-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/695989.jpg?v=1780342929",
       "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
+      "scraped_at": "2026-07-01T10:41:54Z"
     },
     {
-      "card_number": "OP16-078",
+      "card_number": "OP16-010",
       "price": "3.0",
-      "title": "Marineford [The Time of Battle]",
+      "title": "Namule [The Time of Battle]",
       "rarity": "Uncommon",
       "store": "Knightly Gaming",
       "set_name": "The Time of Battle",
       "condition": "Near Mint",
       "stock": "In stock",
       "available_variants": "Near Mint R3.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/marineford-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696065.jpg?v=1780343825",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/namule-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/695994.jpg?v=1780343071",
       "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
+      "scraped_at": "2026-07-01T10:41:54Z"
     },
     {
-      "card_number": "OP16-084",
-      "price": "4.0",
-      "title": "Kouzuki Momonosuke [The Time of Battle]",
+      "card_number": "OP16-103",
+      "price": "3.0",
+      "title": "Van Augur [The Time of Battle]",
       "rarity": "Uncommon",
       "store": "Knightly Gaming",
       "set_name": "The Time of Battle",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R4.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-momonosuke-the-time-of-battle-1",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696068.jpg?v=1780343872",
+      "available_variants": "Near Mint R3.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/van-augur-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696085.jpg?v=1780343134",
       "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
+      "scraped_at": "2026-07-01T10:41:54Z"
     },
     {
-      "card_number": "OP16-094",
-      "price": "4.0",
-      "title": "Portgas.D.Ace [The Time of Battle]",
+      "card_number": "OP16-109",
+      "price": "3.0",
+      "title": "Doc Q [The Time of Battle]",
       "rarity": "Uncommon",
       "store": "Knightly Gaming",
       "set_name": "The Time of Battle",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R4.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/portgas-d-ace-the-time-of-battle-3",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696077.jpg?v=1780343977",
+      "available_variants": "Near Mint R3.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/doc-q-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696092.jpg?v=1780344161",
       "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
+      "scraped_at": "2026-07-01T10:41:54Z"
     },
     {
       "card_number": "DON!!",
@@ -89,21 +104,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/646574_in_1000x1000_8c143a87-f432-4018-94c6-527b7637214d.jpg?v=1768836277",
       "art_variant": "alternate",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "OP16-067",
-      "price": "5.0",
-      "title": "Tsuru [The Time of Battle]",
-      "rarity": "Uncommon",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R5.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/tsuru-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696055.jpg?v=1780343702",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "P-055",
@@ -271,36 +271,6 @@
       "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
-      "card_number": "OP16-087",
-      "price": "15.0",
-      "title": "Shinobu [The Time of Battle]",
-      "rarity": "Uncommon",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R15.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shinobu-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696070.jpg?v=1780343902",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
-      "card_number": "OP16-099",
-      "price": "15.0",
-      "title": "I've Come Here... To Cut Those Chains!!! [The Time of Battle]",
-      "rarity": "Uncommon",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R15.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ive-come-here-to-cut-those-chains-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696081.jpg?v=1780344022",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "DON!!",
       "price": "16.0",
       "title": "DON!! Card [Ultra Deck - The Three Captains]",
@@ -316,6 +286,21 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
+      "card_number": "OP16-003",
+      "price": "16.0",
+      "title": "Edward.Newgate [The Time of Battle]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R16.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/edward-newgate-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_ac582ad5-6f3c-4de7-b4d1-e0b488b26705.png?v=1778688159",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T10:41:54Z"
+    },
+    {
       "card_number": "DON!!",
       "price": "20.0",
       "title": "DON!! Card (Katakuri) [Premium Booster -The Best-]",
@@ -327,21 +312,6 @@
       "available_variants": "",
       "url": "https://www.bobshop.co.za/don-card-katakuri-premium-booster-the-best/p/685542010",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/593812_1024x1024_2x_2OOSeCvup.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
-      "card_number": "OP16-065",
-      "price": "20.0",
-      "title": "Sakazuki [The Time of Battle]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R20.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sakazuki-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_547db192-5f76-4cc6-9aeb-5901f459346c.png?v=1779477945",
       "art_variant": "original",
       "scraped_at": "2026-07-01T09:39:28Z"
     },
@@ -419,21 +389,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "OP16-082",
-      "price": "40.0",
-      "title": "Kin'emon [The Time of Battle]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R40.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kinemon-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_c3d988e2-5c7a-4cf3-9af2-16e6ddd6e159.png?v=1779125719",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "ST22-002",
@@ -524,21 +479,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/s-l225.jpg?v=1777729019",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "OP16-098",
-      "price": "57.0",
-      "title": "Yamato [The Time of Battle]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R57.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yamato-the-time-of-battle-1",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_aaaf6eea-a224-4b1b-87fd-4d20d6bdef45.png?v=1779125763",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "OP06-058",
