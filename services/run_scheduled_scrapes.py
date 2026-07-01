@@ -226,6 +226,8 @@ def run_command(config: SourceConfig, controls: dict[str, Any]) -> dict[str, Any
         source=config.source,
         duration_seconds=duration,
         command=command,
+        status="ok" if completed.returncode == 0 else "error",
+        error="" if completed.returncode == 0 else f"Command failed with exit code {completed.returncode}",
     )
     item_count = sum(output_item_count(REPO_DIR / output) for output in config.outputs)
     return {

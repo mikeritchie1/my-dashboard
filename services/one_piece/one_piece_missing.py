@@ -77,6 +77,12 @@ NS = {
 
 TAG_RE = re.compile(r"<[^>]+>")
 DRIVE_FILE_ID_RE = re.compile(r"/d/([a-zA-Z0-9_-]+)")
+JSON_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "Accept": "application/json,text/plain,*/*",
+    "Accept-Language": "en-US,en;q=0.9",
+}
 
 RARITY_NAMES = [
     "Super Rare",
@@ -340,7 +346,7 @@ def print_found_listings(store: str, matches: list[dict[str, object]]) -> None:
 
 
 def fetch_json(url: str) -> object:
-    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    request = urllib.request.Request(url, headers=JSON_HEADERS)
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
@@ -353,7 +359,7 @@ def fetch_text(url: str) -> str:
 
 def fetch_woo_page(url: str) -> tuple[list[dict], int, int]:
     """Fetch a WooCommerce Store API page. Returns (products, total_items, total_pages)."""
-    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    request = urllib.request.Request(url, headers=JSON_HEADERS)
     with urllib.request.urlopen(request, timeout=30) as response:
         total_items = int(response.headers.get("X-WP-Total") or 0)
         total_pages = int(response.headers.get("X-WP-TotalPages") or 0)
@@ -797,7 +803,7 @@ def match_knightly(missing: set[str], products: list[dict]) -> list[dict[str, ob
     for product in products:
         body = product.get("body_html") or ""
         title = product.get("title") or ""
-        card_number = normalize_card_number(body_field(body, "Card Number"))
+        card_number = normalize_card_number(body_field(body, "Card Number")) or normalize_card_number(title)
         rarity = body_field(body, "Rarity")
         if not card_number and not is_don_title(title):
             card_number, inferred_rarity = resolve_card_info_from_image(product, card_number="", rarity=rarity)
@@ -866,7 +872,7 @@ def match_big_bang(missing: set[str], products: list[dict]) -> list[dict[str, ob
     for product in products:
         body = product.get("body_html") or ""
         title = product.get("title") or ""
-        card_number = normalize_card_number(body_field(body, "Card Number"))
+        card_number = normalize_card_number(body_field(body, "Card Number")) or normalize_card_number(title)
         rarity = body_field(body, "Rarity")
         if not card_number and not is_don_title(title):
             card_number, inferred_rarity = resolve_card_info_from_image(product, card_number="", rarity=rarity)
@@ -1083,7 +1089,14 @@ def fetch_tanuki_products() -> list[dict]:
     products: list[dict] = []
     for page in range(1, 100):
         print(f"Tanuki Trader: fetching page {page}...", flush=True)
-        page_products = fetch_json(TANUKI_PRODUCTS_URL.format(page=page))
+        try:
+            page_products = fetch_json(TANUKI_PRODUCTS_URL.format(page=page))
+        except urllib.error.HTTPError as error:
+            print(f"Tanuki Trader: HTTP {error.code} fetching page {page}; skipping Tanuki for this run.", flush=True)
+            break
+        except urllib.error.URLError as error:
+            print(f"Tanuki Trader: request failed fetching page {page}: {error.reason}; skipping Tanuki for this run.", flush=True)
+            break
         count = len(page_products) if isinstance(page_products, list) else 0
         print(f"Tanuki Trader: page {page} -> {count} products", flush=True)
         if not page_products:
@@ -1136,6 +1149,9 @@ def match_tanuki(missing: set[str], products: list[dict]) -> list[dict[str, obje
 def run_tanuki() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     products = fetch_tanuki_products()
+    if not products:
+        print("Tanuki Trader: no products fetched; keeping existing Tanuki listings unchanged.", flush=True)
+        raise RuntimeError("Tanuki Trader returned no products, likely blocked by HTTP 403")
     matches = sorted_matches(match_tanuki(missing, products))
     save_image_match_cache()
     update_store_in_combined_json("Tanuki Trader", matches)

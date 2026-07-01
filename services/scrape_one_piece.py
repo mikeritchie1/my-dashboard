@@ -43,12 +43,24 @@ def count_store_listings(source: str) -> int:
     return sum(1 for row in listings if isinstance(row, dict) and str(row.get("store") or "").strip() == store_name)
 
 
-def run_store_scrape(source: str) -> None:
+def run_store_scrape(source: str) -> bool:
     command = [sys.executable, "services/one_piece/find_missing_cards.py", source]
     print(f"Running One Piece scrape: {' '.join(command)}", flush=True)
     start = time.perf_counter()
+    status = "ok"
+    error = ""
+    completed = None
     try:
-        subprocess.run(command, cwd=REPO_DIR, check=True)
+        completed = subprocess.run(command, cwd=REPO_DIR, text=True, capture_output=True)
+        if completed.stdout:
+            print(completed.stdout, end="" if completed.stdout.endswith("\n") else "\n", flush=True)
+        if completed.stderr:
+            print(completed.stderr, end="" if completed.stderr.endswith("\n") else "\n", file=sys.stderr, flush=True)
+        if completed.returncode != 0:
+            status = "error"
+            lines = [line.strip() for line in (completed.stderr or completed.stdout or "").splitlines() if line.strip()]
+            detail = lines[-1] if lines else f"Command failed with exit code {completed.returncode}"
+            error = detail
     finally:
         duration = time.perf_counter() - start
         record_scrape_outputs(
@@ -58,7 +70,10 @@ def run_store_scrape(source: str) -> None:
             duration_seconds=duration,
             command=command,
             item_count=count_store_listings(source),
+            status=status,
+            error=error,
         )
+    return completed is not None and completed.returncode == 0
 
 
 def main() -> int:
@@ -89,8 +104,11 @@ def main() -> int:
     )
 
     source_names = STORE_SOURCES if args.source == "all" else [args.source]
+    failed_sources: list[str] = []
     for source in source_names:
-        run_store_scrape(source)
+        if not run_store_scrape(source):
+            failed_sources.append(source)
+            print(f"One Piece source failed: {source}", flush=True)
     product_command = [sys.executable, "services/one_piece/scrape_products.py", "--pages", "1"]
     if args.hard:
         product_command.append("--hard")
@@ -102,6 +120,9 @@ def main() -> int:
         module="one-piece",
         source="products",
     )
+    if failed_sources:
+        print(f"One Piece scrape finished with failed source(s): {', '.join(failed_sources)}", flush=True)
+        return 1 if args.source != "all" else 0
     return 0
 
 

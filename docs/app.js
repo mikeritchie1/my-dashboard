@@ -341,9 +341,13 @@ const state = {
   scrapeStatusByOutput: {},
   scrapeDurationByOutput: {},
   scrapeItemCountByOutput: {},
+  scrapeResultByOutput: {},
+  scrapeErrorByOutput: {},
   scrapeStatusBySource: {},
   scrapeDurationBySource: {},
   scrapeItemCountBySource: {},
+  scrapeResultBySource: {},
+  scrapeErrorBySource: {},
   scrapeHasSourceMetadata: false,
   scrapeControlsLoaded: false,
   scrapeControlsSaving: false,
@@ -8444,6 +8448,12 @@ function formatDuration(seconds) {
   return `${secs}s`;
 }
 
+function formatScrapeDuration(stats) {
+  const status = String(stats?.status || "").trim().toLowerCase();
+  if (status && status !== "ok" && status !== "success") return "Error";
+  return formatDuration(stats?.durationSeconds);
+}
+
 function scrapeSourceKey(moduleId, sourceId) {
   return `${moduleId}/${sourceId}`;
 }
@@ -8452,21 +8462,26 @@ function scrapeStatsForSource(moduleConfig, source) {
   const key = scrapeSourceKey(moduleConfig.id, source.id);
   const hasSourceStats = Object.prototype.hasOwnProperty.call(state.scrapeStatusBySource, key)
     || Object.prototype.hasOwnProperty.call(state.scrapeDurationBySource, key)
-    || Object.prototype.hasOwnProperty.call(state.scrapeItemCountBySource, key);
+    || Object.prototype.hasOwnProperty.call(state.scrapeItemCountBySource, key)
+    || Object.prototype.hasOwnProperty.call(state.scrapeResultBySource, key);
   if (hasSourceStats) {
     return {
       lastScraped: state.scrapeStatusBySource[key] || "",
       durationSeconds: state.scrapeDurationBySource[key],
       itemCount: state.scrapeItemCountBySource[key],
+      status: state.scrapeResultBySource[key] || "",
+      error: state.scrapeErrorBySource[key] || "",
     };
   }
   if (state.scrapeHasSourceMetadata) {
-    return { lastScraped: "", durationSeconds: null, itemCount: null };
+    return { lastScraped: "", durationSeconds: null, itemCount: null, status: "", error: "" };
   }
   return {
     lastScraped: state.scrapeStatusByOutput[source.output] || "",
     durationSeconds: state.scrapeDurationByOutput[source.output],
     itemCount: state.scrapeItemCountByOutput[source.output],
+    status: state.scrapeResultByOutput[source.output] || "",
+    error: state.scrapeErrorByOutput[source.output] || "",
   };
 }
 
@@ -8643,9 +8658,13 @@ async function loadScrapeStatus() {
   state.scrapeStatusByOutput = {};
   state.scrapeDurationByOutput = {};
   state.scrapeItemCountByOutput = {};
+  state.scrapeResultByOutput = {};
+  state.scrapeErrorByOutput = {};
   state.scrapeStatusBySource = {};
   state.scrapeDurationBySource = {};
   state.scrapeItemCountBySource = {};
+  state.scrapeResultBySource = {};
+  state.scrapeErrorBySource = {};
   state.scrapeHasSourceMetadata = false;
   try {
     const response = await fetchFresh(SCRAPE_METADATA_PATH);
@@ -8662,6 +8681,8 @@ async function loadScrapeStatus() {
         state.scrapeItemCountBySource[key] = Number.isFinite(Number(entry.item_count))
           ? Number(entry.item_count)
           : null;
+        state.scrapeResultBySource[key] = String(entry.status || "");
+        state.scrapeErrorBySource[key] = String(entry.error || "");
       }
       const outputMetadata = payload?.outputs && typeof payload.outputs === "object" ? payload.outputs : {};
       for (const output of outputs) {
@@ -8674,6 +8695,8 @@ async function loadScrapeStatus() {
         state.scrapeItemCountByOutput[output] = Number.isFinite(Number(entry.item_count))
           ? Number(entry.item_count)
           : null;
+        state.scrapeResultByOutput[output] = String(entry.status || "");
+        state.scrapeErrorByOutput[output] = String(entry.error || "");
       }
     }
   } catch {
@@ -8745,6 +8768,15 @@ function renderScrapeControls() {
     const moduleLastScraped = latestTimestamp(activeModuleSources.map((item) => item.lastScraped));
     const moduleDuration = sumDurations(activeModuleSources.map((item) => item.durationSeconds));
     const moduleItemCount = sumItemCounts(activeModuleSources.map((item) => item.itemCount));
+    const moduleError = activeModuleSources.find((item) => {
+      const status = String(item.status || "").trim().toLowerCase();
+      return status && status !== "ok" && status !== "success";
+    });
+    const moduleStats = {
+      durationSeconds: moduleDuration,
+      status: moduleError ? "error" : "ok",
+      error: moduleError?.error || "",
+    };
     const moduleRow = `
       <tr class="scrape-table-row scrape-table-row--module${moduleIntervalActive ? "" : " scrape-table-row--interval-off"}">
         <th scope="row">
@@ -8759,7 +8791,7 @@ function renderScrapeControls() {
         <td>${renderScrapeTableOption(moduleConfig, optionByKey.limit, moduleState.options?.limit)}</td>
         <td>${renderScrapeTableOption(moduleConfig, optionByKey.max_pages, moduleState.options?.max_pages)}</td>
         <td class="scrape-count-cell">${escapeHtml(formatItemCount(moduleItemCount))}</td>
-        <td class="scrape-duration-cell">${escapeHtml(formatDuration(moduleDuration))}</td>
+        <td class="scrape-duration-cell"${moduleStats.error ? ` title="${escapeHtml(moduleStats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(moduleStats))}</td>
         <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(moduleLastScraped) || "Unknown")}</td>
       </tr>`;
     const sourceRows = moduleConfig.sources.map((source) => {
@@ -8767,7 +8799,6 @@ function renderScrapeControls() {
       const sourceIntervalActive = isScrapeIntervalEnabled(sourceState.schedule);
       const stats = scrapeStatsForSource(moduleConfig, source);
       const lastScraped = stats.lastScraped;
-      const duration = stats.durationSeconds;
       const itemCount = stats.itemCount;
       return `
         <tr class="scrape-table-row scrape-table-row--source${sourceIntervalActive ? "" : " scrape-table-row--interval-off"}">
@@ -8783,7 +8814,7 @@ function renderScrapeControls() {
           <td class="scrape-muted-cell">-</td>
           <td class="scrape-muted-cell">-</td>
           <td class="scrape-count-cell">${escapeHtml(formatItemCount(itemCount))}</td>
-          <td class="scrape-duration-cell">${escapeHtml(formatDuration(duration))}</td>
+          <td class="scrape-duration-cell"${stats.error ? ` title="${escapeHtml(stats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(stats))}</td>
           <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(lastScraped) || "Unknown")}</td>
         </tr>`;
     }).join("");

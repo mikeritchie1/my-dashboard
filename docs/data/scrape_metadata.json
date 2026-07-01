@@ -2,39 +2,43 @@
   "outputs": {
     "docs/data/one_piece/collection.json": {
       "command": [
-        "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 6.84,
+      "duration_seconds": 6.731,
       "item_count": 2,
-      "last_scraped_at": "2026-07-01T11:08:26.652384+00:00",
+      "last_scraped_at": "2026-07-01T11:35:10.371603+00:00",
       "module": "one-piece",
-      "source": "collection"
+      "source": "collection",
+      "status": "ok"
     },
     "docs/data/one_piece/missing_cards.json": {
       "command": [
-        "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
         "services/one_piece/find_missing_cards.py",
-        "geekhaven"
+        "tanuki"
       ],
-      "duration_seconds": 9.515,
-      "item_count": 111,
-      "last_scraped_at": "2026-07-01T11:08:36.269255+00:00",
+      "duration_seconds": 4.186,
+      "error": "tanuki scrape failed: Tanuki Trader returned no products, likely blocked by HTTP 403",
+      "item_count": 106,
+      "last_scraped_at": "2026-07-01T11:35:14.682693+00:00",
       "module": "one-piece",
-      "source": "geekhaven"
+      "source": "tanuki",
+      "status": "error"
     },
     "docs/data/one_piece/products.json": {
       "command": [
-        "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
         "services/one_piece/scrape_products.py",
         "--pages",
         "1"
       ],
-      "duration_seconds": 2.602,
+      "duration_seconds": 2.327,
       "item_count": 158,
-      "last_scraped_at": "2026-07-01T11:08:38.880897+00:00",
+      "last_scraped_at": "2026-07-01T11:35:17.020974+00:00",
       "module": "one-piece",
-      "source": "products"
+      "source": "products",
+      "status": "ok"
     }
   },
   "sources": {
@@ -53,19 +57,50 @@
       ],
       "source": "all"
     },
-    "one-piece/collection": {
+    "one-piece/bigbang": {
       "command": [
         "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
+        "services/one_piece/find_missing_cards.py",
+        "bigbang"
+      ],
+      "duration_seconds": 5.137,
+      "item_count": 27,
+      "last_scraped_at": "2026-07-01T11:28:58.382026+00:00",
+      "module": "one-piece",
+      "outputs": [
+        "docs/data/one_piece/missing_cards.json"
+      ],
+      "source": "bigbang"
+    },
+    "one-piece/collection": {
+      "command": [
+        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 6.84,
+      "duration_seconds": 6.731,
       "item_count": 2,
-      "last_scraped_at": "2026-07-01T11:08:26.652384+00:00",
+      "last_scraped_at": "2026-07-01T11:35:10.371603+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
       ],
-      "source": "collection"
+      "source": "collection",
+      "status": "ok"
+    },
+    "one-piece/collectiverse": {
+      "command": [
+        "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
+        "services/one_piece/find_missing_cards.py",
+        "collectiverse"
+      ],
+      "duration_seconds": 4.218,
+      "item_count": 0,
+      "last_scraped_at": "2026-07-01T11:29:02.619503+00:00",
+      "module": "one-piece",
+      "outputs": [
+        "docs/data/one_piece/missing_cards.json"
+      ],
+      "source": "collectiverse"
     },
     "one-piece/geekhaven": {
       "command": [
@@ -73,24 +108,39 @@
         "services/one_piece/find_missing_cards.py",
         "geekhaven"
       ],
-      "duration_seconds": 9.515,
+      "duration_seconds": 7.448,
       "item_count": 58,
-      "last_scraped_at": "2026-07-01T11:08:36.269255+00:00",
+      "last_scraped_at": "2026-07-01T11:29:10.086751+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "geekhaven"
     },
+    "one-piece/knightly": {
+      "command": [
+        "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
+        "services/one_piece/find_missing_cards.py",
+        "knightly"
+      ],
+      "duration_seconds": 7.835,
+      "item_count": 19,
+      "last_scraped_at": "2026-07-01T11:29:17.940321+00:00",
+      "module": "one-piece",
+      "outputs": [
+        "docs/data/one_piece/missing_cards.json"
+      ],
+      "source": "knightly"
+    },
     "one-piece/marvellous": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
         "services/one_piece/find_missing_cards.py",
         "marvellous"
       ],
-      "duration_seconds": 29.352,
+      "duration_seconds": 26.616,
       "item_count": 2,
-      "last_scraped_at": "2026-07-01T10:47:20.404788+00:00",
+      "last_scraped_at": "2026-07-01T11:29:44.576098+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -99,21 +149,39 @@
     },
     "one-piece/products": {
       "command": [
-        "C:\\Users\\mjrit\\OneDrive\\Desktop\\my-dashboard\\.venv\\Scripts\\python.exe",
+        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
         "services/one_piece/scrape_products.py",
         "--pages",
         "1"
       ],
-      "duration_seconds": 2.602,
+      "duration_seconds": 2.327,
       "item_count": 158,
-      "last_scraped_at": "2026-07-01T11:08:38.880897+00:00",
+      "last_scraped_at": "2026-07-01T11:35:17.020974+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
       ],
-      "source": "products"
+      "source": "products",
+      "status": "ok"
+    },
+    "one-piece/tanuki": {
+      "command": [
+        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "services/one_piece/find_missing_cards.py",
+        "tanuki"
+      ],
+      "duration_seconds": 4.186,
+      "error": "tanuki scrape failed: Tanuki Trader returned no products, likely blocked by HTTP 403",
+      "item_count": 0,
+      "last_scraped_at": "2026-07-01T11:35:14.682693+00:00",
+      "module": "one-piece",
+      "outputs": [
+        "docs/data/one_piece/missing_cards.json"
+      ],
+      "source": "tanuki",
+      "status": "error"
     }
   },
-  "updated_at": "2026-07-01T11:08:38.880897+00:00",
+  "updated_at": "2026-07-01T11:35:17.020974+00:00",
   "version": 1
 }

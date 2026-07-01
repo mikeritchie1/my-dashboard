@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-01T11:08:36Z",
+  "updated_at": "2026-07-01T11:29:44Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -46200,6 +46200,42 @@
       "stock": "In stock",
       "observed_on": "2026-07-01",
       "captured_at": "2026-07-01T10:31:49Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 840.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gecko-moria-op14-104-alternate-art-op14-104-the-azure-seas-seven-foil",
+      "title": "Gecko Moria - OP14-104 (Alternate Art) (OP14-104) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T11:22:59Z"
+    },
+    {
+      "card_number": "OP16-056",
+      "art_variant": "alternate",
+      "price": 1045.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-3galdino-056-alternate-art-op16-056-the-time-of-battle-foil",
+      "title": "Mr.3(Galdino) (056) (Alternate Art) (OP16-056) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T11:22:59Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 1245.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ms-all-sunday-alternate-art-op14-084-the-azure-seas-seven-foil",
+      "title": "Ms. All Sunday (Alternate Art) (OP14-084) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-01",
+      "captured_at": "2026-07-01T11:22:59Z"
     }
   ]
 }

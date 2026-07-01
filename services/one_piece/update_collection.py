@@ -6,6 +6,7 @@ import json
 import re
 import urllib.request
 from pathlib import Path
+from datetime import datetime, timezone
 
 from PIL import Image
 
@@ -37,6 +38,10 @@ STYLE_CODE_TO_NAME = {
     "AA": "Alternate Art",
     "FA": "Full Art",
 }
+
+
+def now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 def fetch_text(url: str) -> str:
@@ -173,6 +178,8 @@ def iter_cards(payload: dict) -> list[dict]:
 
 
 def has_missing_fields(card: dict) -> bool:
+    if card.get("enrichment_failed"):
+        return False
     card_number = str(card.get("card_number") or "").strip().upper()
     if card_number.startswith("P-") and not str(card.get("rarity") or "").strip():
         card["rarity"] = "Promo"
@@ -198,6 +205,9 @@ def merge_preserving_existing(new_payload: dict, old_payload: dict) -> dict:
             prev = old_by_number.get(card_number) or {}
             for field in ["card_type", "name", "color", "attribute", "description", "family", "life", "power", "image_url", "image_hash"]:
                 if not str(card.get(field) or "").strip() and str(prev.get(field) or "").strip():
+                    card[field] = prev[field]
+            for field in ["enrichment_failed", "enrichment_failed_at", "enrichment_error"]:
+                if prev.get(field):
                     card[field] = prev[field]
             if isinstance(prev.get("alternate_arts"), list):
                 card["alternate_arts"] = [
@@ -260,6 +270,9 @@ def main() -> int:
                 value = str(meta.get(field) or "").strip()
                 if value:
                     card[field] = value
+            card.pop("enrichment_failed", None)
+            card.pop("enrichment_failed_at", None)
+            card.pop("enrichment_error", None)
             updated += 1
             if updated <= 10 or updated % 50 == 0:
                 print(f"[{idx}/{len(targets)}] updated {card_number}", flush=True)
@@ -268,6 +281,9 @@ def main() -> int:
                 print(f"[checkpoint] saved after {updated} cards", flush=True)
         except Exception as error:  # noqa: BLE001
             failed += 1
+            card["enrichment_failed"] = True
+            card["enrichment_failed_at"] = now_iso()
+            card["enrichment_error"] = str(error)
             if failed <= 10 or failed % 50 == 0:
                 print(f"[{idx}/{len(targets)}] failed {card_number}: {error}", flush=True)
 

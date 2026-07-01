@@ -78,6 +78,8 @@ def record_scrape_outputs(
     duration_seconds: float,
     command: list[str],
     item_count: int | None = None,
+    status: str = "ok",
+    error: str = "",
 ) -> None:
     payload = read_metadata()
     now = datetime.now(timezone.utc).isoformat()
@@ -89,7 +91,7 @@ def record_scrape_outputs(
         source_item_count = 0
         for output in source_outputs:
             source_item_count += output_item_count(output)
-    payload.setdefault("sources", {})[source_key] = {
+    source_entry = {
         "module": module,
         "source": source,
         "last_scraped_at": now,
@@ -97,16 +99,24 @@ def record_scrape_outputs(
         "item_count": source_item_count,
         "outputs": [metadata_key(output) for output in source_outputs],
         "command": command,
+        "status": status,
     }
+    if error:
+        source_entry["error"] = error
+    payload.setdefault("sources", {})[source_key] = source_entry
     for output in source_outputs:
-        output_map[metadata_key(output)] = {
+        output_entry = {
             "module": module,
             "source": source,
             "last_scraped_at": now,
             "duration_seconds": round(float(duration_seconds), 3),
             "item_count": output_item_count(output),
             "command": command,
+            "status": status,
         }
+        if error:
+            output_entry["error"] = error
+        output_map[metadata_key(output)] = output_entry
     payload["updated_at"] = now
     write_metadata(payload)
 
@@ -121,8 +131,23 @@ def run_and_record(
     item_count: int | None = None,
 ) -> None:
     start = time.perf_counter()
+    status = "ok"
+    error = ""
     try:
         subprocess.run(command, cwd=cwd, check=True)
+    except subprocess.CalledProcessError as exc:
+        status = "error"
+        error = f"Command failed with exit code {exc.returncode}"
+        raise
     finally:
         duration = time.perf_counter() - start
-        record_scrape_outputs(outputs, module=module, source=source, duration_seconds=duration, command=command, item_count=item_count)
+        record_scrape_outputs(
+            outputs,
+            module=module,
+            source=source,
+            duration_seconds=duration,
+            command=command,
+            item_count=item_count,
+            status=status,
+            error=error,
+        )

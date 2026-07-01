@@ -43,7 +43,11 @@ def main() -> int:
         print(f"Unknown store {sys.argv[1]!r}. Use one of: {choices}", file=sys.stderr)
         return 2
 
-    runner()
+    try:
+        runner()
+    except RuntimeError as error:
+        print(f"{store} scrape failed: {error}", file=sys.stderr)
+        return 1
     return 0
 
 
