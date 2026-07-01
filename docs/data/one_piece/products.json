@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-06-19T07:35:50.470912Z",
+  "scraped_at": "2026-07-01T10:47:23.006128Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2002,7 +2002,7 @@
       "image_url": "https://en.onepiece-cardgame.com/renewal/images/products/other/playmat010/img_item01.webp?_=81093b139a80edb1423d0039399ec06c",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/playmat010_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {

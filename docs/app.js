@@ -341,6 +341,10 @@ const state = {
   scrapeStatusByOutput: {},
   scrapeDurationByOutput: {},
   scrapeItemCountByOutput: {},
+  scrapeStatusBySource: {},
+  scrapeDurationBySource: {},
+  scrapeItemCountBySource: {},
+  scrapeHasSourceMetadata: false,
   scrapeControlsLoaded: false,
   scrapeControlsSaving: false,
 };
@@ -8420,12 +8424,14 @@ function sumItemCounts(values) {
 }
 
 function formatItemCount(value) {
+  if (value === null || value === undefined || value === "") return "Unknown";
   const count = Number(value);
   if (!Number.isFinite(count) || count < 0) return "Unknown";
   return String(Math.round(count));
 }
 
 function formatDuration(seconds) {
+  if (seconds === null || seconds === undefined || seconds === "") return "Unknown";
   const value = Number(seconds);
   if (!Number.isFinite(value) || value < 0) return "Unknown";
   if (value < 1) return "<1s";
@@ -8438,6 +8444,32 @@ function formatDuration(seconds) {
   return `${secs}s`;
 }
 
+function scrapeSourceKey(moduleId, sourceId) {
+  return `${moduleId}/${sourceId}`;
+}
+
+function scrapeStatsForSource(moduleConfig, source) {
+  const key = scrapeSourceKey(moduleConfig.id, source.id);
+  const hasSourceStats = Object.prototype.hasOwnProperty.call(state.scrapeStatusBySource, key)
+    || Object.prototype.hasOwnProperty.call(state.scrapeDurationBySource, key)
+    || Object.prototype.hasOwnProperty.call(state.scrapeItemCountBySource, key);
+  if (hasSourceStats) {
+    return {
+      lastScraped: state.scrapeStatusBySource[key] || "",
+      durationSeconds: state.scrapeDurationBySource[key],
+      itemCount: state.scrapeItemCountBySource[key],
+    };
+  }
+  if (state.scrapeHasSourceMetadata) {
+    return { lastScraped: "", durationSeconds: null, itemCount: null };
+  }
+  return {
+    lastScraped: state.scrapeStatusByOutput[source.output] || "",
+    durationSeconds: state.scrapeDurationByOutput[source.output],
+    itemCount: state.scrapeItemCountByOutput[source.output],
+  };
+}
+
 function activeScrapeSourcesForInterval(interval) {
   if (!state.scrapeControls) return [];
   const rows = [];
@@ -8448,13 +8480,12 @@ function activeScrapeSourcesForInterval(interval) {
       const sourceState = moduleState.sources[source.id];
       if (!sourceState?.enabled || sourceState.schedule !== interval) continue;
       if (!isScrapeIntervalEnabled(sourceState.schedule)) continue;
+      const stats = scrapeStatsForSource(moduleConfig, source);
       rows.push({
         moduleConfig,
         source,
         sourceState,
-        lastScraped: state.scrapeStatusByOutput[source.output] || "",
-        durationSeconds: state.scrapeDurationByOutput[source.output],
-        itemCount: state.scrapeItemCountByOutput[source.output],
+        ...stats,
       });
     }
   }
@@ -8467,12 +8498,11 @@ function activeScrapeSourcesForModule(moduleConfig, moduleState) {
     .map((source) => {
       const sourceState = moduleState.sources[source.id];
       if (!sourceState?.enabled || !isScrapeIntervalEnabled(sourceState.schedule)) return null;
+      const stats = scrapeStatsForSource(moduleConfig, source);
       return {
         source,
         sourceState,
-        lastScraped: state.scrapeStatusByOutput[source.output] || "",
-        durationSeconds: state.scrapeDurationByOutput[source.output],
-        itemCount: state.scrapeItemCountByOutput[source.output],
+        ...stats,
       };
     })
     .filter(Boolean);
@@ -8610,10 +8640,29 @@ function countScrapeItems(value) {
 
 async function loadScrapeStatus() {
   const outputs = [...new Set(SCRAPE_MODULES.flatMap((moduleConfig) => moduleConfig.sources.map((source) => source.output)))];
+  state.scrapeStatusByOutput = {};
+  state.scrapeDurationByOutput = {};
+  state.scrapeItemCountByOutput = {};
+  state.scrapeStatusBySource = {};
+  state.scrapeDurationBySource = {};
+  state.scrapeItemCountBySource = {};
+  state.scrapeHasSourceMetadata = false;
   try {
     const response = await fetchFresh(SCRAPE_METADATA_PATH);
     if (response.ok) {
       const payload = await response.json();
+      const sourceMetadata = payload?.sources && typeof payload.sources === "object" ? payload.sources : {};
+      state.scrapeHasSourceMetadata = Object.keys(sourceMetadata).length > 0;
+      for (const [key, entry] of Object.entries(sourceMetadata)) {
+        if (!entry || typeof entry !== "object") continue;
+        state.scrapeStatusBySource[key] = String(entry.last_scraped_at || "");
+        state.scrapeDurationBySource[key] = Number.isFinite(Number(entry.duration_seconds))
+          ? Number(entry.duration_seconds)
+          : null;
+        state.scrapeItemCountBySource[key] = Number.isFinite(Number(entry.item_count))
+          ? Number(entry.item_count)
+          : null;
+      }
       const outputMetadata = payload?.outputs && typeof payload.outputs === "object" ? payload.outputs : {};
       for (const output of outputs) {
         const entry = outputMetadata[output];
@@ -8716,9 +8765,10 @@ function renderScrapeControls() {
     const sourceRows = moduleConfig.sources.map((source) => {
       const sourceState = moduleState.sources[source.id];
       const sourceIntervalActive = isScrapeIntervalEnabled(sourceState.schedule);
-      const lastScraped = state.scrapeStatusByOutput[source.output] || "";
-      const duration = state.scrapeDurationByOutput[source.output];
-      const itemCount = state.scrapeItemCountByOutput[source.output];
+      const stats = scrapeStatsForSource(moduleConfig, source);
+      const lastScraped = stats.lastScraped;
+      const duration = stats.durationSeconds;
+      const itemCount = stats.itemCount;
       return `
         <tr class="scrape-table-row scrape-table-row--source${sourceIntervalActive ? "" : " scrape-table-row--interval-off"}">
           <th scope="row">

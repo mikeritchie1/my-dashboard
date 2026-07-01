@@ -4,25 +4,6 @@ on:
   schedule:
     - cron: "0 4 * * *"
   workflow_dispatch:
-    inputs:
-      task:
-        description: "What should run?"
-        required: true
-        default: "all"
-        type: choice
-        options:
-          - all
-          - specials
-          - events
-          - releases
-          - coming-soon
-          - game-releases
-          - imax
-          - news
-          - media
-          - reading
-          - digest
-          - youtube
 
 permissions:
   contents: write
@@ -44,102 +25,32 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Run release radar
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'releases' }}
-        run: python services/release_radar/scrape_releases.py
-
-      - name: Run coming soon radar
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'coming-soon' }}
+      - name: Run selected daily scrapers
         env:
-          TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: python services/release_radar/scrape_coming_soon.py
-
-      - name: Run game release radar
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'game-releases' }}
-        env:
-          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
-        run: python services/release_radar/scrape_game_releases.py
-
-      - name: Run IMAX release radar
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'imax' }}
-        env:
-          TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-        run: python services/release_radar/scrape_imax.py
-
-      - name: Run Almost Friday TV scraper
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
-        run: python services/youtube/scrape_almost_friday_tv.py
-
-      - name: Run That's A Bad Idea scraper
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
-        run: python services/youtube/scrape_thats_a_bad_idea.py
-
-      - name: Run gameranx scraper
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
-        run: python services/youtube/scrape_gameranx_tv.py
-
-      - name: Run One Piece YouTube scraper
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'youtube' }}
-        run: python services/scrape_youtube.py --mode daily
-
-      - name: Run news scraper
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'news' }}
-        run: python services/scrape_news.py
-
-      - name: Run media watchlists
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'media' }}
-        env:
+          DASHBOARD_STATE_API: https://my-dashboard-state.mjrit.workers.dev/state
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
-        run: python services/media/scrape_watchlist.py --scope both
-
-      - name: Run reading list
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'media' || inputs.task == 'reading' }}
-        env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           NOTION_READING_PAGE_URL: https://app.notion.com/p/My-Reading-2d157df8191880a7a23dfc431800dbe6
-        run: python services/scrape_reading_list.py
-
-      - name: Run specials events
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'specials' }}
-        env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-        run: python services/events/scrape_specials.py
-
-      - name: Run Quicket events
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'events' }}
-        run: python services/events/scrape_quicket_events.py
-
-      - name: Run Webtickets events
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'events' }}
-        run: python services/events/scrape_webtickets_events.py
-
-      - name: Run Google calendar events
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'events' }}
-        env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           GOOGLE_CALENDAR_IDS: ${{ secrets.GOOGLE_CALENDAR_IDS }}
-        run: python services/events/scrape_google_calendar.py
-
-      - name: Update metadata
-        run: python services/write_metadata.py
-
-      - name: Send daily dashboard digest
-        if: ${{ github.event_name == 'schedule' || inputs.task == 'all' || inputs.task == 'digest' }}
-        env:
+          SCRAPE_OP_MISSING_CARDS_DRIVE_URL: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_URL }}
+          SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-        run: python services/daily_digest/send_daily_digest.py --no-email
+        run: python services/run_scheduled_scrapes.py --interval daily
+
+      - name: Update metadata
+        if: ${{ always() }}
+        run: python services/write_metadata.py
 
       - name: Commit updated data
+        if: ${{ always() }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"

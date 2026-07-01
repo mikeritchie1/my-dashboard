@@ -48,7 +48,7 @@ CONFIG = {
         "SCRAPE_GAME_RELEASES_PLATFORMS": "",
         "SCRAPE_OP_KNIGHTLY_COLLECTION_URL": "https://www.knightlygaming.co.za/collections/one-piece-singles",
         "SCRAPE_OP_MARVELLOUS_COLLECTION_URL": "https://marvelloushobbies.com/one-piece-singles/",
-        "SCRAPE_OP_MARVELLOUS_PRODUCTS_URL_TEMPLATE": "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}&category=36",
+        "SCRAPE_OP_MARVELLOUS_PRODUCTS_URL_TEMPLATE": "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}&_unstable_tax_universe=29",
         "SCRAPE_OP_TANUKI_COLLECTION_URL": "https://tanukitrader.co.za/",
         "SCRAPE_OP_TANUKI_PRODUCTS_URL_TEMPLATE": "https://tanukitrader.co.za/wp-json/wc/store/v1/products?per_page=100&page={page}",
         "SCRAPE_OP_BIG_BANG_COLLECTION_URL": "https://bigbangshop.co.za/collections/one-piece-single-cards",

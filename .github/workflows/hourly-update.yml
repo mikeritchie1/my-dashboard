@@ -25,8 +25,16 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Check for new One Piece cards
+      - name: Run selected hourly scrapers
         env:
+          DASHBOARD_STATE_API: https://my-dashboard-state.mjrit.workers.dev/state
+          TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_READING_PAGE_URL: https://app.notion.com/p/My-Reading-2d157df8191880a7a23dfc431800dbe6
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          GOOGLE_CALENDAR_IDS: ${{ secrets.GOOGLE_CALENDAR_IDS }}
           SCRAPE_OP_MISSING_CARDS_DRIVE_URL: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_URL }}
           SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID: ${{ secrets.SCRAPE_OP_MISSING_CARDS_DRIVE_FILE_ID }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
@@ -35,22 +43,18 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-        run: >
-          python -m services.one_piece.notify_new_cards
-          --store all
-          --mode new
-          --snapshot-scope hourly
-          --window-label "in the last hour"
-          --max-price 100
+        run: python services/run_scheduled_scrapes.py --interval hourly
 
       - name: Update metadata
+        if: ${{ always() }}
         run: python services/write_metadata.py
 
       - name: Commit updated data
+        if: ${{ always() }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           git add -f .scrape
-          git add docs/data/one_piece docs/data/metadata.json docs/data/scrape_metadata.json
+          git add docs
           git diff --cached --quiet || git commit -m "Hourly dashboard update"
           git push

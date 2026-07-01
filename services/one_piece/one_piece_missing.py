@@ -44,7 +44,7 @@ KNIGHTLY_PRODUCTS_URL = KNIGHTLY_COLLECTION_URL + "/products.json?limit=250&page
 
 MARVELLOUS_COLLECTION_URL = env_get("SCRAPE_OP_MARVELLOUS_COLLECTION_URL", "https://marvelloushobbies.com/one-piece-singles/")
 MARVELLOUS_PRODUCTS_URL = (
-    env_get("SCRAPE_OP_MARVELLOUS_PRODUCTS_URL_TEMPLATE", "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}&category_ids[]=36")
+    env_get("SCRAPE_OP_MARVELLOUS_PRODUCTS_URL_TEMPLATE", "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}&_unstable_tax_universe=29")
 )
 
 TANUKI_COLLECTION_URL = env_get("SCRAPE_OP_TANUKI_COLLECTION_URL", "https://tanukitrader.co.za/")
@@ -1023,12 +1023,35 @@ def _discover_marvellous_category_id() -> str:
     return ""
 
 
+def _discover_marvellous_universe_id() -> str:
+    """Discover Marvellous' custom One Piece universe taxonomy term."""
+    try:
+        data = fetch_json("https://marvelloushobbies.com/wp-json/wp/v2/universe?slug=one-piece&_fields=id,slug,name,count")
+        if isinstance(data, list) and data:
+            term = data[0]
+            term_id = str(term.get("id") or "")
+            print(
+                f"Marvellous Hobbies: found universe taxonomy term {term.get('name')!r} "
+                f"id={term_id} count={term.get('count')}",
+                flush=True,
+            )
+            return term_id
+    except Exception as error:
+        print(f"Marvellous Hobbies: universe taxonomy discovery failed: {error}", flush=True)
+    return ""
+
+
 def _marvellous_url_template() -> str:
     """Build a URL filtered to One Piece products, or fall back to full catalog."""
+    universe_id = _discover_marvellous_universe_id()
+    if universe_id:
+        base = "https://marvelloushobbies.com/wp-json/wc/store/v1/products"
+        return f"{base}?per_page=100&page={{page}}&_unstable_tax_universe={universe_id}"
+
     cat_id = _discover_marvellous_category_id()
     if cat_id:
         base = "https://marvelloushobbies.com/wp-json/wc/store/v1/products"
-        return f"{base}?per_page=100&page={{page}}&category_ids[]={cat_id}"
+        return f"{base}?per_page=100&page={{page}}&category={cat_id}"
     print("Marvellous Hobbies: WARNING â€” no category filter found, fetching full catalog (slow)", flush=True)
     return "https://marvelloushobbies.com/wp-json/wc/store/v1/products?per_page=100&page={page}"
 

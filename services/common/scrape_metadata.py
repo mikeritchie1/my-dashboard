@@ -58,9 +58,10 @@ def metadata_key(path: Path) -> str:
 def read_metadata() -> dict:
     payload = load_json(METADATA_PATH)
     if not isinstance(payload, dict):
-        return {"version": 1, "outputs": {}}
+        return {"version": 1, "outputs": {}, "sources": {}}
     payload.setdefault("version", 1)
     payload.setdefault("outputs", {})
+    payload.setdefault("sources", {})
     return payload
 
 
@@ -76,19 +77,36 @@ def record_scrape_outputs(
     source: str,
     duration_seconds: float,
     command: list[str],
+    item_count: int | None = None,
 ) -> None:
     payload = read_metadata()
     now = datetime.now(timezone.utc).isoformat()
     output_map = payload.setdefault("outputs", {})
-    for output in outputs:
-      output_map[metadata_key(output)] = {
-          "module": module,
-          "source": source,
-          "last_scraped_at": now,
-          "duration_seconds": round(float(duration_seconds), 3),
-          "item_count": output_item_count(output),
-          "command": command,
-      }
+    source_key = f"{module}/{source}"
+    source_outputs = list(outputs)
+    source_item_count = item_count
+    if source_item_count is None:
+        source_item_count = 0
+        for output in source_outputs:
+            source_item_count += output_item_count(output)
+    payload.setdefault("sources", {})[source_key] = {
+        "module": module,
+        "source": source,
+        "last_scraped_at": now,
+        "duration_seconds": round(float(duration_seconds), 3),
+        "item_count": source_item_count,
+        "outputs": [metadata_key(output) for output in source_outputs],
+        "command": command,
+    }
+    for output in source_outputs:
+        output_map[metadata_key(output)] = {
+            "module": module,
+            "source": source,
+            "last_scraped_at": now,
+            "duration_seconds": round(float(duration_seconds), 3),
+            "item_count": output_item_count(output),
+            "command": command,
+        }
     payload["updated_at"] = now
     write_metadata(payload)
 
@@ -100,10 +118,11 @@ def run_and_record(
     outputs: Iterable[Path],
     module: str,
     source: str,
+    item_count: int | None = None,
 ) -> None:
     start = time.perf_counter()
     try:
         subprocess.run(command, cwd=cwd, check=True)
     finally:
         duration = time.perf_counter() - start
-        record_scrape_outputs(outputs, module=module, source=source, duration_seconds=duration, command=command)
+        record_scrape_outputs(outputs, module=module, source=source, duration_seconds=duration, command=command, item_count=item_count)
