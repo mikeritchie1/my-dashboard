@@ -677,6 +677,28 @@ def save_image_match_cache() -> None:
     _save_json_dict(COLLECTION_JSON, collection_payload)
 
 
+def cached_image_match(product: dict) -> tuple[bool, str, str]:
+    images = product.get("images") or []
+    image_url = str(images[0].get("src") or "") if images else ""
+    url_key = str(product.get("permalink") or "").strip()
+    if not image_url or not url_key:
+        return False, "", ""
+
+    cached = load_image_match_cache().get(url_key) or {}
+    if not cached:
+        return False, "", ""
+
+    cached_image = str(cached.get("image_url") or "").strip()
+    if cached_image and image_url and cached_image != image_url:
+        return False, "", ""
+
+    card_number = str(cached.get("card_number") or "").strip()
+    rarity = str(cached.get("rarity") or "").strip()
+    if card_number or cached.get("updated_at"):
+        return True, card_number, rarity
+    return False, "", ""
+
+
 def _avg_hash_from_bytes(image_bytes: bytes, hash_size: int = 16) -> str:
     if Image is None:
         return ""
@@ -709,13 +731,9 @@ def resolve_card_info_from_image(product: dict, card_number: str = "", rarity: s
     if not image_url or not url_key:
         return "", ""
 
-    cached = image_cache.get(url_key) or {}
-    if cached.get("card_number") and (
-        not cached.get("image_url")
-        or not image_url
-        or str(cached.get("image_url") or "") == image_url
-    ):
-        return str(cached.get("card_number") or "").strip(), str(cached.get("rarity") or "").strip()
+    is_cached, cached_card, cached_rarity = cached_image_match(product)
+    if is_cached:
+        return cached_card, cached_rarity
 
     try:
         req = urllib.request.Request(image_url, headers={"User-Agent": "Mozilla/5.0"})
@@ -1661,14 +1679,16 @@ def match_geek_haven(
     """Match GeekHaven products against missing card numbers.
 
     Card numbers are extracted from the product title when present (e.g.
-    '(OP09-005)'). For titles without a card number, OCR is used on the card
-    image's bottom-right area. OCR detections are cached and reused across runs.
+    '(OP09-005)'). For titles without a card number, the product image hash is
+    matched against collection card image hashes. Detections and misses are
+    cached and reused across runs while the product image URL stays the same.
     """
     matches: list[dict[str, object]] = []
     cache = ocr_cache or {}
     ocr_attempts = 0
     ocr_hits = 0
     cache_hits = 0
+    cache_misses = 0
     total_products = len(products)
     unresolved_candidates = 0
     for product in products:
@@ -1701,6 +1721,45 @@ def match_geek_haven(
                         flush=True,
                     )
             else:
+                is_cached, cached_card, cached_rarity = cached_image_match(product)
+                if is_cached:
+                    card_number = cached_card
+                    rarity = cached_rarity
+                    if card_number:
+                        cache_hits += 1
+                        if cache_hits <= 10 or cache_hits % 50 == 0:
+                            print(
+                                f"GeekHaven image match: cache hit {cache_hits} -> {name[:80]} | {card_number}",
+                                flush=True,
+                            )
+                    else:
+                        cache_misses += 1
+                    cache[cache_key] = {
+                        "card_number": card_number,
+                        "rarity": rarity,
+                        "image_url": image_url,
+                        "updated_at": _now_iso(),
+                    }
+                    card_number = searched_card_number(card_number, name, missing)
+                    if not card_number:
+                        continue
+                    matches.append(
+                        {
+                            "store": "GeekHaven",
+                            "card_number": card_number,
+                            "title": name,
+                            "set_name": "",
+                            "rarity": rarity,
+                            "condition": "Second Hand",
+                            "stock": "In stock",
+                            "price": woo_price(product),
+                            "available_variants": "",
+                            "url": product.get("permalink") or GEEK_HAVEN_COLLECTION_URL,
+                            "image_url": str(images[0].get("src") or "") if images else "",
+                        }
+                    )
+                    continue
+
                 ocr_attempts += 1
                 detected_card, detected_rarity = resolve_card_info_from_image(product)
                 if detected_card:
@@ -1744,6 +1803,7 @@ def match_geek_haven(
     if ocr_attempts:
         print(f"GeekHaven image match: {ocr_hits}/{ocr_attempts} titles resolved from image hashes", flush=True)
     print(f"GeekHaven image match: reused {cache_hits} cached detection(s)", flush=True)
+    print(f"GeekHaven image match: skipped {cache_misses} cached miss(es)", flush=True)
     return matches
 
 
