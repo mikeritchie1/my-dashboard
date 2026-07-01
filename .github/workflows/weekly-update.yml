@@ -1,0 +1,41 @@
+name: Weekly update
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dashboard-data-updates
+  cancel-in-progress: false
+
+jobs:
+  weekly-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run weekly scrapers
+        run: echo "No weekly scrapers configured yet."
+
+      - name: Update metadata
+        run: python services/write_metadata.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -f .scrape
+          git add docs
+          git diff --cached --quiet || git commit -m "Weekly dashboard update"
+          git push
