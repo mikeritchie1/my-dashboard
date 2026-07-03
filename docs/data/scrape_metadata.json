@@ -196,9 +196,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 2.123,
+      "duration_seconds": 1.915,
       "item_count": 2,
-      "last_scraped_at": "2026-07-03T12:36:28.357803+00:00",
+      "last_scraped_at": "2026-07-03T13:26:04.925551+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
@@ -210,9 +210,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 5.722,
+      "duration_seconds": 4.295,
       "item_count": 104,
-      "last_scraped_at": "2026-07-03T12:36:31.918552+00:00",
+      "last_scraped_at": "2026-07-03T13:26:07.268943+00:00",
       "module": "one-piece",
       "source": "tanuki",
       "status": "ok"
@@ -224,9 +224,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.011,
+      "duration_seconds": 1.285,
       "item_count": 159,
-      "last_scraped_at": "2026-07-03T12:36:32.932070+00:00",
+      "last_scraped_at": "2026-07-03T13:26:08.556082+00:00",
       "module": "one-piece",
       "source": "products",
       "status": "ok"
@@ -660,9 +660,9 @@
         "--source",
         "bigbang"
       ],
-      "duration_seconds": 6.992,
+      "duration_seconds": 7.482,
       "item_count": 104,
-      "last_scraped_at": "2026-07-03T12:35:41.913634+00:00",
+      "last_scraped_at": "2026-07-03T13:25:22.493665+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -675,9 +675,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 2.123,
+      "duration_seconds": 1.915,
       "item_count": 2,
-      "last_scraped_at": "2026-07-03T12:36:28.357803+00:00",
+      "last_scraped_at": "2026-07-03T13:26:04.925551+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
@@ -692,9 +692,9 @@
         "--source",
         "collectiverse"
       ],
-      "duration_seconds": 6.736,
+      "duration_seconds": 5.687,
       "item_count": 104,
-      "last_scraped_at": "2026-07-03T12:35:48.652528+00:00",
+      "last_scraped_at": "2026-07-03T13:25:28.182836+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -709,9 +709,9 @@
         "--source",
         "geekhaven"
       ],
-      "duration_seconds": 18.597,
+      "duration_seconds": 16.061,
       "item_count": 104,
-      "last_scraped_at": "2026-07-03T12:36:07.251891+00:00",
+      "last_scraped_at": "2026-07-03T13:25:44.246362+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -726,9 +726,9 @@
         "--source",
         "knightly"
       ],
-      "duration_seconds": 8.882,
+      "duration_seconds": 9.701,
       "item_count": 104,
-      "last_scraped_at": "2026-07-03T12:36:16.136184+00:00",
+      "last_scraped_at": "2026-07-03T13:25:53.949832+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -743,9 +743,9 @@
         "--source",
         "marvellous"
       ],
-      "duration_seconds": 10.055,
+      "duration_seconds": 9.019,
       "item_count": 104,
-      "last_scraped_at": "2026-07-03T12:36:26.193602+00:00",
+      "last_scraped_at": "2026-07-03T13:26:02.971175+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -760,9 +760,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.011,
+      "duration_seconds": 1.285,
       "item_count": 159,
-      "last_scraped_at": "2026-07-03T12:36:32.932070+00:00",
+      "last_scraped_at": "2026-07-03T13:26:08.556082+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
@@ -777,9 +777,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 5.722,
+      "duration_seconds": 4.295,
       "item_count": 104,
-      "last_scraped_at": "2026-07-03T12:36:31.918552+00:00",
+      "last_scraped_at": "2026-07-03T13:26:07.268943+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -958,6 +958,6 @@
       "status": "ok"
     }
   },
-  "updated_at": "2026-07-03T12:36:32.932070+00:00",
+  "updated_at": "2026-07-03T13:26:08.556082+00:00",
   "version": 1
 }
