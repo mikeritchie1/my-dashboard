@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-07-02T07:40:30.672531Z",
+  "generated_at": "2026-07-03T07:26:25.977112Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 19,
+  "items_count": 20,
   "items": [
+    {
+      "id": "yt-BnQkEZBgHX0",
+      "video_id": "BnQkEZBgHX0",
+      "title": "What The Hell Is Going On With Video Game DISCS?",
+      "url": "https://www.youtube.com/watch?v=BnQkEZBgHX0",
+      "published_at": "2026-07-02T17:27:41+00:00",
+      "updated_at": "2026-07-02T22:58:38+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/BnQkEZBgHX0/hqdefault.jpg"
+    },
     {
       "id": "yt-6FoxODUQW-M",
       "video_id": "6FoxODUQW-M",
