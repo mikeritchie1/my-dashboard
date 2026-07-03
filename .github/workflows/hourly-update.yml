@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Install Python dependencies
+        run: python -m pip install -r requirements.txt
+
       - name: Run selected hourly scrapers
         env:
           DASHBOARD_STATE_API: https://my-dashboard-state.mjrit.workers.dev/state
