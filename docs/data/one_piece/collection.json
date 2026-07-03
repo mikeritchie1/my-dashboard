@@ -50435,7 +50435,8 @@
       },
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST24": {
@@ -50547,7 +50548,8 @@
       },
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST25": {
@@ -50650,7 +50652,8 @@
       },
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST26": {
@@ -50759,7 +50762,8 @@
       },
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST27": {
@@ -50871,7 +50875,8 @@
       },
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST28": {
@@ -50962,7 +50967,8 @@
       "by_rarity": {},
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST29": {
@@ -51774,7 +51780,8 @@
       "by_rarity": {},
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST32": {
@@ -51846,7 +51853,8 @@
       "by_rarity": {},
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST33": {
@@ -51918,7 +51926,8 @@
       "by_rarity": {},
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST34": {
@@ -51990,7 +51999,8 @@
       "by_rarity": {},
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST35": {
@@ -52062,7 +52072,8 @@
       "by_rarity": {},
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "ST36": {
@@ -52134,7 +52145,8 @@
       "by_rarity": {},
       "total_by_rarity": {
         "Common": 3,
-        "Super Rare": 2
+        "Super Rare": 2,
+        "Leader": 1
       }
     },
     "EB01": {
@@ -110528,6 +110540,12 @@
       "rarity": "Rare",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/OP12-037_EN_c67aSrF6s.webp",
       "updated_at": "2026-07-03T11:32:51Z"
+    },
+    "https://www.bobshop.co.za/nami-p-053-jolly-roger-foil-premium-booster-the-best/p/685969034": {
+      "card_number": "P-053",
+      "rarity": "",
+      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
+      "updated_at": "2026-07-03T12:25:03Z"
     }
   }
 }
