@@ -65,7 +65,7 @@ SOURCE_CONFIGS: list[SourceConfig] = [
     SourceConfig("one-piece", "collectiverse", "Collectiverse", "hourly", ["services/scrape_one_piece.py", "--source", "collectiverse"], ["docs/data/one_piece/missing_cards.json"]),
     SourceConfig("one-piece", "geekhaven", "Geek Haven", "hourly", ["services/scrape_one_piece.py", "--source", "geekhaven"], ["docs/data/one_piece/missing_cards.json"]),
     SourceConfig("one-piece", "knightly", "Knightly Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "knightly"], ["docs/data/one_piece/missing_cards.json"]),
-    SourceConfig("one-piece", "marvellous", "Marvellous Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "marvellous"], ["docs/data/one_piece/missing_cards.json"]),
+    SourceConfig("one-piece", "marvellous", "Marvellous Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "marvellous"], ["docs/data/one_piece/missing_cards.json"], fail_workflow=False),
     SourceConfig("one-piece", "tanuki", "Tanuki Games", "hourly", ["services/scrape_one_piece.py", "--source", "tanuki"], ["docs/data/one_piece/missing_cards.json"], fail_workflow=False),
     SourceConfig("one-piece", "products", "Official products", "hourly", ["services/one_piece/scrape_products.py", "--pages", "1"], ["docs/data/one_piece/products.json"]),
     SourceConfig("release-radar", "pahe", "Pahe latest movies", "daily", ["services/scrape_release_radar.py", "--source", "pahe"], ["docs/data/release_radar/pahe_latest.json"]),

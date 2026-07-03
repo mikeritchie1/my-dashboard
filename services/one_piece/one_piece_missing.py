@@ -995,7 +995,11 @@ def fetch_marvellous_products() -> list[dict]:
     total_pages = 0
     for page in range(1, 200):
         print(f"Marvellous Hobbies: fetching page {page}{f'/{total_pages}' if total_pages else ''}...", flush=True)
-        page_products, total_items, total_pages = fetch_woo_page(url_template.format(page=page))
+        try:
+            page_products, total_items, total_pages = fetch_woo_page(url_template.format(page=page))
+        except urllib.error.HTTPError as error:
+            print(f"Marvellous Hobbies: HTTP {error.code} fetching page {page}; skipping Marvellous for this run.", flush=True)
+            break
         print(f"Marvellous Hobbies: page {page}/{total_pages} -> {len(page_products)} products (total: {total_items})", flush=True)
         if not page_products:
             break
@@ -1077,6 +1081,9 @@ def match_marvellous(missing: set[str], products: list[dict]) -> list[dict[str, 
 def run_marvellous() -> list[dict[str, object]]:
     missing = missing_card_numbers()
     products = fetch_marvellous_products()
+    if not products:
+        print("Marvellous Hobbies: no products fetched; keeping existing Marvellous listings unchanged.", flush=True)
+        return []
     matches = sorted_matches(match_marvellous(missing, products))
     save_image_match_cache()
     update_store_in_combined_json("Marvellous Hobbies", matches)
