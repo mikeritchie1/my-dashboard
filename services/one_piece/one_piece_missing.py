@@ -1151,7 +1151,7 @@ def run_tanuki() -> list[dict[str, object]]:
     products = fetch_tanuki_products()
     if not products:
         print("Tanuki Trader: no products fetched; keeping existing Tanuki listings unchanged.", flush=True)
-        raise RuntimeError("Tanuki Trader returned no products, likely blocked by HTTP 403")
+        return []
     matches = sorted_matches(match_tanuki(missing, products))
     save_image_match_cache()
     update_store_in_combined_json("Tanuki Trader", matches)
