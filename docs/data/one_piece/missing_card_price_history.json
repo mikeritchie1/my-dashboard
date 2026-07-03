@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-03T15:46:13Z",
+  "updated_at": "2026-07-03T17:07:49Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -49572,6 +49572,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-03",
       "captured_at": "2026-07-03T15:46:13Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-op16-026-the-time-of-battle-foil",
+      "title": "Emporio.Ivankov (026) (OP16-026) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-03",
+      "captured_at": "2026-07-03T17:07:17Z"
+    },
+    {
+      "card_number": "OP16-108",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiryu-op16-108-the-time-of-battle-foil",
+      "title": "Shiryu (OP16-108) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-03",
+      "captured_at": "2026-07-03T17:07:17Z"
+    },
+    {
+      "card_number": "OP16-118",
+      "art_variant": "alternate",
+      "price": 630.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-118-alternate-art-op16-118-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (118) (Alternate Art) (OP16-118) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-03",
+      "captured_at": "2026-07-03T17:07:17Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "alternate",
+      "price": 795.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-03",
+      "captured_at": "2026-07-03T17:07:17Z"
     }
   ]
 }
