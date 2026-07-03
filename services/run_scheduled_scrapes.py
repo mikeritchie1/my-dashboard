@@ -37,6 +37,7 @@ class SourceConfig:
     default_schedule: str
     command: list[str]
     outputs: list[str]
+    fail_workflow: bool = True
 
 
 MODULE_DEFAULTS = {
@@ -65,7 +66,7 @@ SOURCE_CONFIGS: list[SourceConfig] = [
     SourceConfig("one-piece", "geekhaven", "Geek Haven", "hourly", ["services/scrape_one_piece.py", "--source", "geekhaven"], ["docs/data/one_piece/missing_cards.json"]),
     SourceConfig("one-piece", "knightly", "Knightly Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "knightly"], ["docs/data/one_piece/missing_cards.json"]),
     SourceConfig("one-piece", "marvellous", "Marvellous Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "marvellous"], ["docs/data/one_piece/missing_cards.json"]),
-    SourceConfig("one-piece", "tanuki", "Tanuki Games", "hourly", ["services/scrape_one_piece.py", "--source", "tanuki"], ["docs/data/one_piece/missing_cards.json"]),
+    SourceConfig("one-piece", "tanuki", "Tanuki Games", "hourly", ["services/scrape_one_piece.py", "--source", "tanuki"], ["docs/data/one_piece/missing_cards.json"], fail_workflow=False),
     SourceConfig("one-piece", "products", "Official products", "hourly", ["services/one_piece/scrape_products.py", "--pages", "1"], ["docs/data/one_piece/products.json"]),
     SourceConfig("release-radar", "pahe", "Pahe latest movies", "daily", ["services/scrape_release_radar.py", "--source", "pahe"], ["docs/data/release_radar/pahe_latest.json"]),
     SourceConfig("release-radar", "coming-soon", "TMDB coming soon", "daily", ["services/scrape_release_radar.py", "--source", "coming-soon"], ["docs/data/release_radar/coming_soon.json"]),
@@ -287,8 +288,10 @@ def main() -> int:
     for config in selected:
         result = run_command(config, controls)
         results.append(result)
-        if result["returncode"] != 0:
+        if result["returncode"] != 0 and config.fail_workflow:
             failed += 1
+        elif result["returncode"] != 0:
+            print(f"{config.module}/{config.source} failed but is configured as non-fatal.", flush=True)
 
     if is_email_enabled(controls, args.interval):
         email_results = [result for result in results if wants_email(controls, next(
