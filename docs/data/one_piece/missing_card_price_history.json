@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T20:02:13Z",
+  "updated_at": "2026-07-04T21:44:18Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -51312,6 +51312,42 @@
       "stock": "In stock",
       "observed_on": "2026-07-04",
       "captured_at": "2026-07-04T20:02:03Z"
+    },
+    {
+      "card_number": "ST12-003",
+      "art_variant": "original",
+      "price": 69.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards",
+      "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-04",
+      "captured_at": "2026-07-04T21:44:18Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 82.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-04",
+      "captured_at": "2026-07-04T21:44:18Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 114.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-04",
+      "captured_at": "2026-07-04T21:44:18Z"
     }
   ]
 }
