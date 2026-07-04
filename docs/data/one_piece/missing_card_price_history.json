@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04T13:16:52Z",
+  "updated_at": "2026-07-04T14:55:34Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -51192,6 +51192,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-04",
       "captured_at": "2026-07-04T10:45:34Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 107.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/portgas-d-ace-starter-deck-red-edward-newgate",
+      "title": "Portgas.D.Ace [Starter Deck: Red Edward.Newgate]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-04",
+      "captured_at": "2026-07-04T14:55:34Z"
     }
   ]
 }
