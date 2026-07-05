@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-07-04T06:51:34.781452Z",
+  "generated_at": "2026-07-05T07:31:46.642026Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 21,
+  "items_count": 22,
   "items": [
+    {
+      "id": "yt-xsXGZlxnR2U",
+      "video_id": "xsXGZlxnR2U",
+      "title": "20 GTA Secrets That Blew Our MINDS",
+      "url": "https://www.youtube.com/watch?v=xsXGZlxnR2U",
+      "published_at": "2026-07-04T17:44:46+00:00",
+      "updated_at": "2026-07-05T07:27:11+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/xsXGZlxnR2U/hqdefault.jpg"
+    },
     {
       "id": "yt-YU1NzWnxpZU",
       "video_id": "YU1NzWnxpZU",

@@ -7,10 +7,10 @@
         "--source",
         "bandsintown"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.042,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-07-04T06:49:27.216093+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.506197+00:00",
       "module": "events",
       "source": "bandsintown",
       "status": "error"
@@ -22,10 +22,10 @@
         "--source",
         "google-calendar"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-07-04T06:49:27.332212+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.636995+00:00",
       "module": "events",
       "source": "google-calendar",
       "status": "error"
@@ -35,9 +35,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/events/geocode_event_locations.py"
       ],
-      "duration_seconds": 52.693,
+      "duration_seconds": 55.419,
       "item_count": 185,
-      "last_scraped_at": "2026-07-04T06:50:20.026268+00:00",
+      "last_scraped_at": "2026-07-05T07:31:07.057707+00:00",
       "module": "events",
       "source": "geocode",
       "status": "ok"
@@ -49,10 +49,10 @@
         "--source",
         "specials"
       ],
-      "duration_seconds": 0.038,
+      "duration_seconds": 0.042,
       "error": "Command failed with exit code 1",
       "item_count": 110,
-      "last_scraped_at": "2026-07-04T06:49:27.176787+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.460542+00:00",
       "module": "events",
       "source": "specials",
       "status": "error"
@@ -64,10 +64,10 @@
         "--source",
         "quicket"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 100,
-      "last_scraped_at": "2026-07-04T06:49:27.254195+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.549507+00:00",
       "module": "events",
       "source": "quicket",
       "status": "error"
@@ -79,10 +79,10 @@
         "--source",
         "specials"
       ],
-      "duration_seconds": 0.038,
+      "duration_seconds": 0.042,
       "error": "Command failed with exit code 1",
       "item_count": 24,
-      "last_scraped_at": "2026-07-04T06:49:27.176787+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.460542+00:00",
       "module": "events",
       "source": "specials",
       "status": "error"
@@ -94,10 +94,10 @@
         "--source",
         "webtickets"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 5,
-      "last_scraped_at": "2026-07-04T06:49:27.293825+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.594728+00:00",
       "module": "events",
       "source": "webtickets",
       "status": "error"
@@ -109,10 +109,10 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 0.038,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 390,
-      "last_scraped_at": "2026-07-04T06:51:33.871553+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.992008+00:00",
       "module": "media",
       "source": "rawg",
       "status": "error"
@@ -124,10 +124,10 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 0.036,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 5,
-      "last_scraped_at": "2026-07-04T06:51:33.702867+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.811355+00:00",
       "module": "media",
       "source": "games",
       "status": "error"
@@ -139,10 +139,10 @@
         "--source",
         "reading"
       ],
-      "duration_seconds": 0.036,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 10,
-      "last_scraped_at": "2026-07-04T06:51:33.752659+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.866109+00:00",
       "module": "media",
       "source": "reading",
       "status": "error"
@@ -154,10 +154,10 @@
         "--source",
         "watchlist"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 5,
-      "last_scraped_at": "2026-07-04T06:51:33.624501+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.725241+00:00",
       "module": "media",
       "source": "watchlist",
       "status": "error"
@@ -169,10 +169,10 @@
         "--source",
         "watchlist"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 914,
-      "last_scraped_at": "2026-07-04T06:51:33.791820+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.907596+00:00",
       "module": "media",
       "source": "tmdb",
       "status": "error"
@@ -184,9 +184,9 @@
         "--source",
         "rss"
       ],
-      "duration_seconds": 32.749,
-      "item_count": 78,
-      "last_scraped_at": "2026-07-04T06:51:33.579667+00:00",
+      "duration_seconds": 13.845,
+      "item_count": 80,
+      "last_scraped_at": "2026-07-05T07:31:45.678237+00:00",
       "module": "news",
       "source": "f1-snapshot",
       "status": "ok"
@@ -238,10 +238,10 @@
         "--source",
         "reading"
       ],
-      "duration_seconds": 0.036,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-07-04T06:51:33.752659+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.866109+00:00",
       "module": "media",
       "source": "reading",
       "status": "error"
@@ -253,10 +253,10 @@
         "--source",
         "coming-soon"
       ],
-      "duration_seconds": 0.036,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 17,
-      "last_scraped_at": "2026-07-04T06:49:26.979305+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.246478+00:00",
       "module": "release-radar",
       "source": "coming-soon",
       "status": "error"
@@ -268,10 +268,10 @@
         "--source",
         "galileo"
       ],
-      "duration_seconds": 0.039,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 0,
-      "last_scraped_at": "2026-07-04T06:49:27.096795+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.373214+00:00",
       "module": "release-radar",
       "source": "galileo",
       "status": "error"
@@ -283,10 +283,10 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 50,
-      "last_scraped_at": "2026-07-04T06:49:27.017505+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.287920+00:00",
       "module": "release-radar",
       "source": "games",
       "status": "error"
@@ -298,10 +298,10 @@
         "--source",
         "imax"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-07-04T06:49:27.056223+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.331003+00:00",
       "module": "release-radar",
       "source": "imax",
       "status": "error"
@@ -313,10 +313,10 @@
         "--source",
         "labia"
       ],
-      "duration_seconds": 0.039,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 12,
-      "last_scraped_at": "2026-07-04T06:49:27.137436+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.415608+00:00",
       "module": "release-radar",
       "source": "labia",
       "status": "error"
@@ -328,10 +328,10 @@
         "--source",
         "pahe"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 43,
-      "last_scraped_at": "2026-07-04T06:49:26.941654+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.204380+00:00",
       "module": "release-radar",
       "source": "pahe",
       "status": "error"
@@ -341,9 +341,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/youtube/scrape_almost_friday_tv.py"
       ],
-      "duration_seconds": 0.276,
+      "duration_seconds": 0.124,
       "item_count": 97,
-      "last_scraped_at": "2026-07-04T06:51:34.460685+00:00",
+      "last_scraped_at": "2026-07-05T07:31:46.410478+00:00",
       "module": "youtube",
       "source": "almost-friday-tv",
       "status": "ok"
@@ -353,9 +353,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/youtube/scrape_gameranx_tv.py"
       ],
-      "duration_seconds": 0.105,
-      "item_count": 21,
-      "last_scraped_at": "2026-07-04T06:51:34.791401+00:00",
+      "duration_seconds": 0.119,
+      "item_count": 22,
+      "last_scraped_at": "2026-07-05T07:31:46.653889+00:00",
       "module": "youtube",
       "source": "gameranx-tv",
       "status": "ok"
@@ -367,9 +367,9 @@
         "--mode",
         "daily"
       ],
-      "duration_seconds": 0.295,
+      "duration_seconds": 0.276,
       "item_count": 6,
-      "last_scraped_at": "2026-07-04T06:51:34.178911+00:00",
+      "last_scraped_at": "2026-07-05T07:31:46.280859+00:00",
       "module": "youtube",
       "source": "one-piece",
       "status": "ok"
@@ -379,9 +379,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/youtube/scrape_thats_a_bad_idea.py"
       ],
-      "duration_seconds": 0.222,
+      "duration_seconds": 0.121,
       "item_count": 70,
-      "last_scraped_at": "2026-07-04T06:51:34.684626+00:00",
+      "last_scraped_at": "2026-07-05T07:31:46.532951+00:00",
       "module": "youtube",
       "source": "thats-a-bad-idea",
       "status": "ok"
@@ -395,10 +395,10 @@
         "--source",
         "bandsintown"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.042,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-07-04T06:49:27.216093+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.506197+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/bandsintown_events.json"
@@ -411,9 +411,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/events/geocode_event_locations.py"
       ],
-      "duration_seconds": 52.693,
+      "duration_seconds": 55.419,
       "item_count": 185,
-      "last_scraped_at": "2026-07-04T06:50:20.026268+00:00",
+      "last_scraped_at": "2026-07-05T07:31:07.057707+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/locations.json"
@@ -428,10 +428,10 @@
         "--source",
         "google-calendar"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-07-04T06:49:27.332212+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.636995+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/google_calendar_events.json"
@@ -446,10 +446,10 @@
         "--source",
         "quicket"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 100,
-      "last_scraped_at": "2026-07-04T06:49:27.254195+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.549507+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/quicket_events.json"
@@ -464,10 +464,10 @@
         "--source",
         "specials"
       ],
-      "duration_seconds": 0.038,
+      "duration_seconds": 0.042,
       "error": "Command failed with exit code 1",
       "item_count": 134,
-      "last_scraped_at": "2026-07-04T06:49:27.176787+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.460542+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/specials.json",
@@ -483,10 +483,10 @@
         "--source",
         "webtickets"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 5,
-      "last_scraped_at": "2026-07-04T06:49:27.293825+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.594728+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/webtickets_wc_events.json"
@@ -501,10 +501,10 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 0.036,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 395,
-      "last_scraped_at": "2026-07-04T06:51:33.702867+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.811355+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/gameslist.json",
@@ -520,10 +520,10 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 0.038,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 390,
-      "last_scraped_at": "2026-07-04T06:51:33.871553+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.992008+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/games_details.json"
@@ -538,10 +538,10 @@
         "--source",
         "reading"
       ],
-      "duration_seconds": 0.036,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 11,
-      "last_scraped_at": "2026-07-04T06:51:33.752659+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.866109+00:00",
       "module": "media",
       "outputs": [
         "docs/data/reading_list.json",
@@ -557,10 +557,10 @@
         "--source",
         "watchlist"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 914,
-      "last_scraped_at": "2026-07-04T06:51:33.791820+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.907596+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/watchlist_movie_details.json"
@@ -575,10 +575,10 @@
         "--source",
         "watchlist"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 919,
-      "last_scraped_at": "2026-07-04T06:51:33.624501+00:00",
+      "last_scraped_at": "2026-07-05T07:31:45.725241+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/watchlist.json",
@@ -594,9 +594,9 @@
         "--source",
         "rss"
       ],
-      "duration_seconds": 32.749,
-      "item_count": 78,
-      "last_scraped_at": "2026-07-04T06:51:33.579667+00:00",
+      "duration_seconds": 13.845,
+      "item_count": 80,
+      "last_scraped_at": "2026-07-05T07:31:45.678237+00:00",
       "module": "news",
       "outputs": [
         "docs/data/news/news.json"
@@ -611,9 +611,9 @@
         "--source",
         "local-file"
       ],
-      "duration_seconds": 0.095,
-      "item_count": 78,
-      "last_scraped_at": "2026-07-04T06:51:00.821798+00:00",
+      "duration_seconds": 0.103,
+      "item_count": 80,
+      "last_scraped_at": "2026-07-05T07:31:31.823620+00:00",
       "module": "news",
       "outputs": [
         "docs/data/news/news.json"
@@ -628,9 +628,9 @@
         "--source",
         "rss"
       ],
-      "duration_seconds": 40.689,
-      "item_count": 78,
-      "last_scraped_at": "2026-07-04T06:51:00.717400+00:00",
+      "duration_seconds": 24.651,
+      "item_count": 80,
+      "last_scraped_at": "2026-07-05T07:31:31.710562+00:00",
       "module": "news",
       "outputs": [
         "docs/data/news/news.json"
@@ -794,10 +794,10 @@
         "--source",
         "coming-soon"
       ],
-      "duration_seconds": 0.036,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 17,
-      "last_scraped_at": "2026-07-04T06:49:26.979305+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.246478+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/coming_soon.json"
@@ -812,10 +812,10 @@
         "--source",
         "galileo"
       ],
-      "duration_seconds": 0.039,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 0,
-      "last_scraped_at": "2026-07-04T06:49:27.096795+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.373214+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/galileo_movies.json"
@@ -830,10 +830,10 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 50,
-      "last_scraped_at": "2026-07-04T06:49:27.017505+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.287920+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/game_releases.json"
@@ -848,10 +848,10 @@
         "--source",
         "imax"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-07-04T06:49:27.056223+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.331003+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/imax_waterfront.json"
@@ -866,10 +866,10 @@
         "--source",
         "labia"
       ],
-      "duration_seconds": 0.039,
+      "duration_seconds": 0.041,
       "error": "Command failed with exit code 1",
       "item_count": 12,
-      "last_scraped_at": "2026-07-04T06:49:27.137436+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.415608+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/labia_showtimes.json"
@@ -884,10 +884,10 @@
         "--source",
         "pahe"
       ],
-      "duration_seconds": 0.037,
+      "duration_seconds": 0.04,
       "error": "Command failed with exit code 1",
       "item_count": 43,
-      "last_scraped_at": "2026-07-04T06:49:26.941654+00:00",
+      "last_scraped_at": "2026-07-05T07:30:11.204380+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/pahe_latest.json"
@@ -900,9 +900,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/youtube/scrape_almost_friday_tv.py"
       ],
-      "duration_seconds": 0.276,
+      "duration_seconds": 0.124,
       "item_count": 97,
-      "last_scraped_at": "2026-07-04T06:51:34.460685+00:00",
+      "last_scraped_at": "2026-07-05T07:31:46.410478+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/almost_friday_tv.json"
@@ -915,9 +915,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/youtube/scrape_gameranx_tv.py"
       ],
-      "duration_seconds": 0.105,
-      "item_count": 21,
-      "last_scraped_at": "2026-07-04T06:51:34.791401+00:00",
+      "duration_seconds": 0.119,
+      "item_count": 22,
+      "last_scraped_at": "2026-07-05T07:31:46.653889+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/gameranx_tv.json"
@@ -932,9 +932,9 @@
         "--mode",
         "daily"
       ],
-      "duration_seconds": 0.295,
+      "duration_seconds": 0.276,
       "item_count": 6,
-      "last_scraped_at": "2026-07-04T06:51:34.178911+00:00",
+      "last_scraped_at": "2026-07-05T07:31:46.280859+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/latest_uploads.json"
@@ -947,9 +947,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/youtube/scrape_thats_a_bad_idea.py"
       ],
-      "duration_seconds": 0.222,
+      "duration_seconds": 0.121,
       "item_count": 70,
-      "last_scraped_at": "2026-07-04T06:51:34.684626+00:00",
+      "last_scraped_at": "2026-07-05T07:31:46.532951+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/thats_a_bad_idea.json"
@@ -958,6 +958,6 @@
       "status": "ok"
     }
   },
-  "updated_at": "2026-07-05T05:50:32.003956+00:00",
+  "updated_at": "2026-07-05T07:31:46.653889+00:00",
   "version": 1
 }
