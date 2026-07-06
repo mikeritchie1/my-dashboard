@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-07-05T07:31:46.642026Z",
+  "generated_at": "2026-07-06T08:26:23.084253Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 22,
+  "items_count": 23,
   "items": [
+    {
+      "id": "yt-VZ0L1J0HVeg",
+      "video_id": "VZ0L1J0HVeg",
+      "title": "10 Game Companies That Are Hard To Trust",
+      "url": "https://www.youtube.com/watch?v=VZ0L1J0HVeg",
+      "published_at": "2026-07-05T17:18:10+00:00",
+      "updated_at": "2026-07-05T22:27:29+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/VZ0L1J0HVeg/hqdefault.jpg"
+    },
     {
       "id": "yt-xsXGZlxnR2U",
       "video_id": "xsXGZlxnR2U",
