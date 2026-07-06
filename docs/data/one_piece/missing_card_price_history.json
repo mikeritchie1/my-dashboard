@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-06T14:48:09Z",
+  "updated_at": "2026-07-06T17:31:56Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -54504,6 +54504,78 @@
       "stock": "In stock",
       "observed_on": "2026-07-06",
       "captured_at": "2026-07-06T11:18:48Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-06",
+      "captured_at": "2026-07-06T17:31:27Z"
+    },
+    {
+      "card_number": "ST22-002",
+      "art_variant": "original",
+      "price": 34.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/izo-starter-deck-ace-newgate",
+      "title": "Izo [Starter Deck: Ace & Newgate]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-06",
+      "captured_at": "2026-07-06T17:31:56Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 53.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-06",
+      "captured_at": "2026-07-06T17:31:56Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 101.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
+      "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-06",
+      "captured_at": "2026-07-06T17:31:56Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 184.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-06",
+      "captured_at": "2026-07-06T17:31:56Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2508.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-06",
+      "captured_at": "2026-07-06T17:31:56Z"
     }
   ]
 }
