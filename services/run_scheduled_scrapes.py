@@ -27,6 +27,8 @@ DOCS_DIR = REPO_DIR / "docs"
 INDEX_FILE = DOCS_DIR / "index.html"
 SCRAPE_CONTROLS_KEY = "scrape-controls"
 INTERVALS = {"ten-minute", "hourly", "daily", "weekly"}
+CONTROLS_UNAVAILABLE_KEY = "_controls_unavailable"
+TRUE_VALUES = {"1", "true", "yes", "on"}
 
 
 @dataclass(frozen=True)
@@ -119,13 +121,24 @@ def fetch_scrape_controls() -> dict[str, Any]:
         print("No DASHBOARD_STATE_API configured; using default scrape controls.", flush=True)
         return {}
     try:
-        request = urllib.request.Request(url, headers={"Accept": "application/json"})
+        request = urllib.request.Request(
+            url,
+            headers={
+                "Accept": "application/json",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+            },
+        )
         with urllib.request.urlopen(request, timeout=20) as response:
             payload = json.loads(response.read().decode("utf-8-sig"))
             return payload if isinstance(payload, dict) else {}
     except Exception as error:
-        print(f"Could not load scrape controls from Cloudflare: {error}. Using defaults.", flush=True)
-        return {}
+        print(f"Could not load scrape controls from Cloudflare: {error}. Skipping selected scrapes for safety.", flush=True)
+        return {
+            CONTROLS_UNAVAILABLE_KEY: True,
+            "interval_enabled": {interval: False for interval in INTERVALS},
+            "email_enabled": False,
+        }
 
 
 def module_state(controls: dict[str, Any], module_id: str) -> dict[str, Any]:
@@ -158,6 +171,8 @@ def is_email_enabled(controls: dict[str, Any], interval: str) -> bool:
 
 
 def selected_sources(controls: dict[str, Any], interval: str) -> list[SourceConfig]:
+    if controls.get(CONTROLS_UNAVAILABLE_KEY):
+        return []
     if not is_interval_enabled(controls, interval):
         return []
     selected: list[SourceConfig] = []
@@ -182,11 +197,15 @@ def option_value(controls: dict[str, Any], module_id: str, key: str, default: An
     return options.get(key, default)
 
 
+def allow_scheduled_hard() -> bool:
+    return os.environ.get("DASHBOARD_ALLOW_SCHEDULED_HARD", "").strip().lower() in TRUE_VALUES
+
+
 def with_options(command: list[str], config: SourceConfig, controls: dict[str, Any]) -> list[str]:
     result = [sys.executable, *command]
     supported = SCRIPT_OPTION_FLAGS.get(command[0], set())
     hard = bool(option_value(controls, config.module, "hard", False))
-    if hard and "--hard" in supported and "--hard" not in result:
+    if hard and allow_scheduled_hard() and "--hard" in supported and "--hard" not in result:
         result.append("--hard")
     for option_key, flag in (("limit", "--limit"), ("max_pages", "--max-pages")):
         value = option_value(controls, config.module, option_key, 0)
@@ -219,17 +238,32 @@ def run_command(config: SourceConfig, controls: dict[str, Any]) -> dict[str, Any
     command = with_options(config.command, config, controls)
     print(f"Running {config.module}/{config.source}: {' '.join(command)}", flush=True)
     start = time.perf_counter()
-    completed = subprocess.run(command, cwd=REPO_DIR)
-    duration = time.perf_counter() - start
-    record_scrape_outputs(
-        [REPO_DIR / output for output in config.outputs],
-        module=config.module,
-        source=config.source,
-        duration_seconds=duration,
-        command=command,
-        status="ok" if completed.returncode == 0 else "error",
-        error="" if completed.returncode == 0 else f"Command failed with exit code {completed.returncode}",
-    )
+    returncode = 1
+    status = "error"
+    error = ""
+    try:
+        completed = subprocess.run(command, cwd=REPO_DIR)
+        returncode = completed.returncode
+        status = "ok" if returncode == 0 else "error"
+        error = "" if returncode == 0 else f"Command failed with exit code {returncode}"
+    except KeyboardInterrupt:
+        status = "interrupted"
+        error = "Interrupted by user"
+        raise
+    except Exception as exc:
+        error = str(exc) or exc.__class__.__name__
+        raise
+    finally:
+        duration = time.perf_counter() - start
+        record_scrape_outputs(
+            [REPO_DIR / output for output in config.outputs],
+            module=config.module,
+            source=config.source,
+            duration_seconds=duration,
+            command=command,
+            status=status,
+            error=error,
+        )
     item_count = sum(output_item_count(REPO_DIR / output) for output in config.outputs)
     return {
         "module": config.module,
@@ -238,7 +272,7 @@ def run_command(config: SourceConfig, controls: dict[str, Any]) -> dict[str, Any
         "command": " ".join(command),
         "duration_seconds": round(duration, 3),
         "item_count": item_count,
-        "returncode": completed.returncode,
+        "returncode": returncode,
     }
 
 

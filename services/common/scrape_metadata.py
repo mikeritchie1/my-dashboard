@@ -139,6 +139,14 @@ def run_and_record(
         status = "error"
         error = f"Command failed with exit code {exc.returncode}"
         raise
+    except KeyboardInterrupt:
+        status = "interrupted"
+        error = "Interrupted by user"
+        raise
+    except Exception as exc:
+        status = "error"
+        error = str(exc) or exc.__class__.__name__
+        raise
     finally:
         duration = time.perf_counter() - start
         record_scrape_outputs(

@@ -747,6 +747,7 @@ def resolve_card_info_from_image(product: dict, card_number: str = "", rarity: s
             "image_url": image_url,
             "updated_at": _now_iso(),
         }
+        save_image_match_cache()
         return "", ""
 
     best_card = ""
@@ -773,6 +774,7 @@ def resolve_card_info_from_image(product: dict, card_number: str = "", rarity: s
             "image_url": image_url,
             "updated_at": _now_iso(),
         }
+        save_image_match_cache()
         return "", ""
 
     image_cache[url_key] = {
@@ -781,6 +783,7 @@ def resolve_card_info_from_image(product: dict, card_number: str = "", rarity: s
         "image_url": image_url,
         "updated_at": _now_iso(),
     }
+    save_image_match_cache()
     return best_card, best_rarity
 
 

@@ -51,16 +51,18 @@ def run_store_scrape(source: str) -> bool:
     error = ""
     completed = None
     try:
-        completed = subprocess.run(command, cwd=REPO_DIR, text=True, capture_output=True)
-        if completed.stdout:
-            print(completed.stdout, end="" if completed.stdout.endswith("\n") else "\n", flush=True)
-        if completed.stderr:
-            print(completed.stderr, end="" if completed.stderr.endswith("\n") else "\n", file=sys.stderr, flush=True)
+        completed = subprocess.run(command, cwd=REPO_DIR)
         if completed.returncode != 0:
             status = "error"
-            lines = [line.strip() for line in (completed.stderr or completed.stdout or "").splitlines() if line.strip()]
-            detail = lines[-1] if lines else f"Command failed with exit code {completed.returncode}"
-            error = detail
+            error = f"Command failed with exit code {completed.returncode}"
+    except KeyboardInterrupt:
+        status = "interrupted"
+        error = "Interrupted by user"
+        raise
+    except Exception as exc:
+        status = "error"
+        error = str(exc) or exc.__class__.__name__
+        raise
     finally:
         duration = time.perf_counter() - start
         record_scrape_outputs(
@@ -80,6 +82,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Run One Piece missing-card scrapes.")
     parser.add_argument("--source", choices=["all", "bigbang", "collectiverse", "geekhaven", "knightly", "marvellous", "toad", "tanuki"], default="all", help="Which store source to scrape.")
     parser.add_argument("--hard", action="store_true", help="Remove selected report outputs before scraping.")
+    parser.add_argument("--refresh-collection-metadata", action="store_true", help="Re-enrich all collection cards before scraping.")
     parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; store scraping is not item-limited.")
     parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; store pagination is source-defined.")
     args = parser.parse_args()
@@ -92,7 +95,7 @@ def main() -> int:
                 path.unlink()
 
     update_command = [sys.executable, "services/one_piece/update_collection.py"]
-    if args.hard:
+    if args.refresh_collection_metadata:
         update_command.append("--hard")
     print(f"Updating One Piece collection: {' '.join(update_command)}", flush=True)
     run_and_record(
