@@ -1,11 +1,29 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-07-06T08:26:23.084253Z",
+  "generated_at": "2026-07-07T07:43:57.544785Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 23,
+  "items_count": 25,
   "items": [
+    {
+      "id": "yt-O0PbOzWYbSY",
+      "video_id": "O0PbOzWYbSY",
+      "title": "Xbox dropped a BOMBSHELL",
+      "url": "https://www.youtube.com/watch?v=O0PbOzWYbSY",
+      "published_at": "2026-07-06T20:20:27+00:00",
+      "updated_at": "2026-07-07T01:20:41+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/O0PbOzWYbSY/hqdefault.jpg"
+    },
+    {
+      "id": "yt-rPAPXD735Cc",
+      "video_id": "rPAPXD735Cc",
+      "title": "10 BIG Games That Were COMPLETE DISASTERS At Launch",
+      "url": "https://www.youtube.com/watch?v=rPAPXD735Cc",
+      "published_at": "2026-07-06T18:19:19+00:00",
+      "updated_at": "2026-07-06T23:33:15+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/rPAPXD735Cc/hqdefault.jpg"
+    },
     {
       "id": "yt-VZ0L1J0HVeg",
       "video_id": "VZ0L1J0HVeg",
