@@ -1021,6 +1021,21 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
+      "card_number": "EB02-041",
+      "price": 105.0,
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R105.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "image_url": "",
+      "art_variant": "original",
+      "scraped_at": "2026-07-08T01:15:45Z"
+    },
+    {
       "card_number": "ST04-011",
       "price": 105.0,
       "title": "Black Maria (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
@@ -1126,21 +1141,6 @@
       "scraped_at": "2026-07-03T11:32:51Z"
     },
     {
-      "card_number": "OP10-005",
-      "price": 145.0,
-      "title": "Sanji [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R145.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "OP14-096",
       "price": 157.0,
       "title": "Ground Death [The Azure Sea's Seven]",
@@ -1154,6 +1154,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671427.jpg?v=1769204968",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "price": 190.0,
+      "title": "Sanji [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R190.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "OP03-013",
