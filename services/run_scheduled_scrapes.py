@@ -4,15 +4,12 @@ import argparse
 import json
 import os
 import re
-import smtplib
 import subprocess
 import sys
 import time
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
-from datetime import datetime, timezone
-from email.message import EmailMessage
 from pathlib import Path
 from typing import Any
 
@@ -163,13 +160,6 @@ def is_interval_enabled(controls: dict[str, Any], interval: str) -> bool:
     return not isinstance(enabled, dict) or enabled.get(interval, True) is not False
 
 
-def is_email_enabled(controls: dict[str, Any], interval: str) -> bool:
-    if controls.get("email_enabled", True) is False:
-        return False
-    enabled = controls.get("interval_email_enabled")
-    return not isinstance(enabled, dict) or enabled.get(interval, True) is not False
-
-
 def selected_sources(controls: dict[str, Any], interval: str) -> list[SourceConfig]:
     if controls.get(CONTROLS_UNAVAILABLE_KEY):
         return []
@@ -224,16 +214,6 @@ def with_options(command: list[str], config: SourceConfig, controls: dict[str, A
     return result
 
 
-def wants_email(controls: dict[str, Any], config: SourceConfig) -> bool:
-    source = source_state(controls, config)
-    email = source.get("email")
-    if isinstance(email, dict) and any(bool(email.get(key)) for key in ("added", "updated", "removed")):
-        return True
-    module = module_state(controls, config.module)
-    email = module.get("email")
-    return isinstance(email, dict) and any(bool(email.get(key)) for key in ("added", "updated", "removed"))
-
-
 def run_command(config: SourceConfig, controls: dict[str, Any]) -> dict[str, Any]:
     command = with_options(config.command, config, controls)
     print(f"Running {config.module}/{config.source}: {' '.join(command)}", flush=True)
@@ -276,36 +256,6 @@ def run_command(config: SourceConfig, controls: dict[str, Any]) -> dict[str, Any
     }
 
 
-def send_summary_email(interval: str, results: list[dict[str, Any]]) -> None:
-    if not results:
-        return
-    required = ["SMTP_HOST", "SMTP_USER", "SMTP_PASSWORD", "EMAIL_TO"]
-    if any(not os.environ.get(name, "").strip() for name in required):
-        print("Email summary skipped: SMTP secrets are not configured.", flush=True)
-        return
-    sender = os.environ.get("EMAIL_FROM") or os.environ.get("SMTP_USER", "")
-    subject = f"Dashboard {interval} scrape: {len(results)} source(s)"
-    lines = [
-        f"Dashboard {interval} scrape summary",
-        f"Finished at {datetime.now(timezone.utc).isoformat()}",
-        "",
-    ]
-    for result in results:
-        status = "ok" if result["returncode"] == 0 else f"failed ({result['returncode']})"
-        lines.append(f"- {result['module']}/{result['source']}: {status}, {result['duration_seconds']}s, {result['item_count']} item(s)")
-    message = EmailMessage()
-    message["Subject"] = subject
-    message["From"] = sender
-    message["To"] = os.environ["EMAIL_TO"]
-    message.set_content("\n".join(lines))
-    port = int(os.environ.get("SMTP_PORT") or "587")
-    with smtplib.SMTP(os.environ["SMTP_HOST"], port, timeout=30) as smtp:
-        smtp.starttls()
-        smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASSWORD"])
-        smtp.send_message(message)
-    print(f"Sent scrape summary email to {os.environ['EMAIL_TO']}.", flush=True)
-
-
 def main() -> int:
     parser = argparse.ArgumentParser(description="Run scrapes selected by the dashboard scrape menu.")
     parser.add_argument("--interval", choices=sorted(INTERVALS), required=True)
@@ -326,12 +276,6 @@ def main() -> int:
             failed += 1
         elif result["returncode"] != 0:
             print(f"{config.module}/{config.source} failed but is configured as non-fatal.", flush=True)
-
-    if is_email_enabled(controls, args.interval):
-        email_results = [result for result in results if wants_email(controls, next(
-            config for config in selected if config.module == result["module"] and config.source == result["source"]
-        ))]
-        send_summary_email(args.interval, email_results)
 
     return 1 if failed else 0
 

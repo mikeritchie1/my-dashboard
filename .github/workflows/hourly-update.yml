@@ -48,6 +48,16 @@ jobs:
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
         run: python services/run_scheduled_scrapes.py --interval hourly
 
+      - name: Email newly added One Piece OP/EB cards
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        run: python services/one_piece/notify_new_cards.py --no-scrape --store all --snapshot-scope hourly --window-label "in the last hour" --max-price 100
+
       - name: Update metadata
         if: ${{ always() }}
         run: python services/write_metadata.py

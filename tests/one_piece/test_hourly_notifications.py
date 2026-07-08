@@ -14,7 +14,7 @@ from scrape_collection import normalize_set_code
 
 
 class HourlyNotificationTests(unittest.TestCase):
-    def test_only_new_op_eb_and_don_cards_strictly_under_r100_are_alerted(self) -> None:
+    def test_only_new_op_and_eb_cards_strictly_under_r100_are_alerted(self) -> None:
         rows = [
             {"card_number": "OP16-001", "price": "99.99"},
             {"card_number": "EB03-001", "price": "50"},
@@ -27,7 +27,20 @@ class HourlyNotificationTests(unittest.TestCase):
         ]
 
         self.assertEqual(
-            ["OP16-001", "EB03-001", "DON!!", ""],
+            ["OP16-001", "EB03-001"],
+            [row["card_number"] for row in filter_alert_additions(rows)],
+        )
+
+    def test_custom_price_ceiling_is_strict(self) -> None:
+        rows = [
+            {"card_number": "OP16-001", "price": "99.99"},
+            {"card_number": "EB03-001", "price": "50"},
+            {"card_number": "OP16-002", "price": "100"},
+            {"card_number": "OP16-003", "price": "unknown"},
+        ]
+
+        self.assertEqual(
+            ["OP16-001", "EB03-001"],
             [row["card_number"] for row in filter_alert_additions(rows, 100)],
         )
 
