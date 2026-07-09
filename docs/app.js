@@ -111,6 +111,7 @@ const EVENT_GEO_BOUNDS = {
   maxLng: 36.0,
 };
 const SCRAPE_SCHEDULES = [
+  { value: "disabled", label: "Disabled" },
   { value: "ten-minute", label: "10 minute scrape" },
   { value: "hourly", label: "Hourly scrape" },
   { value: "daily", label: "Daily scrape" },
@@ -133,7 +134,7 @@ const SCRAPE_MODULES = [
       { id: "collectiverse", label: "Collectiverse", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
       { id: "geekhaven", label: "Geek Haven", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
       { id: "knightly", label: "Knightly Gaming", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
-      { id: "marvellous", label: "Marvellous Gaming", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
+      { id: "marvellous", label: "Marvellous Gaming", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py", defaultEnabled: false },
       { id: "tanuki", label: "Tanuki Games", output: "docs/data/one_piece/missing_cards.json", sourceUrl: "Store search via find_missing_cards.py" },
       { id: "products", label: "Official products", output: "docs/data/one_piece/products.json", sourceUrl: "One Piece Card Game products" },
     ],
@@ -8196,7 +8197,7 @@ function getDefaultScrapeControls() {
     const sources = {};
     for (const source of moduleConfig.sources) {
       sources[source.id] = {
-        enabled: true,
+        enabled: source.defaultEnabled !== false,
         schedule: moduleConfig.defaultSchedule,
         email: {
           added: moduleConfig.id === "one-piece",
@@ -8222,7 +8223,7 @@ function getDefaultScrapeControls() {
     };
   }
   return {
-    version: 1,
+    version: 2,
     updated_at: new Date().toISOString(),
     default_schedule: "daily",
     interval_enabled: {
@@ -8245,6 +8246,8 @@ function getDefaultScrapeControls() {
 function normalizeScrapeControls(raw) {
   const defaults = getDefaultScrapeControls();
   const payload = raw && typeof raw === "object" ? raw : {};
+  const payloadVersion = Number(payload.version || 0);
+  defaults.version = 2;
   defaults.default_schedule = SCRAPE_SCHEDULES.some((item) => item.value === payload.default_schedule)
     ? payload.default_schedule
     : defaults.default_schedule;
@@ -8295,7 +8298,9 @@ function normalizeScrapeControls(raw) {
     for (const source of moduleConfig.sources) {
       const sourceState = sourceStates[source.id] && typeof sourceStates[source.id] === "object" ? sourceStates[source.id] : {};
       const targetSource = target.sources[source.id];
-      targetSource.enabled = typeof sourceState.enabled === "boolean" ? sourceState.enabled : targetSource.enabled;
+      targetSource.enabled = payloadVersion < 2 && source.defaultEnabled === false
+        ? false
+        : typeof sourceState.enabled === "boolean" ? sourceState.enabled : targetSource.enabled;
       targetSource.schedule = SCRAPE_SCHEDULES.some((item) => item.value === sourceState.schedule)
         ? sourceState.schedule
         : targetSource.schedule;
@@ -8386,6 +8391,7 @@ function scrapeScheduleLabel(value) {
 }
 
 function isScrapeIntervalEnabled(schedule) {
+  if (schedule === "disabled") return false;
   if (schedule === "manual") return true;
   const enabled = state.scrapeControls?.interval_enabled;
   if (!enabled || typeof enabled !== "object") return true;
@@ -8393,6 +8399,7 @@ function isScrapeIntervalEnabled(schedule) {
 }
 
 function isScrapeIntervalEmailEnabled(schedule) {
+  if (schedule === "disabled") return false;
   if (schedule === "manual") return true;
   const enabled = state.scrapeControls?.interval_email_enabled;
   if (!enabled || typeof enabled !== "object") return true;
@@ -8403,6 +8410,20 @@ function renderScheduleOptions(selected) {
   return SCRAPE_SCHEDULES.map((item) => (
     `<option value="${escapeHtml(item.value)}"${item.value === selected ? " selected" : ""}>${escapeHtml(item.label)}</option>`
   )).join("");
+}
+
+function scrapeScheduleSelectValue(scrapeState) {
+  return scrapeState?.enabled === false ? "disabled" : (scrapeState?.schedule || "daily");
+}
+
+function applyScrapeScheduleSelect(scrapeState, value) {
+  if (!scrapeState) return;
+  if (value === "disabled") {
+    scrapeState.enabled = false;
+    return;
+  }
+  scrapeState.enabled = true;
+  scrapeState.schedule = value;
 }
 
 function renderScrapeControlsStatus(message) {
@@ -8762,7 +8783,7 @@ function renderScrapeControls() {
 
   const rows = SCRAPE_MODULES.map((moduleConfig) => {
     const moduleState = state.scrapeControls.modules[moduleConfig.id];
-    const moduleIntervalActive = isScrapeIntervalEnabled(moduleState.schedule);
+    const moduleIntervalActive = moduleState.enabled && isScrapeIntervalEnabled(moduleState.schedule);
     const optionByKey = Object.fromEntries((moduleConfig.options || []).map((option) => [option.key, option]));
     const activeModuleSources = activeScrapeSourcesForModule(moduleConfig, moduleState);
     const moduleLastScraped = latestTimestamp(activeModuleSources.map((item) => item.lastScraped));
@@ -8783,7 +8804,7 @@ function renderScrapeControls() {
           <span class="scrape-target-name">${escapeHtml(moduleConfig.label)}</span>
         </th>
         <td><input type="checkbox" data-scrape-module-enabled="${escapeHtml(moduleConfig.id)}"${moduleState.enabled ? " checked" : ""}></td>
-        <td><select data-scrape-module-schedule="${escapeHtml(moduleConfig.id)}">${renderScheduleOptions(moduleState.schedule)}</select></td>
+        <td><select data-scrape-module-schedule="${escapeHtml(moduleConfig.id)}">${renderScheduleOptions(scrapeScheduleSelectValue(moduleState))}</select></td>
         <td><input type="checkbox" data-scrape-module-email="added" data-scrape-module="${escapeHtml(moduleConfig.id)}"${moduleState.email.added ? " checked" : ""}></td>
         <td><input type="checkbox" data-scrape-module-email="updated" data-scrape-module="${escapeHtml(moduleConfig.id)}"${moduleState.email.updated ? " checked" : ""}></td>
         <td><input type="checkbox" data-scrape-module-email="removed" data-scrape-module="${escapeHtml(moduleConfig.id)}"${moduleState.email.removed ? " checked" : ""}></td>
@@ -8796,7 +8817,7 @@ function renderScrapeControls() {
       </tr>`;
     const sourceRows = moduleConfig.sources.map((source) => {
       const sourceState = moduleState.sources[source.id];
-      const sourceIntervalActive = isScrapeIntervalEnabled(sourceState.schedule);
+      const sourceIntervalActive = sourceState.enabled && isScrapeIntervalEnabled(sourceState.schedule);
       const stats = scrapeStatsForSource(moduleConfig, source);
       const lastScraped = stats.lastScraped;
       const itemCount = stats.itemCount;
@@ -8806,7 +8827,7 @@ function renderScrapeControls() {
             <span class="scrape-target-name">${escapeHtml(source.label)}</span>
           </th>
           <td><input type="checkbox" data-scrape-source-enabled="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.enabled ? " checked" : ""}></td>
-          <td><select data-scrape-source-schedule="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}">${renderScheduleOptions(sourceState.schedule)}</select></td>
+          <td><select data-scrape-source-schedule="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}">${renderScheduleOptions(scrapeScheduleSelectValue(sourceState))}</select></td>
           <td><input type="checkbox" data-scrape-source-email="added" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.added ? " checked" : ""}></td>
           <td><input type="checkbox" data-scrape-source-email="updated" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.updated ? " checked" : ""}></td>
           <td><input type="checkbox" data-scrape-source-email="removed" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.removed ? " checked" : ""}></td>
@@ -8898,9 +8919,9 @@ function updateScrapeControlsFromInput(target) {
     return true;
   }
   if (target.hasAttribute("data-scrape-module-schedule")) {
-    moduleState.schedule = target.value;
+    applyScrapeScheduleSelect(moduleState, target.value);
     for (const sourceState of Object.values(moduleState.sources || {})) {
-      sourceState.schedule = target.value;
+      applyScrapeScheduleSelect(sourceState, target.value);
     }
     return true;
   }
@@ -8936,7 +8957,7 @@ function updateScrapeControlsFromInput(target) {
     return true;
   }
   if (sourceSchedule) {
-    sourceState.schedule = target.value;
+    applyScrapeScheduleSelect(sourceState, target.value);
     return true;
   }
   if (sourceEmail) {

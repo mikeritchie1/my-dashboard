@@ -54,6 +54,66 @@ class ScheduledScrapeTests(unittest.TestCase):
         self.assertTrue(controls[run_scheduled_scrapes.CONTROLS_UNAVAILABLE_KEY])
         self.assertEqual([], run_scheduled_scrapes.selected_sources(controls, "hourly"))
 
+    def test_disabled_schedule_skips_source(self) -> None:
+        controls = {
+            "version": 2,
+            "modules": {
+                "one-piece": {
+                    "enabled": True,
+                    "sources": {
+                        "bigbang": {
+                            "enabled": True,
+                            "schedule": "disabled",
+                        },
+                    },
+                },
+            },
+        }
+
+        selected = run_scheduled_scrapes.selected_sources(controls, "hourly")
+
+        self.assertFalse(any(item.module == "one-piece" and item.source == "bigbang" for item in selected))
+
+    def test_marvellous_is_disabled_for_legacy_controls(self) -> None:
+        controls = {
+            "version": 1,
+            "modules": {
+                "one-piece": {
+                    "enabled": True,
+                    "sources": {
+                        "marvellous": {
+                            "enabled": True,
+                            "schedule": "hourly",
+                        },
+                    },
+                },
+            },
+        }
+
+        selected = run_scheduled_scrapes.selected_sources(controls, "hourly")
+
+        self.assertFalse(any(item.module == "one-piece" and item.source == "marvellous" for item in selected))
+
+    def test_marvellous_can_be_reenabled_after_controls_migration(self) -> None:
+        controls = {
+            "version": 2,
+            "modules": {
+                "one-piece": {
+                    "enabled": True,
+                    "sources": {
+                        "marvellous": {
+                            "enabled": True,
+                            "schedule": "hourly",
+                        },
+                    },
+                },
+            },
+        }
+
+        selected = run_scheduled_scrapes.selected_sources(controls, "hourly")
+
+        self.assertTrue(any(item.module == "one-piece" and item.source == "marvellous" for item in selected))
+
     def test_scheduled_hard_option_requires_environment_opt_in(self) -> None:
         config = next(
             item

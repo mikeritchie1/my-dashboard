@@ -37,6 +37,7 @@ class SourceConfig:
     command: list[str]
     outputs: list[str]
     fail_workflow: bool = True
+    default_enabled: bool = True
 
 
 MODULE_DEFAULTS = {
@@ -64,7 +65,7 @@ SOURCE_CONFIGS: list[SourceConfig] = [
     SourceConfig("one-piece", "collectiverse", "Collectiverse", "hourly", ["services/scrape_one_piece.py", "--source", "collectiverse"], ["docs/data/one_piece/missing_cards.json"]),
     SourceConfig("one-piece", "geekhaven", "Geek Haven", "hourly", ["services/scrape_one_piece.py", "--source", "geekhaven"], ["docs/data/one_piece/missing_cards.json"]),
     SourceConfig("one-piece", "knightly", "Knightly Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "knightly"], ["docs/data/one_piece/missing_cards.json"]),
-    SourceConfig("one-piece", "marvellous", "Marvellous Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "marvellous"], ["docs/data/one_piece/missing_cards.json"], fail_workflow=False),
+    SourceConfig("one-piece", "marvellous", "Marvellous Gaming", "hourly", ["services/scrape_one_piece.py", "--source", "marvellous"], ["docs/data/one_piece/missing_cards.json"], fail_workflow=False, default_enabled=False),
     SourceConfig("one-piece", "tanuki", "Tanuki Games", "hourly", ["services/scrape_one_piece.py", "--source", "tanuki"], ["docs/data/one_piece/missing_cards.json"], fail_workflow=False),
     SourceConfig("one-piece", "products", "Official products", "hourly", ["services/one_piece/scrape_products.py", "--pages", "1"], ["docs/data/one_piece/products.json"]),
     SourceConfig("release-radar", "pahe", "Pahe latest movies", "daily", ["services/scrape_release_radar.py", "--source", "pahe"], ["docs/data/release_radar/pahe_latest.json"]),
@@ -165,15 +166,23 @@ def selected_sources(controls: dict[str, Any], interval: str) -> list[SourceConf
         return []
     if not is_interval_enabled(controls, interval):
         return []
+    try:
+        controls_version = int(controls.get("version") or 0)
+    except (TypeError, ValueError):
+        controls_version = 0
     selected: list[SourceConfig] = []
     for config in SOURCE_CONFIGS:
         module = module_state(controls, config.module)
         if module.get("enabled", True) is False:
             continue
         source = source_state(controls, config)
-        if source.get("enabled", True) is False:
+        if controls_version < 2 and not config.default_enabled:
+            continue
+        if source.get("enabled", config.default_enabled) is False:
             continue
         schedule = source.get("schedule") or module.get("schedule") or config.default_schedule
+        if schedule == "disabled":
+            continue
         if schedule == interval:
             selected.append(config)
     return selected
