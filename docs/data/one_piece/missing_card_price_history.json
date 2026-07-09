@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T05:51:23Z",
+  "updated_at": "2026-07-09T09:08:15Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -58956,6 +58956,42 @@
       "stock": "In stock",
       "observed_on": "2026-07-09",
       "captured_at": "2026-07-09T05:51:23Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 104.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-09",
+      "captured_at": "2026-07-09T09:08:15Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 231.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-09",
+      "captured_at": "2026-07-09T09:08:15Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2491.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-09",
+      "captured_at": "2026-07-09T09:08:15Z"
     }
   ]
 }
