@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-09T11:50:22Z",
+  "updated_at": "2026-07-09T14:20:55Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -58992,6 +58992,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-09",
       "captured_at": "2026-07-09T09:08:15Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-09",
+      "captured_at": "2026-07-09T14:20:21Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-09",
+      "captured_at": "2026-07-09T14:20:21Z"
     }
   ]
 }
