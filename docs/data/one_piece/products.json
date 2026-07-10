@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-07-10T04:41:22.724846Z",
+  "scraped_at": "2026-07-10T08:13:56.941529Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2004,6 +2004,76 @@
       "image_local_url": "./data/one_piece/product_images/playmat010_img-item01.webp",
       "is_released": true,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "STARTER DECK -BLUE Kuzan- [ST-33]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-07-31",
+      "release_date_text": "July 31, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/st33.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/nEq2o760PGK6eiey/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/st33_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-10T08:13:21.883847Z"
+    },
+    {
+      "title": "STARTER DECK -GREEN Roronoa Zoro- [ST-32]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-07-31",
+      "release_date_text": "July 31, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/st32.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/OBo5ApiaFqYjXuL9/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/st32_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-10T08:13:21.883847Z"
+    },
+    {
+      "title": "STARTER DECK -PURPLE Charlotte Katakuri- [ST-34]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-07-31",
+      "release_date_text": "July 31, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/st34.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/TBnEnTa0vjjCEWx6/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/st34_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-10T08:13:21.883847Z"
+    },
+    {
+      "title": "STARTER DECK -RED/BLACK Sabo- [ST-35]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-07-31",
+      "release_date_text": "July 31, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/st35.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/HtuUKv9pCAGqiFvq/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/st35_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-10T08:13:21.883847Z"
+    },
+    {
+      "title": "STARTER DECK -YELLOW Eustass\"Captain\"Kid- [ST-36]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-07-31",
+      "release_date_text": "July 31, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/st36.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/e9kPAYzpFy1Ic3Tm/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/st36_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-10T08:13:21.883847Z"
     },
     {
       "title": "ONE PIECE CARD GAME English Version 3rd Anniversary Set",
