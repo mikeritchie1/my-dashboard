@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T17:43:26Z",
+  "updated_at": "2026-07-11T18:39:53Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -61320,6 +61320,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-11",
       "captured_at": "2026-07-11T17:43:04Z"
+    },
+    {
+      "card_number": "OP15-118",
+      "art_variant": "original",
+      "price": 330.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-op15-118-op15-118-adventure-on-kamis-island-foil",
+      "title": "Enel (OP15-118) (OP15-118) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T18:39:31Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 425.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T18:39:31Z"
     }
   ]
 }
