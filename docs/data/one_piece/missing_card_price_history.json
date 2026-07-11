@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-11T16:38:49Z",
+  "updated_at": "2026-07-11T17:43:26Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -61236,6 +61236,90 @@
       "stock": "In stock",
       "observed_on": "2026-07-11",
       "captured_at": "2026-07-11T16:38:29Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 40.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T17:43:04Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T17:43:04Z"
+    },
+    {
+      "card_number": "P-030",
+      "art_variant": "original",
+      "price": 85.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jinbe-premium-card-collection-bandai-card-games-fest-23-24-edition-one-piece-promotion-cards",
+      "title": "Jinbe (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T17:43:04Z"
+    },
+    {
+      "card_number": "OP14-091",
+      "art_variant": "alternate",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-alternate-art-op14-091-the-azure-seas-seven-foil",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) (OP14-091) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T17:43:04Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 445.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T17:43:04Z"
+    },
+    {
+      "card_number": "OP01-013",
+      "art_variant": "alternate",
+      "price": 585.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-alternate-art-one-piece-promotion-cards",
+      "title": "Sanji (Alternate Art) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T17:43:04Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1960.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-11",
+      "captured_at": "2026-07-11T17:43:04Z"
     }
   ]
 }
