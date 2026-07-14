@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T17:54:56Z",
+  "updated_at": "2026-07-14T18:56:20Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -65676,6 +65676,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-14",
       "captured_at": "2026-07-14T16:06:06Z"
+    },
+    {
+      "card_number": "OP16-118",
+      "art_variant": "alternate",
+      "price": 480.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-118-alternate-art-op16-118-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (118) (Alternate Art) (OP16-118) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-14",
+      "captured_at": "2026-07-14T18:55:22Z"
     }
   ]
 }
