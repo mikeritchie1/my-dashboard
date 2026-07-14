@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-07-14T01:07:46.814921Z",
+  "scraped_at": "2026-07-14T04:36:42.785404Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2004,6 +2004,34 @@
       "image_local_url": "./data/one_piece/product_images/playmat010_img-item01.webp",
       "is_released": true,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "Illustration Box Vol.7",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-07-31",
+      "release_date_text": "July 31, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/ib07.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/13/JQc5Luj1qHIeTeA6/img_item01.webp?_=24021673fe25555a172b8fa58dc67d33",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/ib07_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-14T04:35:50.193472Z"
+    },
+    {
+      "title": "Illustration Box Vol.8",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-07-31",
+      "release_date_text": "July 31, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/ib08.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/13/4pj9Zsx8OTTavFKc/img_item01.webp?_=24021673fe25555a172b8fa58dc67d33",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/ib08_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-14T04:35:50.193472Z"
     },
     {
       "title": "STARTER DECK -BLUE Kuzan- [ST-33]",
