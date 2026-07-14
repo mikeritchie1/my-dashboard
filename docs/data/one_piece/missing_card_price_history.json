@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T20:03:00Z",
+  "updated_at": "2026-07-14T21:43:38Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -65688,6 +65688,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-14",
       "captured_at": "2026-07-14T18:55:22Z"
+    },
+    {
+      "card_number": "OP14-091",
+      "art_variant": "alternate",
+      "price": 285.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-alternate-art-op14-091-the-azure-seas-seven-foil",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) (OP14-091) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-14",
+      "captured_at": "2026-07-14T21:42:45Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1980.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-14",
+      "captured_at": "2026-07-14T21:42:45Z"
+    },
+    {
+      "card_number": "ST12-003",
+      "art_variant": "original",
+      "price": 68.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards",
+      "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-14",
+      "captured_at": "2026-07-14T21:43:19Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 165.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-14",
+      "captured_at": "2026-07-14T21:43:19Z"
     }
   ]
 }
