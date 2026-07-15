@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-07-15T01:05:24.289407Z",
+  "scraped_at": "2026-07-15T04:36:30.519832Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2130,6 +2130,20 @@
       "image_local_url": "./data/one_piece/product_images/cardcollection-bestselection-vol6_img-item01.webp",
       "is_released": false,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "BOOSTER PACK -THE WORLD’S STRONGEST WARRIORS- [OP-17]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2026-08-28",
+      "release_date_text": "August 28, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/op17.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/10/UZto2ePj0hiv3KkV/img_item01.webp?_=e0b14f6e380203fc15966b01c585c3e2",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/op17_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-15T04:36:06.490459Z"
     },
     {
       "title": "ONE PIECE Heroines Special Set",
