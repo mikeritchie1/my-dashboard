@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-15T19:59:16Z",
+  "updated_at": "2026-07-15T20:55:40Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -67380,6 +67380,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-15",
       "captured_at": "2026-07-15T17:00:05Z"
+    },
+    {
+      "card_number": "OP01-013",
+      "art_variant": "alternate",
+      "price": 590.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-alternate-art-one-piece-promotion-cards",
+      "title": "Sanji (Alternate Art) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-15",
+      "captured_at": "2026-07-15T20:54:49Z"
     }
   ]
 }
