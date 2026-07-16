@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T16:58:49Z",
+  "updated_at": "2026-07-16T18:01:54Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -69288,6 +69288,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-16",
       "captured_at": "2026-07-16T16:57:58Z"
+    },
+    {
+      "card_number": "ST15-003",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/kingdew-starter-deck-red-edward-newgate/p/687683046",
+      "title": "Kingdew [Starter Deck: Red Edward.Newgate]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T18:01:22Z"
+    },
+    {
+      "card_number": "ST21-012",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/brook-starter-deck-ex-gear-5/p/687683070",
+      "title": "Brook [Starter Deck EX: Gear 5]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T18:01:22Z"
+    },
+    {
+      "card_number": "ST21-016",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/gum-gum-dawn-whip-starter-deck-ex-gear-5/p/687683069",
+      "title": "Gum-Gum Dawn Whip [Starter Deck EX: Gear 5]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T18:01:22Z"
+    },
+    {
+      "card_number": "OP05-006",
+      "art_variant": "original",
+      "price": 40.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/koala-awakening-of-the-new-era/p/687683053",
+      "title": "Koala [Awakening of the New Era]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T18:01:22Z"
     }
   ]
 }
