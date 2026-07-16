@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T04:46:28Z",
+  "updated_at": "2026-07-16T07:12:41Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -68856,6 +68856,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-16",
       "captured_at": "2026-07-16T04:46:07Z"
+    },
+    {
+      "card_number": "OP15-046",
+      "art_variant": "alternate",
+      "price": 290.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sabo-alternate-art-op15-046-adventure-on-kamis-island-foil",
+      "title": "Sabo (Alternate Art) (OP15-046) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T07:11:50Z"
     }
   ]
 }
