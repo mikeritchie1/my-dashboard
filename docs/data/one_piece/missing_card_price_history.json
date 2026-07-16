@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T21:52:34Z",
+  "updated_at": "2026-07-16T22:44:47Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -69840,6 +69840,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-16",
       "captured_at": "2026-07-16T21:51:38Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 440.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T22:43:50Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1905.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T22:43:50Z"
     }
   ]
 }
