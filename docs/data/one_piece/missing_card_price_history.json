@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-16T11:24:06Z",
+  "updated_at": "2026-07-16T13:09:49Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -69036,6 +69036,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-16",
       "captured_at": "2026-07-16T11:23:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 65.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nami-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nami) - Extra Booster: One Piece Heroines Edition",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T13:08:54Z"
+    },
+    {
+      "card_number": "OP15-032",
+      "art_variant": "original",
+      "price": 105.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-op15-032-op15-032-adventure-on-kamis-island-foil",
+      "title": "Brook (OP15-032) (OP15-032) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-16",
+      "captured_at": "2026-07-16T13:08:54Z"
     }
   ]
 }
