@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T09:42:31Z",
+  "updated_at": "2026-07-17T11:12:11Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -71388,6 +71388,150 @@
       "stock": "In stock",
       "observed_on": "2026-07-17",
       "captured_at": "2026-07-17T09:42:04Z"
+    },
+    {
+      "card_number": "ST04-008",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jack-premium-card-collection-bandai-card-games-fest-23-24-edition-one-piece-promotion-cards",
+      "title": "Jack (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP14-091",
+      "art_variant": "alternate",
+      "price": 295.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-alternate-art-op14-091-the-azure-seas-seven-foil",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) (OP14-091) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 445.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP01-022",
+      "art_variant": "alternate",
+      "price": 460.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-alternate-art-one-piece-promotion-cards",
+      "title": "Brook (Alternate Art) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP16-118",
+      "art_variant": "alternate",
+      "price": 565.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-118-alternate-art-op16-118-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (118) (Alternate Art) (OP16-118) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP01-013",
+      "art_variant": "alternate",
+      "price": 570.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-alternate-art-one-piece-promotion-cards",
+      "title": "Sanji (Alternate Art) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 580.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1030.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:10Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 175.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:43Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 228.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:43Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 237.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:43Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 281.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T11:11:43Z"
     }
   ]
 }
