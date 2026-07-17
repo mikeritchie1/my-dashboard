@@ -706,21 +706,6 @@
       "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
-      "card_number": "ST06-004",
-      "price": "30.0",
-      "title": "Smoker [Starter Deck: Absolute Justice]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Starter Deck: Absolute Justice",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R30.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "ST22-002",
       "price": "31.0",
       "title": "Izo [Starter Deck: Ace & Newgate]",
@@ -764,6 +749,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
       "art_variant": "original",
       "scraped_at": "2026-07-16T19:56:21Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "price": "35.0",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck: Absolute Justice",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R35.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "OP05-006",
@@ -1592,14 +1592,14 @@
     },
     {
       "card_number": "OP15-092",
-      "price": "925.0",
+      "price": "930.0",
       "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R925.00",
+      "available_variants": "Near Mint R930.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685446.jpg?v=1780510315",
       "art_variant": "alternate",
