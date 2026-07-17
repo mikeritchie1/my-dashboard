@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T19:55:35Z",
+  "updated_at": "2026-07-17T20:40:22Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -71736,6 +71736,66 @@
       "stock": "In stock",
       "observed_on": "2026-07-17",
       "captured_at": "2026-07-17T19:55:00Z"
+    },
+    {
+      "card_number": "OP15-046",
+      "art_variant": "alternate",
+      "price": 285.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sabo-alternate-art-op15-046-adventure-on-kamis-island-foil",
+      "title": "Sabo (Alternate Art) (OP15-046) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T20:39:26Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-legacy-of-the-master",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T20:39:58Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 172.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T20:39:58Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 178.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T20:39:58Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 280.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T20:39:58Z"
     }
   ]
 }
