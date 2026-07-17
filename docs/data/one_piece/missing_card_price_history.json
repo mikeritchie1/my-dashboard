@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T21:38:43Z",
+  "updated_at": "2026-07-17T22:36:13Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -71796,6 +71796,42 @@
       "stock": "In stock",
       "observed_on": "2026-07-17",
       "captured_at": "2026-07-17T20:39:58Z"
+    },
+    {
+      "card_number": "OP16-118",
+      "art_variant": "alternate",
+      "price": 570.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-118-alternate-art-op16-118-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (118) (Alternate Art) (OP16-118) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T22:34:53Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1050.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T22:34:53Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 1165.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ms-all-sunday-alternate-art-op14-084-the-azure-seas-seven-foil",
+      "title": "Ms. All Sunday (Alternate Art) (OP14-084) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T22:34:53Z"
     }
   ]
 }
