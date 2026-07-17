@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T18:47:48Z",
+  "updated_at": "2026-07-17T19:55:35Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -71724,6 +71724,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-17",
       "captured_at": "2026-07-17T18:47:15Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 75.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/law-bepo-starter-deck-green-jewelry-bonney/p/687805365",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-17",
+      "captured_at": "2026-07-17T19:55:00Z"
     }
   ]
 }
