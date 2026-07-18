@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T04:34:31Z",
+  "updated_at": "2026-07-18T06:50:45Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -73308,6 +73308,42 @@
       "stock": "In stock",
       "observed_on": "2026-07-18",
       "captured_at": "2026-07-18T04:34:31Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-18",
+      "captured_at": "2026-07-18T06:50:13Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 1355.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-18",
+      "captured_at": "2026-07-18T06:50:13Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 3600.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-18",
+      "captured_at": "2026-07-18T06:50:13Z"
     }
   ]
 }
