@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-18T17:44:41Z",
+  "updated_at": "2026-07-18T18:41:20Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -73620,6 +73620,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-18",
       "captured_at": "2026-07-18T17:43:44Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 4555.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-18",
+      "captured_at": "2026-07-18T18:40:25Z"
     }
   ]
 }
