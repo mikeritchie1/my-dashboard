@@ -91,21 +91,6 @@
       "scraped_at": "2026-07-16T19:56:21Z"
     },
     {
-      "card_number": "DON!!",
-      "price": 5.0,
-      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R5.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686650.jpg?v=1780510130",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "OP01-108",
       "price": 5.0,
       "title": "Hitokiri Kamazo [Romance Dawn]",
@@ -419,6 +404,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581011_1024x1024_2x_q1NRsR6-n.jpg",
       "art_variant": "original",
       "scraped_at": "2026-07-16T19:56:21Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 10.0,
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R10.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686650.jpg?v=1780510130",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "DON!!",
@@ -1232,14 +1232,14 @@
     },
     {
       "card_number": "EB02-041",
-      "price": 145.0,
+      "price": 150.0,
       "title": "Merry Go [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R145.00",
+      "available_variants": "Near Mint Foil R150.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
       "image_url": "",
       "art_variant": "original",
