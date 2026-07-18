@@ -616,21 +616,6 @@
       "scraped_at": "2026-07-13T18:25:57Z"
     },
     {
-      "card_number": "ST21-017",
-      "price": 20.0,
-      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
-      "rarity": "Common",
-      "store": "Big Bang Shop",
-      "set_name": "Starter Deck EX: Gear 5",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R20.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/615595_e14a633f-70a8-4440-9b66-bdf671208b84.jpg?v=1763494290",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "DON!!",
       "price": 25.0,
       "title": "DON!! Card (Uta) - Extra Booster: One Piece Heroines Edition",
@@ -644,6 +629,36 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/69972784b6588-sgqm5-gvn5u-81f0580b3d48c8ca3636f93acef580c6.jpg?v=1777728929",
       "art_variant": "original",
       "scraped_at": "2026-07-11T15:41:06Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 25.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R25.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "price": 25.0,
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck EX: Gear 5",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R25.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/615595_e14a633f-70a8-4440-9b66-bdf671208b84.jpg?v=1763494290",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "OP04-056",
@@ -674,21 +689,6 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
       "art_variant": "original",
       "scraped_at": "2026-07-13T08:42:01Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": 30.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R30.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "ST04-008",
@@ -1472,14 +1472,14 @@
     },
     {
       "card_number": "OP15-119",
-      "price": 445.0,
+      "price": 440.0,
       "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R445.00",
+      "available_variants": "Near Mint R440.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
       "art_variant": "original",
