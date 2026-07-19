@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T11:01:36Z",
+  "updated_at": "2026-07-19T12:43:57Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -75384,6 +75384,90 @@
       "stock": "In stock",
       "observed_on": "2026-07-19",
       "captured_at": "2026-07-19T09:40:12Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T12:42:46Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 445.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T12:42:46Z"
+    },
+    {
+      "card_number": "OP01-022",
+      "art_variant": "alternate",
+      "price": 450.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-alternate-art-one-piece-promotion-cards",
+      "title": "Brook (Alternate Art) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T12:42:46Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 580.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T12:42:46Z"
+    },
+    {
+      "card_number": "OP16-118",
+      "art_variant": "alternate",
+      "price": 635.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-118-alternate-art-op16-118-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (118) (Alternate Art) (OP16-118) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T12:42:46Z"
+    },
+    {
+      "card_number": "OP12-119",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/bartholomew-kuma-legacy-of-the-master",
+      "title": "Bartholomew Kuma [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T12:43:19Z"
+    },
+    {
+      "card_number": "OP09-118",
+      "art_variant": "original",
+      "price": 666.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gol-d-roger-emperors-in-the-new-world",
+      "title": "Gol.D.Roger [Emperors in the New World]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T12:43:19Z"
     }
   ]
 }
