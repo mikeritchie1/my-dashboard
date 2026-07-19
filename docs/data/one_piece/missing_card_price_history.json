@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T21:39:01Z",
+  "updated_at": "2026-07-19T22:38:07Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -75576,6 +75576,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-19",
       "captured_at": "2026-07-19T21:38:09Z"
+    },
+    {
+      "card_number": "OP12-119",
+      "art_variant": "original",
+      "price": 281.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/bartholomew-kuma-legacy-of-the-master",
+      "title": "Bartholomew Kuma [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T22:37:44Z"
     }
   ]
 }
