@@ -295,10 +295,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/687221802",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/687936003",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/ab3ecc5b-ca27-5c0b-87dc-64512617f072_1024x1024_2x_sKUFV0y_T.webp",
       "art_variant": "original",
-      "scraped_at": "2026-07-13T08:42:01Z"
+      "scraped_at": "2026-07-19T14:17:18Z"
     },
     {
       "card_number": "ST06-002",
@@ -325,10 +325,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/687221805",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/687936006",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-07-13T08:42:01Z"
+      "scraped_at": "2026-07-19T14:17:18Z"
     },
     {
       "card_number": "ST08-014",
@@ -646,21 +646,6 @@
       "scraped_at": "2026-07-11T15:41:06Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": 25.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R25.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "ST22-002",
       "price": 29.0,
       "title": "Izo [Starter Deck: Ace & Newgate]",
@@ -704,6 +689,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
       "art_variant": "original",
       "scraped_at": "2026-07-18T19:56:37Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 30.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R30.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "ST04-008",
@@ -1472,14 +1472,14 @@
     },
     {
       "card_number": "OP08-023",
-      "price": 410.0,
+      "price": 405.0,
       "title": "Carrot (Parallel) [Two Legends]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Two Legends",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R410.00",
+      "available_variants": "Near Mint Foil R405.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/558049.jpg?v=1763499325",
       "art_variant": "alternate",

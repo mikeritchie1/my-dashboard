@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T12:43:57Z",
+  "updated_at": "2026-07-19T14:17:48Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -75468,6 +75468,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-19",
       "captured_at": "2026-07-19T12:43:19Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T14:16:45Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 405.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T14:16:45Z"
+    },
+    {
+      "card_number": "ST01-006",
+      "art_variant": "original",
+      "price": 7.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/687936003",
+      "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T14:17:18Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/687936006",
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T14:17:18Z"
     }
   ]
 }
