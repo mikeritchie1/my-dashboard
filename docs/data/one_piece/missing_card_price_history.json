@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19T14:17:48Z",
+  "updated_at": "2026-07-19T15:43:22Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -75516,6 +75516,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-19",
       "captured_at": "2026-07-19T14:17:18Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 117.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T15:43:00Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 173.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T15:43:00Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 213.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T15:43:00Z"
+    },
+    {
+      "card_number": "OP09-118",
+      "art_variant": "original",
+      "price": 663.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gol-d-roger-emperors-in-the-new-world",
+      "title": "Gol.D.Roger [Emperors in the New World]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-19",
+      "captured_at": "2026-07-19T15:43:00Z"
     }
   ]
 }
