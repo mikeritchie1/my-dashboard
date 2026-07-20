@@ -631,21 +631,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "ST22-002",
-      "price": 29.0,
-      "title": "Izo [Starter Deck: Ace & Newgate]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Ace & Newgate",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R29.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/izo-starter-deck-ace-newgate",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/647685.jpg?v=1771366711",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "OP04-056",
       "price": 30.0,
       "title": "Gum-Gum Red Roc [Kingdoms of Intrigue]",
@@ -704,6 +689,21 @@
       "image_url": "",
       "art_variant": "original",
       "scraped_at": "2026-07-01T09:39:28Z"
+    },
+    {
+      "card_number": "ST22-002",
+      "price": 30.0,
+      "title": "Izo [Starter Deck: Ace & Newgate]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Ace & Newgate",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R30.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/izo-starter-deck-ace-newgate",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/647685.jpg?v=1771366711",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "OP15-040",
@@ -1112,14 +1112,14 @@
     },
     {
       "card_number": "OP06-058",
-      "price": 120.0,
+      "price": 119.0,
       "title": "Gravity Blade Raging Tiger (Reprint) [Premium Booster -The Best- Vol. 2]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "Premium Booster -The Best- Vol. 2",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R120.00",
+      "available_variants": "Near Mint Foil R119.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gravity-blade-raging-tiger-reprint-premium-booster-the-best-vol-2",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656129.jpg?v=1760629865",
       "art_variant": "original",
@@ -1172,14 +1172,14 @@
     },
     {
       "card_number": "EB02-017",
-      "price": 126.0,
+      "price": 128.0,
       "title": "Nami [Extra Booster: Anime 25th Collection]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "Extra Booster: Anime 25th Collection",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R126.00",
+      "available_variants": "Near Mint Foil R128.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/629110.jpg?v=1752765998",
       "art_variant": "original",
@@ -1246,21 +1246,6 @@
       "scraped_at": "2026-07-17T11:11:43Z"
     },
     {
-      "card_number": "OP14-096",
-      "price": 162.0,
-      "title": "Ground Death [The Azure Sea's Seven]",
-      "rarity": "Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Azure Sea's Seven",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R162.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671427.jpg?v=1769204968",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "OP15-008",
       "price": 165.0,
       "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
@@ -1274,6 +1259,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685348_1c34ef12-3abb-4de5-a56f-d6f38233a09f.jpg?v=1780509813",
       "art_variant": "alternate",
       "scraped_at": "2026-07-11T15:41:06Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "price": 166.0,
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R166.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671427.jpg?v=1769204968",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "DON!!",
@@ -1396,21 +1396,6 @@
       "scraped_at": "2026-07-17T11:11:43Z"
     },
     {
-      "card_number": "OP12-119",
-      "price": 283.0,
-      "title": "Bartholomew Kuma [Legacy of the Master]",
-      "rarity": "Secret Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Legacy of the Master",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R283.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/bartholomew-kuma-legacy-of-the-master",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/643868_in_1000x1000_8924ce53-1d67-4498-863b-0b95835770d5.jpg?v=1759407272",
-      "art_variant": "original",
-      "scraped_at": "2026-07-19T12:43:19Z"
-    },
-    {
       "card_number": "OP15-046",
       "price": 285.0,
       "title": "Sabo (Alternate Art) (OP15-046) - Adventure on Kami's Island Foil",
@@ -1424,6 +1409,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685391_712da6df-ded9-4479-80f8-f395f6a64347.jpg?v=1780510281",
       "art_variant": "alternate",
       "scraped_at": "2026-07-11T15:41:06Z"
+    },
+    {
+      "card_number": "OP12-119",
+      "price": 289.0,
+      "title": "Bartholomew Kuma [Legacy of the Master]",
+      "rarity": "Secret Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Legacy of the Master",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R289.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/bartholomew-kuma-legacy-of-the-master",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/643868_in_1000x1000_8924ce53-1d67-4498-863b-0b95835770d5.jpg?v=1759407272",
+      "art_variant": "original",
+      "scraped_at": "2026-07-19T12:43:19Z"
     },
     {
       "card_number": "OP14-091",
@@ -1471,21 +1471,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "OP15-119",
-      "price": 445.0,
-      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R445.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
-      "art_variant": "original",
-      "scraped_at": "2026-07-16T15:22:23Z"
-    },
-    {
       "card_number": "OP01-022",
       "price": 450.0,
       "title": "Brook (Alternate Art) [One Piece Promotion Cards]",
@@ -1499,6 +1484,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485269_593d4bc7-5dcc-4f45-895b-d0f2a08b148f.jpg?v=1763509121",
       "art_variant": "alternate",
       "scraped_at": "2026-07-01T09:39:28Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "price": 450.0,
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R450.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
+      "art_variant": "original",
+      "scraped_at": "2026-07-16T15:22:23Z"
     },
     {
       "card_number": "OP01-013",
@@ -1577,14 +1577,14 @@
     },
     {
       "card_number": "OP15-092",
-      "price": 935.0,
+      "price": 945.0,
       "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R935.00",
+      "available_variants": "Near Mint R945.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685446.jpg?v=1780510315",
       "art_variant": "alternate",
@@ -1637,14 +1637,14 @@
     },
     {
       "card_number": "P-072",
-      "price": 1865.0,
+      "price": 1850.0,
       "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1865.00",
+      "available_variants": "Near Mint Foil R1850.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/626673_11f6a9c1-377b-40b8-a596-533eecb3b794.jpg?v=1763508518",
       "art_variant": "original",
