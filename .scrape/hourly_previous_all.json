@@ -736,21 +736,6 @@
       "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
-      "card_number": "ST04-008",
-      "price": "30.0",
-      "title": "Jack (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
-      "rarity": "Common",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R30.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jack-premium-card-collection-bandai-card-games-fest-23-24-edition-one-piece-promotion-cards",
-      "image_url": "",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "ST22-002",
       "price": "30.0",
       "title": "Izo [Starter Deck: Ace & Newgate]",
@@ -794,6 +779,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/586408_1024x1024_2x_ZG8qBbFvh.jpg",
       "art_variant": "original",
       "scraped_at": "2026-07-16T19:56:21Z"
+    },
+    {
+      "card_number": "ST04-008",
+      "price": "35.0",
+      "title": "Jack (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R35.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jack-premium-card-collection-bandai-card-games-fest-23-24-edition-one-piece-promotion-cards",
+      "image_url": "",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "ST06-004",
@@ -1382,14 +1382,14 @@
     },
     {
       "card_number": "DON!!",
-      "price": "195.0",
+      "price": "200.0",
       "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R195.00",
+      "available_variants": "Near Mint R200.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686651_2317e2cd-3b7e-4593-87f6-3a43c81196de.jpg?v=1777210834",
       "art_variant": "original",
@@ -1606,21 +1606,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "OP01-022",
-      "price": "450.0",
-      "title": "Brook (Alternate Art) [One Piece Promotion Cards]",
-      "rarity": "Promo",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R450.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-alternate-art-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485269_593d4bc7-5dcc-4f45-895b-d0f2a08b148f.jpg?v=1763509121",
-      "art_variant": "alternate",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "OP15-119",
       "price": "450.0",
       "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
@@ -1634,6 +1619,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
       "art_variant": "original",
       "scraped_at": "2026-07-16T15:22:23Z"
+    },
+    {
+      "card_number": "OP01-022",
+      "price": "455.0",
+      "title": "Brook (Alternate Art) [One Piece Promotion Cards]",
+      "rarity": "Promo",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R455.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-alternate-art-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485269_593d4bc7-5dcc-4f45-895b-d0f2a08b148f.jpg?v=1763509121",
+      "art_variant": "alternate",
+      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "OP01-013",
@@ -1742,14 +1742,14 @@
     },
     {
       "card_number": "OP14-084",
-      "price": "1175.0",
+      "price": "1190.0",
       "title": "Ms. All Sunday (Alternate Art) (OP14-084) - The Azure Sea's Seven Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R1175.00",
+      "available_variants": "Near Mint R1190.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ms-all-sunday-alternate-art-op14-084-the-azure-seas-seven-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/666913.jpg?v=1768473878",
       "art_variant": "alternate",
