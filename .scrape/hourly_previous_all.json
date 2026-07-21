@@ -1531,21 +1531,6 @@
       "scraped_at": "2026-07-19T12:43:19Z"
     },
     {
-      "card_number": "ST05-004",
-      "price": "300.0",
-      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R300.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "OP14-091",
       "price": "305.0",
       "title": "Mr.2.Bon.Kurei (Bentham) (Alternate Art) (OP14-091) - The Azure Sea's Seven Foil",
@@ -1559,6 +1544,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/670640_911b9e2d-66d9-49ef-ac34-118395a21947.jpg?v=1768474054",
       "art_variant": "alternate",
       "scraped_at": "2026-07-08T15:04:02Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "price": "305.0",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R305.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "EB04-007",
