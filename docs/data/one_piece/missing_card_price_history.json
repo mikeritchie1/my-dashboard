@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T16:11:17Z",
+  "updated_at": "2026-07-22T17:59:24Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -81360,6 +81360,42 @@
       "stock": "In stock",
       "observed_on": "2026-07-22",
       "captured_at": "2026-07-22T16:10:51Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T17:58:34Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T17:58:34Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1850.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T17:58:34Z"
     }
   ]
 }
