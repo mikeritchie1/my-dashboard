@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T04:54:22Z",
+  "updated_at": "2026-07-22T07:28:35Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -81168,6 +81168,18 @@
       "stock": "In stock",
       "observed_on": "2026-07-22",
       "captured_at": "2026-07-22T04:54:02Z"
+    },
+    {
+      "card_number": "OP15-032",
+      "art_variant": "original",
+      "price": 120.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-op15-032-op15-032-adventure-on-kamis-island-foil",
+      "title": "Brook (OP15-032) (OP15-032) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T07:27:04Z"
     }
   ]
 }
