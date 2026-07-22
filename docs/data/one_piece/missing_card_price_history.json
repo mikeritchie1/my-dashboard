@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-22T14:51:26Z",
+  "updated_at": "2026-07-22T16:11:17Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -81312,6 +81312,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-22",
       "captured_at": "2026-07-22T14:50:59Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T16:10:22Z"
+    },
+    {
+      "card_number": "OP01-013",
+      "art_variant": "alternate",
+      "price": 580.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-alternate-art-one-piece-promotion-cards",
+      "title": "Sanji (Alternate Art) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T16:10:22Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 165.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T16:10:51Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 168.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-22",
+      "captured_at": "2026-07-22T16:10:51Z"
     }
   ]
 }
