@@ -206,9 +206,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.95,
+      "duration_seconds": 1.815,
       "item_count": 2,
-      "last_scraped_at": "2026-07-22T22:47:36.545207+00:00",
+      "last_scraped_at": "2026-07-22T23:49:57.990415+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
@@ -220,9 +220,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 22.241,
+      "duration_seconds": 23.482,
       "item_count": 117,
-      "last_scraped_at": "2026-07-22T22:47:56.797472+00:00",
+      "last_scraped_at": "2026-07-22T23:50:19.618384+00:00",
       "module": "one-piece",
       "source": "tanuki",
       "status": "ok"
@@ -234,9 +234,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.186,
+      "duration_seconds": 1.553,
       "item_count": 167,
-      "last_scraped_at": "2026-07-22T22:47:57.985753+00:00",
+      "last_scraped_at": "2026-07-22T23:50:21.173567+00:00",
       "module": "one-piece",
       "source": "products",
       "status": "ok"
@@ -688,9 +688,9 @@
         "--source",
         "bigbang"
       ],
-      "duration_seconds": 7.372,
+      "duration_seconds": 7.812,
       "item_count": 117,
-      "last_scraped_at": "2026-07-22T22:47:04.393718+00:00",
+      "last_scraped_at": "2026-07-22T23:49:28.819265+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -703,9 +703,9 @@
         "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.95,
+      "duration_seconds": 1.815,
       "item_count": 2,
-      "last_scraped_at": "2026-07-22T22:47:36.545207+00:00",
+      "last_scraped_at": "2026-07-22T23:49:57.990415+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
@@ -720,9 +720,9 @@
         "--source",
         "collectiverse"
       ],
-      "duration_seconds": 6.234,
+      "duration_seconds": 5.666,
       "item_count": 117,
-      "last_scraped_at": "2026-07-22T22:47:10.630444+00:00",
+      "last_scraped_at": "2026-07-22T23:49:34.487526+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -737,9 +737,9 @@
         "--source",
         "geekhaven"
       ],
-      "duration_seconds": 13.796,
+      "duration_seconds": 13.014,
       "item_count": 117,
-      "last_scraped_at": "2026-07-22T22:47:24.429046+00:00",
+      "last_scraped_at": "2026-07-22T23:49:47.503826+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -754,9 +754,9 @@
         "--source",
         "knightly"
       ],
-      "duration_seconds": 10.122,
+      "duration_seconds": 8.627,
       "item_count": 117,
-      "last_scraped_at": "2026-07-22T22:47:34.553525+00:00",
+      "last_scraped_at": "2026-07-22T23:49:56.133632+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -788,9 +788,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.186,
+      "duration_seconds": 1.553,
       "item_count": 167,
-      "last_scraped_at": "2026-07-22T22:47:57.985753+00:00",
+      "last_scraped_at": "2026-07-22T23:50:21.173567+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
@@ -805,9 +805,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 22.241,
+      "duration_seconds": 23.482,
       "item_count": 117,
-      "last_scraped_at": "2026-07-22T22:47:56.797472+00:00",
+      "last_scraped_at": "2026-07-22T23:50:19.618384+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -992,6 +992,6 @@
       "status": "error"
     }
   },
-  "updated_at": "2026-07-22T22:47:57.985753+00:00",
+  "updated_at": "2026-07-22T23:50:21.173567+00:00",
   "version": 1
 }
