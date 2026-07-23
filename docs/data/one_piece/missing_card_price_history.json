@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T10:08:40Z",
+  "updated_at": "2026-07-23T12:17:30Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -83100,6 +83100,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-23",
       "captured_at": "2026-07-23T10:08:22Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 150.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T12:16:14Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 4695.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T12:16:14Z"
     }
   ]
 }

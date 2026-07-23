@@ -1231,21 +1231,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "EB02-041",
-      "price": 145.0,
-      "title": "Merry Go [One Piece Promotion Cards]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R145.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
-      "image_url": "",
-      "art_variant": "original",
-      "scraped_at": "2026-07-08T01:15:45Z"
-    },
-    {
       "card_number": "EB02-017",
       "price": 149.0,
       "title": "Nami [Extra Booster: Anime 25th Collection]",
@@ -1259,6 +1244,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/629110.jpg?v=1752765998",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "price": 150.0,
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R150.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "image_url": "",
+      "art_variant": "original",
+      "scraped_at": "2026-07-08T01:15:45Z"
     },
     {
       "card_number": "OP14-096",
@@ -1349,21 +1349,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "OP03-013",
-      "price": 225.0,
-      "title": "Marco (Japanese 1st Anniversary Set) [One Piece Promotion Cards]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R225.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marco-japanese-1st-anniversary-set-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/536168_d98ad9d4-13ac-4b34-99de-b8f3799ef9fc.jpg?v=1763508515",
-      "art_variant": "original",
-      "scraped_at": "2026-07-02T14:52:34Z"
     },
     {
       "card_number": "EB02-035",
@@ -1529,21 +1514,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
       "art_variant": "original",
       "scraped_at": "2026-07-16T15:22:23Z"
-    },
-    {
-      "card_number": "OP01-022",
-      "price": 455.0,
-      "title": "Brook (Alternate Art) [One Piece Promotion Cards]",
-      "rarity": "Promo",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R455.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-alternate-art-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485269_593d4bc7-5dcc-4f45-895b-d0f2a08b148f.jpg?v=1763509121",
-      "art_variant": "alternate",
-      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "OP15-113",
@@ -1727,14 +1697,14 @@
     },
     {
       "card_number": "ST18-004",
-      "price": 4645.0,
+      "price": 4695.0,
       "title": "Zoro-Juurou (SP) [Legacy of the Master]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Legacy of the Master",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R4645.00",
+      "available_variants": "Near Mint Foil R4695.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/646566_6ff3f551-62c5-4c2d-a265-0b03b6d23163.jpg?v=1763510818",
       "art_variant": "original",
