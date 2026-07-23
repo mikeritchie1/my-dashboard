@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T16:20:24Z",
+  "updated_at": "2026-07-23T18:06:25Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -83220,6 +83220,66 @@
       "stock": "In stock",
       "observed_on": "2026-07-23",
       "captured_at": "2026-07-23T16:19:31Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 415.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T18:04:01Z"
+    },
+    {
+      "card_number": "ST15-003",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/kingdew-starter-deck-red-edward-newgate/p/688571470",
+      "title": "Kingdew [Starter Deck: Red Edward.Newgate]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T18:05:42Z"
+    },
+    {
+      "card_number": "ST21-012",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/brook-starter-deck-ex-gear-5/p/688571494",
+      "title": "Brook [Starter Deck EX: Gear 5]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T18:05:42Z"
+    },
+    {
+      "card_number": "ST21-016",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/gum-gum-dawn-whip-starter-deck-ex-gear-5/p/688571493",
+      "title": "Gum-Gum Dawn Whip [Starter Deck EX: Gear 5]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T18:05:42Z"
+    },
+    {
+      "card_number": "OP05-006",
+      "art_variant": "original",
+      "price": 40.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/koala-awakening-of-the-new-era/p/688571477",
+      "title": "Koala [Awakening of the New Era]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T18:05:42Z"
     }
   ]
 }
