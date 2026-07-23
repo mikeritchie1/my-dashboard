@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-23T21:52:32Z",
+  "updated_at": "2026-07-23T22:43:47Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -83748,6 +83748,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-23",
       "captured_at": "2026-07-23T21:52:10Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T22:42:49Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "art_variant": "alternate",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-23",
+      "captured_at": "2026-07-23T22:42:49Z"
     }
   ]
 }
