@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T10:02:59Z",
+  "updated_at": "2026-07-24T12:10:12Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -85392,6 +85392,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-24",
       "captured_at": "2026-07-24T10:02:37Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 155.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-24",
+      "captured_at": "2026-07-24T12:09:14Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 255.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-24",
+      "captured_at": "2026-07-24T12:09:14Z"
     }
   ]
 }
