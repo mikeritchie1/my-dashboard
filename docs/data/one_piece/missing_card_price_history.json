@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-24T18:09:11Z",
+  "updated_at": "2026-07-24T20:09:27Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -85524,6 +85524,66 @@
       "stock": "In stock",
       "observed_on": "2026-07-24",
       "captured_at": "2026-07-24T18:08:19Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-24",
+      "captured_at": "2026-07-24T20:07:07Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "alternate",
+      "price": 925.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-24",
+      "captured_at": "2026-07-24T20:07:07Z"
+    },
+    {
+      "card_number": "EB02-044",
+      "art_variant": "original",
+      "price": 60.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/688687311",
+      "title": "Sengoku [Extra Booster: Anime 25th Collection]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-24",
+      "captured_at": "2026-07-24T20:08:53Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 75.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/law-bepo-starter-deck-green-jewelry-bonney/p/688699904",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-24",
+      "captured_at": "2026-07-24T20:08:53Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/688687266",
+      "title": "Hody Jones [Wings of the Captain]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-24",
+      "captured_at": "2026-07-24T20:08:53Z"
     }
   ]
 }

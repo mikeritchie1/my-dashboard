@@ -631,6 +631,21 @@
       "scraped_at": "2026-07-20T17:14:14Z"
     },
     {
+      "card_number": "OP10-071",
+      "price": "25.0",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R25.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
+    },
+    {
       "card_number": "ST21-017",
       "price": "25.0",
       "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
@@ -689,21 +704,6 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
       "art_variant": "original",
       "scraped_at": "2026-07-18T19:56:37Z"
-    },
-    {
-      "card_number": "OP10-071",
-      "price": "30.0",
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R30.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "OP15-040",
@@ -850,10 +850,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/687788065",
+      "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/688687311",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/629142_1024x1024_2x_loW6hCHwK.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-07-17T18:47:15Z"
+      "scraped_at": "2026-07-24T20:08:53Z"
     },
     {
       "card_number": "OP08-047",
@@ -985,10 +985,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/law-bepo-starter-deck-green-jewelry-bonney/p/687805365",
+      "url": "https://www.bobshop.co.za/law-bepo-starter-deck-green-jewelry-bonney/p/688699904",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634621_1024x1024_2x_XjrEylz3I.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-07-17T19:55:00Z"
+      "scraped_at": "2026-07-24T20:08:53Z"
     },
     {
       "card_number": "ST12-003",
@@ -1150,10 +1150,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/687788020",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/688607792",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
       "art_variant": "original",
-      "scraped_at": "2026-07-17T18:47:15Z"
+      "scraped_at": "2026-07-24T10:02:29Z"
     },
     {
       "card_number": "OP06-035",
@@ -1165,10 +1165,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/688607792",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/688687266",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
       "art_variant": "original",
-      "scraped_at": "2026-07-24T10:02:29Z"
+      "scraped_at": "2026-07-24T20:08:53Z"
     },
     {
       "card_number": "OP10-071",
@@ -1517,14 +1517,14 @@
     },
     {
       "card_number": "OP15-092",
-      "price": "940.0",
+      "price": "925.0",
       "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R940.00",
+      "available_variants": "Near Mint R925.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685446.jpg?v=1780510315",
       "art_variant": "alternate",
