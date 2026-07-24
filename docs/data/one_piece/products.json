@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-07-24T07:24:23.026090Z",
+  "scraped_at": "2026-07-24T10:03:01.976056Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2146,6 +2146,20 @@
       "added_at": "2026-07-15T04:36:06.490459Z"
     },
     {
+      "title": "Double Pack Set Vol.12 [DP-12]",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-08-28",
+      "release_date_text": "August 28, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/dp12.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/23/bX2KjHQowPgTjQkO/img_item01.webp?_=06fdfff4784a13e298ed18922a7031af",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/dp12_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-24T10:02:04.085607Z"
+    },
+    {
       "title": "ONE PIECE Heroines Special Set",
       "category": "other",
       "category_label": "OTHER",
@@ -2200,6 +2214,20 @@
       "image_local_url": "./data/one_piece/product_images/collection-drama002_img-item01.webp",
       "is_released": false,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "Chinese 3rd Anniversary Set",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/3rd_anniversary_set_cn.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/24/YIpBK0MBL8U3BwY7/img_item01_pb.webp?_=06fdfff4784a13e298ed18922a7031af",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/3rd-anniversary-set-cn_img-item01-pb.webp",
+      "is_released": false,
+      "added_at": "2026-07-24T10:02:04.085607Z"
     },
     {
       "title": "Limited Card Sleeve",
@@ -2312,6 +2340,20 @@
       "image_local_url": "./data/one_piece/product_images/cardcollection29th_img-products-en.webp",
       "is_released": false,
       "added_at": "2026-07-02T06:29:04.613424Z"
+    },
+    {
+      "title": "Premium Card Collection -Ace & Sabo & Luffy-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/card_collection_asl.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/24/b3Ga6ynPa0qmbNcH/img_item01_pb.webp?_=06fdfff4784a13e298ed18922a7031af",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/card-collection-asl_img-item01-pb.webp",
+      "is_released": false,
+      "added_at": "2026-07-24T10:02:04.085607Z"
     },
     {
       "title": "PREMIUM CARD COLLECTION -BEST SELECTION vol.7-",
