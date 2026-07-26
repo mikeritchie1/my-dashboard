@@ -1276,6 +1276,21 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
+      "card_number": "DON!!",
+      "price": 200.0,
+      "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R200.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686651_2317e2cd-3b7e-4593-87f6-3a43c81196de.jpg?v=1777210834",
+      "art_variant": "original",
+      "scraped_at": "2026-07-11T15:41:06Z"
+    },
+    {
       "card_number": "OP10-005",
       "price": 200.0,
       "title": "Sanji [Royal Blood]",
@@ -1289,21 +1304,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
       "art_variant": "original",
       "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
-      "card_number": "DON!!",
-      "price": 205.0,
-      "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R205.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686651_2317e2cd-3b7e-4593-87f6-3a43c81196de.jpg?v=1777210834",
-      "art_variant": "original",
-      "scraped_at": "2026-07-11T15:41:06Z"
     },
     {
       "card_number": "EB02-035",
@@ -1442,14 +1442,14 @@
     },
     {
       "card_number": "OP15-119",
-      "price": 445.0,
+      "price": 440.0,
       "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R445.00",
+      "available_variants": "Near Mint R440.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
       "art_variant": "original",
@@ -1501,21 +1501,6 @@
       "scraped_at": "2026-07-16T16:57:58Z"
     },
     {
-      "card_number": "OP15-078",
-      "price": 1150.0,
-      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R1150.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685430_d96c0f15-aaa4-49bf-94ee-47e2ce863b72.jpg?v=1780510307",
-      "art_variant": "alternate",
-      "scraped_at": "2026-07-16T15:22:23Z"
-    },
-    {
       "card_number": "OP14-084",
       "price": 1190.0,
       "title": "Ms. All Sunday (Alternate Art) (OP14-084) - The Azure Sea's Seven Foil",
@@ -1529,6 +1514,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/666913.jpg?v=1768473878",
       "art_variant": "alternate",
       "scraped_at": "2026-07-01T11:22:59Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "price": 1215.0,
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R1215.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685430_d96c0f15-aaa4-49bf-94ee-47e2ce863b72.jpg?v=1780510307",
+      "art_variant": "alternate",
+      "scraped_at": "2026-07-16T15:22:23Z"
     },
     {
       "card_number": "OP16-032",
