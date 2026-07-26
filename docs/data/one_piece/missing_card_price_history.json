@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-26T12:49:58Z",
+  "updated_at": "2026-07-26T14:21:22Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -88824,6 +88824,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-26",
       "captured_at": "2026-07-26T09:58:18Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 250.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-26",
+      "captured_at": "2026-07-26T14:20:17Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 4730.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-26",
+      "captured_at": "2026-07-26T14:20:17Z"
+    },
+    {
+      "card_number": "ST01-006",
+      "art_variant": "original",
+      "price": 7.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/688901053",
+      "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-26",
+      "captured_at": "2026-07-26T14:20:50Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/688901056",
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-07-26",
+      "captured_at": "2026-07-26T14:20:50Z"
     }
   ]
 }
