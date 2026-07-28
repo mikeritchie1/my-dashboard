@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-28T15:08:59Z",
+  "updated_at": "2026-07-28T17:15:26Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -93768,6 +93768,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-28",
       "captured_at": "2026-07-28T15:08:36Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 3645.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-28",
+      "captured_at": "2026-07-28T17:14:27Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 4800.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-sp-legacy-of-the-master",
+      "title": "Zoro-Juurou (SP) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-28",
+      "captured_at": "2026-07-28T17:14:27Z"
     }
   ]
 }
