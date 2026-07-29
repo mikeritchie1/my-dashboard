@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T21:44:01Z",
+  "updated_at": "2026-07-29T22:44:39Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -95892,6 +95892,54 @@
       "stock": "In stock",
       "observed_on": "2026-07-29",
       "captured_at": "2026-07-29T21:43:37Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-29",
+      "captured_at": "2026-07-29T22:43:48Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 370.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-29",
+      "captured_at": "2026-07-29T22:43:48Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 785.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-foxy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Foxy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-29",
+      "captured_at": "2026-07-29T22:43:48Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-29",
+      "captured_at": "2026-07-29T22:43:48Z"
     }
   ]
 }
