@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T10:07:58Z",
+  "updated_at": "2026-07-30T12:20:20Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -97620,6 +97620,30 @@
       "stock": "In stock",
       "observed_on": "2026-07-30",
       "captured_at": "2026-07-30T10:07:37Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 375.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-30",
+      "captured_at": "2026-07-30T12:19:20Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "alternate",
+      "price": 840.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-30",
+      "captured_at": "2026-07-30T12:19:20Z"
     }
   ]
 }
