@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-31T01:21:20Z",
+  "updated_at": "2026-07-31T05:20:29Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -99708,6 +99708,150 @@
       "stock": "In stock",
       "observed_on": "2026-07-31",
       "captured_at": "2026-07-31T01:20:30Z"
+    },
+    {
+      "card_number": "OP15-032",
+      "art_variant": "original",
+      "price": 95.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-op15-032-op15-032-adventure-on-kamis-island-foil",
+      "title": "Brook (OP15-032) (OP15-032) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:19:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-egghead-gold-the-azure-seas-seven-foil",
+      "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:19:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 11.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-dracule-mihawk-the-azure-seas-seven",
+      "title": "DON!! Card (Dracule Mihawk) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nico-robin-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nico Robin) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "ST12-003",
+      "art_variant": "original",
+      "price": 75.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards",
+      "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "original",
+      "price": 144.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 149.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 158.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 213.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-the-azure-seas-seven",
+      "title": "Perona [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 342.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/mamaragan-adventure-on-kamis-island",
+      "title": "Mamaragan [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 755.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-07-31",
+      "captured_at": "2026-07-31T05:20:03Z"
     }
   ]
 }
