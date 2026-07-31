@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-07-31T08:25:57.629098Z",
+  "scraped_at": "2026-07-31T11:15:10.708336Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2158,6 +2158,20 @@
       "image_local_url": "./data/one_piece/product_images/dp12_img-item01.webp",
       "is_released": false,
       "added_at": "2026-07-24T10:02:04.085607Z"
+    },
+    {
+      "title": "OFFICIAL CARD SLEEVES 16",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-08-28",
+      "release_date_text": "August 28, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/sleeve042.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/products/2026/07/21/4qVkAXP7VO1CiqH2/img_item01.webp?_=3f6f3c895252d7d330dbd79a8e7ed508",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/sleeve042_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-07-31T11:14:02.716338Z"
     },
     {
       "title": "ONE PIECE Heroines Special Set",
