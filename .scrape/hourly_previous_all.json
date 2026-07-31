@@ -1225,10 +1225,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/688607792",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/688687266",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
       "art_variant": "original",
-      "scraped_at": "2026-07-24T10:02:29Z"
+      "scraped_at": "2026-07-24T20:08:53Z"
     },
     {
       "card_number": "OP06-035",
@@ -1240,10 +1240,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/688687266",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/689451734",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
       "art_variant": "original",
-      "scraped_at": "2026-07-24T20:08:53Z"
+      "scraped_at": "2026-07-31T08:25:19Z"
     },
     {
       "card_number": "OP10-071",
@@ -1276,21 +1276,6 @@
       "scraped_at": "2026-07-30T20:12:47Z"
     },
     {
-      "card_number": "OP14-104",
-      "price": "144.0",
-      "title": "Gecko Moria (OP14-104) [The Azure Sea's Seven]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Azure Sea's Seven",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R144.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-the-azure-seas-seven",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666574.jpg?v=1769205360",
-      "art_variant": "original",
-      "scraped_at": "2026-07-30T14:58:06Z"
-    },
-    {
       "card_number": "EB02-041",
       "price": "146.0",
       "title": "Merry Go [One Piece Promotion Cards]",
@@ -1321,21 +1306,6 @@
       "scraped_at": "2026-07-26T17:49:26Z"
     },
     {
-      "card_number": "EB02-041",
-      "price": "155.0",
-      "title": "Merry Go [One Piece Promotion Cards]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R155.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
-      "image_url": "",
-      "art_variant": "original",
-      "scraped_at": "2026-07-08T01:15:45Z"
-    },
-    {
       "card_number": "ST24-004",
       "price": "158.0",
       "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
@@ -1351,6 +1321,36 @@
       "scraped_at": "2026-07-26T16:41:35Z"
     },
     {
+      "card_number": "EB02-041",
+      "price": "160.0",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R160.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "image_url": "",
+      "art_variant": "original",
+      "scraped_at": "2026-07-08T01:15:45Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "price": "160.0",
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R160.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685348_1c34ef12-3abb-4de5-a56f-d6f38233a09f.jpg?v=1780509813",
+      "art_variant": "alternate",
+      "scraped_at": "2026-07-11T15:41:06Z"
+    },
+    {
       "card_number": "ST23-001",
       "price": "160.0",
       "title": "Uta [Starter Deck: Red Shanks]",
@@ -1364,21 +1364,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "OP15-008",
-      "price": "165.0",
-      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R165.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685348_1c34ef12-3abb-4de5-a56f-d6f38233a09f.jpg?v=1780509813",
-      "art_variant": "alternate",
-      "scraped_at": "2026-07-11T15:41:06Z"
     },
     {
       "card_number": "EB02-017",
@@ -1502,14 +1487,14 @@
     },
     {
       "card_number": "EB02-052",
-      "price": "240.0",
+      "price": "235.0",
       "title": "Enel [Extra Booster: Anime 25th Collection]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Extra Booster: Anime 25th Collection",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R240.00",
+      "available_variants": "Near Mint Foil R235.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/629153.jpg?v=1763500766",
       "art_variant": "original",
@@ -1682,14 +1667,14 @@
     },
     {
       "card_number": "OP16-032",
-      "price": "1180.0",
+      "price": "1165.0",
       "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R1180.00",
+      "available_variants": "Near Mint R1165.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/695309.jpg?v=1780708569",
       "art_variant": "alternate",
