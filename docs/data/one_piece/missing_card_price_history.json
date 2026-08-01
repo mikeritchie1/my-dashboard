@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T11:08:45Z",
+  "updated_at": "2026-08-01T12:46:05Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -102048,6 +102048,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-01",
       "captured_at": "2026-08-01T11:07:49Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-01",
+      "captured_at": "2026-08-01T12:45:07Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perona-op14-033-the-azure-seas-seven-foil",
+      "title": "Perona (OP14-033) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-01",
+      "captured_at": "2026-08-01T12:45:07Z"
     }
   ]
 }
