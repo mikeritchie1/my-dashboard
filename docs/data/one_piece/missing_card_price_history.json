@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-01T18:46:39Z",
+  "updated_at": "2026-08-01T20:02:57Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -102144,6 +102144,54 @@
       "stock": "In stock",
       "observed_on": "2026-08-01",
       "captured_at": "2026-08-01T15:48:50Z"
+    },
+    {
+      "card_number": "ST25-001",
+      "art_variant": "original",
+      "price": 18.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/alvida-starter-deck-blue-buggy/p/689634721",
+      "title": "Alvida [Starter Deck: Blue Buggy]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-01",
+      "captured_at": "2026-08-01T20:02:28Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/689634730",
+      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-01",
+      "captured_at": "2026-08-01T20:02:28Z"
+    },
+    {
+      "card_number": "ST27-003",
+      "art_variant": "original",
+      "price": 90.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/689634714",
+      "title": "Kuzan [Starter Deck: Black Marshall.D.Teach]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-01",
+      "captured_at": "2026-08-01T20:02:28Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 100.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/sanji-royal-blood/p/689634743",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-01",
+      "captured_at": "2026-08-01T20:02:28Z"
     }
   ]
 }
