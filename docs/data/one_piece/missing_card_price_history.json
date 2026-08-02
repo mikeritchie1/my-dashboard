@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T16:42:32Z",
+  "updated_at": "2026-08-02T17:49:08Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -104124,6 +104124,54 @@
       "stock": "In stock",
       "observed_on": "2026-08-02",
       "captured_at": "2026-08-02T15:49:27Z"
+    },
+    {
+      "card_number": "OP16-108",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shiryu-the-time-of-battle",
+      "title": "Shiryu [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-02",
+      "captured_at": "2026-08-02T17:48:46Z"
+    },
+    {
+      "card_number": "OP15-040",
+      "art_variant": "original",
+      "price": 11.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/viola-adventure-on-kamis-island",
+      "title": "Viola [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-02",
+      "captured_at": "2026-08-02T17:48:46Z"
+    },
+    {
+      "card_number": "ST27-003",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kuzan-starter-deck-black-marshall-d-teach",
+      "title": "Kuzan [Starter Deck: Black Marshall.D.Teach]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-02",
+      "captured_at": "2026-08-02T17:48:46Z"
+    },
+    {
+      "card_number": "OP16-119",
+      "art_variant": "original",
+      "price": 356.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/marshall-d-teach-the-time-of-battle-1",
+      "title": "Marshall.D.Teach [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-02",
+      "captured_at": "2026-08-02T17:48:46Z"
     }
   ]
 }
