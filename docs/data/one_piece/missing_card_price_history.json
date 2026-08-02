@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T05:12:31Z",
+  "updated_at": "2026-08-02T07:58:10Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -103908,6 +103908,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-02",
       "captured_at": "2026-08-02T05:12:07Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-02",
+      "captured_at": "2026-08-02T07:57:13Z"
     }
   ]
 }
