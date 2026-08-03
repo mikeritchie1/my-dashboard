@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-03T22:46:54Z",
+  "updated_at": "2026-08-03T23:56:45Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -106392,6 +106392,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-03",
       "captured_at": "2026-08-03T22:45:50Z"
+    },
+    {
+      "card_number": "ST03-007",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sentomaru-premium-card-collection-bandai-card-games-fest-23-24-edition-one-piece-promotion-cards",
+      "title": "Sentomaru (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-03",
+      "captured_at": "2026-08-03T23:55:54Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 1060.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-03",
+      "captured_at": "2026-08-03T23:55:54Z"
     }
   ]
 }
