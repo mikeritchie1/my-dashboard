@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-04T10:24:07Z",
+  "updated_at": "2026-08-04T12:51:17Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -108276,6 +108276,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-04",
       "captured_at": "2026-08-04T10:23:40Z"
+    },
+    {
+      "card_number": "OP15-032",
+      "art_variant": "original",
+      "price": 86.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/brook-adventure-on-kamis-island-1",
+      "title": "Brook [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-04",
+      "captured_at": "2026-08-04T12:50:50Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 134.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-starter-deck-ex-gear-5",
+      "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-04",
+      "captured_at": "2026-08-04T12:50:50Z"
     }
   ]
 }
