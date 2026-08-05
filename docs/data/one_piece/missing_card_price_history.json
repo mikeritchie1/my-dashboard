@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T12:30:08Z",
+  "updated_at": "2026-08-05T17:15:37Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -110232,6 +110232,162 @@
       "stock": "In stock",
       "observed_on": "2026-08-05",
       "captured_at": "2026-08-05T10:19:10Z"
+    },
+    {
+      "card_number": "OP12-118",
+      "art_variant": "original",
+      "price": 380.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jewelry-bonney-legacy-of-the-master",
+      "title": "Jewelry Bonney [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:14:41Z"
+    },
+    {
+      "card_number": "P-033",
+      "art_variant": "original",
+      "price": 1399.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-shonen-jump-2026-p-159-one-piece-japanese-promo-copy",
+      "title": "Monkey.D.Luffy [Shonen Jump] P-033 One Piece Japanese Promo",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:14:41Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 3000.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-gen-con-2023-one-piece-promotion-cards",
+      "title": "Monkey.D.Luffy (Gen Con 2023) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:14:41Z"
+    },
+    {
+      "card_number": "OP01-100",
+      "art_variant": "original",
+      "price": 3205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-sp-awakening-of-the-new-era",
+      "title": "Enel (SP) [Awakening of the New Era]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:14:41Z"
+    },
+    {
+      "card_number": "OP15-032",
+      "art_variant": "original",
+      "price": 88.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/brook-adventure-on-kamis-island-1",
+      "title": "Brook [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 141.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-starter-deck-ex-gear-5",
+      "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 154.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 168.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 177.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 207.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-the-azure-seas-seven",
+      "title": "Perona [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 245.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 733.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T17:15:11Z"
     }
   ]
 }
