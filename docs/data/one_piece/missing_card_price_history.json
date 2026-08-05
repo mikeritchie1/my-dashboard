@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T04:50:59Z",
+  "updated_at": "2026-08-05T07:29:22Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -110124,6 +110124,54 @@
       "stock": "In stock",
       "observed_on": "2026-08-05",
       "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T07:28:32Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T07:28:32Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 385.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T07:28:32Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "alternate",
+      "price": 800.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T07:28:32Z"
     }
   ]
 }
