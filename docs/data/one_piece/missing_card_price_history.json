@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T22:02:49Z",
+  "updated_at": "2026-08-05T23:44:35Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -110412,6 +110412,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-05",
       "captured_at": "2026-08-05T22:01:48Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 200.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T23:43:40Z"
+    },
+    {
+      "card_number": "OP12-118",
+      "art_variant": "original",
+      "price": 365.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jewelry-bonney-legacy-of-the-master",
+      "title": "Jewelry Bonney [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T23:43:40Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "alternate",
+      "price": 710.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T23:43:40Z"
     }
   ]
 }
