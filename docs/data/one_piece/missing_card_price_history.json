@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T19:07:50Z",
+  "updated_at": "2026-08-05T20:52:21Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -110388,6 +110388,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-05",
       "captured_at": "2026-08-05T17:15:11Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 169.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T20:51:57Z"
     }
   ]
 }
