@@ -931,21 +931,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "ST03-007",
-      "price": "55.0",
-      "title": "Sentomaru (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
-      "rarity": "Common",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R55.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sentomaru-premium-card-collection-bandai-card-games-fest-23-24-edition-one-piece-promotion-cards",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564254.jpg?v=1763498335",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "DON!!",
       "price": "57.0",
       "title": "DON!! Card (Nico Robin) [Extra Booster: One Piece Heroines Edition]",
@@ -1004,6 +989,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/558075_1024x1024_2x_wfByjhWBU.jpg",
       "art_variant": "original",
       "scraped_at": "2026-07-30T20:12:47Z"
+    },
+    {
+      "card_number": "ST03-007",
+      "price": "60.0",
+      "title": "Sentomaru (Premium Card Collection -BANDAI CARD GAMES Fest. 23-24 Edition-) [One Piece Promotion Cards]",
+      "rarity": "Common",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R60.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sentomaru-premium-card-collection-bandai-card-games-fest-23-24-edition-one-piece-promotion-cards",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564254.jpg?v=1763498335",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "DON!!",
@@ -1712,14 +1712,14 @@
     },
     {
       "card_number": "OP16-032",
-      "price": "1060.0",
+      "price": "1045.0",
       "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R1060.00",
+      "available_variants": "Near Mint R1045.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/695309.jpg?v=1780708569",
       "art_variant": "alternate",
