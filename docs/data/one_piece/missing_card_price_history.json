@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-05T01:13:26Z",
+  "updated_at": "2026-08-05T04:50:59Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -109944,6 +109944,186 @@
       "stock": "In stock",
       "observed_on": "2026-08-05",
       "captured_at": "2026-08-05T01:12:33Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:49:58Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 380.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:49:58Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:49:58Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-luffy-adventure-on-kamis-island",
+      "title": "DON!! Card (Luffy) [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 56.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nico-robin-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nico Robin) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "ST12-003",
+      "art_variant": "original",
+      "price": 73.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards",
+      "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "OP15-032",
+      "art_variant": "original",
+      "price": 85.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/brook-adventure-on-kamis-island-1",
+      "title": "Brook [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 136.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-starter-deck-ex-gear-5",
+      "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 148.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 163.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 175.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 179.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 196.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-the-azure-seas-seven",
+      "title": "Perona [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 231.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 588.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-05",
+      "captured_at": "2026-08-05T04:50:34Z"
     }
   ]
 }
