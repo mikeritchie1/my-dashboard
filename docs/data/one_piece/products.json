@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-08-07T01:39:49.376989Z",
+  "scraped_at": "2026-08-07T04:16:44.438032Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2144,6 +2144,20 @@
       "image_local_url": "./data/one_piece/product_images/op17_img-item01.webp",
       "is_released": false,
       "added_at": "2026-07-15T04:36:06.490459Z"
+    },
+    {
+      "title": "BOOSTER PACK -THE WORLD’S STRONGEST WARRIORS- [OP-17]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2026-08-28",
+      "release_date_text": "August 28, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/boosters/op17/",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/10/UZto2ePj0hiv3KkV/img_item01.webp?_=9ff5f4418637f5201d798c63c1a59d73",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/op17_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-08-07T04:15:54.017923Z"
     },
     {
       "title": "Double Pack Set Vol.12 [DP-12]",
