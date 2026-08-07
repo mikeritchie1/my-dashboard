@@ -1255,21 +1255,6 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/689451734",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
-      "art_variant": "original",
-      "scraped_at": "2026-07-31T08:25:19Z"
-    },
-    {
-      "card_number": "OP06-035",
-      "price": 125.0,
-      "title": "Hody Jones [Wings of the Captain]",
-      "rarity": "Super Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
       "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/689537952",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/539772_1024x1024_2x_IkCMlmur7.webp",
       "art_variant": "original",
@@ -1591,6 +1576,21 @@
       "scraped_at": "2026-07-08T15:04:02Z"
     },
     {
+      "card_number": "OP15-078",
+      "price": 350.0,
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R350.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685429.jpg?v=1780510304",
+      "art_variant": "original",
+      "scraped_at": "2026-07-20T17:14:14Z"
+    },
+    {
       "card_number": "OP12-118",
       "price": 360.0,
       "title": "Jewelry Bonney [Legacy of the Master]",
@@ -1604,21 +1604,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/643865.jpg?v=1768473799",
       "art_variant": "original",
       "scraped_at": "2026-08-05T17:14:41Z"
-    },
-    {
-      "card_number": "OP15-078",
-      "price": 360.0,
-      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R360.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685429.jpg?v=1780510304",
-      "art_variant": "original",
-      "scraped_at": "2026-07-20T17:14:14Z"
     },
     {
       "card_number": "ST05-004",
