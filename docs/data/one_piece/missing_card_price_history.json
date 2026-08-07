@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-07T08:03:18Z",
+  "updated_at": "2026-08-07T09:46:42Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -114612,6 +114612,102 @@
       "stock": "In stock",
       "observed_on": "2026-08-07",
       "captured_at": "2026-08-07T08:02:24Z"
+    },
+    {
+      "card_number": "OP15-040",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/viola-adventure-on-kamis-island",
+      "title": "Viola [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 59.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nico-robin-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nico Robin) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 146.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-starter-deck-ex-gear-5",
+      "title": "Monkey.D.Luffy [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 149.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 159.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 167.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 202.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-the-azure-seas-seven",
+      "title": "Perona [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 244.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-07",
+      "captured_at": "2026-08-07T09:46:15Z"
     }
   ]
 }
