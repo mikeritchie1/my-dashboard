@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T15:16:12Z",
+  "updated_at": "2026-08-08T16:16:18Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -116628,6 +116628,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-08",
       "captured_at": "2026-08-08T15:15:47Z"
+    },
+    {
+      "card_number": "OP16-018",
+      "art_variant": "original",
+      "price": 1.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/rockstar-the-time-of-battle",
+      "title": "Rockstar [The Time of Battle]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-08",
+      "captured_at": "2026-08-08T16:15:58Z"
     }
   ]
 }
