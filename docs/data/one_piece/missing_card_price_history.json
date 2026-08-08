@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-08T07:38:53Z",
+  "updated_at": "2026-08-08T08:24:27Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -116412,6 +116412,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-08",
       "captured_at": "2026-08-08T04:00:44Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-08",
+      "captured_at": "2026-08-08T08:23:34Z"
     }
   ]
 }

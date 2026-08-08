@@ -1351,21 +1351,6 @@
       "scraped_at": "2026-07-11T15:41:06Z"
     },
     {
-      "card_number": "OP10-005",
-      "price": 155.0,
-      "title": "Sanji [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R155.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "OP14-096",
       "price": 155.0,
       "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
@@ -1379,6 +1364,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/671427_c9df08cc-8a36-441b-a331-d2c21326aeb4.jpg?v=1768474740",
       "art_variant": "original",
       "scraped_at": "2026-08-03T15:33:35Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "price": 160.0,
+      "title": "Sanji [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R160.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "ST24-004",
