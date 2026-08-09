@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T20:16:45Z",
+  "updated_at": "2026-08-09T21:19:07Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -118452,6 +118452,66 @@
       "stock": "In stock",
       "observed_on": "2026-08-09",
       "captured_at": "2026-08-09T20:15:55Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 165.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T21:18:23Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1020.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T21:18:23Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 139.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T21:18:48Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 152.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T21:18:48Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 161.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T21:18:48Z"
     }
   ]
 }
