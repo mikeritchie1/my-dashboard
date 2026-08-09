@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-09T00:39:26Z",
+  "updated_at": "2026-08-09T02:54:56Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -118080,6 +118080,54 @@
       "stock": "In stock",
       "observed_on": "2026-08-09",
       "captured_at": "2026-08-09T00:38:33Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T02:54:03Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
+      "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T02:54:03Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 165.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T02:54:03Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 375.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-09",
+      "captured_at": "2026-08-09T02:54:03Z"
     }
   ]
 }
