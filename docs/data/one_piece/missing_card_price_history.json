@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T14:09:51Z",
+  "updated_at": "2026-08-10T15:46:12Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -120132,6 +120132,54 @@
       "stock": "In stock",
       "observed_on": "2026-08-10",
       "captured_at": "2026-08-10T09:02:58Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 8.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-legacy-of-the-master",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-10",
+      "captured_at": "2026-08-10T15:45:46Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 171.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-10",
+      "captured_at": "2026-08-10T15:45:46Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 182.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-10",
+      "captured_at": "2026-08-10T15:45:46Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 219.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-the-azure-seas-seven",
+      "title": "Perona [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-10",
+      "captured_at": "2026-08-10T15:45:46Z"
     }
   ]
 }
