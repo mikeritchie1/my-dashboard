@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T18:42:21Z",
+  "updated_at": "2026-08-11T19:51:31Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -122112,6 +122112,66 @@
       "stock": "In stock",
       "observed_on": "2026-08-11",
       "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T19:50:46Z"
+    },
+    {
+      "card_number": "OP16-108",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiryu-op16-108-the-time-of-battle-foil",
+      "title": "Shiryu (OP16-108) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T19:50:46Z"
+    },
+    {
+      "card_number": "OP16-042",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/prisoner-of-impel-down-op16-042-the-time-of-battle-foil",
+      "title": "Prisoner of Impel Down (OP16-042) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T19:50:46Z"
+    },
+    {
+      "card_number": "OP16-108",
+      "art_variant": "original",
+      "price": 185.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiryu-full-art-op16-108-the-time-of-battle-foil",
+      "title": "Shiryu (Full Art) (OP16-108) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T19:50:46Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 935.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T19:50:46Z"
     }
   ]
 }
