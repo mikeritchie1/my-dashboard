@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T08:00:05Z",
+  "updated_at": "2026-08-11T08:56:43Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -121824,6 +121824,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-11",
       "captured_at": "2026-08-11T06:40:41Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "original",
+      "price": 45.0,
+      "store": "CollectiVerse",
+      "url": "https://www.bobshop.co.za/one-piece-trading-card-game-carrot-op08-023-sr-japanese-foil-nm/p/690945222",
+      "title": "One Piece Trading Card Game - Carrot OP08-023 SR - Japanese Foil - NM",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T08:52:04Z"
     }
   ]
 }
