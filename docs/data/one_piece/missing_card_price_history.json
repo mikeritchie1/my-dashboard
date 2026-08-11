@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T14:09:47Z",
+  "updated_at": "2026-08-11T15:45:42Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -121968,6 +121968,150 @@
       "stock": "In stock",
       "observed_on": "2026-08-11",
       "captured_at": "2026-08-11T09:45:54Z"
+    },
+    {
+      "card_number": "ST29-014",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/roronoa-zoro-starter-deck-egghead",
+      "title": "Roronoa Zoro [Starter Deck: Egghead]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 27.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-uta-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Uta) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 47.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-boa-hancock-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Boa Hancock) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "ST12-003",
+      "art_variant": "original",
+      "price": 68.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/dracule-mihawk-illustration-box-vol-4-one-piece-promotion-cards",
+      "title": "Dracule Mihawk (Illustration Box Vol.4) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 141.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 151.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 184.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 188.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 204.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 218.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-the-azure-seas-seven",
+      "title": "Perona [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 254.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 684.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T15:45:17Z"
     }
   ]
 }
