@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T21:32:27Z",
+  "updated_at": "2026-08-11T22:28:26Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -122232,6 +122232,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-11",
       "captured_at": "2026-08-11T21:32:07Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 120.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T22:27:36Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 920.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T22:27:36Z"
+    },
+    {
+      "card_number": "OP14-084",
+      "art_variant": "alternate",
+      "price": 1125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ms-all-sunday-alternate-art-op14-084-the-azure-seas-seven-foil",
+      "title": "Ms. All Sunday (Alternate Art) (OP14-084) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T22:27:36Z"
     }
   ]
 }
