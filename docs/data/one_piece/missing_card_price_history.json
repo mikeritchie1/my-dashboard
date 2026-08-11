@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-11T04:10:23Z",
+  "updated_at": "2026-08-11T05:44:50Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -121800,6 +121800,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-11",
       "captured_at": "2026-08-11T04:09:52Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 2145.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-11",
+      "captured_at": "2026-08-11T05:43:58Z"
     }
   ]
 }
