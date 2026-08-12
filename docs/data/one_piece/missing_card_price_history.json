@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T00:46:59Z",
+  "updated_at": "2026-08-12T03:16:01Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -123588,6 +123588,90 @@
       "stock": "In stock",
       "observed_on": "2026-08-12",
       "captured_at": "2026-08-12T00:46:17Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 375.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T03:15:06Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 10.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-royal-blood",
+      "title": "DON!! Card (Alternate Art) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T03:15:38Z"
+    },
+    {
+      "card_number": "P-026",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/morgan-pirates-party-vol-2-one-piece-promotion-cards",
+      "title": "Morgan (Pirates Party Vol. 2) [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T03:15:38Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 28.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-uta-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Uta) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T03:15:38Z"
+    },
+    {
+      "card_number": "ST24-004",
+      "art_variant": "original",
+      "price": 187.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/law-bepo-starter-deck-green-jewelry-bonney",
+      "title": "Law & Bepo [Starter Deck: GREEN Jewelry Bonney]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T03:15:38Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 188.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T03:15:38Z"
+    },
+    {
+      "card_number": "OP14-033",
+      "art_variant": "original",
+      "price": 227.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/perona-the-azure-seas-seven",
+      "title": "Perona [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T03:15:38Z"
     }
   ]
 }
