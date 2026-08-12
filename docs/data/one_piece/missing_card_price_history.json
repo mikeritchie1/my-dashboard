@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T09:52:50Z",
+  "updated_at": "2026-08-12T10:47:26Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -123888,6 +123888,78 @@
       "stock": "In stock",
       "observed_on": "2026-08-12",
       "captured_at": "2026-08-12T09:52:21Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T10:46:40Z"
+    },
+    {
+      "card_number": "OP16-056",
+      "art_variant": "original",
+      "price": 120.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-3galdino-056-op16-056-the-time-of-battle-foil",
+      "title": "Mr.3(Galdino) (056) (OP16-056) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T10:46:40Z"
+    },
+    {
+      "card_number": "OP16-119",
+      "art_variant": "original",
+      "price": 385.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-op16-119-the-time-of-battle-foil",
+      "title": "Marshall.D.Teach (119) (OP16-119) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T10:46:40Z"
+    },
+    {
+      "card_number": "OP16-118",
+      "art_variant": "original",
+      "price": 450.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-118-op16-118-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (118) (OP16-118) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T10:46:40Z"
+    },
+    {
+      "card_number": "OP16-056",
+      "art_variant": "alternate",
+      "price": 660.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-3galdino-056-alternate-art-op16-056-the-time-of-battle-foil",
+      "title": "Mr.3(Galdino) (056) (Alternate Art) (OP16-056) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T10:46:40Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "alternate",
+      "price": 850.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T10:46:40Z"
     }
   ]
 }
