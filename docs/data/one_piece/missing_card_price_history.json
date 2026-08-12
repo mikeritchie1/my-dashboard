@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T03:16:01Z",
+  "updated_at": "2026-08-12T05:21:19Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -123672,6 +123672,66 @@
       "stock": "In stock",
       "observed_on": "2026-08-12",
       "captured_at": "2026-08-12T03:15:38Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-dracule-mihawk-the-azure-seas-seven-foil",
+      "title": "DON!! Card (Dracule Mihawk) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T05:20:22Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 150.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T05:20:22Z"
+    },
+    {
+      "card_number": "OP16-108",
+      "art_variant": "original",
+      "price": 180.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiryu-full-art-op16-108-the-time-of-battle-foil",
+      "title": "Shiryu (Full Art) (OP16-108) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T05:20:22Z"
+    },
+    {
+      "card_number": "OP12-118",
+      "art_variant": "original",
+      "price": 335.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jewelry-bonney-legacy-of-the-master",
+      "title": "Jewelry Bonney [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T05:20:22Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 2390.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-gen-con-2023-one-piece-promotion-cards",
+      "title": "Monkey.D.Luffy (Gen Con 2023) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T05:20:22Z"
     }
   ]
 }
