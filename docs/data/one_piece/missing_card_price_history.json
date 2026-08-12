@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T14:10:17Z",
+  "updated_at": "2026-08-12T15:46:23Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -123984,6 +123984,78 @@
       "stock": "In stock",
       "observed_on": "2026-08-12",
       "captured_at": "2026-08-12T11:35:50Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-luffy-adventure-on-kamis-island",
+      "title": "DON!! Card (Luffy) [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T15:46:02Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 127.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T15:46:02Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 159.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T15:46:02Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 193.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T15:46:02Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 246.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T15:46:02Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 676.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T15:46:02Z"
     }
   ]
 }
