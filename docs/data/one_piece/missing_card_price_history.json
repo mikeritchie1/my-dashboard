@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T21:32:09Z",
+  "updated_at": "2026-08-12T22:27:09Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -124092,6 +124092,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-12",
       "captured_at": "2026-08-12T21:31:44Z"
+    },
+    {
+      "card_number": "OP16-056",
+      "art_variant": "original",
+      "price": 110.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-3galdino-056-op16-056-the-time-of-battle-foil",
+      "title": "Mr.3(Galdino) (056) (OP16-056) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-12",
+      "captured_at": "2026-08-12T22:26:10Z"
     }
   ]
 }
