@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T19:48:50Z",
+  "updated_at": "2026-08-13T20:26:52Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -125556,6 +125556,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-13",
       "captured_at": "2026-08-13T15:45:14Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/boa-hancock-the-time-of-battle",
+      "title": "Boa Hancock [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-13",
+      "captured_at": "2026-08-13T20:26:31Z"
     }
   ]
 }
