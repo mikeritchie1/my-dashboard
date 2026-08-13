@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T07:05:46Z",
+  "updated_at": "2026-08-13T08:59:10Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -125460,6 +125460,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-13",
       "captured_at": "2026-08-13T07:04:57Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 7.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-legacy-of-the-master",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-13",
+      "captured_at": "2026-08-13T08:58:39Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 238.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-13",
+      "captured_at": "2026-08-13T08:58:39Z"
     }
   ]
 }
