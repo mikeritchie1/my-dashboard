@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T11:34:33Z",
+  "updated_at": "2026-08-14T12:33:32Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -127128,6 +127128,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-14",
       "captured_at": "2026-08-14T09:47:51Z"
+    },
+    {
+      "card_number": "OP15-040",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/viola-adventure-on-kamis-island",
+      "title": "Viola [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T12:33:11Z"
+    },
+    {
+      "card_number": "OP15-046",
+      "art_variant": "original",
+      "price": 13.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sabo-adventure-on-kamis-island",
+      "title": "Sabo [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T12:33:11Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "original",
+      "price": 28.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/rebecca-adventure-on-kamis-island-1",
+      "title": "Rebecca [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T12:33:11Z"
     }
   ]
 }
