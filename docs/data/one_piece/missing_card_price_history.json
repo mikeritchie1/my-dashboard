@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T20:19:24Z",
+  "updated_at": "2026-08-14T21:13:24Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -127284,6 +127284,66 @@
       "stock": "In stock",
       "observed_on": "2026-08-14",
       "captured_at": "2026-08-14T20:18:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T21:12:28Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 2200.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-gen-con-2023-one-piece-promotion-cards",
+      "title": "Monkey.D.Luffy (Gen Con 2023) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T21:12:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 67.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nami-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nami) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T21:13:03Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T21:13:03Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2544.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T21:13:03Z"
     }
   ]
 }
