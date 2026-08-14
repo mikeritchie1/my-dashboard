@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T19:41:51Z",
+  "updated_at": "2026-08-14T20:19:24Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -127248,6 +127248,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-14",
       "captured_at": "2026-08-14T18:37:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 130.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T20:18:16Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T20:18:16Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 360.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T20:18:16Z"
     }
   ]
 }
