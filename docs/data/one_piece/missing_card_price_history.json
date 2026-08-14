@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-14T22:09:47Z",
+  "updated_at": "2026-08-14T23:10:15Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -127344,6 +127344,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-14",
       "captured_at": "2026-08-14T21:13:03Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 875.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-14",
+      "captured_at": "2026-08-14T23:09:19Z"
     }
   ]
 }
