@@ -16,21 +16,6 @@
       "scraped_at": "2026-08-08T16:15:58Z"
     },
     {
-      "card_number": "DON!!",
-      "price": 3.0,
-      "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
-      "rarity": "DON!!",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Straw Hat Crew",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R3.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-green-compass-starter-deck-straw-hat-crew",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/549343.jpg?v=1733898914",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "ST12-009",
       "price": 3.0,
       "title": "Elephant True Bluefin [Starter Deck: Zoro and Sanji]",
@@ -44,6 +29,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/542115_1024x1024_2x_1og8PDsMQ.webp",
       "art_variant": "original",
       "scraped_at": "2026-08-14T08:59:48Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 4.0,
+      "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Straw Hat Crew",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R4.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-green-compass-starter-deck-straw-hat-crew",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/549343.jpg?v=1733898914",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "ST12-004",
@@ -316,6 +316,21 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
+      "card_number": "OP16-026",
+      "price": 7.0,
+      "title": "Emporio.Ivankov [The Time of Battle]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R7.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
+      "art_variant": "original",
+      "scraped_at": "2026-08-14T08:59:59Z"
+    },
+    {
       "card_number": "ST01-006",
       "price": 7.0,
       "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
@@ -419,21 +434,6 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/660744_1000x1000_UCx4hrWnx.webp",
       "art_variant": "original",
       "scraped_at": "2026-08-14T08:59:48Z"
-    },
-    {
-      "card_number": "OP16-026",
-      "price": 9.0,
-      "title": "Emporio.Ivankov [The Time of Battle]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R9.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
-      "art_variant": "original",
-      "scraped_at": "2026-08-14T08:59:59Z"
     },
     {
       "card_number": "P-030",
@@ -1322,18 +1322,33 @@
     },
     {
       "card_number": "OP14-096",
-      "price": 165.0,
+      "price": 166.0,
       "title": "Ground Death [The Azure Sea's Seven]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "The Azure Sea's Seven",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R165.00",
+      "available_variants": "Near Mint Foil R166.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671427.jpg?v=1769204968",
       "art_variant": "original",
       "scraped_at": "2026-07-26T17:49:26Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "price": 181.0,
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Red Shanks",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R181.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "OP14-069",
@@ -1349,21 +1364,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/668639.jpg?v=1769205287",
       "art_variant": "alternate",
       "scraped_at": "2026-07-17T11:11:43Z"
-    },
-    {
-      "card_number": "ST23-001",
-      "price": 183.0,
-      "title": "Uta [Starter Deck: Red Shanks]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Red Shanks",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R183.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "DON!!",
