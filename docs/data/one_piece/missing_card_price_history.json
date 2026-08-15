@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T02:06:25Z",
+  "updated_at": "2026-08-15T03:27:14Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -128712,6 +128712,66 @@
       "stock": "In stock",
       "observed_on": "2026-08-15",
       "captured_at": "2026-08-15T02:05:28Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T03:26:18Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 395.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T03:26:18Z"
+    },
+    {
+      "card_number": "OP15-040",
+      "art_variant": "original",
+      "price": 12.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/viola-adventure-on-kamis-island",
+      "title": "Viola [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T03:26:52Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "original",
+      "price": 14.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/boa-hancock-the-time-of-battle",
+      "title": "Boa Hancock [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T03:26:52Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 64.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nico-robin-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nico Robin) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T03:26:52Z"
     }
   ]
 }
