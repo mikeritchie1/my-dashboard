@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T09:13:33Z",
+  "updated_at": "2026-08-15T10:09:47Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -128916,6 +128916,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-15",
       "captured_at": "2026-08-15T09:13:13Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T10:08:55Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 155.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T10:08:55Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 2155.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-gen-con-2023-one-piece-promotion-cards",
+      "title": "Monkey.D.Luffy (Gen Con 2023) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T10:08:55Z"
     }
   ]
 }
