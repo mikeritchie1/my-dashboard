@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-15T13:21:12Z",
+  "updated_at": "2026-08-15T14:10:08Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -128952,6 +128952,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-15",
       "captured_at": "2026-08-15T10:08:55Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-the-time-of-battle",
+      "title": "Monkey.D.Luffy [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-15",
+      "captured_at": "2026-08-15T14:09:42Z"
     }
   ]
 }
