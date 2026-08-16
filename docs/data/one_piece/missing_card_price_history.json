@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16T07:21:15Z",
+  "updated_at": "2026-08-16T08:13:56Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -130560,6 +130560,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-16",
       "captured_at": "2026-08-16T04:22:24Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 180.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-egghead-gold-the-azure-seas-seven-foil",
+      "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-16",
+      "captured_at": "2026-08-16T08:12:53Z"
     }
   ]
 }
