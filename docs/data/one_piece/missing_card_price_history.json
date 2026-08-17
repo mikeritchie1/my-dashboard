@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T22:11:04Z",
+  "updated_at": "2026-08-17T23:10:43Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -132660,6 +132660,54 @@
       "stock": "In stock",
       "observed_on": "2026-08-17",
       "captured_at": "2026-08-17T21:13:50Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "art_variant": "alternate",
+      "price": 125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T23:09:54Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 145.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T23:09:54Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
+      "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T23:09:54Z"
+    },
+    {
+      "card_number": "OP16-108",
+      "art_variant": "original",
+      "price": 180.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiryu-full-art-op16-108-the-time-of-battle-foil",
+      "title": "Shiryu (Full Art) (OP16-108) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T23:09:54Z"
     }
   ]
 }
