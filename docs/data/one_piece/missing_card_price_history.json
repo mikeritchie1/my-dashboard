@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-17T16:11:47Z",
+  "updated_at": "2026-08-17T17:15:29Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -132480,6 +132480,90 @@
       "stock": "In stock",
       "observed_on": "2026-08-17",
       "captured_at": "2026-08-17T15:13:26Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-a-fist-of-divine-speed/p/691595522",
+      "title": "DON!! Card (Alternate Art) [A Fist of Divine Speed]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T17:14:56Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-legacy-of-the-master/p/691595521",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T17:14:56Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-gol-d-roger-carrying-on-his-will/p/691595520",
+      "title": "DON!! Card (Gol.D.Roger) [Carrying On His Will]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T17:14:56Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 10.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-emperors-in-the-new-world/p/691595524",
+      "title": "DON!! Card (Alternate Art) [Emperors in the New World]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T17:14:56Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 13.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-royal-blood/p/691595526",
+      "title": "DON!! Card (Alternate Art) [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T17:14:56Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 14.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-wings-of-the-captain/p/691595523",
+      "title": "DON!! Card (Alternate Art) [Wings of the Captain]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T17:14:56Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-katakuri-premium-booster-the-best/p/691595525",
+      "title": "DON!! Card (Katakuri) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-17",
+      "captured_at": "2026-08-17T17:14:56Z"
     }
   ]
 }
