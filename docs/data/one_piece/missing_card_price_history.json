@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T04:22:18Z",
+  "updated_at": "2026-08-18T05:18:12Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -134160,6 +134160,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-18",
       "captured_at": "2026-08-18T03:33:06Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 1190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-18",
+      "captured_at": "2026-08-18T05:17:10Z"
     }
   ]
 }
