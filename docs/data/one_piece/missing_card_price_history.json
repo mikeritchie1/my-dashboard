@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18T20:09:47Z",
+  "updated_at": "2026-08-18T21:11:10Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -134352,6 +134352,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-18",
       "captured_at": "2026-08-18T16:15:46Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-luffy-adventure-on-kamis-island",
+      "title": "DON!! Card (Luffy) [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-18",
+      "captured_at": "2026-08-18T21:11:10Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 161.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-18",
+      "captured_at": "2026-08-18T21:11:10Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 203.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-18",
+      "captured_at": "2026-08-18T21:11:10Z"
     }
   ]
 }
