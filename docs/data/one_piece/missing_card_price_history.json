@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T22:11:40Z",
+  "updated_at": "2026-08-19T23:12:18Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -136044,6 +136044,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-19",
       "captured_at": "2026-08-19T21:13:53Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1635.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-buggy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Buggy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-19",
+      "captured_at": "2026-08-19T23:10:54Z"
     }
   ]
 }
