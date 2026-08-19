@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-19T08:20:25Z",
+  "updated_at": "2026-08-19T09:20:40Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -135888,6 +135888,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-19",
       "captured_at": "2026-08-19T03:35:10Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 48.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-19",
+      "captured_at": "2026-08-19T09:20:18Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 208.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-19",
+      "captured_at": "2026-08-19T09:20:18Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 246.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-19",
+      "captured_at": "2026-08-19T09:20:18Z"
     }
   ]
 }
