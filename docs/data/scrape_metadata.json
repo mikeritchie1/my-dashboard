@@ -206,9 +206,9 @@
         "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 2.179,
+      "duration_seconds": 3.28,
       "item_count": 2,
-      "last_scraped_at": "2026-08-20T09:20:55.181513+00:00",
+      "last_scraped_at": "2026-08-20T10:16:28.704443+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
@@ -220,9 +220,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 23.498,
-      "item_count": 116,
-      "last_scraped_at": "2026-08-20T09:21:16.462216+00:00",
+      "duration_seconds": 21.381,
+      "item_count": 117,
+      "last_scraped_at": "2026-08-20T10:16:46.767195+00:00",
       "module": "one-piece",
       "source": "tanuki",
       "status": "ok"
@@ -234,9 +234,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 0.941,
+      "duration_seconds": 1.229,
       "item_count": 172,
-      "last_scraped_at": "2026-08-20T09:21:17.405844+00:00",
+      "last_scraped_at": "2026-08-20T10:16:47.998721+00:00",
       "module": "one-piece",
       "source": "products",
       "status": "ok"
@@ -688,9 +688,9 @@
         "--source",
         "bigbang"
       ],
-      "duration_seconds": 8.136,
-      "item_count": 116,
-      "last_scraped_at": "2026-08-20T09:20:22.443858+00:00",
+      "duration_seconds": 11.384,
+      "item_count": 117,
+      "last_scraped_at": "2026-08-20T10:15:58.437894+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -703,9 +703,9 @@
         "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 2.179,
+      "duration_seconds": 3.28,
       "item_count": 2,
-      "last_scraped_at": "2026-08-20T09:20:55.181513+00:00",
+      "last_scraped_at": "2026-08-20T10:16:28.704443+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
@@ -720,9 +720,9 @@
         "--source",
         "collectiverse"
       ],
-      "duration_seconds": 6.519,
-      "item_count": 116,
-      "last_scraped_at": "2026-08-20T09:20:28.965350+00:00",
+      "duration_seconds": 5.627,
+      "item_count": 117,
+      "last_scraped_at": "2026-08-20T10:16:04.067804+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -737,9 +737,9 @@
         "--source",
         "geekhaven"
       ],
-      "duration_seconds": 15.32,
-      "item_count": 116,
-      "last_scraped_at": "2026-08-20T09:20:44.287396+00:00",
+      "duration_seconds": 12.569,
+      "item_count": 117,
+      "last_scraped_at": "2026-08-20T10:16:16.639748+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -754,9 +754,9 @@
         "--source",
         "knightly"
       ],
-      "duration_seconds": 8.672,
-      "item_count": 116,
-      "last_scraped_at": "2026-08-20T09:20:52.962144+00:00",
+      "duration_seconds": 8.741,
+      "item_count": 117,
+      "last_scraped_at": "2026-08-20T10:16:25.383219+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -788,9 +788,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 0.941,
+      "duration_seconds": 1.229,
       "item_count": 172,
-      "last_scraped_at": "2026-08-20T09:21:17.405844+00:00",
+      "last_scraped_at": "2026-08-20T10:16:47.998721+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
@@ -805,9 +805,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 23.498,
-      "item_count": 116,
-      "last_scraped_at": "2026-08-20T09:21:16.462216+00:00",
+      "duration_seconds": 21.381,
+      "item_count": 117,
+      "last_scraped_at": "2026-08-20T10:16:46.767195+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -992,6 +992,6 @@
       "status": "error"
     }
   },
-  "updated_at": "2026-08-20T09:21:17.405844+00:00",
+  "updated_at": "2026-08-20T10:16:47.998721+00:00",
   "version": 1
 }

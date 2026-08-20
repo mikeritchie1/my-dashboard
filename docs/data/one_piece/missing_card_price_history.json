@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T09:21:15Z",
+  "updated_at": "2026-08-20T10:16:45Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -137652,6 +137652,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-20",
       "captured_at": "2026-08-20T09:20:51Z"
+    },
+    {
+      "card_number": "OP16-056",
+      "art_variant": "original",
+      "price": 115.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-3galdino-056-op16-056-the-time-of-battle-foil",
+      "title": "Mr.3(Galdino) (056) (OP16-056) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T10:15:57Z"
+    },
+    {
+      "card_number": "OP16-108",
+      "art_variant": "original",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiryu-full-art-op16-108-the-time-of-battle-foil",
+      "title": "Shiryu (Full Art) (OP16-108) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T10:15:57Z"
     }
   ]
 }
