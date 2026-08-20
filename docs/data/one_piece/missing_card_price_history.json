@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T08:21:35Z",
+  "updated_at": "2026-08-20T09:21:15Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -137580,6 +137580,78 @@
       "stock": "In stock",
       "observed_on": "2026-08-20",
       "captured_at": "2026-08-20T07:29:51Z"
+    },
+    {
+      "card_number": "ST29-004",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
+      "title": "Sanji [Starter Deck: Egghead]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T09:20:51Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 114.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T09:20:51Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 136.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T09:20:51Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 148.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T09:20:51Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 225.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T09:20:51Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 228.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T09:20:51Z"
     }
   ]
 }
