@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T19:24:43Z",
+  "updated_at": "2026-08-20T20:15:20Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -138108,6 +138108,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-20",
       "captured_at": "2026-08-20T19:24:07Z"
+    },
+    {
+      "card_number": "ST04-016",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/blast-breath-starter-deck-animal-kingdom-pirates/p/691967488",
+      "title": "Blast Breath [Starter Deck: Animal Kingdom Pirates]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T20:14:09Z"
+    },
+    {
+      "card_number": "ST04-016",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/blast-breath-jolly-roger-foil-premium-booster-the-best/p/691967489",
+      "title": "Blast Breath (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T20:14:09Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/donquixote-doflamingo-royal-blood/p/691967486",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T20:14:09Z"
     }
   ]
 }
