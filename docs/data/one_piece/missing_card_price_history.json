@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T20:15:20Z",
+  "updated_at": "2026-08-20T21:15:48Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -138144,6 +138144,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-20",
       "captured_at": "2026-08-20T20:14:09Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 113.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T21:15:28Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 149.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T21:15:28Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 236.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-20",
+      "captured_at": "2026-08-20T21:15:28Z"
     }
   ]
 }
