@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T02:15:22Z",
+  "updated_at": "2026-08-21T03:39:29Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -139560,6 +139560,78 @@
       "stock": "In stock",
       "observed_on": "2026-08-21",
       "captured_at": "2026-08-21T02:14:30Z"
+    },
+    {
+      "card_number": "ST29-004",
+      "art_variant": "original",
+      "price": 16.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
+      "title": "Sanji [Starter Deck: Egghead]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T03:39:04Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 63.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nico-robin-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nico Robin) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T03:39:04Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 69.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nami-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nami) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T03:39:04Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 150.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-the-azure-seas-seven",
+      "title": "Ground Death [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T03:39:04Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 232.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T03:39:04Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2493.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T03:39:04Z"
     }
   ]
 }
