@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T08:23:25Z",
+  "updated_at": "2026-08-21T09:23:08Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -139644,6 +139644,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-21",
       "captured_at": "2026-08-21T08:22:55Z"
+    },
+    {
+      "card_number": "EB02-017",
+      "art_variant": "original",
+      "price": 224.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/nami-extra-booster-memorial-collection",
+      "title": "Nami [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T09:22:47Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 258.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T09:22:47Z"
     }
   ]
 }
