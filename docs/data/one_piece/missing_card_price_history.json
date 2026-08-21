@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T18:17:59Z",
+  "updated_at": "2026-08-21T19:18:46Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -139740,6 +139740,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-21",
       "captured_at": "2026-08-21T15:20:26Z"
+    },
+    {
+      "card_number": "EB02-044",
+      "art_variant": "original",
+      "price": 60.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/692096330",
+      "title": "Sengoku [Extra Booster: Anime 25th Collection]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T19:18:18Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/692096285",
+      "title": "Hody Jones [Wings of the Captain]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T19:18:18Z"
     }
   ]
 }
