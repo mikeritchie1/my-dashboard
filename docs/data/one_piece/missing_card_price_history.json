@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-21T07:33:19Z",
+  "updated_at": "2026-08-21T08:23:25Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -139632,6 +139632,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-21",
       "captured_at": "2026-08-21T03:39:04Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/692008789",
+      "title": "Hody Jones [Wings of the Captain]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-21",
+      "captured_at": "2026-08-21T08:22:55Z"
     }
   ]
 }
