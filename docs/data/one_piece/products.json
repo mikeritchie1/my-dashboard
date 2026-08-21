@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-08-21T06:21:52.623317Z",
+  "scraped_at": "2026-08-21T07:33:21.709682Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2200,6 +2200,20 @@
       "image_local_url": "./data/one_piece/product_images/heroines-special_img-item01.webp",
       "is_released": false,
       "added_at": "2026-05-13T13:42:25.583762Z"
+    },
+    {
+      "title": "Set Sail Deck Set [SD-01]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-09-18",
+      "release_date_text": "September 18, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/sd01.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/08/20/Xn03frg9xHS0R6YX/img_item01.webp?_=381d735c0a1a478ea8f8679c87442664",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/sd01_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-08-21T07:32:22.941139Z"
     },
     {
       "title": "EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05]",
