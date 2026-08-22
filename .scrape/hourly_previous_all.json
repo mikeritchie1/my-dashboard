@@ -1696,6 +1696,21 @@
       "scraped_at": "2026-08-21T14:21:20Z"
     },
     {
+      "card_number": "ST15-005",
+      "price": "3470.0",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R3470.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/695508_3be8c33f-761e-4be4-8772-81343dbb2399.jpg?v=1780708827",
+      "art_variant": "original",
+      "scraped_at": "2026-08-18T10:14:23Z"
+    },
+    {
       "card_number": "DON!!",
       "price": "3515.0",
       "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
@@ -1709,21 +1724,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/655116_a2efa249-5097-443c-bdcc-83eccf7017f4.jpg?v=1763505297",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "ST15-005",
-      "price": "3530.0",
-      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R3530.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/695508_3be8c33f-761e-4be4-8772-81343dbb2399.jpg?v=1780708827",
-      "art_variant": "original",
-      "scraped_at": "2026-08-18T10:14:23Z"
     }
   ]
 }

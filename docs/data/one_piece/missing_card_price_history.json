@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-22T04:19:36Z",
+  "updated_at": "2026-08-22T05:15:28Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -141300,6 +141300,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-22",
       "captured_at": "2026-08-22T03:30:48Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 3470.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-22",
+      "captured_at": "2026-08-22T05:14:42Z"
     }
   ]
 }
