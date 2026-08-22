@@ -136,6 +136,21 @@
       "scraped_at": "2026-08-17T04:28:38Z"
     },
     {
+      "card_number": "OP16-026",
+      "price": "5.0",
+      "title": "Emporio.Ivankov [The Time of Battle]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R5.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
+      "art_variant": "original",
+      "scraped_at": "2026-08-14T08:59:59Z"
+    },
+    {
       "card_number": "ST04-016",
       "price": "5.0",
       "title": "Blast Breath [Starter Deck: Animal Kingdom Pirates]",
@@ -314,21 +329,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_9b5f6683-65cc-4206-a318-04b0e2d28f8d.png?v=1781037171",
       "art_variant": "original",
       "scraped_at": "2026-07-26T16:41:35Z"
-    },
-    {
-      "card_number": "OP16-026",
-      "price": "6.0",
-      "title": "Emporio.Ivankov [The Time of Battle]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R6.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
-      "art_variant": "original",
-      "scraped_at": "2026-08-14T08:59:59Z"
     },
     {
       "card_number": "ST01-006",
@@ -962,14 +962,14 @@
     },
     {
       "card_number": "DON!!",
-      "price": "64.0",
+      "price": "63.0",
       "title": "DON!! Card (Nico Robin) [Extra Booster: One Piece Heroines Edition]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
       "set_name": "Extra Booster: One Piece Heroines Edition",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R64.00",
+      "available_variants": "Near Mint Foil R63.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nico-robin-extra-booster-one-piece-heroines-edition",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_dbb91f01-b898-4823-ab73-3acadd71b102.png?v=1785183217",
       "art_variant": "original",
@@ -1349,21 +1349,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/671427_c9df08cc-8a36-441b-a331-d2c21326aeb4.jpg?v=1768474740",
       "art_variant": "original",
       "scraped_at": "2026-08-03T15:33:35Z"
-    },
-    {
-      "card_number": "DON!!",
-      "price": "150.0",
-      "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R150.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686651_2317e2cd-3b7e-4593-87f6-3a43c81196de.jpg?v=1777210834",
-      "art_variant": "original",
-      "scraped_at": "2026-07-11T15:41:06Z"
     },
     {
       "card_number": "DON!!",
