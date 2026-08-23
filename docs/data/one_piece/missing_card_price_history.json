@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-23T13:23:18Z",
+  "updated_at": "2026-08-23T14:11:27Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -143196,6 +143196,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-23",
       "captured_at": "2026-08-23T13:22:28Z"
+    },
+    {
+      "card_number": "ST01-006",
+      "art_variant": "original",
+      "price": 7.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/692314456",
+      "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-23",
+      "captured_at": "2026-08-23T14:10:55Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/692314459",
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-23",
+      "captured_at": "2026-08-23T14:10:55Z"
     }
   ]
 }
