@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T04:33:00Z",
+  "updated_at": "2026-08-24T05:27:20Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -144780,6 +144780,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-24",
       "captured_at": "2026-08-24T04:31:57Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "alternate",
+      "price": 80.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-alternate-art-op16-026-the-time-of-battle-foil",
+      "title": "Emporio.Ivankov (026) (Alternate Art) (OP16-026) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-24",
+      "captured_at": "2026-08-24T05:26:26Z"
     }
   ]
 }
