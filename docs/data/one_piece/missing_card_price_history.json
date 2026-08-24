@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T15:27:00Z",
+  "updated_at": "2026-08-24T16:20:49Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -144972,6 +144972,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-24",
       "captured_at": "2026-08-24T15:26:41Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 755.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-foxy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Foxy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-24",
+      "captured_at": "2026-08-24T16:19:34Z"
     }
   ]
 }
