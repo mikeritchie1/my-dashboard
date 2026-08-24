@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T22:12:42Z",
+  "updated_at": "2026-08-24T23:12:11Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -145308,6 +145308,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-24",
       "captured_at": "2026-08-24T22:11:46Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "alternate",
+      "price": 510.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-alternate-art-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (Alternate Art) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-24",
+      "captured_at": "2026-08-24T23:11:17Z"
     }
   ]
 }
