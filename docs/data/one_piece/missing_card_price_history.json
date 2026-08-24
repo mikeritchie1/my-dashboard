@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T03:42:10Z",
+  "updated_at": "2026-08-24T04:33:00Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -144768,6 +144768,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-24",
       "captured_at": "2026-08-24T03:41:48Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 80.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-gold-the-time-of-battle-foil",
+      "title": "DON!! Card (Alternate Art) (Gold) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-24",
+      "captured_at": "2026-08-24T04:31:57Z"
     }
   ]
 }

@@ -963,21 +963,6 @@
     {
       "card_number": "DON!!",
       "price": 70.0,
-      "title": "DON!! Card (Alternate Art) (Gold) - The Time of Battle Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R70.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-gold-the-time-of-battle-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/698314.jpg?v=1785229066",
-      "art_variant": "alternate",
-      "scraped_at": "2026-08-17T18:17:55Z"
-    },
-    {
-      "card_number": "DON!!",
-      "price": 70.0,
       "title": "DON!! Card (Nami) [Extra Booster: One Piece Heroines Edition]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
@@ -1079,6 +1064,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/548417_1024x1024_2x_IG7ReFFH7.jpg",
       "art_variant": "original",
       "scraped_at": "2026-08-20T19:24:06Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 80.0,
+      "title": "DON!! Card (Alternate Art) (Gold) - The Time of Battle Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R80.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-gold-the-time-of-battle-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/698314.jpg?v=1785229066",
+      "art_variant": "alternate",
+      "scraped_at": "2026-08-17T18:17:55Z"
     },
     {
       "card_number": "OP01-094",
