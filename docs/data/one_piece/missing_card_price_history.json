@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T06:21:40Z",
+  "updated_at": "2026-08-25T07:33:41Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -147060,6 +147060,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-25",
       "captured_at": "2026-08-25T06:20:55Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 340.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-25",
+      "captured_at": "2026-08-25T07:32:51Z"
     }
   ]
 }

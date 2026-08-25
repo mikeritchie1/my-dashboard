@@ -826,21 +826,6 @@
       "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
-      "card_number": "ST06-004",
-      "price": "25.0",
-      "title": "Smoker [Starter Deck: Absolute Justice]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Starter Deck: Absolute Justice",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R25.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "DON!!",
       "price": "27.0",
       "title": "DON!! Card (Uta) [Extra Booster: One Piece Heroines Edition]",
@@ -884,6 +869,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
       "art_variant": "original",
       "scraped_at": "2026-08-22T19:12:50Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "price": "30.0",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck: Absolute Justice",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R30.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "P-053",
@@ -1592,14 +1592,14 @@
     },
     {
       "card_number": "OP08-023",
-      "price": "355.0",
+      "price": "340.0",
       "title": "Carrot (Parallel) [Two Legends]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Two Legends",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R355.00",
+      "available_variants": "Near Mint Foil R340.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/558049.jpg?v=1763499325",
       "art_variant": "alternate",
