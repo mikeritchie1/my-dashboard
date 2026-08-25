@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T13:39:27Z",
+  "updated_at": "2026-08-25T14:32:31Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -147204,6 +147204,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-25",
       "captured_at": "2026-08-25T11:14:22Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "alternate",
+      "price": 785.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-25",
+      "captured_at": "2026-08-25T14:31:30Z"
     }
   ]
 }
