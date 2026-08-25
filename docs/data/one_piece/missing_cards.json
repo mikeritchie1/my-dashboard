@@ -1531,21 +1531,6 @@
       "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
-      "card_number": "EB02-041",
-      "price": 230.0,
-      "title": "Merry Go [One Piece Promotion Cards]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "One Piece Promotion Cards",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R230.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
-      "image_url": "",
-      "art_variant": "original",
-      "scraped_at": "2026-07-08T01:15:45Z"
-    },
-    {
       "card_number": "OP15-119",
       "price": 230.0,
       "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
@@ -1574,6 +1559,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/1600.jpg?v=1786540099",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "price": 240.0,
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "One Piece Promotion Cards",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R240.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "image_url": "",
+      "art_variant": "original",
+      "scraped_at": "2026-07-08T01:15:45Z"
     },
     {
       "card_number": "OP10-071",
