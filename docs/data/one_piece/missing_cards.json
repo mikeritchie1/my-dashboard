@@ -136,6 +136,21 @@
       "scraped_at": "2026-08-17T04:28:38Z"
     },
     {
+      "card_number": "OP16-026",
+      "price": 5.0,
+      "title": "Emporio.Ivankov [The Time of Battle]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R5.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
+      "art_variant": "original",
+      "scraped_at": "2026-08-14T08:59:59Z"
+    },
+    {
       "card_number": "ST04-016",
       "price": 5.0,
       "title": "Blast Breath [Starter Deck: Animal Kingdom Pirates]",
@@ -314,21 +329,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_9b5f6683-65cc-4206-a318-04b0e2d28f8d.png?v=1781037171",
       "art_variant": "original",
       "scraped_at": "2026-07-26T16:41:35Z"
-    },
-    {
-      "card_number": "OP16-026",
-      "price": 6.0,
-      "title": "Emporio.Ivankov [The Time of Battle]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R6.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
-      "art_variant": "original",
-      "scraped_at": "2026-08-14T08:59:59Z"
     },
     {
       "card_number": "ST01-006",
@@ -646,6 +646,21 @@
       "scraped_at": "2026-08-20T19:24:06Z"
     },
     {
+      "card_number": "ST29-004",
+      "price": 16.0,
+      "title": "Sanji [Starter Deck: Egghead]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Egghead",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R16.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671557.jpg?v=1777868105",
+      "art_variant": "original",
+      "scraped_at": "2026-08-06T22:42:09Z"
+    },
+    {
       "card_number": "ST19-004",
       "price": 17.0,
       "title": "Hina [Starter Deck: Black Smoker]",
@@ -659,21 +674,6 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581049_1024x1024_2x_u4xdggARz.jpg",
       "art_variant": "original",
       "scraped_at": "2026-08-20T19:24:06Z"
-    },
-    {
-      "card_number": "ST29-004",
-      "price": 17.0,
-      "title": "Sanji [Starter Deck: Egghead]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Egghead",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R17.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671557.jpg?v=1777868105",
-      "art_variant": "original",
-      "scraped_at": "2026-08-06T22:42:09Z"
     },
     {
       "card_number": "ST25-001",
@@ -1336,21 +1336,6 @@
       "scraped_at": "2026-08-20T20:14:09Z"
     },
     {
-      "card_number": "ST21-014",
-      "price": 129.0,
-      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Learn Together Deck Set",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R129.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_e7797902-93e8-4b7c-af2b-003324ede981.png?v=1763500418",
-      "art_variant": "original",
-      "scraped_at": "2026-08-15T16:08:39Z"
-    },
-    {
       "card_number": "DON!!",
       "price": 130.0,
       "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
@@ -1364,6 +1349,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686651_2317e2cd-3b7e-4593-87f6-3a43c81196de.jpg?v=1777210834",
       "art_variant": "original",
       "scraped_at": "2026-08-24T22:11:46Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "price": 134.0,
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Learn Together Deck Set",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R134.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_e7797902-93e8-4b7c-af2b-003324ede981.png?v=1763500418",
+      "art_variant": "original",
+      "scraped_at": "2026-08-15T16:08:39Z"
     },
     {
       "card_number": "P-024",
@@ -1562,14 +1562,14 @@
     },
     {
       "card_number": "EB02-041",
-      "price": 232.0,
+      "price": 239.0,
       "title": "Merry Go [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R232.00",
+      "available_variants": "Near Mint Foil R239.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/1600.jpg?v=1786540099",
       "art_variant": "original",
@@ -1592,14 +1592,14 @@
     },
     {
       "card_number": "ST23-001",
-      "price": 275.0,
+      "price": 287.0,
       "title": "Uta [Starter Deck: Red Shanks]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck: Red Shanks",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R275.00",
+      "available_variants": "Near Mint Foil R287.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
       "art_variant": "original",
