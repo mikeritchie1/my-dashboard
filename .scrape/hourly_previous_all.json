@@ -2,14 +2,14 @@
   "listings": [
     {
       "card_number": "OP16-018",
-      "price": "1.0",
+      "price": "2.0",
       "title": "Rockstar [The Time of Battle]",
       "rarity": "Common",
       "store": "Knightly Gaming",
       "set_name": "The Time of Battle",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R1.00",
+      "available_variants": "Near Mint R2.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/rockstar-the-time-of-battle",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696001.jpg?v=1785512843",
       "art_variant": "original",
@@ -1351,21 +1351,6 @@
       "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
-      "card_number": "ST21-014",
-      "price": "134.0",
-      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Learn Together Deck Set",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R134.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_e7797902-93e8-4b7c-af2b-003324ede981.png?v=1763500418",
-      "art_variant": "original",
-      "scraped_at": "2026-08-15T16:08:39Z"
-    },
-    {
       "card_number": "P-024",
       "price": "135.0",
       "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
@@ -1379,6 +1364,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/3f6dc017-b6eb-5be5-84de-c15de1756cbb.jpg?v=1771366031",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "price": "137.0",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Learn Together Deck Set",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R137.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_e7797902-93e8-4b7c-af2b-003324ede981.png?v=1763500418",
+      "art_variant": "original",
+      "scraped_at": "2026-08-15T16:08:39Z"
     },
     {
       "card_number": "EB01-013",
@@ -1577,14 +1577,14 @@
     },
     {
       "card_number": "EB02-041",
-      "price": "247.0",
+      "price": "246.0",
       "title": "Merry Go [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R247.00",
+      "available_variants": "Near Mint Foil R246.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/1600.jpg?v=1786540099",
       "art_variant": "original",
@@ -1726,6 +1726,21 @@
       "scraped_at": "2026-08-11T19:50:46Z"
     },
     {
+      "card_number": "OP14-104",
+      "price": "635.0",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Azure Sea's Seven",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R635.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666575.jpg?v=1769205378",
+      "art_variant": "alternate",
+      "scraped_at": "2026-07-26T16:41:35Z"
+    },
+    {
       "card_number": "OP15-092",
       "price": "635.0",
       "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
@@ -1739,21 +1754,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685446.jpg?v=1780510315",
       "art_variant": "alternate",
       "scraped_at": "2026-08-25T08:25:11Z"
-    },
-    {
-      "card_number": "OP14-104",
-      "price": "641.0",
-      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Azure Sea's Seven",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R641.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/666575.jpg?v=1769205378",
-      "art_variant": "alternate",
-      "scraped_at": "2026-07-26T16:41:35Z"
     },
     {
       "card_number": "DON!!",
