@@ -206,9 +206,9 @@
         "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.75,
+      "duration_seconds": 1.587,
       "item_count": 2,
-      "last_scraped_at": "2026-08-25T07:33:25.536865+00:00",
+      "last_scraped_at": "2026-08-25T08:25:50.869238+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
@@ -220,9 +220,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 19.326,
-      "item_count": 125,
-      "last_scraped_at": "2026-08-25T07:33:43.075869+00:00",
+      "duration_seconds": 23.459,
+      "item_count": 129,
+      "last_scraped_at": "2026-08-25T08:26:12.701951+00:00",
       "module": "one-piece",
       "source": "tanuki",
       "status": "ok"
@@ -234,9 +234,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.25,
+      "duration_seconds": 0.955,
       "item_count": 173,
-      "last_scraped_at": "2026-08-25T07:33:44.328799+00:00",
+      "last_scraped_at": "2026-08-25T08:26:13.659674+00:00",
       "module": "one-piece",
       "source": "products",
       "status": "ok"
@@ -688,9 +688,9 @@
         "--source",
         "bigbang"
       ],
-      "duration_seconds": 8.225,
-      "item_count": 125,
-      "last_scraped_at": "2026-08-25T07:32:53.713145+00:00",
+      "duration_seconds": 6.43,
+      "item_count": 129,
+      "last_scraped_at": "2026-08-25T08:25:12.819128+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -703,9 +703,9 @@
         "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.75,
+      "duration_seconds": 1.587,
       "item_count": 2,
-      "last_scraped_at": "2026-08-25T07:33:25.536865+00:00",
+      "last_scraped_at": "2026-08-25T08:25:50.869238+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
@@ -720,9 +720,9 @@
         "--source",
         "collectiverse"
       ],
-      "duration_seconds": 6.726,
-      "item_count": 125,
-      "last_scraped_at": "2026-08-25T07:33:00.441822+00:00",
+      "duration_seconds": 5.9,
+      "item_count": 129,
+      "last_scraped_at": "2026-08-25T08:25:18.722236+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -737,9 +737,9 @@
         "--source",
         "geekhaven"
       ],
-      "duration_seconds": 14.08,
-      "item_count": 125,
-      "last_scraped_at": "2026-08-25T07:33:14.524254+00:00",
+      "duration_seconds": 14.677,
+      "item_count": 129,
+      "last_scraped_at": "2026-08-25T08:25:33.401633+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -754,9 +754,9 @@
         "--source",
         "knightly"
       ],
-      "duration_seconds": 9.22,
-      "item_count": 125,
-      "last_scraped_at": "2026-08-25T07:33:23.747174+00:00",
+      "duration_seconds": 15.836,
+      "item_count": 129,
+      "last_scraped_at": "2026-08-25T08:25:49.240045+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -788,9 +788,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.25,
+      "duration_seconds": 0.955,
       "item_count": 173,
-      "last_scraped_at": "2026-08-25T07:33:44.328799+00:00",
+      "last_scraped_at": "2026-08-25T08:26:13.659674+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
@@ -805,9 +805,9 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 19.326,
-      "item_count": 125,
-      "last_scraped_at": "2026-08-25T07:33:43.075869+00:00",
+      "duration_seconds": 23.459,
+      "item_count": 129,
+      "last_scraped_at": "2026-08-25T08:26:12.701951+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -992,6 +992,6 @@
       "status": "error"
     }
   },
-  "updated_at": "2026-08-25T07:33:44.328799+00:00",
+  "updated_at": "2026-08-25T08:26:13.659674+00:00",
   "version": 1
 }
