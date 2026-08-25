@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-25T04:26:06Z",
+  "updated_at": "2026-08-25T05:21:35Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -147012,6 +147012,42 @@
       "stock": "In stock",
       "observed_on": "2026-08-25",
       "captured_at": "2026-08-25T04:25:13Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 150.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
+      "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-25",
+      "captured_at": "2026-08-25T05:20:45Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 175.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-25",
+      "captured_at": "2026-08-25T05:20:45Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 2005.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-gear-4-luffy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Gear 4 Luffy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-25",
+      "captured_at": "2026-08-25T05:20:45Z"
     }
   ]
 }
