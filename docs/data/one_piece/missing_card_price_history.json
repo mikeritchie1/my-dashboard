@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T09:28:15Z",
+  "updated_at": "2026-08-26T10:22:23Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -149196,6 +149196,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-26",
       "captured_at": "2026-08-26T09:27:55Z"
+    },
+    {
+      "card_number": "OP15-114",
+      "art_variant": "alternate",
+      "price": 155.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/wyper-alternate-art-op15-114-adventure-on-kamis-island-foil",
+      "title": "Wyper (Alternate Art) (OP15-114) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-26",
+      "captured_at": "2026-08-26T10:21:27Z"
     }
   ]
 }
