@@ -721,6 +721,21 @@
       "scraped_at": "2026-07-20T17:14:14Z"
     },
     {
+      "card_number": "OP10-071",
+      "price": "20.0",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R20.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
+    },
+    {
       "card_number": "OP15-008",
       "price": "20.0",
       "title": "Krieg (OP15-008) (OP15-008) - Adventure on Kami's Island Foil",
@@ -796,21 +811,6 @@
       "scraped_at": "2026-08-17T18:17:55Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": "25.0",
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R25.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "OP15-053",
       "price": "25.0",
       "title": "Rebecca (OP15-053) (OP15-053) - Adventure on Kami's Island Foil",
@@ -871,21 +871,6 @@
       "scraped_at": "2026-08-22T19:12:50Z"
     },
     {
-      "card_number": "OP15-092",
-      "price": "30.0",
-      "title": "Monkey.D.Luffy (OP15-092) (OP15-092) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R30.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-op15-092-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685445.jpg?v=1780510340",
-      "art_variant": "original",
-      "scraped_at": "2026-08-25T08:25:11Z"
-    },
-    {
       "card_number": "ST06-004",
       "price": "30.0",
       "title": "Smoker [Starter Deck: Absolute Justice]",
@@ -899,6 +884,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "price": "35.0",
+      "title": "Monkey.D.Luffy (OP15-092) (OP15-092) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R35.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-op15-092-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685445.jpg?v=1780510340",
+      "art_variant": "original",
+      "scraped_at": "2026-08-25T08:25:11Z"
     },
     {
       "card_number": "P-053",
@@ -1772,14 +1772,14 @@
     },
     {
       "card_number": "OP16-015",
-      "price": "785.0",
+      "price": "755.0",
       "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R785.00",
+      "available_variants": "Near Mint R755.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/693420_a96b102a-fe58-4a26-b2a8-89e02de0e633.jpg?v=1780708745",
       "art_variant": "alternate",
@@ -1802,14 +1802,14 @@
     },
     {
       "card_number": "P-037",
-      "price": "1010.0",
+      "price": "970.0",
       "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
       "rarity": "Promo",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R1010.00",
+      "available_variants": "Near Mint Foil R970.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/520772_a7bbbea9-e724-44af-9cb7-02612a519e9c.jpg?v=1763496987",
       "art_variant": "original",
