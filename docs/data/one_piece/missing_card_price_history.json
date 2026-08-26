@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T10:22:23Z",
+  "updated_at": "2026-08-26T11:17:33Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -149208,6 +149208,30 @@
       "stock": "In stock",
       "observed_on": "2026-08-26",
       "captured_at": "2026-08-26T10:21:27Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 515.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-26",
+      "captured_at": "2026-08-26T11:16:45Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 945.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-26",
+      "captured_at": "2026-08-26T11:16:45Z"
     }
   ]
 }
