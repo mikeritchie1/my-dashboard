@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26T04:27:33Z",
+  "updated_at": "2026-08-26T05:21:20Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -149016,6 +149016,18 @@
       "stock": "In stock",
       "observed_on": "2026-08-26",
       "captured_at": "2026-08-26T04:26:39Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-26",
+      "captured_at": "2026-08-26T05:20:11Z"
     }
   ]
 }
