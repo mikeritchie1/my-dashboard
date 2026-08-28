@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-08-27T23:20:37.507448Z",
+  "scraped_at": "2026-08-28T07:10:47.091722Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2142,7 +2142,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/10/UZto2ePj0hiv3KkV/img_item01.webp?_=e0b14f6e380203fc15966b01c585c3e2",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/op17_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-07-15T04:36:06.490459Z"
     },
     {
@@ -2156,7 +2156,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/10/UZto2ePj0hiv3KkV/img_item01.webp?_=9ff5f4418637f5201d798c63c1a59d73",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/op17_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-08-07T04:15:54.017923Z"
     },
     {
@@ -2170,7 +2170,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/23/bX2KjHQowPgTjQkO/img_item01.webp?_=06fdfff4784a13e298ed18922a7031af",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/dp12_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-07-24T10:02:04.085607Z"
     },
     {
@@ -2184,7 +2184,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/products/2026/07/21/4qVkAXP7VO1CiqH2/img_item01.webp?_=3f6f3c895252d7d330dbd79a8e7ed508",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/sleeve042_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-07-31T11:14:02.716338Z"
     },
     {
