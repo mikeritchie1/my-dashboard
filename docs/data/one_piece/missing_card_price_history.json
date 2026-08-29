@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-29T17:57:08Z",
+  "updated_at": "2026-08-29T20:07:49Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -155268,6 +155268,90 @@
       "stock": "In stock",
       "observed_on": "2026-08-29",
       "captured_at": "2026-08-29T17:56:46Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 375.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-29",
+      "captured_at": "2026-08-29T20:06:49Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1610.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-buggy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Buggy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-29",
+      "captured_at": "2026-08-29T20:06:49Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 3240.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-29",
+      "captured_at": "2026-08-29T20:06:49Z"
+    },
+    {
+      "card_number": "ST25-001",
+      "art_variant": "original",
+      "price": 18.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/alvida-starter-deck-blue-buggy/p/693123387",
+      "title": "Alvida [Starter Deck: Blue Buggy]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-29",
+      "captured_at": "2026-08-29T20:07:22Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/693123397",
+      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-29",
+      "captured_at": "2026-08-29T20:07:22Z"
+    },
+    {
+      "card_number": "ST27-003",
+      "art_variant": "original",
+      "price": 90.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/693123381",
+      "title": "Kuzan [Starter Deck: Black Marshall.D.Teach]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-29",
+      "captured_at": "2026-08-29T20:07:22Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 100.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/sanji-royal-blood/p/693123410",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-08-29",
+      "captured_at": "2026-08-29T20:07:22Z"
     }
   ]
 }
