@@ -206,9 +206,9 @@
         "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.691,
+      "duration_seconds": 1.504,
       "item_count": 2,
-      "last_scraped_at": "2026-08-29T20:07:34.838945+00:00",
+      "last_scraped_at": "2026-08-29T22:50:53.065984+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
@@ -220,12 +220,13 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 18.371,
+      "duration_seconds": 47.595,
+      "error": "Command failed with exit code 1",
       "item_count": 125,
-      "last_scraped_at": "2026-08-29T20:07:51.480646+00:00",
+      "last_scraped_at": "2026-08-29T22:51:39.118991+00:00",
       "module": "one-piece",
       "source": "tanuki",
-      "status": "ok"
+      "status": "error"
     },
     "docs/data/one_piece/products.json": {
       "command": [
@@ -234,9 +235,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.508,
+      "duration_seconds": 1.081,
       "item_count": 177,
-      "last_scraped_at": "2026-08-29T20:07:52.991805+00:00",
+      "last_scraped_at": "2026-08-29T22:51:40.202807+00:00",
       "module": "one-piece",
       "source": "products",
       "status": "ok"
@@ -688,9 +689,9 @@
         "--source",
         "bigbang"
       ],
-      "duration_seconds": 7.329,
+      "duration_seconds": 8.198,
       "item_count": 125,
-      "last_scraped_at": "2026-08-29T20:06:50.830619+00:00",
+      "last_scraped_at": "2026-08-29T22:50:16.839570+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -703,9 +704,9 @@
         "/opt/hostedtoolcache/Python/3.13.15/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.691,
+      "duration_seconds": 1.504,
       "item_count": 2,
-      "last_scraped_at": "2026-08-29T20:07:34.838945+00:00",
+      "last_scraped_at": "2026-08-29T22:50:53.065984+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
@@ -720,9 +721,9 @@
         "--source",
         "collectiverse"
       ],
-      "duration_seconds": 5.846,
+      "duration_seconds": 6.177,
       "item_count": 125,
-      "last_scraped_at": "2026-08-29T20:06:56.679737+00:00",
+      "last_scraped_at": "2026-08-29T22:50:23.019569+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -737,9 +738,9 @@
         "--source",
         "geekhaven"
       ],
-      "duration_seconds": 26.886,
+      "duration_seconds": 15.849,
       "item_count": 125,
-      "last_scraped_at": "2026-08-29T20:07:23.568249+00:00",
+      "last_scraped_at": "2026-08-29T22:50:38.871222+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -754,9 +755,9 @@
         "--source",
         "knightly"
       ],
-      "duration_seconds": 9.536,
+      "duration_seconds": 12.647,
       "item_count": 125,
-      "last_scraped_at": "2026-08-29T20:07:33.107345+00:00",
+      "last_scraped_at": "2026-08-29T22:50:51.520722+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -788,9 +789,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.508,
+      "duration_seconds": 1.081,
       "item_count": 177,
-      "last_scraped_at": "2026-08-29T20:07:52.991805+00:00",
+      "last_scraped_at": "2026-08-29T22:51:40.202807+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
@@ -805,15 +806,16 @@
         "--source",
         "tanuki"
       ],
-      "duration_seconds": 18.371,
+      "duration_seconds": 47.595,
+      "error": "Command failed with exit code 1",
       "item_count": 125,
-      "last_scraped_at": "2026-08-29T20:07:51.480646+00:00",
+      "last_scraped_at": "2026-08-29T22:51:39.118991+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "tanuki",
-      "status": "ok"
+      "status": "error"
     },
     "release-radar/coming-soon": {
       "command": [
@@ -992,6 +994,6 @@
       "status": "error"
     }
   },
-  "updated_at": "2026-08-29T20:07:52.991805+00:00",
+  "updated_at": "2026-08-29T22:51:40.202807+00:00",
   "version": 1
 }
