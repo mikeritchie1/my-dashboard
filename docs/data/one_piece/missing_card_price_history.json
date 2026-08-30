@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-30T15:31:45Z",
+  "updated_at": "2026-08-30T18:51:56Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -157212,6 +157212,78 @@
       "stock": "In stock",
       "observed_on": "2026-08-30",
       "captured_at": "2026-08-30T15:31:25Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "alternate",
+      "price": 65.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-alternate-art-op16-026-the-time-of-battle-foil",
+      "title": "Emporio.Ivankov (026) (Alternate Art) (OP16-026) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-30",
+      "captured_at": "2026-08-30T18:51:11Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-30",
+      "captured_at": "2026-08-30T18:51:11Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 260.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-30",
+      "captured_at": "2026-08-30T18:51:11Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "alternate",
+      "price": 665.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-30",
+      "captured_at": "2026-08-30T18:51:11Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 865.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-30",
+      "captured_at": "2026-08-30T18:51:11Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 2070.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-30",
+      "captured_at": "2026-08-30T18:51:11Z"
     }
   ]
 }
