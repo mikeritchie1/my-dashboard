@@ -136,21 +136,6 @@
       "scraped_at": "2026-08-17T04:28:38Z"
     },
     {
-      "card_number": "OP16-026",
-      "price": 5.0,
-      "title": "Emporio.Ivankov [The Time of Battle]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R5.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
-      "art_variant": "original",
-      "scraped_at": "2026-08-14T08:59:59Z"
-    },
-    {
       "card_number": "ST04-016",
       "price": 5.0,
       "title": "Blast Breath [Starter Deck: Animal Kingdom Pirates]",
@@ -301,15 +286,30 @@
       "scraped_at": "2026-08-27T23:20:03Z"
     },
     {
-      "card_number": "DON!!",
+      "card_number": "OP16-026",
       "price": 6.0,
+      "title": "Emporio.Ivankov [The Time of Battle]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R6.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/696011.jpg?v=1785512802",
+      "art_variant": "original",
+      "scraped_at": "2026-08-14T08:59:59Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 7.0,
       "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
       "set_name": "Legacy of the Master",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R6.00",
+      "available_variants": "Near Mint Foil R7.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-legacy-of-the-master",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/646574_in_1000x1000_8c143a87-f432-4018-94c6-527b7637214d.jpg?v=1768836277",
       "art_variant": "alternate",
@@ -340,10 +340,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/692314456",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/693206442",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/ab3ecc5b-ca27-5c0b-87dc-64512617f072_1024x1024_2x_sKUFV0y_T.webp",
       "art_variant": "original",
-      "scraped_at": "2026-08-23T14:10:55Z"
+      "scraped_at": "2026-08-30T15:31:15Z"
     },
     {
       "card_number": "ST06-002",
@@ -370,10 +370,10 @@
       "condition": "Second Hand",
       "stock": "In stock",
       "available_variants": "",
-      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/692314459",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/693206445",
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/596376_1024x1024_2x_k_bCN80rD.jpg",
       "art_variant": "original",
-      "scraped_at": "2026-08-23T14:10:55Z"
+      "scraped_at": "2026-08-30T15:31:15Z"
     },
     {
       "card_number": "ST08-014",
@@ -646,21 +646,6 @@
       "scraped_at": "2026-08-27T23:20:03Z"
     },
     {
-      "card_number": "ST29-004",
-      "price": 16.0,
-      "title": "Sanji [Starter Deck: Egghead]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Egghead",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R16.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671557.jpg?v=1777868105",
-      "art_variant": "original",
-      "scraped_at": "2026-08-06T22:42:09Z"
-    },
-    {
       "card_number": "ST19-004",
       "price": 17.0,
       "title": "Hina [Starter Deck: Black Smoker]",
@@ -674,6 +659,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/581049_1024x1024_2x_u4xdggARz.jpg",
       "art_variant": "original",
       "scraped_at": "2026-08-27T23:20:03Z"
+    },
+    {
+      "card_number": "ST29-004",
+      "price": 17.0,
+      "title": "Sanji [Starter Deck: Egghead]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Egghead",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R17.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/671557.jpg?v=1777868105",
+      "art_variant": "original",
+      "scraped_at": "2026-08-06T22:42:09Z"
     },
     {
       "card_number": "ST25-001",
@@ -1276,6 +1276,21 @@
       "scraped_at": "2026-08-27T23:20:03Z"
     },
     {
+      "card_number": "OP15-114",
+      "price": 125.0,
+      "title": "Wyper (Alternate Art) (OP15-114) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R125.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/wyper-alternate-art-op15-114-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685472_24b725bb-e764-47b0-85ed-a0592f647654.jpg?v=1780510231",
+      "art_variant": "alternate",
+      "scraped_at": "2026-08-24T22:11:46Z"
+    },
+    {
       "card_number": "DON!!",
       "price": 130.0,
       "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
@@ -1304,21 +1319,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/671427_c9df08cc-8a36-441b-a331-d2c21326aeb4.jpg?v=1768474740",
       "art_variant": "original",
       "scraped_at": "2026-08-03T15:33:35Z"
-    },
-    {
-      "card_number": "OP15-114",
-      "price": 135.0,
-      "title": "Wyper (Alternate Art) (OP15-114) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R135.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/wyper-alternate-art-op15-114-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685472_24b725bb-e764-47b0-85ed-a0592f647654.jpg?v=1780510231",
-      "art_variant": "alternate",
-      "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
       "card_number": "P-024",
@@ -1367,14 +1367,14 @@
     },
     {
       "card_number": "ST21-014",
-      "price": 153.0,
+      "price": 154.0,
       "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Learn Together Deck Set",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R153.00",
+      "available_variants": "Near Mint R154.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_e7797902-93e8-4b7c-af2b-003324ede981.png?v=1763500418",
       "art_variant": "original",
@@ -1472,14 +1472,14 @@
     },
     {
       "card_number": "OP10-071",
-      "price": 242.0,
+      "price": 239.0,
       "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R242.00",
+      "available_variants": "Near Mint Foil R239.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617116.jpg?v=1758380186",
       "art_variant": "alternate",
@@ -1516,21 +1516,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "ST23-001",
-      "price": 288.0,
-      "title": "Uta [Starter Deck: Red Shanks]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Red Shanks",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R288.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "EB04-007",
       "price": 290.0,
       "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
@@ -1544,6 +1529,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685303_17fc72d0-f414-4a80-b56f-f02912c70d52.jpg?v=1780510382",
       "art_variant": "original",
       "scraped_at": "2026-08-24T22:11:46Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "price": 300.0,
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Red Shanks",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R300.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "OP08-023",
