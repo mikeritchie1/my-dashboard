@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-31T08:58:02Z",
+  "updated_at": "2026-08-31T16:29:47Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -159024,6 +159024,198 @@
       "stock": "In stock",
       "observed_on": "2026-08-31",
       "captured_at": "2026-08-31T08:57:40Z"
+    },
+    {
+      "card_number": "OP15-114",
+      "art_variant": "alternate",
+      "price": 115.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/wyper-alternate-art-op15-114-adventure-on-kamis-island-foil",
+      "title": "Wyper (Alternate Art) (OP15-114) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:28:39Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-gold-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) (Gold) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:28:39Z"
+    },
+    {
+      "card_number": "OP15-118",
+      "art_variant": "original",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-op15-118-op15-118-adventure-on-kamis-island-foil",
+      "title": "Enel (OP15-118) (OP15-118) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:28:39Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:28:39Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "alternate",
+      "price": 295.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/carrot-parallel-two-legends",
+      "title": "Carrot (Parallel) [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:28:39Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 2435.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-sp-eb02-052-adventure-on-kamis-island-foil",
+      "title": "Enel (SP) (EB02-052) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:28:39Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-legacy-of-the-master",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-luffy-adventure-on-kamis-island",
+      "title": "DON!! Card (Luffy) [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 26.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-uta-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Uta) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 46.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 68.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-nami-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Nami) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 159.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 169.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 225.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 258.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 637.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-08-31",
+      "captured_at": "2026-08-31T16:29:24Z"
     }
   ]
 }
