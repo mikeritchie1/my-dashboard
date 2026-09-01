@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T18:54:22Z",
+  "updated_at": "2026-09-01T21:27:55Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -161160,6 +161160,78 @@
       "stock": "In stock",
       "observed_on": "2026-09-01",
       "captured_at": "2026-09-01T18:53:30Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "alternate",
+      "price": 70.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-alternate-art-op16-026-the-time-of-battle-foil",
+      "title": "Emporio.Ivankov (026) (Alternate Art) (OP16-026) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-01",
+      "captured_at": "2026-09-01T21:27:01Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 80.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-gold-the-time-of-battle-foil",
+      "title": "DON!! Card (Alternate Art) (Gold) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-01",
+      "captured_at": "2026-09-01T21:27:01Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "alternate",
+      "price": 650.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-01",
+      "captured_at": "2026-09-01T21:27:01Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 855.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-01",
+      "captured_at": "2026-09-01T21:27:01Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 219.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-01",
+      "captured_at": "2026-09-01T21:27:35Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 376.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-01",
+      "captured_at": "2026-09-01T21:27:35Z"
     }
   ]
 }
