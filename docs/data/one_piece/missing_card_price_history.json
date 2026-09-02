@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-02T06:29:26Z",
+  "updated_at": "2026-09-02T11:47:18Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -162840,6 +162840,174 @@
       "stock": "In stock",
       "observed_on": "2026-09-02",
       "captured_at": "2026-09-02T06:29:07Z"
+    },
+    {
+      "card_number": "OP16-015",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op16-015-the-time-of-battle-foil",
+      "title": "Monkey.D.Luffy (OP16-015) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "original",
+      "price": 40.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP16-056",
+      "art_variant": "original",
+      "price": 75.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-3galdino-056-op16-056-the-time-of-battle-foil",
+      "title": "Mr.3(Galdino) (056) (OP16-056) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP16-119",
+      "art_variant": "original",
+      "price": 430.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-op16-119-the-time-of-battle-foil",
+      "title": "Marshall.D.Teach (119) (OP16-119) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "alternate",
+      "price": 500.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP16-119",
+      "art_variant": "alternate",
+      "price": 740.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-alternate-art-op16-119-the-time-of-battle-foil",
+      "title": "Marshall.D.Teach (119) (Alternate Art) (OP16-119) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 840.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 930.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "alternate",
+      "price": 990.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-alternate-art-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (Alternate Art) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:25Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle",
+      "title": "Emporio.Ivankov [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:57Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 176.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:57Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 264.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:57Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 398.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-02",
+      "captured_at": "2026-09-02T11:46:57Z"
     }
   ]
 }
