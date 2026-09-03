@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T06:35:49Z",
+  "updated_at": "2026-09-03T11:46:28Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -165120,6 +165120,138 @@
       "stock": "In stock",
       "observed_on": "2026-09-03",
       "captured_at": "2026-09-03T06:35:09Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:45:41Z"
+    },
+    {
+      "card_number": "OP15-032",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/brook-op15-032-op15-032-adventure-on-kamis-island-foil",
+      "title": "Brook (OP15-032) (OP15-032) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:45:41Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:45:41Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 290.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:45:41Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "alternate",
+      "price": 490.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:45:41Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "alternate",
+      "price": 980.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-alternate-art-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (Alternate Art) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:45:41Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 2065.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:45:41Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 163.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:46:10Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 174.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:46:10Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 200.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:46:10Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 418.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-03",
+      "captured_at": "2026-09-03T11:46:10Z"
     }
   ]
 }
