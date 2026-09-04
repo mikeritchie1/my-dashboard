@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T11:47:58Z",
+  "updated_at": "2026-09-04T15:11:54Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -167604,6 +167604,66 @@
       "stock": "In stock",
       "observed_on": "2026-09-04",
       "captured_at": "2026-09-04T11:47:38Z"
+    },
+    {
+      "card_number": "OP15-114",
+      "art_variant": "alternate",
+      "price": 100.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/wyper-alternate-art-op15-114-adventure-on-kamis-island-foil",
+      "title": "Wyper (Alternate Art) (OP15-114) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T15:11:01Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 155.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-egghead-gold-the-azure-seas-seven-foil",
+      "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T15:11:01Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "alternate",
+      "price": 405.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-alternate-art-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (Alternate Art) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T15:11:01Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 480.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T15:11:01Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 185.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T15:11:33Z"
     }
   ]
 }
