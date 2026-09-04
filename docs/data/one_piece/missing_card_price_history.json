@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T18:37:15Z",
+  "updated_at": "2026-09-04T21:06:17Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -167832,6 +167832,42 @@
       "stock": "In stock",
       "observed_on": "2026-09-04",
       "captured_at": "2026-09-04T18:36:53Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 915.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T21:04:58Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "alternate",
+      "price": 945.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-alternate-art-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (Alternate Art) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T21:04:58Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 274.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T21:05:56Z"
     }
   ]
 }
