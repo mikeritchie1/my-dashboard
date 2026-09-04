@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-09-03T23:36:03.850138Z",
+  "scraped_at": "2026-09-04T01:28:43.855973Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2212,7 +2212,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/product/2026/08/27/ppMJpcWM2aU9hJ8h/img.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/sleeve043_img.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-08-28T19:38:17.019759Z"
     },
     {
@@ -2226,7 +2226,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/product/2026/08/27/GaK3qIOPp8Lfm5QX/img.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/sleeve044_img.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-08-28T19:38:17.019759Z"
     },
     {
@@ -2240,7 +2240,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/08/27/HlHoncvUJEJMpyQ0/img_item01.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/playmat-flame-flame-fruit_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-08-28T19:38:17.019759Z"
     },
     {
@@ -2254,7 +2254,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/08/27/sXAjGXYEi2tzZ9GI/img_item01.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/collection-flame_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-08-28T19:38:17.019759Z"
     },
     {
