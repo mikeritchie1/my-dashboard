@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T15:11:54Z",
+  "updated_at": "2026-09-04T18:37:15Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -167664,6 +167664,174 @@
       "stock": "In stock",
       "observed_on": "2026-09-04",
       "captured_at": "2026-09-04T15:11:33Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:35:34Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "original",
+      "price": 135.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil",
+      "title": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:35:34Z"
+    },
+    {
+      "card_number": "OP15-118",
+      "art_variant": "original",
+      "price": 180.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-op15-118-op15-118-adventure-on-kamis-island-foil",
+      "title": "Enel (OP15-118) (OP15-118) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:35:34Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 210.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:35:34Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:35:34Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "alternate",
+      "price": 485.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:35:34Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 2035.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:35:34Z"
+    },
+    {
+      "card_number": "EB02-044",
+      "art_variant": "original",
+      "price": 60.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/sengoku-extra-booster-anime-25th-collection/p/693855583",
+      "title": "Sengoku [Extra Booster: Anime 25th Collection]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:36:45Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/hody-jones-wings-of-the-captain/p/693855540",
+      "title": "Hody Jones [Wings of the Captain]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:36:45Z"
+    },
+    {
+      "card_number": "ST29-004",
+      "art_variant": "original",
+      "price": 18.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
+      "title": "Sanji [Starter Deck: Egghead]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:36:53Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 168.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:36:53Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 179.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:36:53Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 399.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:36:53Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "alternate",
+      "price": 2399.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ground-death-alternate-art-the-azure-seas-seven",
+      "title": "Ground Death (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-04",
+      "captured_at": "2026-09-04T18:36:53Z"
     }
   ]
 }
