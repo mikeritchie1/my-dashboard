@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-09-04T06:35:39.999994Z",
+  "scraped_at": "2026-09-04T11:48:00.900249Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2370,6 +2370,34 @@
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {
+      "title": "Limited Card Sleeve Championship 26-27 KV",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/sleeve045.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/asia-en/product/2026/09/02/JxaWO4p8YG9fSJYe/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/sleeve045_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-09-04T11:47:05.305529Z"
+    },
+    {
+      "title": "Limited Card Sleeve ONE PIECE Heroines Edition",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/sleeve046.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/asia-en/product/2026/09/02/Cti0LE4hZ06BZ4T0/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/sleeve046_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-09-04T11:47:05.305529Z"
+    },
+    {
       "title": "LIMITED CARD SLEEVE PREMIUM MATTE vol.6",
       "category": "other",
       "category_label": "OTHER",
@@ -2426,6 +2454,20 @@
       "added_at": "2026-06-19T07:35:50.470912Z"
     },
     {
+      "title": "Playmat&Card Set -Luffy&Bonney-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/playmat_liffy-bonney.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/03/HPXMQszWEFCQiUJJ/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/playmat-liffy-bonney_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-09-04T11:47:05.305529Z"
+    },
+    {
       "title": "Premium Card Collection -29th Anniversary Edition-",
       "category": "other",
       "category_label": "OTHER",
@@ -2438,6 +2480,20 @@
       "image_local_url": "./data/one_piece/product_images/cardcollection29th_img-products-en.webp",
       "is_released": false,
       "added_at": "2026-07-02T06:29:04.613424Z"
+    },
+    {
+      "title": "Premium Card Collection -6 assort vol.2-",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "",
+      "release_date": "",
+      "release_date_text": "",
+      "url": "https://en.onepiece-cardgame.com/products/collection-6assort-vol2.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/03/NcpIYveTOFjrSSH1/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/collection-6assort-vol2_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-09-04T11:47:05.305529Z"
     },
     {
       "title": "Premium Card Collection -Ace & Sabo & Luffy-",
