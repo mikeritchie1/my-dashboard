@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T13:13:13Z",
+  "updated_at": "2026-09-06T16:30:44Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -172176,6 +172176,78 @@
       "stock": "In stock",
       "observed_on": "2026-09-06",
       "captured_at": "2026-09-06T13:12:20Z"
+    },
+    {
+      "card_number": "ST01-006",
+      "art_variant": "original",
+      "price": 7.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/694225104",
+      "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T16:30:14Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/694225107",
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T16:30:14Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-uta-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Uta) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T16:30:24Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 56.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-boa-hancock-extra-booster-one-piece-heroines-edition",
+      "title": "DON!! Card (Boa Hancock) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T16:30:24Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 245.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T16:30:24Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 356.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T16:30:24Z"
     }
   ]
 }
