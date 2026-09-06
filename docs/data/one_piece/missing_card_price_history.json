@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T16:30:44Z",
+  "updated_at": "2026-09-06T18:41:37Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -172248,6 +172248,30 @@
       "stock": "In stock",
       "observed_on": "2026-09-06",
       "captured_at": "2026-09-06T16:30:24Z"
+    },
+    {
+      "card_number": "OP15-118",
+      "art_variant": "original",
+      "price": 190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-op15-118-op15-118-adventure-on-kamis-island-foil",
+      "title": "Enel (OP15-118) (OP15-118) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T18:40:50Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "alternate",
+      "price": 390.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-alternate-art-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (Alternate Art) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T18:40:50Z"
     }
   ]
 }
