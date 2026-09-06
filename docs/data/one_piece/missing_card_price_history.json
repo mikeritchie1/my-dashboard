@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T20:53:38Z",
+  "updated_at": "2026-09-06T22:29:17Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -172332,6 +172332,30 @@
       "stock": "In stock",
       "observed_on": "2026-09-06",
       "captured_at": "2026-09-06T20:53:20Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 150.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
+      "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T22:28:25Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "alternate",
+      "price": 555.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T22:28:25Z"
     }
   ]
 }

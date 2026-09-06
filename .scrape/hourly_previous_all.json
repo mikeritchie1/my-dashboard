@@ -1381,21 +1381,6 @@
       "scraped_at": "2026-09-03T18:57:16Z"
     },
     {
-      "card_number": "OP14-096",
-      "price": "145.0",
-      "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R145.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/671427_c9df08cc-8a36-441b-a331-d2c21326aeb4.jpg?v=1768474740",
-      "art_variant": "original",
-      "scraped_at": "2026-08-03T15:33:35Z"
-    },
-    {
       "card_number": "DON!!",
       "price": "150.0",
       "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
@@ -1409,6 +1394,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/672190_f77f1e6e-2186-4836-92a7-ac4ffea17090.jpg?v=1768558787",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "price": "150.0",
+      "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R150.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/671427_c9df08cc-8a36-441b-a331-d2c21326aeb4.jpg?v=1768474740",
+      "art_variant": "original",
+      "scraped_at": "2026-08-03T15:33:35Z"
     },
     {
       "card_number": "ST21-014",
@@ -1727,14 +1727,14 @@
     },
     {
       "card_number": "OP16-032",
-      "price": "560.0",
+      "price": "555.0",
       "title": "Boa Hancock (Alternate Art) (OP16-032) - The Time of Battle Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R560.00",
+      "available_variants": "Near Mint R555.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-alternate-art-op16-032-the-time-of-battle-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/695309.jpg?v=1780708569",
       "art_variant": "alternate",
