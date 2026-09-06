@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T09:45:10Z",
+  "updated_at": "2026-09-06T13:13:13Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -172152,6 +172152,30 @@
       "stock": "In stock",
       "observed_on": "2026-09-06",
       "captured_at": "2026-09-06T09:44:21Z"
+    },
+    {
+      "card_number": "P-072",
+      "art_variant": "original",
+      "price": 1125.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ryuma-premium-card-collection-best-selection-vol-3-one-piece-promotion-cards",
+      "title": "Ryuma (Premium Card Collection -Best Selection Vol. 3-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T13:12:20Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 3060.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-06",
+      "captured_at": "2026-09-06T13:12:20Z"
     }
   ]
 }
