@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08T19:01:41Z",
+  "updated_at": "2026-09-08T22:04:28Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -176640,6 +176640,54 @@
       "stock": "In stock",
       "observed_on": "2026-09-08",
       "captured_at": "2026-09-08T19:00:49Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-08",
+      "captured_at": "2026-09-08T22:03:37Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 795.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-08",
+      "captured_at": "2026-09-08T22:03:37Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 241.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-08",
+      "captured_at": "2026-09-08T22:04:10Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 624.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-08",
+      "captured_at": "2026-09-08T22:04:10Z"
     }
   ]
 }
