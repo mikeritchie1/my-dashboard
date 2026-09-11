@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T06:40:56Z",
+  "updated_at": "2026-09-11T11:52:34Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -182004,6 +182004,150 @@
       "stock": "In stock",
       "observed_on": "2026-09-11",
       "captured_at": "2026-09-11T06:40:37Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "OP01-057",
+      "art_variant": "original",
+      "price": 115.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/paradise-waterfall-best-selection-vol-1",
+      "title": "Paradise Waterfall [Best Selection Vol.1]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "OP07-057",
+      "art_variant": "original",
+      "price": 260.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/perfume-femur-premium-card-collection-best-selection-vol-4-one-piece-promotion-cards",
+      "title": "Perfume Femur (Premium Card Collection -Best Selection Vol. 4-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 440.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 520.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 790.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "alternate",
+      "price": 875.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-alternate-art-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (Alternate Art) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:51:48Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "original",
+      "price": 34.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-adventure-on-kamis-island-1",
+      "title": "Monkey.D.Luffy [Adventure on Kami's Island]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:52:14Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 97.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:52:14Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 194.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:52:14Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 248.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-11",
+      "captured_at": "2026-09-11T11:52:14Z"
     }
   ]
 }
