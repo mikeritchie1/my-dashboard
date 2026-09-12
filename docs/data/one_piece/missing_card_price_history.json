@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T21:44:27Z",
+  "updated_at": "2026-09-12T23:28:46Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -183732,6 +183732,18 @@
       "stock": "In stock",
       "observed_on": "2026-09-12",
       "captured_at": "2026-09-12T21:44:10Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-12",
+      "captured_at": "2026-09-12T23:28:07Z"
     }
   ]
 }
