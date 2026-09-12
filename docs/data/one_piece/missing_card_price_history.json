@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T17:28:30Z",
+  "updated_at": "2026-09-12T19:42:48Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -183648,6 +183648,30 @@
       "stock": "In stock",
       "observed_on": "2026-09-12",
       "captured_at": "2026-09-12T17:28:13Z"
+    },
+    {
+      "card_number": "OP14-096",
+      "art_variant": "original",
+      "price": 165.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
+      "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-12",
+      "captured_at": "2026-09-12T19:42:05Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 140.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-12",
+      "captured_at": "2026-09-12T19:42:31Z"
     }
   ]
 }

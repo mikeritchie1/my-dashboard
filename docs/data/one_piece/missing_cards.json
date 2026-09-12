@@ -346,21 +346,6 @@
       "scraped_at": "2026-08-06T22:42:09Z"
     },
     {
-      "card_number": "ST25-001",
-      "price": 18.0,
-      "title": "Alvida [Starter Deck: Blue Buggy]",
-      "rarity": "Common",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/alvida-starter-deck-blue-buggy/p/694151566",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/634305_1024x1024_2x_unCV3nQrq.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-09-05T20:45:40Z"
-    },
-    {
       "card_number": "DON!!",
       "price": 20.0,
       "title": "DON!! Card (Katakuri) [Premium Booster -The Best-]",
@@ -541,21 +526,6 @@
       "scraped_at": "2026-09-10T15:15:17Z"
     },
     {
-      "card_number": "OP05-082",
-      "price": 30.0,
-      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
-      "rarity": "",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/694151575",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-09-05T20:45:40Z"
-    },
-    {
       "card_number": "ST06-004",
       "price": 30.0,
       "title": "Smoker [Starter Deck: Absolute Justice]",
@@ -706,21 +676,6 @@
       "scraped_at": "2026-07-01T10:31:49Z"
     },
     {
-      "card_number": "ST27-003",
-      "price": 90.0,
-      "title": "Kuzan [Starter Deck: Black Marshall.D.Teach]",
-      "rarity": "Super Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/694151560",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/images__1__Jql6WXB4A.jpeg",
-      "art_variant": "original",
-      "scraped_at": "2026-09-05T20:45:40Z"
-    },
-    {
       "card_number": "P-052",
       "price": 95.0,
       "title": "Dracule Mihawk [Live Action Edition]",
@@ -749,21 +704,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617169.jpg?v=1758380156",
       "art_variant": "original",
       "scraped_at": "2026-09-10T11:53:19Z"
-    },
-    {
-      "card_number": "OP10-005",
-      "price": 100.0,
-      "title": "Sanji [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "GeekHaven",
-      "set_name": "",
-      "condition": "Second Hand",
-      "stock": "In stock",
-      "available_variants": "",
-      "url": "https://www.bobshop.co.za/sanji-royal-blood/p/694151587",
-      "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/617037_1024x1024_2x_OENGoYcHEz.jpg",
-      "art_variant": "original",
-      "scraped_at": "2026-09-05T20:45:40Z"
     },
     {
       "card_number": "OP15-114",
@@ -886,6 +826,21 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
+      "card_number": "ST10-010",
+      "price": 140.0,
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Ultra Deck - The Three Captains",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R140.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/525053.jpg?v=1733906267",
+      "art_variant": "original",
+      "scraped_at": "2026-09-12T19:42:31Z"
+    },
+    {
       "card_number": "DON!!",
       "price": 150.0,
       "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
@@ -917,14 +872,14 @@
     },
     {
       "card_number": "OP14-096",
-      "price": 160.0,
+      "price": 165.0,
       "title": "Ground Death (OP14-096) - The Azure Sea's Seven Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R160.00",
+      "available_variants": "Near Mint R165.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ground-death-op14-096-the-azure-seas-seven-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/671427_c9df08cc-8a36-441b-a331-d2c21326aeb4.jpg?v=1768474740",
       "art_variant": "original",
