@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T06:34:38Z",
+  "updated_at": "2026-09-12T11:18:55Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -183564,6 +183564,54 @@
       "stock": "In stock",
       "observed_on": "2026-09-12",
       "captured_at": "2026-09-12T06:34:22Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-extra-booster-memorial-collection-1",
+      "title": "Merry Go [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-12",
+      "captured_at": "2026-09-12T11:18:16Z"
+    },
+    {
+      "card_number": "OP08-023",
+      "art_variant": "original",
+      "price": 45.0,
+      "store": "CollectiVerse",
+      "url": "https://www.bobshop.co.za/one-piece-trading-card-game-carrot-op08-023-sr-japanese-foil-nm/p/694930455",
+      "title": "One Piece Trading Card Game - Carrot OP08-023 SR - Japanese Foil - NM",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-12",
+      "captured_at": "2026-09-12T11:18:22Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 96.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-12",
+      "captured_at": "2026-09-12T11:18:37Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 249.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-12",
+      "captured_at": "2026-09-12T11:18:37Z"
     }
   ]
 }
