@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T19:01:38Z",
+  "updated_at": "2026-09-13T21:50:35Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -185112,6 +185112,18 @@
       "stock": "In stock",
       "observed_on": "2026-09-13",
       "captured_at": "2026-09-13T16:40:45Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 275.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-13",
+      "captured_at": "2026-09-13T21:50:18Z"
     }
   ]
 }
