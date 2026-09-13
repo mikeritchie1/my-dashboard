@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T21:50:35Z",
+  "updated_at": "2026-09-13T23:42:10Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -185124,6 +185124,18 @@
       "stock": "In stock",
       "observed_on": "2026-09-13",
       "captured_at": "2026-09-13T21:50:18Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 240.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-13",
+      "captured_at": "2026-09-13T23:41:25Z"
     }
   ]
 }
