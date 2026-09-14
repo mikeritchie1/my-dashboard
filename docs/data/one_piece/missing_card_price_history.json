@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-14T07:14:22Z",
+  "updated_at": "2026-09-14T14:27:32Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -186348,6 +186348,78 @@
       "stock": "In stock",
       "observed_on": "2026-09-14",
       "captured_at": "2026-09-14T07:14:03Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 100.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-14",
+      "captured_at": "2026-09-14T14:26:54Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-14",
+      "captured_at": "2026-09-14T14:26:54Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "art_variant": "original",
+      "price": 44.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-14",
+      "captured_at": "2026-09-14T14:27:14Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 94.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-14",
+      "captured_at": "2026-09-14T14:27:14Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 151.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-14",
+      "captured_at": "2026-09-14T14:27:14Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 271.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-14",
+      "captured_at": "2026-09-14T14:27:14Z"
     }
   ]
 }
