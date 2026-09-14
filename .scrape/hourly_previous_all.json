@@ -901,21 +901,6 @@
       "scraped_at": "2026-09-02T18:59:25Z"
     },
     {
-      "card_number": "OP10-005",
-      "price": "190.0",
-      "title": "Sanji [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R190.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
-      "art_variant": "original",
-      "scraped_at": "2026-07-01T09:39:28Z"
-    },
-    {
       "card_number": "OP14-069",
       "price": "191.0",
       "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
@@ -929,6 +914,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/668639.jpg?v=1769205287",
       "art_variant": "alternate",
       "scraped_at": "2026-07-17T11:11:43Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "price": "195.0",
+      "title": "Sanji [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R195.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
+      "art_variant": "original",
+      "scraped_at": "2026-07-01T09:39:28Z"
     },
     {
       "card_number": "ST21-014",
@@ -1171,6 +1171,21 @@
       "scraped_at": "2026-08-11T19:50:46Z"
     },
     {
+      "card_number": "OP16-015",
+      "price": "565.0",
+      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R565.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/693420_a96b102a-fe58-4a26-b2a8-89e02de0e633.jpg?v=1780708745",
+      "art_variant": "alternate",
+      "scraped_at": "2026-08-25T14:31:30Z"
+    },
+    {
       "card_number": "DON!!",
       "price": "568.0",
       "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
@@ -1184,21 +1199,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/655123.jpg?v=1760630778",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "OP16-015",
-      "price": "590.0",
-      "title": "Monkey.D.Luffy (Alternate Art) (OP16-015) - The Time of Battle Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R590.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-alternate-art-op16-015-the-time-of-battle-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/693420_a96b102a-fe58-4a26-b2a8-89e02de0e633.jpg?v=1780708745",
-      "art_variant": "alternate",
-      "scraped_at": "2026-08-25T14:31:30Z"
     },
     {
       "card_number": "OP14-104",
