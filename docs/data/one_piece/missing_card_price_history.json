@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T15:12:10Z",
+  "updated_at": "2026-09-16T19:09:01Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -190476,6 +190476,18 @@
       "stock": "In stock",
       "observed_on": "2026-09-16",
       "captured_at": "2026-09-16T15:11:20Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 430.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-16",
+      "captured_at": "2026-09-16T19:08:12Z"
     }
   ]
 }
