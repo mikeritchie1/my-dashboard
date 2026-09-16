@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-16T19:09:01Z",
+  "updated_at": "2026-09-16T22:26:14Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -190488,6 +190488,18 @@
       "stock": "In stock",
       "observed_on": "2026-09-16",
       "captured_at": "2026-09-16T19:08:12Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "original",
+      "price": 100.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil",
+      "title": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-16",
+      "captured_at": "2026-09-16T22:25:20Z"
     }
   ]
 }
