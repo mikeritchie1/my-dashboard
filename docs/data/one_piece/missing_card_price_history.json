@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-17T19:23:20Z",
+  "updated_at": "2026-09-17T22:29:10Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -192636,6 +192636,66 @@
       "stock": "In stock",
       "observed_on": "2026-09-17",
       "captured_at": "2026-09-17T19:22:50Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "alternate",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-alternate-art-op16-026-the-time-of-battle-foil",
+      "title": "Emporio.Ivankov (026) (Alternate Art) (OP16-026) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-17",
+      "captured_at": "2026-09-17T22:28:12Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 435.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-17",
+      "captured_at": "2026-09-17T22:28:12Z"
+    },
+    {
+      "card_number": "ST04-016",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/blast-breath-starter-deck-animal-kingdom-pirates/p/695569942",
+      "title": "Blast Breath [Starter Deck: Animal Kingdom Pirates]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-17",
+      "captured_at": "2026-09-17T22:28:41Z"
+    },
+    {
+      "card_number": "ST04-016",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/blast-breath-jolly-roger-foil-premium-booster-the-best/p/695569943",
+      "title": "Blast Breath (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-17",
+      "captured_at": "2026-09-17T22:28:41Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/donquixote-doflamingo-royal-blood/p/695569940",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-17",
+      "captured_at": "2026-09-17T22:28:41Z"
     }
   ]
 }
