@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-09-17T22:29:13.027331Z",
+  "scraped_at": "2026-09-18T00:52:37.524203Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2268,7 +2268,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/08/20/Xn03frg9xHS0R6YX/img_item01.webp?_=381d735c0a1a478ea8f8679c87442664",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/sd01_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-08-21T07:32:22.941139Z"
     },
     {
