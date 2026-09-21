@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-21T14:36:11Z",
+  "updated_at": "2026-09-21T19:47:36Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -199140,6 +199140,114 @@
       "stock": "In stock",
       "observed_on": "2026-09-21",
       "captured_at": "2026-09-21T14:34:10Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-egghead-gold-the-azure-seas-seven-foil",
+      "title": "DON!! Card (Egghead) (Gold) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:11Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:11Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 415.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:11Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1680.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-buggy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Buggy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:11Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 2040.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-gear-4-luffy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Gear 4 Luffy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:11Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 3490.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:11Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-legacy-of-the-master/p/695984754",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:44Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-gol-d-roger-carrying-on-his-will/p/695984753",
+      "title": "DON!! Card (Gol.D.Roger) [Carrying On His Will]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:44Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 13.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-royal-blood/p/695984755",
+      "title": "DON!! Card (Alternate Art) [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-21",
+      "captured_at": "2026-09-21T19:46:44Z"
     }
   ]
 }
