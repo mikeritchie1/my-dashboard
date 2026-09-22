@@ -676,21 +676,6 @@
       "scraped_at": "2026-07-20T17:14:14Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": 20.0,
-      "title": "Donquixote Doflamingo [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R20.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
-      "art_variant": "original",
-      "scraped_at": "2026-09-10T15:15:17Z"
-    },
-    {
       "card_number": "OP14-091",
       "price": 20.0,
       "title": "Mr.2.Bon.Kurei (Bentham) (OP14-091) - The Azure Sea's Seven Foil",
@@ -779,6 +764,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/525057.jpg?v=1763492380",
       "art_variant": "original",
       "scraped_at": "2026-09-02T18:59:25Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": 25.0,
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R25.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
+      "art_variant": "original",
+      "scraped_at": "2026-09-10T15:15:17Z"
     },
     {
       "card_number": "ST06-004",
