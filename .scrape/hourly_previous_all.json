@@ -826,21 +826,6 @@
       "scraped_at": "2026-09-10T15:15:17Z"
     },
     {
-      "card_number": "ST06-004",
-      "price": "25.0",
-      "title": "Smoker [Starter Deck: Absolute Justice]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Starter Deck: Absolute Justice",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R25.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "OP04-056",
       "price": "30.0",
       "title": "Gum-Gum Red Roc [Kingdoms of Intrigue]",
@@ -869,6 +854,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/594334_1024x1024_2x_GWY_xcpk8.jpg",
       "art_variant": "original",
       "scraped_at": "2026-09-19T19:01:30Z"
+    },
+    {
+      "card_number": "ST06-004",
+      "price": "30.0",
+      "title": "Smoker [Starter Deck: Absolute Justice]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Starter Deck: Absolute Justice",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R30.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/485250.jpg?v=1763511471",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "EB02-045",
