@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-22T06:54:31Z",
+  "updated_at": "2026-09-22T12:08:56Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -200784,6 +200784,30 @@
       "stock": "In stock",
       "observed_on": "2026-09-22",
       "captured_at": "2026-09-22T06:53:36Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 750.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-22",
+      "captured_at": "2026-09-22T12:08:07Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 2925.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-22",
+      "captured_at": "2026-09-22T12:08:07Z"
     }
   ]
 }
