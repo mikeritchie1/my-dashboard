@@ -796,21 +796,6 @@
       "scraped_at": "2026-09-02T18:59:25Z"
     },
     {
-      "card_number": "DON!!",
-      "price": 25.0,
-      "title": "DON!! Card (Alternate Art) (Luffy and Loki) - The World's Strongest Warriors",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R25.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-luffy-and-loki-the-worlds-strongest-warriors",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712748.jpg?v=1790063665",
-      "art_variant": "alternate",
-      "scraped_at": "2026-09-22T17:22:16Z"
-    },
-    {
       "card_number": "OP10-071",
       "price": 25.0,
       "title": "Donquixote Doflamingo [Royal Blood]",
@@ -824,6 +809,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617115_17a433db-b9b0-4f73-a3bb-6fec7dbb2083.jpg?v=1763498685",
       "art_variant": "original",
       "scraped_at": "2026-09-10T15:15:17Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 30.0,
+      "title": "DON!! Card (Alternate Art) (Luffy and Loki) - The World's Strongest Warriors",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R30.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-luffy-and-loki-the-worlds-strongest-warriors",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712748.jpg?v=1790063665",
+      "art_variant": "alternate",
+      "scraped_at": "2026-09-22T17:22:16Z"
     },
     {
       "card_number": "OP04-056",
@@ -1201,21 +1201,6 @@
       "scraped_at": "2026-09-19T19:01:30Z"
     },
     {
-      "card_number": "OP15-008",
-      "price": 100.0,
-      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R100.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685348_1c34ef12-3abb-4de5-a56f-d6f38233a09f.jpg?v=1780509813",
-      "art_variant": "alternate",
-      "scraped_at": "2026-07-11T15:41:06Z"
-    },
-    {
       "card_number": "OP15-114",
       "price": 100.0,
       "title": "Wyper (Alternate Art) (OP15-114) - Adventure on Kami's Island Foil",
@@ -1259,6 +1244,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/634621_c4ee36da-19a0-4876-a606-ffffd1e6a1de.jpg?v=1763512320",
       "art_variant": "original",
       "scraped_at": "2026-09-02T18:59:25Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "price": 105.0,
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R105.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685348_1c34ef12-3abb-4de5-a56f-d6f38233a09f.jpg?v=1780509813",
+      "art_variant": "alternate",
+      "scraped_at": "2026-07-11T15:41:06Z"
     },
     {
       "card_number": "OP10-071",
@@ -1396,6 +1396,21 @@
       "scraped_at": "2026-07-17T11:11:43Z"
     },
     {
+      "card_number": "OP15-119",
+      "price": 185.0,
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R185.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
+      "art_variant": "original",
+      "scraped_at": "2026-08-25T08:25:11Z"
+    },
+    {
       "card_number": "EB02-035",
       "price": 190.0,
       "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
@@ -1424,21 +1439,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/668639.jpg?v=1769205287",
       "art_variant": "alternate",
       "scraped_at": "2026-07-17T11:11:43Z"
-    },
-    {
-      "card_number": "OP15-119",
-      "price": 200.0,
-      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R200.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685480_761cac24-f79c-4c70-a997-da2f93f5f679.jpg?v=1777211438",
-      "art_variant": "original",
-      "scraped_at": "2026-08-25T08:25:11Z"
     },
     {
       "card_number": "OP15-118",
@@ -1532,14 +1532,14 @@
     },
     {
       "card_number": "ST23-001",
-      "price": 265.0,
+      "price": 285.0,
       "title": "Uta [Starter Deck: Red Shanks]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Starter Deck: Red Shanks",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R265.00",
+      "available_variants": "Near Mint Foil R285.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/633761.jpg?v=1763511702",
       "art_variant": "original",
@@ -1562,14 +1562,14 @@
     },
     {
       "card_number": "ST05-004",
-      "price": 345.0,
+      "price": 340.0,
       "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R345.00",
+      "available_variants": "Near Mint Foil R340.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/564140.jpg?v=1763498337",
       "art_variant": "original",
@@ -1726,6 +1726,21 @@
       "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
+      "card_number": "OP06-106",
+      "price": 1665.0,
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Premium Booster -The Best-",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R1665.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
+      "art_variant": "alternate",
+      "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
       "card_number": "DON!!",
       "price": 1680.0,
       "title": "DON!! Card (Buggy) (Gold) [Premium Booster -The Best- Vol. 2]",
@@ -1739,21 +1754,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/655131.jpg?v=1763512359",
       "art_variant": "original",
       "scraped_at": "2026-08-09T16:17:38Z"
-    },
-    {
-      "card_number": "OP06-106",
-      "price": 1690.0,
-      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Premium Booster -The Best-",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R1690.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/586547_f8443361-1276-4ecb-b96f-7a9a73f8d367.jpg?v=1763495074",
-      "art_variant": "alternate",
-      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "DON!!",
