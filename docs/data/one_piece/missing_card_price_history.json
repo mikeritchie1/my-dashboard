@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T20:54:16Z",
+  "updated_at": "2026-09-24T23:36:37Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -205284,6 +205284,78 @@
       "stock": "In stock",
       "observed_on": "2026-09-24",
       "captured_at": "2026-09-24T20:54:02Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "original",
+      "price": 95.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil",
+      "title": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-24",
+      "captured_at": "2026-09-24T23:35:28Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "art_variant": "alternate",
+      "price": 115.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-24",
+      "captured_at": "2026-09-24T23:35:28Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-24",
+      "captured_at": "2026-09-24T23:35:28Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 390.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-24",
+      "captured_at": "2026-09-24T23:35:28Z"
+    },
+    {
+      "card_number": "OP15-092",
+      "art_variant": "alternate",
+      "price": 515.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-24",
+      "captured_at": "2026-09-24T23:35:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-24",
+      "captured_at": "2026-09-24T23:35:55Z"
     }
   ]
 }
