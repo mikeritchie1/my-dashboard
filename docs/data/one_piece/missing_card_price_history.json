@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T05:38:37Z",
+  "updated_at": "2026-09-26T10:21:05Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -208884,6 +208884,102 @@
       "stock": "In stock",
       "observed_on": "2026-09-26",
       "captured_at": "2026-09-26T05:38:22Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-luffy-and-loki-the-worlds-strongest-warriors",
+      "title": "DON!! Card (Alternate Art) (Luffy and Loki) - The World's Strongest Warriors",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:21Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 10.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-four-emperors-the-worlds-strongest-warriors-1",
+      "title": "DON!! Card (Alternate Art) (The Four Emperors) [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:50Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 22.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-luffy-and-loki-the-worlds-strongest-warriors",
+      "title": "DON!! Card (Alternate Art) (Luffy and Loki) [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:50Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 62.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-gold-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) (Gold) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:50Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 153.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:50Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 158.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:50Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 188.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:50Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 269.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T10:20:50Z"
     }
   ]
 }
