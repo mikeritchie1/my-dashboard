@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-26T21:39:24Z",
+  "updated_at": "2026-09-26T23:57:36Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -209196,6 +209196,78 @@
       "stock": "In stock",
       "observed_on": "2026-09-26",
       "captured_at": "2026-09-26T21:39:04Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 190.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T23:56:51Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T23:56:51Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 275.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T23:56:51Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T23:56:51Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "alternate",
+      "price": 345.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-alternate-art-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (Alternate Art) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T23:56:51Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 760.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-foxy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Foxy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-26",
+      "captured_at": "2026-09-26T23:56:51Z"
     }
   ]
 }
