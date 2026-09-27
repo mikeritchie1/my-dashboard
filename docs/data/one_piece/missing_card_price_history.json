@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T08:37:43Z",
+  "updated_at": "2026-09-27T14:21:08Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -210864,6 +210864,102 @@
       "stock": "In stock",
       "observed_on": "2026-09-27",
       "captured_at": "2026-09-27T08:36:33Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:17Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 560.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:17Z"
+    },
+    {
+      "card_number": "ST01-006",
+      "art_variant": "original",
+      "price": 7.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/tony-tony-chopper-starter-deck-straw-hat-crew/p/696738412",
+      "title": "Tony Tony.Chopper [Starter Deck: Straw Hat Crew]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:40Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 8.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/monkey-d-luffy-p-055-reprint-premium-booster-the-best/p/696738415",
+      "title": "Monkey.D.Luffy (P-055) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:40Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 61.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-gold-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) (Gold) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:49Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 79.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:49Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 117.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:49Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 184.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T14:20:49Z"
     }
   ]
 }
