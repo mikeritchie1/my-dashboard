@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27T18:42:10Z",
+  "updated_at": "2026-09-27T21:40:58Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -211104,6 +211104,30 @@
       "stock": "In stock",
       "observed_on": "2026-09-27",
       "captured_at": "2026-09-27T18:41:50Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 167.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T21:40:42Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 323.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-27",
+      "captured_at": "2026-09-27T21:40:42Z"
     }
   ]
 }
