@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28T12:56:51Z",
+  "updated_at": "2026-09-28T19:52:58Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -212856,6 +212856,186 @@
       "stock": "In stock",
       "observed_on": "2026-09-28",
       "captured_at": "2026-09-28T12:56:35Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "OP15-118",
+      "art_variant": "original",
+      "price": 255.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-op15-118-op15-118-adventure-on-kamis-island-foil",
+      "title": "Enel (OP15-118) (OP15-118) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 275.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 580.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 770.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-foxy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Foxy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1155.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1700.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-buggy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Buggy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 2060.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-gear-4-luffy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Gear 4 Luffy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 3530.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-boa-hancock-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Boa Hancock) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:51:59Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-legacy-of-the-master/p/696859185",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:52:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-gol-d-roger-carrying-on-his-will/p/696859184",
+      "title": "DON!! Card (Gol.D.Roger) [Carrying On His Will]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:52:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 13.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-royal-blood/p/696859186",
+      "title": "DON!! Card (Alternate Art) [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:52:28Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 11.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains",
+      "title": "DON!! Card [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:52:41Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 25.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-luffy-and-loki-the-worlds-strongest-warriors",
+      "title": "DON!! Card (Alternate Art) (Luffy and Loki) [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:52:41Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 177.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-28",
+      "captured_at": "2026-09-28T19:52:41Z"
     }
   ]
 }
