@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-29T10:57:13Z",
+  "updated_at": "2026-09-29T16:41:42Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -214740,6 +214740,90 @@
       "stock": "In stock",
       "observed_on": "2026-09-29",
       "captured_at": "2026-09-29T10:56:50Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "alternate",
+      "price": 60.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-alternate-art-op16-026-the-time-of-battle-foil",
+      "title": "Emporio.Ivankov (026) (Alternate Art) (OP16-026) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-29",
+      "captured_at": "2026-09-29T16:40:48Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-gold-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Alternate Art) (Gold) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-29",
+      "captured_at": "2026-09-29T16:40:48Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 1170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-rocks-special-foil-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Alternate Art) (Rocks) (Special Foil) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-29",
+      "captured_at": "2026-09-29T16:40:48Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 8.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-worlds-strongest-warriors-1",
+      "title": "DON!! Card (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-09-29",
+      "captured_at": "2026-09-29T16:41:23Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 86.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-29",
+      "captured_at": "2026-09-29T16:41:23Z"
+    },
+    {
+      "card_number": "ST10-010",
+      "art_variant": "original",
+      "price": 183.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-ultra-deck-the-three-captains",
+      "title": "Trafalgar Law [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-29",
+      "captured_at": "2026-09-29T16:41:23Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 343.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-09-29",
+      "captured_at": "2026-09-29T16:41:23Z"
     }
   ]
 }
