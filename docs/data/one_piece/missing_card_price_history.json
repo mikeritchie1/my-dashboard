@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-02T09:04:27Z",
+  "updated_at": "2026-10-02T16:00:02Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -220464,6 +220464,78 @@
       "stock": "In stock",
       "observed_on": "2026-10-02",
       "captured_at": "2026-10-02T09:04:11Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "art_variant": "alternate",
+      "price": 105.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-02",
+      "captured_at": "2026-10-02T15:59:14Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 315.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-02",
+      "captured_at": "2026-10-02T15:59:14Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 330.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-02",
+      "captured_at": "2026-10-02T15:59:14Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 580.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-02",
+      "captured_at": "2026-10-02T15:59:14Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 1570.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-02",
+      "captured_at": "2026-10-02T15:59:14Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 168.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-02",
+      "captured_at": "2026-10-02T15:59:42Z"
     }
   ]
 }
