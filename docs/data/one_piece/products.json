@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-10-02T02:39:49.974869Z",
+  "scraped_at": "2026-10-02T09:04:31.966769Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2340,6 +2340,20 @@
       "image_local_url": "./data/one_piece/product_images/op18_img-item01.webp",
       "is_released": false,
       "added_at": "2026-09-25T13:02:46.849466Z"
+    },
+    {
+      "title": "Gift Collection -ONE PIECE Heroines- [GC-2026]",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-11-20",
+      "release_date_text": "November 20, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/gift-collection.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/01/1G5QS6sl6UETbgKE/img_item01.webp?_=73e4fa33c847a19078961369a0ca69be",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/gift-collection_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-10-02T09:04:29.426967Z"
     },
     {
       "title": "Chinese 3rd Anniversary Set",
