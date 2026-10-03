@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-03T18:29:25Z",
+  "updated_at": "2026-10-03T21:52:57Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -222192,6 +222192,90 @@
       "stock": "In stock",
       "observed_on": "2026-10-03",
       "captured_at": "2026-10-03T18:28:38Z"
+    },
+    {
+      "card_number": "ST25-001",
+      "art_variant": "original",
+      "price": 18.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/alvida-starter-deck-blue-buggy/p/697441354",
+      "title": "Alvida [Starter Deck: Blue Buggy]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-10-03",
+      "captured_at": "2026-10-03T21:52:27Z"
+    },
+    {
+      "card_number": "OP05-082",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/shirahoshi-op05-082-reprint-premium-booster-the-best/p/697441363",
+      "title": "Shirahoshi (OP05-082) (Reprint) [Premium Booster -The Best-]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-10-03",
+      "captured_at": "2026-10-03T21:52:27Z"
+    },
+    {
+      "card_number": "ST27-003",
+      "art_variant": "original",
+      "price": 90.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/kuzan-starter-deck-black-marshall-d-teach/p/697441350",
+      "title": "Kuzan [Starter Deck: Black Marshall.D.Teach]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-10-03",
+      "captured_at": "2026-10-03T21:52:27Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 100.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/sanji-royal-blood/p/697441375",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-10-03",
+      "captured_at": "2026-10-03T21:52:27Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 5.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-03",
+      "captured_at": "2026-10-03T21:52:37Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 169.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-03",
+      "captured_at": "2026-10-03T21:52:37Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 320.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-03",
+      "captured_at": "2026-10-03T21:52:37Z"
     }
   ]
 }
