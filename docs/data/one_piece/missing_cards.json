@@ -706,21 +706,6 @@
       "scraped_at": "2026-09-26T21:38:54Z"
     },
     {
-      "card_number": "OP14-091",
-      "price": 20.0,
-      "title": "Mr.2.Bon.Kurei (Bentham) (OP14-091) - The Azure Sea's Seven Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R20.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-op14-091-the-azure-seas-seven-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/670639.jpg?v=1768490898",
-      "art_variant": "original",
-      "scraped_at": "2026-09-10T15:15:17Z"
-    },
-    {
       "card_number": "OP15-008",
       "price": 20.0,
       "title": "Krieg (OP15-008) (OP15-008) - Adventure on Kami's Island Foil",
@@ -1457,14 +1442,14 @@
     },
     {
       "card_number": "ST23-001",
-      "price": 330.0,
+      "price": 335.0,
       "title": "Uta [Starter Deck: Red Shanks]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Starter Deck: Red Shanks",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R330.00",
+      "available_variants": "Near Mint Foil R335.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/633761.jpg?v=1763511702",
       "art_variant": "original",
@@ -1501,21 +1486,6 @@
       "scraped_at": "2026-08-25T08:25:11Z"
     },
     {
-      "card_number": "OP15-078",
-      "price": 535.0,
-      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R535.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685429.jpg?v=1780510304",
-      "art_variant": "original",
-      "scraped_at": "2026-08-24T22:11:46Z"
-    },
-    {
       "card_number": "DON!!",
       "price": 567.0,
       "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
@@ -1529,6 +1499,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/655123.jpg?v=1790292338",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "price": 570.0,
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R570.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685429.jpg?v=1780510304",
+      "art_variant": "original",
+      "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
       "card_number": "OP15-113",
