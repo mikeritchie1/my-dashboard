@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-05T09:40:43Z",
+  "updated_at": "2026-10-05T18:54:04Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -225672,6 +225672,174 @@
       "stock": "In stock",
       "observed_on": "2026-10-05",
       "captured_at": "2026-10-05T09:40:25Z"
+    },
+    {
+      "card_number": "OP01-057",
+      "art_variant": "original",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/paradise-waterfall-best-selection-vol-1",
+      "title": "Paradise Waterfall [Best Selection Vol.1]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:52:57Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:52:57Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 255.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:52:57Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:52:57Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 335.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:52:57Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 505.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Lightly Played Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:52:57Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:52:57Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-legacy-of-the-master/p/697731843",
+      "title": "DON!! Card (Alternate Art) [Legacy of the Master]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:53:31Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 9.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-gol-d-roger-carrying-on-his-will/p/697731842",
+      "title": "DON!! Card (Gol.D.Roger) [Carrying On His Will]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:53:31Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 13.0,
+      "store": "GeekHaven",
+      "url": "https://www.bobshop.co.za/don-card-alternate-art-royal-blood/p/697731844",
+      "title": "DON!! Card (Alternate Art) [Royal Blood]",
+      "condition": "Second Hand",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:53:31Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 5.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-worlds-strongest-warriors-1",
+      "title": "DON!! Card (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:53:42Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "art_variant": "original",
+      "price": 52.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:53:42Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 183.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:53:42Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 628.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-05",
+      "captured_at": "2026-10-05T18:53:42Z"
     }
   ]
 }
