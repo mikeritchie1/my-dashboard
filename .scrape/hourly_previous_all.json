@@ -901,21 +901,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "ST02-009",
-      "price": "39.0",
-      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Worst Generation",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R39.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
       "card_number": "OP05-006",
       "price": "40.0",
       "title": "Koala [Awakening of the New Era]",
@@ -929,6 +914,21 @@
       "image_url": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/5031053/527663_1024x1024_2x_2YJSybPS7.webp",
       "art_variant": "original",
       "scraped_at": "2026-10-01T19:59:51Z"
+    },
+    {
+      "card_number": "ST02-009",
+      "price": "40.0",
+      "title": "Trafalgar Law [Starter Deck: Worst Generation]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: Worst Generation",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R40.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/62495d31-36b5-5900-8eec-5fb6701af1d1.jpg?v=1733912470",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "OP08-023",
@@ -1082,14 +1082,14 @@
     },
     {
       "card_number": "OP10-118",
-      "price": "88.0",
+      "price": "86.0",
       "title": "Monkey.D.Luffy [Royal Blood]",
       "rarity": "Secret Rare",
       "store": "Knightly Gaming",
       "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R88.00",
+      "available_variants": "Near Mint Foil R86.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617169.jpg?v=1758380156",
       "art_variant": "original",
@@ -1261,21 +1261,6 @@
       "scraped_at": "2026-09-02T18:59:25Z"
     },
     {
-      "card_number": "ST21-014",
-      "price": "177.0",
-      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Learn Together Deck Set",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R177.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656673.jpg?v=1790292168",
-      "art_variant": "original",
-      "scraped_at": "2026-08-15T16:08:39Z"
-    },
-    {
       "card_number": "OP14-069",
       "price": "180.0",
       "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
@@ -1289,6 +1274,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/668639.jpg?v=1790292012",
       "art_variant": "alternate",
       "scraped_at": "2026-07-17T11:11:43Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "price": "183.0",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Learn Together Deck Set",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R183.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/656673.jpg?v=1790292168",
+      "art_variant": "original",
+      "scraped_at": "2026-08-15T16:08:39Z"
     },
     {
       "card_number": "EB02-035",
@@ -1367,14 +1367,14 @@
     },
     {
       "card_number": "EB02-041",
-      "price": "235.0",
+      "price": "236.0",
       "title": "Merry Go [One Piece Promotion Cards]",
       "rarity": "Rare",
       "store": "Knightly Gaming",
       "set_name": "One Piece Promotion Cards",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R235.00",
+      "available_variants": "Near Mint Foil R236.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_1db98819-6261-4b40-a190-4023f2193957.png?v=1790292155",
       "art_variant": "original",

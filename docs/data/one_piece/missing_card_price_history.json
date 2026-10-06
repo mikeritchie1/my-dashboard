@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T06:57:41Z",
+  "updated_at": "2026-10-06T13:43:47Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -227292,6 +227292,18 @@
       "stock": "In stock",
       "observed_on": "2026-10-06",
       "captured_at": "2026-10-06T06:57:23Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 86.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T13:43:27Z"
     }
   ]
 }
