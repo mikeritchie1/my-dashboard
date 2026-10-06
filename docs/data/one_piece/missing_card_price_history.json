@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-06T13:43:47Z",
+  "updated_at": "2026-10-06T19:09:07Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -227304,6 +227304,150 @@
       "stock": "In stock",
       "observed_on": "2026-10-06",
       "captured_at": "2026-10-06T13:43:27Z"
+    },
+    {
+      "card_number": "OP16-032",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/boa-hancock-op16-032-the-time-of-battle-foil",
+      "title": "Boa Hancock (OP16-032) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/hody-jones-wings-of-the-captain",
+      "title": "Hody Jones [Wings of the Captain]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 45.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-rocks-the-worlds-strongest-warriors",
+      "title": "DON!! Card (Alternate Art) (Rocks) - The World's Strongest Warriors",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 75.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gravity-blade-raging-tiger-wings-of-the-captain",
+      "title": "Gravity Blade Raging Tiger [Wings of the Captain]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "OP15-119",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-119-op15-119-adventure-on-kamis-island-foil",
+      "title": "Monkey.D.Luffy (OP15-119) (OP15-119) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 260.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-four-emperors-gold-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Alternate Art) (The Four Emperors) (Gold) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "OP15-118",
+      "art_variant": "original",
+      "price": 275.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-op15-118-op15-118-adventure-on-kamis-island-foil",
+      "title": "Enel (OP15-118) (OP15-118) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:08:39Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:09:07Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 81.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:09:07Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 182.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:09:07Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 270.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-06",
+      "captured_at": "2026-10-06T19:09:07Z"
     }
   ]
 }
