@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-07T17:02:59Z",
+  "updated_at": "2026-10-07T22:19:56Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -229140,6 +229140,18 @@
       "stock": "In stock",
       "observed_on": "2026-10-07",
       "captured_at": "2026-10-07T17:02:39Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 653.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-07",
+      "captured_at": "2026-10-07T22:19:38Z"
     }
   ]
 }
