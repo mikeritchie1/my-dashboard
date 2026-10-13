@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T08:33:45Z",
+  "updated_at": "2026-10-13T16:30:03Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -237420,6 +237420,102 @@
       "stock": "In stock",
       "observed_on": "2026-10-13",
       "captured_at": "2026-10-13T08:33:29Z"
+    },
+    {
+      "card_number": "ST21-001",
+      "art_variant": "original",
+      "price": 42.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-starter-deck-red-monkey-d-luffy",
+      "title": "Monkey.D.Luffy [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "ST29-001",
+      "art_variant": "original",
+      "price": 42.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-starter-deck-egghead-1",
+      "title": "Monkey.D.Luffy [Starter Deck: Egghead]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 83.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "ST21-001",
+      "art_variant": "original",
+      "price": 150.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-001-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-001) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 205.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 214.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 221.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 550.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T16:30:03Z"
     }
   ]
 }
