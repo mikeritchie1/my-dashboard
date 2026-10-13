@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T16:30:03Z",
+  "updated_at": "2026-10-13T21:36:41Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -237516,6 +237516,42 @@
       "stock": "In stock",
       "observed_on": "2026-10-13",
       "captured_at": "2026-10-13T16:30:03Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "art_variant": "original",
+      "price": 54.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T21:35:36Z"
+    },
+    {
+      "card_number": "OP14-069",
+      "art_variant": "alternate",
+      "price": 201.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven",
+      "title": "Donquixhote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T21:35:36Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 215.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-13",
+      "captured_at": "2026-10-13T21:35:36Z"
     }
   ]
 }
