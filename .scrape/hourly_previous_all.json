@@ -722,14 +722,14 @@
     },
     {
       "card_number": "ST23-001",
-      "price": "198.0",
+      "price": "196.0",
       "title": "Uta [Starter Deck: Red Shanks]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck: Red Shanks",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R198.00",
+      "available_variants": "Near Mint Foil R196.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
       "art_variant": "original",
@@ -811,21 +811,6 @@
       "scraped_at": "2026-09-02T18:59:25Z"
     },
     {
-      "card_number": "OP10-071",
-      "price": "228.0",
-      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Royal Blood",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R228.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617116.jpg?v=1758380186",
-      "art_variant": "alternate",
-      "scraped_at": "2026-07-17T11:11:43Z"
-    },
-    {
       "card_number": "ST23-001",
       "price": "235.0",
       "title": "Uta [Starter Deck: Red Shanks]",
@@ -839,6 +824,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/633761.jpg?v=1763511702",
       "art_variant": "original",
       "scraped_at": "2026-09-02T18:59:25Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "price": "236.0",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Royal Blood",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R236.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617116.jpg?v=1758380186",
+      "art_variant": "alternate",
+      "scraped_at": "2026-07-17T11:11:43Z"
     },
     {
       "card_number": "EB02-041",
