@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T15:34:12Z",
+  "updated_at": "2026-10-14T19:46:01Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -238704,6 +238704,30 @@
       "stock": "In stock",
       "observed_on": "2026-10-14",
       "captured_at": "2026-10-14T15:33:53Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-double-pack-set-vol-12-shanks-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Double Pack Set Vol. 12) (Shanks) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-14",
+      "captured_at": "2026-10-14T19:45:24Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1230.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nico-robin-gold-extra-booster-one-piece-heroines-edition-foil",
+      "title": "DON!! Card (Nico Robin) (Gold) - Extra Booster: One Piece Heroines Edition Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-14",
+      "captured_at": "2026-10-14T19:45:24Z"
     }
   ]
 }
