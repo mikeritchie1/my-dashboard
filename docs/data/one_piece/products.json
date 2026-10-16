@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-10-16T05:12:09.279096Z",
+  "scraped_at": "2026-10-16T10:11:45.088144Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2354,6 +2354,34 @@
       "image_local_url": "./data/one_piece/product_images/gift-collection_img-item01.webp",
       "is_released": false,
       "added_at": "2026-10-02T09:04:29.426967Z"
+    },
+    {
+      "title": "STARTER DECK -The Desert Princess and the Pirates- [ST-37]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-12-18",
+      "release_date_text": "December 18, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/st37.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/15/4NyHw2khCpCxeClG/img_item01.webp?_=ee7c19b9ee52f7488009c60bb2d90d3a",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/st37_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-10-16T10:11:02.649475Z"
+    },
+    {
+      "title": "STARTER DECK -Baroque Works- [ST-38]",
+      "category": "decks",
+      "category_label": "DECKS",
+      "date_label": "Release Date",
+      "release_date": "2026-12-19",
+      "release_date_text": "December 19, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/st38.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/15/hNJ01Pw6KQ8KZ7X3/img_item01.webp?_=ee7c19b9ee52f7488009c60bb2d90d3a",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/st38_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-10-16T10:11:02.649475Z"
     },
     {
       "title": "Chinese 3rd Anniversary Set",
