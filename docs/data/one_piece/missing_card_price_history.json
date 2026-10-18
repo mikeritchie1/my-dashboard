@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T06:40:13Z",
+  "updated_at": "2026-10-18T11:47:54Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -243156,6 +243156,30 @@
       "stock": "In stock",
       "observed_on": "2026-10-18",
       "captured_at": "2026-10-18T06:40:01Z"
+    },
+    {
+      "card_number": "ST22-001",
+      "art_variant": "original",
+      "price": 48.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/ace-newgate-starter-deck-ace-newgate",
+      "title": "Ace & Newgate [Starter Deck: Ace & Newgate]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-18",
+      "captured_at": "2026-10-18T11:47:39Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 215.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-18",
+      "captured_at": "2026-10-18T11:47:39Z"
     }
   ]
 }
