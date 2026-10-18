@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T19:43:40Z",
+  "updated_at": "2026-10-18T21:57:38Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -243264,6 +243264,30 @@
       "stock": "In stock",
       "observed_on": "2026-10-18",
       "captured_at": "2026-10-18T14:55:27Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-18",
+      "captured_at": "2026-10-18T21:57:24Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 257.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-18",
+      "captured_at": "2026-10-18T21:57:24Z"
     }
   ]
 }
