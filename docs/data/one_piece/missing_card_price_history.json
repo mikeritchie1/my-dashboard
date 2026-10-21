@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T19:42:18Z",
+  "updated_at": "2026-10-21T22:49:51Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -246912,6 +246912,30 @@
       "stock": "In stock",
       "observed_on": "2026-10-21",
       "captured_at": "2026-10-21T19:41:37Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 81.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T22:49:32Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 197.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T22:49:32Z"
     }
   ]
 }
