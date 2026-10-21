@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T15:41:09Z",
+  "updated_at": "2026-10-21T19:42:18Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -246828,6 +246828,90 @@
       "stock": "In stock",
       "observed_on": "2026-10-21",
       "captured_at": "2026-10-21T15:40:40Z"
+    },
+    {
+      "card_number": "ST22-015",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/i-am-whitebeard-st22-015-starter-deck-22-ace-newgate",
+      "title": "I Am Whitebeard!! (ST22-015) - Starter Deck 22: Ace & Newgate",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T19:41:37Z"
+    },
+    {
+      "card_number": "EB02-020",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/we-are-extra-booster-memorial-collection",
+      "title": "We Are! [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T19:41:37Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 40.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-starter-deck-purple-monkey-d-luffy",
+      "title": "Zoro-Juurou [Starter Deck: PURPLE Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T19:41:37Z"
+    },
+    {
+      "card_number": "OP08-047",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/jozu-two-legends",
+      "title": "Jozu [Two Legends]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T19:41:37Z"
+    },
+    {
+      "card_number": "ST01-006",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/tony-tony-chopper-st01-006-jolly-roger-foil-premium-booster-the-best",
+      "title": "Tony Tony.Chopper (ST01-006) (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T19:41:37Z"
+    },
+    {
+      "card_number": "ST26-003",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/nico-robin-starter-deck-purple-black-monkey-d-luffy",
+      "title": "Nico Robin [Starter Deck: Purple/Black Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T19:41:37Z"
+    },
+    {
+      "card_number": "ST26-005",
+      "art_variant": "original",
+      "price": 80.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st26-005-starter-deck-purple-black-monkey-d-luffy",
+      "title": "Monkey.D.Luffy (ST26-005) [Starter Deck: Purple/Black Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-21",
+      "captured_at": "2026-10-21T19:41:37Z"
     }
   ]
 }
