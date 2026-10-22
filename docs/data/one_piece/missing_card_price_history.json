@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-22T12:33:20Z",
+  "updated_at": "2026-10-22T17:41:16Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -248520,6 +248520,90 @@
       "stock": "In stock",
       "observed_on": "2026-10-22",
       "captured_at": "2026-10-22T12:33:01Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 5.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) - The Time of Battle",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-22",
+      "captured_at": "2026-10-22T17:40:38Z"
+    },
+    {
+      "card_number": "ST26-005",
+      "art_variant": "original",
+      "price": 85.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st26-005-starter-deck-purple-black-monkey-d-luffy",
+      "title": "Monkey.D.Luffy (ST26-005) [Starter Deck: Purple/Black Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-22",
+      "captured_at": "2026-10-22T17:40:38Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 155.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-22",
+      "captured_at": "2026-10-22T17:40:38Z"
+    },
+    {
+      "card_number": "OP15-053",
+      "art_variant": "alternate",
+      "price": 350.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rebecca-op15-053-alternate-art-op15-053-adventure-on-kamis-island-foil",
+      "title": "Rebecca (OP15-053) (Alternate Art) (OP15-053) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-22",
+      "captured_at": "2026-10-22T17:40:38Z"
+    },
+    {
+      "card_number": "P-037",
+      "art_variant": "original",
+      "price": 505.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-1st-anniversary-tournament-one-piece-promotion-cards-1",
+      "title": "Monkey.D.Luffy (1st Anniversary Tournament) [One Piece Promotion Cards]",
+      "condition": "Lightly Played Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-22",
+      "captured_at": "2026-10-22T17:40:38Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 204.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-22",
+      "captured_at": "2026-10-22T17:40:59Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 790.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-22",
+      "captured_at": "2026-10-22T17:40:59Z"
     }
   ]
 }
