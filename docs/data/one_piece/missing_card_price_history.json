@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-23T13:01:29Z",
+  "updated_at": "2026-10-23T18:00:14Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -249996,6 +249996,66 @@
       "stock": "In stock",
       "observed_on": "2026-10-23",
       "captured_at": "2026-10-23T13:01:12Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 500.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-23",
+      "captured_at": "2026-10-23T17:59:31Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "art_variant": "original",
+      "price": 53.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-23",
+      "captured_at": "2026-10-23T17:59:54Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-23",
+      "captured_at": "2026-10-23T17:59:54Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 240.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-23",
+      "captured_at": "2026-10-23T17:59:54Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 844.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-23",
+      "captured_at": "2026-10-23T17:59:54Z"
     }
   ]
 }
