@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-10-23T02:05:16.967095Z",
+  "scraped_at": "2026-10-23T07:59:15.615860Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2342,6 +2342,20 @@
       "added_at": "2026-09-25T13:02:46.849466Z"
     },
     {
+      "title": "Double Pack Set Vol.13 [DP-13]",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-11-20",
+      "release_date_text": "November 20, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/dp13.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/22/CIkB0PKUaotJWbK4/img_item01.webp?_=b4bd0da2255aa4ab9be09ba7c44d0d96",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/dp13_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-10-23T07:58:26.385862Z"
+    },
+    {
       "title": "Gift Collection -ONE PIECE Heroines- [GC-2026]",
       "category": "other",
       "category_label": "OTHER",
@@ -2354,6 +2368,20 @@
       "image_local_url": "./data/one_piece/product_images/gift-collection_img-item01.webp",
       "is_released": false,
       "added_at": "2026-10-02T09:04:29.426967Z"
+    },
+    {
+      "title": "OFFICIAL CARD SLEEVES 17",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-12-18",
+      "release_date_text": "December 18, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/sleeve047.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/products/2026/10/20/R1mY5FJ4pGbVJHm4/img_item01.webp?_=b4bd0da2255aa4ab9be09ba7c44d0d96",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/sleeve047_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-10-23T07:58:26.385862Z"
     },
     {
       "title": "STARTER DECK -The Desert Princess and the Pirates- [ST-37]",
