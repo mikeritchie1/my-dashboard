@@ -48,21 +48,6 @@
     {
       "card_number": "DON!!",
       "price": 5.0,
-      "title": "DON!! Card (Alternate Art) - The Time of Battle",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R5.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/698313.jpg?v=1785229066",
-      "art_variant": "alternate",
-      "scraped_at": "2026-08-03T15:33:35Z"
-    },
-    {
-      "card_number": "DON!!",
-      "price": 5.0,
       "title": "DON!! Card (Alternate Art) [The Time of Battle]",
       "rarity": "DON!!",
       "store": "Knightly Gaming",
@@ -134,6 +119,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/cc4c8ea9-4e6a-507b-8b36-4bd0f8ff4a20.jpg?v=1771365687",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 10.0,
+      "title": "DON!! Card (Alternate Art) - The Time of Battle",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R10.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/698313.jpg?v=1785229066",
+      "art_variant": "alternate",
+      "scraped_at": "2026-08-03T15:33:35Z"
     },
     {
       "card_number": "DON!!",

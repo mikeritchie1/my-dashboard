@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-25T10:12:47Z",
+  "updated_at": "2026-10-25T14:37:08Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -252684,6 +252684,18 @@
       "stock": "In stock",
       "observed_on": "2026-10-25",
       "captured_at": "2026-10-25T10:12:47Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) - The Time of Battle",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-25",
+      "captured_at": "2026-10-25T14:36:29Z"
     }
   ]
 }
