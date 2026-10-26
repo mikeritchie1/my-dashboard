@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-26T11:36:33Z",
+  "updated_at": "2026-10-26T17:41:47Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -254016,6 +254016,114 @@
       "stock": "In stock",
       "observed_on": "2026-10-26",
       "captured_at": "2026-10-26T11:36:16Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "art_variant": "alternate",
+      "price": 120.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:09Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 270.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:09Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 280.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:09Z"
+    },
+    {
+      "card_number": "EB04-048",
+      "art_variant": "alternate",
+      "price": 335.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rob-lucci-alternate-art-eb04-048-adventure-on-kamis-island-foil",
+      "title": "Rob Lucci (Alternate Art) (EB04-048) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:09Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 365.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:09Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 510.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:09Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 7.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:29Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 78.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:29Z"
+    },
+    {
+      "card_number": "ST21-001",
+      "art_variant": "original",
+      "price": 138.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-001-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-001) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-26",
+      "captured_at": "2026-10-26T17:41:29Z"
     }
   ]
 }
