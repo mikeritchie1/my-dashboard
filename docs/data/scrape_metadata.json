@@ -203,39 +203,40 @@
     },
     "docs/data/one_piece/collection.json": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 3.968,
+      "duration_seconds": 1.746,
       "item_count": 2,
-      "last_scraped_at": "2026-10-27T08:00:12.741406+00:00",
+      "last_scraped_at": "2026-10-27T05:58:35.160522+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
     },
     "docs/data/one_piece/missing_cards.json": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-        "services/one_piece/find_missing_cards.py",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
+        "services/scrape_one_piece.py",
+        "--source",
         "tanuki"
       ],
-      "duration_seconds": 12.787,
-      "item_count": 205,
-      "last_scraped_at": "2026-10-27T08:01:15.741382+00:00",
+      "duration_seconds": 17.545,
+      "item_count": 88,
+      "last_scraped_at": "2026-10-27T05:58:50.920404+00:00",
       "module": "one-piece",
       "source": "tanuki",
       "status": "ok"
     },
     "docs/data/one_piece/products.json": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
         "services/one_piece/scrape_products.py",
         "--pages",
         "1"
       ],
-      "duration_seconds": 2.507,
-      "item_count": 171,
-      "last_scraped_at": "2026-10-27T08:01:18.260828+00:00",
+      "duration_seconds": 1.229,
+      "item_count": 188,
+      "last_scraped_at": "2026-10-27T05:58:52.151626+00:00",
       "module": "one-piece",
       "source": "products",
       "status": "ok"
@@ -682,13 +683,14 @@
     },
     "one-piece/bigbang": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-        "services/one_piece/find_missing_cards.py",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
+        "services/scrape_one_piece.py",
+        "--source",
         "bigbang"
       ],
-      "duration_seconds": 5.747,
-      "item_count": 105,
-      "last_scraped_at": "2026-10-27T08:00:18.590547+00:00",
+      "duration_seconds": 8.402,
+      "item_count": 88,
+      "last_scraped_at": "2026-10-27T05:58:12.493812+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -698,12 +700,12 @@
     },
     "one-piece/collection": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 3.968,
+      "duration_seconds": 1.746,
       "item_count": 2,
-      "last_scraped_at": "2026-10-27T08:00:12.741406+00:00",
+      "last_scraped_at": "2026-10-27T05:58:35.160522+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
@@ -713,13 +715,14 @@
     },
     "one-piece/collectiverse": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-        "services/one_piece/find_missing_cards.py",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
+        "services/scrape_one_piece.py",
+        "--source",
         "collectiverse"
       ],
-      "duration_seconds": 6.992,
-      "item_count": 1,
-      "last_scraped_at": "2026-10-27T08:00:25.602061+00:00",
+      "duration_seconds": 5.775,
+      "item_count": 88,
+      "last_scraped_at": "2026-10-27T05:58:18.274602+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -729,13 +732,14 @@
     },
     "one-piece/geekhaven": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-        "services/one_piece/find_missing_cards.py",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
+        "services/scrape_one_piece.py",
+        "--source",
         "geekhaven"
       ],
-      "duration_seconds": 4.793,
-      "item_count": 0,
-      "last_scraped_at": "2026-10-27T08:00:30.415521+00:00",
+      "duration_seconds": 4.988,
+      "item_count": 88,
+      "last_scraped_at": "2026-10-27T05:58:23.266044+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -745,13 +749,14 @@
     },
     "one-piece/knightly": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-        "services/one_piece/find_missing_cards.py",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
+        "services/scrape_one_piece.py",
+        "--source",
         "knightly"
       ],
-      "duration_seconds": 8.078,
-      "item_count": 44,
-      "last_scraped_at": "2026-10-27T08:00:38.513003+00:00",
+      "duration_seconds": 10.104,
+      "item_count": 88,
+      "last_scraped_at": "2026-10-27T05:58:33.372838+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -761,13 +766,14 @@
     },
     "one-piece/marvellous": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-        "services/one_piece/find_missing_cards.py",
+        "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
+        "services/scrape_one_piece.py",
+        "--source",
         "marvellous"
       ],
-      "duration_seconds": 24.401,
-      "item_count": 3,
-      "last_scraped_at": "2026-10-27T08:01:02.933158+00:00",
+      "duration_seconds": 8.001,
+      "item_count": 61,
+      "last_scraped_at": "2026-07-09T19:15:39.679948+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -777,14 +783,14 @@
     },
     "one-piece/products": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
         "services/one_piece/scrape_products.py",
         "--pages",
         "1"
       ],
-      "duration_seconds": 2.507,
-      "item_count": 171,
-      "last_scraped_at": "2026-10-27T08:01:18.260828+00:00",
+      "duration_seconds": 1.229,
+      "item_count": 188,
+      "last_scraped_at": "2026-10-27T05:58:52.151626+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
@@ -794,13 +800,14 @@
     },
     "one-piece/tanuki": {
       "command": [
-        "C:\\Users\\mjrit\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
-        "services/one_piece/find_missing_cards.py",
+        "/opt/hostedtoolcache/Python/3.13.16/x64/bin/python",
+        "services/scrape_one_piece.py",
+        "--source",
         "tanuki"
       ],
-      "duration_seconds": 12.787,
-      "item_count": 1,
-      "last_scraped_at": "2026-10-27T08:01:15.741382+00:00",
+      "duration_seconds": 17.545,
+      "item_count": 88,
+      "last_scraped_at": "2026-10-27T05:58:50.920404+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
@@ -985,6 +992,6 @@
       "status": "error"
     }
   },
-  "updated_at": "2026-10-27T08:01:18.260828+00:00",
+  "updated_at": "2026-10-27T05:58:52.151626+00:00",
   "version": 1
 }
