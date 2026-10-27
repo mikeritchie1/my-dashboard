@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-10-27T05:58:52.135795Z",
+  "scraped_at": "2026-10-27T08:01:18.233979Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2006,104 +2006,6 @@
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {
-      "title": "Illustration Box Vol.7",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-07-31",
-      "release_date_text": "July 31, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/ib07.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/13/JQc5Luj1qHIeTeA6/img_item01.webp?_=24021673fe25555a172b8fa58dc67d33",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/ib07_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-14T04:35:50.193472Z"
-    },
-    {
-      "title": "Illustration Box Vol.8",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-07-31",
-      "release_date_text": "July 31, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/ib08.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/13/4pj9Zsx8OTTavFKc/img_item01.webp?_=24021673fe25555a172b8fa58dc67d33",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/ib08_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-14T04:35:50.193472Z"
-    },
-    {
-      "title": "STARTER DECK -BLUE Kuzan- [ST-33]",
-      "category": "decks",
-      "category_label": "DECKS",
-      "date_label": "Release Date",
-      "release_date": "2026-07-31",
-      "release_date_text": "July 31, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/st33.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/nEq2o760PGK6eiey/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/st33_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-10T08:13:21.883847Z"
-    },
-    {
-      "title": "STARTER DECK -GREEN Roronoa Zoro- [ST-32]",
-      "category": "decks",
-      "category_label": "DECKS",
-      "date_label": "Release Date",
-      "release_date": "2026-07-31",
-      "release_date_text": "July 31, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/st32.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/OBo5ApiaFqYjXuL9/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/st32_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-10T08:13:21.883847Z"
-    },
-    {
-      "title": "STARTER DECK -PURPLE Charlotte Katakuri- [ST-34]",
-      "category": "decks",
-      "category_label": "DECKS",
-      "date_label": "Release Date",
-      "release_date": "2026-07-31",
-      "release_date_text": "July 31, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/st34.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/TBnEnTa0vjjCEWx6/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/st34_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-10T08:13:21.883847Z"
-    },
-    {
-      "title": "STARTER DECK -RED/BLACK Sabo- [ST-35]",
-      "category": "decks",
-      "category_label": "DECKS",
-      "date_label": "Release Date",
-      "release_date": "2026-07-31",
-      "release_date_text": "July 31, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/st35.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/HtuUKv9pCAGqiFvq/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/st35_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-10T08:13:21.883847Z"
-    },
-    {
-      "title": "STARTER DECK -YELLOW Eustass\"Captain\"Kid- [ST-36]",
-      "category": "decks",
-      "category_label": "DECKS",
-      "date_label": "Release Date",
-      "release_date": "2026-07-31",
-      "release_date_text": "July 31, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/st36.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/08/e9kPAYzpFy1Ic3Tm/img_item01.webp?_=e27ecfebfe49538d4560d161edee41ef",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/st36_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-10T08:13:21.883847Z"
-    },
-    {
       "title": "ONE PIECE CARD GAME English Version 3rd Anniversary Set",
       "category": "other",
       "category_label": "OTHER",
@@ -2132,62 +2034,6 @@
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {
-      "title": "BOOSTER PACK -THE WORLD’S STRONGEST WARRIORS- [OP-17]",
-      "category": "boosters",
-      "category_label": "BOOSTERS",
-      "date_label": "Release Date",
-      "release_date": "2026-08-28",
-      "release_date_text": "August 28, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/op17.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/10/UZto2ePj0hiv3KkV/img_item01.webp?_=e0b14f6e380203fc15966b01c585c3e2",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/op17_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-15T04:36:06.490459Z"
-    },
-    {
-      "title": "BOOSTER PACK -THE WORLD’S STRONGEST WARRIORS- [OP-17]",
-      "category": "boosters",
-      "category_label": "BOOSTERS",
-      "date_label": "Release Date",
-      "release_date": "2026-08-28",
-      "release_date_text": "August 28, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/boosters/op17/",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/10/UZto2ePj0hiv3KkV/img_item01.webp?_=9ff5f4418637f5201d798c63c1a59d73",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/op17_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-08-07T04:15:54.017923Z"
-    },
-    {
-      "title": "Double Pack Set Vol.12 [DP-12]",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-08-28",
-      "release_date_text": "August 28, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/dp12.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/07/23/bX2KjHQowPgTjQkO/img_item01.webp?_=06fdfff4784a13e298ed18922a7031af",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/dp12_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-24T10:02:04.085607Z"
-    },
-    {
-      "title": "OFFICIAL CARD SLEEVES 16",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-08-28",
-      "release_date_text": "August 28, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/sleeve042.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/products/2026/07/21/4qVkAXP7VO1CiqH2/img_item01.webp?_=3f6f3c895252d7d330dbd79a8e7ed508",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/sleeve042_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-07-31T11:14:02.716338Z"
-    },
-    {
       "title": "ONE PIECE Heroines Special Set",
       "category": "other",
       "category_label": "OTHER",
@@ -2202,76 +2048,6 @@
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {
-      "title": "Limited Card Sleeve - Flame-Flame Fruit Coliseum Edition",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-09-04",
-      "release_date_text": "September 4, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/sleeve043.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/product/2026/08/27/ppMJpcWM2aU9hJ8h/img.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/sleeve043_img.webp",
-      "is_released": true,
-      "added_at": "2026-08-28T19:38:17.019759Z"
-    },
-    {
-      "title": "Limited Card Sleeve Standard Orange Silver",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-09-04",
-      "release_date_text": "September 4, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/sleeve044.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/product/2026/08/27/GaK3qIOPp8Lfm5QX/img.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/sleeve044_img.webp",
-      "is_released": true,
-      "added_at": "2026-08-28T19:38:17.019759Z"
-    },
-    {
-      "title": "Official Playmat - Flame-Flame Fruit Coliseum Edition",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-09-04",
-      "release_date_text": "September 4, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/playmat_flame-flame-fruit.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/08/27/HlHoncvUJEJMpyQ0/img_item01.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/playmat-flame-flame-fruit_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-08-28T19:38:17.019759Z"
-    },
-    {
-      "title": "Premium Card Collection - Flame-Flame Fruit Coliseum Edition",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-09-04",
-      "release_date_text": "September 4, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/collection-flame.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/08/27/sXAjGXYEi2tzZ9GI/img_item01.webp?_=94a2d0bad4f3d03eb4544cf6f926accf",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/collection-flame_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-08-28T19:38:17.019759Z"
-    },
-    {
-      "title": "Set Sail Deck Set [SD-01]",
-      "category": "decks",
-      "category_label": "DECKS",
-      "date_label": "Release Date",
-      "release_date": "2026-09-18",
-      "release_date_text": "September 18, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/sd01.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/08/20/Xn03frg9xHS0R6YX/img_item01.webp?_=381d735c0a1a478ea8f8679c87442664",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/sd01_img-item01.webp",
-      "is_released": true,
-      "added_at": "2026-08-21T07:32:22.941139Z"
-    },
-    {
       "title": "EXTRA BOOSTER -ONE PIECE HEROINES EDITION vol.2- [EB-05]",
       "category": "boosters",
       "category_label": "BOOSTERS",
@@ -2284,20 +2060,6 @@
       "image_local_url": "./data/one_piece/product_images/eb05_img-noimage-booster-en-fr.webp",
       "is_released": true,
       "added_at": "2026-06-19T07:35:50.470912Z"
-    },
-    {
-      "title": "Mini Case Set -Luffy/Shanks/Hancock- [TS-03]",
-      "category": "other",
-      "category_label": "OTHER",
-      "date_label": "Release Date",
-      "release_date": "2026-10-30",
-      "release_date_text": "October 30, 2026",
-      "url": "https://en.onepiece-cardgame.com/products/ts03.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/17/2vusNMocLlUK8Mf3/img_item01.webp?_=9dad78ef5733e84bdbeb4d50038ba63e",
-      "source_page": 1,
-      "image_local_url": "./data/one_piece/product_images/ts03_img-item01.webp",
-      "is_released": false,
-      "added_at": "2026-09-18T10:06:02.156412Z"
     },
     {
       "title": "Premium Card Collection -Live Action Edition vol.2 Baroque Works-",
@@ -2335,11 +2097,11 @@
       "release_date": "2026-11-20",
       "release_date_text": "November 20, 2026",
       "url": "https://en.onepiece-cardgame.com/products/op18.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/09/18/rGCJ1ZUyi5qrA7zL/img_item01.webp?_=230a16dd2faccc216eb962693d6c1654",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/09/18/rGCJ1ZUyi5qrA7zL/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/op18_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-09-25T13:02:46.849466Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "Double Pack Set Vol.13 [DP-13]",
@@ -2349,11 +2111,11 @@
       "release_date": "2026-11-20",
       "release_date_text": "November 20, 2026",
       "url": "https://en.onepiece-cardgame.com/products/dp13.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/22/CIkB0PKUaotJWbK4/img_item01.webp?_=b4bd0da2255aa4ab9be09ba7c44d0d96",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/22/CIkB0PKUaotJWbK4/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/dp13_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-10-23T07:58:26.385862Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "Gift Collection -ONE PIECE Heroines- [GC-2026]",
@@ -2363,11 +2125,11 @@
       "release_date": "2026-11-20",
       "release_date_text": "November 20, 2026",
       "url": "https://en.onepiece-cardgame.com/products/gift-collection.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/01/1G5QS6sl6UETbgKE/img_item01.webp?_=73e4fa33c847a19078961369a0ca69be",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/01/1G5QS6sl6UETbgKE/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/gift-collection_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-10-02T09:04:29.426967Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "OFFICIAL CARD SLEEVES 17",
@@ -2377,11 +2139,11 @@
       "release_date": "2026-12-18",
       "release_date_text": "December 18, 2026",
       "url": "https://en.onepiece-cardgame.com/products/sleeve047.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/products/2026/10/20/R1mY5FJ4pGbVJHm4/img_item01.webp?_=b4bd0da2255aa4ab9be09ba7c44d0d96",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/jp/products/2026/10/20/R1mY5FJ4pGbVJHm4/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/sleeve047_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-10-23T07:58:26.385862Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "STARTER DECK -The Desert Princess and the Pirates- [ST-37]",
@@ -2391,11 +2153,11 @@
       "release_date": "2026-12-18",
       "release_date_text": "December 18, 2026",
       "url": "https://en.onepiece-cardgame.com/products/st37.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/15/4NyHw2khCpCxeClG/img_item01.webp?_=ee7c19b9ee52f7488009c60bb2d90d3a",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/15/4NyHw2khCpCxeClG/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/st37_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-10-16T10:11:02.649475Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "STARTER DECK -Baroque Works- [ST-38]",
@@ -2405,11 +2167,11 @@
       "release_date": "2026-12-19",
       "release_date_text": "December 19, 2026",
       "url": "https://en.onepiece-cardgame.com/products/st38.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/15/hNJ01Pw6KQ8KZ7X3/img_item01.webp?_=ee7c19b9ee52f7488009c60bb2d90d3a",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/15/hNJ01Pw6KQ8KZ7X3/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/st38_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-10-16T10:11:02.649475Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "Chinese 3rd Anniversary Set",
@@ -2419,11 +2181,11 @@
       "release_date": "",
       "release_date_text": "",
       "url": "https://en.onepiece-cardgame.com/products/3rd_anniversary_set_cn.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/24/YIpBK0MBL8U3BwY7/img_item01_pb.webp?_=06fdfff4784a13e298ed18922a7031af",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/24/YIpBK0MBL8U3BwY7/img_item01_pb.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/3rd-anniversary-set-cn_img-item01-pb.webp",
       "is_released": false,
-      "added_at": "2026-07-24T10:02:04.085607Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "Limited Card Sleeve",
@@ -2475,11 +2237,11 @@
       "release_date": "",
       "release_date_text": "",
       "url": "https://en.onepiece-cardgame.com/products/sleeve045.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/asia-en/product/2026/09/02/JxaWO4p8YG9fSJYe/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/asia-en/product/2026/09/02/JxaWO4p8YG9fSJYe/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/sleeve045_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-09-04T11:47:05.305529Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "Limited Card Sleeve ONE PIECE Heroines Edition",
@@ -2489,11 +2251,11 @@
       "release_date": "",
       "release_date_text": "",
       "url": "https://en.onepiece-cardgame.com/products/sleeve046.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/asia-en/product/2026/09/02/Cti0LE4hZ06BZ4T0/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/asia-en/product/2026/09/02/Cti0LE4hZ06BZ4T0/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/sleeve046_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-09-04T11:47:05.305529Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "LIMITED CARD SLEEVE PREMIUM MATTE vol.6",
@@ -2559,11 +2321,11 @@
       "release_date": "",
       "release_date_text": "",
       "url": "https://en.onepiece-cardgame.com/products/playmat_liffy-bonney.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/03/HPXMQszWEFCQiUJJ/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/03/HPXMQszWEFCQiUJJ/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/playmat-liffy-bonney_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-09-04T11:47:05.305529Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "Premium Card Collection -29th Anniversary Edition-",
@@ -2587,11 +2349,11 @@
       "release_date": "",
       "release_date_text": "",
       "url": "https://en.onepiece-cardgame.com/products/collection-6assort-vol2.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/03/NcpIYveTOFjrSSH1/img_item01.webp?_=b63ccdc5dd3406b0f756b8b8f70b580b",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/03/NcpIYveTOFjrSSH1/img_item01.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/collection-6assort-vol2_img-item01.webp",
       "is_released": false,
-      "added_at": "2026-09-04T11:47:05.305529Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "Premium Card Collection -Ace & Sabo & Luffy-",
@@ -2601,11 +2363,11 @@
       "release_date": "",
       "release_date_text": "",
       "url": "https://en.onepiece-cardgame.com/products/card_collection_asl.html",
-      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/24/b3Ga6ynPa0qmbNcH/img_item01_pb.webp?_=06fdfff4784a13e298ed18922a7031af",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/07/24/b3Ga6ynPa0qmbNcH/img_item01_pb.webp?_=854d66bcee45b70e257a45236ad5a087",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/card-collection-asl_img-item01-pb.webp",
       "is_released": false,
-      "added_at": "2026-07-24T10:02:04.085607Z"
+      "added_at": "2026-10-27T07:00:22.395072Z"
     },
     {
       "title": "PREMIUM CARD COLLECTION -BEST SELECTION vol.7-",

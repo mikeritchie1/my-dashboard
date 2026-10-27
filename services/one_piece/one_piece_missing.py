@@ -4,6 +4,8 @@ import csv
 import html
 import json
 import re
+import shutil
+import subprocess
 import sys
 import tempfile
 import time
@@ -326,6 +328,22 @@ def missing_card_numbers(workbook: Path = WORKBOOK) -> set[str]:
             card_number = normalize_card_number(value)
             if card_number:
                 missing.add(card_number)
+
+    # The dashboard collection is built from the workbook's Overview tab.
+    # Include its unowned cards too, so newly added sets are searched even if
+    # the separate Missing tab has not yet been updated with those card codes.
+    collection_payload = _load_json_dict(COLLECTION_JSON)
+    collection_sets = collection_payload.get("sets", {})
+    if isinstance(collection_sets, dict):
+        for set_payload in collection_sets.values():
+            if not isinstance(set_payload, dict):
+                continue
+            for card in set_payload.get("cards", []):
+                if not isinstance(card, dict) or card.get("owned") is not False:
+                    continue
+                card_number = normalize_card_number(card.get("card_number"))
+                if card_number:
+                    missing.add(card_number)
     return missing
 
 
@@ -349,6 +367,48 @@ def fetch_json(url: str) -> object:
     request = urllib.request.Request(url, headers=JSON_HEADERS)
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
+
+
+def fetch_shopify_products_json(url: str) -> object:
+    """Fetch Shopify product JSON using curl's browser-compatible transport.
+
+    Big Bang and Knightly return HTTP 429 to Python's urllib client while
+    serving the same public feed normally to browser-compatible clients.
+    """
+    curl = shutil.which("curl.exe") or shutil.which("curl")
+    if not curl:
+        raise RuntimeError("curl is required to fetch Shopify product feeds.")
+
+    completed = subprocess.run(
+        [
+            curl,
+            "--fail",
+            "--location",
+            "--silent",
+            "--show-error",
+            "--max-time",
+            "30",
+            "--header",
+            f"Accept: {JSON_HEADERS['Accept']}",
+            "--header",
+            f"Accept-Language: {JSON_HEADERS['Accept-Language']}",
+            "--user-agent",
+            JSON_HEADERS["User-Agent"],
+            url,
+        ],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        check=False,
+    )
+    if completed.returncode != 0:
+        detail = completed.stderr.strip() or f"curl exited with code {completed.returncode}"
+        raise RuntimeError(f"Failed to fetch Shopify product feed: {detail}")
+    try:
+        return json.loads(completed.stdout)
+    except json.JSONDecodeError as error:
+        raise RuntimeError(f"Shopify product feed returned invalid JSON: {error}") from error
 
 
 def fetch_text(url: str) -> str:
@@ -414,7 +474,7 @@ def _load_json_dict(path: Path) -> dict:
     if not path.exists():
         return {}
     try:
-        payload = json.loads(path.read_text(encoding="utf-8"))
+        payload = json.loads(path.read_text(encoding="utf-8-sig"))
     except json.JSONDecodeError:
         return {}
     return payload if isinstance(payload, dict) else {}
@@ -791,7 +851,7 @@ def fetch_knightly_products() -> list[dict]:
     products: list[dict] = []
     for page in range(1, 50):
         print(f"Knightly Gaming: fetching page {page}...", flush=True)
-        data = fetch_json(KNIGHTLY_PRODUCTS_URL.format(page=page))
+        data = fetch_shopify_products_json(KNIGHTLY_PRODUCTS_URL.format(page=page))
         page_products = data.get("products", [])
         print(f"Knightly Gaming: page {page} -> {len(page_products)} products", flush=True)
         if not page_products:
@@ -860,7 +920,7 @@ def fetch_big_bang_products() -> list[dict]:
     products: list[dict] = []
     for page in range(1, 50):
         print(f"Big Bang Shop: fetching page {page}...", flush=True)
-        data = fetch_json(BIG_BANG_PRODUCTS_URL.format(page=page))
+        data = fetch_shopify_products_json(BIG_BANG_PRODUCTS_URL.format(page=page))
         page_products = data.get("products", [])
         print(f"Big Bang Shop: page {page} -> {len(page_products)} products", flush=True)
         if not page_products:

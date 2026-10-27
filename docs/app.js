@@ -113,7 +113,7 @@ const EVENT_GEO_BOUNDS = {
 const SCRAPE_SCHEDULES = [
   { value: "disabled", label: "Disabled" },
   { value: "ten-minute", label: "10 minute scrape" },
-  { value: "hourly", label: "Hourly scrape" },
+  { value: "hourly", label: "Every 2 hours" },
   { value: "daily", label: "Daily scrape" },
   { value: "weekly", label: "1 week scrape" },
   { value: "manual", label: "Manual only" },
@@ -7031,7 +7031,14 @@ async function loadOnePieceCards() {
     }
     state.missingListingsByCard = byCard;
     optionList(elements.storeFilter, unique(state.rows.map((row) => row.store)), "All stores");
-    optionList(elements.setFilter, unique(state.rows.map((row) => cardSetKey(row.card_number))), "All sets");
+    const collectionMissingSets = Object.entries(collectionPayload.sets || {})
+      .filter(([, setData]) => Array.isArray(setData?.cards) && setData.cards.some((card) => card?.owned === false))
+      .map(([setCode]) => setCode);
+    optionList(
+      elements.setFilter,
+      unique([...state.rows.map((row) => cardSetKey(row.card_number)), ...collectionMissingSets]),
+      "All sets",
+    );
     const rarities = unique(state.rows.map((row) => row.rarity).filter(Boolean));
     elements.rarityFilter.innerHTML = '<option value="">All rarities</option>';
     for (const rarity of rarities) {
