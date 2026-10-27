@@ -28,7 +28,7 @@ jobs:
       - name: Install Python dependencies
         run: python -m pip install -r requirements.txt
 
-      - name: Run selected two-hour scrapers
+      - name: Sync collection and scrape Knightly Gaming
         env:
           DASHBOARD_STATE_API: https://my-dashboard-state.mjrit.workers.dev/state
           TMDB_BEARER_TOKEN: ${{ secrets.TMDB_BEARER_TOKEN }}
@@ -46,7 +46,9 @@ jobs:
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
           EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
-        run: python services/run_scheduled_scrapes.py --interval hourly
+        run: |
+          python services/one_piece/update_collection.py
+          python services/one_piece/find_missing_cards.py knightly
 
       - name: Email newly added One Piece OP17 cards
         env:

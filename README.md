@@ -186,7 +186,7 @@ One Piece config:
 
 One Piece automation:
 
-- The two-hour workflow scrapes all One Piece stores and sends email only when newly added OP17 card listings under R100 appear. Price/stock updates, removed listings, and generic scrape-count summaries do not trigger email.
+- The two-hour workflow syncs collection ownership from the Google Sheet, scrapes Knightly Gaming only, and sends email only when newly added OP17 card listings under R100 appear. Price/stock updates, removed listings, and generic scrape-count summaries do not trigger email.
 - The missing-card list is loaded fresh from the configured Google Drive workbook each run. It includes both the `Missing` sheet and cards marked unowned on the `Overview` sheet, so new sets are searched immediately.
 - One Piece is excluded from the daily scraper and daily dashboard digest. The daily update workflow is manual-only while daily scheduled scraping is paused.
 - Two-hour workflow file: `.github/workflows/hourly-update.yml`
