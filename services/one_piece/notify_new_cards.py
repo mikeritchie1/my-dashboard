@@ -35,7 +35,7 @@ LATEST_REPORT = Path(".scrape/latest_new_cards.txt")
 MATCH_KEY = ("card_number", "store", "url")
 CHANGE_FIELDS = ("price", "stock", "condition", "available_variants")
 DEFAULT_MAX_PRICE = 100.0
-ALERT_CARD_NUMBER_RE = re.compile(r"^(?:OP|EB)\d{2}-\d{3}$")
+ALERT_CARD_NUMBER_RE = re.compile(r"^OP17-\d{3}$")
 
 
 def normalized_store(value: str) -> str:
@@ -127,7 +127,7 @@ def is_alert_set(row: dict[str, str]) -> bool:
 
 
 def filter_alert_additions(rows: list[dict[str, str]], max_price: float = DEFAULT_MAX_PRICE) -> list[dict[str, str]]:
-    """Keep only newly added OP/EB listings strictly below the price ceiling."""
+    """Keep only newly added OP17 listings strictly below the price ceiling."""
     return filter_rows_by_max_price([row for row in rows if is_alert_set(row)], max_price)
 
 
@@ -209,7 +209,7 @@ def save_snapshot(path: Path, rows: list[dict[str, str]]) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Email newly added OP/EB card listings since the last snapshot.")
+    parser = argparse.ArgumentParser(description="Email newly added OP17 card listings since the last snapshot.")
     parser.add_argument("--no-scrape", action="store_true", help="Skip running the scraper first.")
     parser.add_argument("--store", default=os.environ.get("CARD_STORE", "all"),
                         help="Store to check: all, knightly, bigbang, marvellous, or tanuki.")
@@ -257,15 +257,15 @@ def main() -> int:
 
     if not additions:
         save_snapshot(snapshot, today)
-        print(f"No new OP/EB cards under R{args.max_price:g} {window_label} for {store}. Snapshot updated.")
+        print(f"No new OP17 cards under R{args.max_price:g} {window_label} for {store}. Snapshot updated.")
         return 0
 
-    subject = f"One Piece cards: {len(additions)} new OP/EB under R{args.max_price:g} ({store})"
+    subject = f"One Piece cards: {len(additions)} new OP17 under R{args.max_price:g} ({store})"
     if not args.no_email:
         send_email(subject, body)
     save_snapshot(snapshot, today)
     action = "Prepared report" if args.no_email else "Sent email"
-    print(f"{action}: {len(additions)} new OP/EB cards under R{args.max_price:g} for {store}.")
+    print(f"{action}: {len(additions)} new OP17 cards under R{args.max_price:g} for {store}.")
     return 0
 
 
