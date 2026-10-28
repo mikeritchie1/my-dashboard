@@ -8847,7 +8847,7 @@ function renderScrapeControls() {
           <td class="scrape-muted-cell">-</td>
           <td class="scrape-muted-cell">-</td>
           ${renderScrapeHistoryCells(moduleConfig.id, source.id, itemCount)}
-          <td class="scrape-duration-cell"${stats.error ? ` title="${escapeHtml(stats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(stats))}</td>
+          <td class="scrape-duration-cell" title="${escapeHtml(stats.error || 'Last three successful scrapes, oldest to newest')}">${renderScrapeDurationHistory(moduleConfig.id, source.id, stats)}</td>
           <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(lastScraped) || "Unknown")}</td>
           <td>${renderManualScrapeButton(moduleConfig.id, source.id)}</td>
         </tr>`;
@@ -9031,6 +9031,17 @@ function renderScrapeHistoryCells(moduleId, sourceId, currentCount) {
     });
     return `<td class="scrape-count-cell" title="Last three successful scrapes, oldest to newest">${values.join(" / ")}</td>`;
   }).join("");
+}
+
+function renderScrapeDurationHistory(moduleId, sourceId, stats) {
+  const history = (state.scrapeHistoryBySource?.[`${moduleId}/${sourceId}`] || []).slice(-3);
+  const slots = [...Array(3 - history.length).fill(null), ...history];
+  const values = slots.map((entry, index) => {
+    const seconds = entry?.duration_seconds ?? (index === 2 && !history.length ? stats.durationSeconds : null);
+    return escapeHtml(seconds === null || seconds === undefined ? "-" : formatDuration(seconds));
+  });
+  const status = String(stats.status || "").toLowerCase();
+  return values.join(" / ") + (status && status !== "ok" && status !== "success" ? " (last attempt failed)" : "");
 }
 
 function renderScrapeTableOption(moduleConfig, option, value) {
