@@ -103,3 +103,29 @@ class LocalHttpTests(TestCase):
         with self.assertRaises(HTTPError) as error:
             urlopen(request)
         self.assertEqual(400, error.exception.code)
+
+    def test_newsletter_sends_current_preview(self):
+        summary = {"window_started_at": "today", "sources": {"test": {"label": "Test"}}}
+        payload = {"controls": {"email_enabled": True, "summary_interval": "daily"}, "summary": summary}
+        request = Request(self.base + "/api/newsletter/send", data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"})
+        with patch.object(local, "load_summary", return_value=summary), patch.object(local, "send_if_due", return_value=True) as send:
+            with urlopen(request) as response:
+                self.assertTrue(json.load(response)["sent"])
+            send.assert_called_once()
+
+    def test_newsletter_rejects_stale_preview(self):
+        request = Request(self.base + "/api/newsletter/send", data=b'{"controls":{"email_enabled":true},"summary":{}}', headers={"Content-Type": "application/json"})
+        with patch.object(local, "load_summary", return_value={"sources": {"test": {}}}), patch.object(local, "send_if_due") as send:
+            with self.assertRaises(HTTPError) as error:
+                urlopen(request)
+            self.assertEqual(409, error.exception.code)
+            send.assert_not_called()
+
+    def test_newsletter_delivery_failure_does_not_claim_success(self):
+        summary = {"sources": {"test": {}}}
+        payload = {"controls": {"email_enabled": True}, "summary": summary}
+        request = Request(self.base + "/api/newsletter/send", data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"})
+        with patch.object(local, "load_summary", return_value=summary), patch.object(local, "send_if_due", side_effect=RuntimeError("SMTP offline")):
+            with self.assertRaises(HTTPError) as error:
+                urlopen(request)
+            self.assertEqual(502, error.exception.code)

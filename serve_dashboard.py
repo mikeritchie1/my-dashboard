@@ -12,7 +12,7 @@ from urllib.parse import urlsplit
 from uuid import uuid4
 
 from services import run_scheduled_scrapes as runner
-from services.common.scrape_summary import load_summary, save_summary, collect
+from services.common.scrape_summary import load_summary, save_summary, collect, send_if_due
 
 ROOT = Path(__file__).resolve().parent
 
@@ -21,6 +21,7 @@ class ScrapeJobs:
     def __init__(self):
         self.jobs = {}
         self.lock = threading.RLock()
+        self.summary_lock = threading.Lock()
         # Scrapers share output files; serialize all commands, including module runs.
         self.executor = ThreadPoolExecutor(max_workers=1)
 
@@ -56,9 +57,10 @@ class ScrapeJobs:
             after = runner.read_source_rows(ROOT, config)
             runner.record_source_history(config.module, config.source, before, after)
             path = ROOT / "docs/data/scrape_summary.json"
-            summary = load_summary(path)
-            collect(summary, config, before, after)
-            save_summary(path, summary)
+            with self.summary_lock:
+                summary = load_summary(path)
+                collect(summary, config, before, after)
+                save_summary(path, summary)
             stats = runner.read_metadata()["sources"][key]
             with self.lock:
                 self.jobs[key].update(status="finished", stats=stats)
@@ -116,7 +118,8 @@ class DashboardHandler(SimpleHTTPRequestHandler):
     def do_POST(self):
         if not self.local_request():
             return self.json_response({"error": "Local requests only"}, 403)
-        if urlsplit(self.path).path != "/api/scrapes":
+        path = urlsplit(self.path).path
+        if path not in {"/api/scrapes", "/api/newsletter/send"}:
             return self.json_response({"error": "Not found"}, 404)
         if self.headers.get("Content-Type", "").split(";")[0] != "application/json":
             return self.json_response({"error": "JSON required"}, 415)
@@ -128,6 +131,22 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             controls = payload.get("controls", {})
             if not isinstance(controls, dict):
                 raise ValueError("Invalid scrape options")
+            if path == "/api/newsletter/send":
+                if controls.get("email_enabled") is not True:
+                    return self.json_response({"error": "Enable the master email switch first."}, 400)
+                summary_path = ROOT / "docs/data/scrape_summary.json"
+                with self.jobs.summary_lock:
+                    summary = load_summary(summary_path)
+                    if payload.get("summary") != summary:
+                        return self.json_response({"error": "Summary changed. Review the refreshed preview and send again.", "summary": summary}, 409)
+                    if not summary.get("sources"):
+                        return self.json_response({"error": "No pending newsletter content."}, 400)
+                    interval = controls.get("summary_interval", "daily")
+                    try:
+                        sent = send_if_due(summary_path, summary, {"email_enabled": True, "summary_interval": interval}, interval)
+                    except Exception:
+                        return self.json_response({"error": "Email delivery failed. Check SMTP settings and the local server connection. Pending summary was kept."}, 502)
+                    return self.json_response({"sent": sent, "summary": load_summary(summary_path)})
             jobs = self.jobs.submit(payload.get("module"), payload.get("source"), controls)
             self.json_response({"jobs": jobs}, 202)
         except (ValueError, TypeError, AttributeError) as error:

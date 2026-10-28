@@ -9252,6 +9252,13 @@ function buildNewsletterPreviewSections() {
 
 function renderNewsletterPreview() {
   if (!elements.newsletterPreviewContent) return;
+  const sendButton = document.getElementById("newsletter-send-now");
+  if (sendButton) {
+    sendButton.disabled = Boolean(state.newsletterSending) || !isLocalDashboard() || !state.scrapeControls?.email_enabled || !Object.keys(state.scrapeSummary?.sources || {}).length;
+    sendButton.textContent = state.newsletterSending ? "Sending..." : "Send now";
+    sendButton.title = !isLocalDashboard() ? "Open the local dashboard to send immediately." : !state.scrapeControls?.email_enabled ? "Enable the master email switch first." : "Email the current summary to your configured recipient.";
+  }
+
   const summary = state.scrapeSummary;
   const enabled = state.scrapeControls?.email_enabled;
   const interval = state.scrapeControls?.summary_interval || "daily";
@@ -9296,6 +9303,29 @@ async function openNewsletterPreview() {
   } catch { state.scrapeSummary = null; }
   renderNewsletterPreview();
 }
+
+async function sendNewsletterNow() {
+  if (state.newsletterSending || !isLocalDashboard()) return;
+  state.newsletterSending = true;
+  renderNewsletterPreview();
+  let message;
+  try {
+    const response = await fetch("/api/newsletter/send", {method:"POST", headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({controls:state.scrapeControls, summary:state.scrapeSummary})});
+    let payload;
+    try { payload = await response.json(); } catch { throw new Error("Restart the local server with python serve_dashboard.py to enable sending."); }
+    if (payload.summary) state.scrapeSummary = payload.summary;
+    if (!response.ok) throw new Error(payload.error || "Email could not be sent.");
+    message = "Email sent. The pending summary has been cleared.";
+  } catch (error) { message = String(error.message || error); }
+  finally {
+    state.newsletterSending = false;
+    renderNewsletterPreview();
+    if (elements.newsletterPreviewStatus) elements.newsletterPreviewStatus.textContent = message;
+  }
+}
+
+document.getElementById("newsletter-send-now")?.addEventListener("click", () => { void sendNewsletterNow(); });
 
 function closeNewsletterPreview() {
   if (!elements.newsletterPreviewPanel) return;

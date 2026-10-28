@@ -14,6 +14,7 @@ if str(REPO_DIR) not in sys.path:
     sys.path.append(str(REPO_DIR))
 
 from services.common.scrape_metadata import run_and_record
+from services.common.secrets import secret
 
 
 ONE_PIECE_DIR = Path(__file__).resolve().parent
@@ -170,7 +171,7 @@ def build_email_body(
 
 
 def env_required(name: str) -> str:
-    value = os.environ.get(name, "").strip()
+    value = secret(name).strip()
     if not value:
         raise RuntimeError(f"Missing required environment variable: {name}")
     return value
@@ -185,11 +186,11 @@ def write_latest_report(body: str, snapshot_scope: str) -> None:
 
 def send_email(subject: str, body: str) -> None:
     smtp_host = env_required("SMTP_HOST")
-    smtp_port = int(os.environ.get("SMTP_PORT", "587"))
+    smtp_port = int(secret("SMTP_PORT", "587"))
     smtp_user = env_required("SMTP_USER")
     smtp_password = env_required("SMTP_PASSWORD")
     email_to = env_required("EMAIL_TO")
-    email_from = os.environ.get("EMAIL_FROM", "").strip() or smtp_user
+    email_from = secret("EMAIL_FROM").strip() or smtp_user
 
     message = EmailMessage()
     message["Subject"] = subject
