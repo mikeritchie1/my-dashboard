@@ -8928,7 +8928,7 @@ function renderManualScrapeButton(moduleId, sourceId) {
       || children.find((item) => item.status === "error") || children.find((item) => item.status === "finished");
   }
   const busy = ["submitting", "queued", "running"].includes(run?.status);
-  const label = {submitting:"Submitting...", queued:"Queued", running:"In progress", finished:"Finished - run again", error:"Failed - retry"}[run?.status] || "Run";
+  const label = {submitting:"Submitting...", queued:"Queued", running:"In progress", finished:"Run", error:"Failed - retry"}[run?.status] || "Run";
   const title = run?.error || (isLocalDashboard() ? "Run locally now. Module runs execute enabled sources one at a time." : "Queue a one-off run. Module runs include enabled sources; jobs start at the next 10-minute worker run.");
   return `<button type="button" class="scrape-run-button" data-scrape-run-source="${escapeHtml(sourceId)}" data-scrape-run-module="${escapeHtml(moduleId)}" title="${escapeHtml(title)}"${busy ? " disabled" : ""}>${escapeHtml(label)}</button>`;
 }
@@ -8938,13 +8938,17 @@ function applyManualScrapeResults() {
     const stats = run.stats;
     if (!stats?.last_scraped_at) continue;
     if (state.scrapeStatusBySource[key] && new Date(state.scrapeStatusBySource[key]) > new Date(stats.last_scraped_at)) continue;
+    const sameObservation = state.scrapeStatusBySource[key] === stats.last_scraped_at;
+    const existingHistory = state.scrapeHistoryBySource?.[key] || [];
     state.scrapeStatusBySource[key] = stats.last_scraped_at;
     state.scrapeDurationBySource[key] = stats.duration_seconds;
     state.scrapeItemCountBySource[key] = stats.item_count;
     state.scrapeResultBySource[key] = stats.status;
     state.scrapeErrorBySource[key] = stats.error || "";
     state.scrapeHistoryBySource ||= {};
-    state.scrapeHistoryBySource[key] = stats.history || [];
+    if (!sameObservation || (stats.history || []).length >= existingHistory.length) {
+      state.scrapeHistoryBySource[key] = stats.history || [];
+    }
   }
 }
 
@@ -9040,7 +9044,7 @@ async function pollManualScrapes() {
 }
 
 function renderScrapeHistoryCells(moduleId, sourceId, currentCount) {
-  const history = state.scrapeHistoryBySource?.[`${moduleId}/${sourceId}`] || [];
+  const history = (state.scrapeHistoryBySource?.[`${moduleId}/${sourceId}`] || []).slice(-3);
   const slots = [...Array(Math.max(0, 3 - history.length)).fill(null), ...history];
   return ["item_count", "added", "removed"].map((key) => {
     const values = slots.map((entry, index) => {

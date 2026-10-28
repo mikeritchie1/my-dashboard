@@ -114,6 +114,23 @@ class ScrapeMenuTests(TestCase):
         options["max_price"] = ""
         self.assertEqual(3, len(notifications.change_sections(self.config, self.controls, "weekly", self.before, self.after)))
 
+    def test_legacy_result_becomes_previous_history_entry(self):
+        with TemporaryDirectory() as directory, patch.object(metadata, "METADATA_PATH", Path(directory) / "metadata.json"):
+            metadata.write_metadata({"sources": {"one-piece/knightly": {
+                "last_scraped_at": "2026-10-27T09:18:00Z", "status": "ok", "item_count": 153, "duration_seconds": 10
+            }}})
+            # Inner scraper and outer wrapper both update metadata for the same run.
+            for _ in range(2):
+                metadata.record_scrape_outputs([], module="one-piece", source="knightly", duration_seconds=14, command=[])
+            metadata.record_source_history("one-piece", "knightly", self.before, self.after)
+            history = metadata.read_metadata()["sources"]["one-piece/knightly"]["history"]
+            self.assertEqual(2, len(history))
+            self.assertEqual(2, history[0]["item_count"])
+            self.assertIsNone(history[0]["added"])
+            self.assertEqual(10, history[0]["duration_seconds"])
+            self.assertEqual(1, history[1]["added"])
+            self.assertEqual(1, history[1]["removed"])
+
     def test_manual_queue_accepts_only_queued_requests(self):
         with patch.object(manual_scrapes, "read_request", return_value={"status": "queued", "request_id": "test"}):
             pending = manual_scrapes.pending_requests([self.config], lambda key: "https://example.test/" + key)

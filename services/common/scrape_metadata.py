@@ -75,6 +75,11 @@ def record_source_history(module: str, source: str, before: dict, after: dict) -
     payload = read_metadata()
     entry = payload.setdefault("sources", {}).setdefault(f"{module}/{source}", {})
     history = entry.get("history", [])
+    for observation in history:
+        if observation.pop("legacy_baseline", False):
+            # Shared output counts used to include other sources. The pre-run
+            # source snapshot provides the accurate count for the baseline.
+            observation["item_count"] = len(before)
     history.append({
         "scraped_at": entry.get("last_scraped_at"),
         "item_count": len(after),
@@ -128,6 +133,15 @@ def record_scrape_outputs(
     previous = payload.get("sources", {}).get(source_key, {})
     if "history" in previous:
         source_entry["history"] = previous["history"]
+    elif previous.get("last_scraped_at") and previous.get("status") in {"ok", "success"}:
+        source_entry["history"] = [{
+            "scraped_at": previous["last_scraped_at"],
+            "item_count": previous.get("item_count"),
+            "duration_seconds": previous.get("duration_seconds"),
+            "added": None,
+            "removed": None,
+            "legacy_baseline": True,
+        }]
     payload.setdefault("sources", {})[source_key] = source_entry
     for output in source_outputs:
         output_entry = {
