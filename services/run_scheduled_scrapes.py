@@ -10,6 +10,7 @@ import time
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +22,8 @@ if str(REPO_DIR) not in sys.path:
 from services.common.scrape_metadata import output_item_count, record_scrape_outputs, record_source_history
 from services.common.scrape_notifications import read_source_rows, change_sections, send_sections
 from services.common.scrape_summary import load_summary, save_summary, collect, send_if_due
+from services.common import manual_scrapes
+from services.common.scrape_metadata import read_metadata
 
 DOCS_DIR = REPO_DIR / "docs"
 INDEX_FILE = DOCS_DIR / "index.html"
@@ -286,6 +289,13 @@ def main() -> int:
     summary_path = DOCS_DIR / "data" / "scrape_summary.json"
     summary = load_summary(summary_path)
     selected = selected_sources(controls, args.interval)
+    manual = {}
+    if args.interval == "ten-minute" and not controls.get(CONTROLS_UNAVAILABLE_KEY):
+        manual = manual_scrapes.pending_requests(SOURCE_CONFIGS, state_url)
+        # Manual runs intentionally bypass automatic enable/interval switches.
+        selected = [config for config in SOURCE_CONFIGS if f"{config.module}/{config.source}" in manual] + [
+            config for config in selected if f"{config.module}/{config.source}" not in manual
+        ]
     if not selected:
         print(f"No enabled {args.interval} scrapers selected.", flush=True)
         send_if_due(summary_path, summary, controls, args.interval)
@@ -295,12 +305,20 @@ def main() -> int:
     failed = 0
     sections: list[str] = []
     for config in selected:
+        request = manual.get(f"{config.module}/{config.source}")
+        request_url = state_url(manual_scrapes.request_key(config)) if request else ""
+        if request:
+            request = {**request, "status": "running", "started_at": datetime.now(timezone.utc).isoformat()}
+            # Claim successfully before executing; never silently run an unclaimed request.
+            manual_scrapes.write_request(request_url, request)
         before = read_source_rows(REPO_DIR, config)
         try:
             result = run_command(config, controls)
         except Exception as error:
             print(f"{config.module}/{config.source} failed: {error}", flush=True)
             failed += int(config.fail_workflow)
+            if request:
+                manual_scrapes.write_request(request_url, {**request, "status": "error", "error": str(error)})
             continue
         results.append(result)
         if result["returncode"] == 0:
@@ -309,6 +327,12 @@ def main() -> int:
             collect(summary, config, before, after)
             save_summary(summary_path, summary)
             sections.extend(change_sections(config, controls, args.interval, before, after))
+        if request:
+            stats = read_metadata().get("sources", {}).get(f"{config.module}/{config.source}", {})
+            manual_scrapes.write_request(request_url, {
+                **request, "status": "finished" if result["returncode"] == 0 else "error",
+                "stats": stats, "error": stats.get("error", ""),
+            })
         if result["returncode"] != 0 and config.fail_workflow:
             failed += 1
         elif result["returncode"] != 0:

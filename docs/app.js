@@ -8788,6 +8788,7 @@ function renderScrapeControls() {
     const interval = input.getAttribute("data-scrape-interval-email-enabled") || "";
     input.checked = state.scrapeControls.interval_email_enabled?.[interval] !== false;
   });
+  applyManualScrapeResults();
   renderIntervalSummaries();
 
   const rows = SCRAPE_MODULES.map((moduleConfig) => {
@@ -8824,6 +8825,7 @@ function renderScrapeControls() {
         <td class="scrape-muted-cell">-</td><td class="scrape-muted-cell">-</td>
         <td class="scrape-duration-cell"${moduleStats.error ? ` title="${escapeHtml(moduleStats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(moduleStats))}</td>
         <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(moduleLastScraped) || "Unknown")}</td>
+        <td class="scrape-muted-cell">-</td>
       </tr>`;
     const sourceRows = moduleConfig.sources.map((source) => {
       const sourceState = moduleState.sources[source.id];
@@ -8847,6 +8849,7 @@ function renderScrapeControls() {
           ${renderScrapeHistoryCells(moduleConfig.id, source.id, itemCount)}
           <td class="scrape-duration-cell"${stats.error ? ` title="${escapeHtml(stats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(stats))}</td>
           <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(lastScraped) || "Unknown")}</td>
+          <td>${renderManualScrapeButton(moduleConfig.id, source.id)}</td>
         </tr>`;
     }).join("");
     return moduleRow + sourceRows;
@@ -8866,16 +8869,112 @@ function renderScrapeControls() {
             <th scope="col">Max price</th>
             <th scope="col">Limit</th>
             <th scope="col">Max pages</th>
-            <th scope="col">Items found<br><small>x-2 / x-1 / x</small></th>
-            <th scope="col">Items added<br><small>x-2 / x-1 / x</small></th>
-            <th scope="col">Items removed<br><small>x-2 / x-1 / x</small></th>
+            <th scope="col">Items found</th>
+            <th scope="col">Items added</th>
+            <th scope="col">Items removed</th>
             <th scope="col">Time elapsed</th>
             <th scope="col">Last scraped</th>
+            <th scope="col">Run now</th>
           </tr>
         </thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
+}
+
+const MANUAL_SCRAPES_STORAGE_KEY = "my-dashboard:manual-scrapes:v1";
+let manualScrapePollTimer;
+let manualScrapePolling = false;
+
+function manualScrapeRuns() {
+  if (!state.manualScrapeRuns) {
+    try { state.manualScrapeRuns = JSON.parse(localStorage.getItem(MANUAL_SCRAPES_STORAGE_KEY) || "{}"); }
+    catch { state.manualScrapeRuns = {}; }
+  }
+  return state.manualScrapeRuns;
+}
+
+function saveManualScrapeRuns() {
+  try { localStorage.setItem(MANUAL_SCRAPES_STORAGE_KEY, JSON.stringify(manualScrapeRuns())); } catch {}
+}
+
+function renderManualScrapeButton(moduleId, sourceId) {
+  const run = manualScrapeRuns()[`${moduleId}/${sourceId}`];
+  const busy = ["submitting", "queued", "running"].includes(run?.status);
+  const label = {submitting:"Submitting...", queued:"Queued", running:"In progress", finished:"Finished - run again", error:"Failed - retry"}[run?.status] || "Run";
+  const title = run?.error || "Run this source once using its saved options. Queued jobs start at the next 10-minute worker run.";
+  return `<button type="button" class="scrape-run-button" data-scrape-run-source="${escapeHtml(sourceId)}" data-scrape-run-module="${escapeHtml(moduleId)}" title="${escapeHtml(title)}"${busy ? " disabled" : ""}>${escapeHtml(label)}</button>`;
+}
+
+function applyManualScrapeResults() {
+  for (const [key, run] of Object.entries(manualScrapeRuns())) {
+    const stats = run.stats;
+    if (!stats?.last_scraped_at) continue;
+    if (state.scrapeStatusBySource[key] && new Date(state.scrapeStatusBySource[key]) > new Date(stats.last_scraped_at)) continue;
+    state.scrapeStatusBySource[key] = stats.last_scraped_at;
+    state.scrapeDurationBySource[key] = stats.duration_seconds;
+    state.scrapeItemCountBySource[key] = stats.item_count;
+    state.scrapeResultBySource[key] = stats.status;
+    state.scrapeErrorBySource[key] = stats.error || "";
+    state.scrapeHistoryBySource ||= {};
+    state.scrapeHistoryBySource[key] = stats.history || [];
+  }
+}
+
+async function queueManualScrape(moduleId, sourceId) {
+  const key = `${moduleId}/${sourceId}`;
+  const url = cloudflareStateUrl(`manual-scrape:${moduleId}:${sourceId}`);
+  if (!url) { renderScrapeControlsStatus("Run unavailable: shared state API is not configured."); return; }
+  const runs = manualScrapeRuns();
+  if (["submitting", "queued", "running"].includes(runs[key]?.status)) return;
+  runs[key] = {status:"submitting"};
+  renderScrapeControls();
+  try {
+    await saveScrapeControlsRemote();
+    const existingResponse = await fetchFresh(url);
+    if (!existingResponse.ok) throw new Error("Could not check the scrape queue.");
+    const existing = await existingResponse.json();
+    if (["queued", "running"].includes(existing?.status)) {
+      runs[key] = existing;
+    } else {
+      const request = {request_id:crypto.randomUUID(), status:"queued", requested_at:new Date().toISOString()};
+      const response = await fetch(url, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(request)});
+      if (!response.ok) throw new Error("Could not queue scrape. Try again.");
+      runs[key] = request;
+    }
+    renderScrapeControlsStatus("Scrape queued. Waiting for the next background worker run (about 10 minutes, plus scheduling delays).");
+  } catch (error) {
+    runs[key] = {status:"error", error:String(error.message || error)};
+    renderScrapeControlsStatus(runs[key].error);
+  }
+  saveManualScrapeRuns();
+  renderScrapeControls();
+  void pollManualScrapes();
+}
+
+async function pollManualScrapes() {
+  if (manualScrapePolling) return;
+  clearTimeout(manualScrapePollTimer);
+  manualScrapePolling = true;
+  try {
+    const runs = manualScrapeRuns();
+    await Promise.all(Object.entries(runs).filter(([, run]) => ["queued", "running"].includes(run.status)).map(async ([key, run]) => {
+      const [moduleId, sourceId] = key.split("/");
+      try {
+        const response = await fetchFresh(cloudflareStateUrl(`manual-scrape:${moduleId}:${sourceId}`));
+        if (!response.ok) return;
+        const latest = await response.json();
+        if (latest.request_id === run.request_id) runs[key] = latest;
+      } catch { /* Keep the pending request and retry after transient network failures. */ }
+    }));
+    saveManualScrapeRuns();
+    renderScrapeControls();
+  } finally {
+    manualScrapePolling = false;
+    if (Object.values(manualScrapeRuns()).some((run) => ["queued", "running"].includes(run.status))) {
+      manualScrapePollTimer = setTimeout(() => { void pollManualScrapes(); }, 10000);
+    }
+  }
 }
 
 function renderScrapeHistoryCells(moduleId, sourceId, currentCount) {
@@ -8998,6 +9097,7 @@ function openScrapeControls() {
   renderScrapeControls();
   if (!state.scrapeControlsLoaded) void loadScrapeControlsRemote();
   void loadScrapeStatus();
+  void pollManualScrapes();
 }
 
 function closeScrapeControls() {
@@ -9117,6 +9217,10 @@ if (elements.scrapeControlClose) {
 }
 
 if (elements.scrapeControlPanel) {
+  elements.scrapeControlPanel.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-scrape-run-source]");
+    if (button && !button.disabled) void queueManualScrape(button.dataset.scrapeRunModule, button.dataset.scrapeRunSource);
+  });
   elements.scrapeControlPanel.addEventListener("change", (event) => {
     if (updateScrapeControlsFromInput(event.target)) {
       void saveScrapeControlsRemote();

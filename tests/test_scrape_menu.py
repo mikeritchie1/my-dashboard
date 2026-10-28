@@ -8,6 +8,7 @@ from services import run_scheduled_scrapes as runner
 from services.common import scrape_metadata as metadata
 from services.common import scrape_notifications as notifications
 from services.common import scrape_summary as summary
+from services.common import manual_scrapes
 
 
 class ScrapeMenuTests(TestCase):
@@ -91,6 +92,37 @@ class ScrapeMenuTests(TestCase):
 
     def test_store_command_does_not_scrape_products(self):
         self.assertIn("--skip-products", runner.with_options(self.config.command, self.config, {}))
+
+    def test_manual_queue_accepts_only_queued_requests(self):
+        with patch.object(manual_scrapes, "read_request", return_value={"status": "queued", "request_id": "test"}):
+            pending = manual_scrapes.pending_requests([self.config], lambda key: "https://example.test/" + key)
+        self.assertIn("one-piece/knightly", pending)
+        with patch.object(manual_scrapes, "read_request", return_value={"status": "running", "request_id": "test"}):
+            self.assertEqual({}, manual_scrapes.pending_requests([self.config], lambda key: "https://example.test/" + key))
+
+    def test_manual_run_bypasses_automatic_switches_and_reports_completion(self):
+        controls = {"interval_enabled": {"ten-minute": False}, "email_enabled": False}
+        pending = {"one-piece/knightly": {"status": "queued", "request_id": "test"}}
+        with (
+            patch.object(runner.sys, "argv", ["scheduler", "--interval", "ten-minute"]),
+            patch.object(runner, "fetch_scrape_controls", return_value=controls),
+            patch.object(runner.manual_scrapes, "pending_requests", return_value=pending),
+            patch.object(runner.manual_scrapes, "write_request") as write,
+            patch.object(runner, "state_url", return_value="https://example.test/state"),
+            patch.object(runner, "load_summary", return_value={"window_started_at": "today", "sources": {}}),
+            patch.object(runner, "save_summary"),
+            patch.object(runner, "read_source_rows", side_effect=[self.before, self.after]),
+            patch.object(runner, "run_command", return_value={"returncode": 0}) as run,
+            patch.object(runner, "record_source_history"),
+            patch.object(runner, "read_metadata", return_value={"sources": {"one-piece/knightly": {"item_count": 2}}}),
+            patch.object(runner, "send_sections"),
+            patch.object(runner, "send_if_due"),
+        ):
+            self.assertEqual(0, runner.main())
+        run.assert_called_once_with(self.config, controls)
+        self.assertEqual("running", write.call_args_list[0].args[1]["status"])
+        self.assertEqual("finished", write.call_args_list[1].args[1]["status"])
+        self.assertEqual(2, write.call_args_list[1].args[1]["stats"]["item_count"])
 
 
 if __name__ == "__main__":

@@ -192,6 +192,7 @@ One Piece automation:
 - Scrape summary interval controls a separate combined email across all successful runs, including sources with immediate email disabled. The summary lists unique titles per change type and source since the previous delivered summary, rather than net stock changes. Failed delivery retains the pending window.
 - Newsletter Preview reads the same pending summary used for email. Expand Added/Removed/Updated to see titles. After delivery the pending window clears.
 - Source rows retain found/added/removed counts for the last three successful scheduled scrapes. Earlier history is unavailable until new runs populate it; failed attempts do not create false removals.
+- Each source has a Run button for a one-off scrape, even when automatic scraping is disabled. Requests use the existing shared state API and are picked up by the next 10-minute workflow; GitHub can delay or queue workflows. Buttons show Queued, In progress, Finished, or Failed, and returned metadata immediately refreshes the row's counts, history, and elapsed time. No GitHub credentials are stored in the browser.
 - Source elapsed time measures the whole scheduled command, including its prerequisites. Store-specific counts exclude other stores in shared files. One Piece product scraping, media enrichment, and F1 refreshes have independent menu rows.
 - The collection is loaded fresh from the configured Google Drive workbook when store scraping runs.
 
