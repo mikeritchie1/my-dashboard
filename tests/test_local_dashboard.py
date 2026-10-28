@@ -68,6 +68,9 @@ class LocalScrapeTests(TestCase):
 
 class LocalHttpTests(TestCase):
     def setUp(self):
+        self.secret_patch = patch.object(local, "secret", return_value="configured")
+        self.secret_patch.start()
+        self.addCleanup(self.secret_patch.stop)
         self.jobs = local.ScrapeJobs()
         self.server = ThreadingHTTPServer(("127.0.0.1", 0), partial(local.DashboardHandler, jobs=self.jobs))
         self.thread = threading.Thread(target=self.server.serve_forever, daemon=True)
@@ -129,3 +132,13 @@ class LocalHttpTests(TestCase):
             with self.assertRaises(HTTPError) as error:
                 urlopen(request)
             self.assertEqual(502, error.exception.code)
+
+    def test_newsletter_lists_missing_settings_without_sending(self):
+        summary = {"sources": {"test": {}}}
+        payload = {"controls": {"email_enabled": True}, "summary": summary}
+        request = Request(self.base + "/api/newsletter/send", data=json.dumps(payload).encode(), headers={"Content-Type": "application/json"})
+        with patch.object(local, "load_summary", return_value=summary), patch.object(local, "secret", return_value=""), patch.object(local, "send_if_due") as send:
+            with self.assertRaises(HTTPError) as error:
+                urlopen(request)
+            self.assertIn("SMTP_PASSWORD", json.load(error.exception)["error"])
+            send.assert_not_called()

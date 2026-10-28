@@ -13,6 +13,7 @@ from uuid import uuid4
 
 from services import run_scheduled_scrapes as runner
 from services.common.scrape_summary import load_summary, save_summary, collect, send_if_due
+from services.common.secrets import secret
 
 ROOT = Path(__file__).resolve().parent
 
@@ -141,6 +142,9 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                         return self.json_response({"error": "Summary changed. Review the refreshed preview and send again.", "summary": summary}, 409)
                     if not summary.get("sources"):
                         return self.json_response({"error": "No pending newsletter content."}, 400)
+                    missing = [key for key in ("SMTP_HOST", "SMTP_USER", "SMTP_PASSWORD", "EMAIL_TO") if not secret(key).strip()]
+                    if missing:
+                        return self.json_response({"error": "Missing local email settings: " + ", ".join(missing) + ". Add them to secrets.env, then send again. Pending summary was kept."}, 400)
                     interval = controls.get("summary_interval", "daily")
                     try:
                         sent = send_if_due(summary_path, summary, {"email_enabled": True, "summary_interval": interval}, interval)

@@ -25,4 +25,4 @@ def local_secret(name: str) -> str:
 
 
 def secret(name: str, default: str = "") -> str:
-    return env_get(name, default) or local_secret(name)
+    return env_get(name) or local_secret(name) or default
