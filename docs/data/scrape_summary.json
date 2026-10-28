@@ -88,6 +88,41 @@
       "added": {},
       "removed": {},
       "updated": {}
+    },
+    "one-piece/marvellous": {
+      "label": "Marvellous Gaming",
+      "runs": 1,
+      "item_count": 2,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "release-radar/pahe": {
+      "label": "Pahe latest movies",
+      "runs": 1,
+      "item_count": 50,
+      "added": {
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/forgotten-island-2026-web-dl-480p-720p-1080p/": "Forgotten Island",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/by-any-means-2026-web-dl-480p-720p-1080p/": "By Any Means",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/the-weight-2026-web-dl-480p-720p-1080p/": "The Weight",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/tenzing-2026-web-dl-480p-720p-1080p/": "Tenzing",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/sacrifice-2026-web-dl-480p-720p-1080p/": "Sacrifice",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/masterplan-2026-web-dl-480p-720p-1080p/": "Masterplan",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/bad-apples-2026-web-dl-480p-720p-1080p/": "Bad Apples",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/sense-and-sensibility-2026-web-dl-480p-720p-1080p/": "Sense and Sensibility",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/runner-2026-web-dl-480p-720p-1080p/": "Runner",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/verity-2026-web-dl-480p-720p-1080p/": "Verity",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/the-dog-stars-2026-web-dl-480p-720p-1080p/": "The Dog Stars",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/the-incomer-2026-web-dl-480p-720p-1080p/": "The Incomer"
+      },
+      "removed": {
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/slanted-2025-web-dl-480p-720p-1080p/": "Slanted",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/apex-2026-web-dl-480p-720p-1080p/": "Apex",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/roommates-2026-web-dl-480p-720p-1080p/": "Roommates",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/forbidden-fruits-2026-web-dl-480p-720p-1080p/": "Forbidden Fruits",
+        "docs/data/release_radar/pahe_latest.json|https://pahe.ink/they-will-kill-you-2026-web-dl-480p-720p-1080p/": "They Will Kill You"
+      },
+      "updated": {}
     }
   }
 }

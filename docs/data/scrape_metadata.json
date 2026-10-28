@@ -206,9 +206,9 @@
         "/opt/hostedtoolcache/Python/3.13.17/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.514,
+      "duration_seconds": 1.963,
       "item_count": 2,
-      "last_scraped_at": "2026-10-28T14:34:39.924981+00:00",
+      "last_scraped_at": "2026-10-28T15:18:28.455529+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
@@ -218,14 +218,14 @@
         "/opt/hostedtoolcache/Python/3.13.17/x64/bin/python",
         "services/scrape_one_piece.py",
         "--source",
-        "tanuki",
+        "marvellous",
         "--skip-products"
       ],
-      "duration_seconds": 44.823,
+      "duration_seconds": 8.116,
       "item_count": 151,
-      "last_scraped_at": "2026-10-28T14:35:23.195856+00:00",
+      "last_scraped_at": "2026-10-28T15:18:34.571282+00:00",
       "module": "one-piece",
-      "source": "tanuki",
+      "source": "marvellous",
       "status": "ok"
     },
     "docs/data/one_piece/products.json": {
@@ -336,18 +336,17 @@
     },
     "docs/data/release_radar/pahe_latest.json": {
       "command": [
-        "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
+        "/opt/hostedtoolcache/Python/3.13.17/x64/bin/python",
         "services/scrape_release_radar.py",
         "--source",
         "pahe"
       ],
-      "duration_seconds": 0.038,
-      "error": "Command failed with exit code 1",
-      "item_count": 43,
-      "last_scraped_at": "2026-07-08T06:31:03.776515+00:00",
+      "duration_seconds": 10.133,
+      "item_count": 50,
+      "last_scraped_at": "2026-10-28T15:18:45.377632+00:00",
       "module": "release-radar",
       "source": "pahe",
-      "status": "error"
+      "status": "ok"
     },
     "docs/data/youtube/almost_friday_tv.json": {
       "command": [
@@ -725,8 +724,8 @@
         "/opt/hostedtoolcache/Python/3.13.17/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.514,
-      "finished_at": "2026-10-28T14:34:39.924981+00:00",
+      "duration_seconds": 1.963,
+      "finished_at": "2026-10-28T15:18:28.455529+00:00",
       "history": [
         {
           "added": null,
@@ -738,13 +737,13 @@
         }
       ],
       "item_count": 2,
-      "last_scraped_at": "2026-10-28T14:34:39.924981+00:00",
+      "last_scraped_at": "2026-10-28T15:18:28.455529+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
       ],
       "source": "collection",
-      "started_at": "2026-10-28T14:34:38.410522+00:00",
+      "started_at": "2026-10-28T15:18:26.492955+00:00",
       "status": "ok"
     },
     "one-piece/collectiverse": {
@@ -863,19 +862,40 @@
     },
     "one-piece/marvellous": {
       "command": [
-        "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
+        "/opt/hostedtoolcache/Python/3.13.17/x64/bin/python",
         "services/scrape_one_piece.py",
         "--source",
-        "marvellous"
+        "marvellous",
+        "--skip-products"
       ],
-      "duration_seconds": 8.001,
-      "item_count": 61,
-      "last_scraped_at": "2026-07-09T19:15:39.679948+00:00",
+      "duration_seconds": 8.116,
+      "finished_at": "2026-10-28T15:18:34.571282+00:00",
+      "history": [
+        {
+          "added": null,
+          "duration_seconds": 8.001,
+          "item_count": 2,
+          "removed": null,
+          "scraped_at": "2026-07-09T19:15:39.679948+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 8.116,
+          "finished_at": "2026-10-28T15:18:34.571282+00:00",
+          "item_count": 2,
+          "removed": 0,
+          "scraped_at": "2026-10-28T15:18:34.571282+00:00",
+          "started_at": "2026-10-28T15:18:26.455562+00:00"
+        }
+      ],
+      "item_count": 2,
+      "last_scraped_at": "2026-10-28T15:18:34.571282+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "marvellous",
+      "started_at": "2026-10-28T15:18:26.455562+00:00",
       "status": "ok"
     },
     "one-piece/products": {
@@ -1045,21 +1065,40 @@
     },
     "release-radar/pahe": {
       "command": [
-        "/opt/hostedtoolcache/Python/3.13.14/x64/bin/python",
+        "/opt/hostedtoolcache/Python/3.13.17/x64/bin/python",
         "services/scrape_release_radar.py",
         "--source",
         "pahe"
       ],
-      "duration_seconds": 0.038,
-      "error": "Command failed with exit code 1",
-      "item_count": 43,
-      "last_scraped_at": "2026-07-08T06:31:03.776515+00:00",
+      "duration_seconds": 10.133,
+      "finished_at": "2026-10-28T15:18:45.377632+00:00",
+      "history": [
+        {
+          "added": null,
+          "duration_seconds": 10.089,
+          "item_count": 43,
+          "removed": null,
+          "scraped_at": "2026-10-28T15:18:45.369839+00:00"
+        },
+        {
+          "added": 12,
+          "duration_seconds": 10.133,
+          "finished_at": "2026-10-28T15:18:45.377632+00:00",
+          "item_count": 50,
+          "removed": 5,
+          "scraped_at": "2026-10-28T15:18:45.377632+00:00",
+          "started_at": "2026-10-28T15:18:35.244362+00:00"
+        }
+      ],
+      "item_count": 50,
+      "last_scraped_at": "2026-10-28T15:18:45.377632+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/pahe_latest.json"
       ],
       "source": "pahe",
-      "status": "error"
+      "started_at": "2026-10-28T15:18:35.244362+00:00",
+      "status": "ok"
     },
     "youtube/almost-friday-tv": {
       "command": [
@@ -1130,6 +1169,6 @@
       "status": "error"
     }
   },
-  "updated_at": "2026-10-28T14:35:24.829293+00:00",
+  "updated_at": "2026-10-28T15:18:45.377632+00:00",
   "version": 1
 }
