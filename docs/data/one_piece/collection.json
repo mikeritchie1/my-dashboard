@@ -43482,6 +43482,26 @@
           "rarity": "Rare"
         },
         {
+          "card_number": "OP17-009",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP17-010",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP17-011",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP17-012",
+          "rarity": "Common"
+        },
+        {
+          "card_number": "OP17-013",
+          "rarity": "Common"
+        },
+        {
           "card_number": "OP17-014",
           "rarity": "Common"
         },
@@ -43952,7 +43972,7 @@
         },
         {
           "card_number": "OP17-009",
-          "owned": false,
+          "owned": true,
           "rarity": "Uncommon",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-009_EN.webp",
           "image_hash": "9fa5198190f9803db2859299a00d3ffd3fffb35f9fffffffffff800100000001",
@@ -43968,7 +43988,7 @@
         },
         {
           "card_number": "OP17-010",
-          "owned": false,
+          "owned": true,
           "rarity": "Common",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-010_EN.webp",
           "image_hash": "bfff80118001c201c0078003a307fbfdfffdfee7ffffffffffff80018001b34f",
@@ -43984,7 +44004,7 @@
         },
         {
           "card_number": "OP17-011",
-          "owned": false,
+          "owned": true,
           "rarity": "Common",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-011_EN.webp",
           "image_hash": "ffff80018001804187c39f01be21ebf5bfc5c479fffffffffffff8198001bfff",
@@ -44000,7 +44020,7 @@
         },
         {
           "card_number": "OP17-012",
-          "owned": false,
+          "owned": true,
           "rarity": "Common",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-012_EN.webp",
           "image_hash": "bfff8c37980ff007f007b00fa187bbf7bb5ff01fffffffffffff800180010003",
@@ -44016,7 +44036,7 @@
         },
         {
           "card_number": "OP17-013",
-          "owned": false,
+          "owned": true,
           "rarity": "Uncommon",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-013_EN.webp",
           "image_hash": "cfff00019e05940fa68587f3bfffbfffbfdfe01fffffbfffffff800180010003",
@@ -45906,11 +45926,11 @@
           "power": "8000"
         }
       ],
-      "total_owned": 86,
+      "total_owned": 91,
       "total_cards": 119,
       "by_rarity": {
         "Leader": 6,
-        "Common": 70,
+        "Common": 75,
         "Rare": 10
       },
       "total_by_rarity": {
@@ -185237,6 +185257,36 @@
       "rarity": "",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712122.jpg?v=1787878259",
       "updated_at": "2026-10-27T09:18:41Z"
+    },
+    "https://www.knightlygaming.co.za/collections/one-piece-singles/products/fossa-the-worlds-strongest-warriors": {
+      "card_number": "OP17-010",
+      "rarity": "Common",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/712596.jpg?v=1791317892",
+      "updated_at": "2026-10-28T14:34:20Z"
+    },
+    "https://www.knightlygaming.co.za/collections/one-piece-singles/products/blamenco-the-worlds-strongest-warriors": {
+      "card_number": "OP17-011",
+      "rarity": "Common",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/712597.jpg?v=1791317892",
+      "updated_at": "2026-10-28T14:34:20Z"
+    },
+    "https://www.knightlygaming.co.za/collections/one-piece-singles/products/blenheim-the-worlds-strongest-warriors": {
+      "card_number": "OP17-012",
+      "rarity": "Common",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/707125.jpg?v=1791318038",
+      "updated_at": "2026-10-28T14:34:20Z"
+    },
+    "https://www.knightlygaming.co.za/collections/one-piece-singles/products/haruta-the-worlds-strongest-warriors": {
+      "card_number": "OP17-009",
+      "rarity": "Uncommon",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/712595.jpg?v=1791317894",
+      "updated_at": "2026-10-28T14:34:20Z"
+    },
+    "https://www.knightlygaming.co.za/collections/one-piece-singles/products/portgas-d-ace-the-worlds-strongest-warriors": {
+      "card_number": "OP17-013",
+      "rarity": "Uncommon",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/708780.jpg?v=1791318000",
+      "updated_at": "2026-10-28T14:34:20Z"
     }
   }
 }
