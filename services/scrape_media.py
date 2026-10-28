@@ -5,10 +5,10 @@ import shutil
 import sys
 from pathlib import Path
 
-from services.common.scrape_metadata import run_and_record
-
-
 REPO_DIR = Path(__file__).resolve().parents[1]
+if str(REPO_DIR) not in sys.path:
+    sys.path.append(str(REPO_DIR))
+from services.common.scrape_metadata import run_and_record
 DATA_DIR = REPO_DIR / "docs" / "data" / "media"
 OUTPUTS = ["watchlist.json", "gameslist.json", "watchlist_movie_details.json", "games_details.json"]
 READING_OUTPUTS = [REPO_DIR / "docs" / "data" / "reading_list.json", DATA_DIR / "reading_details.json"]
@@ -21,6 +21,7 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; media scrape is not item-limited.")
     parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; Notion pagination is automatic.")
     parser.add_argument("--type", choices=["all", "movies", "series", "anime", "games"], default="all", help="Which media type to enrich.")
+    parser.add_argument("--skip-enrichment", action="store_true")
     args = parser.parse_args()
 
     if args.hard:
@@ -38,6 +39,8 @@ def main() -> int:
     if args.source != "reading":
         scope = "both" if args.source == "all" else args.source
         command = [sys.executable, "services/media/scrape_watchlist.py", "--scope", scope, "--type", args.type]
+        if args.skip_enrichment:
+            command.append("--skip-enrichment")
         if args.hard:
             command.append("--hard")
         print(f"Running media scrape: {' '.join(command)}", flush=True)

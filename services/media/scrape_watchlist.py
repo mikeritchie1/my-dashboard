@@ -1626,6 +1626,7 @@ def scrape_watchlist(
     hard: bool = False,
     scrape_watchlist_page: bool = True,
     scrape_games_page: bool = True,
+    skip_enrichment: bool = False,
 ) -> dict:
     token = secret("NOTION_TOKEN") or secret("NOTION_API_TOKEN")
     page_id = extract_page_id("NOTION_WATCHLIST_PAGE_ID", "NOTION_WATCHLIST_PAGE_URL", DEFAULT_WATCHLIST_PAGE_ID)
@@ -1697,13 +1698,14 @@ def scrape_watchlist(
             games_payload["source"] = games_page_url
             games_payload["page_id"] = games_page_id
             print("[rawg] Starting game enrichment...")
-            games_payload = enrich_payload_with_game_details(games_payload, selected_types=selected_game_types, hard=hard)
+            if not skip_enrichment:
+                games_payload = enrich_payload_with_game_details(games_payload, selected_types=selected_game_types, hard=hard)
             write_games_payload(games_payload)
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, ValueError) as error:
             print(f"[warn] Games scrape skipped: {error}")
 
     payload = watchlist_payload
-    if scrape_watchlist_page:
+    if scrape_watchlist_page and not skip_enrichment:
         print("[tmdb] Starting media enrichment...")
         payload = enrich_payload_with_movie_details(payload, selected_types=selected_types, hard=hard)
     return payload
@@ -1728,6 +1730,7 @@ def main() -> int:
         default="both",
         help="Choose which Notion page(s) to read.",
     )
+    parser.add_argument("--skip-enrichment", action="store_true")
     args = parser.parse_args()
 
     selected_types = {"movie", "series", "anime_movie", "anime_series"}
@@ -1757,6 +1760,7 @@ def main() -> int:
         hard=args.hard,
         scrape_watchlist_page=scrape_watchlist_page,
         scrape_games_page=scrape_games_page,
+        skip_enrichment=args.skip_enrichment,
     )
     if payload.get("error"):
         print(f"Watchlist scrape failed: {payload['error']}")

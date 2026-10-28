@@ -18,7 +18,9 @@ REPO_DIR = Path(__file__).resolve().parents[1]
 if str(REPO_DIR) not in sys.path:
     sys.path.append(str(REPO_DIR))
 
-from services.common.scrape_metadata import output_item_count, record_scrape_outputs
+from services.common.scrape_metadata import output_item_count, record_scrape_outputs, record_source_history
+from services.common.scrape_notifications import read_source_rows, change_sections, send_sections
+from services.common.scrape_summary import load_summary, save_summary, collect, send_if_due
 
 DOCS_DIR = REPO_DIR / "docs"
 INDEX_FILE = DOCS_DIR / "index.html"
@@ -82,12 +84,12 @@ SOURCE_CONFIGS: list[SourceConfig] = [
     SourceConfig("events", "geocode", "Geocode locations", "daily", ["services/events/geocode_event_locations.py"], ["docs/data/events/locations.json"]),
     SourceConfig("news", "rss", "RSS and Atom feeds", "daily", ["services/scrape_news.py", "--source", "rss"], ["docs/data/news/news.json"]),
     SourceConfig("news", "local-file", "Local file merge", "daily", ["services/scrape_news.py", "--source", "local-file"], ["docs/data/news/news.json"]),
-    SourceConfig("news", "f1-snapshot", "F1 snapshot", "daily", ["services/scrape_news.py", "--source", "rss"], ["docs/data/news/news.json"]),
-    SourceConfig("media", "watchlist", "Notion watchlist", "daily", ["services/scrape_media.py", "--source", "watchlist"], ["docs/data/media/watchlist.json", "docs/data/media/watchlist_movie_details.json"]),
-    SourceConfig("media", "games", "Notion games", "daily", ["services/scrape_media.py", "--source", "games"], ["docs/data/media/gameslist.json", "docs/data/media/games_details.json"]),
+    SourceConfig("news", "f1-snapshot", "F1 snapshot", "daily", ["-m", "services.common.scheduled_source_tasks", "f1-snapshot"], ["docs/data/news/news.json"]),
+    SourceConfig("media", "watchlist", "Notion watchlist", "daily", ["services/scrape_media.py", "--source", "watchlist"], ["docs/data/media/watchlist.json"]),
+    SourceConfig("media", "games", "Notion games", "daily", ["services/scrape_media.py", "--source", "games"], ["docs/data/media/gameslist.json"]),
     SourceConfig("media", "reading", "Notion reading list", "daily", ["services/scrape_media.py", "--source", "reading"], ["docs/data/reading_list.json", "docs/data/media/reading_details.json"]),
-    SourceConfig("media", "tmdb", "TMDB enrichment", "daily", ["services/scrape_media.py", "--source", "watchlist"], ["docs/data/media/watchlist_movie_details.json"]),
-    SourceConfig("media", "rawg", "RAWG enrichment", "daily", ["services/scrape_media.py", "--source", "games"], ["docs/data/media/games_details.json"]),
+    SourceConfig("media", "tmdb", "TMDB enrichment", "daily", ["-m", "services.common.scheduled_source_tasks", "tmdb"], ["docs/data/media/watchlist_movie_details.json"]),
+    SourceConfig("media", "rawg", "RAWG enrichment", "daily", ["-m", "services.common.scheduled_source_tasks", "rawg"], ["docs/data/media/games_details.json"]),
     SourceConfig("youtube", "one-piece", "One Piece channels", "daily", ["services/scrape_youtube.py", "--mode", "daily"], ["docs/data/youtube/latest_uploads.json"]),
     SourceConfig("youtube", "almost-friday-tv", "Almost Friday TV", "daily", ["services/youtube/scrape_almost_friday_tv.py"], ["docs/data/youtube/almost_friday_tv.json"]),
     SourceConfig("youtube", "thats-a-bad-idea", "That's A Bad Idea", "daily", ["services/youtube/scrape_thats_a_bad_idea.py"], ["docs/data/youtube/thats_a_bad_idea.json"]),
@@ -181,6 +183,8 @@ def selected_sources(controls: dict[str, Any], interval: str) -> list[SourceConf
         if source.get("enabled", config.default_enabled) is False:
             continue
         schedule = source.get("schedule") or module.get("schedule") or config.default_schedule
+        if config.module == "events" and config.source == "geocode" and option_value(controls, "events", "skip_geocode", False):
+            continue
         if schedule == "disabled":
             continue
         if schedule == interval:
@@ -202,6 +206,14 @@ def allow_scheduled_hard() -> bool:
 
 def with_options(command: list[str], config: SourceConfig, controls: dict[str, Any]) -> list[str]:
     result = [sys.executable, *command]
+    if command[0] == "services/scrape_one_piece.py":
+        result.append("--skip-products")
+    if config.module == "youtube" and config.source == "one-piece":
+        result[result.index("--mode") + 1] = str(option_value(controls, "youtube", "mode", "daily"))
+    if command[0] == "services/scrape_media.py" and config.source in {"watchlist", "games"}:
+        result.append("--skip-enrichment")
+    if command[0] == "services/scrape_news.py" and config.source == "rss":
+        result.append("--skip-f1")
     supported = SCRIPT_OPTION_FLAGS.get(command[0], set())
     hard = bool(option_value(controls, config.module, "hard", False))
     if hard and allow_scheduled_hard() and "--hard" in supported and "--hard" not in result:
@@ -271,21 +283,41 @@ def main() -> int:
     args = parser.parse_args()
 
     controls = fetch_scrape_controls()
+    summary_path = DOCS_DIR / "data" / "scrape_summary.json"
+    summary = load_summary(summary_path)
     selected = selected_sources(controls, args.interval)
     if not selected:
         print(f"No enabled {args.interval} scrapers selected.", flush=True)
+        send_if_due(summary_path, summary, controls, args.interval)
         return 0
 
     results: list[dict[str, Any]] = []
     failed = 0
+    sections: list[str] = []
     for config in selected:
-        result = run_command(config, controls)
+        before = read_source_rows(REPO_DIR, config)
+        try:
+            result = run_command(config, controls)
+        except Exception as error:
+            print(f"{config.module}/{config.source} failed: {error}", flush=True)
+            failed += int(config.fail_workflow)
+            continue
         results.append(result)
+        if result["returncode"] == 0:
+            after = read_source_rows(REPO_DIR, config)
+            record_source_history(config.module, config.source, before, after)
+            collect(summary, config, before, after)
+            save_summary(summary_path, summary)
+            sections.extend(change_sections(config, controls, args.interval, before, after))
         if result["returncode"] != 0 and config.fail_workflow:
             failed += 1
         elif result["returncode"] != 0:
             print(f"{config.module}/{config.source} failed but is configured as non-fatal.", flush=True)
 
+    try:
+        send_sections(sections, args.interval)
+    finally:
+        send_if_due(summary_path, summary, controls, args.interval)
     return 1 if failed else 0
 
 

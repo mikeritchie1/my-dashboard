@@ -1,4 +1,4 @@
-﻿const MISSING_CARDS_PATH = "./data/one_piece/missing_cards.json";
+const MISSING_CARDS_PATH = "./data/one_piece/missing_cards.json";
 const MISSING_CARD_PRICE_HISTORY_PATH = "./data/one_piece/missing_card_price_history.json";
 const COLLECTION_PATH = "./data/one_piece/collection.json";
 const ONE_PIECE_PRODUCTS_PATH = "./data/one_piece/products.json";
@@ -8232,7 +8232,7 @@ function getDefaultScrapeControls() {
   return {
     version: 2,
     updated_at: new Date().toISOString(),
-    default_schedule: "daily",
+    summary_interval: "daily",
     interval_enabled: {
       "ten-minute": true,
       hourly: true,
@@ -8255,9 +8255,9 @@ function normalizeScrapeControls(raw) {
   const payload = raw && typeof raw === "object" ? raw : {};
   const payloadVersion = Number(payload.version || 0);
   defaults.version = 2;
-  defaults.default_schedule = SCRAPE_SCHEDULES.some((item) => item.value === payload.default_schedule)
-    ? payload.default_schedule
-    : defaults.default_schedule;
+  defaults.summary_interval = SCRAPE_SCHEDULES.some((item) => item.value === payload.summary_interval)
+    ? payload.summary_interval
+    : "daily";
   const intervalEnabled = payload.interval_enabled && typeof payload.interval_enabled === "object"
     ? payload.interval_enabled
     : {};
@@ -8694,6 +8694,7 @@ async function loadScrapeStatus() {
   state.scrapeResultBySource = {};
   state.scrapeErrorBySource = {};
   state.scrapeHasSourceMetadata = false;
+  state.scrapeHistoryBySource = {};
   try {
     const response = await fetchFresh(SCRAPE_METADATA_PATH);
     if (response.ok) {
@@ -8702,6 +8703,7 @@ async function loadScrapeStatus() {
       state.scrapeHasSourceMetadata = Object.keys(sourceMetadata).length > 0;
       for (const [key, entry] of Object.entries(sourceMetadata)) {
         if (!entry || typeof entry !== "object") continue;
+        state.scrapeHistoryBySource[key] = Array.isArray(entry.history) ? entry.history.slice(-3) : [];
         state.scrapeStatusBySource[key] = String(entry.last_scraped_at || "");
         state.scrapeDurationBySource[key] = Number.isFinite(Number(entry.duration_seconds))
           ? Number(entry.duration_seconds)
@@ -8773,7 +8775,7 @@ function renderScrapeControls() {
     state.scrapeControls = loadScrapeControlsLocal();
   }
   if (elements.scrapeDefaultSchedule) {
-    elements.scrapeDefaultSchedule.innerHTML = renderScheduleOptions(state.scrapeControls.default_schedule);
+    elements.scrapeDefaultSchedule.innerHTML = SCRAPE_SCHEDULES.filter((item) => item.value !== "manual").map((item) => `<option value="${item.value}"${item.value === state.scrapeControls.summary_interval ? " selected" : ""}>${escapeHtml(item.label)}</option>`).join("");
   }
   if (elements.scrapeEmailEnabled) {
     elements.scrapeEmailEnabled.checked = Boolean(state.scrapeControls.email_enabled);
@@ -8819,6 +8821,7 @@ function renderScrapeControls() {
         <td>${renderScrapeTableOption(moduleConfig, optionByKey.limit, moduleState.options?.limit)}</td>
         <td>${renderScrapeTableOption(moduleConfig, optionByKey.max_pages, moduleState.options?.max_pages)}</td>
         <td class="scrape-count-cell">${escapeHtml(formatItemCount(moduleItemCount))}</td>
+        <td class="scrape-muted-cell">-</td><td class="scrape-muted-cell">-</td>
         <td class="scrape-duration-cell"${moduleStats.error ? ` title="${escapeHtml(moduleStats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(moduleStats))}</td>
         <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(moduleLastScraped) || "Unknown")}</td>
       </tr>`;
@@ -8841,7 +8844,7 @@ function renderScrapeControls() {
           <td class="scrape-muted-cell">-</td>
           <td class="scrape-muted-cell">-</td>
           <td class="scrape-muted-cell">-</td>
-          <td class="scrape-count-cell">${escapeHtml(formatItemCount(itemCount))}</td>
+          ${renderScrapeHistoryCells(moduleConfig.id, source.id, itemCount)}
           <td class="scrape-duration-cell"${stats.error ? ` title="${escapeHtml(stats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(stats))}</td>
           <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(lastScraped) || "Unknown")}</td>
         </tr>`;
@@ -8863,7 +8866,9 @@ function renderScrapeControls() {
             <th scope="col">Max price</th>
             <th scope="col">Limit</th>
             <th scope="col">Max pages</th>
-            <th scope="col">Items found</th>
+            <th scope="col">Items found<br><small>x-2 / x-1 / x</small></th>
+            <th scope="col">Items added<br><small>x-2 / x-1 / x</small></th>
+            <th scope="col">Items removed<br><small>x-2 / x-1 / x</small></th>
             <th scope="col">Time elapsed</th>
             <th scope="col">Last scraped</th>
           </tr>
@@ -8871,6 +8876,18 @@ function renderScrapeControls() {
         <tbody>${rows}</tbody>
       </table>
     </div>`;
+}
+
+function renderScrapeHistoryCells(moduleId, sourceId, currentCount) {
+  const history = state.scrapeHistoryBySource?.[`${moduleId}/${sourceId}`] || [];
+  const slots = [...Array(Math.max(0, 3 - history.length)).fill(null), ...history];
+  return ["item_count", "added", "removed"].map((key) => {
+    const values = slots.map((entry, index) => {
+      const value = entry?.[key] ?? (key === "item_count" && index === 2 ? currentCount : null);
+      return escapeHtml(value === null || value === undefined ? "-" : String(value));
+    });
+    return `<td class="scrape-count-cell" title="Last three successful scrapes, oldest to newest">${values.join(" / ")}</td>`;
+  }).join("");
 }
 
 function renderScrapeTableOption(moduleConfig, option, value) {
@@ -8907,7 +8924,7 @@ function updateScrapeControlsFromInput(target) {
     return true;
   }
   if (target === elements.scrapeDefaultSchedule) {
-    state.scrapeControls.default_schedule = target.value;
+    state.scrapeControls.summary_interval = target.value;
     return true;
   }
   if (target === elements.scrapeEmailEnabled) {
@@ -9040,52 +9057,33 @@ function buildNewsletterPreviewSections() {
 
 function renderNewsletterPreview() {
   if (!elements.newsletterPreviewContent) return;
-  const sections = buildNewsletterPreviewSections();
-  const enabledEmail = Boolean(state.scrapeControls?.email_enabled);
-  const totalSources = sections.reduce((total, section) => total + section.sourceSections.length, 0);
-  const subject = enabledEmail
-    ? `Dashboard scrape newsletter: ${totalSources} watched source${totalSources === 1 ? "" : "s"}`
-    : "Dashboard scrape newsletter: email disabled";
-
+  const summary = state.scrapeSummary;
+  const enabled = state.scrapeControls?.email_enabled;
+  const interval = state.scrapeControls?.summary_interval || "daily";
   if (elements.newsletterPreviewStatus) {
-    elements.newsletterPreviewStatus.textContent = enabledEmail
-      ? "Previewing from current scrape settings."
-      : "Email is currently disabled in scrape settings.";
+    elements.newsletterPreviewStatus.textContent = enabled
+      ? `Summary interval: ${scrapeScheduleLabel(interval)}. Changes since the previous summary; repeated items are listed once per change type.`
+      : "All emails are disabled by the master switch.";
   }
-
-  const sectionHtml = sections.length
-    ? sections.map((section) => `
-      <section class="newsletter-preview-section">
-        <div class="newsletter-preview-section-head">
-          <h3>${escapeHtml(section.label)}</h3>
-          <span>${escapeHtml(scrapeScheduleLabel(section.schedule))}</span>
-        </div>
-        ${section.events.length ? `<p class="newsletter-preview-line">Module email: ${escapeHtml(section.events.join(", "))}</p>` : ""}
-        ${section.maxPrice !== undefined ? `<p class="newsletter-preview-line">One Piece card email price limit: R${escapeHtml(section.maxPrice)}</p>` : ""}
-        <div class="newsletter-preview-source-list">
-          ${section.sourceSections.length ? section.sourceSections.map((source) => `
-            <div class="newsletter-preview-source">
-              <strong>${escapeHtml(source.label)}</strong>
-              <span>${escapeHtml(source.events.join(", "))}</span>
-              <em>${escapeHtml(scrapeScheduleLabel(source.schedule))}${source.lastScraped ? ` · last scraped ${escapeHtml(formatScrapeDateTime(source.lastScraped))}` : ""}</em>
-            </div>
-          `).join("") : `<p class="newsletter-preview-line">No source-level email notifications are enabled.</p>`}
-        </div>
-      </section>
-    `).join("")
-    : `<p class="empty">No newsletter sections are enabled by the current scrape settings.</p>`;
-
+  if (!summary) {
+    elements.newsletterPreviewContent.innerHTML = '<p class="empty">No summary data available yet. It will appear after the next successful scheduled scrape.</p>';
+    return;
+  }
+  const sections = Object.values(summary.sources || {}).map((entry) => `
+    <section class="newsletter-preview-section">
+      <h3>${escapeHtml(entry.label)}</h3>
+      <p>${escapeHtml(String(entry.runs))} runs; ${escapeHtml(String(entry.item_count))} items at latest scrape</p>
+      ${["added", "removed", "updated"].map((kind) => {
+        const titles = Object.values(entry[kind] || {});
+        return `<details><summary>${escapeHtml(kind.charAt(0).toUpperCase() + kind.slice(1))}: ${titles.length}</summary>
+          ${titles.length ? `<ul>${titles.map((title) => `<li>${escapeHtml(title)}</li>`).join("")}</ul>` : '<p>No items.</p>'}</details>`;
+      }).join("")}
+    </section>`).join("");
   elements.newsletterPreviewContent.innerHTML = `
     <article class="newsletter-preview-message">
-      <div class="newsletter-preview-subject">
-        <span>Subject</span>
-        <strong>${escapeHtml(subject)}</strong>
-      </div>
-      <div class="newsletter-preview-intro">
-        <p>Dashboard scrape newsletter</p>
-        <p>This preview follows the current scrape-control email settings. Actual emails will include the matching newly added, updated, and removed items found during the scrape run.</p>
-      </div>
-      ${sectionHtml}
+      <div class="newsletter-preview-subject"><span>Subject</span><strong>Dashboard scrape summary (${escapeHtml(interval)})</strong></div>
+      <p>Changes since ${escapeHtml(formatScrapeDateTime(summary.window_started_at))}. Includes every successful scraper run, across all run intervals.</p>
+      ${sections || '<p class="empty">No scraper runs in the current summary window yet.</p>'}
     </article>`;
 }
 
@@ -9097,6 +9095,10 @@ async function openNewsletterPreview() {
     await loadScrapeControlsRemote();
   }
   void loadScrapeStatus();
+  try {
+    const response = await fetchFresh("./data/scrape_summary.json");
+    state.scrapeSummary = response.ok ? await response.json() : null;
+  } catch { state.scrapeSummary = null; }
   renderNewsletterPreview();
 }
 

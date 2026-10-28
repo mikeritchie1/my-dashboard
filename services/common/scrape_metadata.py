@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import subprocess
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from typing import Iterable
 
@@ -70,6 +70,25 @@ def write_metadata(payload: dict) -> None:
     METADATA_PATH.write_text(json.dumps(payload, indent=2, sort_keys=True), encoding="utf-8")
 
 
+def record_source_history(module: str, source: str, before: dict, after: dict) -> None:
+    """Keep three completed observations; failed attempts never imply removals."""
+    payload = read_metadata()
+    entry = payload.setdefault("sources", {}).setdefault(f"{module}/{source}", {})
+    history = entry.get("history", [])
+    history.append({
+        "scraped_at": entry.get("last_scraped_at"),
+        "item_count": len(after),
+        "added": len(after.keys() - before.keys()),
+        "removed": len(before.keys() - after.keys()),
+        "duration_seconds": entry.get("duration_seconds"),
+        "started_at": entry.get("started_at"),
+        "finished_at": entry.get("finished_at"),
+    })
+    entry["history"] = history[-3:]
+    entry["item_count"] = len(after)
+    write_metadata(payload)
+
+
 def record_scrape_outputs(
     outputs: Iterable[Path],
     *,
@@ -82,7 +101,8 @@ def record_scrape_outputs(
     error: str = "",
 ) -> None:
     payload = read_metadata()
-    now = datetime.now(timezone.utc).isoformat()
+    finished = datetime.now(timezone.utc)
+    now = finished.isoformat()
     output_map = payload.setdefault("outputs", {})
     source_key = f"{module}/{source}"
     source_outputs = list(outputs)
@@ -95,6 +115,8 @@ def record_scrape_outputs(
         "module": module,
         "source": source,
         "last_scraped_at": now,
+        "started_at": (finished - timedelta(seconds=duration_seconds)).isoformat(),
+        "finished_at": now,
         "duration_seconds": round(float(duration_seconds), 3),
         "item_count": source_item_count,
         "outputs": [metadata_key(output) for output in source_outputs],
@@ -103,6 +125,9 @@ def record_scrape_outputs(
     }
     if error:
         source_entry["error"] = error
+    previous = payload.get("sources", {}).get(source_key, {})
+    if "history" in previous:
+        source_entry["history"] = previous["history"]
     payload.setdefault("sources", {})[source_key] = source_entry
     for output in source_outputs:
         output_entry = {

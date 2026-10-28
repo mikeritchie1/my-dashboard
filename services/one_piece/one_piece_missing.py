@@ -852,11 +852,15 @@ def fetch_knightly_products() -> list[dict]:
     for page in range(1, 50):
         print(f"Knightly Gaming: fetching page {page}...", flush=True)
         data = fetch_shopify_products_json(KNIGHTLY_PRODUCTS_URL.format(page=page))
-        page_products = data.get("products", [])
+        if not isinstance(data, dict) or not isinstance(data.get("products"), list):
+            raise RuntimeError(f"Knightly page {page} did not return a products list")
+        page_products = data["products"]
         print(f"Knightly Gaming: page {page} -> {len(page_products)} products", flush=True)
         if not page_products:
             break
         products.extend(page_products)
+    else:
+        raise RuntimeError("Knightly pagination reached its safety limit before an empty final page")
     print(f"Knightly Gaming: {len(products)} products total", flush=True)
     return products
 

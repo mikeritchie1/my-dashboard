@@ -186,10 +186,14 @@ One Piece config:
 
 One Piece automation:
 
-- The two-hour workflow syncs collection ownership from the Google Sheet, scrapes Knightly Gaming only, and sends email only when newly added OP17 card listings under R100 appear. Price/stock updates, removed listings, and generic scrape-count summaries do not trigger email.
-- The missing-card list is loaded fresh from the configured Google Drive workbook each run. It includes both the `Missing` sheet and cards marked unowned on the `Overview` sheet, so new sets are searched immediately.
-- One Piece is excluded from the daily scraper and daily dashboard digest. The daily update workflow is manual-only while daily scheduled scraping is paused.
-- Two-hour workflow file: `.github/workflows/hourly-update.yml`
+- All four scheduled workflows use the saved dashboard scrape menu. Run switches gate intervals; module/source switches and row intervals select the work.
+- Interval names are 10 minutes, every 2 hours (`hourly` internally), daily (06:15 South Africa time), and weekly (Monday 06:30). GitHub can delay scheduled runs.
+- The master email switch gates both immediate change emails and combined summaries. Interval Email switches and source Added/Updated/Removed checkboxes control immediate emails; the One Piece maximum price comes from the menu (0 means unlimited).
+- Scrape summary interval controls a separate combined email across all successful runs, including sources with immediate email disabled. The summary lists unique titles per change type and source since the previous delivered summary, rather than net stock changes. Failed delivery retains the pending window.
+- Newsletter Preview reads the same pending summary used for email. Expand Added/Removed/Updated to see titles. After delivery the pending window clears.
+- Source rows retain found/added/removed counts for the last three successful scheduled scrapes. Earlier history is unavailable until new runs populate it; failed attempts do not create false removals.
+- Source elapsed time measures the whole scheduled command, including its prerequisites. Store-specific counts exclude other stores in shared files. One Piece product scraping, media enrichment, and F1 refreshes have independent menu rows.
+- The collection is loaded fresh from the configured Google Drive workbook when store scraping runs.
 
 ### Release Radar
 

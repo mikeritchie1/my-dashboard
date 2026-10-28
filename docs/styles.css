@@ -4422,7 +4422,7 @@ td.card-number {
 
 .scrape-table {
   width: 100%;
-  min-width: 0;
+  min-width: 1450px;
   border-collapse: collapse;
   table-layout: fixed;
 }
@@ -4478,15 +4478,17 @@ td.card-number {
   width: 5.8%;
 }
 
-.scrape-table th:nth-child(10) {
+.scrape-table th:nth-child(10),
+.scrape-table th:nth-child(11),
+.scrape-table th:nth-child(12) {
   width: 8%;
 }
 
-.scrape-table th:nth-child(11) {
+.scrape-table th:nth-child(13) {
   width: 9%;
 }
 
-.scrape-table th:nth-child(12) {
+.scrape-table th:nth-child(14) {
   width: 13%;
 }
 

@@ -1199,7 +1199,7 @@ def select_top_items(scored_items: list[dict], config: dict) -> list[dict]:
     return limit_by_category(passing, per_category)
 
 
-def scrape_rss(limit: int = 0) -> dict:
+def scrape_rss(limit: int = 0, skip_f1: bool = False) -> dict:
     config = read_config()
     timeout = int(config.get("request_timeout_seconds") or 25)
     per_category = limit or int(config.get("max_items_per_category") or 10)
@@ -1215,7 +1215,7 @@ def scrape_rss(limit: int = 0) -> dict:
     ]
 
     all_items: list[dict] = []
-    f1_snapshot = build_f1_snapshot(timeout)
+    f1_snapshot = None if skip_f1 else build_f1_snapshot(timeout)
     if f1_snapshot is not None:
         all_items.append(f1_snapshot)
     errors: list[str] = []
@@ -1275,6 +1275,7 @@ def main() -> int:
     parser.add_argument("--hard", action="store_true", help="Remove generated news output before scraping/syncing.")
     parser.add_argument("--limit", type=int, default=0, help="Max items per category. 0 uses config default.")
     parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; RSS sources are not paged.")
+    parser.add_argument("--skip-f1", action="store_true")
     args = parser.parse_args()
 
     write_default_config_if_missing()
@@ -1282,7 +1283,10 @@ def main() -> int:
         NEWS_FILE.unlink()
 
     if args.source in {"all", "rss"}:
-        payload = scrape_rss(limit=args.limit)
+        payload = scrape_rss(limit=args.limit, skip_f1=args.skip_f1)
+        if args.skip_f1 and NEWS_FILE.exists():
+            previous = json.loads(NEWS_FILE.read_text(encoding="utf-8"))
+            payload["items"].extend(row for row in previous.get("items", []) if row.get("id") == "f1-snapshot-current-season")
         if payload["items"]:
             write_payload(payload)
         elif NEWS_FILE.exists():

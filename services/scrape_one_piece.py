@@ -83,6 +83,7 @@ def main() -> int:
     parser.add_argument("--source", choices=["all", "bigbang", "collectiverse", "geekhaven", "knightly", "marvellous", "toad", "tanuki"], default="all", help="Which store source to scrape.")
     parser.add_argument("--hard", action="store_true", help="Remove selected report outputs before scraping.")
     parser.add_argument("--refresh-collection-metadata", action="store_true", help="Re-enrich all collection cards before scraping.")
+    parser.add_argument("--skip-products", action="store_true", help="Leave product scraping to its separately scheduled menu row.")
     parser.add_argument("--limit", type=int, default=0, help="Accepted for wrapper consistency; store scraping is not item-limited.")
     parser.add_argument("--max-pages", type=int, default=0, help="Accepted for wrapper consistency; store pagination is source-defined.")
     args = parser.parse_args()
@@ -116,13 +117,14 @@ def main() -> int:
     if args.hard:
         product_command.append("--hard")
     print(f"Running One Piece products scrape: {' '.join(product_command)}", flush=True)
-    run_and_record(
-        product_command,
-        cwd=REPO_DIR,
-        outputs=[DATA_DIR / "products.json"],
-        module="one-piece",
-        source="products",
-    )
+    if not args.skip_products:
+        run_and_record(
+            product_command,
+            cwd=REPO_DIR,
+            outputs=[DATA_DIR / "products.json"],
+            module="one-piece",
+            source="products",
+        )
     if failed_sources:
         print(f"One Piece scrape finished with failed source(s): {', '.join(failed_sources)}", flush=True)
         return 1 if args.source != "all" else 0
