@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import argparse
+import gzip
 import html
 import json
 import os
 import re
 import urllib.parse
 import urllib.request
+import zlib
 from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 from pathlib import Path
@@ -250,7 +252,13 @@ def fetch_html(url: str) -> str:
         },
     )
     with urllib.request.urlopen(request, timeout=30) as response:
-        return response.read().decode("utf-8", errors="replace")
+        raw = response.read()
+        encoding = response.headers.get("Content-Encoding", "").lower()
+        if "gzip" in encoding or raw.startswith(b"\x1f\x8b"):
+            raw = gzip.decompress(raw)
+        elif "deflate" in encoding:
+            raw = zlib.decompress(raw)
+        return raw.decode("utf-8", errors="replace")
 
 
 def parse_city_links(page_html: str) -> list[dict[str, str]]:
@@ -634,8 +642,17 @@ def collect_listing_links(source_url: str, max_pages: int, limit: int = 0) -> li
         url = paged_url(source_url, page)
         try:
             page_links = parse_city_links(fetch_html(url))
-        except Exception:
-            page_links = []
+        except urllib.error.HTTPError as error:
+            if error.code in {401, 403, 429}:
+                raise RuntimeError(f"Bandsintown blocked the listing request (HTTP {error.code}): {url}. Saved events were not replaced.") from error
+            if page == 1:
+                raise RuntimeError(f"Bandsintown listing fetch failed (HTTP {error.code}): {url}") from error
+            print(f"  Could not fetch listing page {page}: HTTP {error.code}; stopping page scan.")
+            break
+        except Exception as error:
+            raise RuntimeError(f"Bandsintown listing fetch failed: {url}: {error}") from error
+        if page == 1 and not page_links:
+            raise RuntimeError(f"Bandsintown returned no readable event links at {url}; refusing to save an unverified empty result.")
         before = len(seen_listing_urls)
         for entry in page_links:
             entry_url = entry.get("url", "")
@@ -743,9 +760,7 @@ def main() -> int:
     print(f"Using source: {source_url}")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     old_events = {} if args.hard else existing_events_by_url()
-    if args.hard and JSON_OUTPUT.exists():
-        print(f"Removing stale Bandsintown output: {JSON_OUTPUT}")
-        JSON_OUTPUT.unlink()
+    # Keep the previous file until a complete replacement is ready, even on hard runs.
     events = scrape(
         limit=args.limit,
         max_pages=max(1, args.max_pages),
