@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import argparse
+import gzip
 import html
 import json
 import re
 import sys
 import urllib.parse
 import urllib.request
+import zlib
 from datetime import date, datetime
 from pathlib import Path
 
@@ -30,7 +32,13 @@ def fetch_html(url: str) -> str:
         },
     )
     with urllib.request.urlopen(request, timeout=DEFAULT_TIMEOUT) as response:
-        return response.read().decode("utf-8", errors="replace")
+        raw = response.read()
+        encoding = response.headers.get("Content-Encoding", "").lower()
+        if "gzip" in encoding or raw.startswith(b"\x1f\x8b"):
+            raw = gzip.decompress(raw)
+        elif "deflate" in encoding:
+            raw = zlib.decompress(raw)
+        return raw.decode("utf-8", errors="replace")
 
 
 def absolute_url(url: str, base_url: str = GALILEO_MOVIES_URL) -> str:
@@ -241,6 +249,8 @@ def normalize_item(listing: dict[str, str], details: dict[str, str]) -> dict[str
 def scrape_galileo(limit: int = 0) -> dict[str, object]:
     page_html = fetch_html(GALILEO_MOVIES_URL)
     listings = parse_listing_movies(page_html)
+    if not listings:
+        raise RuntimeError("Galileo returned no readable movie listings; refusing to replace saved movies with an unverified empty result.")
     if limit > 0:
         listings = listings[:limit]
 
