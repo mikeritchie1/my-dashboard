@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-28T00:47:51Z",
+  "updated_at": "2026-10-28T07:35:10Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -258024,6 +258024,174 @@
       "stock": "In stock",
       "observed_on": "2026-10-28",
       "captured_at": "2026-10-28T00:47:51Z"
+    },
+    {
+      "card_number": "OP17-010",
+      "art_variant": "original",
+      "price": 1.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/fossa-the-worlds-strongest-warriors",
+      "title": "Fossa [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "OP17-011",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/blamenco-the-worlds-strongest-warriors",
+      "title": "Blamenco [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "OP17-012",
+      "art_variant": "original",
+      "price": 2.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/blenheim-the-worlds-strongest-warriors",
+      "title": "Blenheim [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "OP17-009",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/haruta-the-worlds-strongest-warriors",
+      "title": "Haruta [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "OP17-013",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/portgas-d-ace-the-worlds-strongest-warriors",
+      "title": "Portgas.D.Ace [The World's Strongest Warriors]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 4.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-green-compass-starter-deck-straw-hat-crew",
+      "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "ST33-005",
+      "art_variant": "original",
+      "price": 16.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-garp-starter-deck-blue-kuzan",
+      "title": "Monkey.D.Garp [Starter Deck: BLUE Kuzan]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "ST31-001",
+      "art_variant": "original",
+      "price": 65.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy",
+      "title": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 145.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "ST21-014",
+      "art_variant": "original",
+      "price": 196.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-st21-014-luffy-deck-learn-together-deck-set",
+      "title": "Monkey.D.Luffy (ST21-014) (Luffy Deck) [Learn Together Deck Set]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 204.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 213.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 854.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-28",
+      "captured_at": "2026-10-28T07:35:10Z"
     }
   ]
 }

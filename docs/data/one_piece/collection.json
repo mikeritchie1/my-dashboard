@@ -43482,26 +43482,6 @@
           "rarity": "Rare"
         },
         {
-          "card_number": "OP17-009",
-          "rarity": "Common"
-        },
-        {
-          "card_number": "OP17-010",
-          "rarity": "Common"
-        },
-        {
-          "card_number": "OP17-011",
-          "rarity": "Common"
-        },
-        {
-          "card_number": "OP17-012",
-          "rarity": "Common"
-        },
-        {
-          "card_number": "OP17-013",
-          "rarity": "Common"
-        },
-        {
           "card_number": "OP17-014",
           "rarity": "Common"
         },
@@ -43972,7 +43952,7 @@
         },
         {
           "card_number": "OP17-009",
-          "owned": true,
+          "owned": false,
           "rarity": "Uncommon",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-009_EN.webp",
           "image_hash": "9fa5198190f9803db2859299a00d3ffd3fffb35f9fffffffffff800100000001",
@@ -43988,7 +43968,7 @@
         },
         {
           "card_number": "OP17-010",
-          "owned": true,
+          "owned": false,
           "rarity": "Common",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-010_EN.webp",
           "image_hash": "bfff80118001c201c0078003a307fbfdfffdfee7ffffffffffff80018001b34f",
@@ -44004,7 +43984,7 @@
         },
         {
           "card_number": "OP17-011",
-          "owned": true,
+          "owned": false,
           "rarity": "Common",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-011_EN.webp",
           "image_hash": "ffff80018001804187c39f01be21ebf5bfc5c479fffffffffffff8198001bfff",
@@ -44020,7 +44000,7 @@
         },
         {
           "card_number": "OP17-012",
-          "owned": true,
+          "owned": false,
           "rarity": "Common",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-012_EN.webp",
           "image_hash": "bfff8c37980ff007f007b00fa187bbf7bb5ff01fffffffffffff800180010003",
@@ -44036,7 +44016,7 @@
         },
         {
           "card_number": "OP17-013",
-          "owned": true,
+          "owned": false,
           "rarity": "Uncommon",
           "image_url": "https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP17/OP17-013_EN.webp",
           "image_hash": "cfff00019e05940fa68587f3bfffbfffbfdfe01fffffbfffffff800180010003",
@@ -45926,11 +45906,11 @@
           "power": "8000"
         }
       ],
-      "total_owned": 91,
+      "total_owned": 86,
       "total_cards": 119,
       "by_rarity": {
         "Leader": 6,
-        "Common": 75,
+        "Common": 70,
         "Rare": 10
       },
       "total_by_rarity": {
