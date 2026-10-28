@@ -79,7 +79,7 @@ const path = require("node:path");
   assert.equal(publicBrowser.storage.size, 0, "A stored flag/token cannot unlock the page without server verification");
   const ownerBrowser = await loginBrowser(token, [{ ok: true, json: async () => ({ authenticated: true }) }]);
   assert.equal(ownerBrowser.browser.document.documentElement.dataset.owner, "true");
-  assert.equal(ownerBrowser.nodes.get("#owner-login-toggle").textContent, "Logout");
+  assert.equal(ownerBrowser.nodes.get("#owner-login-toggle").hidden, true);
   ownerBrowser.nodes.get("#owner-login-toggle").listeners.click();
   assert.equal(ownerBrowser.storage.size, 0);
   assert.equal(ownerBrowser.reloads(), 1);

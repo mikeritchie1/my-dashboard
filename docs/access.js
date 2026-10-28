@@ -17,7 +17,8 @@
   function applyOwner(value) {
     owner = value;
     document.documentElement.dataset.owner = String(value);
-    button.textContent = value ? "Logout" : "Login";
+    button.hidden = value;
+    button.textContent = "Login";
   }
 
   async function call(endpoint, options = {}) {
@@ -60,6 +61,9 @@
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password: password.value }),
       });
+      if (local && [404, 501].includes(response.status)) {
+        throw new Error("Restart your local dashboard server, then refresh this page and log in again.");
+      }
       const result = await response.json().catch(() => ({ error: local
         ? "Restart the local dashboard server to enable login."
         : "The online login service is unavailable. Please try again later." }));

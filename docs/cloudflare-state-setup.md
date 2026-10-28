@@ -4,8 +4,8 @@
 
 Logged-out visitors see Cape Town weather, Events and Specials, and Release Radar.
 Weather days continue to filter the map. The four owner toolbar buttons and other
-modules appear after clicking **Login** and entering the owner password. **Logout**
-returns to the public view. Login lasts for up to 12 hours in the current browser
+modules appear after clicking **Login** and entering the owner password. The login
+button is hidden while logged in. Login lasts for up to 12 hours in the current browser
 tab; refreshing keeps the session, while closing the tab ends it.
 
 This is a visibility switch, not private hosting. Published files and the existing
