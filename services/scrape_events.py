@@ -5,10 +5,12 @@ import shutil
 import sys
 from pathlib import Path
 
+REPO_DIR = Path(__file__).resolve().parents[1]
+if str(REPO_DIR) not in sys.path:
+    sys.path.insert(0, str(REPO_DIR))
+
 from services.common.scrape_metadata import run_and_record
 
-
-REPO_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = REPO_DIR / "docs" / "data" / "events"
 
 SOURCES = {
