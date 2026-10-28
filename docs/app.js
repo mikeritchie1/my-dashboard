@@ -5807,9 +5807,9 @@ function renderMap() {
     specialsMap = L.map(elements.specialsMap, {
       scrollWheelZoom: true,
     }).setView([-33.9249, 18.4241], 12);
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
-      attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(specialsMap);
     specialsMarkerLayer = L.layerGroup().addTo(specialsMap);
     specialsMap.on("moveend zoomend", () => {
