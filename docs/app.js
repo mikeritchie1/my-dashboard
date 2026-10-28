@@ -233,6 +233,16 @@ const SCRAPE_MODULES = [
   },
 ];
 
+// Shared table options; source inputs stay blank until explicitly overridden.
+for (const moduleConfig of SCRAPE_MODULES) {
+  if (moduleConfig.id === "one-piece") continue;
+  for (const [key, label] of [["limit", "Item limit"], ["max_pages", "Max pages"]]) {
+    if (!moduleConfig.options.some((option) => option.key === key)) {
+      moduleConfig.options.push({key, label, type:"number", defaultValue:0});
+    }
+  }
+}
+
 function fetchFresh(url) {
   return fetch(url, { cache: "no-store" });
 }
@@ -8305,6 +8315,14 @@ function normalizeScrapeControls(raw) {
     for (const source of moduleConfig.sources) {
       const sourceState = sourceStates[source.id] && typeof sourceStates[source.id] === "object" ? sourceStates[source.id] : {};
       const targetSource = target.sources[source.id];
+      targetSource.options = {};
+      const sourceOptionKeys = moduleConfig.id === "one-piece" ? ["max_price"] : ["limit", "max_pages"];
+      for (const key of sourceOptionKeys) {
+        const value = sourceState.options?.[key];
+        if (value !== undefined && value !== null && value !== "" && Number.isFinite(Number(value)) && Number(value) >= 0) {
+          targetSource.options[key] = Number(value);
+        }
+      }
       targetSource.enabled = payloadVersion < 2 && source.defaultEnabled === false
         ? false
         : typeof sourceState.enabled === "boolean" ? sourceState.enabled : targetSource.enabled;
@@ -8843,9 +8861,9 @@ function renderScrapeControls() {
           <td><input type="checkbox" data-scrape-source-email="added" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.added ? " checked" : ""}></td>
           <td><input type="checkbox" data-scrape-source-email="updated" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.updated ? " checked" : ""}></td>
           <td><input type="checkbox" data-scrape-source-email="removed" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}"${sourceState.email.removed ? " checked" : ""}></td>
-          <td class="scrape-muted-cell">-</td>
-          <td class="scrape-muted-cell">-</td>
-          <td class="scrape-muted-cell">-</td>
+          <td>${renderScrapeSourceOption(moduleConfig, source, sourceState, "max_price", moduleState)}</td>
+          <td>${renderScrapeSourceOption(moduleConfig, source, sourceState, "limit", moduleState)}</td>
+          <td>${renderScrapeSourceOption(moduleConfig, source, sourceState, "max_pages", moduleState)}</td>
           ${renderScrapeHistoryCells(moduleConfig.id, source.id, itemCount)}
           <td class="scrape-duration-cell" title="${escapeHtml(stats.error || 'Last three successful scrapes, oldest to newest')}">${renderScrapeDurationHistory(moduleConfig.id, source.id, stats)}</td>
           <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(lastScraped) || "Unknown")}</td>
@@ -9044,6 +9062,13 @@ function renderScrapeDurationHistory(moduleId, sourceId, stats) {
   return values.join(" / ") + (status && status !== "ok" && status !== "success" ? " (last attempt failed)" : "");
 }
 
+function renderScrapeSourceOption(moduleConfig, source, sourceState, key, moduleState) {
+  if ((moduleConfig.id === "one-piece") !== (key === "max_price")) return '<span class="scrape-muted-cell">-</span>';
+  const option = moduleConfig.options.find((item) => item.key === key);
+  const inherited = moduleState.options?.[key] ?? option?.defaultValue ?? 0;
+  return `<input type="number" min="0" step="${key === "max_price" ? "any" : "1"}" data-scrape-source-option="${key}" data-scrape-source="${escapeHtml(source.id)}" data-scrape-module="${escapeHtml(moduleConfig.id)}" value="${escapeHtml(sourceState.options?.[key] ?? "")}" placeholder="${escapeHtml(inherited)}" title="Blank inherits module value (${escapeHtml(inherited)}). Zero explicitly uses the scraper default, or no price ceiling.">`;
+}
+
 function renderScrapeTableOption(moduleConfig, option, value) {
   if (!option) return `<span class="scrape-muted-cell">-</span>`;
   const actualValue = value ?? option.defaultValue;
@@ -9111,6 +9136,17 @@ function updateScrapeControlsFromInput(target) {
         sourceState.email[moduleEmailType] = target.checked;
       }
     }
+    return true;
+  }
+  const sourceOptionKey = target.getAttribute("data-scrape-source-option");
+  if (sourceOptionKey) {
+    const sourceState = moduleState.sources[target.getAttribute("data-scrape-source")];
+    const allowed = moduleId === "one-piece" ? ["max_price"] : ["limit", "max_pages"];
+    if (!sourceState || !allowed.includes(sourceOptionKey)) return false;
+    sourceState.options ||= {};
+    if (target.value.trim() === "") delete sourceState.options[sourceOptionKey];
+    else if (Number.isFinite(Number(target.value)) && Number(target.value) >= 0) sourceState.options[sourceOptionKey] = Number(target.value);
+    else return false;
     return true;
   }
   const optionKey = target.getAttribute("data-scrape-option");

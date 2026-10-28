@@ -9,6 +9,7 @@ from services.common import scrape_metadata as metadata
 from services.common import scrape_notifications as notifications
 from services.common import scrape_summary as summary
 from services.common import manual_scrapes
+from services.common.scrape_options import source_option
 
 
 class ScrapeMenuTests(TestCase):
@@ -92,6 +93,26 @@ class ScrapeMenuTests(TestCase):
 
     def test_store_command_does_not_scrape_products(self):
         self.assertIn("--skip-products", runner.with_options(self.config.command, self.config, {}))
+
+    def test_source_option_inheritance_blank_and_zero(self):
+        controls = {"modules": {"events": {"options": {"limit": 30}, "sources": {"quicket": {"options": {}}}}}}
+        options = controls["modules"]["events"]["sources"]["quicket"]["options"]
+        for value in (None, ""):
+            options["limit"] = value
+            self.assertEqual(30, source_option(controls, "events", "quicket", "limit"))
+        options["limit"] = 0
+        self.assertEqual(0, source_option(controls, "events", "quicket", "limit"))
+        options["limit"] = 7
+        config = next(c for c in runner.SOURCE_CONFIGS if c.module == "events" and c.source == "quicket")
+        command = runner.with_options(config.command, config, controls)
+        self.assertEqual("7", command[command.index("--limit") + 1])
+
+    def test_source_price_override_and_module_fallback(self):
+        options = self.controls["modules"]["one-piece"]["sources"]["knightly"].setdefault("options", {})
+        options["max_price"] = 60
+        self.assertEqual(1, len(notifications.change_sections(self.config, self.controls, "weekly", self.before, self.after)))
+        options["max_price"] = ""
+        self.assertEqual(3, len(notifications.change_sections(self.config, self.controls, "weekly", self.before, self.after)))
 
     def test_manual_queue_accepts_only_queued_requests(self):
         with patch.object(manual_scrapes, "read_request", return_value={"status": "queued", "request_id": "test"}):

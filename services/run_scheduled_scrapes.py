@@ -23,6 +23,7 @@ from services.common.scrape_metadata import output_item_count, record_scrape_out
 from services.common.scrape_notifications import read_source_rows, change_sections, send_sections
 from services.common.scrape_summary import load_summary, save_summary, collect, send_if_due
 from services.common import manual_scrapes
+from services.common.scrape_options import source_option
 from services.common.scrape_metadata import read_metadata
 
 DOCS_DIR = REPO_DIR / "docs"
@@ -61,6 +62,9 @@ SCRIPT_OPTION_FLAGS = {
     "services/scrape_news.py": {"--hard", "--limit", "--max-pages"},
     "services/scrape_media.py": {"--hard", "--limit", "--max-pages", "--type"},
     "services/scrape_youtube.py": {"--limit"},
+    "services/youtube/scrape_almost_friday_tv.py": {"--limit"},
+    "services/youtube/scrape_thats_a_bad_idea.py": {"--limit"},
+    "services/youtube/scrape_gameranx_tv.py": {"--limit"},
     "services/one_piece/scrape_products.py": {"--hard"},
     "services/events/geocode_event_locations.py": {"--hard"},
 }
@@ -222,7 +226,7 @@ def with_options(command: list[str], config: SourceConfig, controls: dict[str, A
     if hard and allow_scheduled_hard() and "--hard" in supported and "--hard" not in result:
         result.append("--hard")
     for option_key, flag in (("limit", "--limit"), ("max_pages", "--max-pages")):
-        value = option_value(controls, config.module, option_key, 0)
+        value = source_option(controls, config.module, config.source, option_key, 0)
         try:
             number = int(value)
         except (TypeError, ValueError):

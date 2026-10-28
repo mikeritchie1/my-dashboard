@@ -6,6 +6,7 @@ import json
 from services.common.scrape_metadata import load_json
 from services.one_piece.notify_new_cards import send_email
 from services.scrape_one_piece import STORE_NAMES
+from services.common.scrape_options import source_option
 
 
 def rows_from_payload(payload):
@@ -80,7 +81,7 @@ def change_sections(config, controls, interval, before, after):
         if not flags.get(kind, False):
             continue
         if config.module == "one-piece" and config.source in STORE_NAMES:
-            limit = module.get("options", {}).get("max_price", 100)
+            limit = source_option(controls, config.module, config.source, "max_price", 100)
             try:
                 ceiling = float(limit)
             except (ValueError, TypeError):
