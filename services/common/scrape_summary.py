@@ -43,13 +43,15 @@ def summary_body(summary):
     return "\n".join(lines)
 
 
-def send_if_due(path, summary, controls, interval):
+def send_if_due(path, summary, controls, interval, *, clear_after_send=True):
     if controls.get("_controls_unavailable") or controls.get("email_enabled", True) is False:
         return False
     if controls.get("summary_interval", "daily") != interval or not summary["sources"]:
         return False
     # Do not clear the window unless SMTP confirms delivery.
     send_email(f"Dashboard scrape summary ({interval})", summary_body(summary))
+    if not clear_after_send:
+        return True
     now = datetime.now(timezone.utc).isoformat()
     save_summary(path, {"window_started_at": now, "last_sent_at": now, "sources": {}})
     return True

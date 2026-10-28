@@ -9316,7 +9316,7 @@ async function sendNewsletterNow() {
     try { payload = await response.json(); } catch { throw new Error("Restart the local server with python serve_dashboard.py to enable sending."); }
     if (payload.summary) state.scrapeSummary = payload.summary;
     if (!response.ok) throw new Error(payload.error || "Email could not be sent.");
-    message = "Email sent. The pending summary has been cleared.";
+    message = "Email sent. Preview retained until the next successful automatic summary.";
   } catch (error) { message = String(error.message || error); }
   finally {
     state.newsletterSending = false;

@@ -147,7 +147,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                         return self.json_response({"error": "Missing local email settings: " + ", ".join(missing) + ". Add them to secrets.env, then send again. Pending summary was kept."}, 400)
                     interval = controls.get("summary_interval", "daily")
                     try:
-                        sent = send_if_due(summary_path, summary, {"email_enabled": True, "summary_interval": interval}, interval)
+                        sent = send_if_due(summary_path, summary, {"email_enabled": True, "summary_interval": interval}, interval, clear_after_send=False)
                     except Exception:
                         return self.json_response({"error": "Email delivery failed. Check SMTP settings and the local server connection. Pending summary was kept."}, 502)
                     return self.json_response({"sent": sent, "summary": load_summary(summary_path)})

@@ -82,6 +82,18 @@ class ScrapeMenuTests(TestCase):
                 send.assert_called_once()
             self.assertEqual({}, summary.load_summary(path)["sources"])
 
+    def test_manual_summary_send_keeps_pending_window(self):
+        with TemporaryDirectory() as directory:
+            path = Path(directory) / "summary.json"
+            pending = summary.load_summary(path)
+            summary.collect(pending, self.config, self.before, self.after)
+            summary.save_summary(path, pending)
+            original = path.read_bytes()
+            with patch.object(summary, "send_email") as send:
+                self.assertTrue(summary.send_if_due(path, pending, {}, "daily", clear_after_send=False))
+                send.assert_called_once()
+            self.assertEqual(original, path.read_bytes())
+
     def test_history_retains_three_and_survives_new_metadata_record(self):
         with TemporaryDirectory() as directory, patch.object(metadata, "METADATA_PATH", Path(directory) / "metadata.json"):
             for count in range(5):

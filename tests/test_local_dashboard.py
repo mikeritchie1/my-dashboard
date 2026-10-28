@@ -115,6 +115,7 @@ class LocalHttpTests(TestCase):
             with urlopen(request) as response:
                 self.assertTrue(json.load(response)["sent"])
             send.assert_called_once()
+            self.assertFalse(send.call_args.kwargs["clear_after_send"])
 
     def test_newsletter_rejects_stale_preview(self):
         request = Request(self.base + "/api/newsletter/send", data=b'{"controls":{"email_enabled":true},"summary":{}}', headers={"Content-Type": "application/json"})
