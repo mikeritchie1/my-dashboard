@@ -1,5 +1,5 @@
 const encoder = new TextEncoder();
-const lifetime = 12 * 60 * 60;
+const lifetime = 90 * 24 * 60 * 60;
 const attempts = new Map();
 
 function encode(bytes) {

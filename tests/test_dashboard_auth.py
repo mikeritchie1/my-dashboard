@@ -9,7 +9,7 @@ from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 
 import serve_dashboard as local
-from services.common.dashboard_auth import issue_session, valid_session, password_matches, LoginLimiter
+from services.common.dashboard_auth import issue_session, valid_session, password_matches, LoginLimiter, SESSION_SECONDS
 
 
 class SessionTests(TestCase):
@@ -26,7 +26,9 @@ class SessionTests(TestCase):
 
     def test_expiration(self):
         token = issue_session("test-password")
-        with patch("services.common.dashboard_auth.time.time", return_value=time.time() + 43201):
+        with patch("services.common.dashboard_auth.time.time", return_value=time.time() + 86400):
+            self.assertTrue(valid_session(token, "test-password"))
+        with patch("services.common.dashboard_auth.time.time", return_value=time.time() + SESSION_SECONDS + 1):
             self.assertFalse(valid_session(token, "test-password"))
 
     def test_throttle(self):

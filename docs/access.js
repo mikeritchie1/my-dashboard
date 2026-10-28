@@ -6,7 +6,7 @@
     : new URL("/auth/", window.DASHBOARD_STATE_API || location.href);
   let token = "";
   let owner = false;
-  try { token = sessionStorage.getItem(key) || ""; } catch { /* Storage may be disabled. */ }
+  try { token = localStorage.getItem(key) || sessionStorage.getItem(key) || ""; } catch { /* Storage may be disabled. */ }
   const button = document.querySelector("#owner-login-toggle");
   const dialog = document.querySelector("#owner-login-dialog");
   const form = document.querySelector("#owner-login-form");
@@ -31,17 +31,20 @@
       const response = await call("session", { headers: { Authorization: `Bearer ${token}` } });
       const result = await response.json();
       applyOwner(response.ok && result.authenticated === true);
+      if (owner) {
+        // Migrate existing tab-only logins to persistent browser storage.
+        try { localStorage.setItem(key, token); sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
+      } else if (response.status === 401) {
+        token = "";
+        try { localStorage.removeItem(key); sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
+      }
     } catch { applyOwner(false); }
-    if (!owner) {
-      token = "";
-      try { sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
-    }
     return owner;
   })();
 
   button.addEventListener("click", () => {
     if (owner) {
-      try { sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
+      try { localStorage.removeItem(key); sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
       location.reload();
       return;
     }
@@ -69,8 +72,8 @@
         : "The online login service is unavailable. Please try again later." }));
       if (!response.ok || !result.token) throw new Error(result.error || "Login failed.");
       token = result.token;
-      try { sessionStorage.setItem(key, token); } catch {
-        throw new Error("Allow session storage in this browser to log in.");
+      try { localStorage.setItem(key, token); sessionStorage.removeItem(key); } catch {
+        throw new Error("Allow browser storage to remember your login.");
       }
       password.value = "";
       location.reload();

@@ -14,6 +14,14 @@ const path = require("node:path");
   response = await call("/auth/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ password: "test-password" }) });
   assert.equal(response.status, 200);
   const { token } = await response.json();
+  const auth = await import("../cloudflare-state-worker/src/auth.js");
+  const now = Date.now;
+  try {
+    Date.now = () => now() + 86400000;
+    assert.equal(await auth.validSession(token, "test-password"), true, "Remembered sessions survive the next day");
+    Date.now = () => now() + 91 * 86400000;
+    assert.equal(await auth.validSession(token, "test-password"), false, "Remembered sessions still expire");
+  } finally { Date.now = now; }
   response = await call("/auth/session", { headers: { Authorization: `Bearer ${token}` } });
   assert.equal((await response.json()).authenticated, true);
   response = await call("/auth/session", { headers: { Authorization: `Bearer ${token}tampered` } });
@@ -66,7 +74,8 @@ const path = require("node:path");
     const browser = {
       URL, window: {}, location: { hostname: "localhost", href: "http://localhost:8081/docs/", reload: () => { reloads++; } },
       document: { documentElement: { dataset: { owner: "false" } }, querySelector: id => nodes.get(id) },
-      sessionStorage: { getItem: key => storage.get(key), setItem: (key, value) => storage.set(key, value), removeItem: key => storage.delete(key) },
+      localStorage: { getItem: key => storage.get(key), setItem: (key, value) => storage.set(key, value), removeItem: key => storage.delete(key) },
+      sessionStorage: { getItem: () => null, removeItem() {} },
       fetch: async (url, options) => { requests.push({ url, options }); return responses.shift(); },
     };
     vm.createContext(browser);
@@ -74,7 +83,7 @@ const path = require("node:path");
     await browser.window.dashboardAccess.ready;
     return { browser, nodes, storage, requests, reloads: () => reloads };
   }
-  const publicBrowser = await loginBrowser("fake-session", [{ ok: false, json: async () => ({ authenticated: false }) }]);
+  const publicBrowser = await loginBrowser("fake-session", [{ ok: false, status: 401, json: async () => ({ authenticated: false }) }]);
   assert.equal(publicBrowser.browser.window.dashboardAccess.isOwner(), false);
   assert.equal(publicBrowser.storage.size, 0, "A stored flag/token cannot unlock the page without server verification");
   const ownerBrowser = await loginBrowser(token, [{ ok: true, json: async () => ({ authenticated: true }) }]);
@@ -88,6 +97,16 @@ const path = require("node:path");
   await freshBrowser.nodes.get("#owner-login-form").listeners.submit({ preventDefault() {} });
   assert.equal(freshBrowser.nodes.get("#owner-login-error").textContent, "Incorrect password.");
   assert.equal(freshBrowser.reloads(), 0);
+  const unavailableBrowser = await loginBrowser(token, [{ ok: false, status: 503, json: async () => ({ error: "Temporarily unavailable" }) }]);
+  assert.equal(unavailableBrowser.storage.size, 1, "Temporary service failures must not erase a remembered login");
+  const successfulBrowser = await loginBrowser("", [{ ok: true, json: async () => ({ token }) }]);
+  successfulBrowser.nodes.get("#owner-password").value = "test-password";
+  await successfulBrowser.nodes.get("#owner-login-form").listeners.submit({ preventDefault() {} });
+  assert.equal(successfulBrowser.reloads(), 1);
+  const savedToken = successfulBrowser.storage.get("my-dashboard:owner-session:v1");
+  assert.equal(savedToken, token, "Successful login persists the token in browser storage");
+  const reopenedBrowser = await loginBrowser(savedToken, [{ ok: true, json: async () => ({ authenticated: true }) }]);
+  assert.equal(reopenedBrowser.browser.window.dashboardAccess.isOwner(), true, "A fresh browser context restores a persisted session after server verification");
 
   const html = fs.readFileSync(path.join(__dirname, "../docs/index.html"), "utf8");
   assert.match(html, /<html[^>]*data-owner="false"/);

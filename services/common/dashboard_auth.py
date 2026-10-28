@@ -1,4 +1,4 @@
-"""Short-lived owner sessions for the dashboard's optional module visibility login."""
+"""Remembered owner sessions for the dashboard's optional module visibility login."""
 import base64
 import hashlib
 import hmac
@@ -7,7 +7,7 @@ import secrets
 import threading
 import time
 
-SESSION_SECONDS = 12 * 60 * 60
+SESSION_SECONDS = 90 * 24 * 60 * 60
 
 
 def encode(value):
