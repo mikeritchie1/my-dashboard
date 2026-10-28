@@ -8825,7 +8825,7 @@ function renderScrapeControls() {
         <td class="scrape-muted-cell">-</td><td class="scrape-muted-cell">-</td>
         <td class="scrape-duration-cell"${moduleStats.error ? ` title="${escapeHtml(moduleStats.error)}"` : ""}>${escapeHtml(formatScrapeDuration(moduleStats))}</td>
         <td class="scrape-last-cell">${escapeHtml(formatScrapeDateTime(moduleLastScraped) || "Unknown")}</td>
-        <td class="scrape-muted-cell">-</td>
+        <td>${renderManualScrapeButton(moduleConfig.id, "*")}</td>
       </tr>`;
     const sourceRows = moduleConfig.sources.map((source) => {
       const sourceState = moduleState.sources[source.id];
@@ -8888,21 +8888,30 @@ let manualScrapePolling = false;
 
 function manualScrapeRuns() {
   if (!state.manualScrapeRuns) {
-    try { state.manualScrapeRuns = JSON.parse(localStorage.getItem(MANUAL_SCRAPES_STORAGE_KEY) || "{}"); }
+    try { state.manualScrapeRuns = JSON.parse(localStorage.getItem(MANUAL_SCRAPES_STORAGE_KEY + (isLocalDashboard() ? ":local" : ":online")) || "{}"); }
     catch { state.manualScrapeRuns = {}; }
   }
   return state.manualScrapeRuns;
 }
 
 function saveManualScrapeRuns() {
-  try { localStorage.setItem(MANUAL_SCRAPES_STORAGE_KEY, JSON.stringify(manualScrapeRuns())); } catch {}
+  try { localStorage.setItem(MANUAL_SCRAPES_STORAGE_KEY + (isLocalDashboard() ? ":local" : ":online"), JSON.stringify(manualScrapeRuns())); } catch {}
+}
+
+function isLocalDashboard() {
+  return ["localhost", "127.0.0.1", "[::1]"].includes(window.location.hostname);
 }
 
 function renderManualScrapeButton(moduleId, sourceId) {
-  const run = manualScrapeRuns()[`${moduleId}/${sourceId}`];
+  let run = manualScrapeRuns()[`${moduleId}/${sourceId}`];
+  if (sourceId === "*") {
+    const children = Object.entries(manualScrapeRuns()).filter(([key]) => key.startsWith(`${moduleId}/`)).map(([, value]) => value);
+    run = children.find((item) => item.status === "running") || children.find((item) => ["queued", "submitting"].includes(item.status))
+      || children.find((item) => item.status === "error") || children.find((item) => item.status === "finished");
+  }
   const busy = ["submitting", "queued", "running"].includes(run?.status);
   const label = {submitting:"Submitting...", queued:"Queued", running:"In progress", finished:"Finished - run again", error:"Failed - retry"}[run?.status] || "Run";
-  const title = run?.error || "Run this source once using its saved options. Queued jobs start at the next 10-minute worker run.";
+  const title = run?.error || (isLocalDashboard() ? "Run locally now. Module runs execute enabled sources one at a time." : "Queue a one-off run. Module runs include enabled sources; jobs start at the next 10-minute worker run.");
   return `<button type="button" class="scrape-run-button" data-scrape-run-source="${escapeHtml(sourceId)}" data-scrape-run-module="${escapeHtml(moduleId)}" title="${escapeHtml(title)}"${busy ? " disabled" : ""}>${escapeHtml(label)}</button>`;
 }
 
@@ -8922,6 +8931,29 @@ function applyManualScrapeResults() {
 }
 
 async function queueManualScrape(moduleId, sourceId) {
+  if (isLocalDashboard()) {
+    try {
+      const response = await fetch("/api/scrapes", {method:"POST", headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({module:moduleId, source:sourceId, controls:state.scrapeControls})});
+      if (!response.ok) throw new Error("Local Run requires starting the dashboard with: python serve_dashboard.py");
+      const payload = await response.json();
+      state.manualScrapeRuns = payload.jobs;
+      saveManualScrapeRuns();
+      renderScrapeControls();
+      void pollManualScrapes();
+    } catch (error) { renderScrapeControlsStatus(String(error.message || error)); }
+    return;
+  }
+  if (sourceId === "*") {
+    const moduleConfig = SCRAPE_MODULES.find((item) => item.id === moduleId);
+    const moduleState = state.scrapeControls.modules[moduleId];
+    for (const source of moduleConfig.sources) {
+      if (moduleState.sources[source.id]?.enabled && moduleState.sources[source.id]?.schedule !== "disabled") {
+        await queueManualScrape(moduleId, source.id);
+      }
+    }
+    return;
+  }
   const key = `${moduleId}/${sourceId}`;
   const url = cloudflareStateUrl(`manual-scrape:${moduleId}:${sourceId}`);
   if (!url) { renderScrapeControlsStatus("Run unavailable: shared state API is not configured."); return; }
@@ -8957,6 +8989,18 @@ async function pollManualScrapes() {
   clearTimeout(manualScrapePollTimer);
   manualScrapePolling = true;
   try {
+    if (isLocalDashboard()) {
+      try {
+        const response = await fetchFresh("/api/scrapes");
+        if (!response.ok) throw new Error("Local scrape server unavailable. Start python serve_dashboard.py.");
+        const payload = await response.json();
+        if (!payload.local_scrapes) throw new Error("Local scrape server unavailable.");
+        state.manualScrapeRuns = payload.jobs;
+      } catch (error) { renderScrapeControlsStatus(String(error.message || error)); }
+      saveManualScrapeRuns();
+      renderScrapeControls();
+      return;
+    }
     const runs = manualScrapeRuns();
     await Promise.all(Object.entries(runs).filter(([, run]) => ["queued", "running"].includes(run.status)).map(async ([key, run]) => {
       const [moduleId, sourceId] = key.split("/");
@@ -8972,7 +9016,7 @@ async function pollManualScrapes() {
   } finally {
     manualScrapePolling = false;
     if (Object.values(manualScrapeRuns()).some((run) => ["queued", "running"].includes(run.status))) {
-      manualScrapePollTimer = setTimeout(() => { void pollManualScrapes(); }, 10000);
+      manualScrapePollTimer = setTimeout(() => { void pollManualScrapes(); }, isLocalDashboard() ? 1000 : 10000);
     }
   }
 }

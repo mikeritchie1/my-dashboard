@@ -7,7 +7,7 @@ Local dashboard plus scraper services for media, news, One Piece cards, release 
 Serve the dashboard from the repo root:
 
 ```powershell
-python -m http.server 8080
+python serve_dashboard.py
 ```
 
 Open:
@@ -15,6 +15,8 @@ Open:
 ```text
 http://localhost:8080/docs/
 ```
+
+This one command serves the dashboard and enables immediate local Run buttons. Module Run executes enabled sources sequentially; automatic switches do not block individual manual runs. Local runs update local data, history, and the pending summary without triggering GitHub or sending emails. Online runs retain the GitHub queue.
 
 Dashboard files live in:
 
