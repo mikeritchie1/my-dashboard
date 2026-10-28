@@ -11,6 +11,28 @@
   --watchlist-detail-width: clamp(360px, 31vw, 440px);
 }
 
+html:not([data-owner="true"]) main > .dashboard-section:not([data-public-module]),
+html:not([data-owner="true"]) [data-owner-only],
+html:not([data-owner="true"]) .module-edit-controls {
+  display: none !important;
+}
+
+.owner-login-dialog {
+  width: min(400px, calc(100vw - 40px));
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  color: var(--text);
+}
+
+.owner-login-dialog::backdrop { background: rgb(0 0 0 / 60%); }
+.owner-login-dialog form { display: grid; gap: 12px; }
+.owner-login-dialog h2, .owner-login-dialog p { margin: 0; }
+.owner-login-dialog input { width: 100%; box-sizing: border-box; padding: 10px; }
+#owner-login-error { color: var(--danger); font-size: 14px; }
+.owner-login-actions { display: flex; justify-content: flex-end; gap: 10px; }
+
 :root[data-theme="dark"] {
   color-scheme: dark;
   --bg: #0b1220;

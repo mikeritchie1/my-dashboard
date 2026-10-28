@@ -14,8 +14,10 @@ from uuid import uuid4
 from services import run_scheduled_scrapes as runner
 from services.common.scrape_summary import load_summary, save_summary, collect, send_if_due
 from services.common.secrets import secret
+from services.common.dashboard_auth import LoginLimiter, issue_session, password_matches, valid_session
 
 ROOT = Path(__file__).resolve().parent
+LOGIN_LIMITER = LoginLimiter()
 
 
 class ScrapeJobs:
@@ -97,6 +99,10 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         if not self.local_request():
             return self.json_response({"error": "Local requests only"}, 403)
         path = urlsplit(self.path).path
+        if path == "/api/auth/session":
+            token = self.headers.get("Authorization", "").removeprefix("Bearer ")
+            authenticated = valid_session(token, secret("DASHBOARD_PASSWORD"))
+            return self.json_response({"authenticated": authenticated}, 200 if authenticated else 401)
         if path == "/api/scrapes":
             return self.json_response({"local_scrapes": True, "jobs": self.jobs.snapshot()})
         if path == "/":
@@ -120,7 +126,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         if not self.local_request():
             return self.json_response({"error": "Local requests only"}, 403)
         path = urlsplit(self.path).path
-        if path not in {"/api/scrapes", "/api/newsletter/send"}:
+        if path not in {"/api/scrapes", "/api/newsletter/send", "/api/auth/login"}:
             return self.json_response({"error": "Not found"}, 404)
         if self.headers.get("Content-Type", "").split(";")[0] != "application/json":
             return self.json_response({"error": "JSON required"}, 415)
@@ -129,6 +135,15 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             if not 0 < length <= 262144:
                 raise ValueError("Invalid request size")
             payload = json.loads(self.rfile.read(length))
+            if path == "/api/auth/login":
+                password = secret("DASHBOARD_PASSWORD")
+                if not password:
+                    return self.json_response({"error": "Set DASHBOARD_PASSWORD in secrets.env and restart the server."}, 503)
+                if not LOGIN_LIMITER.allow(self.client_address[0]):
+                    return self.json_response({"error": "Too many attempts. Try again in a minute."}, 429)
+                if not isinstance(payload, dict) or not password_matches(payload.get("password"), password):
+                    return self.json_response({"error": "Incorrect password."}, 401)
+                return self.json_response({"token": issue_session(password)})
             controls = payload.get("controls", {})
             if not isinstance(controls, dict):
                 raise ValueError("Invalid scrape options")

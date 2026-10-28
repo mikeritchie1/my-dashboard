@@ -1,5 +1,40 @@
 # Cloudflare State Sync Setup
 
+## Public view and owner login
+
+Logged-out visitors see Cape Town weather, Events and Specials, and Release Radar.
+Weather days continue to filter the map. The four owner toolbar buttons and other
+modules appear after clicking **Login** and entering the owner password. **Logout**
+returns to the public view. Login lasts for up to 12 hours in the current browser
+tab; refreshing keeps the session, while closing the tab ends it.
+
+This is a visibility switch, not private hosting. Published files and the existing
+state API remain public, as requested. The password is checked on the server;
+it is never included in the page, JavaScript, or tracked configuration.
+
+Create a random password in ignored `secrets.env` (preserves an existing password):
+
+```powershell
+python services/setup_dashboard_login.py
+```
+
+Look for `DASHBOARD_PASSWORD` in that local file. The normal local server uses it
+without additional startup commands; restart an already running server after the
+login code is installed. To configure the same password online and deploy the Worker:
+
+```powershell
+python services/setup_dashboard_login.py --deploy
+```
+
+This requires Wrangler/Cloudflare login. It uploads only `DASHBOARD_PASSWORD`, never
+your SMTP or other secrets. Alternatively set `DASHBOARD_PASSWORD` as a secret on
+the Cloudflare Worker and deploy its code. After changing the password, deploy
+again to update the online password; existing sessions become invalid.
+
+Public visits do not load or save owner dashboard preferences, goals, or private
+module content. Owner login restores the usual layout and state sync. Personal
+calendar annotations on the weather cards are shown only in the owner view.
+
 This enables your static dashboard to save/load UI state (theme, module order, open panels, One Piece tab/current chapter) across devices.
 
 ## 1. What this does

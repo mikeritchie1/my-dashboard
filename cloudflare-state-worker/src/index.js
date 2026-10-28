@@ -1,8 +1,10 @@
+import { authResponse } from "./auth.js";
+
 function corsHeaders() {
   return {
     "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Headers": "Content-Type,Authorization",
   };
 }
 
@@ -11,6 +13,7 @@ function jsonResponse(payload, status = 200) {
     status,
     headers: {
       "Content-Type": "application/json; charset=utf-8",
+      "Cache-Control": "no-store",
       ...corsHeaders(),
     },
   });
@@ -27,6 +30,10 @@ export default {
 
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: corsHeaders() });
+    }
+
+    if (url.pathname.startsWith("/auth/")) {
+      return authResponse(request, env, jsonResponse);
     }
 
     if (url.pathname !== "/state") {

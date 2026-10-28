@@ -499,6 +499,7 @@ let myLocationLatLng = null;
 let hasAutoFitMap = true;
 let forceNextMapFit = false;
 let selectedMapItemKey = "";
+let focusedMapEvent = null;
 let currentMapItems = [];
 let mapMarkersByKey = new Map();
 let selectedMarkerHighlight = null;
@@ -3716,7 +3717,7 @@ function saveSubsectionOpenStatePreference() {
 }
 
 function stateApiUrl() {
-  if (!STATE_API_BASE) {
+  if (!window.dashboardAccess?.isOwner() || !STATE_API_BASE) {
     return "";
   }
   const joiner = STATE_API_BASE.includes("?") ? "&" : "?";
@@ -3724,7 +3725,7 @@ function stateApiUrl() {
 }
 
 function cloudflareStateUrl(key) {
-  if (!STATE_API_BASE) {
+  if (!window.dashboardAccess?.isOwner() || !STATE_API_BASE) {
     return "";
   }
   const joiner = STATE_API_BASE.includes("?") ? "&" : "?";
@@ -4207,6 +4208,7 @@ async function loadHolidaysForDates(dateStrings) {
 
 async function loadCalendarEventsByDate(dateStrings) {
   const byDate = new Map();
+  if (!window.dashboardAccess?.isOwner()) return byDate;
   try {
     const response = await fetchFresh(GOOGLE_CALENDAR_EVENTS_PATH);
     if (!response.ok) {
@@ -4747,10 +4749,14 @@ function openEventDetail(item) {
         ${price ? `<p><strong>Price:</strong> ${escapeHtml(price)}</p>` : ""}
         <div class="watchlist-detail-links">
           ${url ? `<a href="${escapeHtml(url)}" target="_blank" rel="noreferrer">Open Event</a>` : ""}
+          <button type="button" class="map-back-button" id="event-show-on-map" ${hasValidEventCoordinates(item) ? "" : 'disabled title="No map location available for this event"'}>Show on map</button>
         </div>
       </div>
     </div>
   `);
+  elements.watchlistDetailContent.querySelector("#event-show-on-map")?.addEventListener("click", () => {
+    focusEventOnMap(item);
+  });
 }
 
 function compareBandsintownDateAsc(left, right) {
@@ -5073,17 +5079,17 @@ function mapItemFromPlace(location) {
   };
 }
 
-function mapItemFromEvent(event) {
+function mapItemFromEvent(event, { ignoreDateRange = false } = {}) {
   const coords = coordinatesFor(event);
   if (!coords) {
     return null;
   }
   const startAt = event.start ? new Date(event.start) : null;
-  if (!startAt || Number.isNaN(startAt.getTime())) {
+  if (!ignoreDateRange && (!startAt || Number.isNaN(startAt.getTime()))) {
     return null;
   }
   const window = mapRangeWindow();
-  if (startAt < window.start || startAt > window.end) {
+  if (!ignoreDateRange && (startAt < window.start || startAt > window.end)) {
     return null;
   }
   return {
@@ -5102,6 +5108,25 @@ function mapItemFromEvent(event) {
 
 function hasValidEventCoordinates(event) {
   return Boolean(coordinatesFor(event));
+}
+
+function focusEventOnMap(event) {
+  const item = mapItemFromEvent(event, { ignoreDateRange: true });
+  if (!item) {
+    return;
+  }
+  focusedMapEvent = event;
+  selectedMapItemKey = mapItemKey(item);
+  const section = elements.specialsMap.closest("details.dashboard-section");
+  if (section) section.open = true;
+  elements.watchlistDetailClose.click();
+  renderMap();
+  if (specialsMap) {
+    specialsMap.invalidateSize();
+    specialsMap.setView([item.lat, item.lng], 15, { animate: true });
+    renderMapDetail(item);
+  }
+  elements.specialsMap.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 function mapItemKey(item) {
@@ -5554,6 +5579,11 @@ function renderMapEventList() {
 function renderMapDetail(item) {
   if (!item) {
     selectedMapItemKey = "";
+    if (focusedMapEvent) {
+      focusedMapEvent = null;
+      renderMap();
+      return;
+    }
     updateSelectedMarkerHighlight(null);
     renderMapEventList();
     return;
@@ -5794,6 +5824,13 @@ function buildMapItems() {
     }
   }
 
+  // Explicitly selected events remain visible even when ordinary map filters exclude them.
+  if (focusedMapEvent) {
+    const focusedItem = mapItemFromEvent(focusedMapEvent, { ignoreDateRange: true });
+    if (focusedItem && !mapItems.some((item) => mapItemKey(item) === mapItemKey(focusedItem))) {
+      mapItems.push(focusedItem);
+    }
+  }
   return mapItems;
 }
 
@@ -7494,8 +7531,6 @@ if (storedTheme) {
 } else {
   applyTheme("light");
 }
-
-setupDashboardSectionEditor();
 
 function gameHubLabel(name) {
   return prettyTag(name);
@@ -9825,6 +9860,22 @@ if (elements.dailyGoalNameInput) {
 }
 
 async function bootstrapDashboard() {
+  await window.dashboardAccess.ready;
+  setHeaderDate();
+  loadMetadata();
+  loadWeather();
+  loadReleases();
+  loadComingSoon();
+  loadImaxReleases();
+  loadGalileoReleases();
+  loadLabiaShowtimes();
+  loadGameReleases();
+  loadSpecials();
+  loadBandsintownEvents();
+  loadQuicketEvents();
+  syncRangeButtons();
+  if (!window.dashboardAccess.isOwner()) return;
+  setupDashboardSectionEditor();
   loadOnePieceCards();
   state.onePieceCurrentChapter = loadOnePieceCurrentChapterPreference();
   state.onePieceVideoTab = loadOnePieceVideoTabPreference();
@@ -9847,24 +9898,12 @@ async function bootstrapDashboard() {
   syncOnePieceVideoTabs();
   syncOnePieceTimelineTabs();
   loadCollection();
-  setHeaderDate();
-  loadMetadata();
-  loadWeather();
-  loadReleases();
-  loadComingSoon();
-  loadImaxReleases();
-  loadGalileoReleases();
-  loadLabiaShowtimes();
-  loadGameReleases();
   loadYouTubeVideos();
   loadAlmostFridayTv();
   loadThatsABadIdea();
   loadGameranxTv();
   loadNews();
   loadWatchlist();
-  loadSpecials();
-  loadBandsintownEvents();
-  loadQuicketEvents();
   loadTimeline();
   loadGameHub();
   loadGameLab();
