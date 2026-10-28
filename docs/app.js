@@ -7525,12 +7525,7 @@ if (elements.watchlistDetailClose && elements.watchlistDetailPanel) {
   });
 }
 
-const storedTheme = loadThemePreference();
-if (storedTheme) {
-  applyTheme(storedTheme);
-} else {
-  applyTheme("light");
-}
+applyTheme("dark");
 
 function gameHubLabel(name) {
   return prettyTag(name);
@@ -9875,6 +9870,8 @@ async function bootstrapDashboard() {
   loadQuicketEvents();
   syncRangeButtons();
   if (!window.dashboardAccess.isOwner()) return;
+  const storedTheme = loadThemePreference();
+  if (storedTheme) applyTheme(storedTheme);
   setupDashboardSectionEditor();
   loadOnePieceCards();
   state.onePieceCurrentChapter = loadOnePieceCurrentChapterPreference();
