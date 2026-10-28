@@ -102,7 +102,10 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         if path == "/api/auth/session":
             token = self.headers.get("Authorization", "").removeprefix("Bearer ")
             authenticated = valid_session(token, secret("DASHBOARD_PASSWORD"))
-            return self.json_response({"authenticated": authenticated}, 200 if authenticated else 401)
+            payload = {"authenticated": authenticated}
+            if authenticated:
+                payload["token"] = issue_session(secret("DASHBOARD_PASSWORD"))
+            return self.json_response(payload, 200 if authenticated else 401)
         if path == "/api/scrapes":
             return self.json_response({"local_scrapes": True, "jobs": self.jobs.snapshot()})
         if path == "/":

@@ -3976,6 +3976,8 @@ function applySubsectionOpenStatePreference() {
 
 function setLayoutEditMode(isEditing) {
   document.body.classList.toggle("is-editing-layout", Boolean(isEditing));
+  const logoutButton = document.querySelector("#owner-logout");
+  if (logoutButton) logoutButton.hidden = !isEditing || !window.dashboardAccess?.isOwner();
   if (elements.layoutEditToggle) {
     elements.layoutEditToggle.textContent = isEditing ? "Done editing" : "Edit mode";
     elements.layoutEditToggle.setAttribute("aria-pressed", isEditing ? "true" : "false");

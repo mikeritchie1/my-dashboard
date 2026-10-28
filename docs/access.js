@@ -8,11 +8,13 @@
   let owner = false;
   try { token = localStorage.getItem(key) || sessionStorage.getItem(key) || ""; } catch { /* Storage may be disabled. */ }
   const button = document.querySelector("#owner-login-toggle");
+  const logoutButton = document.querySelector("#owner-logout");
   const dialog = document.querySelector("#owner-login-dialog");
   const form = document.querySelector("#owner-login-form");
   const password = document.querySelector("#owner-password");
   const error = document.querySelector("#owner-login-error");
   const submit = document.querySelector("#owner-login-submit");
+  button.hidden = Boolean(token);
 
   function applyOwner(value) {
     owner = value;
@@ -32,6 +34,7 @@
       const result = await response.json();
       applyOwner(response.ok && result.authenticated === true);
       if (owner) {
+        token = result.token || token;
         // Migrate existing tab-only logins to persistent browser storage.
         try { localStorage.setItem(key, token); sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
       } else if (response.status === 401) {
@@ -42,12 +45,21 @@
     return owner;
   })();
 
+  function logout() {
+    token = "";
+    try { localStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
+    try { sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
+    applyOwner(false);
+    logoutButton.hidden = true;
+    location.reload();
+  }
+  logoutButton.addEventListener("click", logout);
+  window.addEventListener("storage", event => {
+    if (owner && (event.key === key || event.key === null) && event.newValue === null) logout();
+  });
+
   button.addEventListener("click", () => {
-    if (owner) {
-      try { localStorage.removeItem(key); sessionStorage.removeItem(key); } catch { /* Ignore storage failures. */ }
-      location.reload();
-      return;
-    }
+    if (owner) return;
     error.textContent = "";
     password.value = "";
     dialog.showModal();

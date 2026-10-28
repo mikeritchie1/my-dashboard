@@ -23,7 +23,9 @@ const path = require("node:path");
     assert.equal(await auth.validSession(token, "test-password"), false, "Remembered sessions still expire");
   } finally { Date.now = now; }
   response = await call("/auth/session", { headers: { Authorization: `Bearer ${token}` } });
-  assert.equal((await response.json()).authenticated, true);
+  const restored = await response.json();
+  assert.equal(restored.authenticated, true);
+  assert.equal(await auth.validSession(restored.token, "test-password"), true);
   response = await call("/auth/session", { headers: { Authorization: `Bearer ${token}tampered` } });
   assert.equal(response.status, 401);
   response = await call("/state");
@@ -65,14 +67,14 @@ const path = require("node:path");
   const accessSource = fs.readFileSync(path.join(__dirname, "../docs/access.js"), "utf8");
   async function loginBrowser(saved, responses) {
     const nodes = new Map();
-    for (const id of ["owner-login-toggle", "owner-login-dialog", "owner-login-form", "owner-password", "owner-login-error", "owner-login-submit", "owner-login-cancel"]) {
+    for (const id of ["owner-login-toggle", "owner-logout", "owner-login-dialog", "owner-login-form", "owner-password", "owner-login-error", "owner-login-submit", "owner-login-cancel"]) {
       nodes.set(`#${id}`, { listeners: {}, value: "", addEventListener(name, handler) { this.listeners[name] = handler; }, showModal() {}, close() {}, focus() {} });
     }
     const storage = new Map(saved ? [["my-dashboard:owner-session:v1", saved]] : []);
     const requests = [];
     let reloads = 0;
     const browser = {
-      URL, window: {}, location: { hostname: "localhost", href: "http://localhost:8081/docs/", reload: () => { reloads++; } },
+      URL, window: { listeners: {}, addEventListener(name, handler) { this.listeners[name] = handler; } }, location: { hostname: "localhost", href: "http://localhost:8081/docs/", reload: () => { reloads++; } },
       document: { documentElement: { dataset: { owner: "false" } }, querySelector: id => nodes.get(id) },
       localStorage: { getItem: key => storage.get(key), setItem: (key, value) => storage.set(key, value), removeItem: key => storage.delete(key) },
       sessionStorage: { getItem: () => null, removeItem() {} },
@@ -89,9 +91,13 @@ const path = require("node:path");
   const ownerBrowser = await loginBrowser(token, [{ ok: true, json: async () => ({ authenticated: true }) }]);
   assert.equal(ownerBrowser.browser.document.documentElement.dataset.owner, "true");
   assert.equal(ownerBrowser.nodes.get("#owner-login-toggle").hidden, true);
-  ownerBrowser.nodes.get("#owner-login-toggle").listeners.click();
+  ownerBrowser.nodes.get("#owner-logout").listeners.click();
   assert.equal(ownerBrowser.storage.size, 0);
   assert.equal(ownerBrowser.reloads(), 1);
+  assert.equal(ownerBrowser.browser.window.dashboardAccess.isOwner(), false);
+  const loggedOutBrowser = await loginBrowser("", []);
+  assert.equal(loggedOutBrowser.browser.window.dashboardAccess.isOwner(), false);
+  assert.equal(loggedOutBrowser.requests.length, 0, "Logout does not silently restore a session");
   const freshBrowser = await loginBrowser("", [{ ok: false, json: async () => ({ error: "Incorrect password." }) }]);
   freshBrowser.nodes.get("#owner-password").value = "wrong";
   await freshBrowser.nodes.get("#owner-login-form").listeners.submit({ preventDefault() {} });
@@ -107,6 +113,24 @@ const path = require("node:path");
   assert.equal(savedToken, token, "Successful login persists the token in browser storage");
   const reopenedBrowser = await loginBrowser(savedToken, [{ ok: true, json: async () => ({ authenticated: true }) }]);
   assert.equal(reopenedBrowser.browser.window.dashboardAccess.isOwner(), true, "A fresh browser context restores a persisted session after server verification");
+  reopenedBrowser.browser.window.listeners.storage({ key: "my-dashboard:owner-session:v1", newValue: null });
+  assert.equal(reopenedBrowser.browser.window.dashboardAccess.isOwner(), false, "Logout in another tab clears the current view too");
+  assert.equal(reopenedBrowser.storage.size, 0);
+  const renewedBrowser = await loginBrowser(savedToken, [{ ok: true, json: async () => ({ authenticated: true, token: restored.token }) }]);
+  assert.equal(renewedBrowser.storage.get("my-dashboard:owner-session:v1"), restored.token);
+
+  const editStart = source.indexOf("function setLayoutEditMode(");
+  const editEnd = source.indexOf("\nfunction ", editStart + 1);
+  const logoutButton = { hidden: true };
+  const editContext = vm.createContext({
+    document: { body: { classList: { toggle() {} } }, querySelector: () => logoutButton },
+    window: { dashboardAccess: { isOwner: () => true } }, elements: {},
+  });
+  vm.runInContext(source.slice(editStart, editEnd), editContext);
+  editContext.setLayoutEditMode(true);
+  assert.equal(logoutButton.hidden, false, "Logout appears in Edit mode");
+  editContext.setLayoutEditMode(false);
+  assert.equal(logoutButton.hidden, true, "Logout disappears after Done editing");
 
   const html = fs.readFileSync(path.join(__dirname, "../docs/index.html"), "utf8");
   assert.match(html, /<html[^>]*data-owner="false"/);

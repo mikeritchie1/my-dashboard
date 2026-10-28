@@ -5,11 +5,13 @@
 Logged-out visitors see Cape Town weather, Events and Specials, and Release Radar.
 Weather days continue to filter the map. The four owner toolbar buttons and other
 modules appear after clicking **Login** and entering the owner password. The login
-button is hidden while logged in. Login is remembered for up to 90 days in that browser,
+button is hidden while logged in. **Edit mode** reveals a **Logout** button; clicking
+it clears the remembered login in that browser and requires the password again.
+Login is remembered for up to 90 days in that browser,
 including after closing tabs or restarting the browser/device. Clearing browser data
 or changing the server password requires signing in again. Local and online sites
-remember their logins separately. Existing 12-hour sessions keep their original expiry;
-sign in again once to receive a 90-day session.
+remember their logins separately. Restoring a valid login renews its 90-day session,
+including upgrading older 12-hour sessions.
 
 This is a visibility switch, not private hosting. Published files and the existing
 state API remain public, as requested. The password is checked on the server;

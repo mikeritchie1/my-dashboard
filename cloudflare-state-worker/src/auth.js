@@ -38,7 +38,9 @@ export async function authResponse(request, env, respond) {
   if (path === "/auth/session" && request.method === "GET") {
     const token = (request.headers.get("Authorization") || "").replace(/^Bearer /, "");
     const authenticated = await validSession(token, env.DASHBOARD_PASSWORD);
-    return respond({ authenticated }, authenticated ? 200 : 401);
+    return respond(authenticated
+      ? { authenticated: true, token: await issueSession(env.DASHBOARD_PASSWORD) }
+      : { authenticated: false }, authenticated ? 200 : 401);
   }
   if (path !== "/auth/login" || request.method !== "POST") return respond({ error: "Not found" }, 404);
   if (!env.DASHBOARD_PASSWORD) return respond({ error: "Owner login has not been configured on the server." }, 503);

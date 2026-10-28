@@ -66,7 +66,9 @@ class LoginHttpTests(TestCase):
             self.assertEqual("no-store", response.headers["Cache-Control"])
             token = json.load(response)["token"]
         with urlopen(Request(self.base + "/api/auth/session", headers={"Authorization": "Bearer " + token})) as response:
-            self.assertTrue(json.load(response)["authenticated"])
+            result = json.load(response)
+            self.assertTrue(result["authenticated"])
+            self.assertTrue(valid_session(result["token"], "test-password"))
 
     def test_invalid_login_and_session(self):
         with self.assertRaises(HTTPError) as error:
