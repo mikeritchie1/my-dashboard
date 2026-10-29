@@ -4050,6 +4050,35 @@
     ],
     "playtime_hours": 4
   },
+  "game_aaa:palworld": {
+    "title": "Palworld",
+    "media_type": "game_aaa",
+    "rawg_url": "https://rawg.io/games/palworld",
+    "publishers": [
+      "Pocketpair"
+    ],
+    "rating": 3.6,
+    "developers": [
+      "Pocketpair"
+    ],
+    "genres": [
+      "Action",
+      "Adventure",
+      "RPG",
+      "Indie"
+    ],
+    "metacritic": null,
+    "platforms": [
+      "PlayStation 5",
+      "Xbox Series S/X",
+      "PC"
+    ],
+    "website_url": "",
+    "playtime_hours": 22,
+    "poster_url": "https://media.rawg.io/media/games/4e9/4e9c951414c732923fa72d5b1da49402.jpg",
+    "release_date": "2024-01-19",
+    "description": "Q. What is this game about? A. Palworld is a game about living a slow life with mysterious creatures \"Pal\" or throwing yourself into life-and-death battles with poachers. You can make Pals fight, breed, help with farming, or work in factories. You can also sell them off or even slaughter them to eat! That however, is forbidden by law. ■ Survival - This world is full of dangers such as food shortages, harsh weather, and illegal poachers. You must be prepared to do anything if you want to survive. You may even need to consume Pals sometimes... ■ Riding and exploration - Fly, swim, dig holes... you can explore all kinds of places on lands, the sea, and in the sky by riding Pals. ■ Building - Do you want to build a pyramid? You can have a large number of Pals work on the construction. Don't worry; labor laws won't be applied to Pals. ■ Life - Make your life more comfortable by collecting a variety of valuable Pals to light fires, generate power, and mine minerals. ■ Farming - Different Pals are good at different things such as sowing, watering, harvesting, or else. Create attractive farms and orchards with your Pals. There are also Pals that can duplicate themselves when they're planted. ■ Factory and Automation - It is essential for automation to let Pals do the manual work. Build a factory and place Pals in it. They will work forever as long as they're fed until the end of their lifetime. ■ Dungeon Exploration - With Pals, you'll be safe in dangerous areas. If you are in danger, you use Pals to cover your escape! They'll give their lives to protect you. ■ Breeding and Heredity - When you breed Pals, they inherit the parents' characteristics. Mix rare species Pals to raise the strongest Pals! ■ Poaching and Crime - Endangered species Pals live in the hunting prohibited area. If you sneak in and catch them, you'll get tons of money! It's only illegal if you get caught. ■ Multiplayer - This game supports multiplayer. Invite your friends to go on an adventure together. Of course, you can battle and trade with other players!"
+  },
   "game_aaa:pokemon legends arceus": {
     "title": "Pokemon Legends: Arceus",
     "media_type": "game_aaa",
@@ -6161,6 +6190,24 @@
     ],
     "playtime_hours": 6
   },
+  "game_coop:bombanana": {
+    "title": "Bombanana",
+    "media_type": "game_coop",
+    "rawg_url": "https://rawg.io/games/bombanana",
+    "publishers": [],
+    "rating": 0.0,
+    "developers": [],
+    "genres": [
+      "Simulation"
+    ],
+    "metacritic": null,
+    "platforms": [],
+    "website_url": "",
+    "playtime_hours": 0,
+    "poster_url": "https://media.rawg.io/media/games/87f/87f93fdc4f0b2a2f0f40b494ac7395ca.jpg",
+    "release_date": "2026-09-02",
+    "description": "Bombanana! is a simulation game. It was originally released in 2026. Most rawgers rated the game as \"Recommended\"."
+  },
   "game_coop:borderlands": {
     "title": "Borderlands",
     "media_type": "game_coop",
@@ -6480,31 +6527,34 @@
     ],
     "playtime_hours": 0
   },
-  "game_coop:far far west": {
-    "title": "Far Far West",
+  "game_coop:far far west waiting for final area": {
+    "title": "Far Far West [Waiting for Final Area]",
     "media_type": "game_coop",
-    "website_url": "",
-    "description": "Yee-haw, Cowboys! Team up in this chaotic 1-4 player co-op shooter. Journey to the Far Far West to blast monsters, sling spells, complete missions, and collect bounties. Work as a team to get in, get paid and get out (mostly) alive.",
-    "metacritic": null,
+    "rawg_url": "https://rawg.io/games/far-cry-2-fortunes-edition",
     "publishers": [
-      "Fireshine Games"
+      "Ubisoft Entertainment"
     ],
-    "rawg_url": "https://rawg.io/games/far-far-west",
-    "rating": 0.0,
-    "platforms": [
-      "PC"
+    "rating": 3.5,
+    "developers": [
+      "Ubisoft",
+      "Ubisoft Montreal"
     ],
     "genres": [
       "Action",
-      "Adventure",
-      "Indie"
+      "Shooter"
     ],
-    "playtime_hours": 0,
-    "developers": [
-      "Evil Raptor"
+    "metacritic": 85,
+    "platforms": [
+      "Xbox 360",
+      "PC",
+      "PlayStation 3",
+      "Xbox One"
     ],
-    "release_date": "2026-04-28",
-    "poster_url": "https://media.rawg.io/media/screenshots/b1c/b1c249429ecaf020027f327c87ecd49c.jpg"
+    "website_url": "http://farcry.us.ubi.com",
+    "playtime_hours": 2,
+    "poster_url": "https://media.rawg.io/media/games/89e/89e913f4ba5260cfb8b775667f81c23a.jpg",
+    "release_date": "2008-10-21",
+    "description": "Jump in the boots of a mercenary sent to an African country where the civil war breaks out. Your target is a notorious arms dealer that supplies both sides of the conflict. As the player arrives at the hotel, they pass out due to malaria. Waking up, you find your target standing over you, reading the mission briefing. The player is too weak to eliminate the arms dealer due to malaria-induced weakness. The Protagonist is left for dead by their target as shooting begins outside the hotel. Get out there, find the target and eliminate him. Far Cry 2 is the first game to feature an open world. It offers a large set of means of transportation. A day-night cycle is also featured. Far Cry 2 is a very realistic game featuring weapon degradation, dynamic weather, simulated fire, vegetation regeneration, the players even have to take out the physical map and GPS in order to find their way in the game world. A class-based multiplayer mode with up to 16 players is also featured."
   },
   "game_coop:grounded 2": {
     "title": "Grounded 2",
@@ -6559,6 +6609,24 @@
     "rawg_url": "https://rawg.io/games/helldivers-2",
     "metacritic": null,
     "description": "Digital Deluxe Edition Edition includes: ‘DP-53 Savior of the Free’ Armor Set. ‘Will of the People’ Cape. ‘MP-98 Knight’ Weapon. Super Citizen Status. Stratagem Hero Ship Game. ‘Steeled Veterans’ Premium Warbond. About the Game The Galaxy’s Last Line of Offence. Enlist in the Helldivers and join the fight for freedom across a hostile galaxy in a fast, frantic, and ferocious third-person shooter. URGENT BROADCAST – SUPER EARTH ARMED FORCESFreedom. Peace. Democracy. Your Super Earth-born rights. The key pillars of our civilization. Of our very existence. But the war rages on. And everything is once again under threat. Join the greatest military force the galaxy has ever seen and make this a safe and free place to live. BECOME A LEGENDYou will be assembled into squads of up to four Helldivers and assigned strategic missions. Watch each other’s back – friendly fire is an unfortunate certainty of war, but victory without teamwork is impossible. LOADOUTSRain down freedom from above, sneak through enemy territory, or grit your teeth and charge head-first into the jaws of combat. How you deliver liberty is your choice; you’ll have access to a wide array of explosive firepower, life-saving armor and battle-changing stratagems… the jewel in every Helldiver’s arsenal. REQUISITIONSuper Earth recognises your hard work with valuable Requisition. Use it to access different rewards that benefit you, your squad, your destroyer ship and our overall war effort. THREATSEverything on every planet wants you dead. That’s what we’re dealing with. Each enemy has distinct and unpredictable characteristics, tactics, and behavior – but they all fight ferociously and without fear or morality. THE GALACTIC WARCapturing enemy planets, defending against invasions, and completing missions will contribute to our overall effort. This war will be won or lost depending on the actions of everyone involved. We stand together, or we fall apart."
+  },
+  "game_coop:how to fish": {
+    "title": "How To Fish",
+    "media_type": "game_coop",
+    "rawg_url": "https://rawg.io/games/how-to-fish",
+    "publishers": [],
+    "rating": 4.1,
+    "developers": [],
+    "genres": [
+      "Simulation"
+    ],
+    "metacritic": null,
+    "platforms": [],
+    "website_url": "",
+    "playtime_hours": 0,
+    "poster_url": "https://media.rawg.io/media/games/d96/d967a44fc7eb6ab5bf856e3e20785f2b.jpg",
+    "release_date": "2026-08-20",
+    "description": "How to Fish is a simulation game. It came out on 20-08-2026. Most rawgers rated the game as \"Recommended\". Walt Disney produced the game. It was directed by Jack Kinney."
   },
   "game_coop:it takes two": {
     "title": "It Takes Two",
@@ -7020,6 +7088,35 @@
       "Perfect World Entertainment"
     ],
     "playtime_hours": 7
+  },
+  "game_couch_coop:brotato": {
+    "title": "Brotato",
+    "media_type": "game_couch_coop",
+    "rawg_url": "https://rawg.io/games/brotato",
+    "publishers": [
+      "Blobfish"
+    ],
+    "rating": 4.0,
+    "developers": [
+      "Blobfish"
+    ],
+    "genres": [
+      "Action",
+      "RPG",
+      "Casual",
+      "Indie"
+    ],
+    "metacritic": null,
+    "platforms": [
+      "Linux",
+      "macOS",
+      "PC"
+    ],
+    "website_url": "https://thomasgervraud.com/press/brotato/",
+    "playtime_hours": 5,
+    "poster_url": "https://media.rawg.io/media/screenshots/ed8/ed8a780ca2d64dcd38f8ff3bcecf050a.jpg",
+    "release_date": "2022-09-27",
+    "description": "A spaceship from Potato World crashes onto an alien planet. The sole survivor: Brotato, the only potato capable of handling 6 weapons at the same time. Waiting to be rescued by his mates, Brotato must survive in this hostile environment.FeaturesAuto-firing weapons by default with a manual aiming option Fast runs (under 30 minutes) Dozens of characters available to customize your runs (one-handed, crazy, lucky, mage and many more) Hundreds of items and weapons to choose from (flamethrowers, SMGs, rocket launchers or sticks and stones) Survive waves lasting 20 to 90 seconds each and kill off as many aliens as you can during that time Collect materials to gain experience and get items from the shop between waves of enemies Accessibility options: tweak the health, damage and speed of enemies so the difficulty is right for you"
   },
   "game_couch_coop:cup head": {
     "title": "Cup Head",
@@ -10651,6 +10748,26 @@
       "Shooter"
     ]
   },
+  "game_lan:big walk": {
+    "title": "Big Walk",
+    "media_type": "game_lan",
+    "rawg_url": "https://rawg.io/games/big-walk",
+    "publishers": [],
+    "rating": 4.3,
+    "developers": [],
+    "genres": [
+      "Adventure"
+    ],
+    "metacritic": null,
+    "platforms": [
+      "PC"
+    ],
+    "website_url": "",
+    "playtime_hours": 0,
+    "poster_url": "https://media.rawg.io/media/games/570/5709d6cddc9024ea3424d79e6d76e366.jpg",
+    "release_date": "2026-08-04",
+    "description": "Big Walk is an adventure game. It came out on 04-08-2026. The game is rated as \"Recommended\" on RAWG. You can play Big Walk on PC. Luke Neher and Sam Gill scored the game."
+  },
   "game_lan:black ops 2 zombie maps": {
     "title": "Black Ops 2 (Zombie Maps)",
     "media_type": "game_lan",
@@ -10764,6 +10881,31 @@
     "release_date": "2026-04-28",
     "poster_url": "https://media.rawg.io/media/screenshots/b1c/b1c249429ecaf020027f327c87ecd49c.jpg"
   },
+  "game_lan:friends vs friends": {
+    "title": "Friends vs Friends",
+    "media_type": "game_lan",
+    "rawg_url": "https://rawg.io/games/friends-vs-friends",
+    "publishers": [
+      "Raw Fury"
+    ],
+    "rating": 3.9,
+    "developers": [
+      "Brainwash Gang"
+    ],
+    "genres": [
+      "Action",
+      "Indie"
+    ],
+    "metacritic": null,
+    "platforms": [
+      "PC"
+    ],
+    "website_url": "https://www.friendsvsfriends.com",
+    "playtime_hours": 3,
+    "poster_url": "https://media.rawg.io/media/games/997/9973ca830fc8e36207db0a613f8e4b86.jpg",
+    "release_date": "2023-05-30",
+    "description": "Play 1v1 or 2v2 in online, fast-paced, chaotic combat! Level up, get new cards, improve the ones you already have, and unlock new characters with their own unique skill. No microtransactions for progression. EVER! Powers, weapons, and debuffs are all played from your card deck! Open card packs, won through playing, to expand your deck, level them up, discover card synergies, and build new strategies for your next match. Become a titan, invoke a friendly turret, leach health with vampire bullets, and make them have a big freaking head! Friends vs Friends: Play with your friends in PVP combat, use our online matchmaking system, or watch your friends in Spectator mode! A game with character: Choose from over 10 playable characters, each with their own abilities that improve the synergies of your deck. Deck yourself out: Collect new cards and tweak your deck to win vs friends and climb the leaderboard at the same time. Practice, practice, practice: Try practice mode to get the lay of the land or play against AI to train up your skills. Updates and seasonal content: Expect post-launch content including new unique characters, cards, maps, and in-game events"
+  },
   "game_lan:gears of war 5 horde mode": {
     "title": "Gears of War 5 (Horde Mode)",
     "media_type": "game_lan",
@@ -10854,6 +10996,38 @@
     ],
     "playtime_hours": 12
   },
+  "game_lan:gunfire reborn": {
+    "title": "Gunfire Reborn",
+    "media_type": "game_lan",
+    "rawg_url": "https://rawg.io/games/gunfire-reborn",
+    "publishers": [
+      "Duoyi (Hong Kong) Interactive Entertainment",
+      "Guangdong Liwei Network Technology"
+    ],
+    "rating": 3.9,
+    "developers": [
+      "Duoyi",
+      "Duoyi (Hong Kong) Interactive Entertainment",
+      "Liwei Network"
+    ],
+    "genres": [
+      "Action",
+      "Shooter",
+      "Adventure",
+      "RPG",
+      "Indie"
+    ],
+    "metacritic": null,
+    "platforms": [
+      "iOS",
+      "PC"
+    ],
+    "website_url": "",
+    "playtime_hours": 7,
+    "poster_url": "https://media.rawg.io/media/screenshots/108/108628a1f93b1bceeaf3a2cb0146f103.jpg",
+    "release_date": "2020-05-22",
+    "description": "About This Game: Gunfire Reborn is an Adventure level-based game featured with FPS, Roguelite and RPG. Players can control heros with different abilities to experience diverse Build gameplay, use randomly dropped weapons to adventure in random levels. This game can be played by single player, or Co-op up to four. In this game, players' experience in each level is random. Every restart means brand new experience. You will meet different heroes' talents, weapons and items, different checkpoints and combat rhythms in different levels. The game is still in Early Access. In the following time, we will gradually fix the bug, add more contents, and come up with new gameplays. Thanks all for your support! We will try our best to optimize our game."
+  },
   "game_lan:halo 3": {
     "title": "Halo 3",
     "media_type": "game_lan",
@@ -10903,6 +11077,32 @@
       "Tripwire Interactive"
     ],
     "playtime_hours": 3
+  },
+  "game_lan:machine party": {
+    "title": "Machine Party",
+    "media_type": "game_lan",
+    "rawg_url": "https://rawg.io/games/machine-party",
+    "publishers": [
+      "Oro Interactive"
+    ],
+    "rating": 0.0,
+    "developers": [
+      "Mike Klubnika",
+      "GDeavid"
+    ],
+    "genres": [
+      "Casual",
+      "Indie"
+    ],
+    "metacritic": null,
+    "platforms": [
+      "PC"
+    ],
+    "website_url": "",
+    "playtime_hours": 0,
+    "poster_url": "https://media.rawg.io/media/screenshots/d09/d09f94d03b29e12136cfe9f49bacd2b6.jpg",
+    "release_date": "2026-07-30",
+    "description": "Machine Party is a collection of violent party games where failure is lethal. Gather your friends and endure high stakes situations to prove your life is worth more than theirs. Survival is unlikely."
   },
   "game_lan:overcooked": {
     "title": "Overcooked",
@@ -10966,35 +11166,6 @@
     "publishers": [
       "Team17 Digital"
     ]
-  },
-  "game_lan:payday 2": {
-    "title": "Payday 2",
-    "media_type": "game_lan",
-    "rating": 3.5,
-    "poster_url": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
-    "platforms": [
-      "PC",
-      "Xbox One",
-      "Linux"
-    ],
-    "website_url": "http://www.crimenet.info",
-    "genres": [
-      "Shooter",
-      "Action"
-    ],
-    "description": "The gang is back, and they have bigger and better plans. Objective based cooperative FPS became more complicated. The classic group of Hoxton, Dallas, Chains and Wolf got reinforcement, and now Payday Gang consists of 21 heisters, some of which are based on movie characters or even Youtubers. Players will be able to customize their own private arsenal, their masks, and skills, to complete the missions in their own way, be it stealthy sneak-in or full frontal assault. After completing missions, players will receive EXP points, money and a chance to get a special item that can be a gun modification, mask or a safe containing weapon skins. Payday 2 is a multiplayer game, meaning, that even during offline missions players will be followed by AI characters, whose loadouts, masks and perks can be customized as well. This game has been supported by the developers for many years, and amount of DLC speaks plenty of their dedication to the player base.",
-    "rawg_url": "https://rawg.io/games/payday-2",
-    "release_date": "2013-08-13",
-    "developers": [
-      "505 Games",
-      "OVERKILL Software"
-    ],
-    "metacritic": 79,
-    "publishers": [
-      "505 Games",
-      "Starbreeze"
-    ],
-    "playtime_hours": 9
   },
   "game_lan:peak": {
     "title": "Peak",
@@ -11070,37 +11241,6 @@
     "publishers": [
       "Rebuilt Games"
     ]
-  },
-  "game_lan:rainbow six siege terrorist hunt": {
-    "title": "Rainbow Six Siege (Terrorist Hunt)",
-    "media_type": "game_lan",
-    "rating": 3.9,
-    "poster_url": "https://media.rawg.io/media/games/b34/b3419c2706f8f8dbe40d08e23642ad06.jpg",
-    "platforms": [
-      "Xbox One",
-      "PC",
-      "PlayStation 4",
-      "Xbox Series S/X",
-      "PlayStation 5"
-    ],
-    "website_url": "http://rainbow6.ubi.com/",
-    "genres": [
-      "Action",
-      "Shooter"
-    ],
-    "description": "The gameplay of the game is based on intense strategic battles between the Navigator and the defenders in a limited space. Locations in the game consist of a multi-level object (for example, a multi-storey building), inside which there are defenders, and the area around it, where the attackers begin. Destruction is at the head of the game mechanics. The surrounding objects are created with maximum realism, the degree of damage depends on the calibre of the bullets used by the players or on the total power of the laid explosives. Walls can be destroyed, creating new firing positions and shelters. Optimal use of the potential of destruction often becomes a guarantee of victory. Defenders can limit the ability of attackers to destroy, using kits to strengthen the walls and the device of some operatives. The primary game mode - multiplayer, normal or rating. During the game in the last mode, the player is assigned a certain rank, and parameters such as the ratio of kills/deaths and wins/losses are recorded in his profile displayed in the game.",
-    "rawg_url": "https://rawg.io/games/tom-clancys-rainbow-six-siege-2",
-    "release_date": "2015-12-01",
-    "developers": [
-      "Ubisoft",
-      "Ubisoft Montreal",
-      "Sperasoft"
-    ],
-    "metacritic": 75,
-    "publishers": [
-      "Ubisoft Entertainment"
-    ],
-    "playtime_hours": 32
   },
   "game_lan:rainbow six vegas 2": {
     "title": "Rainbow Six Vegas 2",
@@ -11182,31 +11322,6 @@
     ],
     "playtime_hours": 2
   },
-  "game_lan:tear down": {
-    "title": "Tear down",
-    "media_type": "game_lan",
-    "rating": 0.0,
-    "poster_url": "https://media.rawg.io/media/screenshots/76a/76a896b6faabd5d627cfa3cf4f5a1224_0ytJmQM.jpg",
-    "platforms": [
-      "iOS"
-    ],
-    "website_url": "",
-    "genres": [
-      "Arcade",
-      "Adventure"
-    ],
-    "description": "Tear down these walls by tapping and rotating the wheel. Match colors. Play the game! BEAT MY SCORE!!!",
-    "rawg_url": "https://rawg.io/games/tear-down-walls",
-    "release_date": "2015-08-23",
-    "developers": [
-      "Squad Social"
-    ],
-    "metacritic": null,
-    "publishers": [
-      "Squad Social"
-    ],
-    "playtime_hours": 0
-  },
   "game_lan:the outlast trials": {
     "title": "The Outlast Trials",
     "media_type": "game_lan",
@@ -11259,33 +11374,5 @@
     "publishers": [
       "Blizzard Entertainment"
     ]
-  },
-  "game_lan:whos your daddy": {
-    "title": "Who’s Your Daddy?",
-    "media_type": "game_lan",
-    "rating": 2.9,
-    "poster_url": "https://media.rawg.io/media/screenshots/d40/d4016a4fe0348b6ec91c9345c4fdf816.jpg",
-    "platforms": [
-      "PC",
-      "macOS",
-      "Linux"
-    ],
-    "website_url": "",
-    "genres": [
-      "Action",
-      "Casual",
-      "Indie"
-    ],
-    "description": "DescriptionWho's Your Daddy is a casual 1 on 1 video game featuring a clueless father attempting to prevent his infant son from certain death.Current Features A beautiful home for you to watch over your son in Physics based game play allowing you to move small objects as you please Beautiful compositions to be played on your baby's piano Two unique character types to play as Randomized locations of crucial items Awesome power ups for being able to do chores Available for PC, Mac and Linux/Steam OSThe CharactersWho's Your Daddy features two different characters to play as, the daddy and the baby. DaddyThe daddy's goal is to prevent the baby from dying. He has a number of items that can be found inside the house to help him complete this task such as: Power Outlet Covers Cabinet Locks PillsThe father player also has the option to do various chores around the house, such as cleaning up toys or changing a smoke alarm battery. Doing these side activities rewards the father player with a power up to help him watch over his son. Some examples of these are: Peek-A-Boo: Makes the daddy invisible Bat Dad: Daddy can see baby's health and location through walls Say Momma: Daddy can see the location of important objects through wallsThe daddy player faces a number of challenges, due to needing the knowledge of how to approach any danger his baby may be in. He needs to be alert, fast moving and prepared for anything if he wants to keep his son safe.BabyThe baby's goal is to take his own life using whatever objects within the house he can get his little hands on. This includes actions such as: Shoving forks into power outlets Chugging various cleaning products Scuba diving unsupervised in the tub The baby player has minimal responsibility and this allows for a simple, yet erratic play style.",
-    "rawg_url": "https://rawg.io/games/whos-your-daddy",
-    "release_date": "2016-05-13",
-    "developers": [
-      "Evil Tortilla Games"
-    ],
-    "metacritic": null,
-    "publishers": [
-      "Evil Tortilla Games"
-    ],
-    "playtime_hours": 1
   }
 }

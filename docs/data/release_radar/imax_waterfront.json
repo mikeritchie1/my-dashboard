@@ -3,43 +3,43 @@
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
   "items": [
     {
-      "tmdb_id": 1081003,
-      "tmdb_url": "https://www.themoviedb.org/movie/1081003",
-      "tmdb_rating": "6.2",
-      "tmdb_votes": "208",
-      "release_date": "2026-06-24",
-      "overview": "When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice.",
-      "runtime_minutes": "108",
+      "tmdb_id": 1058424,
+      "tmdb_url": "https://www.themoviedb.org/movie/1058424",
+      "tmdb_rating": "6.8",
+      "tmdb_votes": "379",
+      "release_date": "2026-07-15",
+      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+      "runtime_minutes": "157",
       "genres": [
-        "Action",
-        "Adventure",
-        "Science Fiction"
+        "Science Fiction",
+        "Mystery",
+        "Action"
       ],
       "directors": [
-        "Craig Gillespie"
+        "Na Hong-jin"
       ],
       "actors": [
-        "Milly Alcock",
-        "Eve Ridley",
-        "Matthias Schoenaerts",
-        "Jason Momoa",
-        "David Krumholtz",
-        "Emily Beecham",
-        "David Corenswet",
-        "Kadiff Kirwan",
-        "Thalissa Teixeira",
-        "Ferdinand Kingsley"
+        "Hwang Jung-min",
+        "Zo In-sung",
+        "Hoyeon",
+        "Alicia Vikander",
+        "Michael Fassbender",
+        "Taylor Russell",
+        "Cameron Britton",
+        "Lee Sang-hee",
+        "Um Mun-suk",
+        "Im Hyun-sik"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=tzlY8XD1CGg",
-      "poster_url": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg",
-      "title": "Supergirl",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_supergirl2d",
+      "trailer_url": "https://www.youtube.com/watch?v=OFaJzL83y0Q",
+      "poster_url": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
+      "title": "Hope",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_hope2d",
       "source": "IMAX Waterfront",
       "status": "now_playing",
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/niSvU02l2BONH9ivubV6K1a5QiK.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg"
     }
   ]
 }

@@ -28,11 +28,15 @@
           "opinion": ""
         },
         {
-          "title": "Risk of Rain 2",
+          "title": "Far Far West [Waiting for Final Area]",
           "opinion": ""
         },
         {
-          "title": "Far Far West",
+          "title": "How To Fish",
+          "opinion": ""
+        },
+        {
+          "title": "Bombanana",
           "opinion": ""
         }
       ],
@@ -51,6 +55,10 @@
         },
         {
           "title": "Sonic Racing: CrossWorlds",
+          "opinion": ""
+        },
+        {
+          "title": "Brotato",
           "opinion": ""
         }
       ],
@@ -104,10 +112,6 @@
           "opinion": ""
         },
         {
-          "title": "Who’s Your Daddy?",
-          "opinion": ""
-        },
-        {
           "title": "The Outlast Trials",
           "opinion": ""
         },
@@ -140,19 +144,23 @@
           "opinion": ""
         },
         {
-          "title": "A Gentleman’s Dispute?",
+          "title": "Machine Party",
           "opinion": ""
         },
         {
-          "title": "Payday 2",
+          "title": "Gunfire Reborn",
           "opinion": ""
         },
         {
-          "title": "Rainbow Six Siege (Terrorist Hunt)",
+          "title": "Big Walk",
           "opinion": ""
         },
         {
-          "title": "Tear down",
+          "title": "A Gentleman’s Dispute",
+          "opinion": ""
+        },
+        {
+          "title": "Friends vs Friends",
           "opinion": ""
         }
       ]
@@ -292,6 +300,11 @@
           "opinion": ""
         },
         {
+          "type": "game_aaa",
+          "title": "Palworld",
+          "opinion": ""
+        },
+        {
           "type": "game_indie",
           "title": "Creature Kitchen",
           "opinion": ""
@@ -314,6 +327,11 @@
         {
           "type": "game_coop",
           "title": "Helldivers 2",
+          "opinion": ""
+        },
+        {
+          "type": "game_coop",
+          "title": "Risk of Rain 2",
           "opinion": ""
         }
       ]

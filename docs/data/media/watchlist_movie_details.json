@@ -2449,6 +2449,23 @@
     "poster_url": null,
     "directors": null
   },
+  "anime_series:bleach": {
+    "title": "Bleach",
+    "media_type": "anime_series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "anime_series:chainsaw man s01 reze arc movie": {
     "title": "Chainsaw Man S01, Reze Arc Movie",
     "media_type": "anime_series",
@@ -2520,31 +2537,22 @@
     "directors": [],
     "tmdb_url": "https://www.themoviedb.org/tv/30991"
   },
-  "anime_series:cyberpunk edgerunners": {
-    "title": "Cyberpunk: Edgerunners",
+  "anime_series:cyberpunk edgerunners 02": {
+    "title": "Cyberpunk: Edgerunners 02",
     "media_type": "anime_series",
-    "genres": [
-      "Animation",
-      "Action & Adventure",
-      "Drama",
-      "Sci-Fi & Fantasy"
-    ],
-    "tmdb_id": 105248,
-    "trailer_url": "https://www.youtube.com/watch?v=JtqIas3bYhg",
-    "poster_url": "https://image.tmdb.org/t/p/w342/lqcDVZ8pyk08AVftMBildDR3QUK.jpg",
-    "actors": [
-      "KENN"
-    ],
-    "release_date": "2022-09-13",
-    "number_of_seasons": 2,
-    "rating": 8.5,
-    "description": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-    "overview": "In a dystopia riddled with corruption and cybernetic implants, a talented but reckless street kid strives to become a mercenary outlaw — an edgerunner.",
-    "runtime_minutes": 25,
-    "directors": [
-      "Rafał Jaki"
-    ],
-    "tmdb_url": "https://www.themoviedb.org/tv/105248"
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "anime_series:dan da dan": {
     "title": "Dan Da Dan",
@@ -2628,6 +2636,23 @@
     "runtime_minutes": null,
     "directors": [],
     "tmdb_url": "https://www.themoviedb.org/tv/85937"
+  },
+  "anime_series:dragon ball super beerus": {
+    "title": "Dragon Ball Super Beerus",
+    "media_type": "anime_series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "anime_series:dragon ball z": {
     "title": "Dragon Ball Z",
@@ -7000,6 +7025,40 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:antman and the wasp": {
+    "title": "Ant-Man and the Wasp",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:apex": {
+    "title": "Apex",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:apocalypse now": {
     "title": "Apocalypse Now",
     "rating": 8.3,
@@ -7190,6 +7249,57 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:avatar aang the last airbender": {
+    "title": "Avatar Aang: The Last Airbender",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:avengers age of ultron": {
+    "title": "Avengers: Age of Ultron",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:avengers infinity war": {
+    "title": "Avengers: Infinity War",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:backrooms": {
     "title": "Backrooms",
     "media_type": "movie",
@@ -7318,6 +7428,23 @@
       "Len Wiseman"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=Oqo_Vqt8vBE"
+  },
+  "movie:balls of fury": {
+    "title": "Balls of Fury",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:barbarian": {
     "title": "Barbarian",
@@ -8006,6 +8133,23 @@
       "Kathryn Adams"
     ]
   },
+  "movie:buddy": {
+    "title": "Buddy",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:bugonia": {
     "title": "Bugonia",
     "rating": 7.4,
@@ -8069,6 +8213,74 @@
     "runtime_minutes": 96,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:captain america civil war": {
+    "title": "Captain America: Civil War",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:captain america the first avenger": {
+    "title": "Captain America: The First Avenger",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:captain america the winter soldier": {
+    "title": "Captain America: The Winter Soldier",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:captain marvel": {
+    "title": "Captain Marvel",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:carolina caroline": {
     "title": "Carolina Caroline?",
@@ -8471,6 +8683,23 @@
     "runtime_minutes": 102,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:coyote vs acme": {
+    "title": "Coyote vs Acme",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:creed": {
     "title": "Creed",
@@ -9112,6 +9341,23 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=GgLbDsUqV60"
   },
+  "movie:disclosure day": {
+    "title": "Disclosure Day",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:dogma": {
     "title": "Dogma",
     "rating": 6.9,
@@ -9677,6 +9923,23 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=uAMsKHaqRfQ"
   },
+  "movie:evil dead burn": {
+    "title": "Evil Dead Burn",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:evil dead rise": {
     "title": "Evil Dead Rise",
     "rating": 6.9,
@@ -9893,6 +10156,23 @@
     "runtime_minutes": 113,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:fantastic 4": {
+    "title": "Fantastic 4",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:fargo": {
     "title": "Fargo",
@@ -10125,6 +10405,23 @@
     "runtime_minutes": 108,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:following": {
+    "title": "Following",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:frankenstein": {
     "title": "Frankenstein",
@@ -11352,6 +11649,23 @@
     "directors": null,
     "trailer_url": null
   },
+  "movie:in bruges": {
+    "title": "In Bruges",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:inside": {
     "title": "Inside",
     "rating": 7.9,
@@ -11452,6 +11766,23 @@
     "runtime_minutes": 97,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:insomnia": {
+    "title": "Insomnia",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:interstellar": {
     "title": "Interstellar",
@@ -11610,6 +11941,23 @@
       "Greg Jardin"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=RJBNi0CjX5I"
+  },
+  "movie:jackass best and last": {
+    "title": "Jackass: Best and Last",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:jacobs ladder": {
     "title": "Jacob’s Ladder",
@@ -12457,6 +12805,23 @@
       "Emory Cohen"
     ]
   },
+  "movie:masters of the universe": {
+    "title": "Masters of the Universe",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:materialists": {
     "title": "Materialists",
     "media_type": "movie",
@@ -12678,6 +13043,23 @@
     "runtime_minutes": 113,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:michael": {
+    "title": "Michael",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:mickey 17": {
     "title": "Mickey 17",
@@ -13126,37 +13508,39 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
-  "movie:nirvanna the band the show the movie": {
-    "title": "Nirvanna The Band The Show The Movie",
+  "movie:nimrods": {
+    "title": "Nimrods",
     "media_type": "movie",
-    "overview": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008.",
-    "runtime_minutes": 100,
-    "genres": [
-      "Comedy",
-      "Science Fiction",
-      "Adventure"
-    ],
-    "actors": [
-      "Matt Johnson",
-      "Jay McCarrol",
-      "Ben Petrie",
-      "Ethan Eng",
-      "Michael Scott",
-      "Reid Janisse",
-      "Steve Hamelin",
-      "Luke Lalonde"
-    ],
-    "directors": [
-      "Matt Johnson"
-    ],
-    "tmdb_id": 1154538,
-    "trailer_url": "https://www.youtube.com/watch?v=y2K9ccMREOI",
-    "poster_url": "https://image.tmdb.org/t/p/w342/sm5TGX8WbnCd9Uo26cLyTxVwA1n.jpg",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
     "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1154538",
-    "release_date": "2026-02-13",
-    "description": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008.",
-    "rating": 7.5
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:nirvana the band the show the movie": {
+    "title": "Nirvana The Band The Show The Movie",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:no one will save you": {
     "title": "No One Will Save You",
@@ -14262,6 +14646,23 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=qHrQNKst8mw"
   },
+  "movie:resident evil": {
+    "title": "Resident Evil",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:ricky stanicky": {
     "title": "Ricky Stanicky",
     "rating": 6.5,
@@ -14483,6 +14884,23 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:runner": {
+    "title": "Runner",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:saint maud": {
     "title": "Saint Maud",
     "rating": 6.6,
@@ -14608,6 +15026,23 @@
       "Kevin Greutert"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=t3PzUo4P21c"
+  },
+  "movie:scary movie": {
+    "title": "Scary Movie",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:scream 6": {
     "title": "Scream 6",
@@ -14740,6 +15175,23 @@
       "Thaneth Warakulnukroh",
       "Emma Raimi"
     ]
+  },
+  "movie:shangchi and the legend of the ten rings": {
+    "title": "Shang-Chi and the Legend of the Ten  Rings",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:shaolin soccer": {
     "title": "Shaolin Soccer",
@@ -15884,6 +16336,23 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:tenzing": {
+    "title": "Tenzing",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:thanksgiving": {
     "title": "Thanksgiving",
     "rating": 6.5,
@@ -16008,38 +16477,6 @@
     "runtime_minutes": 109,
     "media_type": "movie",
     "number_of_seasons": null
-  },
-  "movie:the apprentice": {
-    "title": "The Apprentice",
-    "media_type": "movie",
-    "overview": "A young Donald Trump, eager to make his name as a hungry scion of a wealthy family in 1970s New York, comes under the spell of Roy Cohn, the cutthroat attorney who would help create the Donald Trump we know today. Cohn sees in Trump the perfect protégé—someone with raw ambition, a hunger for success, and a willingness to do whatever it takes to win.",
-    "genres": [
-      "History",
-      "Drama",
-      "Comedy"
-    ],
-    "tmdb_id": 1182047,
-    "runtime_minutes": 122,
-    "actors": [
-      "Sebastian Stan",
-      "Jeremy Strong",
-      "Martin Donovan",
-      "Maria Bakalova",
-      "Catherine McNally",
-      "Charlie Carrick",
-      "Ben Sullivan",
-      "Mark Rendall"
-    ],
-    "release_date": "2024-10-09",
-    "number_of_seasons": null,
-    "tmdb_url": "https://www.themoviedb.org/movie/1182047",
-    "rating": 6.9,
-    "poster_url": "https://image.tmdb.org/t/p/w342/549Hdul2BgPnZMhqFxp6npp2opr.jpg",
-    "description": "A young Donald Trump, eager to make his name as a hungry scion of a wealthy family in 1970s New York, comes under the spell of Roy Cohn, the cutthroat attorney who would help create the Donald Trump we know today. Cohn sees in Trump the perfect protégé—someone with raw ambition, a hunger for success, and a willingness to do whatever it takes to win.",
-    "directors": [
-      "Ali Abbasi"
-    ],
-    "trailer_url": "https://www.youtube.com/watch?v=xMQWuo-PgwQ"
   },
   "movie:the artifice girl": {
     "title": "The Artifice Girl",
@@ -16734,6 +17171,57 @@
     ],
     "trailer_url": "https://www.youtube.com/watch?v=vJ0Kg8UyHK0"
   },
+  "movie:the devil wears prada 2": {
+    "title": "The Devil Wears Prada 2",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:the dink": {
+    "title": "The Dink",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "movie:the end of oak street": {
+    "title": "The End of Oak Street",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:the endless": {
     "title": "The Endless",
     "rating": 6.3,
@@ -16798,6 +17286,23 @@
     "runtime_minutes": 109,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:the eternals": {
+    "title": "The Eternals",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:the fall guy": {
     "title": "The Fall Guy",
@@ -16924,6 +17429,23 @@
       "William Friedkin"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=T76K3RxJY0A"
+  },
+  "movie:the furious": {
+    "title": "The Furious",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:the game": {
     "title": "The Game",
@@ -17396,6 +17918,23 @@
       "Sarah Cooper"
     ]
   },
+  "movie:the incomer": {
+    "title": "The Incomer",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:the invitation": {
     "title": "The Invitation",
     "rating": 6.0,
@@ -17426,6 +17965,23 @@
     "runtime_minutes": 105,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:the invite": {
+    "title": "The Invite",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:the iron claw": {
     "title": "The Iron Claw",
@@ -17885,6 +18441,23 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:the odyssey": {
+    "title": "The Odyssey",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:the others": {
     "title": "The Others",
     "media_type": "movie",
@@ -18169,6 +18742,23 @@
       "Joe Carnahan"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=yeR5bcbRPak"
+  },
+  "movie:the rivals of amziah king": {
+    "title": "The Rivals of Amziah King",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:the rule of jenny pen": {
     "title": "The Rule of Jenny Pen",
@@ -19017,6 +19607,23 @@
     "media_type": "movie",
     "number_of_seasons": null
   },
+  "movie:thunderbolts": {
+    "title": "Thunderbolts*",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "movie:titane": {
     "title": "Titane",
     "rating": 6.3,
@@ -19142,6 +19749,23 @@
     "runtime_minutes": 104,
     "media_type": "movie",
     "number_of_seasons": null
+  },
+  "movie:toy story 5": {
+    "title": "Toy Story 5",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:transformers one": {
     "title": "Transformers One",
@@ -19973,6 +20597,23 @@
       "Jon M. Chu"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=kOnQ1sexTuc"
+  },
+  "movie:wildwood": {
+    "title": "Wildwood",
+    "media_type": "movie",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "movie:wizards": {
     "title": "Wizards",
@@ -21337,6 +21978,40 @@
     ],
     "runtime_minutes": 91
   },
+  "series:04": {
+    "title": "04",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
+  "series:2263": {
+    "title": "22.63",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "series:a knight of the seven kingdoms": {
     "title": "A Knight of the Seven Kingdoms",
     "media_type": "series",
@@ -21642,6 +22317,23 @@
     "description": "Starring Aunty Donna's Mark Samual Bonanno, Broden Kelly, and Zachary Ruane, the high octane and unpredictable series follows the story of three best mates running a trendy cafe down one of Melbourne's less-than-iconic laneways.",
     "rating": 8.2
   },
+  "series:avatar seven havens": {
+    "title": "Avatar: Seven Havens",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "series:baby reindeer": {
     "title": "Baby Reindeer",
     "media_type": "series",
@@ -21936,6 +22628,23 @@
     ],
     "number_of_seasons": 8
   },
+  "series:castlevania": {
+    "title": "Castlevania",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "series:chasing the sun": {
     "title": "Chasing the Sun",
     "media_type": "series",
@@ -21957,6 +22666,23 @@
       "Rassie Erasmus"
     ],
     "number_of_seasons": 2
+  },
+  "series:clarksons farm": {
+    "title": "Clarksons Farm",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "series:common side effects": {
     "title": "Common Side Effects",
@@ -22103,6 +22829,23 @@
       "Sam Levinson"
     ],
     "trailer_url": "https://www.youtube.com/watch?v=UR4Pxgnm-GA"
+  },
+  "series:evil": {
+    "title": "Evil",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "series:fallout": {
     "title": "Fallout",
@@ -22797,38 +23540,6 @@
     "overview": "The Mr. Men Show was an animated television series based on the original Mr. Men and Little Miss books created in the 1970s, 80s and 90s by British author Roger Hargreaves and his son Adam Hargreaves. Adapted from the published source material into a television variety program, The Mr. Men Show features comedy sketches, pantomimes, dance numbers and music videos. The TV series is directed by Mark Risley and executive produced by Eryk Casemiro & Kate Boutilier. Original score and songs are composed by Jared Faber. Season 1 first aired on February 4, 2008 and Season 2 aired on September 8, 2009.",
     "rating": 5.5
   },
-  "series:mythic quest": {
-    "title": "Mythic Quest",
-    "media_type": "series",
-    "overview": "Meet the team behind the biggest multiplayer video game of all time. But in a workplace focused on building worlds, molding heroes, and creating legends, the most hard-fought battles don’t occur in the game—they happen in the office.",
-    "genres": [
-      "Comedy"
-    ],
-    "tmdb_id": 94951,
-    "runtime_minutes": null,
-    "actors": [
-      "Rob Mac",
-      "Charlotte Nicdao",
-      "Ashly Burch",
-      "Naomi Ekperigin",
-      "Jessie Ennis",
-      "Imani Hakim",
-      "Danny Pudi",
-      "David Hornsby"
-    ],
-    "release_date": "2020-02-07",
-    "number_of_seasons": 4,
-    "tmdb_url": "https://www.themoviedb.org/tv/94951",
-    "rating": 7.3,
-    "poster_url": "https://image.tmdb.org/t/p/w342/7QxQlpqEjx3vRpEtuh6Y0R6eY9O.jpg",
-    "description": "Meet the team behind the biggest multiplayer video game of all time. But in a workplace focused on building worlds, molding heroes, and creating legends, the most hard-fought battles don’t occur in the game—they happen in the office.",
-    "directors": [
-      "Rob Mac",
-      "Charlie Day",
-      "Megan Ganz"
-    ],
-    "trailer_url": "https://www.youtube.com/watch?v=UE-X3-lsalo"
-  },
   "series:oktoberfest beer and blood": {
     "title": "Oktoberfest: Beer and Blood",
     "media_type": "series",
@@ -23013,27 +23724,22 @@
     ],
     "number_of_seasons": 2
   },
-  "series:planet earth ii": {
-    "title": "Planet Earth II",
+  "series:planet earth ii 02": {
+    "title": "Planet Earth II  02",
     "media_type": "series",
-    "overview": "David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.",
-    "genres": [
-      "Documentary",
-      "Family"
-    ],
-    "tmdb_id": 68595,
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
     "runtime_minutes": null,
-    "actors": [
-      "David Attenborough"
-    ],
-    "release_date": "2016-11-06",
-    "number_of_seasons": 1,
-    "tmdb_url": "https://www.themoviedb.org/tv/68595",
-    "rating": 8.6,
-    "poster_url": "https://image.tmdb.org/t/p/w342/5maYKYzWpE68ycxGh1luu4P2LOS.jpg",
-    "description": "David Attenborough presents a documentary series exploring how animals meet the challenges of surviving in the most iconic habitats on earth.",
-    "directors": [],
-    "trailer_url": "https://www.youtube.com/watch?v=kAphgHhlteM"
+    "genres": null
   },
   "series:planet earth iii": {
     "title": "Planet Earth III",
@@ -23083,28 +23789,22 @@
     ],
     "number_of_seasons": 1
   },
-  "series:prehistoric planet": {
-    "title": "Prehistoric Planet",
+  "series:prehistoric planet 02": {
+    "title": "Prehistoric Planet ,02",
     "media_type": "series",
-    "overview": "Experience the wonders of our world like never before in this epic series from Jon Favreau and the producers of Planet Earth. Travel back 66 million years to when majestic dinosaurs and extraordinary creatures roamed the lands, seas, and skies.",
-    "genres": [
-      "Documentary"
-    ],
-    "tmdb_id": 95171,
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
     "runtime_minutes": null,
-    "actors": [
-      "Tom Hiddleston"
-    ],
-    "release_date": "2022-05-23",
-    "number_of_seasons": 3,
-    "tmdb_url": "https://www.themoviedb.org/tv/95171",
-    "rating": 8.3,
-    "poster_url": "https://image.tmdb.org/t/p/w342/9yjWMmYWQSDY2eelHECQcwSL816.jpg",
-    "description": "Experience the wonders of our world like never before in this epic series from Jon Favreau and the producers of Planet Earth. Travel back 66 million years to when majestic dinosaurs and extraordinary creatures roamed the lands, seas, and skies.",
-    "directors": [
-      "Mike Gunton"
-    ],
-    "trailer_url": "https://www.youtube.com/watch?v=w7EvnNIV8_0"
+    "genres": null
   },
   "series:presumed innocent": {
     "title": "Presumed Innocent",
@@ -23519,37 +24219,22 @@
     ],
     "number_of_seasons": 3
   },
-  "series:snowpiercer": {
-    "title": "Snowpiercer",
+  "series:snowpiercer 04": {
+    "title": "Snowpiercer ,04",
     "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
     "runtime_minutes": null,
-    "trailer_url": "https://www.youtube.com/watch?v=1e8m6e4BX7g",
-    "number_of_seasons": 4,
-    "actors": [
-      "Daveed Diggs",
-      "Mickey Sumner",
-      "Alison Wright",
-      "Iddo Goldberg",
-      "Roberto Urbina",
-      "Rowan Blanchard",
-      "Katie McGuinness",
-      "Sam Otto"
-    ],
-    "directors": [
-      "Graeme Manson",
-      "Josh Friedman"
-    ],
-    "release_date": "2020-05-17",
-    "tmdb_id": 79680,
-    "description": "More than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
-    "tmdb_url": "https://www.themoviedb.org/tv/79680",
-    "poster_url": "https://image.tmdb.org/t/p/w342/exKzfiKzMdQBHrdd7zNmKauJkbg.jpg",
-    "genres": [
-      "Sci-Fi & Fantasy",
-      "Drama"
-    ],
-    "overview": "More than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
-    "rating": 7.4
+    "genres": null
   },
   "series:south park": {
     "title": "South Park",
@@ -24041,6 +24726,23 @@
     ],
     "number_of_seasons": 1
   },
+  "series:the gentleman 02": {
+    "title": "The Gentleman ,02",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
+  },
   "series:the inspired unemployed impractical jokers": {
     "title": "The Inspired Unemployed Impractical Jokers",
     "media_type": "series",
@@ -24488,35 +25190,22 @@
     "overview": "After North Jackson High's long-time principal steps down to tend to his ailing wife, Neal Gamby and Lee Russell, the school's vice principals, are forced to put their mutual disdain aside and form an unholy alliance in order to sabotage the newly appointed principal, Dr. Belinda Brown.",
     "rating": 7.2
   },
-  "series:vikings valhalla": {
-    "title": "Vikings: Valhalla",
+  "series:vikings valhalla 03": {
+    "title": "Vikings: Valhalla 03",
     "media_type": "series",
-    "overview": "In this sequel to \"Vikings,\" a hundred years have passed and a new generation of legendary heroes arises to forge its own destiny — and make history.",
-    "genres": [
-      "Action & Adventure",
-      "Drama",
-      "War & Politics"
-    ],
-    "tmdb_id": 116135,
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
     "runtime_minutes": null,
-    "actors": [
-      "Sam Corlett",
-      "Frida Gustavsson",
-      "Leo Suter",
-      "Laura Berlin",
-      "David Oakes",
-      "Bradley Freegard"
-    ],
-    "release_date": "2022-02-25",
-    "number_of_seasons": 3,
-    "tmdb_url": "https://www.themoviedb.org/tv/116135",
-    "rating": 7.6,
-    "poster_url": "https://image.tmdb.org/t/p/w342/uCr7Ov7Rpzx0c0EPqbPcoEruTYl.jpg",
-    "description": "In this sequel to \"Vikings,\" a hundred years have passed and a new generation of legendary heroes arises to forge its own destiny — and make history.",
-    "directors": [
-      "Jeb Stuart"
-    ],
-    "trailer_url": "https://www.youtube.com/watch?v=Yi4YnwFT7Gk"
+    "genres": null
   },
   "series:wednesday": {
     "title": "Wednesday",
@@ -24551,33 +25240,39 @@
     ],
     "number_of_seasons": 3
   },
-  "series:what we do in the shadows": {
-    "title": "What We Do In The Shadows",
+  "series:what we do in the shadows 03040506": {
+    "title": "What We Do In The Shadows 03,04,05,06",
     "media_type": "series",
-    "overview": "A documentary-style look into the daily (or rather, nightly) lives of a group of vampires in Staten Island who have “lived” together for hundreds and hundreds of years.",
-    "genres": [
-      "Comedy",
-      "Sci-Fi & Fantasy"
-    ],
-    "tmdb_id": 83631,
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
     "runtime_minutes": null,
-    "actors": [
-      "Kayvan Novak",
-      "Matt Berry",
-      "Natasia Demetriou",
-      "Harvey Guillén",
-      "Mark Proksch"
-    ],
-    "release_date": "2019-03-27",
-    "number_of_seasons": 6,
-    "tmdb_url": "https://www.themoviedb.org/tv/83631",
-    "rating": 8.0,
-    "poster_url": "https://image.tmdb.org/t/p/w342/wa3ZQE9kLnqwN3vQ0NNjg1NPsCa.jpg",
-    "description": "A documentary-style look into the daily (or rather, nightly) lives of a group of vampires in Staten Island who have “lived” together for hundreds and hundreds of years.",
-    "directors": [
-      "Jemaine Clement"
-    ],
-    "trailer_url": "https://www.youtube.com/watch?v=3_jTVuExbAo"
+    "genres": null
+  },
+  "series:widows bay": {
+    "title": "Widows Bay",
+    "media_type": "series",
+    "release_date": null,
+    "actors": null,
+    "tmdb_id": null,
+    "number_of_seasons": null,
+    "trailer_url": null,
+    "directors": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_url": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "genres": null
   },
   "series:world war ii from the frontlines": {
     "title": "World War II: From the Frontlines",

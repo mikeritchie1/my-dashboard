@@ -1,14 +1,99 @@
 [
   {
-    "title": "CG Ice Rink",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595691483",
-    "image": "https://content.webtickets.co.za/CapegateShoppingCentre/panel_CG_Ice Rink_Social_Webtickets Image_20260518_113654.png",
-    "date_text": "From 29 Jun 2026 10:00",
-    "venue": "Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape",
-    "price": "R70",
+    "title": "CHICAGO THE MUSICAL",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599973808",
+    "image": "https://content.webtickets.co.za/TGSA/panel_Chicago_20260730_150346.jpg",
+    "date_text": "From 29 Oct 2026 19:00",
+    "venue": "The George Arts Theatre, 125 York Street, George Central",
+    "price": "R170 - R200",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
+      "music",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "The George Arts Theatre, 125 York Street, George Central",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "The Galileo Open Air Cinema 2026/2027",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1600185548",
+    "image": "https://content.webtickets.co.za/galileo/panel_The-Notebook-17-webtix_20260112_114318.jpg",
+    "date_text": "15 OCT 2026 – 15 MAY 2027",
+    "venue": "",
+    "price": "From R155",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Into The Woods",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1601853362",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_ITW 1_20260827_120247.png",
+    "date_text": "From 29 Oct 2026 19:30",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R250 - R400",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "Theatre On The Bay, Camps Bay",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "DRACULA",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599032944",
+    "image": "https://content.webtickets.co.za/artscape/panel_Webticket Image Dracula 2026_20260715_153129.jpg",
+    "date_text": "From 29 Oct 2026 19:30",
+    "venue": "Artscape, Theatre, Cape Town",
+    "price": "R250 - R500",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "Artscape, Theatre, Cape Town",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Zeitz MOCAA presents Pan-African Film Caravan,  screening Sambizanga by Sarah Maldoror",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1603673187",
+    "image": "https://content.webtickets.co.za/zeitzmocaa/panel_Webtickets_Oct screening_20260928_101021.png",
+    "date_text": "30 Oct 2026 18:00",
+    "venue": "",
+    "price": "R30",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "CG Fit Club at CapeGate Shopping Centre",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605003740",
+    "image": "https://content.webtickets.co.za/CapegateShoppingCentre/panel_CG_Fit_Club_Social_Webtickets Image_20260901_162247.jpg",
+    "date_text": "31 Oct 2026 10:00",
+    "venue": "Capegate Shopping Centre, Ent 6 Undercover Parking, Cape Town, Western Cape",
+    "price": "R60",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "club",
       "outdoors"
     ],
     "missing_location": true,
@@ -17,51 +102,65 @@
     "place_key": ""
   },
   {
-    "title": "Zeitz MOCAA Children's Winter Holiday Programme - One Press Wonders",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597592889",
-    "image": "https://content.webtickets.co.za/zeitzmocaa/panel_RMZ_4977_20260619_152411.jpg",
-    "date_text": "From 29 Jun 2026 10:00",
-    "venue": "Zeitz Museum of Contemporary Art Africa, Cape Town",
-    "price": "R150",
+    "title": "Groove & Toast Sundowner",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604864570",
+    "image": "https://content.webtickets.co.za/backyardconcepts/panel_IMG_4509_20261006_122407.jpeg",
+    "date_text": "31 Oct 2026 12:00",
+    "venue": "Radisson Red Hotel, V&A Waterfront,No. 6, Silo, Silo Square, Victoria & Alfred Waterfront, Cape Town",
+    "price": "R150-R200 (excl service fee)",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "Radisson Red Hotel, V&A Waterfront,No. 6, Silo, Silo Square, Victoria & Alfred Waterfront, Cape Town",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Stellenbosch FC vs Chippa United FC",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1600764587",
+    "image": "https://content.webtickets.co.za/stellenboschfc/panel_STELLENBOSCH FC VS CHIPPA UNITED_20261019_115000.png",
+    "date_text": "From 31 Oct 2026 18:00",
+    "venue": "Danie Craven Stadium, Stellenbosch, Western Cape",
+    "price": "R40",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "art",
-      "family"
+      "club"
     ],
     "missing_location": false,
-    "location_key": "Zeitz Museum of Contemporary Art Africa, Cape Town",
+    "location_key": "Danie Craven Stadium, Stellenbosch, Western Cape",
     "missing_place": true,
     "place_key": ""
   },
   {
-    "title": "Puss in Boots",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1591358060",
-    "image": "https://content.webtickets.co.za/baxtertheatre/panel_Webtickets PIB_20260325_111953.jpg",
-    "date_text": "26 June - 18 July 2026",
-    "venue": "The Pam Golding Theatre at The Baxter",
-    "price": "R250 - R300",
+    "title": "Kfm Halloween Pirate Party on the Jolly Roger",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604989462",
+    "image": "https://content.webtickets.co.za/YacoobYachts/panel_KFM_20261007_135043.jpg",
+    "date_text": "31 Oct 2026 18:30",
+    "venue": "Jolly Roger Pirate Boat, Quay 5, V&A Waterfront",
+    "price": "R350",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "theatre"
+      "club",
+      "art"
     ],
     "missing_location": true,
-    "location_key": "The Pam Golding Theatre at The Baxter",
+    "location_key": "Jolly Roger Pirate Boat, Quay 5, V&A Waterfront",
     "missing_place": true,
     "place_key": ""
   },
   {
-    "title": "Abdullah Ibrahim Memorial Concert",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597814479",
-    "image": "https://content.webtickets.co.za/artscape/panel_AbdulIah Ibrahim Memorial Concert Poster_page-0001_20260624_171317.jpg",
-    "date_text": "29 Jun 2026 19:00",
+    "title": "UMNGQUNGQO ORCHESTRAL EXPERIENCE LIVE AT ARTSCAPE",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1601338351",
+    "image": "https://content.webtickets.co.za/artscape/panel_Umngqongqo- Dumza MAswana_20260901_113357.jpg",
+    "date_text": "31 Oct 2026 19:00",
     "venue": "Artscape, Opera House, Cape Town",
-    "price": "Free",
+    "price": "R250 - R400",
     "source": "Webtickets",
     "region": "Western Cape",
     "categories": [
-      "music",
       "dj",
       "art",
       "theatre"
@@ -72,17 +171,19 @@
     "place_key": ""
   },
   {
-    "title": "Cape Town Abseil",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1531472391",
-    "image": "https://content.webtickets.co.za/WildHorizons/panel_DSC06292_20230725_105701.jpg",
-    "date_text": "From 29 Jun 2026",
-    "venue": "Table Mountain",
-    "price": "R995 - R1100",
+    "title": "Killarney Motor Show 2026",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595283281",
+    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_KMS 100_20261012_141312.jpg",
+    "date_text": "01 Nov 2026 10:00",
+    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
+    "price": "R50 - R1500",
     "source": "Webtickets",
     "region": "Western Cape",
-    "categories": [],
-    "missing_location": false,
-    "location_key": "Table Mountain",
+    "categories": [
+      "sports"
+    ],
+    "missing_location": true,
+    "location_key": "Killarney International Raceway, 6 Potsdam Road, Table View",
     "missing_place": true,
     "place_key": ""
   }

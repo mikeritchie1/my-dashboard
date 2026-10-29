@@ -3,53 +3,65 @@
   "currently_watching": {
     "movies": [
       {
-        "title": "The Sheep Detectives",
+        "title": "Resident Evil",
         "opinion": ""
       },
       {
-        "title": "Tuner",
+        "title": "Wildwood",
         "opinion": ""
       },
       {
-        "title": "I Love Boosters",
+        "title": "Tenzing",
         "opinion": ""
       },
       {
-        "title": "Carolina Caroline",
+        "title": "Coyote vs Acme",
         "opinion": ""
       },
       {
-        "title": "Backrooms",
+        "title": "Nimrods",
         "opinion": ""
       },
       {
-        "title": "Hokum",
+        "title": "Jackass: Best and Last",
+        "opinion": ""
+      },
+      {
+        "title": "The Dink",
+        "opinion": ""
+      },
+      {
+        "title": "Scary Movie",
         "opinion": ""
       }
     ],
     "series": [
       {
-        "title": "Rick and Morty",
+        "title": "Widows Bay",
         "opinion": ""
       },
       {
-        "title": "Spider-Noir",
+        "title": "Evil",
         "opinion": ""
       },
       {
-        "title": "The Bear",
+        "title": "The Gentleman ,02",
+        "opinion": ""
+      },
+      {
+        "title": "It’s Always Sunny In Philadelphia",
+        "opinion": ""
+      },
+      {
+        "title": "Family Guy",
+        "opinion": ""
+      },
+      {
+        "title": "South Park",
         "opinion": ""
       }
     ],
     "anime_movies": [
-      {
-        "title": "One Piece: Baron Omatsuri and the Secret Island",
-        "opinion": ""
-      },
-      {
-        "title": "One Piece: Strong World",
-        "opinion": ""
-      },
       {
         "title": "One Piece: Z",
         "opinion": ""
@@ -69,6 +81,18 @@
     ],
     "anime_series": [
       {
+        "title": "Dragon Ball Super Beerus",
+        "opinion": ""
+      },
+      {
+        "title": "Cyberpunk: Edgerunners 02",
+        "opinion": ""
+      },
+      {
+        "title": "Bleach",
+        "opinion": ""
+      },
+      {
         "title": "One Piece",
         "opinion": ""
       }
@@ -76,6 +100,26 @@
   },
   "backlog": {
     "movies": [
+      {
+        "title": "The Rivals of Amziah King",
+        "opinion": ""
+      },
+      {
+        "title": "The End of Oak Street",
+        "opinion": ""
+      },
+      {
+        "title": "Runner",
+        "opinion": ""
+      },
+      {
+        "title": "The Incomer",
+        "opinion": ""
+      },
+      {
+        "title": "Balls of Fury",
+        "opinion": ""
+      },
       {
         "title": "The Adventures of Tintin",
         "opinion": ""
@@ -89,19 +133,11 @@
         "opinion": ""
       },
       {
-        "title": "Bottoms",
-        "opinion": ""
-      },
-      {
         "title": "Die, My Love",
         "opinion": ""
       },
       {
         "title": "Ballerina",
-        "opinion": ""
-      },
-      {
-        "title": "A Minecraft Movie",
         "opinion": ""
       },
       {
@@ -197,10 +233,6 @@
         "opinion": ""
       },
       {
-        "title": "The Girl with the Dragon Tattoo",
-        "opinion": ""
-      },
-      {
         "title": "The Brutalist",
         "opinion": ""
       },
@@ -277,10 +309,6 @@
         "opinion": ""
       },
       {
-        "title": "SLC! Punk",
-        "opinion": ""
-      },
-      {
         "title": "Cheech and Chong",
         "opinion": ""
       },
@@ -306,10 +334,6 @@
       },
       {
         "title": "Don’t Move",
-        "opinion": ""
-      },
-      {
-        "title": "The Apprentice",
         "opinion": ""
       },
       {
@@ -537,11 +561,11 @@
         "opinion": ""
       },
       {
-        "title": "La Haine",
+        "title": "The Worst Person in the World",
         "opinion": ""
       },
       {
-        "title": "The Worst Person in the World",
+        "title": "La Haine",
         "opinion": ""
       },
       {
@@ -675,6 +699,26 @@
     ],
     "series": [
       {
+        "title": "Avatar: Seven Havens",
+        "opinion": ""
+      },
+      {
+        "title": "Futurama",
+        "opinion": ""
+      },
+      {
+        "title": "Spider-Noir",
+        "opinion": ""
+      },
+      {
+        "title": "22.63",
+        "opinion": ""
+      },
+      {
+        "title": "Clarksons Farm",
+        "opinion": ""
+      },
+      {
         "title": "Mr Inbetween",
         "opinion": ""
       },
@@ -691,7 +735,7 @@
         "opinion": ""
       },
       {
-        "title": "Snowpiercer",
+        "title": "Snowpiercer ,04",
         "opinion": ""
       },
       {
@@ -743,11 +787,11 @@
         "opinion": ""
       },
       {
-        "title": "Prehistoric Planet",
+        "title": "Prehistoric Planet ,02",
         "opinion": ""
       },
       {
-        "title": "Planet Earth II",
+        "title": "Planet Earth II  02",
         "opinion": ""
       },
       {
@@ -811,15 +855,15 @@
         "opinion": ""
       },
       {
-        "title": "Vikings: Valhalla",
+        "title": "Vikings: Valhalla 03",
         "opinion": ""
       },
       {
-        "title": "Mythic Quest",
+        "title": "04",
         "opinion": ""
       },
       {
-        "title": "What We Do In The Shadows",
+        "title": "What We Do In The Shadows 03,04,05,06",
         "opinion": ""
       },
       {
@@ -1045,7 +1089,7 @@
         },
         {
           "type": "movie",
-          "title": "Nirvanna The Band The Show The Movie",
+          "title": "Nirvana The Band The Show The Movie",
           "opinion": "Liked"
         },
         {
@@ -1159,13 +1203,188 @@
           "opinion": ""
         },
         {
-          "type": "series",
-          "title": "Stranger Things",
+          "type": "movie",
+          "title": "The Sheep Detectives",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "A Minecraft Movie",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Masters of the Universe",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "The Devil Wears Prada 2",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Bottoms",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "I Love Boosters",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Carolina Caroline",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "SLC! Punk",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "The Furious",
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Tuner",
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Toy Story 5",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "The Girl with the Dragon Tattoo",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Fantastic 4",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Captain America: The Winter Soldier",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Avengers: Age of Ultron",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Captain America: Civil War",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Avengers: Infinity War",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Captain Marvel",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Ant-Man and the Wasp",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Captain America: The First Avenger",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Shang-Chi and the Legend of the Ten  Rings",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "The Eternals",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Thunderbolts*",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Hokum",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Apex",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Michael",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Disclosure Day",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Insomnia",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Following",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Backrooms",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Evil Dead Burn",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Avatar Aang: The Last Airbender",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "The Odyssey",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "The Invite",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "In Bruges",
+          "opinion": ""
+        },
+        {
+          "type": "movie",
+          "title": "Buddy",
           "opinion": ""
         },
         {
           "type": "series",
-          "title": "South Park",
+          "title": "Stranger Things",
           "opinion": ""
         },
         {
@@ -1251,6 +1470,36 @@
         {
           "type": "series",
           "title": "Gravity Falls",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "The Bear",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "Castlevania",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "Tires",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "Silo",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "Rick and Morty",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "Ted Lasso",
           "opinion": ""
         }
       ]
@@ -1435,11 +1684,6 @@
         },
         {
           "type": "series",
-          "title": "Silo",
-          "opinion": ""
-        },
-        {
-          "type": "series",
           "title": "Severance",
           "opinion": ""
         },
@@ -1490,11 +1734,6 @@
         },
         {
           "type": "series",
-          "title": "Tires",
-          "opinion": ""
-        },
-        {
-          "type": "series",
           "title": "The Inspired Unemployed Impractical Jokers",
           "opinion": ""
         },
@@ -1520,22 +1759,12 @@
         },
         {
           "type": "series",
-          "title": "Family Guy",
-          "opinion": ""
-        },
-        {
-          "type": "series",
           "title": "Stick",
           "opinion": ""
         },
         {
           "type": "series",
           "title": "Secret Level",
-          "opinion": ""
-        },
-        {
-          "type": "series",
-          "title": "It’s Always Sunny In Philadelphia",
           "opinion": ""
         },
         {
@@ -2720,11 +2949,6 @@
         },
         {
           "type": "series",
-          "title": "Ted Lasso",
-          "opinion": ""
-        },
-        {
-          "type": "series",
           "title": "Barry",
           "opinion": ""
         },
@@ -3039,6 +3263,16 @@
           "opinion": ""
         },
         {
+          "type": "anime_movie",
+          "title": "One Piece: Baron Omatsuri and the Secret Island",
+          "opinion": ""
+        },
+        {
+          "type": "anime_movie",
+          "title": "One Piece: Strong World",
+          "opinion": ""
+        },
+        {
           "type": "anime_series",
           "title": "Dragon Ball Z",
           "opinion": ""
@@ -3091,11 +3325,6 @@
         {
           "type": "anime_series",
           "title": "Cowboy Bebop",
-          "opinion": ""
-        },
-        {
-          "type": "anime_series",
-          "title": "Cyberpunk: Edgerunners",
           "opinion": ""
         },
         {

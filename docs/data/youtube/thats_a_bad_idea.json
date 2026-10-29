@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-07-07T07:43:57.402542Z",
+  "generated_at": "2026-10-29T11:02:41.606239Z",
   "channel_name": "That's A Bad Idea",
   "channel_id": "UCNwxZoU9bBq-UI3viJZ84FQ",
   "channel_url": "https://www.youtube.com/@thats_a_bad_idea",
-  "items_count": 70,
+  "items_count": 71,
   "items": [
+    {
+      "id": "yt-k0YYzEXSmE0",
+      "video_id": "k0YYzEXSmE0",
+      "title": "MAMA BEAR (Directed by Curry Barker)",
+      "url": "https://www.youtube.com/watch?v=k0YYzEXSmE0",
+      "published_at": "2026-10-26T21:06:17+00:00",
+      "updated_at": "2026-10-27T07:02:08+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/k0YYzEXSmE0/hqdefault.jpg"
+    },
     {
       "id": "yt-WBq6I3bHSZs",
       "video_id": "WBq6I3bHSZs",
