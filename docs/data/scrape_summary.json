@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
+      "runs": 2,
       "item_count": 107,
       "added": {},
       "removed": {},
@@ -16,12 +16,15 @@
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/paradise-waterfall-best-selection-vol-1": "Paradise Waterfall [Best Selection Vol.1]"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/paradise-waterfall-best-selection-vol-1": "Paradise Waterfall [Best Selection Vol.1]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-sp-eb02-052-adventure-on-kamis-island-foil": "Enel (SP) (EB02-052) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks": "Uta [Starter Deck: Red Shanks]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -29,7 +32,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -37,10 +40,12 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
-      "item_count": 40,
+      "runs": 2,
+      "item_count": 39,
       "added": {},
-      "removed": {},
+      "removed": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixhote-doflamingo-op14-069-alternate-art-the-azure-seas-seven": "Donquixote Doflamingo (OP14-069) (Alternate Art) [The Azure Sea's Seven]"
+      },
       "updated": {
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-starter-deck-worst-generation": "Trafalgar Law [Starter Deck: Worst Generation]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
@@ -64,7 +69,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -72,7 +77,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 188,
       "added": {},
       "removed": {},
