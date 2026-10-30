@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-10-29T11:02:41.379832Z",
+  "generated_at": "2026-10-30T10:58:17.632736Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 99,
+  "items_count": 100,
   "items": [
+    {
+      "id": "yt-Ya4pXPmPlNo",
+      "video_id": "Ya4pXPmPlNo",
+      "title": "Drinks on Toby",
+      "url": "https://www.youtube.com/watch?v=Ya4pXPmPlNo",
+      "published_at": "2026-10-29T23:27:09+00:00",
+      "updated_at": "2026-10-30T07:23:33+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ya4pXPmPlNo/hqdefault.jpg"
+    },
     {
       "id": "yt-cZ17k3eD53Q",
       "video_id": "cZ17k3eD53Q",

@@ -49,10 +49,6 @@
         "opinion": ""
       },
       {
-        "title": "It’s Always Sunny In Philadelphia",
-        "opinion": ""
-      },
-      {
         "title": "Family Guy",
         "opinion": ""
       },
@@ -1500,6 +1496,11 @@
         {
           "type": "series",
           "title": "Ted Lasso",
+          "opinion": ""
+        },
+        {
+          "type": "series",
+          "title": "It’s Always Sunny In Philadelphia",
           "opinion": ""
         }
       ]

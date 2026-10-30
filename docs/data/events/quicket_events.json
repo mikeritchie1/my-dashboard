@@ -1,375 +1,40 @@
 [
   {
-    "title": "MARTYRS | Exclusive Industry Premiere at FAME Week Africa",
-    "start": "2026-10-29T14:00:00+02:00",
-    "end": "2026-10-29T15:30:00+02:00",
-    "venue": "Ster-Kinekor 9 V&A",
+    "title": "ARC X YSL Masterclass Roadshow_ARC Canal Walk 30th October 2026",
+    "start": "2026-10-30T17:00:00+02:00",
+    "end": "2026-10-30T18:30:00+02:00",
+    "venue": "ARC Canal Walk",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "Dock Road, , Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
+    "address": "1 Century Boulevard, Century City, Milnerton, Shop 051, 7446, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/1008242_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/404190-martyrs-exclusive-industry-premiere-at-fame-week-africa/",
-    "categories": [
-      "art",
-      "premium"
-    ],
-    "location_key": "Ster-Kinekor 9 V&A",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Suits & Sneakers presents: \"The Architecture of Change\" with John Sanei (Cape Town edition)",
-    "start": "2026-10-29T17:00:00+02:00",
-    "end": "2026-10-29T20:00:00+02:00",
-    "venue": "The Tryst Woodstock",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "224 Sir Lowry Road, Woodstock, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0994927_247_247.png",
-    "url": "https://www.quicket.co.za/events/396071-suits-sneakers-presents-the-architecture-of-change-with-john-sanei-cape-town-ed/",
+    "image": "https://images.quicket.co.za/1002746_247_247.png",
+    "url": "https://www.quicket.co.za/events/402291-arc-x-ysl-masterclass-roadshowarc-canal-walk-30th-october-2026/",
     "categories": [],
-    "location_key": "The Tryst Woodstock",
+    "location_key": "ARC Canal Walk",
     "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
   {
-    "title": "CAROLINE'S WHITE WINE & CAP CLASSIQUE REVIEW 2026",
-    "start": "2026-10-29T17:00:00+02:00",
-    "end": "2026-10-29T20:30:00+02:00",
-    "venue": "DHL STADIUM",
+    "title": "Halloween Haunted House",
+    "start": "2026-10-30T17:00:00+02:00",
+    "end": "2026-10-30T20:00:00+02:00",
+    "venue": "Noordhoek Riding Club",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "Fritz Sonnenberg Road , Green Point, 8005, Cape Town, Western Cape, South Africa",
+    "address": "Katzenellenbogen Street, Noordhoek, 7979, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/0993931_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/399474-carolines-white-wine-cap-classique-review-2026/",
+    "image": "https://images.quicket.co.za/0999588_247_247.png",
+    "url": "https://www.quicket.co.za/events/401340-halloween-haunted-house/",
     "categories": [
-      "bar"
+      "dj",
+      "club"
     ],
-    "location_key": "DHL STADIUM",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Halloween Costume SOS",
-    "start": "2026-10-29T17:00:00+02:00",
-    "end": "2026-10-29T21:00:00+02:00",
-    "venue": "Fashion Revolution South Africa",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "242 Lower Main Road, Observatory, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1012492_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/405615-halloween-costume-sos/",
-    "categories": [],
-    "location_key": "Fashion Revolution South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Iona at The Wine Room",
-    "start": "2026-10-29T17:30:00+02:00",
-    "end": "2026-10-29T20:00:00+02:00",
-    "venue": "The Wine Room",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Shop 4, Constantia Old Village, Constantia, Cape Town, 7806, South Africa, Alphen, 7806, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1006501_247_247.png",
-    "url": "https://www.quicket.co.za/events/403559-iona-at-the-wine-room/",
-    "categories": [
-      "bar"
-    ],
-    "location_key": "The Wine Room",
+    "location_key": "Noordhoek Riding Club",
     "missing_location": true,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Event: The Creatives - Cape Town",
-    "start": "2026-10-29T18:00:00+02:00",
-    "end": "2026-10-29T20:30:00+02:00",
-    "venue": "Workshop17 Kloof Street",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "32 Kloof Street, , Gardens, 8000, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0891571_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/364396-event-the-creatives-cape-town/",
-    "categories": [
-      "art"
-    ],
-    "location_key": "Workshop17 Kloof Street",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "A Celebration of Coldplay with Me & Mr Green",
-    "start": "2026-10-29T18:00:00+02:00",
-    "end": "2026-10-29T21:30:00+02:00",
-    "venue": "Cafe Roux",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0954317_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/386801-a-celebration-of-coldplay-with-me-mr-green/",
-    "categories": [
-      "theatre"
-    ],
-    "location_key": "Cafe Roux",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "DINNER & COMEDY WITH ALAN COMMITTIE",
-    "start": "2026-10-29T18:00:00+02:00",
-    "end": "2026-10-29T22:00:00+02:00",
-    "venue": "The Thirsty Scarecrow",
-    "locality": "Cape Town",
-    "region": "",
-    "address": "Cnr R44 & Annandale Road, Mooiberge Farm, 7603, Cape Town, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0956419_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/387510-dinner-comedy-with-alan-committie/",
-    "categories": [
-      "food",
-      "comedy",
-      "date-night"
-    ],
-    "location_key": "The Thirsty Scarecrow",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Lumi Glo x Pomegranate Beauty Masterclass",
-    "start": "2026-10-29T18:00:00+02:00",
-    "end": "2026-10-29T20:00:00+02:00",
-    "venue": "Pomegranate Beauty",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "277 Main Road, Adelphi Galleria, First Floor, Sea Point, 8005, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0998246_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/400811-lumi-glo-x-pomegranate-beauty-masterclass/",
-    "categories": [],
-    "location_key": "Pomegranate Beauty",
-    "missing_location": true,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Mental R & R",
-    "start": "2026-10-29T18:00:00+02:00",
-    "end": "2026-10-29T20:45:00+02:00",
-    "venue": "Lime Tree Cafe",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Shop 8, Sherwood Centre, Corner Children's Way and Dreyersdal Road, Bergvliet, Cape Town, 7945, South Africa, , Bergvliet, 7945, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1003746_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/402698-mental-r-r/",
-    "categories": [],
-    "location_key": "Lime Tree Cafe",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "The Dirty Skirts live at Harrington's Cocktail Lounge",
-    "start": "2026-10-29T18:00:00+02:00",
-    "end": "2026-10-29T22:00:00+02:00",
-    "venue": "Harringtons Cocktail Lounge",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "61B Harrington Street, , District Six, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1002748_247_247.png",
-    "url": "https://www.quicket.co.za/events/402260-the-dirty-skirts-live-at-harringtons-cocktail-lounge/",
-    "categories": [
-      "bar"
-    ],
-    "location_key": "Harringtons Cocktail Lounge",
-    "missing_location": false,
-    "place_key": "Harringtons Cocktail Lounge",
-    "missing_place": false,
-    "place": "Harringtons Cocktail Lounge"
-  },
-  {
-    "title": "October 2026 - Last Thursday WYN Tasting",
-    "start": "2026-10-29T18:30:00+02:00",
-    "end": "2026-10-29T20:30:00+02:00",
-    "venue": "WYN",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Drama Street 13, Lionviham, 7130, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1008371_247_247.png",
-    "url": "https://www.quicket.co.za/events/404224-october-2026-last-thursday-wyn-tasting/",
-    "categories": [
-      "food"
-    ],
-    "location_key": "WYN",
-    "missing_location": true,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Shibari Rope Jam | Chest Harness Partials Jam - Intermediate",
-    "start": "2026-10-29T18:45:00+02:00",
-    "end": "2026-10-29T21:00:00+02:00",
-    "venue": "Unit G19, Embodiment Rope Space",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Voortrekker Road 100, Salt River, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0983378_247_247.png",
-    "url": "https://www.quicket.co.za/events/396320-shibari-rope-jam-chest-harness-partials-jam-intermediate/",
-    "categories": [
-      "bar",
-      "art"
-    ],
-    "location_key": "Unit G19, Embodiment Rope Space",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Kaas Kween Comedy night at Infusion Sea Point",
-    "start": "2026-10-29T19:30:00+02:00",
-    "end": "2026-10-29T21:30:00+02:00",
-    "venue": "Infusion Social Club Sea Point",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "148 Main Road, , Sea Point, 8005, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/Q7_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/404048-kaas-kween-comedy-night-at-infusion-sea-point/",
-    "categories": [
-      "club",
-      "comedy"
-    ],
-    "location_key": "Infusion Social Club Sea Point",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Last Thursdays Comedy in a Surf Shop",
-    "start": "2026-10-29T19:30:00+02:00",
-    "end": "2026-10-29T21:30:00+02:00",
-    "venue": "Atlantic Surf Collective",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "2 Coral Road, Table View, 7441, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/Q11_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/387123-last-thursdays-comedy-in-a-surf-shop/",
-    "categories": [
-      "comedy"
-    ],
-    "location_key": "Atlantic Surf Collective",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "OBZ Books Comedy Nights - Chapter 42 by Why Did Comedy",
-    "start": "2026-10-29T20:00:00+02:00",
-    "end": "2026-10-29T22:00:00+02:00",
-    "venue": "76 Lower Main Rd",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "76 Lower Main Road, , Observatory, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1011119_247_247.png",
-    "url": "https://www.quicket.co.za/events/405100-obz-books-comedy-nights-chapter-42-by-why-did-comedy/",
-    "categories": [
-      "comedy"
-    ],
-    "location_key": "76 Lower Main Rd",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Khanyisile Ngwenya: A Tall Story",
-    "start": "2026-10-29T20:00:00+02:00",
-    "end": "2026-10-29T22:00:00+02:00",
-    "venue": "Ground Culture Cafe",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Lower Main Road 170, Observatory, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0981701_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/394608-khanyisile-ngwenya-a-tall-story/",
-    "categories": [],
-    "location_key": "Ground Culture Cafe",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "HOPE (Advance Screening)",
-    "start": "2026-10-29T20:30:00+02:00",
-    "end": "2026-10-29T23:00:00+02:00",
-    "venue": "Labia Theatre",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "68 Orange St, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0997719_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/400378-hope-advance-screening/",
-    "categories": [
-      "theatre"
-    ],
-    "location_key": "Labia Theatre",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Open Practice Yoga Fridays",
-    "start": "2026-10-30T08:00:00+02:00",
-    "end": "2026-10-30T09:00:00+02:00",
-    "venue": "Western Province Bridge Centre",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Sea Point, Cape Town, 8005, South Africa, , Sea Point, 8005, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1010589_247_247.png",
-    "url": "https://www.quicket.co.za/events/404997-open-practice-yoga-fridays/",
-    "categories": [],
-    "location_key": "Western Province Bridge Centre",
-    "missing_location": false,
     "place_key": "",
     "missing_place": true
   },
@@ -394,6 +59,86 @@
     "missing_place": true
   },
   {
+    "title": "40 Fingers for 40 Years!",
+    "start": "2026-10-30T18:00:00+02:00",
+    "end": "2026-10-30T19:30:00+02:00",
+    "venue": "Hugo Lambrechts Music Centre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Picton Street 20, Parow, 7500, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1000571_247_247.png",
+    "url": "https://www.quicket.co.za/events/401623-40-fingers-for-40-years/",
+    "categories": [
+      "music"
+    ],
+    "location_key": "Hugo Lambrechts Music Centre",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "An Exclusive Makeup Masterclass: Woolworths x Dolce&Gabbana",
+    "start": "2026-10-30T18:00:00+02:00",
+    "end": "2026-10-30T20:00:00+02:00",
+    "venue": "Woolworths V&A Waterfront",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "V&A Waterfront, Breakwater Boulevard, Victoria & Alfred Waterfront, Cape Town, 8001, South Africa, , Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0998556_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/400564-an-exclusive-makeup-masterclass-woolworths-x-dolcegabbana/",
+    "categories": [
+      "premium"
+    ],
+    "location_key": "Woolworths V&A Waterfront",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Bat Night Hike on Intaka Island",
+    "start": "2026-10-30T18:30:00+02:00",
+    "end": "2026-10-30T21:00:00+02:00",
+    "venue": "Intaka Island",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "2 Park Lane, Grand Central, Century City, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0990899_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/397817-bat-night-hike-on-intaka-island/",
+    "categories": [
+      "outdoors"
+    ],
+    "location_key": "Intaka Island",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Avalon Estate Bingo - October 2026",
+    "start": "2026-10-30T18:30:00+02:00",
+    "end": "2026-10-30T22:00:00+02:00",
+    "venue": "Avalon Estate Lifestyle Centre",
+    "locality": "Cape Town",
+    "region": "Wes-Kaap",
+    "address": "Narvik Street , 7569, Cape Town, Wes-Kaap, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1010413_247_247.png",
+    "url": "https://www.quicket.co.za/events/404915-avalon-estate-bingo-october-2026/",
+    "categories": [
+      "festival"
+    ],
+    "location_key": "Avalon Estate Lifestyle Centre",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "Bloom & Boogie Dance",
     "start": "2026-10-30T19:00:00+02:00",
     "end": "2026-10-31T00:00:00+02:00",
@@ -406,7 +151,65 @@
     "image": "https://images.quicket.co.za/0969353_247_247.png",
     "url": "https://www.quicket.co.za/events/391650-bloom-boogie-dance/",
     "categories": [],
-    "location_key": "Nota Bene Learning Centre (PTY) Ltd",
+    "location_key": "Skool Street, , Kuils River, 7580, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Monster Ball",
+    "start": "2026-10-30T19:00:00+02:00",
+    "end": "2026-10-30T21:00:00+02:00",
+    "venue": "Woodstock Brewery",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "252 Albert Road, , Woodstock, 7925, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0999754_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/401400-monster-ball/",
+    "categories": [
+      "bar"
+    ],
+    "location_key": "Woodstock Brewery",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Ndilisa Goba presents The Legendary Voices Live Concert",
+    "start": "2026-10-30T19:00:00+02:00",
+    "end": "2026-10-30T21:00:00+02:00",
+    "venue": "8 Erin Rd",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "8 Erin Road, , Rondebosch, 7700, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0980972_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/394990-ndilisa-goba-presents-the-legendary-voices-live-concert/",
+    "categories": [
+      "music"
+    ],
+    "location_key": "8 Erin Rd",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Vrou Ens 1.2 in Kaapstad",
+    "start": "2026-10-30T19:00:00+02:00",
+    "end": "2026-10-30T21:00:00+02:00",
+    "venue": "Bofred Feature Furniture",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "99 Harrington Street, , District Six, 7925, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1000565_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/393918-vrou-ens-12-in-kaapstad/",
+    "categories": [],
+    "location_key": "Bofred Feature Furniture",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -427,6 +230,64 @@
       "club"
     ],
     "location_key": "Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "HELEN OF TROYEVILLE",
+    "start": "2026-10-30T20:00:00+02:00",
+    "end": "2026-10-30T20:45:00+02:00",
+    "venue": "Maddi's Cafe Brackenfell",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "28 John Gainsford Street, , Springbokpark, 7560, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1000877_247_247.png",
+    "url": "https://www.quicket.co.za/events/396845-helen-of-troyeville/",
+    "categories": [],
+    "location_key": "Maddi's Cafe Brackenfell",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Chuma Bentele & Jaryd Pillay Host Grounded Comedy Nights",
+    "start": "2026-10-30T20:00:00+02:00",
+    "end": "2026-10-30T22:00:00+02:00",
+    "venue": "Ground Culture Cafe",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Lower Main Road 170, Observatory, 7925, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1008478_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/404260-chuma-bentele-jaryd-pillay-host-grounded-comedy-nights/",
+    "categories": [
+      "comedy"
+    ],
+    "location_key": "Ground Culture Cafe",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Bruce Basson Presents: B-sQuAreD",
+    "start": "2026-10-30T20:00:00+02:00",
+    "end": "2026-10-30T22:00:00+02:00",
+    "venue": "Openwine",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "72 Wale Street, , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1008013_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/404113-bruce-basson-presents-b-squared/",
+    "categories": [
+      "bar"
+    ],
+    "location_key": "Openwine",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -483,7 +344,7 @@
     "image": "https://images.quicket.co.za/1006456_247_247.png",
     "url": "https://www.quicket.co.za/events/403202-the-unlikely-candidate-book-launch-cape-town-with-koketso-molaolwe/",
     "categories": [],
-    "location_key": "Life Changers Church - Century City",
+    "location_key": "7 Edison Way, , Century City, 7441, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -523,7 +384,7 @@
     "categories": [
       "outdoors"
     ],
-    "location_key": "Parkview Event Space",
+    "location_key": "5 Armadale Street, , Woodstock, 7925, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -541,7 +402,7 @@
     "image": "https://images.quicket.co.za/0985609_247_247.png",
     "url": "https://www.quicket.co.za/events/397030-honest-chocolate-workshop-october-2026/",
     "categories": [],
-    "location_key": "Honest Chocolate Factory",
+    "location_key": "Barron Street 7, Woodstock, 7915, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -562,7 +423,7 @@
       "festival",
       "family"
     ],
-    "location_key": "Tafelberg School",
+    "location_key": "Swellengrebel Avenue, Bothasig, 7441, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -609,10 +470,10 @@
     "title": "Cape Flats Food Wine and Music Festival",
     "start": "2026-10-31T12:00:00+02:00",
     "end": "2026-10-31T23:00:00+02:00",
-    "venue": "Drunken Duck Restaurant and Pub",
+    "venue": "The Drunken Duck Bellville",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "Mahenka Centre, cnr. Ford and Strand street, Stikland , Bellville, 7535, Cape Town, Western Cape, South Africa",
+    "address": "Mahenka Centre, Cnr Strand st & Ford Street, Stikland, Cape Town, 7535, South Africa, , Stikland, 7535, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/1008464_247_247.jpeg",
@@ -624,7 +485,7 @@
       "food",
       "outdoors"
     ],
-    "location_key": "Drunken Duck Restaurant and Pub",
+    "location_key": "The Drunken Duck Bellville",
     "missing_location": true,
     "place_key": "",
     "missing_place": true
@@ -667,7 +528,7 @@
       "art",
       "family"
     ],
-    "location_key": "Luxe & Little",
+    "location_key": "3 Noreen Avenue, , Claremont, 7708, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -705,7 +566,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "Allure Sensuality Emporium",
+    "location_key": "Heather Street 12, 7441, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -743,7 +604,7 @@
     "image": "https://images.quicket.co.za/0977278_247_247.png",
     "url": "https://www.quicket.co.za/events/384905-zombie-walk-cape-town-2026/",
     "categories": [],
-    "location_key": "109 Government Ave",
+    "location_key": "109 Government Avenue, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -809,7 +670,7 @@
     "missing_place": true
   },
   {
-    "title": "Shibari Rope Class to Jam | Halloween Party | Beginner friendly",
+    "title": "Halloween Party | Beginner friendly",
     "start": "2026-10-31T18:45:00+02:00",
     "end": "2026-10-31T23:00:00+02:00",
     "venue": "Unit G19, Embodiment Rope Space",
@@ -819,10 +680,9 @@
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0983418_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/396323-shibari-rope-class-to-jam-halloween-party-beginner-friendly/",
+    "url": "https://www.quicket.co.za/events/396323-halloween-party-beginner-friendly/",
     "categories": [
       "club",
-      "bar",
       "art"
     ],
     "location_key": "Voortrekker Road 100, Salt River, 7925, Cape Town, Western Cape, South Africa",
@@ -863,7 +723,7 @@
     "categories": [
       "club"
     ],
-    "location_key": "Sgt Pepper",
+    "location_key": "194 Long Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -883,7 +743,7 @@
     "categories": [
       "club"
     ],
-    "location_key": "EPICURE CLUB",
+    "location_key": "4 Little Lions Head Road, Mount Rhodes, 7806, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -940,7 +800,7 @@
     "image": "https://images.quicket.co.za/Q12_247_247.jpg",
     "url": "https://www.quicket.co.za/events/389597-sound-recording-for-citizen-science-1st-november/",
     "categories": [],
-    "location_key": "7 Capricorn Dr",
+    "location_key": "7 Capricorn Drive, Muizenberg, 7945, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -958,7 +818,7 @@
     "image": "https://images.quicket.co.za/1007185_247_247.png",
     "url": "https://www.quicket.co.za/events/398480-everybody-loves-sundays-cpt-1-november/",
     "categories": [],
-    "location_key": "Colorbox Studios",
+    "location_key": "3 Industry Street, 7405, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -976,7 +836,7 @@
     "image": "https://images.quicket.co.za/0994566_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/396634-people-in-colour/",
     "categories": [],
-    "location_key": "Youngblood Africa",
+    "location_key": "70-74 Bree Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1073,7 +933,7 @@
     "image": "https://images.quicket.co.za/Q14_247_247.jpg",
     "url": "https://www.quicket.co.za/events/405356-cape-town-private-night-tours/",
     "categories": [],
-    "location_key": "SAAO Cape Town",
+    "location_key": "Observatory Road 1, Observatory, 7925, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1288,7 +1148,7 @@
     "image": "https://images.quicket.co.za/0984311_247_247.png",
     "url": "https://www.quicket.co.za/events/393468-pilates-with-jetour-table-bay-morning-experience/",
     "categories": [],
-    "location_key": "Thorp Jetour Table Bay",
+    "location_key": "Berkshire Boulevard, , Sunningdale, 7441, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1328,7 +1188,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "Unit G19, Embodiment Rope Space",
+    "location_key": "100 Voortrekker Road , Salt River, 7925, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1371,7 +1231,7 @@
     "categories": [
       "food"
     ],
-    "location_key": "Poppy's Restaurant",
+    "location_key": "Judges Avenue, Cresta, 2195, Randburg, Gauteng, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1447,7 +1307,7 @@
     "categories": [
       "date-night"
     ],
-    "location_key": "Honey & Dora Rooftop",
+    "location_key": "24 Somerset Road, De Waterkant, 8001, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1467,7 +1327,7 @@
     "categories": [
       "club"
     ],
-    "location_key": "The Address Club",
+    "location_key": "9 Old Klipfontein Road, , Athlone, 7760, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1636,7 +1496,7 @@
     "image": "https://images.quicket.co.za/1006572_247_247.png",
     "url": "https://www.quicket.co.za/events/399093-autistic-adults-social-coffee-meetup-northern-suburbs/",
     "categories": [],
-    "location_key": "Bagel & Fox Drive-Through (Or Sit down. Pets welcome)",
+    "location_key": "1 Fluweeltjie Road, Durbanville, 7550, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1659,7 +1519,7 @@
       "club",
       "bar"
     ],
-    "location_key": "CTWC Clubhouse @ Woodstock Exchange",
+    "location_key": "66 Albert Road, , Woodstock, 7915, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1758,7 +1618,7 @@
     "image": "https://images.quicket.co.za/0957527_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/385950-louis-loock-sings-elvis/",
     "categories": [],
-    "location_key": "NG Kerk Strand-Noord",
+    "location_key": "70 Brand Street, , Lochnerhof, 7139, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1795,6 +1655,24 @@
     "url": "https://www.quicket.co.za/events/363702-sarie-kersfeesetes-2026-aangebied-deur-today/",
     "categories": [],
     "location_key": "Montague Drive 7, Montague Gardens, 7441, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Building HER Showcase -  19 November 156 Kloof street (copy)",
+    "start": "2026-11-19T10:00:00+02:00",
+    "end": "2026-11-19T13:00:00+02:00",
+    "venue": "156 Kloof St",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "156 Kloof Street, , Gardens, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1013612_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/406120-building-her-showcase-19-november-156-kloof-street-copy/",
+    "categories": [],
+    "location_key": "156 Kloof St",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1872,7 +1750,7 @@
     "categories": [
       "festival"
     ],
-    "location_key": "Workshop17 Watershed",
+    "location_key": "17 Dock Road, Victoria & Alfred Waterfront, 8002, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1909,6 +1787,26 @@
     "url": "https://www.quicket.co.za/events/392163-pitchmasters-business-story-pitch-night/",
     "categories": [],
     "location_key": "BMW Cape Town City",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Healing Hike - Orange Kloof",
+    "start": "2026-11-21T08:00:00+02:00",
+    "end": "2026-11-21T13:30:00+02:00",
+    "venue": "Constantia Nek",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1006275_247_247.png",
+    "url": "https://www.quicket.co.za/events/403494-healing-hike-orange-kloof/",
+    "categories": [
+      "outdoors"
+    ],
+    "location_key": "Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1963,7 +1861,7 @@
     "address": "12 Heather Street, Milnerton, 7441, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/1008929_247_247.jpeg",
+    "image": "https://images.quicket.co.za/1013261_247_247.png",
     "url": "https://www.quicket.co.za/events/404399-come-to-your-senses-the-experience/",
     "categories": [],
     "location_key": "Allure Sensuality Emporium",
@@ -2022,7 +1920,7 @@
     "categories": [
       "family"
     ],
-    "location_key": "Belmont Square Conference Centre",
+    "location_key": "21 Belmont Road, Rondebosch, 7700, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2105,6 +2003,24 @@
     "missing_place": true
   },
   {
+    "title": "Autistic Adults Social Coffee Meetup - Helderberg",
+    "start": "2026-11-28T10:00:00+02:00",
+    "end": "2026-11-28T12:00:00+02:00",
+    "venue": "On the Go Coffee Shop Gordons Bay",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "39 Beach Road, , Gordons Bay Central, 7151, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1013576_247_247.png",
+    "url": "https://www.quicket.co.za/events/399082-autistic-adults-social-coffee-meetup-helderberg/",
+    "categories": [],
+    "location_key": "On the Go Coffee Shop Gordons Bay",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "Taste of Cape Town 2026",
     "start": "2026-11-28T11:00:00+02:00",
     "end": "2026-11-29T21:00:00+02:00",
@@ -2120,7 +2036,7 @@
       "club",
       "sports"
     ],
-    "location_key": "Green Point Cricket Club",
+    "location_key": "111 Vlei Road, Green Point, 8005, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2241,7 +2157,7 @@
     "categories": [
       "bar"
     ],
-    "location_key": "The Capital 15 On Orange Hotel & Spa Cape Town CBD",
+    "location_key": "Orange Street, , Gardens, 8001, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2278,7 +2194,7 @@
     "image": "https://images.quicket.co.za/1011844_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/405473-the-great-queer-quiz-of-everything-christmas-edition/",
     "categories": [],
-    "location_key": "Duchess Lounge",
+    "location_key": "123 Lower Main Road, Observatory, 7560, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2392,7 +2308,7 @@
     "categories": [
       "art"
     ],
-    "location_key": "Hearty / The Old biscuit Mill",
+    "location_key": "375 Albert Road, Woodstock, 8000, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2486,7 +2402,7 @@
     "image": "https://images.quicket.co.za/0948872_247_247.png",
     "url": "https://www.quicket.co.za/events/384718-steenberg-christmas-carols-2026/",
     "categories": [],
-    "location_key": "Tryn and Steenberg Hotel",
+    "location_key": "Steenberg Road , Tokai, 7945, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2716,7 +2632,7 @@
       "sports",
       "date-night"
     ],
-    "location_key": "The Terrace Rooftop",
+    "location_key": "Kremer Road 12, Salt River, 7925, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2916,7 +2832,7 @@
     "categories": [
       "theatre"
     ],
-    "location_key": "Green Point Common Fields",
+    "location_key": "1 Fritz Sonnenberg Rd, 8051, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -3053,7 +2969,7 @@
     "categories": [
       "festival"
     ],
-    "location_key": "Clara Anna Fontein Lifestyle Estate",
+    "location_key": "Vissershok Road, , Durbanville, 7550, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -3146,7 +3062,7 @@
     "image": "https://images.quicket.co.za/Q8_247_247.jpg",
     "url": "https://www.quicket.co.za/events/398419-humans-under-management-south-africa-2027/",
     "categories": [],
-    "location_key": "Allan Gray Auditorium (V&A Waterfront)",
+    "location_key": "Cape Town, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true

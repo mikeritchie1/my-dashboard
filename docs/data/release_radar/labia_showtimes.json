@@ -1,778 +1,30 @@
 {
   "source": "https://www.webtickets.co.za/v2/client.aspx?clientcode=labia",
   "window": {
-    "start_date": "2026-10-23",
-    "end_date": "2026-11-05",
+    "start_date": "2026-10-30",
+    "end_date": "2026-11-12",
     "days": 14
   },
   "listed_window": {
-    "start_date": "2026-10-29",
+    "start_date": "2026-10-30",
     "end_date": "2026-12-15"
   },
   "weeks": [
     {
-      "start_date": "2026-10-23",
-      "end_date": "2026-10-29"
-    },
-    {
       "start_date": "2026-10-30",
       "end_date": "2026-11-05"
+    },
+    {
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-12"
     }
   ],
   "items": [
     {
-      "tmdb_id": 1503762,
-      "tmdb_url": "https://www.themoviedb.org/movie/1503762",
-      "tmdb_rating": "7.4",
-      "tmdb_votes": "91",
-      "release_date": "2026-09-23",
-      "overview": "A charming, witty, and deeply relatable story of love and sisterhood.",
-      "runtime_minutes": "132",
-      "genres": [
-        "Drama",
-        "Romance"
-      ],
-      "directors": [
-        "Georgia Oakley"
-      ],
-      "actors": [
-        "Daisy Edgar-Jones",
-        "Esmé Creed-Miles",
-        "Caitríona Balfe",
-        "Bodhi Rae Breathnach",
-        "Frank Dillane",
-        "Herbert Nordrum",
-        "George MacKay",
-        "Fiona Shaw",
-        "Stacy Martin",
-        "Tom Brooke"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=OFLyW0lxFU0",
-      "poster_url": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
-      "title": "SENSE AND SENSIBILITY (13 V)",
-      "itemid": "1605219199",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
-      "event_date_text": "29 Oct 2026 - 05 Nov 2026",
-      "showtime_summary": "29 Oct 2026: 11:30, 17:30\n30 Oct 2026 - 05 Nov 2026: 11:45, 17:30",
-      "image": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
-      "showings": [
-        "2026-10-29 11:30",
-        "2026-10-29 17:30",
-        "2026-10-30 11:45",
-        "2026-10-30 17:30",
-        "2026-10-31 11:45",
-        "2026-10-31 17:30",
-        "2026-11-01 11:45",
-        "2026-11-01 17:30",
-        "2026-11-02 11:45",
-        "2026-11-02 17:30",
-        "2026-11-03 11:45",
-        "2026-11-03 17:30",
-        "2026-11-04 11:45",
-        "2026-11-04 17:30",
-        "2026-11-05 11:45",
-        "2026-11-05 17:30"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "11:30",
-            "17:30"
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
-        {
-          "date": "2026-10-31",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
-        {
-          "date": "2026-11-01",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
-        {
-          "date": "2026-11-02",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
-        {
-          "date": "2026-11-03",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
-        {
-          "date": "2026-11-04",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
-        {
-          "date": "2026-11-05",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 791523,
-      "tmdb_url": "https://www.themoviedb.org/movie/791523",
-      "tmdb_rating": "8.6",
-      "tmdb_votes": "98",
-      "release_date": "2026-10-19",
-      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
-      "runtime_minutes": "132",
-      "genres": [
-        "Animation",
-        "Adventure",
-        "Fantasy"
-      ],
-      "directors": [
-        "Travis Knight"
-      ],
-      "actors": [
-        "Peyton Elizabeth Lee",
-        "Carey Mulligan",
-        "Jacob Tremblay",
-        "Mahershala Ali",
-        "Angela Bassett",
-        "Awkwafina",
-        "Jake Johnson",
-        "Charlie Day",
-        "Amandla Stenberg",
-        "Jemaine Clement"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=bJQGtSeLPII",
-      "poster_url": "https://image.tmdb.org/t/p/w342/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
-      "title": "WILDWOOD (10-12PG L V)",
-      "itemid": "1605631166",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
-      "event_date_text": "29 Oct 2026 - 05 Nov 2026",
-      "showtime_summary": "29 Oct 2026: 11:45, 17:45\n30 Oct 2026: 12:15\n31 Oct 2026 - 02 Nov 2026: 12:15, 17:45\n03 Nov 2026: 12:15\n04 Nov 2026: 12:15, 17:45\n05 Nov 2026: 12:15",
-      "image": "https://image.tmdb.org/t/p/w342/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
-      "showings": [
-        "2026-10-29 11:45",
-        "2026-10-29 17:45",
-        "2026-10-30 12:15",
-        "2026-10-31 12:15",
-        "2026-10-31 17:45",
-        "2026-11-01 12:15",
-        "2026-11-01 17:45",
-        "2026-11-02 12:15",
-        "2026-11-02 17:45",
-        "2026-11-03 12:15",
-        "2026-11-04 12:15",
-        "2026-11-04 17:45",
-        "2026-11-05 12:15"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "11:45",
-            "17:45"
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "times": [
-            "12:15"
-          ]
-        },
-        {
-          "date": "2026-10-31",
-          "times": [
-            "12:15",
-            "17:45"
-          ]
-        },
-        {
-          "date": "2026-11-01",
-          "times": [
-            "12:15",
-            "17:45"
-          ]
-        },
-        {
-          "date": "2026-11-02",
-          "times": [
-            "12:15",
-            "17:45"
-          ]
-        },
-        {
-          "date": "2026-11-03",
-          "times": [
-            "12:15"
-          ]
-        },
-        {
-          "date": "2026-11-04",
-          "times": [
-            "12:15",
-            "17:45"
-          ]
-        },
-        {
-          "date": "2026-11-05",
-          "times": [
-            "12:15"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 1400837,
-      "tmdb_url": "https://www.themoviedb.org/movie/1400837",
-      "tmdb_rating": "5.841",
-      "tmdb_votes": "170",
-      "release_date": "2026-10-07",
-      "overview": "Young Bela forms a relationship with a sinister entity in her home that looks uncannily like her own mother, drawing her into a terrifying and increasingly dark world.",
-      "runtime_minutes": "93",
-      "genres": [
-        "Horror"
-      ],
-      "directors": [
-        "Rob Savage"
-      ],
-      "actors": [
-        "Jessica Chastain",
-        "Jay Duplass",
-        "Arabella Olivia Clark",
-        "Karen Allen",
-        "Arian Moayed",
-        "Dichen Lachman",
-        "Sean Kaufman",
-        "Adam Silver",
-        "Alec Secăreanu",
-        "Millie Wood"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=-mnTITqqiT0",
-      "poster_url": "https://image.tmdb.org/t/p/w342/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-      "title": "OTHER MOMMY (16 HLV)",
-      "itemid": "1605220327",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605220327",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605220327",
-      "event_date_text": "29 Oct 2026",
-      "showtime_summary": "29 Oct 2026: 12:00, 18:00",
-      "image": "https://image.tmdb.org/t/p/w342/fGRNCssTRrhYZxNzykGGCoMsAVq.jpg",
-      "showings": [
-        "2026-10-29 12:00",
-        "2026-10-29 18:00"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "12:00",
-            "18:00"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 950028,
-      "tmdb_url": "https://www.themoviedb.org/movie/950028",
-      "tmdb_rating": "7.203",
-      "tmdb_votes": "886",
-      "release_date": "2026-06-25",
-      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
-      "runtime_minutes": "107",
-      "genres": [
-        "Comedy",
-        "Drama",
-        "Romance"
-      ],
-      "directors": [
-        "Olivia Wilde"
-      ],
-      "actors": [
-        "Olivia Wilde",
-        "Seth Rogen",
-        "Penélope Cruz",
-        "Edward Norton"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=nelkiuezJxg",
-      "poster_url": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "title": "THE INVITE (16 LS)",
-      "itemid": "1599356445",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599356445",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599356445",
-      "event_date_text": "29 Oct 2026 - 05 Nov 2026",
-      "showtime_summary": "29 Oct 2026: 12:15, 18:15\n30 Oct 2026 - 31 Oct 2026: 16:00\n02 Nov 2026 - 05 Nov 2026: 16:00",
-      "image": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
-      "showings": [
-        "2026-10-29 12:15",
-        "2026-10-29 18:15",
-        "2026-10-30 16:00",
-        "2026-10-31 16:00",
-        "2026-11-02 16:00",
-        "2026-11-03 16:00",
-        "2026-11-04 16:00",
-        "2026-11-05 16:00"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "12:15",
-            "18:15"
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "times": [
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-10-31",
-          "times": [
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-02",
-          "times": [
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-03",
-          "times": [
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-04",
-          "times": [
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-05",
-          "times": [
-            "16:00"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 1248832,
-      "tmdb_url": "https://www.themoviedb.org/movie/1248832",
-      "tmdb_rating": "7.485",
-      "tmdb_votes": "480",
-      "release_date": "2026-09-28",
-      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-      "runtime_minutes": "129",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "directors": [
-        "Alejandro G. Iñárritu"
-      ],
-      "actors": [
-        "Tom Cruise",
-        "Riz Ahmed",
-        "John Goodman",
-        "Sandra Hüller",
-        "Michael Stuhlbarg",
-        "Jesse Plemons",
-        "Robert John Burke",
-        "Emma D'Arcy",
-        "Burn Gorman",
-        "Sophie Wilde"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=job8V254NAE",
-      "poster_url": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "title": "DIGGER (16L)",
-      "itemid": "1604057291",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
-      "event_date_text": "29 Oct 2026 - 05 Nov 2026",
-      "showtime_summary": "29 Oct 2026 - 02 Nov 2026: 14:15, 20:15\n03 Nov 2026: 14:15\n04 Nov 2026 - 05 Nov 2026: 14:15, 20:15",
-      "image": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "showings": [
-        "2026-10-29 14:15",
-        "2026-10-29 20:15",
-        "2026-10-30 14:15",
-        "2026-10-30 20:15",
-        "2026-10-31 14:15",
-        "2026-10-31 20:15",
-        "2026-11-01 14:15",
-        "2026-11-01 20:15",
-        "2026-11-02 14:15",
-        "2026-11-02 20:15",
-        "2026-11-03 14:15",
-        "2026-11-04 14:15",
-        "2026-11-04 20:15",
-        "2026-11-05 14:15",
-        "2026-11-05 20:15"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "14:15",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "times": [
-            "14:15",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-10-31",
-          "times": [
-            "14:15",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-11-01",
-          "times": [
-            "14:15",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-11-02",
-          "times": [
-            "14:15",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-11-03",
-          "times": [
-            "14:15"
-          ]
-        },
-        {
-          "date": "2026-11-04",
-          "times": [
-            "14:15",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-11-05",
-          "times": [
-            "14:15",
-            "20:15"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 1283515,
-      "tmdb_url": "https://www.themoviedb.org/movie/1283515",
-      "tmdb_rating": "6.3",
-      "tmdb_votes": "288",
-      "release_date": "2026-09-30",
-      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
-      "runtime_minutes": "121",
-      "genres": [
-        "Mystery",
-        "Thriller",
-        "Drama"
-      ],
-      "directors": [
-        "Michael Showalter"
-      ],
-      "actors": [
-        "Dakota Johnson",
-        "Anne Hathaway",
-        "Josh Hartnett",
-        "Brady Wagner",
-        "Ismael Cruz Cordova",
-        "Irina Dvorovenko",
-        "Sienna Kulovitz",
-        "K.K. Moggie",
-        "Tom Galantich",
-        "Lou Martini Jr."
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=xdPMKhjMSFs",
-      "poster_url": "https://image.tmdb.org/t/p/w342/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
-      "title": "VERITY (18 DLNSV)",
-      "itemid": "1604058771",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
-      "event_date_text": "29 Oct 2026 - 05 Nov 2026",
-      "showtime_summary": "29 Oct 2026: 14:30, 20:30\n30 Oct 2026 - 31 Oct 2026: 14:45\n01 Nov 2026 - 02 Nov 2026: 14:45, 20:15\n03 Nov 2026: 14:45\n04 Nov 2026 - 05 Nov 2026: 14:45, 20:15",
-      "image": "https://image.tmdb.org/t/p/w342/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
-      "showings": [
-        "2026-10-29 14:30",
-        "2026-10-29 20:30",
-        "2026-10-30 14:45",
-        "2026-10-31 14:45",
-        "2026-11-01 14:45",
-        "2026-11-01 20:15",
-        "2026-11-02 14:45",
-        "2026-11-02 20:15",
-        "2026-11-03 14:45",
-        "2026-11-04 14:45",
-        "2026-11-04 20:15",
-        "2026-11-05 14:45",
-        "2026-11-05 20:15"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "14:30",
-            "20:30"
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "times": [
-            "14:45"
-          ]
-        },
-        {
-          "date": "2026-10-31",
-          "times": [
-            "14:45"
-          ]
-        },
-        {
-          "date": "2026-11-01",
-          "times": [
-            "14:45",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-11-02",
-          "times": [
-            "14:45",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-11-03",
-          "times": [
-            "14:45"
-          ]
-        },
-        {
-          "date": "2026-11-04",
-          "times": [
-            "14:45",
-            "20:15"
-          ]
-        },
-        {
-          "date": "2026-11-05",
-          "times": [
-            "14:45",
-            "20:15"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 1329016,
-      "tmdb_url": "https://www.themoviedb.org/movie/1329016",
-      "tmdb_rating": "7.4",
-      "tmdb_votes": "156",
-      "release_date": "2026-08-07",
-      "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
-      "runtime_minutes": "107",
-      "genres": [
-        "Drama",
-        "Comedy"
-      ],
-      "directors": [
-        "Matt Johnson"
-      ],
-      "actors": [
-        "Dominic Sessa",
-        "Antonio Banderas",
-        "Emilia Jones",
-        "Leo Woodall",
-        "Stavros Halkias",
-        "Michael Jibrin",
-        "Monica Raymund",
-        "Rich Sommer",
-        "Dagmara Dominczyk",
-        "Liam Fitch"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=k1MVnzd2aVc",
-      "poster_url": "https://image.tmdb.org/t/p/w342/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
-      "title": "TONY (16 DLNS)",
-      "itemid": "1604739708",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
-      "event_date_text": "29 Oct 2026 - 05 Nov 2026",
-      "showtime_summary": "29 Oct 2026: 14:45, 20:30\n30 Oct 2026 - 05 Nov 2026: 15:00",
-      "image": "https://image.tmdb.org/t/p/w342/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
-      "showings": [
-        "2026-10-29 14:45",
-        "2026-10-29 20:30",
-        "2026-10-30 15:00",
-        "2026-10-31 15:00",
-        "2026-11-01 15:00",
-        "2026-11-02 15:00",
-        "2026-11-03 15:00",
-        "2026-11-04 15:00",
-        "2026-11-05 15:00"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "14:45",
-            "20:30"
-          ]
-        },
-        {
-          "date": "2026-10-30",
-          "times": [
-            "15:00"
-          ]
-        },
-        {
-          "date": "2026-10-31",
-          "times": [
-            "15:00"
-          ]
-        },
-        {
-          "date": "2026-11-01",
-          "times": [
-            "15:00"
-          ]
-        },
-        {
-          "date": "2026-11-02",
-          "times": [
-            "15:00"
-          ]
-        },
-        {
-          "date": "2026-11-03",
-          "times": [
-            "15:00"
-          ]
-        },
-        {
-          "date": "2026-11-04",
-          "times": [
-            "15:00"
-          ]
-        },
-        {
-          "date": "2026-11-05",
-          "times": [
-            "15:00"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 1423191,
-      "tmdb_url": "https://www.themoviedb.org/movie/1423191",
-      "tmdb_rating": "7.3",
-      "tmdb_votes": "1090",
-      "release_date": "2026-09-16",
-      "overview": "Medical courier Bryan unwittingly finds himself fighting for survival as one fateful, horrifying night collapses around him in chaos.",
-      "runtime_minutes": "95",
-      "genres": [
-        "Horror",
-        "Science Fiction",
-        "Adventure"
-      ],
-      "directors": [
-        "Zach Cregger"
-      ],
-      "actors": [
-        "Austin Abrams",
-        "Paul Walter Hauser",
-        "Kali Reis",
-        "Zach Cherry",
-        "Johnno Wilson",
-        "Shaun W. Loeser",
-        "Zach Cregger",
-        "Emily Piggford",
-        "Will Merrick",
-        "Zoé Bellas"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=mNd1gb19A-c",
-      "poster_url": "https://image.tmdb.org/t/p/w342/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-      "title": "RESIDENT EVIL (16 HLV)",
-      "itemid": "1604057819",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057819",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057819",
-      "event_date_text": "29 Oct 2026",
-      "showtime_summary": "29 Oct 2026: 15:00",
-      "image": "https://image.tmdb.org/t/p/w342/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg",
-      "showings": [
-        "2026-10-29 15:00"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-10-29",
-          "times": [
-            "15:00"
-          ]
-        }
-      ]
-    },
-    {
       "tmdb_id": 1318413,
       "tmdb_url": "https://www.themoviedb.org/movie/1318413",
-      "tmdb_rating": "7.7",
-      "tmdb_votes": "524",
+      "tmdb_rating": "7.718",
+      "tmdb_votes": "525",
       "release_date": "2026-05-28",
       "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
       "runtime_minutes": "101",
@@ -871,6 +123,113 @@
       ]
     },
     {
+      "tmdb_id": 1503762,
+      "tmdb_url": "https://www.themoviedb.org/movie/1503762",
+      "tmdb_rating": "7.4",
+      "tmdb_votes": "97",
+      "release_date": "2026-09-23",
+      "overview": "A charming, witty, and deeply relatable story of love and sisterhood.",
+      "runtime_minutes": "132",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "directors": [
+        "Georgia Oakley"
+      ],
+      "actors": [
+        "Daisy Edgar-Jones",
+        "Esmé Creed-Miles",
+        "Caitríona Balfe",
+        "Bodhi Rae Breathnach",
+        "Frank Dillane",
+        "Herbert Nordrum",
+        "George MacKay",
+        "Fiona Shaw",
+        "Stacy Martin",
+        "Tom Brooke"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=OFLyW0lxFU0",
+      "poster_url": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
+      "title": "SENSE AND SENSIBILITY (13 V)",
+      "itemid": "1605219199",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
+      "event_date_text": "30 Oct 2026 - 05 Nov 2026",
+      "showtime_summary": "30 Oct 2026 - 05 Nov 2026: 11:45, 17:30",
+      "image": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
+      "showings": [
+        "2026-10-30 11:45",
+        "2026-10-30 17:30",
+        "2026-10-31 11:45",
+        "2026-10-31 17:30",
+        "2026-11-01 11:45",
+        "2026-11-01 17:30",
+        "2026-11-02 11:45",
+        "2026-11-02 17:30",
+        "2026-11-03 11:45",
+        "2026-11-03 17:30",
+        "2026-11-04 11:45",
+        "2026-11-04 17:30",
+        "2026-11-05 11:45",
+        "2026-11-05 17:30"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-10-30",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-11-01",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "times": [
+            "11:45",
+            "17:30"
+          ]
+        }
+      ]
+    },
+    {
       "tmdb_id": 1721249,
       "tmdb_url": "https://www.themoviedb.org/movie/1721249",
       "tmdb_rating": "",
@@ -963,10 +322,112 @@
       ]
     },
     {
+      "tmdb_id": 791523,
+      "tmdb_url": "https://www.themoviedb.org/movie/791523",
+      "tmdb_rating": "8.628",
+      "tmdb_votes": "109",
+      "release_date": "2026-10-19",
+      "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
+      "runtime_minutes": "132",
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Fantasy"
+      ],
+      "directors": [
+        "Travis Knight"
+      ],
+      "actors": [
+        "Peyton Elizabeth Lee",
+        "Carey Mulligan",
+        "Jacob Tremblay",
+        "Mahershala Ali",
+        "Angela Bassett",
+        "Awkwafina",
+        "Jake Johnson",
+        "Charlie Day",
+        "Amandla Stenberg",
+        "Jemaine Clement"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=bJQGtSeLPII",
+      "poster_url": "https://image.tmdb.org/t/p/w342/8g7q6o54WfKWRmUQ0Ye8OskevUY.jpg",
+      "title": "WILDWOOD (10-12PG L V)",
+      "itemid": "1605631166",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
+      "event_date_text": "30 Oct 2026 - 05 Nov 2026",
+      "showtime_summary": "30 Oct 2026: 12:15\n31 Oct 2026 - 02 Nov 2026: 12:15, 17:45\n03 Nov 2026: 12:15\n04 Nov 2026: 12:15, 17:45\n05 Nov 2026: 12:15",
+      "image": "https://image.tmdb.org/t/p/w342/8g7q6o54WfKWRmUQ0Ye8OskevUY.jpg",
+      "showings": [
+        "2026-10-30 12:15",
+        "2026-10-31 12:15",
+        "2026-10-31 17:45",
+        "2026-11-01 12:15",
+        "2026-11-01 17:45",
+        "2026-11-02 12:15",
+        "2026-11-02 17:45",
+        "2026-11-03 12:15",
+        "2026-11-04 12:15",
+        "2026-11-04 17:45",
+        "2026-11-05 12:15"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-10-30",
+          "times": [
+            "12:15"
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-11-01",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "times": [
+            "12:15"
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "times": [
+            "12:15",
+            "17:45"
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "times": [
+            "12:15"
+          ]
+        }
+      ]
+    },
+    {
       "tmdb_id": 1400381,
       "tmdb_url": "https://www.themoviedb.org/movie/1400381",
-      "tmdb_rating": "7.7",
-      "tmdb_votes": "47",
+      "tmdb_rating": "7.729",
+      "tmdb_votes": "48",
       "release_date": "2025-08-08",
       "overview": "Rising musician Jeff Buckley had only released one album when he died suddenly in 1997. Now, never-before-seen footage, exclusive voice messages, and accounts from those closest to him offer a portrait of the captivating singer.",
       "runtime_minutes": "106",
@@ -1020,6 +481,386 @@
           "times": [
             "13:45",
             "20:30"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1248832,
+      "tmdb_url": "https://www.themoviedb.org/movie/1248832",
+      "tmdb_rating": "7.49",
+      "tmdb_votes": "486",
+      "release_date": "2026-09-28",
+      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+      "runtime_minutes": "129",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "directors": [
+        "Alejandro G. Iñárritu"
+      ],
+      "actors": [
+        "Tom Cruise",
+        "Riz Ahmed",
+        "John Goodman",
+        "Sandra Hüller",
+        "Michael Stuhlbarg",
+        "Jesse Plemons",
+        "Robert John Burke",
+        "Emma D'Arcy",
+        "Burn Gorman",
+        "Sophie Wilde"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=job8V254NAE",
+      "poster_url": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "title": "DIGGER (16L)",
+      "itemid": "1604057291",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
+      "event_date_text": "30 Oct 2026 - 05 Nov 2026",
+      "showtime_summary": "30 Oct 2026 - 02 Nov 2026: 14:15, 20:15\n03 Nov 2026: 14:15\n04 Nov 2026 - 05 Nov 2026: 14:15, 20:15",
+      "image": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "showings": [
+        "2026-10-30 14:15",
+        "2026-10-30 20:15",
+        "2026-10-31 14:15",
+        "2026-10-31 20:15",
+        "2026-11-01 14:15",
+        "2026-11-01 20:15",
+        "2026-11-02 14:15",
+        "2026-11-02 20:15",
+        "2026-11-03 14:15",
+        "2026-11-04 14:15",
+        "2026-11-04 20:15",
+        "2026-11-05 14:15",
+        "2026-11-05 20:15"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-10-30",
+          "times": [
+            "14:15",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "times": [
+            "14:15",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-11-01",
+          "times": [
+            "14:15",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "times": [
+            "14:15",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "times": [
+            "14:15"
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "times": [
+            "14:15",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "times": [
+            "14:15",
+            "20:15"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1283515,
+      "tmdb_url": "https://www.themoviedb.org/movie/1283515",
+      "tmdb_rating": "6.452",
+      "tmdb_votes": "335",
+      "release_date": "2026-09-30",
+      "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
+      "runtime_minutes": "117",
+      "genres": [
+        "Mystery",
+        "Thriller"
+      ],
+      "directors": [
+        "Michael Showalter"
+      ],
+      "actors": [
+        "Dakota Johnson",
+        "Anne Hathaway",
+        "Josh Hartnett",
+        "Brady Wagner",
+        "Ismael Cruz Cordova",
+        "Irina Dvorovenko",
+        "Sienna Kulovitz",
+        "K.K. Moggie",
+        "Tom Galantich",
+        "Lou Martini Jr."
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=xdPMKhjMSFs",
+      "poster_url": "https://image.tmdb.org/t/p/w342/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
+      "title": "VERITY (18 DLNSV)",
+      "itemid": "1604058771",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
+      "event_date_text": "30 Oct 2026 - 05 Nov 2026",
+      "showtime_summary": "30 Oct 2026 - 31 Oct 2026: 14:45\n01 Nov 2026 - 02 Nov 2026: 14:45, 20:15\n03 Nov 2026: 14:45\n04 Nov 2026 - 05 Nov 2026: 14:45, 20:15",
+      "image": "https://image.tmdb.org/t/p/w342/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
+      "showings": [
+        "2026-10-30 14:45",
+        "2026-10-31 14:45",
+        "2026-11-01 14:45",
+        "2026-11-01 20:15",
+        "2026-11-02 14:45",
+        "2026-11-02 20:15",
+        "2026-11-03 14:45",
+        "2026-11-04 14:45",
+        "2026-11-04 20:15",
+        "2026-11-05 14:45",
+        "2026-11-05 20:15"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-10-30",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-11-01",
+          "times": [
+            "14:45",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "times": [
+            "14:45",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "times": [
+            "14:45"
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "times": [
+            "14:45",
+            "20:15"
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "times": [
+            "14:45",
+            "20:15"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 1329016,
+      "tmdb_url": "https://www.themoviedb.org/movie/1329016",
+      "tmdb_rating": "7.451",
+      "tmdb_votes": "163",
+      "release_date": "2026-08-07",
+      "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
+      "runtime_minutes": "107",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "directors": [
+        "Matt Johnson"
+      ],
+      "actors": [
+        "Dominic Sessa",
+        "Antonio Banderas",
+        "Emilia Jones",
+        "Leo Woodall",
+        "Stavros Halkias",
+        "Michael Jibrin",
+        "Monica Raymund",
+        "Rich Sommer",
+        "Dagmara Dominczyk",
+        "Liam Fitch"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=k1MVnzd2aVc",
+      "poster_url": "https://image.tmdb.org/t/p/w342/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
+      "title": "TONY (16 DLNS)",
+      "itemid": "1604739708",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
+      "event_date_text": "30 Oct 2026 - 05 Nov 2026",
+      "showtime_summary": "30 Oct 2026 - 05 Nov 2026: 15:00",
+      "image": "https://image.tmdb.org/t/p/w342/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
+      "showings": [
+        "2026-10-30 15:00",
+        "2026-10-31 15:00",
+        "2026-11-01 15:00",
+        "2026-11-02 15:00",
+        "2026-11-03 15:00",
+        "2026-11-04 15:00",
+        "2026-11-05 15:00"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-10-30",
+          "times": [
+            "15:00"
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "times": [
+            "15:00"
+          ]
+        },
+        {
+          "date": "2026-11-01",
+          "times": [
+            "15:00"
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "times": [
+            "15:00"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "times": [
+            "15:00"
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "times": [
+            "15:00"
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "times": [
+            "15:00"
+          ]
+        }
+      ]
+    },
+    {
+      "tmdb_id": 950028,
+      "tmdb_url": "https://www.themoviedb.org/movie/950028",
+      "tmdb_rating": "7.205",
+      "tmdb_votes": "890",
+      "release_date": "2026-06-25",
+      "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+      "runtime_minutes": "107",
+      "genres": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "directors": [
+        "Olivia Wilde"
+      ],
+      "actors": [
+        "Olivia Wilde",
+        "Seth Rogen",
+        "Penélope Cruz",
+        "Edward Norton"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=nelkiuezJxg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "title": "THE INVITE (16 LS)",
+      "itemid": "1599356445",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599356445",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599356445",
+      "event_date_text": "30 Oct 2026 - 05 Nov 2026",
+      "showtime_summary": "30 Oct 2026 - 31 Oct 2026: 16:00\n02 Nov 2026 - 05 Nov 2026: 16:00",
+      "image": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "showings": [
+        "2026-10-30 16:00",
+        "2026-10-31 16:00",
+        "2026-11-02 16:00",
+        "2026-11-03 16:00",
+        "2026-11-04 16:00",
+        "2026-11-05 16:00"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-10-30",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "date": "2026-11-02",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "date": "2026-11-03",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "date": "2026-11-04",
+          "times": [
+            "16:00"
+          ]
+        },
+        {
+          "date": "2026-11-05",
+          "times": [
+            "16:00"
           ]
         }
       ]

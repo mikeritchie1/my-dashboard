@@ -30,7 +30,7 @@
       "url": "https://rawg.io/games/phantom-blade-zero",
       "image": "https://media.rawg.io/media/games/25f/25f536a977488f12ef8a6d013e50fda1.jpg",
       "release_date": "2026-10-29",
-      "rating": "3.3",
+      "rating": "3.4",
       "platforms": "PC, PlayStation 5"
     },
     {
@@ -142,7 +142,7 @@
       "url": "https://rawg.io/games/call-of-duty-modern-warfare-4",
       "image": "https://media.rawg.io/media/games/a93/a9304d97c8f264da59566a0f5e0a2181.jpeg",
       "release_date": "2026-10-23",
-      "rating": "4.3",
+      "rating": "4.4",
       "platforms": ""
     },
     {
@@ -294,7 +294,7 @@
       "url": "https://rawg.io/games/valor-mortis",
       "image": "https://media.rawg.io/media/games/61d/61d1431d20f9f6e19b27cb89aa4a4402.jpg",
       "release_date": "2026-10-13",
-      "rating": "3.7",
+      "rating": "3.9",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
     },
     {
@@ -464,7 +464,7 @@
       "url": "https://rawg.io/games/grand-theft-aito-vi",
       "image": "https://media.rawg.io/media/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg",
       "release_date": "2026-11-19",
-      "rating": "3.8",
+      "rating": "3.9",
       "platforms": "PlayStation 5, Xbox Series S/X"
     },
     {
@@ -552,8 +552,24 @@
       "url": "https://rawg.io/games/titan-quest-2",
       "image": "https://media.rawg.io/media/games/233/233b58ed99520a1e0b19109f7263f011.jpg",
       "release_date": "2027-01-19",
-      "rating": "2.3",
+      "rating": "2.1",
       "platforms": "PC, PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Metroid Ravenous",
+      "url": "https://rawg.io/games/metroid-ravenous",
+      "image": "https://media.rawg.io/media/games/582/5821d65020c1ac624d985d20e966765f.jpg",
+      "release_date": "2027-01-28",
+      "rating": "0.0",
+      "platforms": "Nintendo Switch"
+    },
+    {
+      "title": "Until Dawn 2",
+      "url": "https://rawg.io/games/until-dawn-2-2",
+      "image": "https://media.rawg.io/media/games/145/145c294309a243d11c95f176e29e62e0.jpg",
+      "release_date": "2027-01-28",
+      "rating": "0.0",
+      "platforms": "PlayStation 5"
     }
   ]
 }

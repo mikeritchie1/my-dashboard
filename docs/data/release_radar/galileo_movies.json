@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "The Devil Wears Prada",
-      "detail_title": "The Devil Wears Prada",
-      "url": "https://thegalileo.co.za/movie/the-devil-wears-prada/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-10-29",
-      "event_date_text": "29 October 2026",
-      "day": "Thursday",
-      "venue": "Kirstenbosch Garden",
-      "doors_open": "18h00",
-      "movie_starts": "19h30",
-      "cinema_type": "PICNIC",
-      "age_restriction": "PG",
-      "run_time": "1h49",
-      "runtime_minutes": "109",
-      "genre": "Comedy , Drama",
-      "genres": [
-        "Comedy , Drama"
-      ],
-      "overview": "The Devil Wears Prada is a 2006 American comedy-drama film. The film stars Meryl Streep, Anne Hathaway, Stanley Tucci and Emily Blunt. A smart but sensible new graduate lands a job as an assistant to Miranda Priestly, the demanding editor-in-chief of a high fashion magazine.",
-      "synopsis": "The Devil Wears Prada is a 2006 American comedy-drama film. The film stars Meryl Streep, Anne Hathaway, Stanley Tucci and Emily Blunt. A smart but sensible new graduate lands a job as an assistant to Miranda Priestly, the demanding editor-in-chief of a high fashion magazine.",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2025/09/The-Devil-Wears-Prada-copy-686x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/The-Devil-Wears-Prada-copy-686x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=6ZOZwUQKu3E",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
-    },
-    {
       "title": "Coco – Special KIDS Halloween Show",
       "detail_title": "Coco – Special KIDS Halloween Show",
       "url": "https://thegalileo.co.za/movie/coco/",
