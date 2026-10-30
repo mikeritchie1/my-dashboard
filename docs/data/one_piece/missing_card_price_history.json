@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:37:56Z",
+  "updated_at": "2026-10-30T20:13:49Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -263304,6 +263304,90 @@
       "stock": "In stock",
       "observed_on": "2026-10-30",
       "captured_at": "2026-10-30T14:37:38Z"
+    },
+    {
+      "card_number": "OP17-081",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gerd-op17-081-the-worlds-strongest-warriors-foil",
+      "title": "Gerd (OP17-081) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-30",
+      "captured_at": "2026-10-30T20:13:14Z"
+    },
+    {
+      "card_number": "OP17-063",
+      "art_variant": "alternate",
+      "price": 150.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-063-alternate-art-op17-063-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (063) (Alternate Art) (OP17-063) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-30",
+      "captured_at": "2026-10-30T20:13:14Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 195.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-four-emperors-gold-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Alternate Art) (The Four Emperors) (Gold) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-30",
+      "captured_at": "2026-10-30T20:13:14Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 805.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-rocks-special-foil-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Alternate Art) (Rocks) (Special Foil) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-30",
+      "captured_at": "2026-10-30T20:13:14Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 1460.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-30",
+      "captured_at": "2026-10-30T20:13:14Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1825.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-buggy-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Buggy) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-30",
+      "captured_at": "2026-10-30T20:13:14Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "alternate",
+      "price": 3260.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-super-alternate-art-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (Super Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-10-30",
+      "captured_at": "2026-10-30T20:13:14Z"
     }
   ]
 }
