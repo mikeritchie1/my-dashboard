@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-31T18:02:40Z",
+  "updated_at": "2026-10-31T22:53:07Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -265488,6 +265488,42 @@
       "stock": "In stock",
       "observed_on": "2026-10-31",
       "captured_at": "2026-10-31T18:02:24Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 83.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-31",
+      "captured_at": "2026-10-31T22:52:49Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-31",
+      "captured_at": "2026-10-31T22:52:49Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 249.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-10-31",
+      "captured_at": "2026-10-31T22:52:49Z"
     }
   ]
 }
