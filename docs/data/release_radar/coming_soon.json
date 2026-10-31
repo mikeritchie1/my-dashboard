@@ -3,18 +3,6 @@
   "dates": {},
   "items": [
     {
-      "title": "Hope",
-      "url": "https://www.themoviedb.org/movie/1058424",
-      "image": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
-      "release_date": "2026-10-30"
-    },
-    {
-      "title": "Queezy visits the Races",
-      "url": "https://www.themoviedb.org/movie/1717452",
-      "image": "https://image.tmdb.org/t/p/w342/6CU69Ma5hyW1okPgBLdbF22MCXV.jpg",
-      "release_date": "2026-10-30"
-    },
-    {
       "title": "Wild Horse Nine",
       "url": "https://www.themoviedb.org/movie/891621",
       "image": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
@@ -35,7 +23,7 @@
     {
       "title": "Ramayana: Rise of a Legend",
       "url": "https://www.themoviedb.org/movie/656908",
-      "image": "https://image.tmdb.org/t/p/w342/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg",
+      "image": "https://image.tmdb.org/t/p/w342/cK6xaYrb498y2rmMRSZmRKaCXKL.jpg",
       "release_date": "2026-11-06"
     },
     {
@@ -47,7 +35,7 @@
     {
       "title": "The Hunger Games: Sunrise on the Reaping",
       "url": "https://www.themoviedb.org/movie/1300968",
-      "image": "https://image.tmdb.org/t/p/w342/j1MNyNNgNQL6f27cb3m3uKaPKd6.jpg",
+      "image": "https://image.tmdb.org/t/p/w342/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
       "release_date": "2026-11-20"
     },
     {
@@ -83,19 +71,19 @@
     {
       "title": "Avengers: Doomsday",
       "url": "https://www.themoviedb.org/movie/1003596",
-      "image": "https://image.tmdb.org/t/p/w342/7UN7WiNgXnKNneFx7V4nDm92luk.jpg",
+      "image": "https://image.tmdb.org/t/p/w342/zHTxblqPcqRpA93ex2Hj0RdpVBs.jpg",
       "release_date": "2026-12-16"
-    },
-    {
-      "title": "The Angry Birds Movie 3",
-      "url": "https://www.themoviedb.org/movie/1300926",
-      "image": "https://image.tmdb.org/t/p/w342/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
-      "release_date": "2026-12-25"
     },
     {
       "title": "Jumanji: Open World",
       "url": "https://www.themoviedb.org/movie/1260649",
       "image": "https://image.tmdb.org/t/p/w342/ntjF2gemedf3ZcWzARGt6cuZlnJ.jpg",
+      "release_date": "2026-12-25"
+    },
+    {
+      "title": "The Angry Birds Movie 3",
+      "url": "https://www.themoviedb.org/movie/1300926",
+      "image": "https://image.tmdb.org/t/p/w342/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
       "release_date": "2026-12-25"
     }
   ]

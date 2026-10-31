@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "Coco – Special KIDS Halloween Show",
-      "detail_title": "Coco – Special KIDS Halloween Show",
-      "url": "https://thegalileo.co.za/movie/coco/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-10-30",
-      "event_date_text": "30 October 2026",
-      "day": "Friday",
-      "venue": "Kirstenbosch Garden",
-      "doors_open": "17h00",
-      "movie_starts": "19h30",
-      "cinema_type": "SPECIAL",
-      "age_restriction": "PG",
-      "run_time": "1h45",
-      "runtime_minutes": "105",
-      "genre": "Adventure , Animation , Family Friendly , Fantasy",
-      "genres": [
-        "Adventure , Animation , Family Friendly , Fantasy"
-      ],
-      "overview": "Coco is a 2017 animated fantasy adventure following 12-year-old Miguel, who is accidentally transported to the colourful Land of the Dead. With the help of his ancestors, he embarks on a magical journey to uncover his family’s story and find his way home. A colourful, heartwarming adventure perfect for our Kids Halloween Show under the stars!",
-      "synopsis": "Coco is a 2017 animated fantasy adventure following 12-year-old Miguel, who is accidentally transported to the colourful Land of the Dead. With the help of his ancestors, he embarks on a magical journey to uncover his family’s story and find his way home. A colourful, heartwarming adventure perfect for our Kids Halloween Show under the stars!",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2026/09/Coco-687x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2026/09/Coco-687x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=bvomHFZO0mk",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
-    },
-    {
       "title": "Weapons – Special Halloween Show",
       "detail_title": "Weapons – Special Halloween Show",
       "url": "https://thegalileo.co.za/movie/weapons/",
