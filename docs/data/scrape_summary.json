@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 4,
+      "runs": 5,
       "item_count": 100,
       "added": {},
       "removed": {
@@ -15,7 +15,7 @@
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 4,
+      "runs": 5,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -23,7 +23,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 4,
+      "runs": 5,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -31,7 +31,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 4,
+      "runs": 5,
       "item_count": 39,
       "added": {},
       "removed": {},
@@ -50,12 +50,17 @@
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection": "Kingdom Come [Extra Booster: Memorial Collection]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1": "Monkey.D.Luffy [Royal Blood]",
-        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards": "Merry Go [One Piece Promotion Cards]"
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards": "Merry Go [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-cracker-starter-deck-purple-charlotte-katakuri": "Charlotte Cracker [Starter Deck: PURPLE Charlotte Katakuri]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/rockstar-the-time-of-battle": "Rockstar [The Time of Battle]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood": "Donquixote Doflamingo (Parallel) [Royal Blood]"
       }
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 4,
+      "runs": 5,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -63,7 +68,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 4,
+      "runs": 5,
       "item_count": 188,
       "added": {},
       "removed": {},
