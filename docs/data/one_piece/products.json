@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-10-31T22:53:08.465206Z",
+  "scraped_at": "2026-11-01T02:42:45.531316Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2310,7 +2310,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/04/17/VLw2s5angR3lvzLp/img_item01.webp?_=81093b139a80edb1423d0039399ec06c",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/collection-drama003_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {
@@ -2324,7 +2324,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/04/17/MP7cRkVFMjQzyMqj/img_item01.webp?_=81093b139a80edb1423d0039399ec06c",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/collection-drama002_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-05-13T13:42:25.583762Z"
     },
     {

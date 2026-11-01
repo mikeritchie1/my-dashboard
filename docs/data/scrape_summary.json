@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 3,
+      "runs": 4,
       "item_count": 100,
       "added": {},
       "removed": {
@@ -15,7 +15,7 @@
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 3,
+      "runs": 4,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -23,7 +23,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 3,
+      "runs": 4,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -31,7 +31,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 3,
+      "runs": 4,
       "item_count": 39,
       "added": {},
       "removed": {},
@@ -55,7 +55,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 3,
+      "runs": 4,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -63,11 +63,14 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 3,
+      "runs": 4,
       "item_count": 188,
       "added": {},
       "removed": {},
-      "updated": {}
+      "updated": {
+        "docs/data/one_piece/products.json|https://en.onepiece-cardgame.com/products/collection-drama002.html": "Premium Card Collection -Live Action Edition vol.2 Straw Hat Crew-",
+        "docs/data/one_piece/products.json|https://en.onepiece-cardgame.com/products/collection-drama003.html": "Premium Card Collection -Live Action Edition vol.2 Baroque Works-"
+      }
     }
   }
 }
