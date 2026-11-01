@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-01T10:51:16Z",
+  "updated_at": "2026-11-01T17:17:53Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -267384,6 +267384,54 @@
       "stock": "In stock",
       "observed_on": "2026-11-01",
       "captured_at": "2026-11-01T10:51:01Z"
+    },
+    {
+      "card_number": "P-088",
+      "art_variant": "original",
+      "price": 31.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-p-088-pirate-foil-premium-booster-the-best-vol-2",
+      "title": "Trafalgar Law (P-088) (Pirate Foil) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-01",
+      "captured_at": "2026-11-01T17:16:42Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 138.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-01",
+      "captured_at": "2026-11-01T17:16:42Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 161.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-01",
+      "captured_at": "2026-11-01T17:16:42Z"
+    },
+    {
+      "card_number": "EB01-057",
+      "art_variant": "alternate",
+      "price": 223.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection",
+      "title": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-01",
+      "captured_at": "2026-11-01T17:16:42Z"
     }
   ]
 }
