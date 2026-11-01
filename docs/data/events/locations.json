@@ -1034,5 +1034,157 @@
   "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa": {
     "lat": -33.8181664,
     "lng": 18.5105566
+  },
+  "Cape Town Science Centre, 370B Main Road, Observatory, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9384683,
+    "lng": 18.4636591
+  },
+  "13 York Road, , Muizenberg, 7950, Cape Town, Western Cape, South Africa": {
+    "lat": -34.1079532,
+    "lng": 18.4684811
+  },
+  "4 Keats Road, , Table View, 7441, Cape Town, Western Cape, South Africa": {
+    "lat": -33.8323834,
+    "lng": 18.5144392
+  },
+  "246 Main Road, , Muizenberg, 7945, Cape Town, Western Cape, South Africa": {
+    "lat": -34.1088303,
+    "lng": 18.4677595
+  },
+  "16 Lerotholi Avenue, , Langa, 7455, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9435896,
+    "lng": 18.5254111
+  },
+  "Christ Church Constantia": {
+    "lat": -34.0210018,
+    "lng": 18.4387707
+  },
+  "Wesley Street 26, Observatory, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9373013,
+    "lng": 18.4658356
+  },
+  "Museum of Dogs": {
+    "lat": -33.9265139,
+    "lng": 18.4158803
+  },
+  "143 Lower Main Road, , Observatory, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9318226,
+    "lng": 18.4659825
+  },
+  "9 Albertus Street, , District Six, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9271949,
+    "lng": 18.4231681
+  },
+  "1 Riverside Terrace, Hout Bay, 7806, Cape Town, Western Cape, South Africa": {
+    "lat": -34.021441,
+    "lng": 18.3656679
+  },
+  "48 Main Road, Kalk Bay, 7975, Cape Town, Western Cape, South Africa": {
+    "lat": -34.1321632,
+    "lng": 18.4418583
+  },
+  "409 Imam Haron Road, Lansdowne, 7780, Cape Town, Western Cape, South Africa": {
+    "lat": -33.985651,
+    "lng": 18.4978399
+  },
+  "Orion Church International": {
+    "lat": -34.0659435,
+    "lng": 18.6136145
+  },
+  "14 Darling Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa": {
+    "lat": -33.924334,
+    "lng": 18.4223057
+  },
+  "Cape Coffee Beans": {
+    "lat": -33.9837349,
+    "lng": 18.4793227
+  },
+  "1 Kommetjie Road, Fish Hoek, 7974, Cape Town, Western Cape, South Africa": {
+    "lat": -34.1291205,
+    "lng": 18.4076987
+  },
+  "16 Dunster Avenue, Fish Hoek, 7974, Cape Town, Western Cape, South Africa": {
+    "lat": -34.1341477,
+    "lng": 18.4304284
+  },
+  "Glen Beach": {
+    "lat": -33.9468992,
+    "lng": 18.3778647
+  },
+  "99 Main Road, , Plumstead, 7800, Cape Town, Western Cape, South Africa": {
+    "lat": -34.0284405,
+    "lng": 18.4659664
+  },
+  "15 Arthurs Road, , Sea Point, 8060, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9168108,
+    "lng": 18.387539
+  },
+  "61 Loop Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa": {
+    "lat": -33.923132,
+    "lng": 18.417234
+  },
+  "397 Main Road, , Sea Point, 7945, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9182774,
+    "lng": 18.3876065
+  },
+  "30 Oxford Street, Hout Bay, 7806, Cape Town, Western Cape, South Africa": {
+    "lat": -34.0391449,
+    "lng": 18.3523477
+  },
+  "3 Tiverton Road, , Plumstead, 7801, Cape Town, Western Cape, South Africa": {
+    "lat": -34.0173448,
+    "lng": 18.4766575
+  },
+  "The Alma Cafe": {
+    "lat": -33.9539769,
+    "lng": 18.474556
+  },
+  "75 Jordaan St": {
+    "lat": -33.9253881,
+    "lng": 18.4113172
+  },
+  "10 Luisa Way, Hout Bay, 7806, Cape Town, Western Cape, South Africa": {
+    "lat": -34.0246328,
+    "lng": 18.3536593
+  },
+  "Brass Bell Kalk Bay": {
+    "lat": -34.1260917,
+    "lng": 18.4506306
+  },
+  "NG Kerk, Pinelands": {
+    "lat": -33.939348,
+    "lng": 18.496365
+  },
+  "Castle Street, Foreshore, Cape Town, 8001, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9259245,
+    "lng": 18.4254675
+  },
+  "Century City Clubhouse": {
+    "lat": -33.8882129,
+    "lng": 18.512728
+  },
+  "15 Lower Long Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9167822,
+    "lng": 18.4258666
+  },
+  "13 Wyecroft Road, Observatory, 7925, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9432046,
+    "lng": 18.4708898
+  },
+  "Radisson RED Cape Town V&A Waterfront": {
+    "lat": -33.9092918,
+    "lng": 18.4226905
+  },
+  "Hopeville Street, Gardens, 8001, Cape Town, Western Cape, South Africa": {
+    "lat": -33.9332836,
+    "lng": 18.4161786
+  },
+  "Generation Schools Somerset West": {
+    "lat": -34.1082974,
+    "lng": 18.8624359
+  },
+  "Villiera Wines, Stellenbosch": {
+    "lat": -33.8370657,
+    "lng": 18.7929027
   }
 }

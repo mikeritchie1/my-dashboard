@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-10-31T10:29:35.094887Z",
+  "generated_at": "2026-11-01T11:23:55.039778Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 39,
+  "items_count": 40,
   "items": [
+    {
+      "id": "yt-5joqNstgWWI",
+      "video_id": "5joqNstgWWI",
+      "title": "10 Weird Gaming Stories of October 2026",
+      "url": "https://www.youtube.com/watch?v=5joqNstgWWI",
+      "published_at": "2026-10-31T17:34:23+00:00",
+      "updated_at": "2026-11-01T07:29:42+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/5joqNstgWWI/hqdefault.jpg"
+    },
     {
       "id": "yt-sGgNvGbwrH4",
       "video_id": "sGgNvGbwrH4",
