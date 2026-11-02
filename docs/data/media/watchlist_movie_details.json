@@ -2449,6 +2449,23 @@
     "poster_url": null,
     "directors": null
   },
+  "anime_series:bezerk the golden age": {
+    "title": "Bezerk - The Golden Age",
+    "media_type": "anime_series",
+    "directors": null,
+    "description": null,
+    "runtime_minutes": null,
+    "poster_url": null,
+    "overview": null,
+    "tmdb_id": null,
+    "actors": null,
+    "trailer_url": null,
+    "rating": null,
+    "number_of_seasons": null,
+    "genres": null,
+    "release_date": null,
+    "tmdb_url": null
+  },
   "anime_series:bleach": {
     "title": "Bleach",
     "media_type": "anime_series",

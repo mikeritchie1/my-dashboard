@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-01T11:23:55.039778Z",
+  "generated_at": "2026-11-02T12:33:42.714935Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 40,
+  "items_count": 41,
   "items": [
+    {
+      "id": "yt-ubo9bTtWnKo",
+      "video_id": "ubo9bTtWnKo",
+      "title": "20 Legendary Games That AGED LIKE MILK",
+      "url": "https://www.youtube.com/watch?v=ubo9bTtWnKo",
+      "published_at": "2026-11-01T16:30:43+00:00",
+      "updated_at": "2026-11-01T20:11:25+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/ubo9bTtWnKo/hqdefault.jpg"
+    },
     {
       "id": "yt-5joqNstgWWI",
       "video_id": "5joqNstgWWI",

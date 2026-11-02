@@ -1,44 +1,9 @@
 [
   {
-    "title": "Killarney Motor Show 2026",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1595283281",
-    "image": "https://content.webtickets.co.za/KillarneyEvents/panel_KMS 100_20261012_141312.jpg",
-    "date_text": "01 Nov 2026 10:00",
-    "venue": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "price": "R50 - R1500",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "sports"
-    ],
-    "missing_location": true,
-    "location_key": "Killarney International Raceway, 6 Potsdam Road, Table View",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "DRACULA",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599032944",
-    "image": "https://content.webtickets.co.za/artscape/panel_Webticket Image Dracula 2026_20260715_153129.jpg",
-    "date_text": "From 01 Nov 2026 12:00",
-    "venue": "Artscape, Theatre, Cape Town",
-    "price": "R250 - R500",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "art",
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "Artscape, Theatre, Cape Town",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "CHICAGO THE MUSICAL",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599973808",
     "image": "https://content.webtickets.co.za/TGSA/panel_Chicago_20260730_150346.jpg",
-    "date_text": "From 01 Nov 2026 19:00",
+    "date_text": "From 03 Nov 2026 19:00",
     "venue": "The George Arts Theatre, 125 York Street, George Central",
     "price": "R170 - R200",
     "source": "Webtickets",
@@ -190,6 +155,38 @@
     ],
     "missing_location": false,
     "location_key": "Villiera Wines, Stellenbosch",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Urban Revival Conference 2026 - Cape Town",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1580375191",
+    "image": "https://content.webtickets.co.za/FreshImpressionsTv/panel_uc_20260916_092838.jpg",
+    "date_text": "15 Nov 2026 14:00",
+    "venue": "Good Hope Christian Centre Ottery, Cnr Plantation Rd & Panton Rd, Ferness, Cape Town",
+    "price": "R249.50 - R1999",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [],
+    "missing_location": true,
+    "location_key": "Good Hope Christian Centre Ottery, Cnr Plantation Rd & Panton Rd, Ferness, Cape Town",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Karen Zoid in ZOID SPAWN (CPT)",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1596146148",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_Screenshot 2026-05-26 at 17.28.18_20260526_172844.png",
+    "date_text": "From 17 Nov 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R180 - R325",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "Theatre On The Bay, Camps Bay",
     "missing_place": true,
     "place_key": ""
   }

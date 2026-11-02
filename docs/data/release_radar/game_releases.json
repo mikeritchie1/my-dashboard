@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Project Afterfall",
+      "url": "https://rawg.io/games/project-afterfall",
+      "image": "https://media.rawg.io/media/screenshots/f75/f759c46190eff24d83a72fa4f76aa55a.jpg",
+      "release_date": "2026-11-02",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Crimson Desert: Charting the Unknown",
       "url": "https://rawg.io/games/crimson-desert-charting-the-unknown",
       "image": "https://media.rawg.io/media/screenshots/83c/83ca2a4e4e94eecad38064f34304af49.jpg",
@@ -50,19 +58,19 @@
       "platforms": "PC, PlayStation 5"
     },
     {
-      "title": "Sulfur",
-      "url": "https://rawg.io/games/sulfur",
-      "image": "https://media.rawg.io/media/games/c99/c9983fcec946b01924050b683d66cd7a.jpg",
-      "release_date": "2026-10-28",
-      "rating": "3.2",
-      "platforms": "PC"
-    },
-    {
       "title": "SiNiSistar Bundle",
       "url": "https://rawg.io/games/sinisistar-bundle",
       "image": "https://media.rawg.io/media/screenshots/000/000e44374ee682de1935e3aa223225be.jpg",
       "release_date": "2026-10-28",
       "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Sulfur",
+      "url": "https://rawg.io/games/sulfur",
+      "image": "https://media.rawg.io/media/games/c99/c9983fcec946b01924050b683d66cd7a.jpg",
+      "release_date": "2026-10-28",
+      "rating": "3.2",
       "platforms": "PC"
     },
     {
@@ -392,25 +400,9 @@
       "release_date": "2026-10-13",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Valor Mortis",
-      "url": "https://rawg.io/games/valor-mortis",
-      "image": "https://media.rawg.io/media/games/61d/61d1431d20f9f6e19b27cb89aa4a4402.jpg",
-      "release_date": "2026-10-13",
-      "rating": "3.9",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
     }
   ],
   "coming_soon": [
-    {
-      "title": "Project Afterfall",
-      "url": "https://rawg.io/games/project-afterfall",
-      "image": "https://media.rawg.io/media/screenshots/f75/f759c46190eff24d83a72fa4f76aa55a.jpg",
-      "release_date": "2026-11-02",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
     {
       "title": "Abashed",
       "url": "https://rawg.io/games/abashed",
