@@ -121,6 +121,21 @@
       "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
+      "card_number": "ST34-002",
+      "price": 3.0,
+      "title": "Charlotte Cracker [Starter Deck: PURPLE Charlotte Katakuri]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: PURPLE Charlotte Katakuri",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R3.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-cracker-starter-deck-purple-charlotte-katakuri",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706343.jpg?v=1791317584",
+      "art_variant": "original",
+      "scraped_at": "2026-10-27T09:18:24Z"
+    },
+    {
       "card_number": "DON!!",
       "price": 4.0,
       "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
@@ -136,19 +151,19 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "ST34-002",
-      "price": 4.0,
-      "title": "Charlotte Cracker [Starter Deck: PURPLE Charlotte Katakuri]",
-      "rarity": "Common",
+      "card_number": "DON!!",
+      "price": 5.0,
+      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
+      "rarity": "DON!!",
       "store": "Knightly Gaming",
-      "set_name": "Starter Deck: PURPLE Charlotte Katakuri",
-      "condition": "Near Mint",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint R4.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-cracker-starter-deck-purple-charlotte-katakuri",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706343.jpg?v=1791317584",
-      "art_variant": "original",
-      "scraped_at": "2026-10-27T09:18:24Z"
+      "available_variants": "Near Mint Foil R5.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/698313.jpg?v=1793221582",
+      "art_variant": "alternate",
+      "scraped_at": "2026-09-24T23:35:55Z"
     },
     {
       "card_number": "OP07-060",
@@ -194,21 +209,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/646574.jpg?v=1790292438",
       "art_variant": "alternate",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "DON!!",
-      "price": 6.0,
-      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
-      "rarity": "DON!!",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R6.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/698313.jpg?v=1793221582",
-      "art_variant": "alternate",
-      "scraped_at": "2026-09-24T23:35:55Z"
     },
     {
       "card_number": "OP16-026",
@@ -299,21 +299,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/686650.jpg?v=1780510130",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "DON!!",
-      "price": 10.0,
-      "title": "DON!! Card [Ultra Deck - The Three Captains]",
-      "rarity": "DON!!",
-      "store": "Knightly Gaming",
-      "set_name": "Ultra Deck - The Three Captains",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R10.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/527633.jpg?v=1733906031",
-      "art_variant": "original",
-      "scraped_at": "2026-08-14T08:59:59Z"
     },
     {
       "card_number": "DON!!",
@@ -554,6 +539,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/709105.jpg?v=1787878591",
       "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:03Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 11.0,
+      "title": "DON!! Card [Ultra Deck - The Three Captains]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "Ultra Deck - The Three Captains",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R11.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/527633.jpg?v=1733906031",
+      "art_variant": "original",
+      "scraped_at": "2026-08-14T08:59:59Z"
     },
     {
       "card_number": "ST29-004",
@@ -947,14 +947,14 @@
     },
     {
       "card_number": "ST21-017",
-      "price": 49.0,
+      "price": 48.0,
       "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
       "rarity": "Common",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck EX: Gear 5",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R49.00",
+      "available_variants": "Near Mint Foil R48.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/615595.jpg?v=1769011256",
       "art_variant": "original",
@@ -1036,6 +1036,21 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
+      "card_number": "ST31-001",
+      "price": 58.0,
+      "title": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: RED Monkey.D.Luffy",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R58.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706314.jpg?v=1784579107",
+      "art_variant": "original",
+      "scraped_at": "2026-10-27T09:18:24Z"
+    },
+    {
       "card_number": "EB02-041",
       "price": 60.0,
       "title": "Merry Go [Extra Booster: Anime 25th Collection]",
@@ -1079,21 +1094,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/647688_94275867-6902-4780-8fbc-bd199ba5973f.jpg?v=1768644861",
       "art_variant": "alternate",
       "scraped_at": "2026-10-19T14:22:02Z"
-    },
-    {
-      "card_number": "ST31-001",
-      "price": 60.0,
-      "title": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: RED Monkey.D.Luffy",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R60.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706314.jpg?v=1784579107",
-      "art_variant": "original",
-      "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
       "card_number": "DON!!",
@@ -1142,14 +1142,14 @@
     },
     {
       "card_number": "OP10-118",
-      "price": 84.0,
+      "price": 83.0,
       "title": "Monkey.D.Luffy [Royal Blood]",
       "rarity": "Secret Rare",
       "store": "Knightly Gaming",
       "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R84.00",
+      "available_variants": "Near Mint Foil R83.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617169.jpg?v=1758380156",
       "art_variant": "original",
@@ -1201,33 +1201,33 @@
       "scraped_at": "2026-07-11T15:41:06Z"
     },
     {
-      "card_number": "EB01-059",
-      "price": 125.0,
-      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
-      "rarity": "Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Extra Booster: Memorial Collection",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R125.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/544599.jpg?v=1745408561",
-      "art_variant": "original",
-      "scraped_at": "2026-10-27T09:18:24Z"
-    },
-    {
       "card_number": "OP17-031",
-      "price": 130.0,
+      "price": 120.0,
       "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The World's Strongest Warriors",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R130.00",
+      "available_variants": "Near Mint Foil R120.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/711423.jpg?v=1791317948",
       "art_variant": "alternate",
+      "scraped_at": "2026-10-27T09:18:24Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "price": 123.0,
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Extra Booster: Memorial Collection",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R123.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/544599.jpg?v=1745408561",
+      "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
@@ -1292,21 +1292,6 @@
     },
     {
       "card_number": "ST31-005",
-      "price": 163.0,
-      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
-      "rarity": "Common",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: RED Monkey.D.Luffy",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R163.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706318.jpg?v=1784579162",
-      "art_variant": "original",
-      "scraped_at": "2026-10-27T09:18:24Z"
-    },
-    {
-      "card_number": "ST31-005",
       "price": 165.0,
       "title": "Thousand Sunny (ST31-005) - Starter Deck 31: RED Monkey.D.Luffy",
       "rarity": "",
@@ -1319,6 +1304,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/706318.jpg?v=1787878581",
       "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:03Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "price": 166.0,
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "rarity": "Common",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: RED Monkey.D.Luffy",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R166.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706318.jpg?v=1784579162",
+      "art_variant": "original",
+      "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
       "card_number": "OP01-057",
@@ -1364,21 +1364,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/676843.jpg?v=1791319507",
       "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:24Z"
-    },
-    {
-      "card_number": "ST23-001",
-      "price": 208.0,
-      "title": "Uta [Starter Deck: Red Shanks]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: Red Shanks",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R208.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/633761.jpg?v=1757956074",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "ST05-004",
@@ -1441,6 +1426,21 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
+      "card_number": "ST32-002",
+      "price": 248.0,
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Starter Deck: GREEN Roronoa Zoro",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R248.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706324.jpg?v=1784579213",
+      "art_variant": "original",
+      "scraped_at": "2026-10-27T09:18:24Z"
+    },
+    {
       "card_number": "EB02-041",
       "price": 249.0,
       "title": "Merry Go [One Piece Promotion Cards]",
@@ -1454,21 +1454,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/one_placeholder_1db98819-6261-4b40-a190-4023f2193957.png?v=1790292155",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
-    },
-    {
-      "card_number": "ST32-002",
-      "price": 252.0,
-      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Starter Deck: GREEN Roronoa Zoro",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R252.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706324.jpg?v=1784579213",
-      "art_variant": "original",
-      "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
       "card_number": "OP17-005",
@@ -1607,14 +1592,14 @@
     },
     {
       "card_number": "EB03-062",
-      "price": 310.0,
+      "price": 308.0,
       "title": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]",
       "rarity": "Secret Rare",
       "store": "Knightly Gaming",
       "set_name": "Extra Booster: One Piece Heroines Edition",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R310.00",
+      "available_variants": "Near Mint Foil R308.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/672819.jpg?v=1791317299",
       "art_variant": "alternate",
@@ -1801,6 +1786,21 @@
       "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
+      "card_number": "DON!!",
+      "price": 535.0,
+      "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "Premium Booster -The Best- Vol. 2",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R535.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/655123.jpg?v=1790292338",
+      "art_variant": "original",
+      "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
       "card_number": "OP17-087",
       "price": 535.0,
       "title": "Nico Robin (Alternate Art) (OP17-087) - The World's Strongest Warriors Foil",
@@ -1814,21 +1814,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712115.jpg?v=1787878276",
       "art_variant": "alternate",
       "scraped_at": "2026-10-27T09:18:03Z"
-    },
-    {
-      "card_number": "DON!!",
-      "price": 540.0,
-      "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
-      "rarity": "DON!!",
-      "store": "Knightly Gaming",
-      "set_name": "Premium Booster -The Best- Vol. 2",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R540.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/655123.jpg?v=1790292338",
-      "art_variant": "original",
-      "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
       "card_number": "OP15-113",

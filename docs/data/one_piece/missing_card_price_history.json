@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T08:28:34Z",
+  "updated_at": "2026-11-02T19:51:34Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -269292,6 +269292,114 @@
       "stock": "In stock",
       "observed_on": "2026-11-02",
       "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "ST34-002",
+      "art_variant": "original",
+      "price": 3.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-cracker-starter-deck-purple-charlotte-katakuri",
+      "title": "Charlotte Cracker [Starter Deck: PURPLE Charlotte Katakuri]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 11.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains",
+      "title": "DON!! Card [Ultra Deck - The Three Captains]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "ST31-001",
+      "art_variant": "original",
+      "price": 58.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy",
+      "title": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 83.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 120.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 123.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 166.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "EB03-062",
+      "art_variant": "alternate",
+      "price": 308.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition",
+      "title": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 535.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2",
+      "title": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T19:51:16Z"
     }
   ]
 }

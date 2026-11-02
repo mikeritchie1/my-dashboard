@@ -1,5 +1,69 @@
 {
   "window_started_at": "2026-11-02T12:33:43.933962+00:00",
   "last_sent_at": "2026-11-02T12:33:43.933962+00:00",
-  "sources": {}
+  "sources": {
+    "one-piece/bigbang": {
+      "label": "Big Bang",
+      "runs": 1,
+      "item_count": 99,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/collectiverse": {
+      "label": "Collectiverse",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/geekhaven": {
+      "label": "Geek Haven",
+      "runs": 1,
+      "item_count": 0,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/knightly": {
+      "label": "Knightly Gaming",
+      "runs": 1,
+      "item_count": 37,
+      "added": {},
+      "removed": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks": "Uta [Starter Deck: Red Shanks]"
+      },
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle": "DON!! Card (Alternate Art) [The Time of Battle]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/charlotte-cracker-starter-deck-purple-charlotte-katakuri": "Charlotte Cracker [Starter Deck: PURPLE Charlotte Katakuri]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1": "Monkey.D.Luffy [Royal Blood]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains": "DON!! Card [Ultra Deck - The Three Captains]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-hannyabal-gold-premium-booster-the-best-vol-2": "DON!! Card (Hannyabal) (Gold) [Premium Booster -The Best- Vol. 2]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection": "Kingdom Come [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]"
+      }
+    },
+    "one-piece/tanuki": {
+      "label": "Tanuki Games",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/products": {
+      "label": "Official products",
+      "runs": 1,
+      "item_count": 188,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    }
+  }
 }
