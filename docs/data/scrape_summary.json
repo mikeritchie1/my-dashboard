@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 2,
+      "runs": 3,
       "item_count": 99,
       "added": {},
       "removed": {
@@ -14,7 +14,7 @@
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -22,7 +22,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 2,
+      "runs": 3,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -30,7 +30,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 2,
+      "runs": 3,
       "item_count": 38,
       "added": {},
       "removed": {
@@ -54,7 +54,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 2,
+      "runs": 3,
       "item_count": 188,
       "added": {},
       "removed": {},
