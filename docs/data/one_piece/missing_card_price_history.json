@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T01:04:53Z",
+  "updated_at": "2026-11-02T08:28:34Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -269172,6 +269172,126 @@
       "stock": "In stock",
       "observed_on": "2026-11-02",
       "captured_at": "2026-11-02T01:04:34Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 4.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-green-compass-starter-deck-straw-hat-crew",
+      "title": "DON!! Card // Green Compass [Starter Deck: Straw Hat Crew]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 6.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
+      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "ST29-004",
+      "art_variant": "original",
+      "price": 14.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
+      "title": "Sanji [Starter Deck: Egghead]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "art_variant": "original",
+      "price": 49.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 125.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 130.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 163.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 208.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "EB01-057",
+      "art_variant": "alternate",
+      "price": 222.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection",
+      "title": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 252.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-02",
+      "captured_at": "2026-11-02T08:28:16Z"
     }
   ]
 }
