@@ -1,5 +1,61 @@
 {
   "window_started_at": "2026-11-03T12:05:32.568486+00:00",
   "last_sent_at": "2026-11-03T12:05:32.568486+00:00",
-  "sources": {}
+  "sources": {
+    "one-piece/bigbang": {
+      "label": "Big Bang",
+      "runs": 1,
+      "item_count": 99,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/collectiverse": {
+      "label": "Collectiverse",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/geekhaven": {
+      "label": "Geek Haven",
+      "runs": 1,
+      "item_count": 0,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/knightly": {
+      "label": "Knightly Gaming",
+      "runs": 1,
+      "item_count": 37,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection": "Kingdom Come [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-ultra-deck-the-three-captains": "DON!! Card [Ultra Deck - The Three Captains]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead": "Sanji [Starter Deck: Egghead]"
+      }
+    },
+    "one-piece/tanuki": {
+      "label": "Tanuki Games",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/products": {
+      "label": "Official products",
+      "runs": 1,
+      "item_count": 188,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    }
+  }
 }
