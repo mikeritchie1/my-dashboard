@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T17:24:56Z",
+  "updated_at": "2026-11-03T22:37:46Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -271380,6 +271380,66 @@
       "stock": "In stock",
       "observed_on": "2026-11-03",
       "captured_at": "2026-11-03T17:24:26Z"
+    },
+    {
+      "card_number": "OP17-046",
+      "art_variant": "original",
+      "price": 35.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gloriosa-op17-046-the-worlds-strongest-warriors-foil",
+      "title": "Gloriosa (OP17-046) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-03",
+      "captured_at": "2026-11-03T22:37:15Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1110.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nico-robin-gold-extra-booster-one-piece-heroines-edition-foil",
+      "title": "DON!! Card (Nico Robin) (Gold) - Extra Booster: One Piece Heroines Edition Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-03",
+      "captured_at": "2026-11-03T22:37:15Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 2220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-03",
+      "captured_at": "2026-11-03T22:37:15Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 164.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-03",
+      "captured_at": "2026-11-03T22:37:35Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 227.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-03",
+      "captured_at": "2026-11-03T22:37:35Z"
     }
   ]
 }
