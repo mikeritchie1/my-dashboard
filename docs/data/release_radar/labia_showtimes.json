@@ -6,7 +6,7 @@
     "days": 14
   },
   "listed_window": {
-    "start_date": "2026-11-02",
+    "start_date": "2026-11-03",
     "end_date": "2026-12-15"
   },
   "weeks": [
@@ -23,8 +23,8 @@
     {
       "tmdb_id": 1318413,
       "tmdb_url": "https://www.themoviedb.org/movie/1318413",
-      "tmdb_rating": "7.727",
-      "tmdb_votes": "531",
+      "tmdb_rating": "7.722",
+      "tmdb_votes": "532",
       "release_date": "2026-05-28",
       "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
       "runtime_minutes": "101",
@@ -57,12 +57,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606113439",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606113439",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 05 Nov 2026: 11:30, 18:15\n06 Nov 2026 - 12 Nov 2026: 13:45",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 05 Nov 2026: 11:30, 18:15\n06 Nov 2026 - 12 Nov 2026: 13:45",
       "image": "https://image.tmdb.org/t/p/w342/gFjEggtrejCN79r6SXRjM269OtG.jpg",
       "showings": [
-        "2026-11-02 11:30",
-        "2026-11-02 18:15",
         "2026-11-03 11:30",
         "2026-11-03 18:15",
         "2026-11-04 11:30",
@@ -78,13 +76,6 @@
         "2026-11-12 13:45"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "11:30",
-            "18:15"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -153,8 +144,8 @@
     {
       "tmdb_id": 1503762,
       "tmdb_url": "https://www.themoviedb.org/movie/1503762",
-      "tmdb_rating": "7.3",
-      "tmdb_votes": "119",
+      "tmdb_rating": "7.221",
+      "tmdb_votes": "129",
       "release_date": "2026-09-23",
       "overview": "A charming, witty, and deeply relatable story of love and sisterhood.",
       "runtime_minutes": "132",
@@ -187,12 +178,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 05 Nov 2026: 11:45, 17:30\n06 Nov 2026 - 12 Nov 2026: 12:00, 17:45",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 05 Nov 2026: 11:45, 17:30\n06 Nov 2026 - 12 Nov 2026: 12:00, 17:45",
       "image": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
       "showings": [
-        "2026-11-02 11:45",
-        "2026-11-02 17:30",
         "2026-11-03 11:45",
         "2026-11-03 17:30",
         "2026-11-04 11:45",
@@ -215,13 +204,6 @@
         "2026-11-12 17:45"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -326,12 +308,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606112696",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606112696",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 05 Nov 2026: 12:00, 18:00\n06 Nov 2026 - 10 Nov 2026: 11:30, 16:00\n11 Nov 2026: 11:30\n12 Nov 2026: 11:30, 16:00",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 05 Nov 2026: 12:00, 18:00\n06 Nov 2026 - 10 Nov 2026: 11:30, 16:00\n11 Nov 2026: 11:30\n12 Nov 2026: 11:30, 16:00",
       "image": "https://image.tmdb.org/t/p/w342/dgtiiO3pfIL1aRdjhiLFCXxKLEA.jpg",
       "showings": [
-        "2026-11-02 12:00",
-        "2026-11-02 18:00",
         "2026-11-03 12:00",
         "2026-11-03 18:00",
         "2026-11-04 12:00",
@@ -353,13 +333,6 @@
         "2026-11-12 16:00"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "12:00",
-            "18:00"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -434,8 +407,8 @@
     {
       "tmdb_id": 791523,
       "tmdb_url": "https://www.themoviedb.org/movie/791523",
-      "tmdb_rating": "8.662",
-      "tmdb_votes": "142",
+      "tmdb_rating": "8.567",
+      "tmdb_votes": "163",
       "release_date": "2026-10-19",
       "overview": "After her baby brother is abducted by a murder of crows, headstrong teenager Prue McKeel launches a desperate rescue mission into the Impassable Wilderness, an enchanted forest hidden just beyond Portland, Oregon. Joined by her hapless but loyal classmate Curtis Mehlberg, Prue navigates a world of talking animals, bandits, and powerful figures driven by grief and ambition. As the pair is drawn into a conflict threatening the balance of the forest itself, Prue must discover the strength and belief she never knew she possessed.",
       "runtime_minutes": "132",
@@ -468,12 +441,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 05 Nov 2026: 12:15, 17:45\n06 Nov 2026 - 09 Nov 2026: 11:45, 17:30\n10 Nov 2026: 11:45\n11 Nov 2026: 11:45, 17:30\n12 Nov 2026: 11:45",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 05 Nov 2026: 12:15, 17:45\n06 Nov 2026 - 09 Nov 2026: 11:45, 17:30\n10 Nov 2026: 11:45\n11 Nov 2026: 11:45, 17:30\n12 Nov 2026: 11:45",
       "image": "https://image.tmdb.org/t/p/w342/8g7q6o54WfKWRmUQ0Ye8OskevUY.jpg",
       "showings": [
-        "2026-11-02 12:15",
-        "2026-11-02 17:45",
         "2026-11-03 12:15",
         "2026-11-03 17:45",
         "2026-11-04 12:15",
@@ -494,13 +465,6 @@
         "2026-11-12 11:45"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "12:15",
-            "17:45"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -607,12 +571,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606114424",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606114424",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 05 Nov 2026: 13:45, 20:30\n08 Nov 2026 - 10 Nov 2026: 18:15\n12 Nov 2026: 18:15",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 05 Nov 2026: 13:45, 20:30\n08 Nov 2026 - 10 Nov 2026: 18:15\n12 Nov 2026: 18:15",
       "image": "https://image.tmdb.org/t/p/w342/rrKe8bC6UKFKvfZHvbwA9Bq5hkR.jpg",
       "showings": [
-        "2026-11-02 13:45",
-        "2026-11-02 20:30",
         "2026-11-03 13:45",
         "2026-11-03 20:30",
         "2026-11-04 13:45",
@@ -625,13 +587,6 @@
         "2026-11-12 18:15"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "13:45",
-            "20:30"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -682,8 +637,8 @@
     {
       "tmdb_id": 1248832,
       "tmdb_url": "https://www.themoviedb.org/movie/1248832",
-      "tmdb_rating": "7.5",
-      "tmdb_votes": "491",
+      "tmdb_rating": "7.498",
+      "tmdb_votes": "492",
       "release_date": "2026-09-28",
       "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
       "runtime_minutes": "129",
@@ -715,11 +670,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026: 14:15\n03 Nov 2026: 14:15, 20:15\n04 Nov 2026 - 05 Nov 2026: 14:15\n08 Nov 2026 - 12 Nov 2026: 20:30",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026: 14:15, 20:15\n04 Nov 2026 - 05 Nov 2026: 14:15\n08 Nov 2026 - 12 Nov 2026: 20:30",
       "image": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
       "showings": [
-        "2026-11-02 14:15",
         "2026-11-03 14:15",
         "2026-11-03 20:15",
         "2026-11-04 14:15",
@@ -731,12 +685,6 @@
         "2026-11-12 20:30"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "14:15"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -791,8 +739,8 @@
     {
       "tmdb_id": 1283515,
       "tmdb_url": "https://www.themoviedb.org/movie/1283515",
-      "tmdb_rating": "6.858",
-      "tmdb_votes": "520",
+      "tmdb_rating": "6.943",
+      "tmdb_votes": "569",
       "release_date": "2026-09-30",
       "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
       "runtime_minutes": "117",
@@ -824,12 +772,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026: 14:45, 20:15\n03 Nov 2026: 14:45\n04 Nov 2026 - 05 Nov 2026: 14:45, 20:15\n06 Nov 2026 - 12 Nov 2026: 12:15",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026: 14:45\n04 Nov 2026 - 05 Nov 2026: 14:45, 20:15\n06 Nov 2026 - 12 Nov 2026: 12:15",
       "image": "https://image.tmdb.org/t/p/w342/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
       "showings": [
-        "2026-11-02 14:45",
-        "2026-11-02 20:15",
         "2026-11-03 14:45",
         "2026-11-04 14:45",
         "2026-11-04 20:15",
@@ -844,13 +790,6 @@
         "2026-11-12 12:15"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "14:45",
-            "20:15"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -918,8 +857,8 @@
     {
       "tmdb_id": 1329016,
       "tmdb_url": "https://www.themoviedb.org/movie/1329016",
-      "tmdb_rating": "7.367",
-      "tmdb_votes": "173",
+      "tmdb_rating": "7.396",
+      "tmdb_votes": "178",
       "release_date": "2026-08-07",
       "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
       "runtime_minutes": "107",
@@ -951,11 +890,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 12 Nov 2026: 15:00",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 12 Nov 2026: 15:00",
       "image": "https://image.tmdb.org/t/p/w342/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
       "showings": [
-        "2026-11-02 15:00",
         "2026-11-03 15:00",
         "2026-11-04 15:00",
         "2026-11-05 15:00",
@@ -968,12 +906,6 @@
         "2026-11-12 15:00"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "15:00"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -1039,8 +971,8 @@
     {
       "tmdb_id": 950028,
       "tmdb_url": "https://www.themoviedb.org/movie/950028",
-      "tmdb_rating": "7.205",
-      "tmdb_votes": "903",
+      "tmdb_rating": "7.202",
+      "tmdb_votes": "907",
       "release_date": "2026-06-25",
       "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
       "runtime_minutes": "107",
@@ -1067,11 +999,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599356445",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599356445",
-      "event_date_text": "02 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 05 Nov 2026: 16:00\n06 Nov 2026 - 07 Nov 2026: 18:00\n09 Nov 2026 - 12 Nov 2026: 18:00",
+      "event_date_text": "03 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 05 Nov 2026: 16:00\n06 Nov 2026 - 07 Nov 2026: 18:00\n09 Nov 2026 - 12 Nov 2026: 18:00",
       "image": "https://image.tmdb.org/t/p/w342/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
       "showings": [
-        "2026-11-02 16:00",
         "2026-11-03 16:00",
         "2026-11-04 16:00",
         "2026-11-05 16:00",
@@ -1083,12 +1014,6 @@
         "2026-11-12 18:00"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "16:00"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -1153,12 +1078,11 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606112069",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606112069",
-      "event_date_text": "02 Nov 2026 - 11 Nov 2026",
-      "showtime_summary": "02 Nov 2026 - 05 Nov 2026: 20:30\n06 Nov 2026 - 07 Nov 2026: 20:15\n09 Nov 2026 - 11 Nov 2026: 20:15",
-      "release_date": "2026-11-02",
+      "event_date_text": "03 Nov 2026 - 11 Nov 2026",
+      "showtime_summary": "03 Nov 2026 - 05 Nov 2026: 20:30\n06 Nov 2026 - 07 Nov 2026: 20:15\n09 Nov 2026 - 11 Nov 2026: 20:15",
+      "release_date": "2026-11-03",
       "image": "https://content.webtickets.co.za/labia/panel_hope image 1_20261025_112504.jpg",
       "showings": [
-        "2026-11-02 20:30",
         "2026-11-03 20:30",
         "2026-11-04 20:30",
         "2026-11-05 20:30",
@@ -1169,12 +1093,6 @@
         "2026-11-11 20:15"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-02",
-          "times": [
-            "20:30"
-          ]
-        },
         {
           "date": "2026-11-03",
           "times": [
@@ -1308,8 +1226,8 @@
     {
       "tmdb_id": 891621,
       "tmdb_url": "https://www.themoviedb.org/movie/891621",
-      "tmdb_rating": "8.667",
-      "tmdb_votes": "9",
+      "tmdb_rating": "8.867",
+      "tmdb_votes": "15",
       "release_date": "2026-10-30",
       "overview": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone’s trip to this remote paradise sideways.",
       "runtime_minutes": "117",
@@ -1325,10 +1243,10 @@
         "John Malkovich",
         "Sam Rockwell",
         "Steve Buscemi",
-        "Mariana di Girolamo",
-        "Ailín Salas",
         "Tom Waits",
         "Parker Posey",
+        "Mariana di Girolamo",
+        "Ailín Salas",
         "Paola Giannini",
         "Samuel Wayt"
       ],

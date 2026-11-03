@@ -2,6 +2,76 @@
   "source": "https://pahe.ink/",
   "items": [
     {
+      "title": "Primetime",
+      "url": "https://pahe.ink/primetime-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/Primetime-3-PosterSpy_png_80-110x153.jpg",
+      "rating": "6.785",
+      "first_seen_at": "2026-11-03",
+      "tmdb_id": 1375441,
+      "tmdb_url": "https://www.themoviedb.org/movie/1375441",
+      "tmdb_rating": "6.785",
+      "tmdb_votes": "265",
+      "release_date": "2026-09-23",
+      "overview": "In 2006, To Catch a Predator host Chris Hansen sets out to make television history. When a high stakes operation goes fatally wrong, his veneered dream of fame curdles into a nightmare of performative justice.",
+      "runtime_minutes": "110",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "directors": [
+        "Lance Oppenheim"
+      ],
+      "actors": [
+        "Robert Pattinson",
+        "Merritt Wever",
+        "Skyler Gisondo",
+        "Matthew Maher",
+        "Phoebe Bridgers",
+        "Victor Brunette",
+        "Bokeem Woodbine",
+        "Michael Chachere",
+        "Alex Winter",
+        "Tony Revolori"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=C0NZa01qTRU",
+      "poster_url": "https://image.tmdb.org/t/p/w342/lmrulvLbmaejTix1YaMxo1oGhH1.jpg"
+    },
+    {
+      "title": "Beware Boi\u00fana",
+      "url": "https://pahe.ink/beware-boiuna-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/uW5YMPxJUzT9bkafrCKHXjPTCoQ_jpg_75-110x153.jpg",
+      "rating": "6.2",
+      "first_seen_at": "2026-11-03",
+      "tmdb_id": 1244523,
+      "tmdb_url": "https://www.themoviedb.org/movie/1244523",
+      "tmdb_rating": "6.2",
+      "tmdb_votes": "16",
+      "release_date": "2026-10-01",
+      "overview": "A medical mission deep in the Amazon becomes a desperate fight for survival when a colossal ancient predator awakens, turning the jungle into a deadly battleground where nature decides who lives and dies.",
+      "runtime_minutes": "104",
+      "genres": [
+        "Horror",
+        "Thriller"
+      ],
+      "directors": [
+        "Mike P. Nelson"
+      ],
+      "actors": [
+        "Logan Marshall-Green",
+        "Kiana Madeira",
+        "Jessica Rothe",
+        "Jackson Bews",
+        "Juan Pablo Shuk",
+        "Will Close",
+        "Vicente Pe\u00f1a",
+        "Jaime Newball",
+        "Mateo Moreno",
+        "Nelson Camayo"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=MQKqgFVU4dQ",
+      "poster_url": "https://image.tmdb.org/t/p/w342/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg"
+    },
+    {
       "title": "Forgotten Island",
       "url": "https://pahe.ink/forgotten-island-2026-web-dl-480p-720p-1080p/",
       "image": "https://pahe.ink/wp-content/uploads/2026/10/HSXgTW0XEAAJ_CX_75-110x153.jpg",
@@ -850,84 +920,6 @@
       ],
       "trailer_url": "https://www.youtube.com/watch?v=jczr0KCloXk",
       "poster_url": "https://image.tmdb.org/t/p/w342/13ZcJzSGEqVgDSqsS9U5EkQwPkV.jpg",
-      "is_new": false
-    },
-    {
-      "title": "Swapped",
-      "url": "https://pahe.ink/swapped-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/658934871_17898840984432326_6875231130916792459_n.heic_75-110x153.jpg",
-      "rating": "8.978",
-      "first_seen_at": "2026-05-13",
-      "tmdb_id": 1007757,
-      "tmdb_url": "https://www.themoviedb.org/movie/1007757",
-      "tmdb_rating": "8.978",
-      "tmdb_votes": "713",
-      "release_date": "2026-05-01",
-      "overview": "A small woodland creature and a majestic bird, two natural sworn enemies of the Valley, magically trade places and set off on an adventure of a lifetime to switch back. Their journey soon uncovers a greater threat\u2014one that could endanger not only their species, but the entire valley they call home.",
-      "runtime_minutes": "102",
-      "genres": [
-        "Animation",
-        "Family",
-        "Adventure",
-        "Drama",
-        "Fantasy"
-      ],
-      "directors": [
-        "Nathan Greno"
-      ],
-      "actors": [
-        "Michael B. Jordan",
-        "Juno Temple",
-        "Tracy Morgan",
-        "Cedric the Entertainer",
-        "Justina Machado",
-        "Nate Torrence",
-        "Camden Brooks",
-        "Tata Vega",
-        "Ambika Mod",
-        "Lolly Adefope"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=glgmAwRDP8s",
-      "poster_url": "https://image.tmdb.org/t/p/w342/tHhxWxge06goXU6ZQH1hj7vK8Hd.jpg",
-      "is_new": false
-    },
-    {
-      "title": "Hoppers",
-      "url": "https://pahe.ink/hoppers-2026/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/03/649472411_18568684036046505_6778251019293908864_n_jpg_75-110x153.jpg",
-      "rating": "7.953",
-      "first_seen_at": "2026-05-13",
-      "tmdb_id": 1327819,
-      "tmdb_url": "https://www.themoviedb.org/movie/1327819",
-      "tmdb_rating": "7.953",
-      "tmdb_votes": "967",
-      "release_date": "2026-03-04",
-      "overview": "Scientists have discovered how to 'hop' human consciousness into lifelike robotic animals, allowing people to communicate with animals as animals. Animal lover Mabel seizes an opportunity to use the technology, uncovering mysteries within the animal world beyond anything she could have imagined.",
-      "runtime_minutes": "104",
-      "genres": [
-        "Animation",
-        "Adventure",
-        "Comedy",
-        "Family",
-        "Science Fiction"
-      ],
-      "directors": [
-        "Daniel Chong"
-      ],
-      "actors": [
-        "Piper Curda",
-        "Bobby Moynihan",
-        "Jon Hamm",
-        "Kathy Najimy",
-        "Dave Franco",
-        "Eduardo Franco",
-        "Aparna Nancherla",
-        "Tom Law",
-        "Sam Richardson",
-        "Melissa Villase\u00f1or"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=PypDSyIRRSs",
-      "poster_url": "https://image.tmdb.org/t/p/w342/xjtWQ2CL1mpmMNwuU5HeS4Iuwuu.jpg",
       "is_new": false
     }
   ]

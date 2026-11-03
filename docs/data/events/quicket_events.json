@@ -1,63 +1,5 @@
 [
   {
-    "title": "THE CONVENT (El Convento)",
-    "start": "2026-11-02T20:30:00+02:00",
-    "end": "2026-11-02T22:00:00+02:00",
-    "venue": "Labia Theatre",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "68 Orange St, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1008904_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/404410-the-convent-el-convento/",
-    "categories": [
-      "theatre"
-    ],
-    "location_key": "68 Orange St, 8001, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "BSS Meetup  - November Edition",
-    "start": "2026-11-03T10:00:00+02:00",
-    "end": "2026-11-03T12:00:00+02:00",
-    "venue": "Jackson and Black Grill & Pizzeria | TYGER",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Sportica Crescent, , Tygervalley, 7530, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1005224_247_247.png",
-    "url": "https://www.quicket.co.za/events/402845-bss-meetup-november-edition/",
-    "categories": [],
-    "location_key": "Jackson and Black Grill & Pizzeria | TYGER",
-    "missing_location": true,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "PRINT, PLAY &  DISCOVER CYANOTYPE",
-    "start": "2026-11-03T10:00:00+02:00",
-    "end": "2026-11-03T12:30:00+02:00",
-    "venue": "16 Dunster Ave",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "16 Dunster Avenue, Fish Hoek, 7974, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1006414_247_247.png",
-    "url": "https://www.quicket.co.za/events/403359-print-play-discover-cyanotype/",
-    "categories": [
-      "theatre"
-    ],
-    "location_key": "16 Dunster Avenue, Fish Hoek, 7974, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Sound Journey (Gathering #01)",
     "start": "2026-11-03T17:30:00+02:00",
     "end": "2026-11-03T18:30:00+02:00",
@@ -169,7 +111,7 @@
     "address": "Beach Road, , Muizenberg, 7970, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q13_247_247.jpg",
+    "image": "https://images.quicket.co.za/Q2_247_247.jpg",
     "url": "https://www.quicket.co.za/events/403774-other-mother-round-3/",
     "categories": [],
     "location_key": "Beach Road, , Muizenberg, 7970, Cape Town, Western Cape, South Africa",
@@ -198,7 +140,7 @@
     "missing_place": true
   },
   {
-    "title": "Mlungu.",
+    "title": "Mlungu",
     "start": "2026-11-03T19:30:00+02:00",
     "end": "2026-11-04T18:30:00+02:00",
     "venue": "Kaapstad Toneelhuis",
@@ -254,19 +196,21 @@
     "missing_place": true
   },
   {
-    "title": "Women In Business Roundtable - Networking Event",
-    "start": "2026-11-04T10:30:00+02:00",
-    "end": "2026-11-04T12:30:00+02:00",
-    "venue": "Starbucks Sea Point",
+    "title": "Open Practice Yoga Club on the Prom",
+    "start": "2026-11-04T08:00:00+02:00",
+    "end": "2026-11-05T09:00:00+02:00",
+    "venue": "Mandela Glasses",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "397 Main Road, , Sea Point, 7945, Cape Town, Western Cape, South Africa",
+    "address": "1 Rocklands Road, Three Anchor Bay, 8005, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/1001000_247_247.png",
-    "url": "https://www.quicket.co.za/events/401823-women-in-business-roundtable-networking-event/",
-    "categories": [],
-    "location_key": "397 Main Road, , Sea Point, 7945, Cape Town, Western Cape, South Africa",
+    "image": "https://images.quicket.co.za/1016887_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/406153-open-practice-yoga-club-on-the-prom/",
+    "categories": [
+      "club"
+    ],
+    "location_key": "Mandela Glasses",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -470,26 +414,6 @@
     "missing_place": true
   },
   {
-    "title": "Queens Lounge Presents LAD Trio",
-    "start": "2026-11-04T20:00:00+02:00",
-    "end": "2026-11-04T22:00:00+02:00",
-    "venue": "Queens Lounge Whisky & Cocktail Lounge",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Dock Road, , Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1008688_247_247.png",
-    "url": "https://www.quicket.co.za/events/404333-queens-lounge-presents-lad-trio/",
-    "categories": [
-      "bar"
-    ],
-    "location_key": "Dock Road, , Victoria & Alfred Waterfront, 8001, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "CORPORATE RETREAT",
     "start": "2026-11-04T20:30:00+02:00",
     "end": "2026-11-04T22:00:00+02:00",
@@ -548,6 +472,24 @@
     "missing_place": true
   },
   {
+    "title": "Explosive Paint & Tea: Table Mountain Fireworks at Canvas and Craft",
+    "start": "2026-11-05T10:00:00+02:00",
+    "end": "2026-11-05T12:30:00+02:00",
+    "venue": "Canvas and Craft",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1010871_247_247.png",
+    "url": "https://www.quicket.co.za/events/404692-explosive-paint-tea-table-mountain-fireworks-at-canvas-and-craft/",
+    "categories": [],
+    "location_key": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "FOM CPO REHEARSAL SUMMER SYMPHONY 1",
     "start": "2026-11-05T11:00:00+02:00",
     "end": "2026-11-05T14:00:00+02:00",
@@ -561,24 +503,6 @@
     "url": "https://www.quicket.co.za/events/401239-fom-cpo-rehearsal-summer-symphony-1/",
     "categories": [],
     "location_key": "Cape Town City Hall",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Explosive Paint & Sip: Table Mountain Fireworks at Canvas and Craft",
-    "start": "2026-11-05T11:00:00+02:00",
-    "end": "2026-11-05T12:30:00+02:00",
-    "venue": "Canvas and Craft",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1010871_247_247.png",
-    "url": "https://www.quicket.co.za/events/404692-explosive-paint-sip-table-mountain-fireworks-at-canvas-and-craft/",
-    "categories": [],
-    "location_key": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -813,7 +737,7 @@
     "address": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q11_247_247.jpg",
+    "image": "https://images.quicket.co.za/Q13_247_247.jpg",
     "url": "https://www.quicket.co.za/events/405412-explosive-paint-sip-table-mountain-fireworks-at-canvas-and-craft/",
     "categories": [],
     "location_key": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
@@ -876,7 +800,7 @@
     "image": "https://images.quicket.co.za/0982645_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/395954-miriam-altman-the-butterfly-project-live-in-cape-town/",
     "categories": [],
-    "location_key": "Homecoming Centre",
+    "location_key": "15 Buitenkant Street, District Six, 7800, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -959,7 +883,7 @@
       "music",
       "outdoors"
     ],
-    "location_key": "Doodles Beachfront",
+    "location_key": "110 Beach Boulevard, Table View, 7441, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1036,7 +960,7 @@
     "image": "https://images.quicket.co.za/1007575_247_247.png",
     "url": "https://www.quicket.co.za/events/402178-totius-oggend-tee/",
     "categories": [],
-    "location_key": "24 10th Ave",
+    "location_key": "24 10th Avenue, , Boston, 7530, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1113,7 +1037,7 @@
     "image": "https://images.quicket.co.za/1013685_247_247.png",
     "url": "https://www.quicket.co.za/events/405859-a-taste-of-the-cape-south-coast/",
     "categories": [],
-    "location_key": "106a St George's St",
+    "location_key": "106a Saint George's Street, Simon's Town, 7975, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1134,7 +1058,7 @@
       "music",
       "dj"
     ],
-    "location_key": "Somerset House",
+    "location_key": "Drama Street, Roundhay, 7130, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1152,7 +1076,7 @@
     "image": "https://images.quicket.co.za/1011028_247_247.png",
     "url": "https://www.quicket.co.za/events/405192-the-craft-social/",
     "categories": [],
-    "location_key": "studio 32, 32 Palmer Rd",
+    "location_key": "32 Palmer Road, , Muizenberg, 7950, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1170,7 +1094,7 @@
     "image": "https://images.quicket.co.za/1011682_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/404001-square-pegs-social/",
     "categories": [],
-    "location_key": "Stag Café & Deli",
+    "location_key": "10 Recreation Road, Fish Hoek, 7974, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1189,6 +1113,24 @@
     "url": "https://www.quicket.co.za/events/401885-derek-eyden-live-caf-roux/",
     "categories": [],
     "location_key": "Cafe Roux",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "First Friday at Cape Point Vineyards",
+    "start": "2026-11-06T18:00:00+02:00",
+    "end": "2026-11-06T22:00:00+02:00",
+    "venue": "Cape Point Vineyards",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Silvermine Road , Cape Point Vineyards Estate, 7979, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0992635_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/399068-first-friday-at-cape-point-vineyards/",
+    "categories": [],
+    "location_key": "Cape Point Vineyards",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1228,7 +1170,7 @@
     "categories": [
       "comedy"
     ],
-    "location_key": "Duchess Lounge",
+    "location_key": "123 Lower Main Road, , Observatory, 7560, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1302,7 +1244,7 @@
     "image": "https://images.quicket.co.za/1016532_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/406492-the-chosen-season-6-episode-1-screening/",
     "categories": [],
-    "location_key": "146 Main Rd",
+    "location_key": "146 Main Road, , Muizenberg, 7950, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1758,6 +1700,27 @@
     "missing_place": true
   },
   {
+    "title": "Glass Effect | Masterclass by Riedel",
+    "start": "2026-11-14T13:00:00+02:00",
+    "end": "2026-11-14T14:00:00+02:00",
+    "venue": "CTWC Clubhouse @ Woodstock Exchange",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "66 Albert Road, , Woodstock, 7915, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1002934_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/402368-glass-effect-masterclass-by-riedel/",
+    "categories": [
+      "dj",
+      "club"
+    ],
+    "location_key": "66 Albert Road, , Woodstock, 7915, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "AJABU Cocktail & Spirits Festival November 2026",
     "start": "2026-11-14T14:00:00+02:00",
     "end": "2026-11-22T23:59:00+02:00",
@@ -1813,6 +1776,27 @@
     ],
     "location_key": "Strand Beach",
     "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Flight of Lights | Masterclass by CTWC",
+    "start": "2026-11-14T17:00:00+02:00",
+    "end": "2026-11-14T18:30:00+02:00",
+    "venue": "CTWC Clubhouse @ Woodstock Exchange",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "66 Albert Road, , Woodstock, 7915, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1002939_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/402373-flight-of-lights-masterclass-by-ctwc/",
+    "categories": [
+      "dj",
+      "club"
+    ],
+    "location_key": "66 Albert Road, , Woodstock, 7915, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
     "place_key": "",
     "missing_place": true
   },
@@ -2812,13 +2796,13 @@
     "venue": "Colorbox Studios",
     "locality": "Cape Town",
     "region": "Western Cape",
-    "address": "3 Industry Street, 7405, Cape Town, Western Cape, South Africa",
+    "address": "3 Industry Street, Paarden Eiland, 7405, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/1007379_247_247.png",
     "url": "https://www.quicket.co.za/events/398479-everybody-loves-sundays-cpt-27-december/",
     "categories": [],
-    "location_key": "3 Industry Street, 7405, Cape Town, Western Cape, South Africa",
+    "location_key": "Colorbox Studios",
     "missing_location": false,
     "place_key": "",
     "missing_place": true

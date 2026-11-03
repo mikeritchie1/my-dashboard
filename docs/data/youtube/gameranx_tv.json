@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-02T12:33:42.714935Z",
+  "generated_at": "2026-11-03T12:05:31.652727Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 41,
+  "items_count": 42,
   "items": [
+    {
+      "id": "yt-c0-SqRB6oL4",
+      "video_id": "c0-SqRB6oL4",
+      "title": "20 Video Game Trends That Are MAKING A COMEBACK",
+      "url": "https://www.youtube.com/watch?v=c0-SqRB6oL4",
+      "published_at": "2026-11-02T17:34:20+00:00",
+      "updated_at": "2026-11-03T09:34:41+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/c0-SqRB6oL4/hqdefault.jpg"
+    },
     {
       "id": "yt-ubo9bTtWnKo",
       "video_id": "ubo9bTtWnKo",
