@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-03T12:05:31.652727Z",
+  "generated_at": "2026-11-04T12:17:49.581563Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 42,
+  "items_count": 43,
   "items": [
+    {
+      "id": "yt-ZUPsRg7i4Bg",
+      "video_id": "ZUPsRg7i4Bg",
+      "title": "20 Flaws GTA 6 Is Trying To Fix",
+      "url": "https://www.youtube.com/watch?v=ZUPsRg7i4Bg",
+      "published_at": "2026-11-03T16:40:32+00:00",
+      "updated_at": "2026-11-03T19:14:20+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZUPsRg7i4Bg/hqdefault.jpg"
+    },
     {
       "id": "yt-c0-SqRB6oL4",
       "video_id": "c0-SqRB6oL4",

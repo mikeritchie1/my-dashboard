@@ -1,9 +1,27 @@
 [
   {
+    "title": "Nataniël: SOOIBRAND",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597147920",
+    "image": "https://content.webtickets.co.za/artscape/panel_Nataniel - Sooibrand - Web Image_20260611_104153.jpg",
+    "date_text": "From 04 Nov 2026 19:00",
+    "venue": "Artscape, Theatre, Cape Town",
+    "price": "R280 - R360",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "Artscape, Theatre, Cape Town",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
     "title": "CHICAGO THE MUSICAL",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599973808",
     "image": "https://content.webtickets.co.za/TGSA/panel_Chicago_20260730_150346.jpg",
-    "date_text": "From 03 Nov 2026 19:00",
+    "date_text": "From 04 Nov 2026 19:00",
     "venue": "The George Arts Theatre, 125 York Street, George Central",
     "price": "R170 - R200",
     "source": "Webtickets",
@@ -22,7 +40,7 @@
     "title": "Into The Woods",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1601853362",
     "image": "https://content.webtickets.co.za/PTProductions/panel_ITW 1_20260827_120247.png",
-    "date_text": "From 03 Nov 2026 19:30",
+    "date_text": "From 04 Nov 2026 19:30",
     "venue": "Theatre On The Bay, Camps Bay",
     "price": "R250 - R400",
     "source": "Webtickets",
@@ -32,43 +50,6 @@
     ],
     "missing_location": true,
     "location_key": "Theatre On The Bay, Camps Bay",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Dancers Love Dogs",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1601967171",
-    "image": "https://content.webtickets.co.za/artscape/panel_IMG_1861_20260828_161202.jpg",
-    "date_text": "03 Nov 2026 19:30",
-    "venue": "Artscape, Opera House, Cape Town",
-    "price": "R450",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "dj",
-      "art",
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "Artscape, Opera House, Cape Town",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Nataniël: SOOIBRAND",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597147920",
-    "image": "https://content.webtickets.co.za/artscape/panel_Nataniel - Sooibrand - Web Image_20260611_104153.jpg",
-    "date_text": "From 04 Nov 2026 19:00",
-    "venue": "Artscape, Theatre, Cape Town",
-    "price": "R280 - R360",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "art",
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "Artscape, Theatre, Cape Town",
     "missing_place": true,
     "place_key": ""
   },
@@ -187,6 +168,24 @@
     ],
     "missing_location": true,
     "location_key": "Theatre On The Bay, Camps Bay",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "Roméo et Juliette",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1590009104",
+    "image": "https://content.webtickets.co.za/artscape/panel_Body (1110 x 740 px)_20260827_131621.png",
+    "date_text": "From 18 Nov 2026 19:00",
+    "venue": "Artscape, Theatre, Cape Town",
+    "price": "R180 - R720",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "Artscape, Theatre, Cape Town",
     "missing_place": true,
     "place_key": ""
   }

@@ -1,239 +1,5 @@
 [
   {
-    "title": "Sound Journey (Gathering #01)",
-    "start": "2026-11-03T17:30:00+02:00",
-    "end": "2026-11-03T18:30:00+02:00",
-    "venue": "Glen Beach",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Glen Beach, Cape Town, 8005, South Africa, 8005, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1012297_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/404972-sound-journey-gathering-01/",
-    "categories": [
-      "outdoors"
-    ],
-    "location_key": "Glen Beach",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Gavin Fish | The Mental Health of Educators",
-    "start": "2026-11-03T18:00:00+02:00",
-    "end": "2026-11-03T19:30:00+02:00",
-    "venue": "Oakley House Preparatory School",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "99 Main Road, , Plumstead, 7800, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1011771_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/405453-gavin-fish-the-mental-health-of-educators/",
-    "categories": [
-      "dj"
-    ],
-    "location_key": "99 Main Road, , Plumstead, 7800, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Trails In Motion Film Festival - The 14th Edition",
-    "start": "2026-11-03T18:00:00+02:00",
-    "end": "2026-11-03T21:30:00+02:00",
-    "venue": "Cafe Roux",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Chapmans Peak Dr , Noordhoek, 7979, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0985750_247_247.png",
-    "url": "https://www.quicket.co.za/events/394366-trails-in-motion-film-festival-the-14th-edition/",
-    "categories": [
-      "festival",
-      "outdoors"
-    ],
-    "location_key": "Cafe Roux",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Pour Favor",
-    "start": "2026-11-03T18:00:00+02:00",
-    "end": "2026-11-03T22:00:00+02:00",
-    "venue": "Arthur's Mini Super",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "15 Arthurs Road, , Sea Point, 8060, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1005793_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/402707-pour-favor/",
-    "categories": [
-      "art"
-    ],
-    "location_key": "15 Arthurs Road, , Sea Point, 8060, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Rave for Rent Control #2",
-    "start": "2026-11-03T18:00:00+02:00",
-    "end": "2026-11-04T02:00:00+02:00",
-    "venue": "Evol",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "69 Hope Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1007722_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/403957-rave-for-rent-control-2/",
-    "categories": [
-      "club"
-    ],
-    "location_key": "Evol",
-    "missing_location": false,
-    "place_key": "Evol",
-    "missing_place": false,
-    "place": "Evol"
-  },
-  {
-    "title": "Other Mother - round 3",
-    "start": "2026-11-03T19:00:00+02:00",
-    "end": "2026-11-03T21:00:00+02:00",
-    "venue": "The Commons",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Beach Road, , Muizenberg, 7970, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/Q2_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/403774-other-mother-round-3/",
-    "categories": [],
-    "location_key": "Beach Road, , Muizenberg, 7970, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Vision Masango : I think, I'm Happily Married Comedy Show",
-    "start": "2026-11-03T19:30:00+02:00",
-    "end": "2026-11-03T22:00:00+02:00",
-    "venue": "Ground Culture Cafe",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Lower Main Road 170, Observatory, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0966357_247_247.png",
-    "url": "https://www.quicket.co.za/events/390665-vision-masango-i-think-im-happily-married-comedy-show/",
-    "categories": [
-      "comedy"
-    ],
-    "location_key": "Ground Culture Cafe",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Mlungu",
-    "start": "2026-11-03T19:30:00+02:00",
-    "end": "2026-11-04T18:30:00+02:00",
-    "venue": "Kaapstad Toneelhuis",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "61 Loop Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0996053_247_247.png",
-    "url": "https://www.quicket.co.za/events/400124-mlungu/",
-    "categories": [],
-    "location_key": "61 Loop Street, Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Cape Town Private Night Tours",
-    "start": "2026-11-03T20:00:00+02:00",
-    "end": "2026-11-26T22:00:00+02:00",
-    "venue": "SAAO Cape Town",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Observatory Road 1, Observatory, 7925, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/Q14_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/405356-cape-town-private-night-tours/",
-    "categories": [],
-    "location_key": "Observatory Road 1, Observatory, 7925, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "GODZILLA MINUS ZERO (Advance Screening)",
-    "start": "2026-11-03T20:30:00+02:00",
-    "end": "2026-11-03T22:30:00+02:00",
-    "venue": "Labia Theatre",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "68 Orange St, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1002797_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/402298-godzilla-minus-zero-advance-screening/",
-    "categories": [
-      "theatre"
-    ],
-    "location_key": "68 Orange St, 8001, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Open Practice Yoga Club on the Prom",
-    "start": "2026-11-04T08:00:00+02:00",
-    "end": "2026-11-05T09:00:00+02:00",
-    "venue": "Mandela Glasses",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "1 Rocklands Road, Three Anchor Bay, 8005, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1016887_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/406153-open-practice-yoga-club-on-the-prom/",
-    "categories": [
-      "club"
-    ],
-    "location_key": "Mandela Glasses",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Dementia Dialogues: Session 12 - Death and Dying",
-    "start": "2026-11-04T14:00:00+02:00",
-    "end": "2026-11-04T15:30:00+02:00",
-    "venue": "Houtbaai Gemeente",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "30 Oxford Street, Hout Bay, 7806, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0980523_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/395389-dementia-dialogues-session-12-death-and-dying/",
-    "categories": [],
-    "location_key": "30 Oxford Street, Hout Bay, 7806, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "CRUSHING ON MOVIE CLUB PRESENTS: SIRAT (2025)",
     "start": "2026-11-04T18:00:00+02:00",
     "end": "2026-11-04T21:00:00+02:00",
@@ -303,7 +69,7 @@
     "address": "75 Jordaan Street, , Schotsche Kloof, 8001, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/1002718_247_247.jpeg",
+    "image": "https://images.quicket.co.za/1017834_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/401862-waiting-for-smith-and-werner-bekker-charity-concert/",
     "categories": [
       "music"
@@ -687,6 +453,29 @@
     "missing_place": true
   },
   {
+    "title": "Sunset First Thursdays Rooftop Party",
+    "start": "2026-11-05T18:00:00+02:00",
+    "end": "2026-11-05T23:55:00+02:00",
+    "venue": "Rooftop on Bree",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "170 Bree Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1017928_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/406896-sunset-first-thursdays-rooftop-party/",
+    "categories": [
+      "club",
+      "art",
+      "outdoors",
+      "date-night"
+    ],
+    "location_key": "170 Bree Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "GROOVE JUNCTION FIRST THURSDAY",
     "start": "2026-11-05T18:00:00+02:00",
     "end": "2026-11-06T02:00:00+02:00",
@@ -737,7 +526,7 @@
     "address": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q13_247_247.jpg",
+    "image": "https://images.quicket.co.za/Q4_247_247.jpg",
     "url": "https://www.quicket.co.za/events/405412-explosive-paint-sip-table-mountain-fireworks-at-canvas-and-craft/",
     "categories": [],
     "location_key": "108 Raats Drive, , Table View, 7441, Cape Town, Western Cape, South Africa",
@@ -823,6 +612,28 @@
       "theatre"
     ],
     "location_key": "CTDPS Nomhle Nkonyeni Theatre",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "CTDPS Performance Making Festival - Little Theatre",
+    "start": "2026-11-05T19:15:00+02:00",
+    "end": "2026-11-06T22:30:00+02:00",
+    "venue": "CTDPS Little Theatre",
+    "locality": "Gardens, Cape Town",
+    "region": "Western Cape",
+    "address": "UCT Hiddingh Campus, Orange St, 8001, Gardens, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1013252_247_247.png",
+    "url": "https://www.quicket.co.za/events/405984-ctdps-performance-making-festival-little-theatre/",
+    "categories": [
+      "music",
+      "festival",
+      "theatre"
+    ],
+    "location_key": "CTDPS Little Theatre",
     "missing_location": true,
     "place_key": "",
     "missing_place": true
@@ -1136,6 +947,26 @@
     "missing_place": true
   },
   {
+    "title": "Bombocart fun(d)raiser (Pt.1)",
+    "start": "2026-11-06T18:00:00+02:00",
+    "end": "2026-11-06T23:59:00+02:00",
+    "venue": "Wawa Surfshop",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "166-168 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1003053_247_247.png",
+    "url": "https://www.quicket.co.za/events/402404-bombocart-fundraiser-pt1/",
+    "categories": [
+      "art"
+    ],
+    "location_key": "Wawa Surfshop",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "FRIDAY THE 69TH",
     "start": "2026-11-06T18:15:00+02:00",
     "end": "2026-11-06T20:00:00+02:00",
@@ -1171,6 +1002,24 @@
       "comedy"
     ],
     "location_key": "123 Lower Main Road, , Observatory, 7560, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Southern Wild Unplugged",
+    "start": "2026-11-06T18:30:00+02:00",
+    "end": "2026-11-06T22:30:00+02:00",
+    "venue": "The Alma Cafe",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "20 Alma Road, Rosebank, 7700, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0999112_247_247.png",
+    "url": "https://www.quicket.co.za/events/400624-southern-wild-unplugged/",
+    "categories": [],
+    "location_key": "The Alma Cafe",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1270,6 +1119,27 @@
     "missing_place": true
   },
   {
+    "title": "OGU ReUnion Dinner 2026",
+    "start": "2026-11-06T19:00:00+02:00",
+    "end": "2026-11-06T23:00:00+02:00",
+    "venue": "St George's Grammar School - Jenny Mallett Hall",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Richmond Road, Mowbray, 7705, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0999939_247_247.png",
+    "url": "https://www.quicket.co.za/events/401467-ogu-reunion-dinner-2026/",
+    "categories": [
+      "food",
+      "date-night"
+    ],
+    "location_key": "St George's Grammar School - Jenny Mallett Hall",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
     "title": "Hanepoot Brass Band - Tokkellaan Album Launch",
     "start": "2026-11-06T19:30:00+02:00",
     "end": "2026-11-06T21:00:00+02:00",
@@ -1287,6 +1157,85 @@
     ],
     "location_key": "37 Main Road, Muizenberg, 7945, Cape Town, Western Cape, South Africa",
     "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Jaryd Pillay Hosts Grounded Comedy Nights",
+    "start": "2026-11-06T19:30:00+02:00",
+    "end": "2026-11-06T22:30:00+02:00",
+    "venue": "Ground Culture Cafe",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Lower Main Road 170, Observatory, 7925, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1013748_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/406167-jaryd-pillay-hosts-grounded-comedy-nights/",
+    "categories": [
+      "comedy"
+    ],
+    "location_key": "Ground Culture Cafe",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "ABBA: The Drag Sing-along Show",
+    "start": "2026-11-06T20:00:00+02:00",
+    "end": "2026-11-06T22:00:00+02:00",
+    "venue": "The Outlore Base",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Hout Street 80, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0988673_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/397994-abba-the-drag-sing-along-show/",
+    "categories": [],
+    "location_key": "Hout Street 80, Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "SHADOW REALM SHORT FILM COLLECTION Vol. 2",
+    "start": "2026-11-06T20:30:00+02:00",
+    "end": "2026-11-06T22:30:00+02:00",
+    "venue": "Labia Theatre",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "68 Orange St, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1009436_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/404603-shadow-realm-short-film-collection-vol-2/",
+    "categories": [
+      "theatre"
+    ],
+    "location_key": "68 Orange St, 8001, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Weekend Play session 1",
+    "start": "2026-11-07T09:00:00+02:00",
+    "end": "2027-10-02T11:00:00+02:00",
+    "venue": "Giggles and Grow Play Studio Table Bay Mall",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Corner or Berkshire Boulevard and R27 Sunningdale, Cape Farms, Cape Town, 7441, South Africa, , Cape Farms, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1017767_247_247.png",
+    "url": "https://www.quicket.co.za/events/406873-weekend-play-session-1/",
+    "categories": [
+      "music",
+      "theatre"
+    ],
+    "location_key": "Giggles and Grow Play Studio Table Bay Mall",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -1324,6 +1273,48 @@
       "art"
     ],
     "location_key": "Dr Keith Ganasen",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Weekend Play session 2",
+    "start": "2026-11-07T11:00:00+02:00",
+    "end": "2027-10-02T13:00:00+02:00",
+    "venue": "Giggles and Grow Play Studio Table Bay Mall",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Corner or Berkshire Boulevard and R27 Sunningdale, Cape Farms, Cape Town, 7441, South Africa, , Cape Farms, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1017771_247_247.png",
+    "url": "https://www.quicket.co.za/events/406875-weekend-play-session-2/",
+    "categories": [
+      "music",
+      "theatre"
+    ],
+    "location_key": "Giggles and Grow Play Studio Table Bay Mall",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Weekend Play session 3",
+    "start": "2026-11-07T13:00:00+02:00",
+    "end": "2027-09-26T15:00:00+02:00",
+    "venue": "Giggles and Grow Play Studio Table Bay Mall",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Corner or Berkshire Boulevard and R27 Sunningdale, Cape Farms, Cape Town, 7441, South Africa, , Cape Farms, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1017779_247_247.png",
+    "url": "https://www.quicket.co.za/events/406876-weekend-play-session-3/",
+    "categories": [
+      "music",
+      "theatre"
+    ],
+    "location_key": "Giggles and Grow Play Studio Table Bay Mall",
     "missing_location": true,
     "place_key": "",
     "missing_place": true
@@ -1368,6 +1359,27 @@
     ],
     "location_key": "Cattle Baron Westlake",
     "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Weekend Play session 4",
+    "start": "2026-11-07T15:00:00+02:00",
+    "end": "2027-10-02T17:00:00+02:00",
+    "venue": "Giggles and Grow Play Studio Table Bay Mall",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Corner or Berkshire Boulevard and R27 Sunningdale, Cape Farms, Cape Town, 7441, South Africa, , Cape Farms, 7441, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1017807_247_247.png",
+    "url": "https://www.quicket.co.za/events/406879-weekend-play-session-4/",
+    "categories": [
+      "music",
+      "theatre"
+    ],
+    "location_key": "Giggles and Grow Play Studio Table Bay Mall",
+    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -2802,7 +2814,7 @@
     "image": "https://images.quicket.co.za/1007379_247_247.png",
     "url": "https://www.quicket.co.za/events/398479-everybody-loves-sundays-cpt-27-december/",
     "categories": [],
-    "location_key": "Colorbox Studios",
+    "location_key": "3 Industry Street, Paarden Eiland, 7405, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
