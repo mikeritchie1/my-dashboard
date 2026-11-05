@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T08:37:58Z",
+  "updated_at": "2026-11-05T17:43:23Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -275388,6 +275388,102 @@
       "stock": "In stock",
       "observed_on": "2026-11-05",
       "captured_at": "2026-11-05T08:37:43Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil",
+      "title": "DON!! Card (Luffy) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:43Z"
+    },
+    {
+      "card_number": "OP01-057",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/paradise-waterfall-best-selection-vol-1",
+      "title": "Paradise Waterfall [Best Selection Vol.1]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:43Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "alternate",
+      "price": 225.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-alternate-art-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:43Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "original",
+      "price": 230.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil",
+      "title": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:43Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 550.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:43Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 1080.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nico-robin-gold-extra-booster-one-piece-heroines-edition-foil",
+      "title": "DON!! Card (Nico Robin) (Gold) - Extra Booster: One Piece Heroines Edition Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:43Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 106.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:58Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 231.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-05",
+      "captured_at": "2026-11-05T17:42:58Z"
     }
   ]
 }

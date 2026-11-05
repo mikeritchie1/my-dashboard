@@ -1,5 +1,66 @@
 {
   "window_started_at": "2026-11-05T12:31:00.362348+00:00",
   "last_sent_at": "2026-11-05T12:31:00.362348+00:00",
-  "sources": {}
+  "sources": {
+    "one-piece/bigbang": {
+      "label": "Big Bang",
+      "runs": 1,
+      "item_count": 96,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/paradise-waterfall-best-selection-vol-1": "Paradise Waterfall [Best Selection Vol.1]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nico-robin-gold-extra-booster-one-piece-heroines-edition-foil": "DON!! Card (Nico Robin) (Gold) - Extra Booster: One Piece Heroines Edition Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-alternate-art-op17-062-the-worlds-strongest-warriors-foil": "Kaido (062) (Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-luffy-adventure-on-kamis-island-foil": "DON!! Card (Luffy) - Adventure on Kami's Island Foil"
+      }
+    },
+    "one-piece/collectiverse": {
+      "label": "Collectiverse",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/geekhaven": {
+      "label": "Geek Haven",
+      "runs": 1,
+      "item_count": 0,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/knightly": {
+      "label": "Knightly Gaming",
+      "runs": 1,
+      "item_count": 36,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1": "Monkey.D.Luffy [Royal Blood]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors": "Yasopp (Alternate Art) [The World's Strongest Warriors]"
+      }
+    },
+    "one-piece/tanuki": {
+      "label": "Tanuki Games",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/products": {
+      "label": "Official products",
+      "runs": 1,
+      "item_count": 188,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    }
+  }
 }
