@@ -2,6 +2,41 @@
   "source": "https://pahe.ink/",
   "items": [
     {
+      "title": "The Mongoose",
+      "url": "https://pahe.ink/the-mongoose-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/MV5BNDBmN2E2YTQtMWE2Ni00ZjMxLWE4NGItODk2ZDZjZDU0MjdlXkEyXkFqcGc@._V1__jpg_80-110x153.jpg",
+      "rating": "6.565",
+      "first_seen_at": "2026-11-05",
+      "tmdb_id": 1294189,
+      "tmdb_url": "https://www.themoviedb.org/movie/1294189",
+      "tmdb_rating": "6.565",
+      "tmdb_votes": "31",
+      "release_date": "2026-10-29",
+      "overview": "A falsely accused war hero with nothing to lose leads police on an epic televised cross-country car chase, helped by members of his former Special Forces Army battalion and closely monitored by a fascinated public rooting for his safe getaway.",
+      "runtime_minutes": "99",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "directors": [
+        "Mark Vanselow"
+      ],
+      "actors": [
+        "Liam Neeson",
+        "Marisa Tomei",
+        "Ving Rhames",
+        "Marcus Thomas",
+        "Michael Chiklis",
+        "Maurice Marvel Meredith",
+        "Brett Tucker",
+        "Ryan Morgan",
+        "Laura Coates",
+        "Geoff Morrell"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=aHrMFtt40_Q",
+      "poster_url": "https://image.tmdb.org/t/p/w342/eSS5mvSG84UUuvtbHel5Yu3Wik4.jpg"
+    },
+    {
       "title": "Your Mother Your Mother Your Mother",
       "url": "https://pahe.ink/your-mother-your-mother-your-mother-2026-web-dl-480p-720p-1080p/",
       "image": "https://pahe.ink/wp-content/uploads/2026/11/images-original_png_75-110x153.jpg",
@@ -879,46 +914,6 @@
       "image": "https://pahe.ink/wp-content/uploads/2026/05/MV5BMWYyZjQ4ZjgtYjlkZC00MTgxLWIzNGEtZjY2ZWJhZmVhMzY3XkEyXkFqcGc@._V1__jpg_75-110x153.jpg",
       "rating": "",
       "first_seen_at": "2026-05-21",
-      "is_new": false
-    },
-    {
-      "title": "The Super Mario Galaxy Movie",
-      "url": "https://pahe.ink/the-super-mario-galaxy-movie-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/medium-405d00950166b0630412c362c6ca5bf8_jpg_75-110x153.jpg",
-      "rating": "6.696",
-      "first_seen_at": "2026-05-13",
-      "tmdb_id": 1226863,
-      "tmdb_url": "https://www.themoviedb.org/movie/1226863",
-      "tmdb_rating": "6.696",
-      "tmdb_votes": "820",
-      "release_date": "2026-04-01",
-      "overview": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.",
-      "runtime_minutes": "98",
-      "genres": [
-        "Family",
-        "Comedy",
-        "Adventure",
-        "Fantasy",
-        "Animation"
-      ],
-      "directors": [
-        "Michael Jelenic",
-        "Aaron Horvath"
-      ],
-      "actors": [
-        "Chris Pratt",
-        "Anya Taylor-Joy",
-        "Charlie Day",
-        "Jack Black",
-        "Donald Glover",
-        "Benny Safdie",
-        "Brie Larson",
-        "Keegan-Michael Key",
-        "Glen Powell",
-        "Luis Guzm\u00e1n"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=En5QZmL5R1s",
-      "poster_url": "https://image.tmdb.org/t/p/w342/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg",
       "is_new": false
     }
   ]

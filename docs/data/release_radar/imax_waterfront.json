@@ -5,8 +5,8 @@
     {
       "tmdb_id": 1058424,
       "tmdb_url": "https://www.themoviedb.org/movie/1058424",
-      "tmdb_rating": "6.765",
-      "tmdb_votes": "465",
+      "tmdb_rating": "6.769",
+      "tmdb_votes": "477",
       "release_date": "2026-07-15",
       "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
       "runtime_minutes": "157",
@@ -40,45 +40,6 @@
       "showtimes": [],
       "format": "IMAX 2D",
       "image": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg"
-    },
-    {
-      "tmdb_id": 1381071,
-      "tmdb_url": "https://www.themoviedb.org/movie/1381071",
-      "tmdb_rating": "8.846",
-      "tmdb_votes": "13",
-      "release_date": "2026-11-03",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "runtime_minutes": "135",
-      "genres": [
-        "Science Fiction",
-        "Horror",
-        "Action"
-      ],
-      "directors": [
-        "Takashi Yamazaki"
-      ],
-      "actors": [
-        "Ryunosuke Kamiki",
-        "Minami Hamabe",
-        "Yuki Yamada",
-        "Kuranosuke Sasaki",
-        "Jun Kunimura",
-        "Miou Tanaka",
-        "Sakura Ando",
-        "Masami Nagasawa",
-        "Min Tanaka",
-        "Hidetaka Yoshioka"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=pWJjYoqVSjQ",
-      "poster_url": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "title": "Godzilla Minus Zero",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_godzillaminuszero2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg"
     }
   ]
 }

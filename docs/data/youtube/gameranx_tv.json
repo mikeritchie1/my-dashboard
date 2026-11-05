@@ -1,11 +1,29 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-04T12:17:49.581563Z",
+  "generated_at": "2026-11-05T12:30:58.610133Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 43,
+  "items_count": 45,
   "items": [
+    {
+      "id": "yt-WVyxHb3OfwI",
+      "video_id": "WVyxHb3OfwI",
+      "title": "Godzilla: Destroy All Monsters Melee - Before You Buy",
+      "url": "https://www.youtube.com/watch?v=WVyxHb3OfwI",
+      "published_at": "2026-11-04T19:50:20+00:00",
+      "updated_at": "2026-11-05T08:01:33+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/WVyxHb3OfwI/hqdefault.jpg"
+    },
+    {
+      "id": "yt-30B9HuAyfg8",
+      "video_id": "30B9HuAyfg8",
+      "title": "20 Game of The Year Contenders of 2026",
+      "url": "https://www.youtube.com/watch?v=30B9HuAyfg8",
+      "published_at": "2026-11-04T17:40:22+00:00",
+      "updated_at": "2026-11-05T10:35:42+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/30B9HuAyfg8/hqdefault.jpg"
+    },
     {
       "id": "yt-ZUPsRg7i4Bg",
       "video_id": "ZUPsRg7i4Bg",
