@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-05T12:30:58.610133Z",
+  "generated_at": "2026-11-06T12:14:26.737352Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 45,
+  "items_count": 46,
   "items": [
+    {
+      "id": "yt-HuF6-efVdyI",
+      "video_id": "HuF6-efVdyI",
+      "title": "The Legend of Zelda: Ocarina of Time Remake - Before You Buy",
+      "url": "https://www.youtube.com/watch?v=HuF6-efVdyI",
+      "published_at": "2026-11-05T23:38:35+00:00",
+      "updated_at": "2026-11-06T11:10:43+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/HuF6-efVdyI/hqdefault.jpg"
+    },
     {
       "id": "yt-WVyxHb3OfwI",
       "video_id": "WVyxHb3OfwI",

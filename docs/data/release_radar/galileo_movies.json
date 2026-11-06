@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "Crazy Rich Asians",
-      "detail_title": "Crazy Rich Asians",
-      "url": "https://thegalileo.co.za/movie/crazy-rich-asians-2/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-11-05",
-      "event_date_text": "5 November 2026",
-      "day": "Thursday",
-      "venue": "Kirstenbosch Garden",
-      "doors_open": "18h00",
-      "movie_starts": "19h45",
-      "cinema_type": "PICNIC",
-      "age_restriction": "13 D L P",
-      "run_time": "1h48",
-      "runtime_minutes": "108",
-      "genre": "Comedy , Rom-Com , Romance",
-      "genres": [
-        "Comedy , Rom-Com , Romance"
-      ],
-      "overview": "Crazy Rich Asians is a 2018 American roma-com drama film directed by Jon M. Chu. The film stars Constance Wu, Henry Golding, Gemma Chan, Lisa Lu, Awkwafina, Ken Jeong, and Michelle Yeoh. It follows a Chinese-American professor, Rachel, who travels to Singapore with her boyfriend Nick and is shocked to discover that Nick’s family is one of the richest families in Singapore.",
-      "synopsis": "Crazy Rich Asians is a 2018 American roma-com drama film directed by Jon M. Chu. The film stars Constance Wu, Henry Golding, Gemma Chan, Lisa Lu, Awkwafina, Ken Jeong, and Michelle Yeoh. It follows a Chinese-American professor, Rachel, who travels to Singapore with her boyfriend Nick and is shocked to discover that Nick’s family is one of the richest families in Singapore.",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2025/09/Crazy-Rich-Asians-copy-686x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/Crazy-Rich-Asians-copy-686x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=ZQ-YX-5bAs0",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
-    },
-    {
       "title": "Dirty Dancing",
       "detail_title": "Dirty Dancing",
       "url": "https://thegalileo.co.za/movie/dirty-dancing-meerendal/",

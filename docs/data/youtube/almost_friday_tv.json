@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-05T12:30:57.971846Z",
+  "generated_at": "2026-11-06T12:14:26.544697Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 100,
+  "items_count": 101,
   "items": [
+    {
+      "id": "yt-KKbTMWy801U",
+      "video_id": "KKbTMWy801U",
+      "title": "you had to be there…",
+      "url": "https://www.youtube.com/watch?v=KKbTMWy801U",
+      "published_at": "2026-11-05T20:15:04+00:00",
+      "updated_at": "2026-11-06T10:28:50+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/KKbTMWy801U/hqdefault.jpg"
+    },
     {
       "id": "yt-Ya4pXPmPlNo",
       "video_id": "Ya4pXPmPlNo",

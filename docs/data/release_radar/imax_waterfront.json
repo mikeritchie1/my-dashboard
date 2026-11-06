@@ -3,43 +3,82 @@
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
   "items": [
     {
-      "tmdb_id": 1058424,
-      "tmdb_url": "https://www.themoviedb.org/movie/1058424",
-      "tmdb_rating": "6.769",
-      "tmdb_votes": "477",
-      "release_date": "2026-07-15",
-      "overview": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
-      "runtime_minutes": "157",
+      "tmdb_id": 1381071,
+      "tmdb_url": "https://www.themoviedb.org/movie/1381071",
+      "tmdb_rating": "8.256",
+      "tmdb_votes": "39",
+      "release_date": "2026-11-03",
+      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
+      "runtime_minutes": "135",
       "genres": [
         "Science Fiction",
-        "Mystery",
+        "Horror",
         "Action"
       ],
       "directors": [
-        "Na Hong-jin"
+        "Takashi Yamazaki"
       ],
       "actors": [
-        "Hwang Jung-min",
-        "Zo In-sung",
-        "Hoyeon",
-        "Alicia Vikander",
-        "Michael Fassbender",
-        "Taylor Russell",
-        "Cameron Britton",
-        "Lee Sang-hee",
-        "Um Mun-suk",
-        "Im Hyun-sik"
+        "Ryunosuke Kamiki",
+        "Minami Hamabe",
+        "Yuki Yamada",
+        "Kuranosuke Sasaki",
+        "Jun Kunimura",
+        "Miou Tanaka",
+        "Sakura Ando",
+        "Masami Nagasawa",
+        "Min Tanaka",
+        "Hidetaka Yoshioka"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=OFaJzL83y0Q",
-      "poster_url": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg",
-      "title": "Hope",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_hope2d",
+      "trailer_url": "https://www.youtube.com/watch?v=E-Q2tEgJ1ZI",
+      "poster_url": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
+      "title": "Godzilla Minus Zero",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_godzillaminuszero2d",
       "source": "IMAX Waterfront",
       "status": "now_playing",
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/6VY1ZKgpsc8CfGsQcCGiYEgHdH0.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg"
+    },
+    {
+      "tmdb_id": 656908,
+      "tmdb_url": "https://www.themoviedb.org/movie/656908",
+      "tmdb_rating": "6.6",
+      "tmdb_votes": "8",
+      "release_date": "2026-11-05",
+      "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
+      "runtime_minutes": "208",
+      "genres": [
+        "Fantasy",
+        "Action",
+        "Adventure"
+      ],
+      "directors": [
+        "Nitesh Tiwari"
+      ],
+      "actors": [
+        "Ranbir Kapoor",
+        "Yash",
+        "Sai Pallavi",
+        "Ravi Dubey",
+        "Arun Govil",
+        "Lara Dutta",
+        "Rakul Preet Singh",
+        "Indira Krishnan",
+        "Sonal Jha",
+        "Adinath Kothare"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=AYkPRN874m8",
+      "poster_url": "https://image.tmdb.org/t/p/w342/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg",
+      "title": "Ramayana: Rise of a Legend",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_ramayanariseofalegend3d",
+      "source": "IMAX Waterfront",
+      "status": "now_playing",
+      "status_label": "Now playing",
+      "showtimes": [],
+      "format": "IMAX 3D",
+      "image": "https://image.tmdb.org/t/p/w342/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg"
     }
   ]
 }
