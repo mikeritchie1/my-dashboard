@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T03:46:41Z",
+  "updated_at": "2026-11-06T11:39:48Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -277284,6 +277284,78 @@
       "stock": "In stock",
       "observed_on": "2026-11-06",
       "captured_at": "2026-11-06T03:46:11Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 360.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-06",
+      "captured_at": "2026-11-06T11:39:09Z"
+    },
+    {
+      "card_number": "OP16-119",
+      "art_variant": "alternate",
+      "price": 800.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-alternate-art-op16-119-the-time-of-battle-foil",
+      "title": "Marshall.D.Teach (119) (Alternate Art) (OP16-119) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-06",
+      "captured_at": "2026-11-06T11:39:09Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 164.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-06",
+      "captured_at": "2026-11-06T11:39:33Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 229.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-06",
+      "captured_at": "2026-11-06T11:39:33Z"
+    },
+    {
+      "card_number": "P-088",
+      "art_variant": "original",
+      "price": 270.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-event-pack-vol-7-one-piece-promotion-cards",
+      "title": "Trafalgar Law (Event Pack Vol. 7) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-06",
+      "captured_at": "2026-11-06T11:39:33Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 829.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-06",
+      "captured_at": "2026-11-06T11:39:33Z"
     }
   ]
 }

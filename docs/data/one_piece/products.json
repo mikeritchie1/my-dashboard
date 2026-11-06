@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-11-06T03:46:42.319722Z",
+  "scraped_at": "2026-11-06T11:39:50.302056Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2368,6 +2368,34 @@
       "image_local_url": "./data/one_piece/product_images/gift-collection_img-item01.webp",
       "is_released": false,
       "added_at": "2026-10-02T09:04:29.426967Z"
+    },
+    {
+      "title": "Illustration Box Vol.10",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-12-04",
+      "release_date_text": "December 4, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/ib10.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/11/04/7B0vYufQvcjBWFMS/img_item01.webp?_=89b69cb87f4b3d0766fb5e0d1efc7705",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/ib10_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-11-06T11:39:50.302056Z"
+    },
+    {
+      "title": "Illustration Box Vol.9",
+      "category": "other",
+      "category_label": "OTHER",
+      "date_label": "Release Date",
+      "release_date": "2026-12-04",
+      "release_date_text": "December 4, 2026",
+      "url": "https://en.onepiece-cardgame.com/products/ib09.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/11/04/bl2oKSAxfhgY3mKH/img_item01.webp?_=89b69cb87f4b3d0766fb5e0d1efc7705",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/ib09_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-11-06T11:39:50.302056Z"
     },
     {
       "title": "OFFICIAL CARD SLEEVES 17",
