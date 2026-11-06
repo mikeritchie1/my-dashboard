@@ -1,5 +1,62 @@
 {
   "window_started_at": "2026-11-06T12:14:27.731183+00:00",
   "last_sent_at": "2026-11-06T12:14:27.731183+00:00",
-  "sources": {}
+  "sources": {
+    "one-piece/bigbang": {
+      "label": "Big Bang",
+      "runs": 1,
+      "item_count": 97,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/collectiverse": {
+      "label": "Collectiverse",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/geekhaven": {
+      "label": "Geek Haven",
+      "runs": 1,
+      "item_count": 0,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/knightly": {
+      "label": "Knightly Gaming",
+      "runs": 1,
+      "item_count": 36,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection": "Kingdom Come [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]"
+      }
+    },
+    "one-piece/tanuki": {
+      "label": "Tanuki Games",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/products": {
+      "label": "Official products",
+      "runs": 1,
+      "item_count": 193,
+      "added": {
+        "docs/data/one_piece/products.json|https://en.onepiece-cardgame.com/products/op19.html": "BOOSTER PACK -COME IN, WORLD- [OP-19]",
+        "docs/data/one_piece/products.json|https://en.onepiece-cardgame.com/products/eb06.html": "EXTRA BOOSTER -EAST BLUE- [EB-06]",
+        "docs/data/one_piece/products.json|https://en.onepiece-cardgame.com/products/per01.html": "PREMIUM EXTRA BOOSTER -THE DRAWING OF YOUR DREAMS- [PEB-01]"
+      },
+      "removed": {},
+      "updated": {}
+    }
+  }
 }

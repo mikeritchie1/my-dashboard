@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-11-06T11:39:50.302056Z",
+  "scraped_at": "2026-11-06T18:34:17.000049Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2438,6 +2438,48 @@
       "image_local_url": "./data/one_piece/product_images/st38_img-item01.webp",
       "is_released": false,
       "added_at": "2026-10-16T10:11:02.649475Z"
+    },
+    {
+      "title": "EXTRA BOOSTER -EAST BLUE- [EB-06]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2027-01-29",
+      "release_date_text": "January 29, 2027",
+      "url": "https://en.onepiece-cardgame.com/products/eb06.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/11/04/nK1ANsuWFN2olLJr/img_item01.webp?_=a2a00ddedae9a82de6805832e9dea67c",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/eb06_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-11-06T18:34:17.000049Z"
+    },
+    {
+      "title": "BOOSTER PACK -COME IN, WORLD- [OP-19]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2027-03-05",
+      "release_date_text": "March 5, 2027",
+      "url": "https://en.onepiece-cardgame.com/products/op19.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/11/04/8I5hGxqbJG7Ji9gT/img_item01.webp?_=a2a00ddedae9a82de6805832e9dea67c",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/op19_img-item01.webp",
+      "is_released": false,
+      "added_at": "2026-11-06T18:34:17.000049Z"
+    },
+    {
+      "title": "PREMIUM EXTRA BOOSTER -THE DRAWING OF YOUR DREAMS- [PEB-01]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2027-04-23",
+      "release_date_text": "April 23, 2027",
+      "url": "https://en.onepiece-cardgame.com/products/per01.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/11/04/geWzKZK85JFuwPnc/img_noimage_booster_en-fr.webp?_=a2a00ddedae9a82de6805832e9dea67c",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/per01_img-noimage-booster-en-fr.webp",
+      "is_released": false,
+      "added_at": "2026-11-06T18:34:17.000049Z"
     },
     {
       "title": "Chinese 3rd Anniversary Set",
