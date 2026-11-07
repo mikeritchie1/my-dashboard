@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T10:44:19Z",
+  "updated_at": "2026-11-07T17:01:17Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -279276,6 +279276,90 @@
       "stock": "In stock",
       "observed_on": "2026-11-07",
       "captured_at": "2026-11-07T10:43:57Z"
+    },
+    {
+      "card_number": "OP17-005",
+      "art_variant": "alternate",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/edward-newgate-005-alternate-art-op17-005-the-worlds-strongest-warriors-foil",
+      "title": "Edward.Newgate (005) (Alternate Art) (OP17-005) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T17:00:46Z"
+    },
+    {
+      "card_number": "OP17-118",
+      "art_variant": "alternate",
+      "price": 515.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-alternate-art-op17-118-the-worlds-strongest-warriors-foil",
+      "title": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T17:00:46Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 1830.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-sp-eb02-052-adventure-on-kamis-island-foil",
+      "title": "Enel (SP) (EB02-052) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T17:00:46Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 116.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T17:01:04Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 161.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T17:01:04Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 213.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T17:01:04Z"
+    },
+    {
+      "card_number": "EB01-057",
+      "art_variant": "alternate",
+      "price": 217.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection",
+      "title": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T17:01:04Z"
     }
   ]
 }
