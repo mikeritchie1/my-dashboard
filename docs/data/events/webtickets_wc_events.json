@@ -1,9 +1,27 @@
 [
   {
+    "title": "Khayelitsha Maskhandi Festival",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594191471",
+    "image": "https://content.webtickets.co.za/maskhandifest/panel_Khayelitsha Maskandi & Friends WEBTICKETS LINE UP.jpg_20260929_080613.jpeg",
+    "date_text": "07 Nov 2026 11:00",
+    "venue": "Khayelitsha Rugby Stadium",
+    "price": "R200 - R500",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "festival",
+      "sports"
+    ],
+    "missing_location": true,
+    "location_key": "",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
     "title": "Nataniël: SOOIBRAND",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597147920",
     "image": "https://content.webtickets.co.za/artscape/panel_Nataniel - Sooibrand - Web Image_20260611_104153.jpg",
-    "date_text": "From 06 Nov 2026 19:00",
+    "date_text": "From 07 Nov 2026 11:00",
     "venue": "Artscape, Theatre, Cape Town",
     "price": "R280 - R360",
     "source": "Webtickets",
@@ -13,7 +31,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "Artscape, Theatre, Cape Town",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -21,7 +39,7 @@
     "title": "CHICAGO THE MUSICAL",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1599973808",
     "image": "https://content.webtickets.co.za/TGSA/panel_Chicago_20260730_150346.jpg",
-    "date_text": "From 06 Nov 2026 19:00",
+    "date_text": "From 07 Nov 2026 14:00",
     "venue": "The George Arts Theatre, 125 York Street, George Central",
     "price": "R170 - R200",
     "source": "Webtickets",
@@ -32,7 +50,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "The George Arts Theatre, 125 York Street, George Central",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -40,7 +58,7 @@
     "title": "Into The Woods",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1601853362",
     "image": "https://content.webtickets.co.za/PTProductions/panel_ITW 1_20260827_120247.png",
-    "date_text": "From 06 Nov 2026 19:30",
+    "date_text": "From 07 Nov 2026 14:30",
     "venue": "Theatre On The Bay, Camps Bay",
     "price": "R250 - R400",
     "source": "Webtickets",
@@ -49,7 +67,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "Theatre On The Bay, Camps Bay",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -69,24 +87,6 @@
     "place_key": ""
   },
   {
-    "title": "Khayelitsha Maskhandi Festival",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1594191471",
-    "image": "https://content.webtickets.co.za/maskhandifest/panel_Khayelitsha Maskandi & Friends WEBTICKETS LINE UP.jpg_20260929_080613.jpeg",
-    "date_text": "07 Nov 2026 11:00",
-    "venue": "Khayelitsha Rugby Stadium",
-    "price": "R200 - R500",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "festival",
-      "sports"
-    ],
-    "missing_location": true,
-    "location_key": "Khayelitsha Rugby Stadium",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Artscape 55th Gala Concert “A Place for All”",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604585611",
     "image": "https://content.webtickets.co.za/artscape/panel_55 Gal_20261006_150725.jpg",
@@ -102,7 +102,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "Artscape, Opera House, Cape Town",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -117,7 +117,7 @@
     "region": "Western Cape",
     "categories": [],
     "missing_location": true,
-    "location_key": "Cape Town City Hall, Darling St, CBD, Cape Town",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -134,8 +134,8 @@
       "festival",
       "bar"
     ],
-    "missing_location": false,
-    "location_key": "Villiera Wines, Stellenbosch",
+    "missing_location": true,
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -150,7 +150,7 @@
     "region": "Western Cape",
     "categories": [],
     "missing_location": true,
-    "location_key": "Good Hope Christian Centre Ottery, Cnr Plantation Rd & Panton Rd, Ferness, Cape Town",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -167,7 +167,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "Theatre On The Bay, Camps Bay",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   },
@@ -185,7 +185,7 @@
       "theatre"
     ],
     "missing_location": true,
-    "location_key": "Artscape, Theatre, Cape Town",
+    "location_key": "",
     "missing_place": true,
     "place_key": ""
   }

@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "Dirty Dancing",
-      "detail_title": "Dirty Dancing",
-      "url": "https://thegalileo.co.za/movie/dirty-dancing-meerendal/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-11-06",
-      "event_date_text": "6 November 2026",
-      "day": "Friday",
-      "venue": "Meerendal Wine Estate",
-      "doors_open": "18h00",
-      "movie_starts": "19h45",
-      "cinema_type": "PICNIC",
-      "age_restriction": "13 PG",
-      "run_time": "1h30",
-      "runtime_minutes": "90",
-      "genre": "Drama , Musical/Dance , Romance",
-      "genres": [
-        "Drama , Musical/Dance , Romance"
-      ],
-      "overview": "Dirty Dancing is a 1987 American romantic drama dance film, starring Patrick Swayze and Jennifer Grey. It tells the story of Frances “Baby” Houseman (Grey), a young woman who falls in love with dance instructor Johnny Castle (Swayze) at a vacation resort.",
-      "synopsis": "Dirty Dancing is a 1987 American romantic drama dance film, starring Patrick Swayze and Jennifer Grey. It tells the story of Frances “Baby” Houseman (Grey), a young woman who falls in love with dance instructor Johnny Castle (Swayze) at a vacation resort.",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2025/09/Dirty-Dancing-2-copy-686x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/Dirty-Dancing-2-copy-686x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=wcra0-0Gu4U",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Meerendal Wine Estate"
-    },
-    {
       "title": "Pride & Prejudice",
       "detail_title": "Pride & Prejudice",
       "url": "https://thegalileo.co.za/movie/pride-prejudice/",

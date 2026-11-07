@@ -2,6 +2,42 @@
   "source": "https://pahe.ink/",
   "items": [
     {
+      "title": "The Odyssey",
+      "url": "https://pahe.ink/the-odyssey-2026-bluray-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/gbckluorga5h1.jpeg_75-110x153.jpg",
+      "rating": "8.0",
+      "first_seen_at": "2026-11-07",
+      "tmdb_id": 1368337,
+      "tmdb_url": "https://www.themoviedb.org/movie/1368337",
+      "tmdb_rating": "8.0",
+      "tmdb_votes": "4363",
+      "release_date": "2026-07-15",
+      "overview": "Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point.",
+      "runtime_minutes": "173",
+      "genres": [
+        "Adventure",
+        "Action",
+        "Fantasy"
+      ],
+      "directors": [
+        "Christopher Nolan"
+      ],
+      "actors": [
+        "Matt Damon",
+        "Tom Holland",
+        "Anne Hathaway",
+        "Robert Pattinson",
+        "Himesh Patel",
+        "Charlize Theron",
+        "John Leguizamo",
+        "Travis Scott",
+        "Corey Hawkins",
+        "Jarreth J. Merz"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=AyIZ9tiiN8I",
+      "poster_url": "https://image.tmdb.org/t/p/w342/5rhTDKUhPYvpdQIijFIs5VoWsON.jpg"
+    },
+    {
       "title": "Heart of the Beast",
       "url": "https://pahe.ink/heart-of-the-beast-2026-web-dl-480p-720p-1080p/",
       "image": "https://pahe.ink/wp-content/uploads/2026/11/MV5BMDVlMTRhMjgtMjdmZi00NjJhLWExMmYtODExNWJkZGZjNjdhXkEyXkFqcGc@._V1_F_jpg_UX1000_.jpg_80-110x153.jpg",
@@ -928,14 +964,6 @@
       ],
       "trailer_url": "https://www.youtube.com/watch?v=NKYea63tQmI",
       "poster_url": "https://image.tmdb.org/t/p/w342/yihdXomYb5kTeSivtFndMy5iDmf.jpg",
-      "is_new": false
-    },
-    {
-      "title": "Remarkably Bright Creatures",
-      "url": "https://pahe.ink/remarkably-bright-creatures-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/remarkably_bright_creatures_ver2_jpg_75-110x153.jpg",
-      "rating": "",
-      "first_seen_at": "2026-05-21",
       "is_new": false
     }
   ]
