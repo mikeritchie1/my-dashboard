@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T03:19:51Z",
+  "updated_at": "2026-11-07T10:44:19Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -279216,6 +279216,66 @@
       "stock": "In stock",
       "observed_on": "2026-11-07",
       "captured_at": "2026-11-07T03:19:34Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 106.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T10:43:57Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 118.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T10:43:57Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 160.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T10:43:57Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 216.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T10:43:57Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 279.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T10:43:57Z"
     }
   ]
 }
