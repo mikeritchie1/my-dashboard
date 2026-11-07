@@ -4,19 +4,25 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
+      "runs": 2,
       "item_count": 97,
       "added": {},
       "removed": {},
       "updated": {
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-sp-eb02-052-adventure-on-kamis-island-foil": "Enel (SP) (EB02-052) - Adventure on Kami's Island Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-alternate-art-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/edward-newgate-005-alternate-art-op17-005-the-worlds-strongest-warriors-foil": "Edward.Newgate (005) (Alternate Art) (OP17-005) - The World's Strongest Warriors Foil"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/edward-newgate-005-alternate-art-op17-005-the-worlds-strongest-warriors-foil": "Edward.Newgate (005) (Alternate Art) (OP17-005) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-alternate-art-op17-119-the-worlds-strongest-warriors-foil": "Loki (Alternate Art) (OP17-119) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood": "Sanji [Royal Blood]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks": "Uta [Starter Deck: Red Shanks]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-049-alternate-art-op17-049-the-worlds-strongest-warriors-foil": "Charlotte Linlin (049) (Alternate Art) (OP17-049) - The World's Strongest Warriors Foil"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -24,7 +30,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -32,7 +38,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
+      "runs": 2,
       "item_count": 36,
       "added": {},
       "removed": {},
@@ -46,7 +52,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -54,7 +60,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 193,
       "added": {},
       "removed": {},

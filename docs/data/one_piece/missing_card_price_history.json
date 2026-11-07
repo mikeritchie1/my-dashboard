@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T17:01:17Z",
+  "updated_at": "2026-11-07T21:07:34Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -279360,6 +279360,102 @@
       "stock": "In stock",
       "observed_on": "2026-11-07",
       "captured_at": "2026-11-07T17:01:04Z"
+    },
+    {
+      "card_number": "OP10-005",
+      "art_variant": "original",
+      "price": 130.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-royal-blood",
+      "title": "Sanji [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:02Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "art_variant": "alternate",
+      "price": 140.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-alternate-art-op15-008-adventure-on-kamis-island-foil",
+      "title": "Krieg (OP15-008) (Alternate Art) (OP15-008) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:02Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:02Z"
+    },
+    {
+      "card_number": "ST23-001",
+      "art_variant": "original",
+      "price": 215.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks",
+      "title": "Uta [Starter Deck: Red Shanks]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:02Z"
+    },
+    {
+      "card_number": "OP17-049",
+      "art_variant": "alternate",
+      "price": 250.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-049-alternate-art-op17-049-the-worlds-strongest-warriors-foil",
+      "title": "Charlotte Linlin (049) (Alternate Art) (OP17-049) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:02Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "art_variant": "alternate",
+      "price": 690.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-alternate-art-op17-119-the-worlds-strongest-warriors-foil",
+      "title": "Loki (Alternate Art) (OP17-119) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:02Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 115.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:17Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 212.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-07",
+      "captured_at": "2026-11-07T21:07:17Z"
     }
   ]
 }
