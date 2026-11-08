@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-07T11:10:04.827337Z",
+  "generated_at": "2026-11-08T11:24:59.808156Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 47,
+  "items_count": 48,
   "items": [
+    {
+      "id": "yt-rk20dVV-AH0",
+      "video_id": "rk20dVV-AH0",
+      "title": "25 UPCOMING Games We're MOST EXCITED ABOUT",
+      "url": "https://www.youtube.com/watch?v=rk20dVV-AH0",
+      "published_at": "2026-11-07T14:35:21+00:00",
+      "updated_at": "2026-11-07T17:46:37+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/rk20dVV-AH0/hqdefault.jpg"
+    },
     {
       "id": "yt-tvPdp-RPAKo",
       "video_id": "tvPdp-RPAKo",

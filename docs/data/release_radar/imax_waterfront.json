@@ -5,8 +5,8 @@
     {
       "tmdb_id": 1381071,
       "tmdb_url": "https://www.themoviedb.org/movie/1381071",
-      "tmdb_rating": "8.132",
-      "tmdb_votes": "57",
+      "tmdb_rating": "8.099",
+      "tmdb_votes": "81",
       "release_date": "2026-11-03",
       "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
       "runtime_minutes": "135",
@@ -44,11 +44,11 @@
     {
       "tmdb_id": 656908,
       "tmdb_url": "https://www.themoviedb.org/movie/656908",
-      "tmdb_rating": "7.5",
-      "tmdb_votes": "14",
+      "tmdb_rating": "7.8",
+      "tmdb_votes": "19",
       "release_date": "2026-11-05",
       "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
-      "runtime_minutes": "208",
+      "runtime_minutes": "197",
       "genres": [
         "Fantasy",
         "Action",
@@ -70,7 +70,7 @@
         "Adinath Kothare"
       ],
       "trailer_url": "https://www.youtube.com/watch?v=AYkPRN874m8",
-      "poster_url": "https://image.tmdb.org/t/p/w342/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/dPrtk4iNf6T5w8fWfg4uxDDbJSW.jpg",
       "title": "Ramayana: Rise of a Legend",
       "url": "https://mydorpie.com/m/?page=m_waterimax_ramayanariseofalegend3d",
       "source": "IMAX Waterfront",
@@ -78,7 +78,7 @@
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 3D",
-      "image": "https://image.tmdb.org/t/p/w342/hz2Hv8tPToHvQ7HaxzqeLvahmcJ.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/dPrtk4iNf6T5w8fWfg4uxDDbJSW.jpg"
     }
   ]
 }
