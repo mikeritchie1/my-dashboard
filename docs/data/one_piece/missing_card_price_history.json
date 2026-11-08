@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T00:58:11Z",
+  "updated_at": "2026-11-08T08:07:32Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -281100,6 +281100,150 @@
       "stock": "In stock",
       "observed_on": "2026-11-08",
       "captured_at": "2026-11-08T00:57:36Z"
+    },
+    {
+      "card_number": "OP01-057",
+      "art_variant": "original",
+      "price": 130.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/paradise-waterfall-best-selection-vol-1",
+      "title": "Paradise Waterfall [Best Selection Vol.1]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:00Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "alternate",
+      "price": 215.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-alternate-art-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:00Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil",
+      "title": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:00Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 295.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:00Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 465.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:00Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 540.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:00Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 2200.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:00Z"
+    },
+    {
+      "card_number": "ST31-001",
+      "art_variant": "original",
+      "price": 57.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy",
+      "title": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:15Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 163.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:15Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 211.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:15Z"
+    },
+    {
+      "card_number": "EB01-057",
+      "art_variant": "alternate",
+      "price": 220.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection",
+      "title": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:15Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 274.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-08",
+      "captured_at": "2026-11-08T08:07:15Z"
     }
   ]
 }
