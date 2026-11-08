@@ -153,17 +153,17 @@
     {
       "card_number": "DON!!",
       "price": 5.0,
-      "title": "DON!! Card (Alternate Art) - The Time of Battle",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
+      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
+      "rarity": "DON!!",
+      "store": "Knightly Gaming",
+      "set_name": "The Time of Battle",
+      "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint R5.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/698313_c5402558-27d7-4105-95d1-348cac170013.jpg?v=1793662185",
+      "available_variants": "Near Mint Foil R5.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/698313.jpg?v=1793221582",
       "art_variant": "alternate",
-      "scraped_at": "2026-08-03T15:33:35Z"
+      "scraped_at": "2026-09-24T23:35:55Z"
     },
     {
       "card_number": "OP07-060",
@@ -211,21 +211,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "DON!!",
-      "price": 6.0,
-      "title": "DON!! Card (Alternate Art) [The Time of Battle]",
-      "rarity": "DON!!",
-      "store": "Knightly Gaming",
-      "set_name": "The Time of Battle",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R6.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/698313.jpg?v=1793221582",
-      "art_variant": "alternate",
-      "scraped_at": "2026-09-24T23:35:55Z"
-    },
-    {
       "card_number": "OP16-026",
       "price": 7.0,
       "title": "Emporio.Ivankov [The Time of Battle]",
@@ -269,6 +254,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/668181.jpg?v=1790291966",
       "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:24Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 10.0,
+      "title": "DON!! Card (Alternate Art) - The Time of Battle",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R10.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-time-of-battle",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/698313_c5402558-27d7-4105-95d1-348cac170013.jpg?v=1793662185",
+      "art_variant": "alternate",
+      "scraped_at": "2026-08-03T15:33:35Z"
     },
     {
       "card_number": "DON!!",
@@ -721,6 +721,21 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
+      "card_number": "OP17-062",
+      "price": 20.0,
+      "title": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R20.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/707133.jpg?v=1787878742",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
       "card_number": "OP17-063",
       "price": 20.0,
       "title": "Kaido (063) (OP17-063) - The World's Strongest Warriors Foil",
@@ -734,6 +749,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/710578.jpg?v=1793662073",
       "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:03Z"
+    },
+    {
+      "card_number": "OP17-080",
+      "price": 20.0,
+      "title": "Usopp (OP17-080) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R20.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/usopp-op17-080-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/711426.jpg?v=1787878531",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
     },
     {
       "card_number": "ST10-013",
@@ -794,6 +824,36 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/647700_37b8f39c-7585-43b9-9970-3003b0a9502f.jpg?v=1768644858",
       "art_variant": "alternate",
       "scraped_at": "2026-10-19T14:22:02Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 30.0,
+      "title": "DON!! Card (Alternate Art) (Luffy and Loki) - The World's Strongest Warriors",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R30.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-luffy-and-loki-the-worlds-strongest-warriors",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712748.jpg?v=1790063665",
+      "art_variant": "alternate",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
+      "card_number": "DON!!",
+      "price": 30.0,
+      "title": "DON!! Card (Alternate Art) (Rocks) - The World's Strongest Warriors",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R30.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-rocks-the-worlds-strongest-warriors",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712749.jpg?v=1790063710",
+      "art_variant": "alternate",
+      "scraped_at": "2026-11-08T16:23:46Z"
     },
     {
       "card_number": "P-088",
@@ -886,6 +946,36 @@
       "scraped_at": "2026-10-14T10:40:08Z"
     },
     {
+      "card_number": "OP17-093",
+      "price": 45.0,
+      "title": "Monkey.D.Luffy (093) (OP17-093) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R45.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-093-op17-093-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/710861_3d52c78b-ef67-4639-8f8c-b63cc83d4713.jpg?v=1793662179",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
+      "card_number": "OP17-109",
+      "price": 45.0,
+      "title": "Charlotte Pudding (OP17-109) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R45.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-op17-109-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/708074.jpg?v=1787878723",
+      "art_variant": "original",
+      "scraped_at": "2026-10-27T09:18:03Z"
+    },
+    {
       "card_number": "ST01-006",
       "price": 45.0,
       "title": "Tony Tony.Chopper (ST01-006) (Jolly Roger Foil) [Premium Booster -The Best-]",
@@ -932,18 +1022,33 @@
     },
     {
       "card_number": "ST21-017",
-      "price": 49.0,
+      "price": 48.0,
       "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
       "rarity": "Common",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck EX: Gear 5",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R49.00",
+      "available_variants": "Near Mint Foil R48.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/615595.jpg?v=1769011256",
       "art_variant": "original",
       "scraped_at": "2026-10-04T12:54:03Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "price": 50.0,
+      "title": "Merry Go [Extra Booster: Anime 25th Collection]",
+      "rarity": "Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Extra Booster: Anime 25th Collection",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R50.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-extra-booster-memorial-collection-1",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/629139.jpg?v=1763500348",
+      "art_variant": "original",
+      "scraped_at": "2026-09-02T18:59:25Z"
     },
     {
       "card_number": "OP08-047",
@@ -961,21 +1066,6 @@
       "scraped_at": "2026-10-21T19:41:37Z"
     },
     {
-      "card_number": "OP17-109",
-      "price": 50.0,
-      "title": "Charlotte Pudding (OP17-109) - The World's Strongest Warriors Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R50.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-op17-109-the-worlds-strongest-warriors-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/708074.jpg?v=1787878723",
-      "art_variant": "original",
-      "scraped_at": "2026-10-27T09:18:03Z"
-    },
-    {
       "card_number": "ST22-012",
       "price": 50.0,
       "title": "Marco (Parallel) (ST22-012) - Starter Deck 22: Ace & Newgate Foil",
@@ -989,21 +1079,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/647706_fac3fc26-e9c2-4ad9-a5e0-ffa47e78e3fc.jpg?v=1768644798",
       "art_variant": "alternate",
       "scraped_at": "2026-10-19T14:22:02Z"
-    },
-    {
-      "card_number": "EB02-041",
-      "price": 55.0,
-      "title": "Merry Go [Extra Booster: Anime 25th Collection]",
-      "rarity": "Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Extra Booster: Anime 25th Collection",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R55.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-extra-booster-memorial-collection-1",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/629139.jpg?v=1763500348",
-      "art_variant": "original",
-      "scraped_at": "2026-09-02T18:59:25Z"
     },
     {
       "card_number": "OP17-112",
@@ -1126,15 +1201,30 @@
       "scraped_at": "2026-10-06T19:08:39Z"
     },
     {
+      "card_number": "OP17-022",
+      "price": 80.0,
+      "title": "Shanks (022) (OP17-022) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R80.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-op17-022-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/707120.jpg?v=1787878749",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
       "card_number": "OP10-118",
-      "price": 81.0,
+      "price": 82.0,
       "title": "Monkey.D.Luffy [Royal Blood]",
       "rarity": "Secret Rare",
       "store": "Knightly Gaming",
       "set_name": "Royal Blood",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R81.00",
+      "available_variants": "Near Mint Foil R82.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617169.jpg?v=1758380156",
       "art_variant": "original",
@@ -1142,32 +1232,17 @@
     },
     {
       "card_number": "OP17-031",
-      "price": 106.0,
+      "price": 104.0,
       "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "The World's Strongest Warriors",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R106.00",
+      "available_variants": "Near Mint Foil R104.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/711423.jpg?v=1791317948",
       "art_variant": "alternate",
-      "scraped_at": "2026-10-27T09:18:24Z"
-    },
-    {
-      "card_number": "EB01-059",
-      "price": 115.0,
-      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
-      "rarity": "Rare",
-      "store": "Knightly Gaming",
-      "set_name": "Extra Booster: Memorial Collection",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R115.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/544599.jpg?v=1745408561",
-      "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
@@ -1184,6 +1259,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/3f6dc017-b6eb-5be5-84de-c15de1756cbb.jpg?v=1771366031",
       "art_variant": "original",
       "scraped_at": "2026-06-26T13:53:12Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "price": 116.0,
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "rarity": "Rare",
+      "store": "Knightly Gaming",
+      "set_name": "Extra Booster: Memorial Collection",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R116.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/544599.jpg?v=1745408561",
+      "art_variant": "original",
+      "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
       "card_number": "OP01-057",
@@ -1214,6 +1304,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/617037.jpg?v=1763513020",
       "art_variant": "original",
       "scraped_at": "2026-07-01T09:39:28Z"
+    },
+    {
+      "card_number": "OP17-061",
+      "price": 130.0,
+      "title": "Lead Performers (Alternate Art) (OP17-061) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R130.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/lead-performers-alternate-art-op17-061-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712626.jpg?v=1787878450",
+      "art_variant": "alternate",
+      "scraped_at": "2026-11-08T16:23:46Z"
     },
     {
       "card_number": "OP15-008",
@@ -1277,14 +1382,14 @@
     },
     {
       "card_number": "ST31-005",
-      "price": 163.0,
+      "price": 164.0,
       "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
       "rarity": "Common",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck: RED Monkey.D.Luffy",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R163.00",
+      "available_variants": "Near Mint R164.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706318.jpg?v=1784579162",
       "art_variant": "original",
@@ -1352,14 +1457,14 @@
     },
     {
       "card_number": "ST32-002",
-      "price": 211.0,
+      "price": 207.0,
       "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
       "rarity": "Super Rare",
       "store": "Knightly Gaming",
       "set_name": "Starter Deck: GREEN Roronoa Zoro",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R211.00",
+      "available_variants": "Near Mint Foil R207.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/706324.jpg?v=1784579213",
       "art_variant": "original",
@@ -1441,6 +1546,21 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
+      "card_number": "OP17-118",
+      "price": 235.0,
+      "title": "Rocks.D.Xebec (118) (OP17-118) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R235.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-op17-118-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/709836_fe3db3e8-7394-42cc-8652-138533cd2715.jpg?v=1793662167",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
       "card_number": "EB02-041",
       "price": 249.0,
       "title": "Merry Go [One Piece Promotion Cards]",
@@ -1517,14 +1637,14 @@
     },
     {
       "card_number": "EB02-052",
-      "price": 280.0,
+      "price": 275.0,
       "title": "Enel [Extra Booster: Anime 25th Collection]",
       "rarity": "Super Rare",
       "store": "Big Bang Shop",
       "set_name": "Extra Booster: Anime 25th Collection",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R280.00",
+      "available_variants": "Near Mint Foil R275.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/629153.jpg?v=1763500766",
       "art_variant": "original",
@@ -1562,18 +1682,33 @@
     },
     {
       "card_number": "EB03-062",
-      "price": 298.0,
+      "price": 295.0,
       "title": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]",
       "rarity": "Secret Rare",
       "store": "Knightly Gaming",
       "set_name": "Extra Booster: One Piece Heroines Edition",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R298.00",
+      "available_variants": "Near Mint Foil R295.00",
       "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition",
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/672819.jpg?v=1791317299",
       "art_variant": "alternate",
       "scraped_at": "2026-10-27T09:18:24Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "price": 300.0,
+      "title": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R300.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/710585.jpg?v=1793661893",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
     },
     {
       "card_number": "EB01-061",
@@ -1591,6 +1726,21 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
+      "card_number": "EB04-007",
+      "price": 330.0,
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R330.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685303_17fc72d0-f414-4a80-b56f-f02912c70d52.jpg?v=1780510382",
+      "art_variant": "original",
+      "scraped_at": "2026-08-24T22:11:46Z"
+    },
+    {
       "card_number": "OP15-053",
       "price": 330.0,
       "title": "Rebecca (OP15-053) (Alternate Art) (OP15-053) - Adventure on Kami's Island Foil",
@@ -1604,6 +1754,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685400.jpg?v=1780510311",
       "art_variant": "alternate",
       "scraped_at": "2026-08-24T22:11:46Z"
+    },
+    {
+      "card_number": "OP17-114",
+      "price": 340.0,
+      "title": "Sweet 3 Generals (Alternate Art) (OP17-114) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R340.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sweet-3-generals-alternate-art-op17-114-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712116.jpg?v=1787878259",
+      "art_variant": "alternate",
+      "scraped_at": "2026-11-08T16:23:46Z"
     },
     {
       "card_number": "EB04-048",
@@ -1634,21 +1799,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617116.jpg?v=1758380186",
       "art_variant": "alternate",
       "scraped_at": "2026-07-17T11:11:43Z"
-    },
-    {
-      "card_number": "EB04-007",
-      "price": 360.0,
-      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R360.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685303_17fc72d0-f414-4a80-b56f-f02912c70d52.jpg?v=1780510382",
-      "art_variant": "original",
-      "scraped_at": "2026-08-24T22:11:46Z"
     },
     {
       "card_number": "OP17-112",
@@ -1726,6 +1876,21 @@
       "scraped_at": "2026-08-25T08:25:11Z"
     },
     {
+      "card_number": "DON!!",
+      "price": 500.0,
+      "title": "DON!! Card (Alternate Art) (Luffy and Loki) (Gold) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R500.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-luffy-and-loki-gold-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/710860.jpg?v=1790063659",
+      "art_variant": "alternate",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
       "card_number": "OP17-118",
       "price": 515.0,
       "title": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
@@ -1801,6 +1966,21 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
+      "card_number": "OP17-022",
+      "price": 610.0,
+      "title": "Shanks (022) (Alternate Art) (OP17-022) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R610.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-alternate-art-op17-022-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/707121_30f99c47-810a-4bc4-9ff3-6468155cb36f.jpg?v=1793661819",
+      "art_variant": "alternate",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
       "card_number": "OP17-119",
       "price": 690.0,
       "title": "Loki (Alternate Art) (OP17-119) - The World's Strongest Warriors Foil",
@@ -1846,21 +2026,6 @@
       "scraped_at": "2026-06-26T13:53:12Z"
     },
     {
-      "card_number": "OP16-119",
-      "price": 800.0,
-      "title": "Marshall.D.Teach (119) (Alternate Art) (OP16-119) - The Time of Battle Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R800.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-alternate-art-op16-119-the-time-of-battle-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/695757.jpg?v=1780708702",
-      "art_variant": "alternate",
-      "scraped_at": "2026-10-28T20:37:20Z"
-    },
-    {
       "card_number": "DON!!",
       "price": 805.0,
       "title": "DON!! Card (Alternate Art) (Rocks) (Special Foil) - The World's Strongest Warriors Foil",
@@ -1874,6 +2039,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/711420.jpg?v=1790063665",
       "art_variant": "alternate",
       "scraped_at": "2026-09-29T16:40:48Z"
+    },
+    {
+      "card_number": "OP16-119",
+      "price": 815.0,
+      "title": "Marshall.D.Teach (119) (Alternate Art) (OP16-119) - The Time of Battle Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R815.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-alternate-art-op16-119-the-time-of-battle-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/695757.jpg?v=1780708702",
+      "art_variant": "alternate",
+      "scraped_at": "2026-10-28T20:37:20Z"
     },
     {
       "card_number": "OP14-104",
@@ -1967,14 +2147,14 @@
     },
     {
       "card_number": "EB01-061",
-      "price": 2020.0,
+      "price": 2035.0,
       "title": "Mr.2.Bon.Kurei(Bentham) (Alternate Art) [Extra Booster: Memorial Collection]",
       "rarity": "Secret Rare",
       "store": "Big Bang Shop",
       "set_name": "Extra Booster: Memorial Collection",
       "condition": "Near Mint Foil",
       "stock": "In stock",
-      "available_variants": "Near Mint Foil R2020.00",
+      "available_variants": "Near Mint Foil R2035.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-alternate-art-extra-booster-memorial-collection",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/544602_01a91532-2ad3-4a31-a50d-bd5acd298dc8.jpg?v=1763497457",
       "art_variant": "alternate",
@@ -2041,6 +2221,21 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
+      "card_number": "EB04-007",
+      "price": 7390.0,
+      "title": "Roronoa Zoro (EB04-007) (SP) (EB04-007) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R7390.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-sp-eb04-007-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/705991_35dc64d0-68eb-4dbe-9b62-3191a5e607d0.jpg?v=1793661626",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
+    },
+    {
       "card_number": "ST26-005",
       "price": 10460.0,
       "title": "Monkey.D.Luffy (SP) (ST26-005) - Adventure on Kami's Island Foil",
@@ -2054,6 +2249,21 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685194_03cd1e43-1362-4041-b39c-3c14304c1734.jpg?v=1780510277",
       "art_variant": "original",
       "scraped_at": "2026-11-05T22:56:36Z"
+    },
+    {
+      "card_number": "ST31-004",
+      "price": 11300.0,
+      "title": "Monkey.D.Luffy (ST31-004) (SP) (ST31-004) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R11300.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st31-004-sp-st31-004-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712122_fec2aaef-b7e9-466b-85c3-22ce0da7cdf7.jpg?v=1793662084",
+      "art_variant": "original",
+      "scraped_at": "2026-11-08T16:23:46Z"
     }
   ]
 }
