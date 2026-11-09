@@ -1335,7 +1335,7 @@
         {
           "type": "movie",
           "title": "Disclosure Day",
-          "opinion": ""
+          "opinion": "Disliked"
         },
         {
           "type": "movie",
@@ -1350,22 +1350,22 @@
         {
           "type": "movie",
           "title": "Backrooms",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "Evil Dead Burn",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "Avatar Aang: The Last Airbender",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
           "title": "The Odyssey",
-          "opinion": ""
+          "opinion": "Liked"
         },
         {
           "type": "movie",
@@ -1380,6 +1380,11 @@
         {
           "type": "movie",
           "title": "Buddy",
+          "opinion": "Liked"
+        },
+        {
+          "type": "movie",
+          "title": "Prime Time",
           "opinion": ""
         },
         {

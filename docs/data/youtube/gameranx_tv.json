@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-08T11:24:59.808156Z",
+  "generated_at": "2026-11-09T13:03:39.703379Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 48,
+  "items_count": 49,
   "items": [
+    {
+      "id": "yt-UjB432B1Pg4",
+      "video_id": "UjB432B1Pg4",
+      "title": "10 Developers That Warned Us, But Nobody Listened",
+      "url": "https://www.youtube.com/watch?v=UjB432B1Pg4",
+      "published_at": "2026-11-08T17:39:07+00:00",
+      "updated_at": "2026-11-09T10:22:52+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/UjB432B1Pg4/hqdefault.jpg"
+    },
     {
       "id": "yt-rk20dVV-AH0",
       "video_id": "rk20dVV-AH0",

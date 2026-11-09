@@ -14376,6 +14376,23 @@
     "release_date": "1996-04-03",
     "overview": "Defense attorney Martin Vail takes on jobs for money and prestige rather than any sense of the greater good. His latest case involves an altar boy, accused of brutally murdering the archbishop of Chicago. Vail finds himself up against his ex-pupil and ex-lover, but as the case progresses and the Church's dark secrets are revealed, Vail finds that what appeared a simple case takes on a darker, more dangerous aspect."
   },
+  "movie:prime time": {
+    "title": "Prime Time",
+    "media_type": "movie",
+    "tmdb_id": null,
+    "description": null,
+    "rating": null,
+    "runtime_minutes": null,
+    "number_of_seasons": null,
+    "directors": null,
+    "genres": null,
+    "overview": null,
+    "actors": null,
+    "tmdb_url": null,
+    "release_date": null,
+    "poster_url": null,
+    "trailer_url": null
+  },
   "movie:prisoners": {
     "title": "Prisoners",
     "rating": 8.1,

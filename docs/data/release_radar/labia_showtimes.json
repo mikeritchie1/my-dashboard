@@ -6,7 +6,7 @@
     "days": 14
   },
   "listed_window": {
-    "start_date": "2026-11-08",
+    "start_date": "2026-11-09",
     "end_date": "2026-12-15"
   },
   "weeks": [
@@ -52,41 +52,19 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606112696",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606112696",
-      "event_date_text": "08 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 10 Nov 2026: 11:30, 16:00\n11 Nov 2026: 11:30\n12 Nov 2026 - 17 Nov 2026: 11:30, 16:00\n18 Nov 2026: 11:30\n19 Nov 2026: 11:30, 16:00",
+      "event_date_text": "09 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 10 Nov 2026: 11:30, 16:00\n11 Nov 2026: 11:30\n12 Nov 2026: 11:30, 16:00",
       "image": "https://image.tmdb.org/t/p/w342/dgtiiO3pfIL1aRdjhiLFCXxKLEA.jpg",
       "showings": [
-        "2026-11-08 11:30",
-        "2026-11-08 16:00",
         "2026-11-09 11:30",
         "2026-11-09 16:00",
         "2026-11-10 11:30",
         "2026-11-10 16:00",
         "2026-11-11 11:30",
         "2026-11-12 11:30",
-        "2026-11-12 16:00",
-        "2026-11-13 11:30",
-        "2026-11-13 16:00",
-        "2026-11-14 11:30",
-        "2026-11-14 16:00",
-        "2026-11-15 11:30",
-        "2026-11-15 16:00",
-        "2026-11-16 11:30",
-        "2026-11-16 16:00",
-        "2026-11-17 11:30",
-        "2026-11-17 16:00",
-        "2026-11-18 11:30",
-        "2026-11-19 11:30",
-        "2026-11-19 16:00"
+        "2026-11-12 16:00"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "11:30",
-            "16:00"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -113,54 +91,6 @@
             "11:30",
             "16:00"
           ]
-        },
-        {
-          "date": "2026-11-13",
-          "times": [
-            "11:30",
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-14",
-          "times": [
-            "11:30",
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-15",
-          "times": [
-            "11:30",
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-16",
-          "times": [
-            "11:30",
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-17",
-          "times": [
-            "11:30",
-            "16:00"
-          ]
-        },
-        {
-          "date": "2026-11-18",
-          "times": [
-            "11:30"
-          ]
-        },
-        {
-          "date": "2026-11-19",
-          "times": [
-            "11:30",
-            "16:00"
-          ]
         }
       ]
     },
@@ -168,7 +98,7 @@
       "tmdb_id": 791523,
       "tmdb_url": "https://www.themoviedb.org/movie/791523",
       "tmdb_rating": "8.5",
-      "tmdb_votes": "222",
+      "tmdb_votes": "235",
       "release_date": "2026-10-19",
       "overview": "Prue and her classmate Curtis are drawn into a magical forest filled with enchanted creatures, loyal allies, and formidable adversaries as they embark on a desperate quest to rescue Prue's abducted baby brother from a murder of crows led by a mysterious woman named Alexandra.",
       "runtime_minutes": "132",
@@ -201,12 +131,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605631166",
-      "event_date_text": "08 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 09 Nov 2026: 11:45, 17:30\n10 Nov 2026: 11:45\n11 Nov 2026: 11:45, 17:30\n12 Nov 2026: 11:45\n13 Nov 2026 - 15 Nov 2026: 11:45, 17:30\n16 Nov 2026: 11:45\n17 Nov 2026 - 19 Nov 2026: 11:45, 17:30",
+      "event_date_text": "09 Nov 2026 - 19 Nov 2026",
+      "showtime_summary": "09 Nov 2026: 11:45, 17:30\n10 Nov 2026: 11:45\n11 Nov 2026: 11:45, 17:30\n12 Nov 2026: 11:45\n13 Nov 2026 - 15 Nov 2026: 11:45, 17:30\n16 Nov 2026: 11:45\n17 Nov 2026 - 19 Nov 2026: 11:45, 17:30",
       "image": "https://image.tmdb.org/t/p/w342/snFM00mpNAfUzUtkdEW0uDEvXA0.jpg",
       "showings": [
-        "2026-11-08 11:45",
-        "2026-11-08 17:30",
         "2026-11-09 11:45",
         "2026-11-09 17:30",
         "2026-11-10 11:45",
@@ -228,13 +156,6 @@
         "2026-11-19 17:30"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "11:45",
-            "17:30"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -314,8 +235,8 @@
     {
       "tmdb_id": 1503762,
       "tmdb_url": "https://www.themoviedb.org/movie/1503762",
-      "tmdb_rating": "7.268",
-      "tmdb_votes": "153",
+      "tmdb_rating": "7.28",
+      "tmdb_votes": "157",
       "release_date": "2026-09-23",
       "overview": "A charming, witty, and deeply relatable story of love and sisterhood.",
       "runtime_minutes": "132",
@@ -347,12 +268,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1605219199",
-      "event_date_text": "08 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 15 Nov 2026: 12:00, 17:45\n16 Nov 2026: 12:00\n17 Nov 2026: 12:00, 17:45\n18 Nov 2026 - 19 Nov 2026: 12:00",
+      "event_date_text": "09 Nov 2026 - 19 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 15 Nov 2026: 12:00, 17:45\n16 Nov 2026: 12:00\n17 Nov 2026: 12:00, 17:45\n18 Nov 2026 - 19 Nov 2026: 12:00",
       "image": "https://image.tmdb.org/t/p/w342/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
       "showings": [
-        "2026-11-08 12:00",
-        "2026-11-08 17:45",
         "2026-11-09 12:00",
         "2026-11-09 17:45",
         "2026-11-10 12:00",
@@ -374,13 +293,6 @@
         "2026-11-19 12:00"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "12:00",
-            "17:45"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -460,8 +372,8 @@
     {
       "tmdb_id": 1283515,
       "tmdb_url": "https://www.themoviedb.org/movie/1283515",
-      "tmdb_rating": "7.0",
-      "tmdb_votes": "622",
+      "tmdb_rating": "7.003",
+      "tmdb_votes": "648",
       "release_date": "2026-09-30",
       "overview": "Lowen Ashleigh, hired to ghostwrite for best-selling author Verity Crawford, uncovers Verity's autobiographical notes, and becomes involved in what may prove to be a lethal conspiracy.",
       "runtime_minutes": "117",
@@ -493,11 +405,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604058771",
-      "event_date_text": "08 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 12 Nov 2026: 12:15\n13 Nov 2026 - 15 Nov 2026: 20:15\n17 Nov 2026 - 19 Nov 2026: 20:15",
+      "event_date_text": "09 Nov 2026 - 19 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 12 Nov 2026: 12:15\n13 Nov 2026 - 15 Nov 2026: 20:15\n17 Nov 2026 - 19 Nov 2026: 20:15",
       "image": "https://image.tmdb.org/t/p/w342/rmaNMA1seHqpjtnYKzyynFAr1g8.jpg",
       "showings": [
-        "2026-11-08 12:15",
         "2026-11-09 12:15",
         "2026-11-10 12:15",
         "2026-11-11 12:15",
@@ -510,12 +421,6 @@
         "2026-11-19 20:15"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "12:15"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -581,7 +486,7 @@
     {
       "tmdb_id": 1318413,
       "tmdb_url": "https://www.themoviedb.org/movie/1318413",
-      "tmdb_rating": "7.719",
+      "tmdb_rating": "7.7",
       "tmdb_votes": "534",
       "release_date": "2026-05-28",
       "overview": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
@@ -615,30 +520,16 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606113439",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606113439",
-      "event_date_text": "08 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 19 Nov 2026: 13:45",
+      "event_date_text": "09 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 12 Nov 2026: 13:45",
       "image": "https://image.tmdb.org/t/p/w342/gFjEggtrejCN79r6SXRjM269OtG.jpg",
       "showings": [
-        "2026-11-08 13:45",
         "2026-11-09 13:45",
         "2026-11-10 13:45",
         "2026-11-11 13:45",
-        "2026-11-12 13:45",
-        "2026-11-13 13:45",
-        "2026-11-14 13:45",
-        "2026-11-15 13:45",
-        "2026-11-16 13:45",
-        "2026-11-17 13:45",
-        "2026-11-18 13:45",
-        "2026-11-19 13:45"
+        "2026-11-12 13:45"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "13:45"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -662,48 +553,6 @@
           "times": [
             "13:45"
           ]
-        },
-        {
-          "date": "2026-11-13",
-          "times": [
-            "13:45"
-          ]
-        },
-        {
-          "date": "2026-11-14",
-          "times": [
-            "13:45"
-          ]
-        },
-        {
-          "date": "2026-11-15",
-          "times": [
-            "13:45"
-          ]
-        },
-        {
-          "date": "2026-11-16",
-          "times": [
-            "13:45"
-          ]
-        },
-        {
-          "date": "2026-11-17",
-          "times": [
-            "13:45"
-          ]
-        },
-        {
-          "date": "2026-11-18",
-          "times": [
-            "13:45"
-          ]
-        },
-        {
-          "date": "2026-11-19",
-          "times": [
-            "13:45"
-          ]
         }
       ]
     },
@@ -715,13 +564,11 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606758839",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606758839",
-      "event_date_text": "08 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 12 Nov 2026: 14:30, 20:15",
-      "release_date": "2026-11-08",
+      "event_date_text": "09 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 12 Nov 2026: 14:30, 20:15",
+      "release_date": "2026-11-09",
       "image": "https://content.webtickets.co.za/labia/panel_e030ac4df38a4641a00fddb52ec1504a.png",
       "showings": [
-        "2026-11-08 14:30",
-        "2026-11-08 20:15",
         "2026-11-09 14:30",
         "2026-11-09 20:15",
         "2026-11-10 14:30",
@@ -732,13 +579,6 @@
         "2026-11-12 20:15"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "14:30",
-            "20:15"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -772,8 +612,8 @@
     {
       "tmdb_id": 891621,
       "tmdb_url": "https://www.themoviedb.org/movie/891621",
-      "tmdb_rating": "8.129",
-      "tmdb_votes": "70",
+      "tmdb_rating": "8.134",
+      "tmdb_votes": "97",
       "release_date": "2026-10-30",
       "overview": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone’s trip to this remote paradise sideways.",
       "runtime_minutes": "117",
@@ -806,12 +646,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606759411",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606759411",
-      "event_date_text": "08 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 15 Nov 2026: 14:45, 20:30\n16 Nov 2026: 14:45\n17 Nov 2026 - 19 Nov 2026: 14:45, 20:30",
+      "event_date_text": "09 Nov 2026 - 19 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 15 Nov 2026: 14:45, 20:30\n16 Nov 2026: 14:45\n17 Nov 2026 - 19 Nov 2026: 14:45, 20:30",
       "image": "https://image.tmdb.org/t/p/w342/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg",
       "showings": [
-        "2026-11-08 14:45",
-        "2026-11-08 20:30",
         "2026-11-09 14:45",
         "2026-11-09 20:30",
         "2026-11-10 14:45",
@@ -835,13 +673,6 @@
         "2026-11-19 20:30"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "14:45",
-            "20:30"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -923,8 +754,8 @@
     {
       "tmdb_id": 1329016,
       "tmdb_url": "https://www.themoviedb.org/movie/1329016",
-      "tmdb_rating": "7.349",
-      "tmdb_votes": "192",
+      "tmdb_rating": "7.37",
+      "tmdb_votes": "200",
       "release_date": "2026-08-07",
       "overview": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
       "runtime_minutes": "107",
@@ -956,11 +787,10 @@
       "status_label": "Now showing",
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604739708",
-      "event_date_text": "08 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 19 Nov 2026: 15:00",
+      "event_date_text": "09 Nov 2026 - 19 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 19 Nov 2026: 15:00",
       "image": "https://image.tmdb.org/t/p/w342/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
       "showings": [
-        "2026-11-08 15:00",
         "2026-11-09 15:00",
         "2026-11-10 15:00",
         "2026-11-11 15:00",
@@ -974,12 +804,6 @@
         "2026-11-19 15:00"
       ],
       "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "15:00"
-          ]
-        },
         {
           "date": "2026-11-09",
           "times": [
@@ -1049,161 +873,10 @@
       ]
     },
     {
-      "tmdb_id": 1400381,
-      "tmdb_url": "https://www.themoviedb.org/movie/1400381",
-      "tmdb_rating": "7.729",
-      "tmdb_votes": "48",
-      "release_date": "2025-08-08",
-      "overview": "Rising musician Jeff Buckley had only released one album when he died suddenly in 1997. Now, never-before-seen footage, exclusive voice messages, and accounts from those closest to him offer a portrait of the captivating singer.",
-      "runtime_minutes": "106",
-      "genres": [
-        "Documentary",
-        "Music"
-      ],
-      "directors": [
-        "Amy J. Berg"
-      ],
-      "actors": [
-        "Jeff Buckley",
-        "Mary Guibert",
-        "Ben Harper",
-        "Aimee Mann",
-        "Rebecca Moore",
-        "Joan Wasser",
-        "Mick Grondahl",
-        "Parker Kindred",
-        "Michael Tighe",
-        "Matt Johnson"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=DRrcgLRX8Qc",
-      "poster_url": "https://image.tmdb.org/t/p/w342/rrKe8bC6UKFKvfZHvbwA9Bq5hkR.jpg",
-      "title": "IT'S NEVER OVER JEFF BUCKLEY (16 DL)",
-      "itemid": "1606114424",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606114424",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606114424",
-      "event_date_text": "08 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 10 Nov 2026: 18:15\n12 Nov 2026: 18:15",
-      "image": "https://image.tmdb.org/t/p/w342/rrKe8bC6UKFKvfZHvbwA9Bq5hkR.jpg",
-      "showings": [
-        "2026-11-08 18:15",
-        "2026-11-09 18:15",
-        "2026-11-10 18:15",
-        "2026-11-12 18:15"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "18:15"
-          ]
-        },
-        {
-          "date": "2026-11-09",
-          "times": [
-            "18:15"
-          ]
-        },
-        {
-          "date": "2026-11-10",
-          "times": [
-            "18:15"
-          ]
-        },
-        {
-          "date": "2026-11-12",
-          "times": [
-            "18:15"
-          ]
-        }
-      ]
-    },
-    {
-      "tmdb_id": 1248832,
-      "tmdb_url": "https://www.themoviedb.org/movie/1248832",
-      "tmdb_rating": "7.5",
-      "tmdb_votes": "504",
-      "release_date": "2026-09-28",
-      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
-      "runtime_minutes": "129",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "directors": [
-        "Alejandro G. Iñárritu"
-      ],
-      "actors": [
-        "Tom Cruise",
-        "Riz Ahmed",
-        "John Goodman",
-        "Sandra Hüller",
-        "Michael Stuhlbarg",
-        "Jesse Plemons",
-        "Robert John Burke",
-        "Emma D'Arcy",
-        "Burn Gorman",
-        "Sophie Wilde"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=job8V254NAE",
-      "poster_url": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "title": "DIGGER (16L)",
-      "itemid": "1604057291",
-      "source": "Labia Theatre",
-      "status": "now_showing",
-      "status_label": "Now showing",
-      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
-      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
-      "event_date_text": "08 Nov 2026 - 12 Nov 2026",
-      "showtime_summary": "08 Nov 2026 - 12 Nov 2026: 20:30",
-      "image": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
-      "showings": [
-        "2026-11-08 20:30",
-        "2026-11-09 20:30",
-        "2026-11-10 20:30",
-        "2026-11-11 20:30",
-        "2026-11-12 20:30"
-      ],
-      "showings_by_date": [
-        {
-          "date": "2026-11-08",
-          "times": [
-            "20:30"
-          ]
-        },
-        {
-          "date": "2026-11-09",
-          "times": [
-            "20:30"
-          ]
-        },
-        {
-          "date": "2026-11-10",
-          "times": [
-            "20:30"
-          ]
-        },
-        {
-          "date": "2026-11-11",
-          "times": [
-            "20:30"
-          ]
-        },
-        {
-          "date": "2026-11-12",
-          "times": [
-            "20:30"
-          ]
-        }
-      ]
-    },
-    {
       "tmdb_id": 950028,
       "tmdb_url": "https://www.themoviedb.org/movie/950028",
       "tmdb_rating": "7.207",
-      "tmdb_votes": "927",
+      "tmdb_votes": "932",
       "release_date": "2026-06-25",
       "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
       "runtime_minutes": "107",
@@ -1316,6 +989,71 @@
       ]
     },
     {
+      "tmdb_id": 1400381,
+      "tmdb_url": "https://www.themoviedb.org/movie/1400381",
+      "tmdb_rating": "7.729",
+      "tmdb_votes": "48",
+      "release_date": "2025-08-08",
+      "overview": "Rising musician Jeff Buckley had only released one album when he died suddenly in 1997. Now, never-before-seen footage, exclusive voice messages, and accounts from those closest to him offer a portrait of the captivating singer.",
+      "runtime_minutes": "106",
+      "genres": [
+        "Documentary",
+        "Music"
+      ],
+      "directors": [
+        "Amy J. Berg"
+      ],
+      "actors": [
+        "Jeff Buckley",
+        "Mary Guibert",
+        "Ben Harper",
+        "Aimee Mann",
+        "Rebecca Moore",
+        "Joan Wasser",
+        "Mick Grondahl",
+        "Parker Kindred",
+        "Michael Tighe",
+        "Matt Johnson"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=DRrcgLRX8Qc",
+      "poster_url": "https://image.tmdb.org/t/p/w342/rrKe8bC6UKFKvfZHvbwA9Bq5hkR.jpg",
+      "title": "IT'S NEVER OVER JEFF BUCKLEY (16 DL)",
+      "itemid": "1606114424",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606114424",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1606114424",
+      "event_date_text": "09 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 10 Nov 2026: 18:15\n12 Nov 2026: 18:15",
+      "image": "https://image.tmdb.org/t/p/w342/rrKe8bC6UKFKvfZHvbwA9Bq5hkR.jpg",
+      "showings": [
+        "2026-11-09 18:15",
+        "2026-11-10 18:15",
+        "2026-11-12 18:15"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-11-09",
+          "times": [
+            "18:15"
+          ]
+        },
+        {
+          "date": "2026-11-10",
+          "times": [
+            "18:15"
+          ]
+        },
+        {
+          "date": "2026-11-12",
+          "times": [
+            "18:15"
+          ]
+        }
+      ]
+    },
+    {
       "title": "HOPE (16 HLV) Korean with English subtitles.",
       "itemid": "1606112069",
       "source": "Labia Theatre",
@@ -1354,6 +1092,78 @@
       ]
     },
     {
+      "tmdb_id": 1248832,
+      "tmdb_url": "https://www.themoviedb.org/movie/1248832",
+      "tmdb_rating": "7.498",
+      "tmdb_votes": "506",
+      "release_date": "2026-09-28",
+      "overview": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's savior before the disaster he's unleashed destroys everything.",
+      "runtime_minutes": "129",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "directors": [
+        "Alejandro G. Iñárritu"
+      ],
+      "actors": [
+        "Tom Cruise",
+        "Riz Ahmed",
+        "John Goodman",
+        "Sandra Hüller",
+        "Michael Stuhlbarg",
+        "Jesse Plemons",
+        "Robert John Burke",
+        "Emma D'Arcy",
+        "Burn Gorman",
+        "Sophie Wilde"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=job8V254NAE",
+      "poster_url": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "title": "DIGGER (16L)",
+      "itemid": "1604057291",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604057291",
+      "event_date_text": "09 Nov 2026 - 12 Nov 2026",
+      "showtime_summary": "09 Nov 2026 - 12 Nov 2026: 20:30",
+      "image": "https://image.tmdb.org/t/p/w342/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
+      "showings": [
+        "2026-11-09 20:30",
+        "2026-11-10 20:30",
+        "2026-11-11 20:30",
+        "2026-11-12 20:30"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-11-09",
+          "times": [
+            "20:30"
+          ]
+        },
+        {
+          "date": "2026-11-10",
+          "times": [
+            "20:30"
+          ]
+        },
+        {
+          "date": "2026-11-11",
+          "times": [
+            "20:30"
+          ]
+        },
+        {
+          "date": "2026-11-12",
+          "times": [
+            "20:30"
+          ]
+        }
+      ]
+    },
+    {
       "tmdb_id": 1379486,
       "tmdb_url": "https://www.themoviedb.org/movie/1379486",
       "tmdb_rating": "",
@@ -1382,7 +1192,7 @@
       ],
       "trailer_url": "https://www.youtube.com/watch?v=sDiFol_2j2I",
       "poster_url": "https://image.tmdb.org/t/p/w342/9LHVZevgdsdbjJdkFr6bk9EwX7q.jpg",
-      "title": "VICTORIAN PSYCHO ((16HSV)",
+      "title": "VICTORIAN PSYCHO ((16 PPS V)",
       "itemid": "1607200981",
       "source": "Labia Theatre",
       "status": "now_showing",
@@ -1488,7 +1298,7 @@
       ],
       "trailer_url": "https://www.youtube.com/watch?v=2AMYg6UmmjM",
       "poster_url": "https://image.tmdb.org/t/p/w342/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
-      "title": "A TALENT FOR MURDER (16 LSV)",
+      "title": "A TALENT FOR MURDER (16 DLSV)",
       "itemid": "1607199099",
       "source": "Labia Theatre",
       "status": "now_showing",
@@ -1567,7 +1377,7 @@
     {
       "tmdb_id": 1596335,
       "tmdb_url": "https://www.themoviedb.org/movie/1596335",
-      "tmdb_rating": "6.929",
+      "tmdb_rating": "6.9",
       "tmdb_votes": "42",
       "release_date": "2026-03-27",
       "overview": "A father-to-be tries to figure out what is happening with all this AI insanity, and explores the most powerful technology humanity has ever created... and what's at stake if we get it wrong.",
@@ -1601,7 +1411,7 @@
       "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1607199806",
       "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1607199806",
       "event_date_text": "13 Nov 2026 - 19 Nov 2026",
-      "showtime_summary": "13 Nov 2026 - 14 Nov 2026: 13:45, 18:15\n15 Nov 2026: 13:45\n16 Nov 2026 - 19 Nov 2026: 13:45, 18:15",
+      "showtime_summary": "13 Nov 2026 - 15 Nov 2026: 13:45, 18:15\n16 Nov 2026: 13:45\n17 Nov 2026 - 19 Nov 2026: 13:45, 18:15",
       "image": "https://image.tmdb.org/t/p/w342/A610QT1gWjhJ1dJrXP9qMm4JMLr.jpg",
       "showings": [
         "2026-11-13 13:45",
@@ -1609,8 +1419,8 @@
         "2026-11-14 13:45",
         "2026-11-14 18:15",
         "2026-11-15 13:45",
+        "2026-11-15 18:15",
         "2026-11-16 13:45",
-        "2026-11-16 18:15",
         "2026-11-17 13:45",
         "2026-11-17 18:15",
         "2026-11-18 13:45",
@@ -1636,14 +1446,14 @@
         {
           "date": "2026-11-15",
           "times": [
-            "13:45"
+            "13:45",
+            "18:15"
           ]
         },
         {
           "date": "2026-11-16",
           "times": [
-            "13:45",
-            "18:15"
+            "13:45"
           ]
         },
         {
@@ -1776,6 +1586,60 @@
       ]
     },
     {
+      "tmdb_id": 1760114,
+      "tmdb_url": "https://www.themoviedb.org/movie/1760114",
+      "tmdb_rating": "10.0",
+      "tmdb_votes": "5",
+      "release_date": "2026-09-24",
+      "overview": "A society without money or competition: AfrikaBurn, the largest regional event inspired by the world-famous Burning Man, becomes the setting for a unique experiment. In the middle of the South African desert, an eclectic group of friends sets up their LOVEBOX spaceship, inviting visitors on a journey to the stars — and into themselves. Inside the LOVEBOX, two strangers meet for a few minutes and explore a question about love. Their encounters give rise to unexpected moments of connection and self-discovery. When the dust of the festival settles, the friends set out to bring the magic of the LOVEBOX into everyday life. But can the openness and sense of connection they experienced at AfrikaBurn survive beyond its temporary utopia?",
+      "runtime_minutes": "96",
+      "genres": [
+        "Documentary"
+      ],
+      "directors": [
+        "Daniela Michel",
+        "Alexander Kleider"
+      ],
+      "actors": [],
+      "trailer_url": "https://www.youtube.com/watch?v=iyxsNsJyWDM",
+      "poster_url": "https://image.tmdb.org/t/p/w342/abTKQ1z8637jfRKox8qrFOigK0g.jpg",
+      "title": "THE LOVEBOX EXPERIENCE (PG, mainly in English with some English subtitles)",
+      "itemid": "1607237788",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1607237788",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1607237788",
+      "event_date_text": "20 Nov 2026 - 24 Nov 2026",
+      "showtime_summary": "20 Nov 2026: 20:30\n22 Nov 2026: 18:15\n24 Nov 2026: 20:30",
+      "image": "https://image.tmdb.org/t/p/w342/abTKQ1z8637jfRKox8qrFOigK0g.jpg",
+      "showings": [
+        "2026-11-20 20:30",
+        "2026-11-22 18:15",
+        "2026-11-24 20:30"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-11-20",
+          "times": [
+            "20:30"
+          ]
+        },
+        {
+          "date": "2026-11-22",
+          "times": [
+            "18:15"
+          ]
+        },
+        {
+          "date": "2026-11-24",
+          "times": [
+            "20:30"
+          ]
+        }
+      ]
+    },
+    {
       "tmdb_id": 32093,
       "tmdb_url": "https://www.themoviedb.org/movie/32093",
       "tmdb_rating": "7.2",
@@ -1820,6 +1684,30 @@
       "showings_by_date": [
         {
           "date": "2026-11-29",
+          "times": [
+            "14:45"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ROB: Manon (UK 2026-2, 190 mins, including 2 intervals, 13)",
+      "itemid": "1607258812",
+      "source": "Labia Theatre",
+      "status": "now_showing",
+      "status_label": "Now showing",
+      "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1607258812",
+      "book_url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1607258812",
+      "event_date_text": "13 Dec 2026",
+      "showtime_summary": "13 Dec 2026: 14:45",
+      "release_date": "2026-12-13",
+      "image": "https://content.webtickets.co.za/labia/panel_29469d79f5334d12a329d6186f91f2ef.png",
+      "showings": [
+        "2026-12-13 14:45"
+      ],
+      "showings_by_date": [
+        {
+          "date": "2026-12-13",
           "times": [
             "14:45"
           ]

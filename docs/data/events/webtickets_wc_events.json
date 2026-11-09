@@ -1,43 +1,5 @@
 [
   {
-    "title": "Nataniël: SOOIBRAND",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1597147920",
-    "image": "https://content.webtickets.co.za/artscape/panel_Nataniel - Sooibrand - Web Image_20260611_104153.jpg",
-    "date_text": "08 Nov 2026 15:00",
-    "venue": "Artscape, Theatre, Cape Town",
-    "price": "R280 - R360",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "art",
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "Artscape, Theatre, Cape Town",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
-    "title": "Artscape 55th Gala Concert “A Place for All”",
-    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1604585611",
-    "image": "https://content.webtickets.co.za/artscape/panel_55 Gal_20261006_150725.jpg",
-    "date_text": "08 Nov 2026 17:00",
-    "venue": "Artscape, Opera House, Cape Town",
-    "price": "R155",
-    "source": "Webtickets",
-    "region": "Western Cape",
-    "categories": [
-      "music",
-      "dj",
-      "art",
-      "theatre"
-    ],
-    "missing_location": true,
-    "location_key": "Artscape, Opera House, Cape Town",
-    "missing_place": true,
-    "place_key": ""
-  },
-  {
     "title": "Into The Woods",
     "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1601853362",
     "image": "https://content.webtickets.co.za/PTProductions/panel_ITW 1_20260827_120247.png",
@@ -185,6 +147,43 @@
     ],
     "missing_location": false,
     "location_key": "Kirstenbosch, Cape Town",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "From Hanover Street – A Concert Commemorating 60 Years",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1598871599",
+    "image": "https://content.webtickets.co.za/artscape/panel_FHS Event Image Nov 26 Artscape_20260710_135628.png",
+    "date_text": "From 24 Nov 2026 20:00",
+    "venue": "Artscape, Opera House, Cape Town",
+    "price": "R200 - R350",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "music",
+      "dj",
+      "art",
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "Artscape, Opera House, Cape Town",
+    "missing_place": true,
+    "place_key": ""
+  },
+  {
+    "title": "HISTORY BOYS",
+    "url": "https://www.webtickets.co.za/v2/event.aspx?itemid=1601294261",
+    "image": "https://content.webtickets.co.za/PTProductions/panel_7954410fbfc546f9b5fa2e249f339b4c.png",
+    "date_text": "From 26 Nov 2026 20:00",
+    "venue": "Theatre On The Bay, Camps Bay",
+    "price": "R250 - R375",
+    "source": "Webtickets",
+    "region": "Western Cape",
+    "categories": [
+      "theatre"
+    ],
+    "missing_location": true,
+    "location_key": "Theatre On The Bay, Camps Bay",
     "missing_place": true,
     "place_key": ""
   }
