@@ -1,121 +1,5 @@
 [
   {
-    "title": "Come Back Africa (1959) - The Big Sound Film Festival",
-    "start": "2026-11-09T18:15:00+02:00",
-    "end": "2026-11-09T20:15:00+02:00",
-    "venue": "Bertha House Bioscope, Mowbray",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "67 Main Road, Mowbray, 7700, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1003266_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/375641-come-back-africa-1959-the-big-sound-film-festival/",
-    "categories": [
-      "festival",
-      "dj"
-    ],
-    "location_key": "67 Main Road, Mowbray, 7700, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Women New Moon Circle",
-    "start": "2026-11-09T18:30:00+02:00",
-    "end": "2026-11-09T20:00:00+02:00",
-    "venue": "Amara Moon Forest Sanctuary",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "10a Connemara Drive, , Cape Town, 7806, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/Q6_247_247.jpg",
-    "url": "https://www.quicket.co.za/events/406959-women-new-moon-circle/",
-    "categories": [],
-    "location_key": "10a Connemara Drive, , Cape Town, 7806, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Balkan Soul",
-    "start": "2026-11-09T18:30:00+02:00",
-    "end": "2026-11-09T20:30:00+02:00",
-    "venue": "The Hollow Tree",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "10 Luisa Way, Hout Bay, 7806, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1016384_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/406426-balkan-soul/",
-    "categories": [],
-    "location_key": "10 Luisa Way, Hout Bay, 7806, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Arirang, Knocking  on the Heart of Africa",
-    "start": "2026-11-09T19:00:00+02:00",
-    "end": "2026-11-09T20:30:00+02:00",
-    "venue": "Star theatre",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Caledon street Buitenkant st , District Six, 7800, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0997577_247_247.png",
-    "url": "https://www.quicket.co.za/events/400542-arirang-knocking-on-the-heart-of-africa/",
-    "categories": [
-      "art",
-      "theatre"
-    ],
-    "location_key": "Star theatre",
-    "missing_location": true,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Open Practice Yoga Club on the Prom",
-    "start": "2026-11-10T08:00:00+02:00",
-    "end": "2026-11-12T09:00:00+02:00",
-    "venue": "Mandela Glasses",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "1 Rocklands Road, Three Anchor Bay, 8005, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1019623_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/407382-open-practice-yoga-club-on-the-prom/",
-    "categories": [
-      "club"
-    ],
-    "location_key": "1 Rocklands Road, Three Anchor Bay, 8005, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Cape Town: Mastering Beautiful Restorations with Dr Berna Özkeskin",
-    "start": "2026-11-10T09:00:00+02:00",
-    "end": "2026-11-10T13:00:00+02:00",
-    "venue": "Implant & Aesthetic Academy",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "9 Somerset Road, De Waterkant, 8001, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0984198_247_247.png",
-    "url": "https://www.quicket.co.za/events/396539-cape-town-mastering-beautiful-restorations-with-dr-berna-zkeskin/",
-    "categories": [],
-    "location_key": "9 Somerset Road, De Waterkant, 8001, Cape Town, Western Cape, South Africa",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
     "title": "Suits & Sneakers presents: \"Happiness Isn't What You Think\" with Mark Sham (Cape Town Edition)",
     "start": "2026-11-10T17:00:00+02:00",
     "end": "2026-11-10T20:00:00+02:00",
@@ -399,27 +283,6 @@
     ],
     "location_key": "Welgemeend Street 2, Gardens, 8001, Cape Town, Western Cape, South Africa",
     "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Imagine Drag: All-Stars",
-    "start": "2026-11-11T19:00:00+02:00",
-    "end": "2026-11-11T21:30:00+02:00",
-    "venue": "Bombshelter Restaurant and Bar",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Unit B3 Park Sunrise, Sunrise Circle, Pinelands, Cape Town, 7405, South Africa, 7405, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/1019804_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/407451-imagine-drag-all-stars/",
-    "categories": [
-      "bar",
-      "food"
-    ],
-    "location_key": "Bombshelter Restaurant and Bar",
-    "missing_location": true,
     "place_key": "",
     "missing_place": true
   },
@@ -983,7 +846,7 @@
     "image": "https://images.quicket.co.za/1000093_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/383573-a-finn-credible-journey/",
     "categories": [],
-    "location_key": "IES Blouberg International School",
+    "location_key": "74 Ringwood Drive, , Parklands, 7441, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1242,7 +1105,7 @@
     "venue": "SA Image Academy Head Office",
     "locality": "Somerset West",
     "region": "Western Cape",
-    "address": "Libertas Village, Dirkie Uys Street, 7139, Somerset West, Western Cape, South Africa",
+    "address": "20 Libertas Village, Dirkie Uys Street, 7139, Somerset West, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
     "image": "https://images.quicket.co.za/0893201_247_247.jpeg",
@@ -1266,7 +1129,7 @@
     "image": "https://images.quicket.co.za/1007311_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/398477-glutes-glory/",
     "categories": [],
-    "location_key": "Ipic Studio Durbanville",
+    "location_key": "Aurora Street, Durbanville , 7550, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1286,7 +1149,7 @@
     "categories": [
       "music"
     ],
-    "location_key": "Methodist Hall",
+    "location_key": "3 Marchmont Road, , Muizenberg, 7950, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1385,7 +1248,7 @@
     "categories": [
       "outdoors"
     ],
-    "location_key": "Green Point Urban Park",
+    "location_key": "1 Fritz Sonnenberg Road, , Green Point, 8051, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1461,27 +1324,7 @@
     "categories": [
       "outdoors"
     ],
-    "location_key": "Muizenberg Beach Huts",
-    "missing_location": false,
-    "place_key": "",
-    "missing_place": true
-  },
-  {
-    "title": "Brandy Recognition - A Heritage Walking Tour Through Constantia",
-    "start": "2026-11-14T10:00:00+02:00",
-    "end": "2026-11-14T12:30:00+02:00",
-    "venue": "Simon's Restaurant",
-    "locality": "Cape Town",
-    "region": "Western Cape",
-    "address": "Groot Constantia Road, , Constantia, 7806, Cape Town, Western Cape, South Africa",
-    "price": 0.0,
-    "currency": "",
-    "image": "https://images.quicket.co.za/0963410_247_247.jpeg",
-    "url": "https://www.quicket.co.za/events/389798-brandy-recognition-a-heritage-walking-tour-through-constantia/",
-    "categories": [
-      "food"
-    ],
-    "location_key": "Simon's Restaurant",
+    "location_key": "Beach Road, , Muizenberg, 7945, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1501,7 +1344,65 @@
     "categories": [
       "dj"
     ],
-    "location_key": "Light House Holistic Wellbeing",
+    "location_key": "50 Bree Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Plan My Space. In One Day.",
+    "start": "2026-11-14T10:00:00+02:00",
+    "end": "2026-11-14T14:00:00+02:00",
+    "venue": "Ideas Cartel at The Old Foundry",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "1 Sand Hill Road, Green Point, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1006927_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/390317-plan-my-space-in-one-day/",
+    "categories": [
+      "art"
+    ],
+    "location_key": "Ideas Cartel at The Old Foundry",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "MEN DON'T CRY",
+    "start": "2026-11-14T10:00:00+02:00",
+    "end": "2026-11-14T14:00:00+02:00",
+    "venue": "Parow Golf Club",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Frans Conradie Drive, , Golf Course, 7500, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1010552_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/389214-men-dont-cry/",
+    "categories": [
+      "club"
+    ],
+    "location_key": "Parow Golf Club",
+    "missing_location": true,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Woodcarving workshop at Soil for Life (November)",
+    "start": "2026-11-14T10:00:00+02:00",
+    "end": "2026-11-14T14:00:00+02:00",
+    "venue": "Soil for Life",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Brounger Road 9, 7806, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/1008620_247_247.jpeg",
+    "url": "https://www.quicket.co.za/events/383815-woodcarving-workshop-at-soil-for-life-november/",
+    "categories": [],
+    "location_key": "Soil for Life",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1539,7 +1440,25 @@
     "image": "https://images.quicket.co.za/Q11_247_247.jpg",
     "url": "https://www.quicket.co.za/events/401682-flow-therapypilates/",
     "categories": [],
-    "location_key": "Khôra Wellness",
+    "location_key": "20 Roodehek Street, , Gardens, 8001, Cape Town, Western Cape, South Africa",
+    "missing_location": false,
+    "place_key": "",
+    "missing_place": true
+  },
+  {
+    "title": "Teachers CAN Exchange 2026",
+    "start": "2026-11-14T12:00:00+02:00",
+    "end": "2026-11-14T14:00:00+02:00",
+    "venue": "Desmond and Leah Tutu Legacy Foundation",
+    "locality": "Cape Town",
+    "region": "Western Cape",
+    "address": "Buitenkant Street, District Six, 8001, Cape Town, Western Cape, South Africa",
+    "price": 0.0,
+    "currency": "",
+    "image": "https://images.quicket.co.za/0994260_247_247.png",
+    "url": "https://www.quicket.co.za/events/235671-teachers-can-exchange-2026/",
+    "categories": [],
+    "location_key": "Desmond and Leah Tutu Legacy Foundation",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -1901,7 +1820,7 @@
     "address": ", Milnerton Rural, 7441, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/1010976_247_247.jpeg",
+    "image": "https://images.quicket.co.za/1020845_247_247.jpeg",
     "url": "https://www.quicket.co.za/events/405184-silent-disco-blouberg-beach/",
     "categories": [
       "outdoors"
@@ -2653,10 +2572,10 @@
     "address": "54 Shortmarket Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/Q9_247_247.jpg",
+    "image": "https://images.quicket.co.za/1020661_247_247.png",
     "url": "https://www.quicket.co.za/events/407647-alex-biaya-live-feat-sound-legacy-band-ava-like-lava/",
     "categories": [],
-    "location_key": "Just Shift Cafe",
+    "location_key": "54 Shortmarket Street, , Cape Town City Centre, 8000, Cape Town, Western Cape, South Africa",
     "missing_location": false,
     "place_key": "",
     "missing_place": true
@@ -2710,7 +2629,7 @@
     "address": "Darling Street , Cape Town City Centre, 8001, Cape Town, Western Cape, South Africa",
     "price": 0.0,
     "currency": "",
-    "image": "https://images.quicket.co.za/0949253_247_247.png",
+    "image": "https://images.quicket.co.za/1021172_247_247.png",
     "url": "https://www.quicket.co.za/events/385391-the-christmas-story/",
     "categories": [],
     "location_key": "Cape Town City Hall",

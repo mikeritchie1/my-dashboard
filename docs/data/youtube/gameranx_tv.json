@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-09T13:03:39.703379Z",
+  "generated_at": "2026-11-10T12:47:09.777656Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 49,
+  "items_count": 50,
   "items": [
+    {
+      "id": "yt-ASY-TjQNOeM",
+      "video_id": "ASY-TjQNOeM",
+      "title": "10 GREEDY Games That Had a Slow DOWNFALL",
+      "url": "https://www.youtube.com/watch?v=ASY-TjQNOeM",
+      "published_at": "2026-11-09T17:54:42+00:00",
+      "updated_at": "2026-11-10T09:36:16+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/ASY-TjQNOeM/hqdefault.jpg"
+    },
     {
       "id": "yt-UjB432B1Pg4",
       "video_id": "UjB432B1Pg4",
