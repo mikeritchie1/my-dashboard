@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
+      "runs": 2,
       "item_count": 111,
       "added": {},
       "removed": {},
@@ -25,12 +25,21 @@
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-sp-eb04-007-the-worlds-strongest-warriors-foil": "Roronoa Zoro (EB04-007) (SP) (EB04-007) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil": "Loki (OP17-119) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-op17-109-the-worlds-strongest-warriors-foil": "Charlotte Pudding (OP17-109) - The World's Strongest Warriors Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-alternate-art-op16-119-the-time-of-battle-foil": "Marshall.D.Teach (119) (Alternate Art) (OP16-119) - The Time of Battle Foil"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-alternate-art-op16-119-the-time-of-battle-foil": "Marshall.D.Teach (119) (Alternate Art) (OP16-119) - The Time of Battle Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rob-lucci-alternate-art-eb04-048-adventure-on-kamis-island-foil": "Rob Lucci (Alternate Art) (EB04-048) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-op17-022-the-worlds-strongest-warriors-foil": "Shanks (022) (OP17-022) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-extra-booster-memorial-collection": "Mr.2.Bon.Kurei(Bentham) [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-alternate-art-op17-022-the-worlds-strongest-warriors-foil": "Shanks (022) (Alternate Art) (OP17-022) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks": "Uta [Starter Deck: Red Shanks]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-nico-robin-gold-extra-booster-one-piece-heroines-edition-foil": "DON!! Card (Nico Robin) (Gold) - Extra Booster: One Piece Heroines Edition Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/smoker-starter-deck-absolute-justice": "Smoker [Starter Deck: Absolute Justice]"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -38,7 +47,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -46,7 +55,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
+      "runs": 2,
       "item_count": 36,
       "added": {},
       "removed": {},
@@ -59,12 +68,16 @@
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/emporio-ivankov-the-time-of-battle": "Emporio.Ivankov [The Time of Battle]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood": "Donquixote Doflamingo (Parallel) [Royal Blood]",
-        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]"
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1": "Monkey.D.Luffy [Royal Blood]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards": "Merry Go [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors": "Yasopp (Alternate Art) [The World's Strongest Warriors]"
       }
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -72,7 +85,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 193,
       "added": {},
       "removed": {},
