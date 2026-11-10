@@ -194,9 +194,9 @@
         "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.401,
+      "duration_seconds": 1.69,
       "item_count": 2,
-      "last_scraped_at": "2026-11-10T03:51:31.121567+00:00",
+      "last_scraped_at": "2026-11-10T11:53:27.588768+00:00",
       "module": "one-piece",
       "source": "collection",
       "status": "ok"
@@ -209,9 +209,9 @@
         "tanuki",
         "--skip-products"
       ],
-      "duration_seconds": 20.78,
-      "item_count": 151,
-      "last_scraped_at": "2026-11-10T03:51:50.474728+00:00",
+      "duration_seconds": 19.098,
+      "item_count": 150,
+      "last_scraped_at": "2026-11-10T11:53:44.959868+00:00",
       "module": "one-piece",
       "source": "tanuki",
       "status": "ok"
@@ -223,9 +223,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.255,
+      "duration_seconds": 0.866,
       "item_count": 193,
-      "last_scraped_at": "2026-11-10T03:51:51.772135+00:00",
+      "last_scraped_at": "2026-11-10T11:53:45.833320+00:00",
       "module": "one-piece",
       "source": "products",
       "status": "ok"
@@ -1067,18 +1067,9 @@
         "bigbang",
         "--skip-products"
       ],
-      "duration_seconds": 6.22,
-      "finished_at": "2026-11-10T03:51:15.801810+00:00",
+      "duration_seconds": 7.756,
+      "finished_at": "2026-11-10T11:53:11.881050+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 7.312,
-          "finished_at": "2026-11-09T08:44:51.229105+00:00",
-          "item_count": 111,
-          "removed": 0,
-          "scraped_at": "2026-11-09T08:44:51.229105+00:00",
-          "started_at": "2026-11-09T08:44:43.916638+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 6.114,
@@ -1096,16 +1087,25 @@
           "removed": 0,
           "scraped_at": "2026-11-10T03:51:15.801810+00:00",
           "started_at": "2026-11-10T03:51:09.581499+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 7.756,
+          "finished_at": "2026-11-10T11:53:11.881050+00:00",
+          "item_count": 110,
+          "removed": 1,
+          "scraped_at": "2026-11-10T11:53:11.881050+00:00",
+          "started_at": "2026-11-10T11:53:04.124644+00:00"
         }
       ],
-      "item_count": 111,
-      "last_scraped_at": "2026-11-10T03:51:15.801810+00:00",
+      "item_count": 110,
+      "last_scraped_at": "2026-11-10T11:53:11.881050+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "bigbang",
-      "started_at": "2026-11-10T03:51:09.581499+00:00",
+      "started_at": "2026-11-10T11:53:04.124644+00:00",
       "status": "ok"
     },
     "one-piece/collection": {
@@ -1113,8 +1113,8 @@
         "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python",
         "services/one_piece/update_collection.py"
       ],
-      "duration_seconds": 1.401,
-      "finished_at": "2026-11-10T03:51:31.121567+00:00",
+      "duration_seconds": 1.69,
+      "finished_at": "2026-11-10T11:53:27.588768+00:00",
       "history": [
         {
           "added": null,
@@ -1126,13 +1126,13 @@
         }
       ],
       "item_count": 2,
-      "last_scraped_at": "2026-11-10T03:51:31.121567+00:00",
+      "last_scraped_at": "2026-11-10T11:53:27.588768+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/collection.json"
       ],
       "source": "collection",
-      "started_at": "2026-11-10T03:51:29.720186+00:00",
+      "started_at": "2026-11-10T11:53:25.899056+00:00",
       "status": "ok"
     },
     "one-piece/collectiverse": {
@@ -1143,18 +1143,9 @@
         "collectiverse",
         "--skip-products"
       ],
-      "duration_seconds": 3.875,
-      "finished_at": "2026-11-10T03:51:19.695606+00:00",
+      "duration_seconds": 4.279,
+      "finished_at": "2026-11-10T11:53:16.167420+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 4.91,
-          "finished_at": "2026-11-09T08:44:56.145512+00:00",
-          "item_count": 1,
-          "removed": 0,
-          "scraped_at": "2026-11-09T08:44:56.145512+00:00",
-          "started_at": "2026-11-09T08:44:51.235103+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 4.109,
@@ -1172,16 +1163,25 @@
           "removed": 0,
           "scraped_at": "2026-11-10T03:51:19.695606+00:00",
           "started_at": "2026-11-10T03:51:15.820819+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 4.279,
+          "finished_at": "2026-11-10T11:53:16.167420+00:00",
+          "item_count": 1,
+          "removed": 0,
+          "scraped_at": "2026-11-10T11:53:16.167420+00:00",
+          "started_at": "2026-11-10T11:53:11.888506+00:00"
         }
       ],
       "item_count": 1,
-      "last_scraped_at": "2026-11-10T03:51:19.695606+00:00",
+      "last_scraped_at": "2026-11-10T11:53:16.167420+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "collectiverse",
-      "started_at": "2026-11-10T03:51:15.820819+00:00",
+      "started_at": "2026-11-10T11:53:11.888506+00:00",
       "status": "ok"
     },
     "one-piece/geekhaven": {
@@ -1192,18 +1192,9 @@
         "geekhaven",
         "--skip-products"
       ],
-      "duration_seconds": 3.161,
-      "finished_at": "2026-11-10T03:51:22.874852+00:00",
+      "duration_seconds": 3.621,
+      "finished_at": "2026-11-10T11:53:19.795225+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 3.862,
-          "finished_at": "2026-11-09T08:45:00.018237+00:00",
-          "item_count": 0,
-          "removed": 0,
-          "scraped_at": "2026-11-09T08:45:00.018237+00:00",
-          "started_at": "2026-11-09T08:44:56.156369+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 3.641,
@@ -1221,16 +1212,25 @@
           "removed": 0,
           "scraped_at": "2026-11-10T03:51:22.874852+00:00",
           "started_at": "2026-11-10T03:51:19.713879+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 3.621,
+          "finished_at": "2026-11-10T11:53:19.795225+00:00",
+          "item_count": 0,
+          "removed": 0,
+          "scraped_at": "2026-11-10T11:53:19.795225+00:00",
+          "started_at": "2026-11-10T11:53:16.174671+00:00"
         }
       ],
       "item_count": 0,
-      "last_scraped_at": "2026-11-10T03:51:22.874852+00:00",
+      "last_scraped_at": "2026-11-10T11:53:19.795225+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "geekhaven",
-      "started_at": "2026-11-10T03:51:19.713879+00:00",
+      "started_at": "2026-11-10T11:53:16.174671+00:00",
       "status": "ok"
     },
     "one-piece/knightly": {
@@ -1241,18 +1241,9 @@
         "knightly",
         "--skip-products"
       ],
-      "duration_seconds": 6.788,
-      "finished_at": "2026-11-10T03:51:29.682007+00:00",
+      "duration_seconds": 6.052,
+      "finished_at": "2026-11-10T11:53:25.854054+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 7.583,
-          "finished_at": "2026-11-09T08:45:07.607181+00:00",
-          "item_count": 36,
-          "removed": 0,
-          "scraped_at": "2026-11-09T08:45:07.607181+00:00",
-          "started_at": "2026-11-09T08:45:00.024278+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 6.992,
@@ -1270,16 +1261,25 @@
           "removed": 0,
           "scraped_at": "2026-11-10T03:51:29.682007+00:00",
           "started_at": "2026-11-10T03:51:22.893749+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 6.052,
+          "finished_at": "2026-11-10T11:53:25.854054+00:00",
+          "item_count": 36,
+          "removed": 0,
+          "scraped_at": "2026-11-10T11:53:25.854054+00:00",
+          "started_at": "2026-11-10T11:53:19.802274+00:00"
         }
       ],
       "item_count": 36,
-      "last_scraped_at": "2026-11-10T03:51:29.682007+00:00",
+      "last_scraped_at": "2026-11-10T11:53:25.854054+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "knightly",
-      "started_at": "2026-11-10T03:51:22.893749+00:00",
+      "started_at": "2026-11-10T11:53:19.802274+00:00",
       "status": "ok"
     },
     "one-piece/marvellous": {
@@ -1327,18 +1327,9 @@
         "--pages",
         "1"
       ],
-      "duration_seconds": 1.255,
-      "finished_at": "2026-11-10T03:51:51.772135+00:00",
+      "duration_seconds": 0.866,
+      "finished_at": "2026-11-10T11:53:45.833320+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 1.091,
-          "finished_at": "2026-11-09T08:45:22.677418+00:00",
-          "item_count": 193,
-          "removed": 0,
-          "scraped_at": "2026-11-09T08:45:22.677418+00:00",
-          "started_at": "2026-11-09T08:45:21.586617+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 1.389,
@@ -1356,16 +1347,25 @@
           "removed": 0,
           "scraped_at": "2026-11-10T03:51:51.772135+00:00",
           "started_at": "2026-11-10T03:51:50.516783+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.866,
+          "finished_at": "2026-11-10T11:53:45.833320+00:00",
+          "item_count": 193,
+          "removed": 0,
+          "scraped_at": "2026-11-10T11:53:45.833320+00:00",
+          "started_at": "2026-11-10T11:53:44.967471+00:00"
         }
       ],
       "item_count": 193,
-      "last_scraped_at": "2026-11-10T03:51:51.772135+00:00",
+      "last_scraped_at": "2026-11-10T11:53:45.833320+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/products.json"
       ],
       "source": "products",
-      "started_at": "2026-11-10T03:51:50.516783+00:00",
+      "started_at": "2026-11-10T11:53:44.967471+00:00",
       "status": "ok"
     },
     "one-piece/tanuki": {
@@ -1376,18 +1376,9 @@
         "tanuki",
         "--skip-products"
       ],
-      "duration_seconds": 20.78,
-      "finished_at": "2026-11-10T03:51:50.474728+00:00",
+      "duration_seconds": 19.098,
+      "finished_at": "2026-11-10T11:53:44.959868+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 13.966,
-          "finished_at": "2026-11-09T08:45:21.578330+00:00",
-          "item_count": 1,
-          "removed": 0,
-          "scraped_at": "2026-11-09T08:45:21.578330+00:00",
-          "started_at": "2026-11-09T08:45:07.612148+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 15.526,
@@ -1405,16 +1396,25 @@
           "removed": 0,
           "scraped_at": "2026-11-10T03:51:50.474728+00:00",
           "started_at": "2026-11-10T03:51:29.694849+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 19.098,
+          "finished_at": "2026-11-10T11:53:44.959868+00:00",
+          "item_count": 1,
+          "removed": 0,
+          "scraped_at": "2026-11-10T11:53:44.959868+00:00",
+          "started_at": "2026-11-10T11:53:25.861417+00:00"
         }
       ],
       "item_count": 1,
-      "last_scraped_at": "2026-11-10T03:51:50.474728+00:00",
+      "last_scraped_at": "2026-11-10T11:53:44.959868+00:00",
       "module": "one-piece",
       "outputs": [
         "docs/data/one_piece/missing_cards.json"
       ],
       "source": "tanuki",
-      "started_at": "2026-11-10T03:51:29.694849+00:00",
+      "started_at": "2026-11-10T11:53:25.861417+00:00",
       "status": "ok"
     },
     "release-radar/coming-soon": {
@@ -1901,6 +1901,6 @@
       "status": "ok"
     }
   },
-  "updated_at": "2026-11-10T03:51:51.772135+00:00",
+  "updated_at": "2026-11-10T11:53:45.833320+00:00",
   "version": 1
 }
