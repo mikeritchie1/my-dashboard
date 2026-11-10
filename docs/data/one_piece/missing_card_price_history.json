@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T11:53:44Z",
+  "updated_at": "2026-11-10T18:56:52Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -286092,6 +286092,150 @@
       "stock": "In stock",
       "observed_on": "2026-11-10",
       "captured_at": "2026-11-10T11:53:25Z"
+    },
+    {
+      "card_number": "OP17-029",
+      "art_variant": "original",
+      "price": 5.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/hongo-op17-029-the-worlds-strongest-warriors-foil",
+      "title": "Hongo (OP17-029) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:19Z"
+    },
+    {
+      "card_number": "OP15-008",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/krieg-op15-008-op15-008-adventure-on-kamis-island-foil",
+      "title": "Krieg (OP15-008) (OP15-008) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:19Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:19Z"
+    },
+    {
+      "card_number": "OP17-074",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/yamato-op17-074-the-worlds-strongest-warriors-foil",
+      "title": "Yamato (OP17-074) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:19Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 7230.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-sp-eb04-007-the-worlds-strongest-warriors-foil",
+      "title": "Roronoa Zoro (EB04-007) (SP) (EB04-007) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:19Z"
+    },
+    {
+      "card_number": "ST29-004",
+      "art_variant": "original",
+      "price": 13.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead",
+      "title": "Sanji [Starter Deck: Egghead]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:35Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 76.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:35Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 95.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:35Z"
+    },
+    {
+      "card_number": "P-024",
+      "art_variant": "original",
+      "price": 110.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/im-gonna-be-king-of-the-pirates-one-piece-promotion-cards",
+      "title": "I'm Gonna Be King of the Pirates!! [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:35Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 116.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:35Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 227.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:35Z"
+    },
+    {
+      "card_number": "EB03-062",
+      "art_variant": "alternate",
+      "price": 294.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition",
+      "title": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-10",
+      "captured_at": "2026-11-10T18:56:35Z"
     }
   ]
 }
