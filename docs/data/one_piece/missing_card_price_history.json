@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-11T17:30:33Z",
+  "updated_at": "2026-11-11T23:45:30Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -288372,6 +288372,138 @@
       "stock": "In stock",
       "observed_on": "2026-11-11",
       "captured_at": "2026-11-11T17:30:14Z"
+    },
+    {
+      "card_number": "OP17-022",
+      "art_variant": "original",
+      "price": 75.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-op17-022-the-worlds-strongest-warriors-foil",
+      "title": "Shanks (022) (OP17-022) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:00Z"
+    },
+    {
+      "card_number": "OP06-058",
+      "art_variant": "original",
+      "price": 90.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/gravity-blade-raging-tiger-wings-of-the-captain",
+      "title": "Gravity Blade Raging Tiger [Wings of the Captain]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:00Z"
+    },
+    {
+      "card_number": "ST05-004",
+      "art_variant": "original",
+      "price": 200.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-st05-004-premium-card-collection-uta-one-piece-promotion-cards",
+      "title": "Uta (ST05-004) (Premium Card Collection -Uta-) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:00Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "art_variant": "alternate",
+      "price": 555.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-alternate-art-op17-119-the-worlds-strongest-warriors-foil",
+      "title": "Loki (Alternate Art) (OP17-119) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:00Z"
+    },
+    {
+      "card_number": "OP17-022",
+      "art_variant": "alternate",
+      "price": 610.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-alternate-art-op17-022-the-worlds-strongest-warriors-foil",
+      "title": "Shanks (022) (Alternate Art) (OP17-022) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:00Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1165.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:00Z"
+    },
+    {
+      "card_number": "OP10-118",
+      "art_variant": "original",
+      "price": 74.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1",
+      "title": "Monkey.D.Luffy [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:15Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 92.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:15Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 223.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:15Z"
+    },
+    {
+      "card_number": "P-088",
+      "art_variant": "original",
+      "price": 263.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-event-pack-vol-7-one-piece-promotion-cards",
+      "title": "Trafalgar Law (Event Pack Vol. 7) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:15Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 283.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-11",
+      "captured_at": "2026-11-11T23:45:15Z"
     }
   ]
 }
