@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-10T12:47:09.777656Z",
+  "generated_at": "2026-11-11T11:59:19.584795Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 50,
+  "items_count": 51,
   "items": [
+    {
+      "id": "yt-3Wr72H2pnfM",
+      "video_id": "3Wr72H2pnfM",
+      "title": "20 Game Franchises That DIED For Dumbest Reasons",
+      "url": "https://www.youtube.com/watch?v=3Wr72H2pnfM",
+      "published_at": "2026-11-10T17:32:47+00:00",
+      "updated_at": "2026-11-11T05:02:23+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/3Wr72H2pnfM/hqdefault.jpg"
+    },
     {
       "id": "yt-ASY-TjQNOeM",
       "video_id": "ASY-TjQNOeM",
