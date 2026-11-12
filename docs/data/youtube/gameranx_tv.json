@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-11T11:59:19.584795Z",
+  "generated_at": "2026-11-12T12:51:02.768425Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 51,
+  "items_count": 52,
   "items": [
+    {
+      "id": "yt-sgoqq6LJ1FY",
+      "video_id": "sgoqq6LJ1FY",
+      "title": "10 MORE Games That AGED LIKE FINE WINE",
+      "url": "https://www.youtube.com/watch?v=sgoqq6LJ1FY",
+      "published_at": "2026-11-11T16:32:42+00:00",
+      "updated_at": "2026-11-11T23:32:05+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/sgoqq6LJ1FY/hqdefault.jpg"
+    },
     {
       "id": "yt-3Wr72H2pnfM",
       "video_id": "3Wr72H2pnfM",
