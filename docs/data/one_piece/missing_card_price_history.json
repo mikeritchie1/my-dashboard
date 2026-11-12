@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T14:02:26Z",
+  "updated_at": "2026-11-12T21:57:08Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -290460,6 +290460,150 @@
       "stock": "In stock",
       "observed_on": "2026-11-12",
       "captured_at": "2026-11-12T14:02:11Z"
+    },
+    {
+      "card_number": "OP16-026",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-op16-026-the-time-of-battle-foil",
+      "title": "Emporio.Ivankov (026) (OP16-026) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:36Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:36Z"
+    },
+    {
+      "card_number": "OP17-063",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-063-op17-063-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (063) (OP17-063) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:36Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 250.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:36Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "art_variant": "original",
+      "price": 275.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil",
+      "title": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:36Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 325.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:36Z"
+    },
+    {
+      "card_number": "EB01-061",
+      "art_variant": "alternate",
+      "price": 2020.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-alternate-art-extra-booster-memorial-collection",
+      "title": "Mr.2.Bon.Kurei(Bentham) (Alternate Art) [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:36Z"
+    },
+    {
+      "card_number": "ST21-017",
+      "art_variant": "original",
+      "price": 48.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gum-gum-mole-pistol-starter-deck-ex-gear-5",
+      "title": "Gum-Gum Mole Pistol [Starter Deck EX: Gear 5]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:51Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:51Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 248.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:51Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 289.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:51Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 361.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T21:56:51Z"
     }
   ]
 }
