@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T04:26:23Z",
+  "updated_at": "2026-11-12T14:02:26Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -290352,6 +290352,114 @@
       "stock": "In stock",
       "observed_on": "2026-11-12",
       "captured_at": "2026-11-12T04:26:08Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 300.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:01:56Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 445.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:01:56Z"
+    },
+    {
+      "card_number": "OP15-113",
+      "art_variant": "alternate",
+      "price": 530.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:01:56Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 2150.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:01:56Z"
+    },
+    {
+      "card_number": "P-106",
+      "art_variant": "original",
+      "price": 9.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-store-tournament-2025-vol-4-one-piece-promotion-cards",
+      "title": "Monkey.D.Luffy (Store Tournament 2025 Vol. 4) [One Piece Promotion Cards]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:02:11Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 168.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:02:11Z"
+    },
+    {
+      "card_number": "EB01-057",
+      "art_variant": "alternate",
+      "price": 219.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection",
+      "title": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:02:11Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 247.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:02:11Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 286.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-12",
+      "captured_at": "2026-11-12T14:02:11Z"
     }
   ]
 }

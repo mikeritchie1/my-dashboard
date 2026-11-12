@@ -1,5 +1,65 @@
 {
   "window_started_at": "2026-11-12T12:51:04.144504+00:00",
   "last_sent_at": "2026-11-12T12:51:04.144504+00:00",
-  "sources": {}
+  "sources": {
+    "one-piece/bigbang": {
+      "label": "Big Bang",
+      "runs": 1,
+      "item_count": 109,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-op15-113-alternate-art-op15-113-adventure-on-kamis-island-foil": "Roronoa Zoro (OP15-113) (Alternate Art) (OP15-113) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil"
+      }
+    },
+    "one-piece/collectiverse": {
+      "label": "Collectiverse",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/geekhaven": {
+      "label": "Geek Haven",
+      "runs": 1,
+      "item_count": 0,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/knightly": {
+      "label": "Knightly Gaming",
+      "runs": 1,
+      "item_count": 35,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards": "Merry Go [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-store-tournament-2025-vol-4-one-piece-promotion-cards": "Monkey.D.Luffy (Store Tournament 2025 Vol. 4) [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]"
+      }
+    },
+    "one-piece/tanuki": {
+      "label": "Tanuki Games",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/products": {
+      "label": "Official products",
+      "runs": 1,
+      "item_count": 193,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    }
+  }
 }
