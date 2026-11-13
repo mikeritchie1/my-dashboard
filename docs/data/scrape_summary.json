@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 2,
+      "runs": 3,
       "item_count": 108,
       "added": {},
       "removed": {
@@ -21,12 +21,18 @@
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection": "Enel [Extra Booster: Anime 25th Collection]",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-063-op17-063-the-worlds-strongest-warriors-foil": "Kaido (063) (OP17-063) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/emporio-ivankov-026-op16-026-the-time-of-battle-foil": "Emporio.Ivankov (026) (OP16-026) - The Time of Battle Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/uta-starter-deck-red-shanks": "Uta [Starter Deck: Red Shanks]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-alternate-art-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (OP17-118) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-extra-booster-memorial-collection": "Mr.2.Bon.Kurei(Bentham) [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/marco-parallel-st22-012-starter-deck-22-ace-newgate-foil": "Marco (Parallel) (ST22-012) - Starter Deck 22: Ace & Newgate Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-op15-092-alternate-art-op15-092-adventure-on-kamis-island-foil": "Monkey.D.Luffy (OP15-092) (Alternate Art) (OP15-092) - Adventure on Kami's Island Foil"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -34,7 +40,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 2,
+      "runs": 3,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -42,7 +48,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 2,
+      "runs": 3,
       "item_count": 35,
       "added": {},
       "removed": {},
@@ -60,7 +66,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -68,7 +74,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 2,
+      "runs": 3,
       "item_count": 193,
       "added": {},
       "removed": {},
