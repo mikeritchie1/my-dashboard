@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-12T12:51:02.277687Z",
+  "generated_at": "2026-11-13T12:21:07.465461Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 101,
+  "items_count": 102,
   "items": [
+    {
+      "id": "yt-RjdhLRNFZX4",
+      "video_id": "RjdhLRNFZX4",
+      "title": "Texas man LOSES IT at town council meeting",
+      "url": "https://www.youtube.com/watch?v=RjdhLRNFZX4",
+      "published_at": "2026-11-12T23:15:46+00:00",
+      "updated_at": "2026-11-13T03:51:01+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/RjdhLRNFZX4/hqdefault.jpg"
+    },
     {
       "id": "yt-KKbTMWy801U",
       "video_id": "KKbTMWy801U",

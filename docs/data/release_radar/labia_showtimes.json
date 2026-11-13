@@ -1,8 +1,8 @@
 {
   "source": "https://www.webtickets.co.za/v2/client.aspx?clientcode=labia",
   "window": {
-    "start_date": "2026-11-06",
-    "end_date": "2026-11-19",
+    "start_date": "2026-11-13",
+    "end_date": "2026-11-26",
     "days": 14
   },
   "listed_window": {
@@ -11,12 +11,12 @@
   },
   "weeks": [
     {
-      "start_date": "2026-11-06",
-      "end_date": "2026-11-12"
-    },
-    {
       "start_date": "2026-11-13",
       "end_date": "2026-11-19"
+    },
+    {
+      "start_date": "2026-11-20",
+      "end_date": "2026-11-26"
     }
   ],
   "items": []

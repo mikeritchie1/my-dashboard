@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-12T12:51:02.768425Z",
+  "generated_at": "2026-11-13T12:21:07.865404Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 52,
+  "items_count": 53,
   "items": [
+    {
+      "id": "yt-5EPTABel2Eg",
+      "video_id": "5EPTABel2Eg",
+      "title": "20 NEW Zombie Games That Are Trying Something DIFFERENT",
+      "url": "https://www.youtube.com/watch?v=5EPTABel2Eg",
+      "published_at": "2026-11-12T17:56:04+00:00",
+      "updated_at": "2026-11-13T09:56:59+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/5EPTABel2Eg/hqdefault.jpg"
+    },
     {
       "id": "yt-sgoqq6LJ1FY",
       "video_id": "sgoqq6LJ1FY",

@@ -5,8 +5,8 @@
     {
       "tmdb_id": 1381071,
       "tmdb_url": "https://www.themoviedb.org/movie/1381071",
-      "tmdb_rating": "7.8",
-      "tmdb_votes": "155",
+      "tmdb_rating": "7.771",
+      "tmdb_votes": "168",
       "release_date": "2026-11-03",
       "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
       "runtime_minutes": "135",
@@ -21,16 +21,16 @@
       "actors": [
         "Ryunosuke Kamiki",
         "Minami Hamabe",
+        "Min Tanaka",
+        "Hidetaka Yoshioka",
+        "Masami Nagasawa",
         "Yuki Yamada",
         "Kuranosuke Sasaki",
         "Jun Kunimura",
-        "Miou Tanaka",
         "Sakura Ando",
-        "Masami Nagasawa",
-        "Min Tanaka",
-        "Hidetaka Yoshioka"
+        "Miou Tanaka"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=E-Q2tEgJ1ZI",
+      "trailer_url": "https://www.youtube.com/watch?v=Pu0pH5BuCPM",
       "poster_url": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
       "title": "Godzilla Minus Zero",
       "url": "https://mydorpie.com/m/?page=m_waterimax_godzillaminuszero2d",
@@ -42,10 +42,39 @@
       "image": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg"
     },
     {
+      "tmdb_id": 1649403,
+      "tmdb_url": "https://www.themoviedb.org/movie/1649403",
+      "tmdb_rating": "9.2",
+      "tmdb_votes": "4",
+      "release_date": "2026-11-04",
+      "overview": "A stunning delve into George Michael's 1988 Faith Tour, as shot live at the famous Palais Omnisports de Paris-Bercy. This exclusive footage, assembled from a 14-camera shoot captured on 35mm over two nights (30–31 May 1988), features the 24-year-old pop star at the height of his powers.",
+      "runtime_minutes": "113",
+      "genres": [
+        "Music"
+      ],
+      "directors": [
+        "Andy Morahan",
+        "David Austin"
+      ],
+      "actors": [
+        "George Michael"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=H_NwyHRY9yk",
+      "poster_url": "https://image.tmdb.org/t/p/w342/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg",
+      "title": "George Michael: The Faith Tour",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_georgemichaelthefaithtour2d",
+      "source": "IMAX Waterfront",
+      "status": "now_playing",
+      "status_label": "Now playing",
+      "showtimes": [],
+      "format": "IMAX 2D",
+      "image": "https://image.tmdb.org/t/p/w342/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg"
+    },
+    {
       "tmdb_id": 656908,
       "tmdb_url": "https://www.themoviedb.org/movie/656908",
-      "tmdb_rating": "7.8",
-      "tmdb_votes": "35",
+      "tmdb_rating": "7.488",
+      "tmdb_votes": "41",
       "release_date": "2026-11-05",
       "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
       "runtime_minutes": "201",
@@ -70,7 +99,7 @@
         "Adinath Kothare"
       ],
       "trailer_url": "https://www.youtube.com/watch?v=AYkPRN874m8",
-      "poster_url": "https://image.tmdb.org/t/p/w342/dPrtk4iNf6T5w8fWfg4uxDDbJSW.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/vBQ7wks68OhJKlb3RnXSl2yXBXK.jpg",
       "title": "Ramayana: Rise of a Legend",
       "url": "https://mydorpie.com/m/?page=m_waterimax_ramayanariseofalegend3d",
       "source": "IMAX Waterfront",
@@ -78,7 +107,7 @@
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 3D",
-      "image": "https://image.tmdb.org/t/p/w342/dPrtk4iNf6T5w8fWfg4uxDDbJSW.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/vBQ7wks68OhJKlb3RnXSl2yXBXK.jpg"
     }
   ]
 }
