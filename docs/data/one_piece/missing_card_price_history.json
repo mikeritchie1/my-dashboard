@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T11:39:15Z",
+  "updated_at": "2026-11-13T18:50:12Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -292632,6 +292632,138 @@
       "stock": "In stock",
       "observed_on": "2026-11-13",
       "captured_at": "2026-11-13T11:38:56Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:35Z"
+    },
+    {
+      "card_number": "OP17-109",
+      "art_variant": "original",
+      "price": 45.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-op17-109-the-worlds-strongest-warriors-foil",
+      "title": "Charlotte Pudding (OP17-109) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:35Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 50.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-starter-deck-purple-monkey-d-luffy",
+      "title": "Zoro-Juurou [Starter Deck: PURPLE Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:35Z"
+    },
+    {
+      "card_number": "OP14-031",
+      "art_variant": "original",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil",
+      "title": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:35Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "art_variant": "original",
+      "price": 290.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil",
+      "title": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:35Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 2120.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:35Z"
+    },
+    {
+      "card_number": "ST30-006",
+      "art_variant": "original",
+      "price": 4.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/jinbe-starter-deck-ex-gear-6",
+      "title": "Jinbe [Starter Deck EX: Luffy & Ace]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:50Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 93.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:50Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 170.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:50Z"
+    },
+    {
+      "card_number": "P-088",
+      "art_variant": "original",
+      "price": 258.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-event-pack-vol-7-one-piece-promotion-cards",
+      "title": "Trafalgar Law (Event Pack Vol. 7) [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:50Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 358.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-13",
+      "captured_at": "2026-11-13T18:49:50Z"
     }
   ]
 }
