@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T14:17:38.317251+02:00",
+  "generated_at": "2026-11-14T13:32:35.095631+02:00",
   "items": [
     {
       "source_calendar_id": "0g3a09rbfv6p1840rbvbhtfff4@group.calendar.google.com",
@@ -22,6 +22,28 @@
       "location": "",
       "description": "",
       "url": "https://www.google.com/calendar/event?eid=NTlicXQ0YTJrcTdsbjNhN2hyNGRmNHVuYnJfMjAyNjExMTcgMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw"
+    },
+    {
+      "source_calendar_id": "0g3a09rbfv6p1840rbvbhtfff4@group.calendar.google.com",
+      "type": "birthday",
+      "title": "Gareth's Birthday",
+      "date": "2026-12-15",
+      "start": "2026-12-15",
+      "end": "2026-12-16",
+      "location": "",
+      "description": "",
+      "url": "https://www.google.com/calendar/event?eid=NHU2Z3MxcTdjdmYzam5lZ2thZWg1MmtkOHRfMjAyNjEyMTUgMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw"
+    },
+    {
+      "source_calendar_id": "0g3a09rbfv6p1840rbvbhtfff4@group.calendar.google.com",
+      "type": "birthday",
+      "title": "Klara's Birthday",
+      "date": "2026-12-15",
+      "start": "2026-12-15",
+      "end": "2026-12-16",
+      "location": "",
+      "description": "",
+      "url": "https://www.google.com/calendar/event?eid=NmMzcXB1NGJzbmtzaHVkZzdvYnU5NTdjNmFfMjAyNjEyMTUgMGczYTA5cmJmdjZwMTg0MHJidmJodGZmZjRAZw"
     }
   ]
 }

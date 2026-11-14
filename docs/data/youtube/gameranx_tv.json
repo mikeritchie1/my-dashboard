@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-13T12:21:07.865404Z",
+  "generated_at": "2026-11-14T11:35:58.813429Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 53,
+  "items_count": 54,
   "items": [
+    {
+      "id": "yt-1nrTXTkItjk",
+      "video_id": "1nrTXTkItjk",
+      "title": "NEW GTA6 GAMEPLAY,  TWO NEW ASSASSIN'S CREED GAMES LEAKED? & MORE",
+      "url": "https://www.youtube.com/watch?v=1nrTXTkItjk",
+      "published_at": "2026-11-13T21:22:46+00:00",
+      "updated_at": "2026-11-14T09:50:05+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/1nrTXTkItjk/hqdefault.jpg"
+    },
     {
       "id": "yt-5EPTABel2Eg",
       "video_id": "5EPTABel2Eg",
