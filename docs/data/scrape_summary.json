@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
+      "runs": 2,
       "item_count": 107,
       "added": {},
       "removed": {
@@ -26,12 +26,20 @@
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/im-luffy-the-man-who-will-be-king-of-the-pirates-op17-096-the-worlds-strongest-warriors-foil": "I'm Luffy!! The Man Who Will Be King of the Pirates!! (OP17-096) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-luffy-and-loki-the-worlds-strongest-warriors": "DON!! Card (Alternate Art) (Luffy and Loki) - The World's Strongest Warriors",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st31-004-sp-st31-004-the-worlds-strongest-warriors-foil": "Monkey.D.Luffy (ST31-004) (SP) (ST31-004) - The World's Strongest Warriors Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rob-lucci-alternate-art-eb04-048-adventure-on-kamis-island-foil": "Rob Lucci (Alternate Art) (EB04-048) - Adventure on Kami's Island Foil"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rob-lucci-alternate-art-eb04-048-adventure-on-kamis-island-foil": "Rob Lucci (Alternate Art) (EB04-048) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-112-op17-112-the-worlds-strongest-warriors-foil": "Charlotte Linlin (112) (OP17-112) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/benn-beckman-alternate-art-op17-027-the-worlds-strongest-warriors-foil": "Benn.Beckman (Alternate Art) (OP17-027) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-reprint-premium-booster-the-best-vol-2": "Mr.2.Bon.Kurei (Bentham) (Reprint) [Premium Booster -The Best- Vol. 2]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-alternate-art-extra-booster-memorial-collection": "Mr.2.Bon.Kurei(Bentham) (Alternate Art) [Extra Booster: Memorial Collection]"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -39,7 +47,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -47,7 +55,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
+      "runs": 2,
       "item_count": 35,
       "added": {},
       "removed": {},
@@ -60,12 +68,15 @@
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle": "DON!! Card (Alternate Art) [The Time of Battle]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
-        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]"
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1": "Monkey.D.Luffy [Royal Blood]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-store-tournament-2025-vol-4-one-piece-promotion-cards": "Monkey.D.Luffy (Store Tournament 2025 Vol. 4) [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead": "Sanji [Starter Deck: Egghead]"
       }
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -73,7 +84,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 193,
       "added": {},
       "removed": {},
