@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
+      "runs": 2,
       "item_count": 108,
       "added": {},
       "removed": {},
@@ -14,12 +14,17 @@
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil": "Loki (OP17-119) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-op17-062-the-worlds-strongest-warriors-foil": "Kaido (062) (OP17-062) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil": "Nami (OP14-031) - The Azure Sea's Seven Foil"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/nami-op14-031-the-azure-seas-seven-foil": "Nami (OP14-031) - The Azure Sea's Seven Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/edward-newgate-005-alternate-art-op17-005-the-worlds-strongest-warriors-foil": "Edward.Newgate (005) (Alternate Art) (OP17-005) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (OP17-118) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/wo-ro-ro-ro-ro-i-think-ive-sobered-up-op17-076-the-worlds-strongest-warriors-foil": "Wo Ro Ro Ro Ro... I Think I've Sobered Up (OP17-076) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection": "Enel [Extra Booster: Anime 25th Collection]"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -27,7 +32,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -35,7 +40,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
+      "runs": 2,
       "item_count": 35,
       "added": {},
       "removed": {},
@@ -50,7 +55,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -58,7 +63,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 193,
       "added": {},
       "removed": {},
