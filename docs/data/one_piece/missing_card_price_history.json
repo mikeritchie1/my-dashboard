@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T16:40:17Z",
+  "updated_at": "2026-11-15T22:08:48Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -297432,6 +297432,126 @@
       "stock": "In stock",
       "observed_on": "2026-11-15",
       "captured_at": "2026-11-15T16:39:58Z"
+    },
+    {
+      "card_number": "OP17-080",
+      "art_variant": "original",
+      "price": 15.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/usopp-op17-080-the-worlds-strongest-warriors-foil",
+      "title": "Usopp (OP17-080) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "OP17-005",
+      "art_variant": "alternate",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/edward-newgate-005-alternate-art-op17-005-the-worlds-strongest-warriors-foil",
+      "title": "Edward.Newgate (005) (Alternate Art) (OP17-005) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "OP17-118",
+      "art_variant": "original",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-op17-118-the-worlds-strongest-warriors-foil",
+      "title": "Rocks.D.Xebec (118) (OP17-118) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 225.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "EB01-061",
+      "art_variant": "original",
+      "price": 255.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-reprint-premium-booster-the-best-vol-2",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "OP17-114",
+      "art_variant": "alternate",
+      "price": 295.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sweet-3-generals-alternate-art-op17-114-the-worlds-strongest-warriors-foil",
+      "title": "Sweet 3 Generals (Alternate Art) (OP17-114) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "OP06-106",
+      "art_variant": "alternate",
+      "price": 1350.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best",
+      "title": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "alternate",
+      "price": 2485.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-super-alternate-art-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (Super Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:18Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 83.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:34Z"
+    },
+    {
+      "card_number": "EB03-062",
+      "art_variant": "alternate",
+      "price": 286.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition",
+      "title": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-15",
+      "captured_at": "2026-11-15T22:08:34Z"
     }
   ]
 }

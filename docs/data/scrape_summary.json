@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
+      "runs": 2,
       "item_count": 106,
       "added": {},
       "removed": {},
@@ -16,12 +16,20 @@
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/yasopp-op17-031-the-worlds-strongest-warriors-foil": "Yasopp (OP17-031) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/benn-beckman-alternate-art-op17-027-the-worlds-strongest-warriors-foil": "Benn.Beckman (Alternate Art) (OP17-027) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-extra-booster-memorial-collection-1": "Merry Go [Extra Booster: Anime 25th Collection]"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-extra-booster-memorial-collection-1": "Merry Go [Extra Booster: Anime 25th Collection]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-super-alternate-art-op17-062-the-worlds-strongest-warriors-foil": "Kaido (062) (Super Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-reprint-premium-booster-the-best-vol-2": "Mr.2.Bon.Kurei (Bentham) (Reprint) [Premium Booster -The Best- Vol. 2]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (OP17-118) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/sweet-3-generals-alternate-art-op17-114-the-worlds-strongest-warriors-foil": "Sweet 3 Generals (Alternate Art) (OP17-114) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection": "Enel [Extra Booster: Anime 25th Collection]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/usopp-op17-080-the-worlds-strongest-warriors-foil": "Usopp (OP17-080) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/edward-newgate-005-alternate-art-op17-005-the-worlds-strongest-warriors-foil": "Edward.Newgate (005) (Alternate Art) (OP17-005) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kouzuki-hiyori-alternate-art-premium-booster-the-best": "Kouzuki Hiyori (Alternate Art) [Premium Booster -The Best-]"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {
         "docs/data/one_piece/missing_cards.json|https://www.bobshop.co.za/one-piece-trading-card-game-carrot-op08-023-sr-japanese-foil-nm/p/703348123": "One Piece Trading Card Game - Carrot OP08-023 SR - Japanese Foil - NM"
@@ -33,7 +41,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -41,7 +49,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
+      "runs": 2,
       "item_count": 35,
       "added": {},
       "removed": {},
@@ -52,12 +60,14 @@
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead": "Sanji [Starter Deck: Egghead]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle": "DON!! Card (Alternate Art) [The Time of Battle]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
-        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]"
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors": "Yasopp (Alternate Art) [The World's Strongest Warriors]"
       }
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -65,7 +75,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 193,
       "added": {},
       "removed": {},
