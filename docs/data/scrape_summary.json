@@ -1,5 +1,75 @@
 {
   "window_started_at": "2026-11-15T12:03:11.681875+00:00",
   "last_sent_at": "2026-11-15T12:03:11.681875+00:00",
-  "sources": {}
+  "sources": {
+    "one-piece/bigbang": {
+      "label": "Big Bang",
+      "runs": 1,
+      "item_count": 106,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-sp-st26-005-adventure-on-kamis-island-foil": "Monkey.D.Luffy (SP) (ST26-005) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-op17-109-the-worlds-strongest-warriors-foil": "Charlotte Pudding (OP17-109) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/yasopp-op17-031-the-worlds-strongest-warriors-foil": "Yasopp (OP17-031) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/benn-beckman-alternate-art-op17-027-the-worlds-strongest-warriors-foil": "Benn.Beckman (Alternate Art) (OP17-027) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-extra-booster-memorial-collection-1": "Merry Go [Extra Booster: Anime 25th Collection]"
+      }
+    },
+    "one-piece/collectiverse": {
+      "label": "Collectiverse",
+      "runs": 1,
+      "item_count": 1,
+      "added": {
+        "docs/data/one_piece/missing_cards.json|https://www.bobshop.co.za/one-piece-trading-card-game-carrot-op08-023-sr-japanese-foil-nm/p/703348123": "One Piece Trading Card Game - Carrot OP08-023 SR - Japanese Foil - NM"
+      },
+      "removed": {
+        "docs/data/one_piece/missing_cards.json|https://www.bobshop.co.za/one-piece-trading-card-game-carrot-op08-023-sr-japanese-foil-nm/p/698955915": "One Piece Trading Card Game - Carrot OP08-023 SR - Japanese Foil - NM"
+      },
+      "updated": {}
+    },
+    "one-piece/geekhaven": {
+      "label": "Geek Haven",
+      "runs": 1,
+      "item_count": 0,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/knightly": {
+      "label": "Knightly Gaming",
+      "runs": 1,
+      "item_count": 35,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection": "Kingdom Come [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-egghead": "Sanji [Starter Deck: Egghead]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle": "DON!! Card (Alternate Art) [The Time of Battle]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]"
+      }
+    },
+    "one-piece/tanuki": {
+      "label": "Tanuki Games",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/products": {
+      "label": "Official products",
+      "runs": 1,
+      "item_count": 193,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    }
+  }
 }
