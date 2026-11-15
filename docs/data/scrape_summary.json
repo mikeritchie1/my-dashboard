@@ -4,11 +4,12 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 2,
-      "item_count": 107,
+      "runs": 3,
+      "item_count": 106,
       "added": {},
       "removed": {
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/lead-performers-alternate-art-op17-061-the-worlds-strongest-warriors-foil": "Lead Performers (Alternate Art) (OP17-061) - The World's Strongest Warriors Foil"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/lead-performers-alternate-art-op17-061-the-worlds-strongest-warriors-foil": "Lead Performers (Alternate Art) (OP17-061) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st31-004-sp-st31-004-the-worlds-strongest-warriors-foil": "Monkey.D.Luffy (ST31-004) (SP) (ST31-004) - The World's Strongest Warriors Foil"
       },
       "updated": {
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/gloriosa-alternate-art-op17-046-the-worlds-strongest-warriors-foil": "Gloriosa (Alternate Art) (OP17-046) - The World's Strongest Warriors Foil",
@@ -34,12 +35,19 @@
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil": "Loki (OP17-119) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-reprint-premium-booster-the-best-vol-2": "Mr.2.Bon.Kurei (Bentham) (Reprint) [Premium Booster -The Best- Vol. 2]",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-alternate-art-extra-booster-memorial-collection": "Mr.2.Bon.Kurei(Bentham) (Alternate Art) [Extra Booster: Memorial Collection]"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-alternate-art-extra-booster-memorial-collection": "Mr.2.Bon.Kurei(Bentham) (Alternate Art) [Extra Booster: Memorial Collection]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-super-alternate-art-op17-062-the-worlds-strongest-warriors-foil": "Kaido (062) (Super Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-alternate-art-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection": "Enel [Extra Booster: Anime 25th Collection]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (OP17-118) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/edward-newgate-005-alternate-art-op17-005-the-worlds-strongest-warriors-foil": "Edward.Newgate (005) (Alternate Art) (OP17-005) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/sweet-3-generals-alternate-art-op17-114-the-worlds-strongest-warriors-foil": "Sweet 3 Generals (Alternate Art) (OP17-114) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-rocks-the-worlds-strongest-warriors": "DON!! Card (Alternate Art) (Rocks) - The World's Strongest Warriors"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -47,7 +55,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 2,
+      "runs": 3,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -55,7 +63,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 2,
+      "runs": 3,
       "item_count": 35,
       "added": {},
       "removed": {},
@@ -76,7 +84,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -84,7 +92,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 2,
+      "runs": 3,
       "item_count": 193,
       "added": {},
       "removed": {},
