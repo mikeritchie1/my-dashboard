@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-14T11:35:58.813429Z",
+  "generated_at": "2026-11-15T12:03:10.206601Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 54,
+  "items_count": 55,
   "items": [
+    {
+      "id": "yt-A9fifS608C8",
+      "video_id": "A9fifS608C8",
+      "title": "GTA 6: 25 Things You NEED TO KNOW",
+      "url": "https://www.youtube.com/watch?v=A9fifS608C8",
+      "published_at": "2026-11-14T17:05:32+00:00",
+      "updated_at": "2026-11-15T11:34:38+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/A9fifS608C8/hqdefault.jpg"
+    },
     {
       "id": "yt-1nrTXTkItjk",
       "video_id": "1nrTXTkItjk",
