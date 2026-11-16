@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T03:19:04Z",
+  "updated_at": "2026-11-16T12:08:29Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -299412,6 +299412,90 @@
       "stock": "In stock",
       "observed_on": "2026-11-16",
       "captured_at": "2026-11-16T03:18:45Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-16",
+      "captured_at": "2026-11-16T12:07:57Z"
+    },
+    {
+      "card_number": "OP17-062",
+      "art_variant": "alternate",
+      "price": 205.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-062-alternate-art-op17-062-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (062) (Alternate Art) (OP17-062) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-16",
+      "captured_at": "2026-11-16T12:07:57Z"
+    },
+    {
+      "card_number": "EB02-041",
+      "art_variant": "original",
+      "price": 270.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/merry-go-one-piece-promotion-cards",
+      "title": "Merry Go [One Piece Promotion Cards]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-16",
+      "captured_at": "2026-11-16T12:07:57Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 320.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-16",
+      "captured_at": "2026-11-16T12:07:57Z"
+    },
+    {
+      "card_number": "EB04-048",
+      "art_variant": "alternate",
+      "price": 325.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rob-lucci-alternate-art-eb04-048-adventure-on-kamis-island-foil",
+      "title": "Rob Lucci (Alternate Art) (EB04-048) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-16",
+      "captured_at": "2026-11-16T12:07:57Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "alternate",
+      "price": 1135.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-16",
+      "captured_at": "2026-11-16T12:07:57Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 200.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-16",
+      "captured_at": "2026-11-16T12:08:12Z"
     }
   ]
 }
