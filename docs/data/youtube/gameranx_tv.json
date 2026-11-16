@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-15T12:03:10.206601Z",
+  "generated_at": "2026-11-16T12:52:54.371962Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 55,
+  "items_count": 56,
   "items": [
+    {
+      "id": "yt-0oEZJqtM5xc",
+      "video_id": "0oEZJqtM5xc",
+      "title": "20 Worst Video Game Adaptations EVER",
+      "url": "https://www.youtube.com/watch?v=0oEZJqtM5xc",
+      "published_at": "2026-11-15T17:37:05+00:00",
+      "updated_at": "2026-11-16T05:15:27+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/0oEZJqtM5xc/hqdefault.jpg"
+    },
     {
       "id": "yt-A9fifS608C8",
       "video_id": "A9fifS608C8",

@@ -2,12 +2,12 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
-      "title": "DERELIKT",
-      "url": "https://rawg.io/games/derelikt",
-      "image": "https://media.rawg.io/media/screenshots/96f/96fea960e706051d65722789e7e4a1d5.jpg",
-      "release_date": "2026-11-12",
+      "title": "Dice Hoarder",
+      "url": "https://rawg.io/games/dice-hoarder",
+      "image": "https://media.rawg.io/media/screenshots/ebb/ebb77e7714fafa7e12d488e15e8a89e0.jpg",
+      "release_date": "2026-11-13",
       "rating": "0.0",
-      "platforms": "PC"
+      "platforms": ""
     },
     {
       "title": "Dungeons & Dragons: Enhanced Classics Ultimate Bundle",
@@ -16,6 +16,14 @@
       "release_date": "2026-11-12",
       "rating": "0.0",
       "platforms": "PC, Linux"
+    },
+    {
+      "title": "DERELIKT",
+      "url": "https://rawg.io/games/derelikt",
+      "image": "https://media.rawg.io/media/screenshots/96f/96fea960e706051d65722789e7e4a1d5.jpg",
+      "release_date": "2026-11-12",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Dungeons & Dragons: Enhanced Classics Bundle",
@@ -90,6 +98,14 @@
       "platforms": "PC, macOS, Linux"
     },
     {
+      "title": "The Big Suck",
+      "url": "https://rawg.io/games/the-big-suck",
+      "image": "https://media.rawg.io/media/screenshots/659/659ef1194c6e762a183b4d4a01928395.jpg",
+      "release_date": "2026-11-09",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "Warhammer Survivors",
       "url": "https://rawg.io/games/warhammer-survivors",
       "image": "https://media.rawg.io/media/screenshots/bb7/bb7fca4136eccec5e2e82b8a19849489.jpg",
@@ -112,6 +128,14 @@
       "release_date": "2026-11-08",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Leviathan: Rhino",
+      "url": "https://rawg.io/games/leviathan-rhino",
+      "image": "https://media.rawg.io/media/screenshots/8db/8db96a9ccb0f8a22f153676f1ded9d25.jpg",
+      "release_date": "2026-11-07",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Flirt Simulator",
@@ -186,6 +210,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Gildoria - Organize a Dragon's Hoard",
+      "url": "https://rawg.io/games/gildoria-organize-a-dragons-hoard",
+      "image": "https://media.rawg.io/media/screenshots/7d6/7d622b939af192036c11cedab7d0c2dd.jpg",
+      "release_date": "2026-11-05",
+      "rating": "0.0",
+      "platforms": ""
+    },
+    {
       "title": "\u65e5\u672c\u56db\u5b63\u767e\u666f",
       "url": "https://rawg.io/games/ri-ben-si-ji-bai-jing",
       "image": "https://media.rawg.io/media/screenshots/ade/ade7890c59e00707c862c211d55e77ac.jpg",
@@ -218,17 +250,17 @@
       "platforms": "PC"
     },
     {
-      "title": "Absorber Hero RPG",
-      "url": "https://rawg.io/games/absorber-hero-rpg",
-      "image": "https://media.rawg.io/media/screenshots/419/4195d058849ec640784bcf6c1d1c0bba.jpg",
+      "title": "Ultima VIII Gold Edition",
+      "url": "https://rawg.io/games/ultima-viii-gold-edition",
+      "image": "https://media.rawg.io/media/screenshots/a7c/a7cbb13276c22e0e7926a3af9a781982.jpg",
       "release_date": "2026-11-05",
       "rating": "0.0",
       "platforms": "PC"
     },
     {
-      "title": "Ultima VIII Gold Edition",
-      "url": "https://rawg.io/games/ultima-viii-gold-edition",
-      "image": "https://media.rawg.io/media/screenshots/a7c/a7cbb13276c22e0e7926a3af9a781982.jpg",
+      "title": "Absorber Hero RPG",
+      "url": "https://rawg.io/games/absorber-hero-rpg",
+      "image": "https://media.rawg.io/media/screenshots/419/4195d058849ec640784bcf6c1d1c0bba.jpg",
       "release_date": "2026-11-05",
       "rating": "0.0",
       "platforms": "PC"
@@ -366,38 +398,6 @@
       "url": "https://rawg.io/games/only-luck",
       "image": "https://media.rawg.io/media/screenshots/586/586cfa8532e5feace1b97d0cffdd4ca8.jpg",
       "release_date": "2026-10-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Night Life: Club Sessions",
-      "url": "https://rawg.io/games/night-life-club-sessions",
-      "image": "https://media.rawg.io/media/screenshots/54b/54b68b09bcdf9bf89cb7a59438471411.jpg",
-      "release_date": "2026-10-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Crimson Desert: Charting the Unknown",
-      "url": "https://rawg.io/games/crimson-desert-charting-the-unknown",
-      "image": "https://media.rawg.io/media/screenshots/83c/83ca2a4e4e94eecad38064f34304af49.jpg",
-      "release_date": "2026-10-29",
-      "rating": "0.0",
-      "platforms": "PC, PlayStation 5, Xbox Series S/X"
-    },
-    {
-      "title": "The Golden Caravan",
-      "url": "https://rawg.io/games/the-golden-caravan",
-      "image": "https://media.rawg.io/media/screenshots/75c/75cad424cb0048a3df8e5158b342c6b9.jpg",
-      "release_date": "2026-10-29",
-      "rating": "0.0",
-      "platforms": "PC, macOS"
-    },
-    {
-      "title": "INTERNS",
-      "url": "https://rawg.io/games/interns",
-      "image": "https://media.rawg.io/media/screenshots/1a9/1a9c9cc1ab2aa102fa39aaf28a4301f9.jpg",
-      "release_date": "2026-10-29",
       "rating": "0.0",
       "platforms": "PC"
     }
