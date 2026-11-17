@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-16T12:52:54.371962Z",
+  "generated_at": "2026-11-17T13:34:51.705762Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 56,
+  "items_count": 57,
   "items": [
+    {
+      "id": "yt-qa3vZLNrmU0",
+      "video_id": "qa3vZLNrmU0",
+      "title": "Bodycam Zombie Game is INSANE",
+      "url": "https://www.youtube.com/watch?v=qa3vZLNrmU0",
+      "published_at": "2026-11-16T21:18:24+00:00",
+      "updated_at": "2026-11-17T07:51:58+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/qa3vZLNrmU0/hqdefault.jpg"
+    },
     {
       "id": "yt-0oEZJqtM5xc",
       "video_id": "0oEZJqtM5xc",
