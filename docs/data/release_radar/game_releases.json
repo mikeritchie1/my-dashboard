@@ -2,6 +2,46 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Space Station Designer",
+      "url": "https://rawg.io/games/space-station-designer",
+      "image": "https://media.rawg.io/media/screenshots/53c/53ca443f2fb80f24ecec21d4b21a9f2b.jpg",
+      "release_date": "2026-11-17",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Monkeys!\u00a1",
+      "url": "https://rawg.io/games/monkeys-2",
+      "image": "https://media.rawg.io/media/screenshots/ce6/ce6b0ef84184a9c097fb6365b6dbe96b.jpg",
+      "release_date": "2026-11-16",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Aetherlob",
+      "url": "https://rawg.io/games/aetherlob",
+      "image": "https://media.rawg.io/media/screenshots/6d2/6d2dd8d7b0bbccb18bf5841ae6a2f73f.jpg",
+      "release_date": "2026-11-14",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Gooning for Gold",
+      "url": "https://rawg.io/games/gooning-for-gold",
+      "image": "https://media.rawg.io/media/screenshots/f68/f68b4ba8a2ba39c98445b93830ddaf65.jpg",
+      "release_date": "2026-11-13",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Backrooms: The Undying",
+      "url": "https://rawg.io/games/backrooms-the-undying",
+      "image": "https://media.rawg.io/media/screenshots/4e4/4e4890a17ee2d80c0dcc5b3264002200.jpg",
+      "release_date": "2026-11-13",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Dice Hoarder",
       "url": "https://rawg.io/games/dice-hoarder",
       "image": "https://media.rawg.io/media/screenshots/ebb/ebb77e7714fafa7e12d488e15e8a89e0.jpg",
@@ -34,6 +74,14 @@
       "platforms": "PC, macOS, Linux"
     },
     {
+      "title": "\u4ed9\u9014\u6709\u7ea6",
+      "url": "https://rawg.io/games/xian-tu-you-yue",
+      "image": "https://media.rawg.io/media/screenshots/09e/09e2cc74bb68935619ab3192e35055f4.jpg",
+      "release_date": "2026-11-12",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "The unwinnable fight of Debuffs against Succubi",
       "url": "https://rawg.io/games/the-unwinnable-fight-of-debuffs-against-succubi",
       "image": "https://media.rawg.io/media/screenshots/71e/71e369d747dec2e71cf7cf4ed65a93e6.jpg",
@@ -56,6 +104,14 @@
       "release_date": "2026-11-12",
       "rating": "0.0",
       "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Scawy Game",
+      "url": "https://rawg.io/games/scawy-game",
+      "image": "https://media.rawg.io/media/screenshots/c21/c21512da18774cc294f873475b4f50c8.jpg",
+      "release_date": "2026-11-12",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Princessfall",
@@ -90,20 +146,20 @@
       "platforms": "PC, macOS, Linux"
     },
     {
-      "title": "The Adventures of Tango Rio",
-      "url": "https://rawg.io/games/the-adventures-of-tango-rio",
-      "image": "https://media.rawg.io/media/screenshots/b93/b93bed000b3077732e6d496ba7351ac0.jpg",
-      "release_date": "2026-11-09",
-      "rating": "0.0",
-      "platforms": "PC, macOS, Linux"
-    },
-    {
       "title": "The Big Suck",
       "url": "https://rawg.io/games/the-big-suck",
       "image": "https://media.rawg.io/media/screenshots/659/659ef1194c6e762a183b4d4a01928395.jpg",
       "release_date": "2026-11-09",
       "rating": "0.0",
       "platforms": ""
+    },
+    {
+      "title": "The Adventures of Tango Rio",
+      "url": "https://rawg.io/games/the-adventures-of-tango-rio",
+      "image": "https://media.rawg.io/media/screenshots/b93/b93bed000b3077732e6d496ba7351ac0.jpg",
+      "release_date": "2026-11-09",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
     },
     {
       "title": "Warhammer Survivors",
@@ -160,6 +216,14 @@
       "release_date": "2026-11-05",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Clean Start",
+      "url": "https://rawg.io/games/clean-start",
+      "image": "https://media.rawg.io/media/screenshots/d7d/d7df1a86000d04bcffce7953680acbe0.jpg",
+      "release_date": "2026-11-05",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Ultima Underworld II",
@@ -290,6 +354,14 @@
       "platforms": "PC, Linux"
     },
     {
+      "title": "Cash is King! Business Simulator",
+      "url": "https://rawg.io/games/cash-is-king-business-simulator",
+      "image": "https://media.rawg.io/media/screenshots/098/098e8491c3a5a58081dd6d303a30c88f.jpg",
+      "release_date": "2026-11-04",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Underkeep",
       "url": "https://rawg.io/games/underkeep",
       "image": "https://media.rawg.io/media/screenshots/b9a/b9a4c752f9d75ab908061b2287ca4700.jpg",
@@ -298,12 +370,20 @@
       "platforms": "PC"
     },
     {
-      "title": "Cash is King! Business Simulator",
-      "url": "https://rawg.io/games/cash-is-king-business-simulator",
-      "image": "https://media.rawg.io/media/screenshots/098/098e8491c3a5a58081dd6d303a30c88f.jpg",
+      "title": "Playrooms",
+      "url": "https://rawg.io/games/playrooms",
+      "image": "https://media.rawg.io/media/screenshots/850/850a04d13f4ba675d89db93507051c8e.jpg",
       "release_date": "2026-11-04",
       "rating": "0.0",
-      "platforms": "PC"
+      "platforms": ""
+    },
+    {
+      "title": "Lost Host",
+      "url": "https://rawg.io/games/lost-host",
+      "image": "https://media.rawg.io/media/screenshots/d8e/d8e390ba556400a2caa5191d096259c5.jpg",
+      "release_date": "2026-11-04",
+      "rating": "0.0",
+      "platforms": ""
     },
     {
       "title": "Celeste Blue Wizard Luna",
@@ -314,103 +394,15 @@
       "platforms": "PC"
     },
     {
-      "title": "Abashed",
-      "url": "https://rawg.io/games/abashed",
-      "image": "https://media.rawg.io/media/screenshots/59a/59a7e79d9b6ac622339d9b8eb8b5f931.jpg",
-      "release_date": "2026-11-03",
+      "title": "Cozy Game Restoration",
+      "url": "https://rawg.io/games/cozy-game-restoration",
+      "image": "https://media.rawg.io/media/screenshots/4f1/4f161ef0df895dd2a074f0b31b18d6f1.jpg",
+      "release_date": "2026-11-04",
       "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Kokuhaku Confessional",
-      "url": "https://rawg.io/games/kokuhaku-confessional",
-      "image": "https://media.rawg.io/media/screenshots/884/88424e85994fbf4a9e46f2757cd549a5.jpg",
-      "release_date": "2026-11-03",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "alda",
-      "url": "https://rawg.io/games/alda",
-      "image": "https://media.rawg.io/media/screenshots/4c8/4c8021fb3a737984fb9a95d25a84967c.jpg",
-      "release_date": "2026-11-02",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Project Afterfall",
-      "url": "https://rawg.io/games/project-afterfall",
-      "image": "https://media.rawg.io/media/screenshots/f75/f759c46190eff24d83a72fa4f76aa55a.jpg",
-      "release_date": "2026-11-02",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Click to Obsolete",
-      "url": "https://rawg.io/games/click-to-obsolete",
-      "image": "https://media.rawg.io/media/screenshots/5e2/5e230a535fc01a003451501c3b85dd9d.jpg",
-      "release_date": "2026-11-02",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Age of Wonders 4: 2026 Collector's Bundle",
-      "url": "https://rawg.io/games/age-of-wonders-4-2026-collectors-bundle",
-      "image": "https://media.rawg.io/media/screenshots/c2e/c2e67147748af593cb616185f8823932.jpg",
-      "release_date": "2026-11-02",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Heart Abyss",
-      "url": "https://rawg.io/games/heart-abyss",
-      "image": "https://media.rawg.io/media/screenshots/736/7364d3f79fe795ff692825f01ff7f594.jpg",
-      "release_date": "2026-11-02",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Guild of the Tower",
-      "url": "https://rawg.io/games/guild-of-the-tower",
-      "image": "https://media.rawg.io/media/screenshots/f0f/f0ff421bbe9d6d69463a38154e584bc9.jpg",
-      "release_date": "2026-11-01",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Hazard Crew",
-      "url": "https://rawg.io/games/hazard-crew",
-      "image": "https://media.rawg.io/media/screenshots/9d6/9d6cac4dec99d6c9023ef720afa3388f.jpg",
-      "release_date": "2026-10-31",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "The Last Legion",
-      "url": "https://rawg.io/games/the-last-legion",
-      "image": "https://media.rawg.io/media/screenshots/2d4/2d46abeffa722c74852024e884d76e8e.jpg",
-      "release_date": "2026-10-30",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Only Luck",
-      "url": "https://rawg.io/games/only-luck",
-      "image": "https://media.rawg.io/media/screenshots/586/586cfa8532e5feace1b97d0cffdd4ca8.jpg",
-      "release_date": "2026-10-30",
-      "rating": "0.0",
-      "platforms": "PC"
+      "platforms": ""
     }
   ],
   "coming_soon": [
-    {
-      "title": "Space Station Designer",
-      "url": "https://rawg.io/games/space-station-designer",
-      "image": "https://media.rawg.io/media/screenshots/53c/53ca443f2fb80f24ecec21d4b21a9f2b.jpg",
-      "release_date": "2026-11-17",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
     {
       "title": "Grand Theft Auto VI",
       "url": "https://rawg.io/games/grand-theft-aito-vi",
