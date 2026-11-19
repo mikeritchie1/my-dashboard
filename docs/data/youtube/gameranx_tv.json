@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-18T13:09:52.978195Z",
+  "generated_at": "2026-11-19T13:20:20.610594Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 58,
+  "items_count": 59,
   "items": [
+    {
+      "id": "yt-vVVIWEGciKk",
+      "video_id": "vVVIWEGciKk",
+      "title": "GTA 6 - Before You Buy",
+      "url": "https://www.youtube.com/watch?v=vVVIWEGciKk",
+      "published_at": "2026-11-18T15:47:51+00:00",
+      "updated_at": "2026-11-19T13:05:03+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/vVVIWEGciKk/hqdefault.jpg"
+    },
     {
       "id": "yt-IEtv9pqKcyk",
       "video_id": "IEtv9pqKcyk",

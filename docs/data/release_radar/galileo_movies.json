@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "Bohemian Rhapsody",
-      "detail_title": "Bohemian Rhapsody",
-      "url": "https://thegalileo.co.za/movie/bohemian-rhapsody/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-11-18",
-      "event_date_text": "18 November 2026",
-      "day": "Wednesday",
-      "venue": "Kirstenbosch Garden",
-      "doors_open": "18h00",
-      "movie_starts": "19h45",
-      "cinema_type": "PICNIC",
-      "age_restriction": "13 D L",
-      "run_time": "2h14",
-      "runtime_minutes": "134",
-      "genre": "Biographical , Drama , Musical/Dance",
-      "genres": [
-        "Biographical , Drama , Musical/Dance"
-      ],
-      "overview": "Bohemian Rhapsody is a 2018 musical biographical drama film that focuses on the life of Freddie Mercury and his rock band Queen from 1970 to 1985. Amidst his skyrocketing success, Freddie Mercury grapples with his ego, sexuality and a fatal illness. It stars Rami Malek as Mercury.",
-      "synopsis": "Bohemian Rhapsody is a 2018 musical biographical drama film that focuses on the life of Freddie Mercury and his rock band Queen from 1970 to 1985. Amidst his skyrocketing success, Freddie Mercury grapples with his ego, sexuality and a fatal illness. It stars Rami Malek as Mercury.",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2024/09/The-Galileo-Open-Air-Cinema-Movie-bohemian--686x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2024/09/The-Galileo-Open-Air-Cinema-Movie-bohemian--686x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=mP0VHJYFOAU&t=39s",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
-    },
-    {
       "title": "Catch Me If You Can – CANCELLED",
       "detail_title": "Catch Me If You Can – CANCELLED",
       "url": "https://thegalileo.co.za/movie/catch-me-if-you-can/",
