@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 2,
+      "runs": 3,
       "item_count": 93,
       "added": {},
       "removed": {
@@ -16,7 +16,7 @@
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -24,7 +24,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 2,
+      "runs": 3,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -32,7 +32,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 2,
+      "runs": 3,
       "item_count": 35,
       "added": {},
       "removed": {},
@@ -49,12 +49,15 @@
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/don-card-alternate-art-the-time-of-battle": "DON!! Card (Alternate Art) [The Time of Battle]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/monkey-d-luffy-royal-blood-1": "Monkey.D.Luffy [Royal Blood]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/shirahoshi-alternate-art-extra-booster-memorial-collection": "Shirahoshi (Alternate Art) [Extra Booster: Memorial Collection]",
-        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]"
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-event-pack-vol-7-one-piece-promotion-cards": "Trafalgar Law (Event Pack Vol. 7) [One Piece Promotion Cards]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy": "Sanji [Starter Deck: RED Monkey.D.Luffy]"
       }
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -62,9 +65,11 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 2,
-      "item_count": 193,
-      "added": {},
+      "runs": 3,
+      "item_count": 194,
+      "added": {
+        "docs/data/one_piece/products.json|https://en.onepiece-cardgame.com/products/peb01.html": "PREMIUM EXTRA BOOSTER -THE DRAWING OF YOUR DREAMS- [PEB-01]"
+      },
       "removed": {},
       "updated": {}
     }

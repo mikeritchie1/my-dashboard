@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-11-18T22:44:20.460790Z",
+  "scraped_at": "2026-11-19T04:37:30.034866Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2480,6 +2480,20 @@
       "image_local_url": "./data/one_piece/product_images/per01_img-noimage-booster-en-fr.webp",
       "is_released": false,
       "added_at": "2026-11-06T18:34:17.000049Z"
+    },
+    {
+      "title": "PREMIUM EXTRA BOOSTER -THE DRAWING OF YOUR DREAMS- [PEB-01]",
+      "category": "boosters",
+      "category_label": "BOOSTERS",
+      "date_label": "Release Date",
+      "release_date": "2027-04-23",
+      "release_date_text": "April 23, 2027",
+      "url": "https://en.onepiece-cardgame.com/products/peb01.html",
+      "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/11/04/geWzKZK85JFuwPnc/img_noimage_booster_en-fr.webp?_=0a65cae6224efd548d07db96c37f0270",
+      "source_page": 1,
+      "image_local_url": "./data/one_piece/product_images/peb01_img-noimage-booster-en-fr.webp",
+      "is_released": false,
+      "added_at": "2026-11-19T04:37:30.034866Z"
     },
     {
       "title": "Chinese 3rd Anniversary Set",
