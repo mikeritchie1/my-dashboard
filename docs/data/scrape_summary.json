@@ -4,17 +4,26 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
-      "item_count": 92,
-      "added": {},
+      "runs": 2,
+      "item_count": 98,
+      "added": {
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-alternate-art-op17-118-the-worlds-strongest-warriors-foil": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/sweet-3-generals-alternate-art-op17-114-the-worlds-strongest-warriors-foil": "Sweet 3 Generals (Alternate Art) (OP17-114) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiki-048-alternate-art-op17-048-the-worlds-strongest-warriors-foil": "Shiki (048) (Alternate Art) (OP17-048) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-four-emperors-gold-the-worlds-strongest-warriors-foil": "DON!! Card (Alternate Art) (The Four Emperors) (Gold) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-rocks-the-worlds-strongest-warriors": "DON!! Card (Alternate Art) (Rocks) - The World's Strongest Warriors"
+      },
       "removed": {
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-sp-eb04-007-the-worlds-strongest-warriors-foil": "Roronoa Zoro (EB04-007) (SP) (EB04-007) - The World's Strongest Warriors Foil"
       },
-      "updated": {}
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood": "Donquixote Doflamingo [Royal Blood]"
+      }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -22,7 +31,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -30,7 +39,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
+      "runs": 2,
       "item_count": 35,
       "added": {},
       "removed": {},
@@ -49,7 +58,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -57,7 +66,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 194,
       "added": {},
       "removed": {},

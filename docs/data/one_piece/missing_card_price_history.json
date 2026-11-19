@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19T14:45:33Z",
+  "updated_at": "2026-11-19T22:48:13Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -305328,6 +305328,114 @@
       "stock": "In stock",
       "observed_on": "2026-11-19",
       "captured_at": "2026-11-19T14:45:13Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-rocks-the-worlds-strongest-warriors",
+      "title": "DON!! Card (Alternate Art) (Rocks) - The World's Strongest Warriors",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:40Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "original",
+      "price": 65.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood",
+      "title": "Donquixote Doflamingo [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:40Z"
+    },
+    {
+      "card_number": "OP17-048",
+      "art_variant": "alternate",
+      "price": 150.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiki-048-alternate-art-op17-048-the-worlds-strongest-warriors-foil",
+      "title": "Shiki (048) (Alternate Art) (OP17-048) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:40Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 170.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-four-emperors-gold-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Alternate Art) (The Four Emperors) (Gold) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:40Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "art_variant": "original",
+      "price": 265.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil",
+      "title": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:40Z"
+    },
+    {
+      "card_number": "OP17-114",
+      "art_variant": "alternate",
+      "price": 315.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/sweet-3-generals-alternate-art-op17-114-the-worlds-strongest-warriors-foil",
+      "title": "Sweet 3 Generals (Alternate Art) (OP17-114) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:40Z"
+    },
+    {
+      "card_number": "OP17-118",
+      "art_variant": "alternate",
+      "price": 445.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-alternate-art-op17-118-the-worlds-strongest-warriors-foil",
+      "title": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:40Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "art_variant": "alternate",
+      "price": 90.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:55Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 292.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-19",
+      "captured_at": "2026-11-19T22:47:55Z"
     }
   ]
 }
