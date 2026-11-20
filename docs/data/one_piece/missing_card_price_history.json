@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T04:28:39Z",
+  "updated_at": "2026-11-20T14:26:30Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -307140,6 +307140,126 @@
       "stock": "In stock",
       "observed_on": "2026-11-20",
       "captured_at": "2026-11-20T04:28:22Z"
+    },
+    {
+      "card_number": "OP17-112",
+      "art_variant": "original",
+      "price": 25.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-linlin-112-op17-112-the-worlds-strongest-warriors-foil",
+      "title": "Charlotte Linlin (112) (OP17-112) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "OP17-109",
+      "art_variant": "original",
+      "price": 40.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/charlotte-pudding-op17-109-the-worlds-strongest-warriors-foil",
+      "title": "Charlotte Pudding (OP17-109) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "ST18-004",
+      "art_variant": "original",
+      "price": 55.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/zoro-juurou-starter-deck-purple-monkey-d-luffy",
+      "title": "Zoro-Juurou [Starter Deck: PURPLE Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "OP17-027",
+      "art_variant": "alternate",
+      "price": 110.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/benn-beckman-alternate-art-op17-027-the-worlds-strongest-warriors-foil",
+      "title": "Benn.Beckman (Alternate Art) (OP17-027) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "OP17-048",
+      "art_variant": "alternate",
+      "price": 160.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiki-048-alternate-art-op17-048-the-worlds-strongest-warriors-foil",
+      "title": "Shiki (048) (Alternate Art) (OP17-048) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "art_variant": "original",
+      "price": 250.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-op17-119-the-worlds-strongest-warriors-foil",
+      "title": "Loki (OP17-119) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "EB04-007",
+      "art_variant": "original",
+      "price": 305.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/roronoa-zoro-eb04-007-eb04-007-adventure-on-kamis-island-foil",
+      "title": "Roronoa Zoro (EB04-007) (EB04-007) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 470.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 2020.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:00Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 296.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T14:26:14Z"
     }
   ]
 }
