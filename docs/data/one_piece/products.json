@@ -1,6 +1,6 @@
 {
   "source": "https://en.onepiece-cardgame.com/products/",
-  "scraped_at": "2026-11-19T22:48:14.976212Z",
+  "scraped_at": "2026-11-20T04:28:40.498582Z",
   "pages_scraped": 1,
   "items": [
     {
@@ -2338,7 +2338,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/09/18/rGCJ1ZUyi5qrA7zL/img_item01.webp?_=230a16dd2faccc216eb962693d6c1654",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/op18_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-09-25T13:02:46.849466Z"
     },
     {
@@ -2352,7 +2352,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/22/CIkB0PKUaotJWbK4/img_item01.webp?_=b4bd0da2255aa4ab9be09ba7c44d0d96",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/dp13_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-10-23T07:58:26.385862Z"
     },
     {
@@ -2366,7 +2366,7 @@
       "image_url": "https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/10/01/1G5QS6sl6UETbgKE/img_item01.webp?_=73e4fa33c847a19078961369a0ca69be",
       "source_page": 1,
       "image_local_url": "./data/one_piece/product_images/gift-collection_img-item01.webp",
-      "is_released": false,
+      "is_released": true,
       "added_at": "2026-10-02T09:04:29.426967Z"
     },
     {
