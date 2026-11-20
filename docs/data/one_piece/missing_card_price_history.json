@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T14:26:30Z",
+  "updated_at": "2026-11-20T22:25:09Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -307260,6 +307260,102 @@
       "stock": "In stock",
       "observed_on": "2026-11-20",
       "captured_at": "2026-11-20T14:26:14Z"
+    },
+    {
+      "card_number": "ST26-005",
+      "art_variant": "original",
+      "price": 65.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-st26-005-starter-deck-purple-black-monkey-d-luffy",
+      "title": "Monkey.D.Luffy (ST26-005) [Starter Deck: Purple/Black Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:31Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 175.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-the-four-emperors-gold-the-worlds-strongest-warriors-foil",
+      "title": "DON!! Card (Alternate Art) (The Four Emperors) (Gold) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:31Z"
+    },
+    {
+      "card_number": "EB02-052",
+      "art_variant": "original",
+      "price": 220.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/enel-extra-booster-memorial-collection",
+      "title": "Enel [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:31Z"
+    },
+    {
+      "card_number": "EB01-061",
+      "art_variant": "original",
+      "price": 225.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kurei-bentham-reprint-premium-booster-the-best-vol-2",
+      "title": "Mr.2.Bon.Kurei (Bentham) (Reprint) [Premium Booster -The Best- Vol. 2]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:31Z"
+    },
+    {
+      "card_number": "OP16-119",
+      "art_variant": "alternate",
+      "price": 815.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/marshall-d-teach-119-alternate-art-op16-119-the-time-of-battle-foil",
+      "title": "Marshall.D.Teach (119) (Alternate Art) (OP16-119) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:31Z"
+    },
+    {
+      "card_number": "EB01-061",
+      "art_variant": "alternate",
+      "price": 2055.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mr-2-bon-kureibentham-alternate-art-extra-booster-memorial-collection",
+      "title": "Mr.2.Bon.Kurei(Bentham) (Alternate Art) [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:31Z"
+    },
+    {
+      "card_number": "ST31-001",
+      "art_variant": "original",
+      "price": 46.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-starter-deck-red-monkey-d-luffy",
+      "title": "Sanji [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:46Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 162.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-20",
+      "captured_at": "2026-11-20T22:24:46Z"
     }
   ]
 }
