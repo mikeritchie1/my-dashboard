@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-19T13:20:20.610594Z",
+  "generated_at": "2026-11-20T13:02:07.430427Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 59,
+  "items_count": 60,
   "items": [
+    {
+      "id": "yt-1yBSK22csvI",
+      "video_id": "1yBSK22csvI",
+      "title": "GTA 6: 10 Things The Game DOESN'T TELL YOU",
+      "url": "https://www.youtube.com/watch?v=1yBSK22csvI",
+      "published_at": "2026-11-19T17:13:18+00:00",
+      "updated_at": "2026-11-20T12:35:47+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/1yBSK22csvI/hqdefault.jpg"
+    },
     {
       "id": "yt-vVVIWEGciKk",
       "video_id": "vVVIWEGciKk",

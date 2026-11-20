@@ -3,111 +3,43 @@
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
   "items": [
     {
-      "tmdb_id": 1381071,
-      "tmdb_url": "https://www.themoviedb.org/movie/1381071",
-      "tmdb_rating": "7.7",
-      "tmdb_votes": "263",
-      "release_date": "2026-11-03",
-      "overview": "War reduced Japan to zero, and Godzilla plunged it into minus. Two years have passed since then, and the country has faced agonizing struggles to achieve recovery and finally reclaim its daily life. Just as humanity managed to cling to a hard-won peace, a new threat strikes, crushing hope in an instant. There is no third time. Everything ends here.",
-      "runtime_minutes": "135",
+      "tmdb_id": 1300968,
+      "tmdb_url": "https://www.themoviedb.org/movie/1300968",
+      "tmdb_rating": "7.3",
+      "tmdb_votes": "80",
+      "release_date": "2026-11-18",
+      "overview": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+      "runtime_minutes": "159",
       "genres": [
         "Science Fiction",
-        "Horror",
-        "Action"
-      ],
-      "directors": [
-        "Takashi Yamazaki"
-      ],
-      "actors": [
-        "Ryunosuke Kamiki",
-        "Minami Hamabe",
-        "Min Tanaka",
-        "Hidetaka Yoshioka",
-        "Masami Nagasawa",
-        "Yuki Yamada",
-        "Kuranosuke Sasaki",
-        "Jun Kunimura",
-        "Sakura Ando",
-        "Miou Tanaka"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=Pu0pH5BuCPM",
-      "poster_url": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg",
-      "title": "Godzilla Minus Zero",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_godzillaminuszero2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/hSmIJluOJmTWvJs4d7kHRxjc8s8.jpg"
-    },
-    {
-      "tmdb_id": 1649403,
-      "tmdb_url": "https://www.themoviedb.org/movie/1649403",
-      "tmdb_rating": "9.0",
-      "tmdb_votes": "5",
-      "release_date": "2026-11-04",
-      "overview": "A stunning delve into George Michael's 1988 Faith Tour, as shot live at the famous Palais Omnisports de Paris-Bercy. This exclusive footage, assembled from a 14-camera shoot captured on 35mm over two nights (30–31 May 1988), features the 24-year-old pop star at the height of his powers.",
-      "runtime_minutes": "113",
-      "genres": [
-        "Music"
-      ],
-      "directors": [
-        "Andy Morahan",
-        "David Austin"
-      ],
-      "actors": [
-        "George Michael"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=H_NwyHRY9yk",
-      "poster_url": "https://image.tmdb.org/t/p/w342/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg",
-      "title": "George Michael: The Faith Tour",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_georgemichaelthefaithtour2d",
-      "source": "IMAX Waterfront",
-      "status": "now_playing",
-      "status_label": "Now playing",
-      "showtimes": [],
-      "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg"
-    },
-    {
-      "tmdb_id": 656908,
-      "tmdb_url": "https://www.themoviedb.org/movie/656908",
-      "tmdb_rating": "7.5",
-      "tmdb_votes": "59",
-      "release_date": "2026-11-05",
-      "overview": "An ancient epic follows a young prince and princess whose marriage and subsequent exile mark the beginning of a legendary journey. Their story of love, duty and destiny sets the stage for greater challenges ahead.",
-      "runtime_minutes": "195",
-      "genres": [
-        "Fantasy",
         "Action",
         "Adventure"
       ],
       "directors": [
-        "Nitesh Tiwari"
+        "Francis Lawrence"
       ],
       "actors": [
-        "Ranbir Kapoor",
-        "Yash",
-        "Sai Pallavi",
-        "Ravi Dubey",
-        "Arun Govil",
-        "Shobana",
-        "Lara Dutta",
-        "Rakul Preet Singh",
-        "Vivek Oberoi",
-        "Adinath Kothare"
+        "Joseph Zada",
+        "Mckenna Grace",
+        "Ralph Fiennes",
+        "Jesse Plemons",
+        "Glenn Close",
+        "Whitney Peak",
+        "Elle Fanning",
+        "Kieran Culkin",
+        "Maya Hawke",
+        "Kelvin Harrison Jr."
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=AYkPRN874m8",
-      "poster_url": "https://image.tmdb.org/t/p/w342/vBQ7wks68OhJKlb3RnXSl2yXBXK.jpg",
-      "title": "Ramayana: Rise of a Legend",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_ramayanariseofalegend3d",
+      "trailer_url": "https://www.youtube.com/watch?v=Dr060OLTodE",
+      "poster_url": "https://image.tmdb.org/t/p/w342/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg",
+      "title": "The Hunger Games: Sunrise on the Reaping",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_thehungergamessunriseonthereaping2d",
       "source": "IMAX Waterfront",
       "status": "now_playing",
       "status_label": "Now playing",
       "showtimes": [],
-      "format": "IMAX 3D",
-      "image": "https://image.tmdb.org/t/p/w342/vBQ7wks68OhJKlb3RnXSl2yXBXK.jpg"
+      "format": "IMAX 2D",
+      "image": "https://image.tmdb.org/t/p/w342/jNcZH8yplxttRlf0wwqfGGMKHxX.jpg"
     }
   ]
 }

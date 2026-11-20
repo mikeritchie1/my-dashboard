@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-19T13:20:20.378058Z",
+  "generated_at": "2026-11-20T13:02:06.519166Z",
   "channel_name": "Almost Friday TV",
   "channel_id": "UCCgK6peZI5-FKDCWzMIFk2A",
   "channel_url": "https://www.youtube.com/@AlmostFridayTV",
-  "items_count": 102,
+  "items_count": 103,
   "items": [
+    {
+      "id": "yt-jfYN0zOupME",
+      "video_id": "jfYN0zOupME",
+      "title": "Couple Hits the JACKPOT at Storage Unit Auction!",
+      "url": "https://www.youtube.com/watch?v=jfYN0zOupME",
+      "published_at": "2026-11-19T20:00:15+00:00",
+      "updated_at": "2026-11-19T20:14:11+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/jfYN0zOupME/hqdefault.jpg"
+    },
     {
       "id": "yt-RjdhLRNFZX4",
       "video_id": "RjdhLRNFZX4",
