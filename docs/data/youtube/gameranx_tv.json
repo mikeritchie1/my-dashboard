@@ -1,11 +1,29 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-20T13:02:07.430427Z",
+  "generated_at": "2026-11-21T12:46:26.402051Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 60,
+  "items_count": 62,
   "items": [
+    {
+      "id": "yt-Xqd3KSBYvn8",
+      "video_id": "Xqd3KSBYvn8",
+      "title": "GTA6 LEAKER GUILTY, UBISOFT IN BIG TROUBLE? & MORE",
+      "url": "https://www.youtube.com/watch?v=Xqd3KSBYvn8",
+      "published_at": "2026-11-20T22:27:41+00:00",
+      "updated_at": "2026-11-21T09:25:13+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/Xqd3KSBYvn8/hqdefault.jpg"
+    },
+    {
+      "id": "yt-rDJVx4dw848",
+      "video_id": "rDJVx4dw848",
+      "title": "GTA 6: 20 MISTAKES YOU SHOULDN'T MAKE",
+      "url": "https://www.youtube.com/watch?v=rDJVx4dw848",
+      "published_at": "2026-11-20T17:05:07+00:00",
+      "updated_at": "2026-11-21T12:16:51+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/rDJVx4dw848/hqdefault.jpg"
+    },
     {
       "id": "yt-1yBSK22csvI",
       "video_id": "1yBSK22csvI",

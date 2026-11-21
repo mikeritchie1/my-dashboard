@@ -6,8 +6,40 @@
       "url": "https://rawg.io/games/grand-theft-aito-vi",
       "image": "https://media.rawg.io/media/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg",
       "release_date": "2026-11-19",
-      "rating": "3.9",
+      "rating": "3.8",
       "platforms": "PlayStation 5, Xbox Series S/X"
+    },
+    {
+      "title": "Pocket Furry",
+      "url": "https://rawg.io/games/pocket-furry",
+      "image": "https://media.rawg.io/media/screenshots/86b/86b6d120107dc1fc08f4b24eef4394d3.jpg",
+      "release_date": "2026-11-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Warlords IV: Heroes of Etheria",
+      "url": "https://rawg.io/games/warlords-iv-heroes-of-etheria",
+      "image": "https://media.rawg.io/media/screenshots/e57/e57752318fe537a3474226dfc720ec68.jpg",
+      "release_date": "2026-11-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "SNEG Strategy Black Friday Bundle",
+      "url": "https://rawg.io/games/sneg-strategy-black-friday-bundle",
+      "image": "https://media.rawg.io/media/screenshots/d6d/d6db5ec4e9a9cbcf3efef387cf26aebc.jpg",
+      "release_date": "2026-11-19",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Gently Packed",
+      "url": "https://rawg.io/games/gently-packed",
+      "image": "https://media.rawg.io/media/screenshots/f3f/f3f387db963fb66c8da3467860ebd8ff.jpg",
+      "release_date": "2026-11-18",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Space Station Designer",
@@ -18,10 +50,34 @@
       "platforms": "PC"
     },
     {
+      "title": "Four Walls Inc.",
+      "url": "https://rawg.io/games/four-walls-inc",
+      "image": "https://media.rawg.io/media/screenshots/881/88181ed0494dcfc634d74bfd38c087d2.jpg",
+      "release_date": "2026-11-17",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
       "title": "Monkeys!\u00a1",
       "url": "https://rawg.io/games/monkeys-2",
       "image": "https://media.rawg.io/media/screenshots/ce6/ce6b0ef84184a9c097fb6365b6dbe96b.jpg",
       "release_date": "2026-11-16",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "Beehive Simulator",
+      "url": "https://rawg.io/games/beehive-simulator-2",
+      "image": "https://media.rawg.io/media/screenshots/dfa/dfa25ac8b373dfc36900b0e484199f3e.jpg",
+      "release_date": "2026-11-16",
+      "rating": "0.0",
+      "platforms": "PC, Linux"
+    },
+    {
+      "title": "ParkingWars",
+      "url": "https://rawg.io/games/parkingwars",
+      "image": "https://media.rawg.io/media/screenshots/6d3/6d3265c10b0ef3aa14a4ab9069634d68.jpg",
+      "release_date": "2026-11-15",
       "rating": "0.0",
       "platforms": "PC"
     },
@@ -40,6 +96,14 @@
       "release_date": "2026-11-13",
       "rating": "0.0",
       "platforms": "PC, macOS, Linux"
+    },
+    {
+      "title": "Dub With Friends",
+      "url": "https://rawg.io/games/dub-with-friends",
+      "image": "https://media.rawg.io/media/screenshots/da3/da372911c2cae0755983912b00414c05.jpg",
+      "release_date": "2026-11-13",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Backrooms: The Undying",
@@ -130,6 +194,22 @@
       "platforms": "PC"
     },
     {
+      "title": "Rude Supermarket Simulator",
+      "url": "https://rawg.io/games/rude-supermarket-simulator",
+      "image": "https://media.rawg.io/media/screenshots/db9/db94c3f03000470fd0e99cf145161b74.jpg",
+      "release_date": "2026-11-10",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
+      "title": "The Citadel Project",
+      "url": "https://rawg.io/games/the-citadel-project",
+      "image": "https://media.rawg.io/media/screenshots/df7/df763e89bc9d7326695b53abc8e33adc.jpg",
+      "release_date": "2026-11-10",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Wall World Strategy",
       "url": "https://rawg.io/games/wall-world-strategy",
       "image": "https://media.rawg.io/media/screenshots/7ce/7cec93f4886cf961dc39bb30ce535811.jpg",
@@ -144,6 +224,14 @@
       "release_date": "2026-11-10",
       "rating": "0.0",
       "platforms": "PC"
+    },
+    {
+      "title": "Thieves and Gold",
+      "url": "https://rawg.io/games/thieves-and-gold",
+      "image": "https://media.rawg.io/media/screenshots/664/6641629fc80a06fddd7d67f5fb3b0f06.jpg",
+      "release_date": "2026-11-10",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
     },
     {
       "title": "After the Wane",
@@ -178,6 +266,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Grim Deck",
+      "url": "https://rawg.io/games/grim-deck",
+      "image": "https://media.rawg.io/media/screenshots/3e4/3e48aa032b949617e788bbf0e288c6c5.jpg",
+      "release_date": "2026-11-09",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
+    },
+    {
       "title": "Vampire: The Masquerade - Oaths & Ashes",
       "url": "https://rawg.io/games/vampire-the-masquerade-oaths-ashes",
       "image": "https://media.rawg.io/media/screenshots/6d8/6d8c0c86ce7b2c3626497d7758a15a2c.jpg",
@@ -200,6 +296,14 @@
       "release_date": "2026-11-07",
       "rating": "0.0",
       "platforms": ""
+    },
+    {
+      "title": "\u767e\u9b3c\u76e4",
+      "url": "https://rawg.io/games/bai-gui-pan",
+      "image": "https://media.rawg.io/media/screenshots/2cc/2ccbd853d4536f499eb9bc8a12341773.jpg",
+      "release_date": "2026-11-07",
+      "rating": "0.0",
+      "platforms": "PC"
     },
     {
       "title": "Flirt Simulator",
@@ -294,110 +398,6 @@
       "url": "https://rawg.io/games/ri-ben-si-ji-bai-jing",
       "image": "https://media.rawg.io/media/screenshots/ade/ade7890c59e00707c862c211d55e77ac.jpg",
       "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Ultima Underworld 1",
-      "url": "https://rawg.io/games/ultima-underworld-1",
-      "image": "https://media.rawg.io/media/screenshots/a59/a59e9be295d06b16350108784c369530.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Ultima VII: The Complete Edition",
-      "url": "https://rawg.io/games/ultima-vii-the-complete-edition",
-      "image": "https://media.rawg.io/media/screenshots/018/018044801bf7dd0434c3656b13212d21.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Player Life: The Seven Islands",
-      "url": "https://rawg.io/games/player-life-the-seven-islands",
-      "image": "https://media.rawg.io/media/screenshots/6b7/6b72f9f8ac4441ff94e318f46f514a62.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Ultima VIII Gold Edition",
-      "url": "https://rawg.io/games/ultima-viii-gold-edition",
-      "image": "https://media.rawg.io/media/screenshots/a7c/a7cbb13276c22e0e7926a3af9a781982.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Absorber Hero RPG",
-      "url": "https://rawg.io/games/absorber-hero-rpg",
-      "image": "https://media.rawg.io/media/screenshots/419/4195d058849ec640784bcf6c1d1c0bba.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Ultima IV: Quest of the Avatar (2026)",
-      "url": "https://rawg.io/games/ultima-iv-quest-of-the-avatar-2026",
-      "image": "https://media.rawg.io/media/screenshots/f13/f13fcf27b43d7a7204f8d15df28730a3.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "The Legend of Zelda: Ocarina of Time",
-      "url": "https://rawg.io/games/the-legend-of-zelda-ocarina-of-time-2",
-      "image": "https://media.rawg.io/media/games/c3b/c3bc70310175785b0c9d7bfc93624d5f.jpg",
-      "release_date": "2026-11-05",
-      "rating": "5.0",
-      "platforms": "Nintendo Switch"
-    },
-    {
-      "title": "Stamperor! The Jester's Decree",
-      "url": "https://rawg.io/games/stamperor-the-jesters-decree",
-      "image": "https://media.rawg.io/media/screenshots/898/8987c93e6d010c365b71457ecfc88714.jpg",
-      "release_date": "2026-11-04",
-      "rating": "0.0",
-      "platforms": "PC, Linux"
-    },
-    {
-      "title": "Cash is King! Business Simulator",
-      "url": "https://rawg.io/games/cash-is-king-business-simulator",
-      "image": "https://media.rawg.io/media/screenshots/098/098e8491c3a5a58081dd6d303a30c88f.jpg",
-      "release_date": "2026-11-04",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Underkeep",
-      "url": "https://rawg.io/games/underkeep",
-      "image": "https://media.rawg.io/media/screenshots/b9a/b9a4c752f9d75ab908061b2287ca4700.jpg",
-      "release_date": "2026-11-04",
-      "rating": "0.0",
-      "platforms": "PC"
-    },
-    {
-      "title": "Playrooms",
-      "url": "https://rawg.io/games/playrooms",
-      "image": "https://media.rawg.io/media/screenshots/850/850a04d13f4ba675d89db93507051c8e.jpg",
-      "release_date": "2026-11-04",
-      "rating": "0.0",
-      "platforms": ""
-    },
-    {
-      "title": "Lost Host",
-      "url": "https://rawg.io/games/lost-host",
-      "image": "https://media.rawg.io/media/screenshots/d8e/d8e390ba556400a2caa5191d096259c5.jpg",
-      "release_date": "2026-11-04",
-      "rating": "0.0",
-      "platforms": ""
-    },
-    {
-      "title": "Celeste Blue Wizard Luna",
-      "url": "https://rawg.io/games/celeste-blue-wizard-luna",
-      "image": "https://media.rawg.io/media/screenshots/71f/71f5813ecee022c86a88c897a7278a8c.jpg",
-      "release_date": "2026-11-04",
       "rating": "0.0",
       "platforms": "PC"
     }
@@ -506,6 +506,14 @@
       "release_date": "2027-01-15",
       "rating": "0.0",
       "platforms": ""
+    },
+    {
+      "title": "Usual June",
+      "url": "https://rawg.io/games/usual-june",
+      "image": "https://media.rawg.io/media/screenshots/0ae/0ae34654385319030dae9890f1c7e4c6.jpg",
+      "release_date": "2027-01-19",
+      "rating": "0.0",
+      "platforms": "PC, macOS"
     },
     {
       "title": "Titan Quest 2",
