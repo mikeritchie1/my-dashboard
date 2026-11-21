@@ -256,21 +256,6 @@
       "scraped_at": "2026-10-27T09:18:03Z"
     },
     {
-      "card_number": "OP17-060",
-      "price": 5.0,
-      "title": "Ulti & Page One (OP17-060) - The World's Strongest Warriors Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R5.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ulti-page-one-op17-060-the-worlds-strongest-warriors-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/708395.jpg?v=1793661910",
-      "art_variant": "original",
-      "scraped_at": "2026-10-27T09:18:03Z"
-    },
-    {
       "card_number": "OP17-061",
       "price": 5.0,
       "title": "Lead Performers (OP17-061) - The World's Strongest Warriors Foil",
@@ -507,6 +492,21 @@
       "available_variants": "Near Mint R10.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/theres-no-authority-in-the-world-that-lasts-forever-op17-055-the-worlds-strongest-warriors-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712623.jpg?v=1787878488",
+      "art_variant": "original",
+      "scraped_at": "2026-10-27T09:18:03Z"
+    },
+    {
+      "card_number": "OP17-060",
+      "price": 10.0,
+      "title": "Ulti & Page One (OP17-060) - The World's Strongest Warriors Foil",
+      "rarity": "",
+      "store": "Big Bang Shop",
+      "set_name": "",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "available_variants": "Near Mint R10.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ulti-page-one-op17-060-the-worlds-strongest-warriors-foil",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/708395.jpg?v=1793661910",
       "art_variant": "original",
       "scraped_at": "2026-10-27T09:18:03Z"
     },
@@ -751,6 +751,21 @@
       "scraped_at": "2026-11-19T22:47:40Z"
     },
     {
+      "card_number": "OP06-035",
+      "price": 20.0,
+      "title": "Hody Jones [Wings of the Captain]",
+      "rarity": "Super Rare",
+      "store": "Big Bang Shop",
+      "set_name": "Wings of the Captain",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R20.00",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/hody-jones-wings-of-the-captain",
+      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/539772_e6604f70-da75-4823-ae6f-a7614ed46632.jpg?v=1763491336",
+      "art_variant": "original",
+      "scraped_at": "2026-10-06T19:08:39Z"
+    },
+    {
       "card_number": "OP17-005",
       "price": 20.0,
       "title": "Edward.Newgate (005) (OP17-005) - The World's Strongest Warriors Foil",
@@ -794,21 +809,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712748.jpg?v=1790063665",
       "art_variant": "alternate",
       "scraped_at": "2026-11-08T16:23:46Z"
-    },
-    {
-      "card_number": "OP06-035",
-      "price": 25.0,
-      "title": "Hody Jones [Wings of the Captain]",
-      "rarity": "Super Rare",
-      "store": "Big Bang Shop",
-      "set_name": "Wings of the Captain",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R25.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/hody-jones-wings-of-the-captain",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/539772_e6604f70-da75-4823-ae6f-a7614ed46632.jpg?v=1763491336",
-      "art_variant": "original",
-      "scraped_at": "2026-10-06T19:08:39Z"
     },
     {
       "card_number": "OP17-112",
@@ -1171,34 +1171,34 @@
       "scraped_at": "2026-11-08T16:23:46Z"
     },
     {
-      "card_number": "OP17-031",
-      "price": 91.0,
-      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
-      "rarity": "Super Rare",
-      "store": "Knightly Gaming",
-      "set_name": "The World's Strongest Warriors",
-      "condition": "Near Mint Foil",
-      "stock": "In stock",
-      "available_variants": "Near Mint Foil R91.00",
-      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
-      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/711423.jpg?v=1791317948",
-      "art_variant": "alternate",
-      "scraped_at": "2026-10-27T09:18:24Z"
-    },
-    {
       "card_number": "OP17-063",
-      "price": 95.0,
+      "price": 85.0,
       "title": "Kaido (063) (Alternate Art) (OP17-063) - The World's Strongest Warriors Foil",
       "rarity": "",
       "store": "Big Bang Shop",
       "set_name": "",
       "condition": "Near Mint",
       "stock": "In stock",
-      "available_variants": "Near Mint R95.00",
+      "available_variants": "Near Mint R85.00",
       "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-063-alternate-art-op17-063-the-worlds-strongest-warriors-foil",
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712092_90c6a731-994d-4596-9fd1-61921877715f.jpg?v=1793661814",
       "art_variant": "alternate",
       "scraped_at": "2026-10-27T09:18:03Z"
+    },
+    {
+      "card_number": "OP17-031",
+      "price": 90.0,
+      "title": "Yasopp (Alternate Art) [The World's Strongest Warriors]",
+      "rarity": "Super Rare",
+      "store": "Knightly Gaming",
+      "set_name": "The World's Strongest Warriors",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "available_variants": "Near Mint Foil R90.00",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/yasopp-alternate-art-the-worlds-strongest-warriors",
+      "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/711423.jpg?v=1791317948",
+      "art_variant": "alternate",
+      "scraped_at": "2026-10-27T09:18:24Z"
     },
     {
       "card_number": "EB01-059",
@@ -1334,21 +1334,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/685348_1c34ef12-3abb-4de5-a56f-d6f38233a09f.jpg?v=1780509813",
       "art_variant": "alternate",
       "scraped_at": "2026-07-11T15:41:06Z"
-    },
-    {
-      "card_number": "OP17-048",
-      "price": 160.0,
-      "title": "Shiki (048) (Alternate Art) (OP17-048) - The World's Strongest Warriors Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R160.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shiki-048-alternate-art-op17-048-the-worlds-strongest-warriors-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/712087.jpg?v=1793661900",
-      "art_variant": "alternate",
-      "scraped_at": "2026-11-19T22:47:40Z"
     },
     {
       "card_number": "ST32-002",
@@ -1769,21 +1754,6 @@
       "image_url": "https://cdn.shopify.com/s/files/1/0642/0381/7060/files/617116.jpg?v=1758380186",
       "art_variant": "alternate",
       "scraped_at": "2026-07-17T11:11:43Z"
-    },
-    {
-      "card_number": "OP17-118",
-      "price": 440.0,
-      "title": "Rocks.D.Xebec (118) (Alternate Art) (OP17-118) - The World's Strongest Warriors Foil",
-      "rarity": "",
-      "store": "Big Bang Shop",
-      "set_name": "",
-      "condition": "Near Mint",
-      "stock": "In stock",
-      "available_variants": "Near Mint R440.00",
-      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/rocks-d-xebec-118-alternate-art-op17-118-the-worlds-strongest-warriors-foil",
-      "image_url": "https://cdn.shopify.com/s/files/1/0624/4656/7563/files/709837_1f45b3d6-a6b2-42b9-a57c-6e51cb7d49fe.jpg?v=1793661821",
-      "art_variant": "alternate",
-      "scraped_at": "2026-11-19T22:47:40Z"
     },
     {
       "card_number": "OP15-092",

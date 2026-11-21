@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-21T04:22:00Z",
+  "updated_at": "2026-11-21T13:45:52Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -309060,6 +309060,42 @@
       "stock": "In stock",
       "observed_on": "2026-11-21",
       "captured_at": "2026-11-21T04:21:47Z"
+    },
+    {
+      "card_number": "OP17-060",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/ulti-page-one-op17-060-the-worlds-strongest-warriors-foil",
+      "title": "Ulti & Page One (OP17-060) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-21",
+      "captured_at": "2026-11-21T13:45:22Z"
+    },
+    {
+      "card_number": "OP06-035",
+      "art_variant": "original",
+      "price": 20.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/hody-jones-wings-of-the-captain",
+      "title": "Hody Jones [Wings of the Captain]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-21",
+      "captured_at": "2026-11-21T13:45:22Z"
+    },
+    {
+      "card_number": "OP17-063",
+      "art_variant": "alternate",
+      "price": 85.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-063-alternate-art-op17-063-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (063) (Alternate Art) (OP17-063) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-21",
+      "captured_at": "2026-11-21T13:45:22Z"
     }
   ]
 }
