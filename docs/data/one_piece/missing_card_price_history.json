@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-22T17:27:29Z",
+  "updated_at": "2026-11-22T22:53:26Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -311232,6 +311232,66 @@
       "stock": "In stock",
       "observed_on": "2026-11-22",
       "captured_at": "2026-11-22T17:27:16Z"
+    },
+    {
+      "card_number": "OP15-078",
+      "art_variant": "original",
+      "price": 520.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-op15-078-adventure-on-kamis-island-foil",
+      "title": "Mamaragan (OP15-078) - Adventure on Kami's Island Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-22",
+      "captured_at": "2026-11-22T22:52:59Z"
+    },
+    {
+      "card_number": "ST15-005",
+      "art_variant": "original",
+      "price": 1960.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/portgas-d-ace-sp-st15-005-the-time-of-battle-foil",
+      "title": "Portgas.D.Ace (SP) (ST15-005) - The Time of Battle Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-22",
+      "captured_at": "2026-11-22T22:52:59Z"
+    },
+    {
+      "card_number": "ST32-002",
+      "art_variant": "original",
+      "price": 156.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kouzuki-oden-starter-deck-green-roronoa-zoro",
+      "title": "Kouzuki Oden [Starter Deck: GREEN Roronoa Zoro]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-22",
+      "captured_at": "2026-11-22T22:53:12Z"
+    },
+    {
+      "card_number": "EB03-062",
+      "art_variant": "alternate",
+      "price": 265.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-alternate-art-extra-booster-one-piece-heroines-edition",
+      "title": "Trafalgar Law (Alternate Art) [Extra Booster: One Piece Heroines Edition]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-22",
+      "captured_at": "2026-11-22T22:53:12Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 321.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-22",
+      "captured_at": "2026-11-22T22:53:12Z"
     }
   ]
 }
