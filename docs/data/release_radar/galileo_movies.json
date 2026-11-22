@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "Pretty Woman",
-      "detail_title": "Pretty Woman",
-      "url": "https://thegalileo.co.za/movie/pretty-woman-3/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-11-21",
-      "event_date_text": "21 November 2026",
-      "day": "Saturday",
-      "venue": "Asara Wine Estate",
-      "doors_open": "17h00",
-      "movie_starts": "19h45",
-      "cinema_type": "PICNIC",
-      "age_restriction": "13",
-      "run_time": "1h59",
-      "runtime_minutes": "119",
-      "genre": "Comedy , Drama , Rom-Com , Romance",
-      "genres": [
-        "Comedy , Drama , Rom-Com , Romance"
-      ],
-      "overview": "Pretty Woman is a 1990 romantic comedy film. Rich corporate raider from New York (Richard Gere) needs an escort for some social events, and hires a beautiful prostitute (Julia Roberts)… only to fall in love.",
-      "synopsis": "Pretty Woman is a 1990 romantic comedy film. Rich corporate raider from New York (Richard Gere) needs an escort for some social events, and hires a beautiful prostitute (Julia Roberts)… only to fall in love.",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2025/09/Pretty-Woman-copy-686x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/Pretty-Woman-copy-686x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=2EBAVoN8L_U&t=33s",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Asara Wine Estate"
-    },
-    {
       "title": "Rush Hour",
       "detail_title": "Rush Hour",
       "url": "https://thegalileo.co.za/movie/rush-hour/",
