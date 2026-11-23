@@ -2,6 +2,42 @@
   "source": "https://pahe.ink/",
   "items": [
     {
+      "title": "Madden",
+      "url": "https://pahe.ink/madden-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/1020239-madden-2026-0-600-0-900-crop_jpg_80-110x153.jpg",
+      "rating": "6.8",
+      "first_seen_at": "2026-11-23",
+      "tmdb_id": 1131943,
+      "tmdb_url": "https://www.themoviedb.org/movie/1131943",
+      "tmdb_rating": "6.8",
+      "tmdb_votes": "50",
+      "release_date": "2026-11-18",
+      "overview": "Chronicles John Madden's incredible journey alongside best friend and true original Al Davis\u2014from a Super Bowl-winning partnership with the Raiders, to becoming football's most recognizable voice, to building the worldwide Madden NFL video game.",
+      "runtime_minutes": "112",
+      "genres": [
+        "Drama",
+        "History",
+        "Comedy"
+      ],
+      "directors": [
+        "David O. Russell"
+      ],
+      "actors": [
+        "Nicolas Cage",
+        "Christian Bale",
+        "Kathryn Hahn",
+        "Sienna Miller",
+        "John Mulaney",
+        "Snoop Dogg",
+        "Shane Gillis",
+        "Marshawn Lynch",
+        "Julian Edelman",
+        "Joel Murray"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=xzh7HzLXXpk",
+      "poster_url": "https://image.tmdb.org/t/p/w342/bRa83oPFFPqaAF3wrpVWPqqfFel.jpg"
+    },
+    {
       "title": "Other Mommy",
       "url": "https://pahe.ink/other-mommy-2026-web-dl-480p-720p-1080p/",
       "image": "https://pahe.ink/wp-content/uploads/2026/11/other_mommy_ver3_jpg_75-110x153.jpg",
@@ -953,14 +989,6 @@
       ],
       "trailer_url": "https://www.youtube.com/watch?v=bKiX2FBBz54",
       "poster_url": "https://image.tmdb.org/t/p/w342/vPVY3S57lEooBLJCg6KGdMHkUxm.jpg",
-      "is_new": false
-    },
-    {
-      "title": "The Christophers",
-      "url": "https://pahe.ink/the-christophers-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/MV5BNGI0NWEyMzMtZjJiYS00NjM5LWJmOGMtY2UzZjllMTk3NGMxXkEyXkFqcGc@._V1__jpg_75-110x153.jpg",
-      "rating": "",
-      "first_seen_at": "2026-05-21",
       "is_new": false
     }
   ]

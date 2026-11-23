@@ -6,7 +6,7 @@
       "url": "https://rawg.io/games/grand-theft-aito-vi",
       "image": "https://media.rawg.io/media/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg",
       "release_date": "2026-11-19",
-      "rating": "3.9",
+      "rating": "3.8",
       "platforms": "PlayStation 5, Xbox Series S/X"
     },
     {
@@ -218,6 +218,14 @@
       "platforms": "PC"
     },
     {
+      "title": "Takeover 2",
+      "url": "https://rawg.io/games/takeover-2-2",
+      "image": "https://media.rawg.io/media/screenshots/231/23116a1c9345b98b4205b046e075967a.jpg",
+      "release_date": "2026-11-10",
+      "rating": "0.0",
+      "platforms": "PC"
+    },
+    {
       "title": "Void Reaver",
       "url": "https://rawg.io/games/void-reaver",
       "image": "https://media.rawg.io/media/screenshots/b0c/b0c4d5c8d8d268860775c0dfd231e93a.jpg",
@@ -392,14 +400,6 @@
       "release_date": "2026-11-05",
       "rating": "0.0",
       "platforms": ""
-    },
-    {
-      "title": "\u65e5\u672c\u56db\u5b63\u767e\u666f",
-      "url": "https://rawg.io/games/ri-ben-si-ji-bai-jing",
-      "image": "https://media.rawg.io/media/screenshots/ade/ade7890c59e00707c862c211d55e77ac.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": "PC"
     }
   ],
   "coming_soon": [
