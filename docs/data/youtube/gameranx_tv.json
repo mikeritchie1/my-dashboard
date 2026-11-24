@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-23T14:47:41.365640Z",
+  "generated_at": "2026-11-24T14:59:10.219371Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 64,
+  "items_count": 65,
   "items": [
+    {
+      "id": "yt-FTchJ8Swn8Q",
+      "video_id": "FTchJ8Swn8Q",
+      "title": "Elder Scrolls 6 Sentinel: 10 Things We DON'T WANT",
+      "url": "https://www.youtube.com/watch?v=FTchJ8Swn8Q",
+      "published_at": "2026-11-23T17:47:39+00:00",
+      "updated_at": "2026-11-24T08:42:06+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/FTchJ8Swn8Q/hqdefault.jpg"
+    },
     {
       "id": "yt-H3DQNv21hmk",
       "video_id": "H3DQNv21hmk",

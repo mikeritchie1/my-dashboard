@@ -2,6 +2,14 @@
   "source": "https://api.rawg.io/api/games",
   "new_releases": [
     {
+      "title": "Deluge: Raintime",
+      "url": "https://rawg.io/games/deluge-raintime",
+      "image": "https://media.rawg.io/media/screenshots/00e/00e77639e3b8a2b81ec079f8a03b2564.jpg",
+      "release_date": "2026-11-20",
+      "rating": "0.0",
+      "platforms": "PC, macOS, Linux"
+    },
+    {
       "title": "Grand Theft Auto VI",
       "url": "https://rawg.io/games/grand-theft-aito-vi",
       "image": "https://media.rawg.io/media/games/734/7342a1cd82c8997ec620084ae4c2e7e4.jpg",
@@ -392,14 +400,6 @@
       "release_date": "2026-11-05",
       "rating": "0.0",
       "platforms": "PC"
-    },
-    {
-      "title": "Gildoria - Organize a Dragon's Hoard",
-      "url": "https://rawg.io/games/gildoria-organize-a-dragons-hoard",
-      "image": "https://media.rawg.io/media/screenshots/7d6/7d622b939af192036c11cedab7d0c2dd.jpg",
-      "release_date": "2026-11-05",
-      "rating": "0.0",
-      "platforms": ""
     }
   ],
   "coming_soon": [
