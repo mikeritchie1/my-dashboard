@@ -2,6 +2,147 @@
   "source": "https://pahe.ink/",
   "items": [
     {
+      "title": "Wicker",
+      "url": "https://pahe.ink/wicker-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/v7hkbhmvjauh1-110x153.jpg",
+      "rating": "7.5",
+      "first_seen_at": "2026-11-25",
+      "tmdb_id": 1195803,
+      "tmdb_url": "https://www.themoviedb.org/movie/1195803",
+      "tmdb_rating": "7.5",
+      "tmdb_votes": "64",
+      "release_date": "2026-10-21",
+      "overview": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
+      "runtime_minutes": "105",
+      "genres": [
+        "Romance",
+        "Fantasy",
+        "Comedy"
+      ],
+      "directors": [
+        "Alex Huston Fischer",
+        "Eleanor Wilson"
+      ],
+      "actors": [
+        "Olivia Colman",
+        "Alexander Skarsg\u00e5rd",
+        "Peter Dinklage",
+        "Elizabeth Debicki",
+        "Marli Siu",
+        "Nabhaan Rizwan",
+        "Richard E. Grant",
+        "Phil Daniels",
+        "Kiell Smith-Bynoe",
+        "Emily Lloyd-Saini"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
+      "poster_url": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg"
+    },
+    {
+      "title": "Fjord",
+      "url": "https://pahe.ink/fjord-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/unnamed_file_from_downloadgram.org_.jpg_75-110x153.jpg",
+      "rating": "7.237",
+      "first_seen_at": "2026-11-25",
+      "tmdb_id": 1401459,
+      "tmdb_url": "https://www.themoviedb.org/movie/1401459",
+      "tmdb_rating": "7.237",
+      "tmdb_votes": "152",
+      "release_date": "2026-06-13",
+      "overview": "Following the deaths of Mihai's parents, Mihai and Lisbet Gheorghiu leave their life behind in Romania and move with their children to a remote village in Norway, hoping to rebuild their lives near Lisbet's family. There, they grow close to their neighbors, the Halbergs, whose warmth gives them hope for a fresh start. But the fragile peace begins to unravel when the Gheorghiu family\u2019s young daughter, Elia, arrives at school covered in bruises.",
+      "runtime_minutes": "147",
+      "genres": [
+        "Drama"
+      ],
+      "directors": [
+        "Cristian Mungiu"
+      ],
+      "actors": [
+        "Sebastian Stan",
+        "Renate Reinsve",
+        "Lisa Carlehed",
+        "Ellen Dorrit Petersen",
+        "Lisa Loven Kongsli",
+        "Henrikke Lund Olsen",
+        "Markus T\u00f8nseth",
+        "Vanessa Ceban",
+        "Jonathan Ciprian Breazu",
+        "Christian Rubeck"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=frg59VOungA",
+      "poster_url": "https://image.tmdb.org/t/p/w342/3PPPIeSdeivjUn3O9RahGiaJ9b8.jpg"
+    },
+    {
+      "title": "You Can See Everything",
+      "url": "https://pahe.ink/you-can-see-everything-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/B0M4avoxgu4m94zNYcBQoa9nDnE.jpeg_75-110x153.jpg",
+      "rating": "8.7",
+      "first_seen_at": "2026-11-25",
+      "tmdb_id": 1765072,
+      "tmdb_url": "https://www.themoviedb.org/movie/1765072",
+      "tmdb_rating": "8.7",
+      "tmdb_votes": "179",
+      "release_date": "2026-10-16",
+      "overview": "Thirty-four days before she's sent to prison, notorious Silicon Valley founder Elizabeth Holmes invites a skeptical film crew to document her every move. What begins as an intimate portrait of an enigmatic felon becomes a mind-bending three-year journey into the abyss.",
+      "runtime_minutes": "174",
+      "genres": [
+        "Documentary"
+      ],
+      "directors": [
+        "Nathan Fielder",
+        "Lance Oppenheim"
+      ],
+      "actors": [
+        "Elizabeth Holmes",
+        "Nathan Fielder",
+        "Billy Evans",
+        "Amanda Seyfried",
+        "Christopher Abbott",
+        "Lance Oppenheim",
+        "Christian Rasmus Holmes IV",
+        "Noel Anne Holmes",
+        "Gary Wilmes",
+        "Phillip Andre Botello"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=IEx8D1Wb__U",
+      "poster_url": "https://image.tmdb.org/t/p/w342/mVh3qkw2NUFxWWyF0G1hg2Wh0K5.jpg"
+    },
+    {
+      "title": "The Social Reckoning",
+      "url": "https://pahe.ink/the-social-reckoning-2026-web-dl-480p-720p-1080p/",
+      "image": "https://pahe.ink/wp-content/uploads/2026/11/843449266_17983315770105907_4178015014653301942_n_jpg_75-110x153.jpg",
+      "rating": "7.1",
+      "first_seen_at": "2026-11-25",
+      "tmdb_id": 1281331,
+      "tmdb_url": "https://www.themoviedb.org/movie/1281331",
+      "tmdb_rating": "7.1",
+      "tmdb_votes": "169",
+      "release_date": "2026-10-07",
+      "overview": "Frances Haugen, a young Facebook engineer, enlists the help of Jeff Horwitz, a Wall Street Journal reporter, to go on a dangerous journey that ends up blowing the whistle on the social network's most guarded secrets.",
+      "runtime_minutes": "113",
+      "genres": [
+        "Drama",
+        "Thriller"
+      ],
+      "directors": [
+        "Aaron Sorkin"
+      ],
+      "actors": [
+        "Mikey Madison",
+        "Jeremy Allen White",
+        "Jeremy Strong",
+        "Wunmi Mosaku",
+        "Betty Gilpin",
+        "Billy Magnussen",
+        "Bill Burr",
+        "Gbenga Akinnagbe",
+        "Nelson Franklin",
+        "Joseph Brooks"
+      ],
+      "trailer_url": "https://www.youtube.com/watch?v=R8ANzYpaZaY",
+      "poster_url": "https://image.tmdb.org/t/p/w342/vWbEuI3LuFOGYZIxESLAmwFwtvr.jpg"
+    },
+    {
       "title": "Madden",
       "url": "https://pahe.ink/madden-2026-web-dl-480p-720p-1080p/",
       "image": "https://pahe.ink/wp-content/uploads/2026/11/1020239-madden-2026-0-600-0-900-crop_jpg_80-110x153.jpg",
@@ -930,65 +1071,6 @@
       "image": "https://pahe.ink/wp-content/uploads/2026/05/HGMVa0gbQAE8UXz_75-110x153.jpg",
       "rating": "",
       "first_seen_at": "2026-05-21",
-      "is_new": false
-    },
-    {
-      "title": "Lee Cronin\u2019s The Mummy",
-      "url": "https://pahe.ink/lee-cronins-the-mummy-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/HF4LBkyWoAAEnnD_75-110x153.jpg",
-      "rating": "",
-      "first_seen_at": "2026-05-18",
-      "is_new": false
-    },
-    {
-      "title": "The Magic Faraway Tree",
-      "url": "https://pahe.ink/the-magic-faraway-tree-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/s-l1200_jpg_80-110x153.jpg",
-      "rating": "",
-      "first_seen_at": "2026-05-16",
-      "is_new": false
-    },
-    {
-      "title": "The Punisher: One Last Kill",
-      "url": "https://pahe.ink/the-punisher-one-last-kill-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/656322290_17956304901103700_8509945743571654536_n_jpg_75-110x153.jpg",
-      "rating": "",
-      "first_seen_at": "2026-05-21",
-      "is_new": false
-    },
-    {
-      "title": "Faces of Death",
-      "url": "https://pahe.ink/faces-of-death-2026-web-dl-480p-720p-1080p/",
-      "image": "https://pahe.ink/wp-content/uploads/2026/05/HDySPi0akAAw6Ix_jpg_80-110x153.jpg",
-      "rating": "5.6",
-      "first_seen_at": "2026-05-13",
-      "tmdb_id": 855435,
-      "tmdb_url": "https://www.themoviedb.org/movie/855435",
-      "tmdb_rating": "5.6",
-      "tmdb_votes": "16",
-      "release_date": "2026-04-10",
-      "overview": "A moderator on an internet video-sharing platform stumbles across a potential snuff film ring hidden in the depths of the site's content.",
-      "runtime_minutes": "97",
-      "genres": [
-        "Horror"
-      ],
-      "directors": [
-        "Daniel Goldhaber"
-      ],
-      "actors": [
-        "Barbie Ferreira",
-        "Dacre Montgomery",
-        "Josie Totah",
-        "Aaron Holliday",
-        "Jermaine Fowler",
-        "Charli xcx",
-        "Kurt Yue",
-        "Ash Maeda",
-        "Sam Malone",
-        "Tiffany Colin"
-      ],
-      "trailer_url": "https://www.youtube.com/watch?v=bKiX2FBBz54",
-      "poster_url": "https://image.tmdb.org/t/p/w342/vPVY3S57lEooBLJCg6KGdMHkUxm.jpg",
       "is_new": false
     }
   ]

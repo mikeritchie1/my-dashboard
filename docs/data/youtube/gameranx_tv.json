@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-24T14:59:10.219371Z",
+  "generated_at": "2026-11-25T14:32:34.406399Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 65,
+  "items_count": 66,
   "items": [
+    {
+      "id": "yt-as4GFUWe9cs",
+      "video_id": "as4GFUWe9cs",
+      "title": "GTA 6: 10 Secret Locations You NEED TO VISIT",
+      "url": "https://www.youtube.com/watch?v=as4GFUWe9cs",
+      "published_at": "2026-11-24T17:47:48+00:00",
+      "updated_at": "2026-11-25T09:12:54+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/as4GFUWe9cs/hqdefault.jpg"
+    },
     {
       "id": "yt-FTchJ8Swn8Q",
       "video_id": "FTchJ8Swn8Q",
