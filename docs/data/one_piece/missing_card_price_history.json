@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T10:34:31Z",
+  "updated_at": "2026-11-25T20:44:17Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -316500,6 +316500,90 @@
       "stock": "In stock",
       "observed_on": "2026-11-25",
       "captured_at": "2026-11-25T10:34:17Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "original",
+      "price": 10.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-gol-d-roger-carrying-on-his-will-foil",
+      "title": "DON!! Card (Gol.D.Roger) - Carrying On His Will Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-25",
+      "captured_at": "2026-11-25T20:43:43Z"
+    },
+    {
+      "card_number": "DON!!",
+      "art_variant": "alternate",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-extra-booster-one-piece-heroines-edition-vol-2-foil",
+      "title": "DON!! Card (Alternate Art) - Extra Booster: One Piece Heroines Edition Vol. 2 Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-25",
+      "captured_at": "2026-11-25T20:43:43Z"
+    },
+    {
+      "card_number": "OP17-063",
+      "art_variant": "alternate",
+      "price": 80.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/kaido-063-alternate-art-op17-063-the-worlds-strongest-warriors-foil",
+      "title": "Kaido (063) (Alternate Art) (OP17-063) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-25",
+      "captured_at": "2026-11-25T20:43:43Z"
+    },
+    {
+      "card_number": "EB01-059",
+      "art_variant": "original",
+      "price": 86.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/kingdom-come-extra-booster-memorial-collection",
+      "title": "Kingdom Come [Extra Booster: Memorial Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-25",
+      "captured_at": "2026-11-25T20:44:01Z"
+    },
+    {
+      "card_number": "ST31-005",
+      "art_variant": "original",
+      "price": 179.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy",
+      "title": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-25",
+      "captured_at": "2026-11-25T20:44:01Z"
+    },
+    {
+      "card_number": "EB02-035",
+      "art_variant": "original",
+      "price": 347.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection",
+      "title": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-25",
+      "captured_at": "2026-11-25T20:44:01Z"
+    },
+    {
+      "card_number": "OP14-104",
+      "art_variant": "alternate",
+      "price": 772.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven",
+      "title": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-25",
+      "captured_at": "2026-11-25T20:44:01Z"
     }
   ]
 }
