@@ -7,10 +7,10 @@
         "--source",
         "bandsintown"
       ],
-      "duration_seconds": 0.264,
+      "duration_seconds": 0.274,
       "error": "Command failed with exit code 1",
       "item_count": 1,
-      "last_scraped_at": "2026-11-25T14:28:41.142450+00:00",
+      "last_scraped_at": "2026-11-26T13:56:58.578583+00:00",
       "module": "events",
       "source": "bandsintown",
       "status": "error"
@@ -22,9 +22,9 @@
         "--source",
         "google-calendar"
       ],
-      "duration_seconds": 0.422,
+      "duration_seconds": 0.505,
       "item_count": 4,
-      "last_scraped_at": "2026-11-25T14:29:10.301417+00:00",
+      "last_scraped_at": "2026-11-26T13:57:27.693916+00:00",
       "module": "events",
       "source": "google-calendar",
       "status": "ok"
@@ -34,9 +34,9 @@
         "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python",
         "services/events/geocode_event_locations.py"
       ],
-      "duration_seconds": 143.159,
-      "item_count": 523,
-      "last_scraped_at": "2026-11-25T14:31:33.464584+00:00",
+      "duration_seconds": 143.564,
+      "item_count": 529,
+      "last_scraped_at": "2026-11-26T13:59:51.262545+00:00",
       "module": "events",
       "source": "geocode",
       "status": "ok"
@@ -48,9 +48,9 @@
         "--source",
         "specials"
       ],
-      "duration_seconds": 1.488,
+      "duration_seconds": 1.645,
       "item_count": 110,
-      "last_scraped_at": "2026-11-25T14:28:40.874530+00:00",
+      "last_scraped_at": "2026-11-26T13:56:58.299354+00:00",
       "module": "events",
       "source": "specials",
       "status": "ok"
@@ -62,9 +62,9 @@
         "--source",
         "quicket"
       ],
-      "duration_seconds": 26.294,
-      "item_count": 158,
-      "last_scraped_at": "2026-11-25T14:29:07.438900+00:00",
+      "duration_seconds": 26.475,
+      "item_count": 160,
+      "last_scraped_at": "2026-11-26T13:57:25.056202+00:00",
       "module": "events",
       "source": "quicket",
       "status": "ok"
@@ -76,9 +76,9 @@
         "--source",
         "specials"
       ],
-      "duration_seconds": 1.488,
+      "duration_seconds": 1.645,
       "item_count": 24,
-      "last_scraped_at": "2026-11-25T14:28:40.874530+00:00",
+      "last_scraped_at": "2026-11-26T13:56:58.299354+00:00",
       "module": "events",
       "source": "specials",
       "status": "ok"
@@ -90,9 +90,9 @@
         "--source",
         "webtickets"
       ],
-      "duration_seconds": 2.432,
+      "duration_seconds": 2.122,
       "item_count": 0,
-      "last_scraped_at": "2026-11-25T14:29:09.876350+00:00",
+      "last_scraped_at": "2026-11-26T13:57:27.185909+00:00",
       "module": "events",
       "source": "webtickets",
       "status": "ok"
@@ -104,9 +104,9 @@
         "services.common.scheduled_source_tasks",
         "rawg"
       ],
-      "duration_seconds": 2.01,
+      "duration_seconds": 2.753,
       "item_count": 394,
-      "last_scraped_at": "2026-11-25T14:32:33.550378+00:00",
+      "last_scraped_at": "2026-11-26T14:00:56.405903+00:00",
       "module": "media",
       "source": "rawg",
       "status": "ok"
@@ -121,9 +121,9 @@
         "--type",
         "all"
       ],
-      "duration_seconds": 9.446,
+      "duration_seconds": 11.255,
       "item_count": 5,
-      "last_scraped_at": "2026-11-25T14:32:20.882169+00:00",
+      "last_scraped_at": "2026-11-26T14:00:40.612666+00:00",
       "module": "media",
       "source": "games",
       "status": "ok"
@@ -137,9 +137,9 @@
         "--type",
         "all"
       ],
-      "duration_seconds": 0.283,
+      "duration_seconds": 0.364,
       "item_count": 10,
-      "last_scraped_at": "2026-11-25T14:32:21.169832+00:00",
+      "last_scraped_at": "2026-11-26T14:00:40.982562+00:00",
       "module": "media",
       "source": "reading",
       "status": "ok"
@@ -154,9 +154,9 @@
         "--type",
         "all"
       ],
-      "duration_seconds": 7.89,
+      "duration_seconds": 8.835,
       "item_count": 5,
-      "last_scraped_at": "2026-11-25T14:32:11.430125+00:00",
+      "last_scraped_at": "2026-11-26T14:00:29.348514+00:00",
       "module": "media",
       "source": "watchlist",
       "status": "ok"
@@ -168,9 +168,9 @@
         "services.common.scheduled_source_tasks",
         "tmdb"
       ],
-      "duration_seconds": 10.317,
+      "duration_seconds": 12.582,
       "item_count": 966,
-      "last_scraped_at": "2026-11-25T14:32:31.499808+00:00",
+      "last_scraped_at": "2026-11-26T14:00:53.586472+00:00",
       "module": "media",
       "source": "tmdb",
       "status": "ok"
@@ -182,9 +182,9 @@
         "services.common.scheduled_source_tasks",
         "f1-snapshot"
       ],
-      "duration_seconds": 16.157,
-      "item_count": 81,
-      "last_scraped_at": "2026-11-25T14:32:03.530924+00:00",
+      "duration_seconds": 15.399,
+      "item_count": 71,
+      "last_scraped_at": "2026-11-26T14:00:20.502213+00:00",
       "module": "news",
       "source": "f1-snapshot",
       "status": "ok"
@@ -239,9 +239,9 @@
         "--type",
         "all"
       ],
-      "duration_seconds": 0.283,
+      "duration_seconds": 0.364,
       "item_count": 1,
-      "last_scraped_at": "2026-11-25T14:32:21.169832+00:00",
+      "last_scraped_at": "2026-11-26T14:00:40.982562+00:00",
       "module": "media",
       "source": "reading",
       "status": "ok"
@@ -253,9 +253,9 @@
         "--source",
         "coming-soon"
       ],
-      "duration_seconds": 0.299,
+      "duration_seconds": 0.454,
       "item_count": 8,
-      "last_scraped_at": "2026-11-25T14:28:15.265907+00:00",
+      "last_scraped_at": "2026-11-26T13:56:30.930531+00:00",
       "module": "release-radar",
       "source": "coming-soon",
       "status": "ok"
@@ -267,9 +267,9 @@
         "--source",
         "galileo"
       ],
-      "duration_seconds": 14.97,
+      "duration_seconds": 16.69,
       "item_count": 10,
-      "last_scraped_at": "2026-11-25T14:28:35.544626+00:00",
+      "last_scraped_at": "2026-11-26T13:56:52.335681+00:00",
       "module": "release-radar",
       "source": "galileo",
       "status": "ok"
@@ -281,9 +281,9 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 2.731,
+      "duration_seconds": 3.338,
       "item_count": 50,
-      "last_scraped_at": "2026-11-25T14:28:17.999637+00:00",
+      "last_scraped_at": "2026-11-26T13:56:34.272365+00:00",
       "module": "release-radar",
       "source": "games",
       "status": "ok"
@@ -295,9 +295,9 @@
         "--source",
         "imax"
       ],
-      "duration_seconds": 2.569,
+      "duration_seconds": 1.366,
       "item_count": 1,
-      "last_scraped_at": "2026-11-25T14:28:20.571664+00:00",
+      "last_scraped_at": "2026-11-26T13:56:35.642675+00:00",
       "module": "release-radar",
       "source": "imax",
       "status": "ok"
@@ -309,9 +309,9 @@
         "--source",
         "labia"
       ],
-      "duration_seconds": 3.836,
+      "duration_seconds": 4.312,
       "item_count": 0,
-      "last_scraped_at": "2026-11-25T14:28:39.383316+00:00",
+      "last_scraped_at": "2026-11-26T13:56:56.650833+00:00",
       "module": "release-radar",
       "source": "labia",
       "status": "ok"
@@ -323,9 +323,9 @@
         "--source",
         "pahe"
       ],
-      "duration_seconds": 5.274,
+      "duration_seconds": 0.958,
       "item_count": 50,
-      "last_scraped_at": "2026-11-25T14:28:14.963678+00:00",
+      "last_scraped_at": "2026-11-26T13:56:30.472437+00:00",
       "module": "release-radar",
       "source": "pahe",
       "status": "ok"
@@ -337,9 +337,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.125,
+      "duration_seconds": 0.398,
       "item_count": 103,
-      "last_scraped_at": "2026-11-25T14:32:34.096192+00:00",
+      "last_scraped_at": "2026-11-26T14:00:57.112830+00:00",
       "module": "youtube",
       "source": "almost-friday-tv",
       "status": "ok"
@@ -351,9 +351,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.205,
-      "item_count": 66,
-      "last_scraped_at": "2026-11-25T14:32:34.414397+00:00",
+      "duration_seconds": 0.146,
+      "item_count": 67,
+      "last_scraped_at": "2026-11-26T14:00:57.520332+00:00",
       "module": "youtube",
       "source": "gameranx-tv",
       "status": "ok"
@@ -367,9 +367,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.4,
+      "duration_seconds": 0.276,
       "item_count": 6,
-      "last_scraped_at": "2026-11-25T14:32:33.964266+00:00",
+      "last_scraped_at": "2026-11-26T14:00:56.703281+00:00",
       "module": "youtube",
       "source": "one-piece",
       "status": "ok"
@@ -381,9 +381,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.106,
+      "duration_seconds": 0.252,
       "item_count": 71,
-      "last_scraped_at": "2026-11-25T14:32:34.205858+00:00",
+      "last_scraped_at": "2026-11-26T14:00:57.370192+00:00",
       "module": "youtube",
       "source": "thats-a-bad-idea",
       "status": "ok"
@@ -397,17 +397,17 @@
         "--source",
         "bandsintown"
       ],
-      "duration_seconds": 0.264,
+      "duration_seconds": 0.274,
       "error": "Command failed with exit code 1",
-      "finished_at": "2026-11-25T14:28:41.142450+00:00",
+      "finished_at": "2026-11-26T13:56:58.578583+00:00",
       "item_count": 1,
-      "last_scraped_at": "2026-11-25T14:28:41.142450+00:00",
+      "last_scraped_at": "2026-11-26T13:56:58.578583+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/bandsintown_events.json"
       ],
       "source": "bandsintown",
-      "started_at": "2026-11-25T14:28:40.878711+00:00",
+      "started_at": "2026-11-26T13:56:58.304370+00:00",
       "status": "error"
     },
     "events/geocode": {
@@ -415,18 +415,9 @@
         "/opt/hostedtoolcache/Python/3.13.18/x64/bin/python",
         "services/events/geocode_event_locations.py"
       ],
-      "duration_seconds": 143.159,
-      "finished_at": "2026-11-25T14:31:33.464584+00:00",
+      "duration_seconds": 143.564,
+      "finished_at": "2026-11-26T13:59:51.262545+00:00",
       "history": [
-        {
-          "added": 7,
-          "duration_seconds": 129.295,
-          "finished_at": "2026-11-23T14:46:47.592050+00:00",
-          "item_count": 511,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:46:47.592050+00:00",
-          "started_at": "2026-11-23T14:44:38.296833+00:00"
-        },
         {
           "added": 5,
           "duration_seconds": 128.016,
@@ -444,16 +435,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:31:33.464584+00:00",
           "started_at": "2026-11-25T14:29:10.305084+00:00"
+        },
+        {
+          "added": 6,
+          "duration_seconds": 143.564,
+          "finished_at": "2026-11-26T13:59:51.262545+00:00",
+          "item_count": 529,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:59:51.262545+00:00",
+          "started_at": "2026-11-26T13:57:27.698839+00:00"
         }
       ],
-      "item_count": 523,
-      "last_scraped_at": "2026-11-25T14:31:33.464584+00:00",
+      "item_count": 529,
+      "last_scraped_at": "2026-11-26T13:59:51.262545+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/locations.json"
       ],
       "source": "geocode",
-      "started_at": "2026-11-25T14:29:10.305084+00:00",
+      "started_at": "2026-11-26T13:57:27.698839+00:00",
       "status": "ok"
     },
     "events/google-calendar": {
@@ -463,18 +463,9 @@
         "--source",
         "google-calendar"
       ],
-      "duration_seconds": 0.422,
-      "finished_at": "2026-11-25T14:29:10.301417+00:00",
+      "duration_seconds": 0.505,
+      "finished_at": "2026-11-26T13:57:27.693916+00:00",
       "history": [
-        {
-          "added": 1,
-          "duration_seconds": 0.396,
-          "finished_at": "2026-11-23T14:44:38.293594+00:00",
-          "item_count": 4,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:44:38.293594+00:00",
-          "started_at": "2026-11-23T14:44:37.897590+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 0.409,
@@ -492,16 +483,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:29:10.301417+00:00",
           "started_at": "2026-11-25T14:29:09.878943+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.505,
+          "finished_at": "2026-11-26T13:57:27.693916+00:00",
+          "item_count": 4,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:57:27.693916+00:00",
+          "started_at": "2026-11-26T13:57:27.189370+00:00"
         }
       ],
       "item_count": 4,
-      "last_scraped_at": "2026-11-25T14:29:10.301417+00:00",
+      "last_scraped_at": "2026-11-26T13:57:27.693916+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/google_calendar_events.json"
       ],
       "source": "google-calendar",
-      "started_at": "2026-11-25T14:29:09.878943+00:00",
+      "started_at": "2026-11-26T13:57:27.189370+00:00",
       "status": "ok"
     },
     "events/quicket": {
@@ -511,18 +511,9 @@
         "--source",
         "quicket"
       ],
-      "duration_seconds": 26.294,
-      "finished_at": "2026-11-25T14:29:07.438900+00:00",
+      "duration_seconds": 26.475,
+      "finished_at": "2026-11-26T13:57:25.056202+00:00",
       "history": [
-        {
-          "added": 19,
-          "duration_seconds": 27.232,
-          "finished_at": "2026-11-23T14:44:36.023170+00:00",
-          "item_count": 169,
-          "removed": 14,
-          "scraped_at": "2026-11-23T14:44:36.023170+00:00",
-          "started_at": "2026-11-23T14:44:08.790889+00:00"
-        },
         {
           "added": 11,
           "duration_seconds": 26.418,
@@ -540,16 +531,25 @@
           "removed": 19,
           "scraped_at": "2026-11-25T14:29:07.438900+00:00",
           "started_at": "2026-11-25T14:28:41.144770+00:00"
+        },
+        {
+          "added": 16,
+          "duration_seconds": 26.475,
+          "finished_at": "2026-11-26T13:57:25.056202+00:00",
+          "item_count": 160,
+          "removed": 14,
+          "scraped_at": "2026-11-26T13:57:25.056202+00:00",
+          "started_at": "2026-11-26T13:56:58.581669+00:00"
         }
       ],
-      "item_count": 158,
-      "last_scraped_at": "2026-11-25T14:29:07.438900+00:00",
+      "item_count": 160,
+      "last_scraped_at": "2026-11-26T13:57:25.056202+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/quicket_events.json"
       ],
       "source": "quicket",
-      "started_at": "2026-11-25T14:28:41.144770+00:00",
+      "started_at": "2026-11-26T13:56:58.581669+00:00",
       "status": "ok"
     },
     "events/specials": {
@@ -559,18 +559,9 @@
         "--source",
         "specials"
       ],
-      "duration_seconds": 1.488,
-      "finished_at": "2026-11-25T14:28:40.874530+00:00",
+      "duration_seconds": 1.645,
+      "finished_at": "2026-11-26T13:56:58.299354+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 1.294,
-          "finished_at": "2026-11-23T14:44:08.652944+00:00",
-          "item_count": 121,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:44:08.652944+00:00",
-          "started_at": "2026-11-23T14:44:07.359030+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 1.795,
@@ -588,17 +579,26 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:28:40.874530+00:00",
           "started_at": "2026-11-25T14:28:39.386065+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 1.645,
+          "finished_at": "2026-11-26T13:56:58.299354+00:00",
+          "item_count": 121,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:56:58.299354+00:00",
+          "started_at": "2026-11-26T13:56:56.654508+00:00"
         }
       ],
       "item_count": 121,
-      "last_scraped_at": "2026-11-25T14:28:40.874530+00:00",
+      "last_scraped_at": "2026-11-26T13:56:58.299354+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/specials.json",
         "docs/data/events/places.json"
       ],
       "source": "specials",
-      "started_at": "2026-11-25T14:28:39.386065+00:00",
+      "started_at": "2026-11-26T13:56:56.654508+00:00",
       "status": "ok"
     },
     "events/webtickets": {
@@ -608,18 +608,9 @@
         "--source",
         "webtickets"
       ],
-      "duration_seconds": 2.432,
-      "finished_at": "2026-11-25T14:29:09.876350+00:00",
+      "duration_seconds": 2.122,
+      "finished_at": "2026-11-26T13:57:27.185909+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 1.866,
-          "finished_at": "2026-11-23T14:44:37.895229+00:00",
-          "item_count": 0,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:44:37.895229+00:00",
-          "started_at": "2026-11-23T14:44:36.028831+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 2.471,
@@ -637,16 +628,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:29:09.876350+00:00",
           "started_at": "2026-11-25T14:29:07.444049+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 2.122,
+          "finished_at": "2026-11-26T13:57:27.185909+00:00",
+          "item_count": 0,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:57:27.185909+00:00",
+          "started_at": "2026-11-26T13:57:25.063691+00:00"
         }
       ],
       "item_count": 0,
-      "last_scraped_at": "2026-11-25T14:29:09.876350+00:00",
+      "last_scraped_at": "2026-11-26T13:57:27.185909+00:00",
       "module": "events",
       "outputs": [
         "docs/data/events/webtickets_wc_events.json"
       ],
       "source": "webtickets",
-      "started_at": "2026-11-25T14:29:07.444049+00:00",
+      "started_at": "2026-11-26T13:57:25.063691+00:00",
       "status": "ok"
     },
     "media/games": {
@@ -659,18 +659,9 @@
         "--type",
         "all"
       ],
-      "duration_seconds": 9.446,
-      "finished_at": "2026-11-25T14:32:20.882169+00:00",
+      "duration_seconds": 11.255,
+      "finished_at": "2026-11-26T14:00:40.612666+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 7.66,
-          "finished_at": "2026-11-23T14:47:30.858574+00:00",
-          "item_count": 368,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:30.858574+00:00",
-          "started_at": "2026-11-23T14:47:23.198338+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 13.984,
@@ -688,16 +679,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:20.882169+00:00",
           "started_at": "2026-11-25T14:32:11.435791+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 11.255,
+          "finished_at": "2026-11-26T14:00:40.612666+00:00",
+          "item_count": 368,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:40.612666+00:00",
+          "started_at": "2026-11-26T14:00:29.357265+00:00"
         }
       ],
       "item_count": 368,
-      "last_scraped_at": "2026-11-25T14:32:20.882169+00:00",
+      "last_scraped_at": "2026-11-26T14:00:40.612666+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/gameslist.json"
       ],
       "source": "games",
-      "started_at": "2026-11-25T14:32:11.435791+00:00",
+      "started_at": "2026-11-26T14:00:29.357265+00:00",
       "status": "ok"
     },
     "media/rawg": {
@@ -707,18 +707,9 @@
         "services.common.scheduled_source_tasks",
         "rawg"
       ],
-      "duration_seconds": 2.01,
-      "finished_at": "2026-11-25T14:32:33.550378+00:00",
+      "duration_seconds": 2.753,
+      "finished_at": "2026-11-26T14:00:56.405903+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 2.136,
-          "finished_at": "2026-11-23T14:47:40.621033+00:00",
-          "item_count": 394,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:40.621033+00:00",
-          "started_at": "2026-11-23T14:47:38.484978+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 2.367,
@@ -736,16 +727,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:33.550378+00:00",
           "started_at": "2026-11-25T14:32:31.540494+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 2.753,
+          "finished_at": "2026-11-26T14:00:56.405903+00:00",
+          "item_count": 394,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:56.405903+00:00",
+          "started_at": "2026-11-26T14:00:53.652883+00:00"
         }
       ],
       "item_count": 394,
-      "last_scraped_at": "2026-11-25T14:32:33.550378+00:00",
+      "last_scraped_at": "2026-11-26T14:00:56.405903+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/games_details.json"
       ],
       "source": "rawg",
-      "started_at": "2026-11-25T14:32:31.540494+00:00",
+      "started_at": "2026-11-26T14:00:53.652883+00:00",
       "status": "ok"
     },
     "media/reading": {
@@ -757,18 +757,9 @@
         "--type",
         "all"
       ],
-      "duration_seconds": 0.283,
-      "finished_at": "2026-11-25T14:32:21.169832+00:00",
+      "duration_seconds": 0.364,
+      "finished_at": "2026-11-26T14:00:40.982562+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 0.265,
-          "finished_at": "2026-11-23T14:47:31.127907+00:00",
-          "item_count": 20,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:31.127907+00:00",
-          "started_at": "2026-11-23T14:47:30.862967+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 0.703,
@@ -786,17 +777,26 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:21.169832+00:00",
           "started_at": "2026-11-25T14:32:20.886334+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.364,
+          "finished_at": "2026-11-26T14:00:40.982562+00:00",
+          "item_count": 20,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:40.982562+00:00",
+          "started_at": "2026-11-26T14:00:40.618904+00:00"
         }
       ],
       "item_count": 20,
-      "last_scraped_at": "2026-11-25T14:32:21.169832+00:00",
+      "last_scraped_at": "2026-11-26T14:00:40.982562+00:00",
       "module": "media",
       "outputs": [
         "docs/data/reading_list.json",
         "docs/data/media/reading_details.json"
       ],
       "source": "reading",
-      "started_at": "2026-11-25T14:32:20.886334+00:00",
+      "started_at": "2026-11-26T14:00:40.618904+00:00",
       "status": "ok"
     },
     "media/tmdb": {
@@ -806,18 +806,9 @@
         "services.common.scheduled_source_tasks",
         "tmdb"
       ],
-      "duration_seconds": 10.317,
-      "finished_at": "2026-11-25T14:32:31.499808+00:00",
+      "duration_seconds": 12.582,
+      "finished_at": "2026-11-26T14:00:53.586472+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 7.299,
-          "finished_at": "2026-11-23T14:47:38.439954+00:00",
-          "item_count": 966,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:38.439954+00:00",
-          "started_at": "2026-11-23T14:47:31.141331+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 11.144,
@@ -835,16 +826,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:31.499808+00:00",
           "started_at": "2026-11-25T14:32:21.182318+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 12.582,
+          "finished_at": "2026-11-26T14:00:53.586472+00:00",
+          "item_count": 966,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:53.586472+00:00",
+          "started_at": "2026-11-26T14:00:41.004441+00:00"
         }
       ],
       "item_count": 966,
-      "last_scraped_at": "2026-11-25T14:32:31.499808+00:00",
+      "last_scraped_at": "2026-11-26T14:00:53.586472+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/watchlist_movie_details.json"
       ],
       "source": "tmdb",
-      "started_at": "2026-11-25T14:32:21.182318+00:00",
+      "started_at": "2026-11-26T14:00:41.004441+00:00",
       "status": "ok"
     },
     "media/watchlist": {
@@ -857,18 +857,9 @@
         "--type",
         "all"
       ],
-      "duration_seconds": 7.89,
-      "finished_at": "2026-11-25T14:32:11.430125+00:00",
+      "duration_seconds": 8.835,
+      "finished_at": "2026-11-26T14:00:29.348514+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 6.704,
-          "finished_at": "2026-11-23T14:47:23.192034+00:00",
-          "item_count": 703,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:23.192034+00:00",
-          "started_at": "2026-11-23T14:47:16.488430+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 8.457,
@@ -886,16 +877,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:11.430125+00:00",
           "started_at": "2026-11-25T14:32:03.540427+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 8.835,
+          "finished_at": "2026-11-26T14:00:29.348514+00:00",
+          "item_count": 703,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:29.348514+00:00",
+          "started_at": "2026-11-26T14:00:20.513776+00:00"
         }
       ],
       "item_count": 703,
-      "last_scraped_at": "2026-11-25T14:32:11.430125+00:00",
+      "last_scraped_at": "2026-11-26T14:00:29.348514+00:00",
       "module": "media",
       "outputs": [
         "docs/data/media/watchlist.json"
       ],
       "source": "watchlist",
-      "started_at": "2026-11-25T14:32:03.540427+00:00",
+      "started_at": "2026-11-26T14:00:20.513776+00:00",
       "status": "ok"
     },
     "news/f1-snapshot": {
@@ -905,18 +905,9 @@
         "services.common.scheduled_source_tasks",
         "f1-snapshot"
       ],
-      "duration_seconds": 16.157,
-      "finished_at": "2026-11-25T14:32:03.530924+00:00",
+      "duration_seconds": 15.399,
+      "finished_at": "2026-11-26T14:00:20.502213+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 16.265,
-          "finished_at": "2026-11-23T14:47:16.477717+00:00",
-          "item_count": 1,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:16.477717+00:00",
-          "started_at": "2026-11-23T14:47:00.212280+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 17.765,
@@ -934,16 +925,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:03.530924+00:00",
           "started_at": "2026-11-25T14:31:47.373549+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 15.399,
+          "finished_at": "2026-11-26T14:00:20.502213+00:00",
+          "item_count": 1,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:20.502213+00:00",
+          "started_at": "2026-11-26T14:00:05.103035+00:00"
         }
       ],
       "item_count": 1,
-      "last_scraped_at": "2026-11-25T14:32:03.530924+00:00",
+      "last_scraped_at": "2026-11-26T14:00:20.502213+00:00",
       "module": "news",
       "outputs": [
         "docs/data/news/news.json"
       ],
       "source": "f1-snapshot",
-      "started_at": "2026-11-25T14:31:47.373549+00:00",
+      "started_at": "2026-11-26T14:00:05.103035+00:00",
       "status": "ok"
     },
     "news/local-file": {
@@ -953,18 +953,9 @@
         "--source",
         "local-file"
       ],
-      "duration_seconds": 0.064,
-      "finished_at": "2026-11-25T14:31:47.365439+00:00",
+      "duration_seconds": 0.09,
+      "finished_at": "2026-11-26T14:00:05.087624+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 0.066,
-          "finished_at": "2026-11-23T14:47:00.201191+00:00",
-          "item_count": 81,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:00.201191+00:00",
-          "started_at": "2026-11-23T14:47:00.135172+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 0.077,
@@ -982,16 +973,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:31:47.365439+00:00",
           "started_at": "2026-11-25T14:31:47.301931+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.09,
+          "finished_at": "2026-11-26T14:00:05.087624+00:00",
+          "item_count": 71,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:05.087624+00:00",
+          "started_at": "2026-11-26T14:00:04.997211+00:00"
         }
       ],
-      "item_count": 81,
-      "last_scraped_at": "2026-11-25T14:31:47.365439+00:00",
+      "item_count": 71,
+      "last_scraped_at": "2026-11-26T14:00:05.087624+00:00",
       "module": "news",
       "outputs": [
         "docs/data/news/news.json"
       ],
       "source": "local-file",
-      "started_at": "2026-11-25T14:31:47.301931+00:00",
+      "started_at": "2026-11-26T14:00:04.997211+00:00",
       "status": "ok"
     },
     "news/rss": {
@@ -1002,18 +1002,9 @@
         "rss",
         "--skip-f1"
       ],
-      "duration_seconds": 13.822,
-      "finished_at": "2026-11-25T14:31:47.293980+00:00",
+      "duration_seconds": 13.71,
+      "finished_at": "2026-11-26T14:00:04.982556+00:00",
       "history": [
-        {
-          "added": 63,
-          "duration_seconds": 12.526,
-          "finished_at": "2026-11-23T14:47:00.124330+00:00",
-          "item_count": 80,
-          "removed": 63,
-          "scraped_at": "2026-11-23T14:47:00.124330+00:00",
-          "started_at": "2026-11-23T14:46:47.598769+00:00"
-        },
         {
           "added": 63,
           "duration_seconds": 15.332,
@@ -1031,16 +1022,25 @@
           "removed": 62,
           "scraped_at": "2026-11-25T14:31:47.293980+00:00",
           "started_at": "2026-11-25T14:31:33.471787+00:00"
+        },
+        {
+          "added": 60,
+          "duration_seconds": 13.71,
+          "finished_at": "2026-11-26T14:00:04.982556+00:00",
+          "item_count": 70,
+          "removed": 70,
+          "scraped_at": "2026-11-26T14:00:04.982556+00:00",
+          "started_at": "2026-11-26T13:59:51.272174+00:00"
         }
       ],
-      "item_count": 80,
-      "last_scraped_at": "2026-11-25T14:31:47.293980+00:00",
+      "item_count": 70,
+      "last_scraped_at": "2026-11-26T14:00:04.982556+00:00",
       "module": "news",
       "outputs": [
         "docs/data/news/news.json"
       ],
       "source": "rss",
-      "started_at": "2026-11-25T14:31:33.471787+00:00",
+      "started_at": "2026-11-26T13:59:51.272174+00:00",
       "status": "ok"
     },
     "one-piece/all": {
@@ -1423,18 +1423,9 @@
         "--source",
         "coming-soon"
       ],
-      "duration_seconds": 0.299,
-      "finished_at": "2026-11-25T14:28:15.265907+00:00",
+      "duration_seconds": 0.454,
+      "finished_at": "2026-11-26T13:56:30.930531+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 0.247,
-          "finished_at": "2026-11-23T14:43:47.190500+00:00",
-          "item_count": 8,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:43:47.190500+00:00",
-          "started_at": "2026-11-23T14:43:46.943715+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 0.438,
@@ -1452,16 +1443,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:28:15.265907+00:00",
           "started_at": "2026-11-25T14:28:14.966618+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.454,
+          "finished_at": "2026-11-26T13:56:30.930531+00:00",
+          "item_count": 8,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:56:30.930531+00:00",
+          "started_at": "2026-11-26T13:56:30.476614+00:00"
         }
       ],
       "item_count": 8,
-      "last_scraped_at": "2026-11-25T14:28:15.265907+00:00",
+      "last_scraped_at": "2026-11-26T13:56:30.930531+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/coming_soon.json"
       ],
       "source": "coming-soon",
-      "started_at": "2026-11-25T14:28:14.966618+00:00",
+      "started_at": "2026-11-26T13:56:30.476614+00:00",
       "status": "ok"
     },
     "release-radar/galileo": {
@@ -1471,18 +1471,9 @@
         "--source",
         "galileo"
       ],
-      "duration_seconds": 14.97,
-      "finished_at": "2026-11-25T14:28:35.544626+00:00",
+      "duration_seconds": 16.69,
+      "finished_at": "2026-11-26T13:56:52.335681+00:00",
       "history": [
-        {
-          "added": 3,
-          "duration_seconds": 11.787,
-          "finished_at": "2026-11-23T14:44:04.481834+00:00",
-          "item_count": 10,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:44:04.481834+00:00",
-          "started_at": "2026-11-23T14:43:52.695130+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 16.468,
@@ -1500,16 +1491,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:28:35.544626+00:00",
           "started_at": "2026-11-25T14:28:20.574339+00:00"
+        },
+        {
+          "added": 1,
+          "duration_seconds": 16.69,
+          "finished_at": "2026-11-26T13:56:52.335681+00:00",
+          "item_count": 10,
+          "removed": 1,
+          "scraped_at": "2026-11-26T13:56:52.335681+00:00",
+          "started_at": "2026-11-26T13:56:35.645958+00:00"
         }
       ],
       "item_count": 10,
-      "last_scraped_at": "2026-11-25T14:28:35.544626+00:00",
+      "last_scraped_at": "2026-11-26T13:56:52.335681+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/galileo_movies.json"
       ],
       "source": "galileo",
-      "started_at": "2026-11-25T14:28:20.574339+00:00",
+      "started_at": "2026-11-26T13:56:35.645958+00:00",
       "status": "ok"
     },
     "release-radar/games": {
@@ -1519,18 +1519,9 @@
         "--source",
         "games"
       ],
-      "duration_seconds": 2.731,
-      "finished_at": "2026-11-25T14:28:17.999637+00:00",
+      "duration_seconds": 3.338,
+      "finished_at": "2026-11-26T13:56:34.272365+00:00",
       "history": [
-        {
-          "added": 1,
-          "duration_seconds": 5.154,
-          "finished_at": "2026-11-23T14:43:52.346989+00:00",
-          "item_count": 50,
-          "removed": 1,
-          "scraped_at": "2026-11-23T14:43:52.346989+00:00",
-          "started_at": "2026-11-23T14:43:47.192866+00:00"
-        },
         {
           "added": 1,
           "duration_seconds": 4.481,
@@ -1548,16 +1539,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:28:17.999637+00:00",
           "started_at": "2026-11-25T14:28:15.268460+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 3.338,
+          "finished_at": "2026-11-26T13:56:34.272365+00:00",
+          "item_count": 50,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:56:34.272365+00:00",
+          "started_at": "2026-11-26T13:56:30.934059+00:00"
         }
       ],
       "item_count": 50,
-      "last_scraped_at": "2026-11-25T14:28:17.999637+00:00",
+      "last_scraped_at": "2026-11-26T13:56:34.272365+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/game_releases.json"
       ],
       "source": "games",
-      "started_at": "2026-11-25T14:28:15.268460+00:00",
+      "started_at": "2026-11-26T13:56:30.934059+00:00",
       "status": "ok"
     },
     "release-radar/imax": {
@@ -1567,18 +1567,9 @@
         "--source",
         "imax"
       ],
-      "duration_seconds": 2.569,
-      "finished_at": "2026-11-25T14:28:20.571664+00:00",
+      "duration_seconds": 1.366,
+      "finished_at": "2026-11-26T13:56:35.642675+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 5.143,
-          "finished_at": "2026-11-22T12:38:08.424465+00:00",
-          "item_count": 1,
-          "removed": 0,
-          "scraped_at": "2026-11-22T12:38:08.424465+00:00",
-          "started_at": "2026-11-22T12:38:03.281708+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 10.404,
@@ -1596,16 +1587,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:28:20.571664+00:00",
           "started_at": "2026-11-25T14:28:18.002508+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 1.366,
+          "finished_at": "2026-11-26T13:56:35.642675+00:00",
+          "item_count": 1,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:56:35.642675+00:00",
+          "started_at": "2026-11-26T13:56:34.276289+00:00"
         }
       ],
       "item_count": 1,
-      "last_scraped_at": "2026-11-25T14:28:20.571664+00:00",
+      "last_scraped_at": "2026-11-26T13:56:35.642675+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/imax_waterfront.json"
       ],
       "source": "imax",
-      "started_at": "2026-11-25T14:28:18.002508+00:00",
+      "started_at": "2026-11-26T13:56:34.276289+00:00",
       "status": "ok"
     },
     "release-radar/labia": {
@@ -1615,18 +1615,9 @@
         "--source",
         "labia"
       ],
-      "duration_seconds": 3.836,
-      "finished_at": "2026-11-25T14:28:39.383316+00:00",
+      "duration_seconds": 4.312,
+      "finished_at": "2026-11-26T13:56:56.650833+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 2.872,
-          "finished_at": "2026-11-23T14:44:07.356483+00:00",
-          "item_count": 0,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:44:07.356483+00:00",
-          "started_at": "2026-11-23T14:44:04.484324+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 4.102,
@@ -1644,16 +1635,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:28:39.383316+00:00",
           "started_at": "2026-11-25T14:28:35.547308+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 4.312,
+          "finished_at": "2026-11-26T13:56:56.650833+00:00",
+          "item_count": 0,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:56:56.650833+00:00",
+          "started_at": "2026-11-26T13:56:52.339169+00:00"
         }
       ],
       "item_count": 0,
-      "last_scraped_at": "2026-11-25T14:28:39.383316+00:00",
+      "last_scraped_at": "2026-11-26T13:56:56.650833+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/labia_showtimes.json"
       ],
       "source": "labia",
-      "started_at": "2026-11-25T14:28:35.547308+00:00",
+      "started_at": "2026-11-26T13:56:52.339169+00:00",
       "status": "ok"
     },
     "release-radar/pahe": {
@@ -1663,18 +1663,9 @@
         "--source",
         "pahe"
       ],
-      "duration_seconds": 5.274,
-      "finished_at": "2026-11-25T14:28:14.963678+00:00",
+      "duration_seconds": 0.958,
+      "finished_at": "2026-11-26T13:56:30.472437+00:00",
       "history": [
-        {
-          "added": 1,
-          "duration_seconds": 1.638,
-          "finished_at": "2026-11-23T14:43:46.940689+00:00",
-          "item_count": 50,
-          "removed": 1,
-          "scraped_at": "2026-11-23T14:43:46.940689+00:00",
-          "started_at": "2026-11-23T14:43:45.302824+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 1.093,
@@ -1692,16 +1683,25 @@
           "removed": 4,
           "scraped_at": "2026-11-25T14:28:14.963678+00:00",
           "started_at": "2026-11-25T14:28:09.689547+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.958,
+          "finished_at": "2026-11-26T13:56:30.472437+00:00",
+          "item_count": 50,
+          "removed": 0,
+          "scraped_at": "2026-11-26T13:56:30.472437+00:00",
+          "started_at": "2026-11-26T13:56:29.514120+00:00"
         }
       ],
       "item_count": 50,
-      "last_scraped_at": "2026-11-25T14:28:14.963678+00:00",
+      "last_scraped_at": "2026-11-26T13:56:30.472437+00:00",
       "module": "release-radar",
       "outputs": [
         "docs/data/release_radar/pahe_latest.json"
       ],
       "source": "pahe",
-      "started_at": "2026-11-25T14:28:09.689547+00:00",
+      "started_at": "2026-11-26T13:56:29.514120+00:00",
       "status": "ok"
     },
     "youtube/almost-friday-tv": {
@@ -1711,18 +1711,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.125,
-      "finished_at": "2026-11-25T14:32:34.096192+00:00",
+      "duration_seconds": 0.398,
+      "finished_at": "2026-11-26T14:00:57.112830+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 0.222,
-          "finished_at": "2026-11-23T14:47:41.023900+00:00",
-          "item_count": 103,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:41.023900+00:00",
-          "started_at": "2026-11-23T14:47:40.801505+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 0.125,
@@ -1740,16 +1731,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:34.096192+00:00",
           "started_at": "2026-11-25T14:32:33.971597+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.398,
+          "finished_at": "2026-11-26T14:00:57.112830+00:00",
+          "item_count": 103,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:57.112830+00:00",
+          "started_at": "2026-11-26T14:00:56.714975+00:00"
         }
       ],
       "item_count": 103,
-      "last_scraped_at": "2026-11-25T14:32:34.096192+00:00",
+      "last_scraped_at": "2026-11-26T14:00:57.112830+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/almost_friday_tv.json"
       ],
       "source": "almost-friday-tv",
-      "started_at": "2026-11-25T14:32:33.971597+00:00",
+      "started_at": "2026-11-26T14:00:56.714975+00:00",
       "status": "ok"
     },
     "youtube/gameranx-tv": {
@@ -1759,18 +1759,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.205,
-      "finished_at": "2026-11-25T14:32:34.414397+00:00",
+      "duration_seconds": 0.146,
+      "finished_at": "2026-11-26T14:00:57.520332+00:00",
       "history": [
-        {
-          "added": 1,
-          "duration_seconds": 0.075,
-          "finished_at": "2026-11-23T14:47:41.374573+00:00",
-          "item_count": 64,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:41.374573+00:00",
-          "started_at": "2026-11-23T14:47:41.299858+00:00"
-        },
         {
           "added": 1,
           "duration_seconds": 0.13,
@@ -1788,16 +1779,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:34.414397+00:00",
           "started_at": "2026-11-25T14:32:34.208998+00:00"
+        },
+        {
+          "added": 1,
+          "duration_seconds": 0.146,
+          "finished_at": "2026-11-26T14:00:57.520332+00:00",
+          "item_count": 67,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:57.520332+00:00",
+          "started_at": "2026-11-26T14:00:57.374735+00:00"
         }
       ],
-      "item_count": 66,
-      "last_scraped_at": "2026-11-25T14:32:34.414397+00:00",
+      "item_count": 67,
+      "last_scraped_at": "2026-11-26T14:00:57.520332+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/gameranx_tv.json"
       ],
       "source": "gameranx-tv",
-      "started_at": "2026-11-25T14:32:34.208998+00:00",
+      "started_at": "2026-11-26T14:00:57.374735+00:00",
       "status": "ok"
     },
     "youtube/one-piece": {
@@ -1809,18 +1809,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.4,
-      "finished_at": "2026-11-25T14:32:33.964266+00:00",
+      "duration_seconds": 0.276,
+      "finished_at": "2026-11-26T14:00:56.703281+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 0.155,
-          "finished_at": "2026-11-23T14:47:40.792934+00:00",
-          "item_count": 210,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:40.792934+00:00",
-          "started_at": "2026-11-23T14:47:40.637640+00:00"
-        },
         {
           "added": 1,
           "duration_seconds": 0.375,
@@ -1838,16 +1829,25 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:33.964266+00:00",
           "started_at": "2026-11-25T14:32:33.564705+00:00"
+        },
+        {
+          "added": 1,
+          "duration_seconds": 0.276,
+          "finished_at": "2026-11-26T14:00:56.703281+00:00",
+          "item_count": 212,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:56.703281+00:00",
+          "started_at": "2026-11-26T14:00:56.427464+00:00"
         }
       ],
-      "item_count": 211,
-      "last_scraped_at": "2026-11-25T14:32:33.964266+00:00",
+      "item_count": 212,
+      "last_scraped_at": "2026-11-26T14:00:56.703281+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/latest_uploads.json"
       ],
       "source": "one-piece",
-      "started_at": "2026-11-25T14:32:33.564705+00:00",
+      "started_at": "2026-11-26T14:00:56.427464+00:00",
       "status": "ok"
     },
     "youtube/thats-a-bad-idea": {
@@ -1857,18 +1857,9 @@
         "--limit",
         "12"
       ],
-      "duration_seconds": 0.106,
-      "finished_at": "2026-11-25T14:32:34.205858+00:00",
+      "duration_seconds": 0.252,
+      "finished_at": "2026-11-26T14:00:57.370192+00:00",
       "history": [
-        {
-          "added": 0,
-          "duration_seconds": 0.269,
-          "finished_at": "2026-11-23T14:47:41.296515+00:00",
-          "item_count": 71,
-          "removed": 0,
-          "scraped_at": "2026-11-23T14:47:41.296515+00:00",
-          "started_at": "2026-11-23T14:47:41.027595+00:00"
-        },
         {
           "added": 0,
           "duration_seconds": 0.362,
@@ -1886,19 +1877,28 @@
           "removed": 0,
           "scraped_at": "2026-11-25T14:32:34.205858+00:00",
           "started_at": "2026-11-25T14:32:34.099659+00:00"
+        },
+        {
+          "added": 0,
+          "duration_seconds": 0.252,
+          "finished_at": "2026-11-26T14:00:57.370192+00:00",
+          "item_count": 71,
+          "removed": 0,
+          "scraped_at": "2026-11-26T14:00:57.370192+00:00",
+          "started_at": "2026-11-26T14:00:57.117778+00:00"
         }
       ],
       "item_count": 71,
-      "last_scraped_at": "2026-11-25T14:32:34.205858+00:00",
+      "last_scraped_at": "2026-11-26T14:00:57.370192+00:00",
       "module": "youtube",
       "outputs": [
         "docs/data/youtube/thats_a_bad_idea.json"
       ],
       "source": "thats-a-bad-idea",
-      "started_at": "2026-11-25T14:32:34.099659+00:00",
+      "started_at": "2026-11-26T14:00:57.117778+00:00",
       "status": "ok"
     }
   },
-  "updated_at": "2026-11-26T13:16:47.992879+00:00",
+  "updated_at": "2026-11-26T14:00:57.520332+00:00",
   "version": 1
 }

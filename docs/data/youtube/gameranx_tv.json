@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-25T14:32:34.406399Z",
+  "generated_at": "2026-11-26T14:00:57.509180Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 66,
+  "items_count": 67,
   "items": [
+    {
+      "id": "yt-si9AyooZ6y8",
+      "video_id": "si9AyooZ6y8",
+      "title": "Best BLACK FRIDAY Gaming Deals You SHOULDN'T Miss (2026)",
+      "url": "https://www.youtube.com/watch?v=si9AyooZ6y8",
+      "published_at": "2026-11-25T18:02:28+00:00",
+      "updated_at": "2026-11-26T08:29:00+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/si9AyooZ6y8/hqdefault.jpg"
+    },
     {
       "id": "yt-as4GFUWe9cs",
       "video_id": "as4GFUWe9cs",

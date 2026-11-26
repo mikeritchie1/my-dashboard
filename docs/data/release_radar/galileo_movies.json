@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "Rush Hour",
-      "detail_title": "Rush Hour",
-      "url": "https://thegalileo.co.za/movie/rush-hour/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-11-25",
-      "event_date_text": "25 November 2026",
-      "day": "Wednesday",
-      "venue": "Kirstenbosch Garden",
-      "doors_open": "18h00",
-      "movie_starts": "20h00",
-      "cinema_type": "PICNIC",
-      "age_restriction": "13 PG L V",
-      "run_time": "1h38",
-      "runtime_minutes": "98",
-      "genre": "Action , Comedy , Crime",
-      "genres": [
-        "Action , Comedy , Crime"
-      ],
-      "overview": "Rush Hour is a 1998 American buddy cop action comedy film. It stars Jackie Chan, Chris Tucker, Tom Wilkinson, Chris Penn and Elizabeth Peña. In the film a loyal and dedicated Hong Kong Inspector (Chan) teams up with a reckless and loudmouthed LAPD detective (Tucker) to rescue the Chinese Consul’s kidnapped daughter, while trying to arrest a dangerous crime lord along the way.",
-      "synopsis": "Rush Hour is a 1998 American buddy cop action comedy film. It stars Jackie Chan, Chris Tucker, Tom Wilkinson, Chris Penn and Elizabeth Peña. In the film a loyal and dedicated Hong Kong Inspector (Chan) teams up with a reckless and loudmouthed LAPD detective (Tucker) to rescue the Chinese Consul’s kidnapped daughter, while trying to arrest a dangerous crime lord along the way.",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2026/09/Rush-Hour-copy-687x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2026/09/Rush-Hour-copy-687x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=R5YI3x34bac",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
-    },
-    {
       "title": "Materialists",
       "detail_title": "Materialists",
       "url": "https://thegalileo.co.za/movie/materialists/",
@@ -291,6 +262,35 @@
       "trailer_url": "https://www.youtube.com/watch?v=5rgO_TyyOoU",
       "book_url": "https://www.webtickets.co.za/galileo-lineup",
       "location_label": "Playing at Battery Park, V&A Waterfront"
+    },
+    {
+      "title": "The Proposal",
+      "detail_title": "The Proposal",
+      "url": "https://thegalileo.co.za/movie/the-proposal-3/",
+      "source": "The Galileo Open Air Cinema",
+      "status": "open_air_cinema",
+      "status_label": "Open air cinema",
+      "release_date": "2026-12-10",
+      "event_date_text": "10 December 2026",
+      "day": "Thursday",
+      "venue": "Kirstenbosch Garden",
+      "doors_open": "18h00",
+      "movie_starts": "20h15",
+      "cinema_type": "PICNIC",
+      "age_restriction": "13 PG L",
+      "run_time": "1h44",
+      "runtime_minutes": "104",
+      "genre": "Comedy , Rom-Com , Romance",
+      "genres": [
+        "Comedy , Rom-Com , Romance"
+      ],
+      "overview": "The Proposal is a 2009 romantic comedy starring Sandra Bullock and Ryan Reynolds. When a demanding book editor faces deportation to Canada, she convinces her unsuspecting assistant to marry her so she can stay in the U.S. What begins as a marriage of convenience soon becomes hilariously complicated. The film also stars Betty White, Mary Steenburgen and Craig T. Nelson.",
+      "synopsis": "The Proposal is a 2009 romantic comedy starring Sandra Bullock and Ryan Reynolds. When a demanding book editor faces deportation to Canada, she convinces her unsuspecting assistant to marry her so she can stay in the U.S. What begins as a marriage of convenience soon becomes hilariously complicated. The film also stars Betty White, Mary Steenburgen and Craig T. Nelson.",
+      "image": "https://thegalileo.co.za/wp-content/uploads/2025/09/The-Proposal-copy-686x1030.webp",
+      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2025/09/The-Proposal-copy-686x1030.webp",
+      "trailer_url": "https://www.youtube.com/watch?v=jHraHCjK094",
+      "book_url": "https://www.webtickets.co.za/galileo-lineup",
+      "location_label": "Playing at Kirstenbosch Garden"
     }
   ]
 }
