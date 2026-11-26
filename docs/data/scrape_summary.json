@@ -4,7 +4,7 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
+      "runs": 2,
       "item_count": 95,
       "added": {
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-gol-d-roger-carrying-on-his-will-foil": "DON!! Card (Gol.D.Roger) - Carrying On His Will Foil",
@@ -17,7 +17,7 @@
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -25,7 +25,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 1,
+      "runs": 2,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -33,7 +33,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 1,
+      "runs": 2,
       "item_count": 28,
       "added": {},
       "removed": {},
@@ -46,7 +46,7 @@
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 1,
+      "runs": 2,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -54,7 +54,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 1,
+      "runs": 2,
       "item_count": 194,
       "added": {},
       "removed": {},
