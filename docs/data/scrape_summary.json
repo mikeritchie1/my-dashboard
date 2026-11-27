@@ -1,5 +1,61 @@
 {
   "window_started_at": "2026-11-27T13:59:41.285965+00:00",
   "last_sent_at": "2026-11-27T13:59:41.285965+00:00",
-  "sources": {}
+  "sources": {
+    "one-piece/bigbang": {
+      "label": "Big Bang",
+      "runs": 1,
+      "item_count": 93,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-alternate-art-op17-119-the-worlds-strongest-warriors-foil": "Loki (Alternate Art) (OP17-119) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-alternate-art-op17-022-the-worlds-strongest-warriors-foil": "Shanks (022) (Alternate Art) (OP17-022) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-op17-022-the-worlds-strongest-warriors-foil": "Shanks (022) (OP17-022) - The World's Strongest Warriors Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-p-055-jolly-roger-foil-premium-booster-the-best": "Monkey.D.Luffy (P-055) (Jolly Roger Foil) [Premium Booster -The Best-]"
+      }
+    },
+    "one-piece/collectiverse": {
+      "label": "Collectiverse",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/geekhaven": {
+      "label": "Geek Haven",
+      "runs": 1,
+      "item_count": 0,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/knightly": {
+      "label": "Knightly Gaming",
+      "runs": 1,
+      "item_count": 28,
+      "added": {},
+      "removed": {},
+      "updated": {
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood": "Donquixote Doflamingo (Parallel) [Royal Blood]"
+      }
+    },
+    "one-piece/tanuki": {
+      "label": "Tanuki Games",
+      "runs": 1,
+      "item_count": 1,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    },
+    "one-piece/products": {
+      "label": "Official products",
+      "runs": 1,
+      "item_count": 194,
+      "added": {},
+      "removed": {},
+      "updated": {}
+    }
+  }
 }

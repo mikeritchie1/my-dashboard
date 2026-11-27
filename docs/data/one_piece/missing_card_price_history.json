@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T05:28:53Z",
+  "updated_at": "2026-11-27T15:40:26Z",
   "observations": [
     {
       "card_number": "OP02-120",
@@ -319812,6 +319812,66 @@
       "stock": "In stock",
       "observed_on": "2026-11-27",
       "captured_at": "2026-11-27T05:28:38Z"
+    },
+    {
+      "card_number": "P-055",
+      "art_variant": "original",
+      "price": 30.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-p-055-jolly-roger-foil-premium-booster-the-best",
+      "title": "Monkey.D.Luffy (P-055) (Jolly Roger Foil) [Premium Booster -The Best-]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-27",
+      "captured_at": "2026-11-27T15:39:57Z"
+    },
+    {
+      "card_number": "OP17-022",
+      "art_variant": "original",
+      "price": 60.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-op17-022-the-worlds-strongest-warriors-foil",
+      "title": "Shanks (022) (OP17-022) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-27",
+      "captured_at": "2026-11-27T15:39:57Z"
+    },
+    {
+      "card_number": "OP17-119",
+      "art_variant": "alternate",
+      "price": 470.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-alternate-art-op17-119-the-worlds-strongest-warriors-foil",
+      "title": "Loki (Alternate Art) (OP17-119) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-27",
+      "captured_at": "2026-11-27T15:39:57Z"
+    },
+    {
+      "card_number": "OP17-022",
+      "art_variant": "alternate",
+      "price": 525.0,
+      "store": "Big Bang Shop",
+      "url": "https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-alternate-art-op17-022-the-worlds-strongest-warriors-foil",
+      "title": "Shanks (022) (Alternate Art) (OP17-022) - The World's Strongest Warriors Foil",
+      "condition": "Near Mint",
+      "stock": "In stock",
+      "observed_on": "2026-11-27",
+      "captured_at": "2026-11-27T15:39:57Z"
+    },
+    {
+      "card_number": "OP10-071",
+      "art_variant": "alternate",
+      "price": 352.0,
+      "store": "Knightly Gaming",
+      "url": "https://www.knightlygaming.co.za/collections/one-piece-singles/products/donquixote-doflamingo-parallel-royal-blood",
+      "title": "Donquixote Doflamingo (Parallel) [Royal Blood]",
+      "condition": "Near Mint Foil",
+      "stock": "In stock",
+      "observed_on": "2026-11-27",
+      "captured_at": "2026-11-27T15:40:10Z"
     }
   ]
 }
