@@ -3,35 +3,6 @@
   "theatre": "The Galileo Open Air Cinema",
   "items": [
     {
-      "title": "Materialists",
-      "detail_title": "Materialists",
-      "url": "https://thegalileo.co.za/movie/materialists/",
-      "source": "The Galileo Open Air Cinema",
-      "status": "open_air_cinema",
-      "status_label": "Open air cinema",
-      "release_date": "2026-11-26",
-      "event_date_text": "26 November 2026",
-      "day": "Thursday",
-      "venue": "Kirstenbosch Garden",
-      "doors_open": "18h00",
-      "movie_starts": "20h00",
-      "cinema_type": "PICNIC",
-      "age_restriction": "PG 13",
-      "run_time": "1h56",
-      "runtime_minutes": "116",
-      "genre": "Drama , Rom-Com , Romance",
-      "genres": [
-        "Drama , Rom-Com , Romance"
-      ],
-      "overview": "",
-      "synopsis": "",
-      "image": "https://thegalileo.co.za/wp-content/uploads/2026/09/Materialists-copy-687x1030.webp",
-      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2026/09/Materialists-copy-687x1030.webp",
-      "trailer_url": "https://www.youtube.com/watch?v=9gjeXsTsxqY",
-      "book_url": "https://www.webtickets.co.za/galileo-lineup",
-      "location_label": "Playing at Kirstenbosch Garden"
-    },
-    {
       "title": "Sinners",
       "detail_title": "Sinners",
       "url": "https://thegalileo.co.za/movie/sinners/",
@@ -291,6 +262,35 @@
       "trailer_url": "https://www.youtube.com/watch?v=jHraHCjK094",
       "book_url": "https://www.webtickets.co.za/galileo-lineup",
       "location_label": "Playing at Kirstenbosch Garden"
+    },
+    {
+      "title": "How To Train Your Dragon",
+      "detail_title": "How To Train Your Dragon",
+      "url": "https://thegalileo.co.za/movie/how-to-train-your-dragon/",
+      "source": "The Galileo Open Air Cinema",
+      "status": "open_air_cinema",
+      "status_label": "Open air cinema",
+      "release_date": "2026-12-11",
+      "event_date_text": "11 December 2026",
+      "day": "Friday",
+      "venue": "Rhebokskloof Wine Estate",
+      "doors_open": "18h00",
+      "movie_starts": "20h15",
+      "cinema_type": "PICNIC",
+      "age_restriction": "10 M",
+      "run_time": "2h05",
+      "runtime_minutes": "125",
+      "genre": "Adventure , Animation , Family Friendly",
+      "genres": [
+        "Adventure , Animation , Family Friendly"
+      ],
+      "overview": "How to Train Your Dragon is a 2010 animated fantasy adventure set in the mythical Viking village of Berk. Hiccup, a young Viking determined to become a dragon slayer, befriends a rare Night Fury dragon named Toothless and soon discovers that everything his village believes about dragons may be wrong.",
+      "synopsis": "How to Train Your Dragon is a 2010 animated fantasy adventure set in the mythical Viking village of Berk. Hiccup, a young Viking determined to become a dragon slayer, befriends a rare Night Fury dragon named Toothless and soon discovers that everything his village believes about dragons may be wrong.",
+      "image": "https://thegalileo.co.za/wp-content/uploads/2026/09/How-To-Train-Your-Dragon-copy-687x1030.webp",
+      "poster_url": "https://thegalileo.co.za/wp-content/uploads/2026/09/How-To-Train-Your-Dragon-copy-687x1030.webp",
+      "trailer_url": "https://www.youtube.com/watch?v=1huZhKwhIQc",
+      "book_url": "https://www.webtickets.co.za/galileo-lineup",
+      "location_label": "Playing at Rhebokskloof Wine Estate"
     }
   ]
 }

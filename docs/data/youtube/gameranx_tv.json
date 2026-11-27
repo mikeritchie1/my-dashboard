@@ -1,11 +1,20 @@
 {
   "source": "youtube-rss",
-  "generated_at": "2026-11-26T14:00:57.509180Z",
+  "generated_at": "2026-11-27T13:59:39.781968Z",
   "channel_name": "gameranx",
   "channel_id": "UCNvzD7Z-g64bPXxGzaQaa4g",
   "channel_url": "https://www.youtube.com/@gameranxTV",
-  "items_count": 67,
+  "items_count": 68,
   "items": [
+    {
+      "id": "yt-2TX-P0OVzV4",
+      "video_id": "2TX-P0OVzV4",
+      "title": "GTA 6: 20 Things We NEVER Expected to Do",
+      "url": "https://www.youtube.com/watch?v=2TX-P0OVzV4",
+      "published_at": "2026-11-26T17:37:02+00:00",
+      "updated_at": "2026-11-27T07:50:01+00:00",
+      "thumbnail_url": "https://i.ytimg.com/vi/2TX-P0OVzV4/hqdefault.jpg"
+    },
     {
       "id": "yt-si9AyooZ6y8",
       "video_id": "si9AyooZ6y8",

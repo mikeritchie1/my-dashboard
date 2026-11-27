@@ -3,43 +3,43 @@
   "theatre": "Ster-Kinekor V&A Waterfront IMAX",
   "items": [
     {
-      "tmdb_id": 1300968,
-      "tmdb_url": "https://www.themoviedb.org/movie/1300968",
-      "tmdb_rating": "7.8",
-      "tmdb_votes": "367",
-      "release_date": "2026-11-18",
-      "overview": "Return to the world of Panem 24 years before Katniss Everdeen volunteers in her sister's place, commencing on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-      "runtime_minutes": "159",
+      "tmdb_id": 1457866,
+      "tmdb_url": "https://www.themoviedb.org/movie/1457866",
+      "tmdb_rating": "8.278",
+      "tmdb_votes": "9",
+      "release_date": "2026-11-24",
+      "overview": "Eight years after the events of Once Upon a Time in... Hollywood, Cliff Booth returns to a changing Los Angeles. Now working as a fixer in the shadows of the Hollywood studio system, Cliff finds himself entangled in a dangerous web of secrets, crimes and betrayals that will test everything he knows about loyalty and survival.",
+      "runtime_minutes": "141",
       "genres": [
-        "Science Fiction",
-        "Action",
-        "Adventure"
+        "Comedy",
+        "Drama",
+        "Thriller"
       ],
       "directors": [
-        "Francis Lawrence"
+        "David Fincher"
       ],
       "actors": [
-        "Joseph Zada",
-        "Mckenna Grace",
-        "Jesse Plemons",
-        "Ralph Fiennes",
-        "Glenn Close",
-        "Whitney Peak",
-        "Elle Fanning",
-        "Kieran Culkin",
-        "Woody Harrelson",
-        "Elizabeth Banks"
+        "Brad Pitt",
+        "Elizabeth Debicki",
+        "Scott Caan",
+        "Yahya Abdul-Mateen II",
+        "Carla Gugino",
+        "Peter Weller",
+        "Matt Groove",
+        "JB Tadena",
+        "Corey Fogelmanis",
+        "Karren Karagulian"
       ],
-      "trailer_url": "https://www.youtube.com/watch?v=Dr060OLTodE",
-      "poster_url": "https://image.tmdb.org/t/p/w342/5ffVOGY3x3Sn3jovzvycJeizpks.jpg",
-      "title": "The Hunger Games: Sunrise on the Reaping",
-      "url": "https://mydorpie.com/m/?page=m_waterimax_thehungergamessunriseonthereaping2d",
+      "trailer_url": "https://www.youtube.com/watch?v=fJH-wfSXnWg",
+      "poster_url": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+      "title": "The Further Mis-adventures of Cliff Booth",
+      "url": "https://mydorpie.com/m/?page=m_waterimax_thefurthermisadventuresofcliffbooth2d",
       "source": "IMAX Waterfront",
       "status": "now_playing",
       "status_label": "Now playing",
       "showtimes": [],
       "format": "IMAX 2D",
-      "image": "https://image.tmdb.org/t/p/w342/5ffVOGY3x3Sn3jovzvycJeizpks.jpg"
+      "image": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg"
     }
   ]
 }
