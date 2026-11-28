@@ -4,20 +4,25 @@
   "sources": {
     "one-piece/bigbang": {
       "label": "Big Bang",
-      "runs": 1,
-      "item_count": 93,
+      "runs": 2,
+      "item_count": 92,
       "added": {},
-      "removed": {},
+      "removed": {
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/don-card-alternate-art-extra-booster-one-piece-heroines-edition-vol-2-foil": "DON!! Card (Alternate Art) - Extra Booster: One Piece Heroines Edition Vol. 2 Foil"
+      },
       "updated": {
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/loki-alternate-art-op17-119-the-worlds-strongest-warriors-foil": "Loki (Alternate Art) (OP17-119) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-alternate-art-op17-022-the-worlds-strongest-warriors-foil": "Shanks (022) (Alternate Art) (OP17-022) - The World's Strongest Warriors Foil",
         "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/shanks-022-op17-022-the-worlds-strongest-warriors-foil": "Shanks (022) (OP17-022) - The World's Strongest Warriors Foil",
-        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-p-055-jolly-roger-foil-premium-booster-the-best": "Monkey.D.Luffy (P-055) (Jolly Roger Foil) [Premium Booster -The Best-]"
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/monkey-d-luffy-p-055-jolly-roger-foil-premium-booster-the-best": "Monkey.D.Luffy (P-055) (Jolly Roger Foil) [Premium Booster -The Best-]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/donquixote-doflamingo-royal-blood": "Donquixote Doflamingo [Royal Blood]",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/mamaragan-alternate-art-op15-078-adventure-on-kamis-island-foil": "Mamaragan (Alternate Art) (OP15-078) - Adventure on Kami's Island Foil",
+        "docs/data/one_piece/missing_cards.json|https://bigbangshop.co.za/collections/one-piece-single-cards/products/rob-lucci-alternate-art-eb04-048-adventure-on-kamis-island-foil": "Rob Lucci (Alternate Art) (EB04-048) - Adventure on Kami's Island Foil"
       }
     },
     "one-piece/collectiverse": {
       "label": "Collectiverse",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -25,7 +30,7 @@
     },
     "one-piece/geekhaven": {
       "label": "Geek Haven",
-      "runs": 2,
+      "runs": 3,
       "item_count": 0,
       "added": {},
       "removed": {},
@@ -33,7 +38,7 @@
     },
     "one-piece/knightly": {
       "label": "Knightly Gaming",
-      "runs": 2,
+      "runs": 3,
       "item_count": 28,
       "added": {},
       "removed": {},
@@ -45,12 +50,13 @@
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/merry-go-one-piece-promotion-cards": "Merry Go [One Piece Promotion Cards]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/sanji-pudding-extra-booster-memorial-collection": "Sanji & Pudding [Extra Booster: Anime 25th Collection]",
         "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/thousand-sunny-starter-deck-red-monkey-d-luffy": "Thousand Sunny [Starter Deck: RED Monkey.D.Luffy]",
-        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]"
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/gecko-moria-op14-104-alternate-art-the-azure-seas-seven": "Gecko Moria (OP14-104) (Alternate Art) [The Azure Sea's Seven]",
+        "docs/data/one_piece/missing_cards.json|https://www.knightlygaming.co.za/collections/one-piece-singles/products/trafalgar-law-event-pack-vol-7-one-piece-promotion-cards": "Trafalgar Law (Event Pack Vol. 7) [One Piece Promotion Cards]"
       }
     },
     "one-piece/tanuki": {
       "label": "Tanuki Games",
-      "runs": 2,
+      "runs": 3,
       "item_count": 1,
       "added": {},
       "removed": {},
@@ -58,7 +64,7 @@
     },
     "one-piece/products": {
       "label": "Official products",
-      "runs": 2,
+      "runs": 3,
       "item_count": 194,
       "added": {},
       "removed": {},
